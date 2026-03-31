@@ -1,0 +1,25 @@
+name: Deploy Documentation
+on:
+  push:
+    branches: [main]
+    paths: ['site/**']
+
+jobs:
+  deploy:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download moss CLI
+        run: |
+          curl -L -o moss https://github.com/Symbiosis-Lab/moss-releases/releases/latest/download/moss-darwin-universal
+          chmod +x moss
+
+      - name: Compile docs
+        run: ./moss compile site/ --no-plugins
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: site/.moss/site
