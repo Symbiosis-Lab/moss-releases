@@ -4,18 +4,74 @@
   --moss-content-width: 72ch;
 }
 
-/* Button-style links on landing page */
-a[href*="releases"] {
-  display: inline-block;
-  padding: 0.6em 1.2em;
-  background: var(--moss-color-accent, var(--moss-accent));
-  color: white;
-  border: 1px solid var(--moss-color-accent, var(--moss-accent));
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 500;
+.nav-content {
+  border-bottom: none;
 }
 
-a[href*="releases"]:hover {
-  opacity: 0.9;
+/* ── Sunlight theme — "kindle under sunlight" ambient mode ──
+   Activated by script.js via data-theme="sunlight" on <html>.
+   Extends light color scheme with warmer tones. */
+
+[data-theme="sunlight"] {
+  --moss-color-bg: #f5efe3;
+  --moss-color-surface: #efe8da;
+  --moss-color-text: #2c2825;
+  --moss-color-muted: #8a7d6f;
+  --moss-border-light: #e0d8c8;
+  --moss-border-medium: #d1c8b4;
+  --moss-code-background: #f0eadc;
+  --moss-code-border: #ddd5c3;
+}
+
+/* Leaf shadow video overlay — full viewport, blended via multiply.
+   White areas of the video become transparent; dark areas darken
+   the page content as natural-looking shadows. */
+#sunlight-leaves {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 1.2s ease-out;
+}
+
+[data-theme="sunlight"] #sunlight-leaves {
+  opacity: 0.2;
+}
+
+/* Warm color wash — subtle warm tint over everything including images.
+   Simulates the slight amber cast of sunlight on a screen outdoors. */
+#sunlight-wash {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 200, 100, 0.04);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 998;
+  opacity: 0;
+  transition: opacity 1.2s ease-out;
+}
+
+[data-theme="sunlight"] #sunlight-wash {
+  opacity: 1;
+}
+
+/* Paper grain texture — tiny repeating noise for analog feel */
+[data-theme="sunlight"] body {
+  background-image: url("/grain.png");
+  background-repeat: repeat;
+  background-blend-mode: multiply;
+}
+
+/* Accessibility: disable the animated video for users who prefer reduced motion.
+   The warm color shift and grain texture remain (they're static). */
+@media (prefers-reduced-motion: reduce) {
+  #sunlight-leaves {
+    display: none;
+  }
 }
