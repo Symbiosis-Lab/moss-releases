@@ -1,7 +1,9 @@
 ---
-title: moss
+children: false
 description: A desktop app that turns folders into websites.
-github: https://github.com/Symbiosis-Lab/moss-releases
+uid: a48746ca
+title: moss
+logo: assets/logo.svg
 ---
 
 # Write anywhere. Publish everywhere. Own everything.
@@ -9,18 +11,23 @@ github: https://github.com/Symbiosis-Lab/moss-releases
 A desktop app that turns your folder of markdown files into a website.
 Right-click → your site is live.
 
-[Download for macOS →](https://github.com/Symbiosis-Lab/moss-releases/releases/latest) · [Documentation](docs/)
-
-## How it works
+:::buttons
+[Download for macOS](https://github.com/Symbiosis-Lab/moss-releases/releases/latest)
+[Documentation](docs/)
+:::
 
 :::grid 3
 **Write**
-Markdown files in any editor. Obsidian, iA Writer, VS Code, or plain text.
 
+Markdown files.
+Use Obsidian, Typora, or the default editor.
+---
 **Right-click**
-Select your folder in Finder. Click "Publish with moss."
 
+Select your folder in Finder. Click "Publish with moss."
+---
 **Done**
+
 Your site is live. Navigation, styling, dark mode — all handled.
 :::
 
@@ -35,7 +42,3 @@ Deploy to GitHub Pages with one click. Syndicate articles to [Matters.town](http
 ## For developers
 
 moss is a Tauri v2 desktop app with a Rust compilation engine and a JavaScript plugin system. The CLI works in automation and CI. See [Architecture](docs/architecture.md) and [Plugin Development](docs/plugin-development.md).
-
----
-
-[Download for macOS](https://github.com/Symbiosis-Lab/moss-releases/releases/latest) · [Documentation](docs/) · [GitHub](https://github.com/Symbiosis-Lab/moss-releases)

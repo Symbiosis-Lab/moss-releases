@@ -2,6 +2,7 @@
 description: 将文件夹变成网站的桌面应用。
 uid: 41f7bc62
 title: 青苔
+logo: assets/logo.svg
 ---
 
 # 随处写作。随处发布。一切由你掌控。
