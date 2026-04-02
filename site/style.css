@@ -8,6 +8,10 @@
   border-bottom: none;
 }
 
+header {
+  padding-bottom: var(--moss-space-lg);
+}
+
 /* ── Sunlight theme — "kindle under sunlight" ambient mode ──
    Activated by script.js via data-theme="sunlight" on <html>.
    Extends light color scheme with warmer tones. */
@@ -41,7 +45,7 @@
 }
 
 [data-theme="sunlight"] #sunlight-leaves {
-  opacity: 0.2;
+  opacity: 0.3;
 }
 
 /* Warm color wash — subtle warm tint over everything including images.
