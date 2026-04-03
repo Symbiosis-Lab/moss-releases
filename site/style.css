@@ -45,6 +45,10 @@ header {
 }
 
 [data-theme="sunlight"] #sunlight-leaves {
+  opacity: 0;
+}
+
+[data-theme="sunlight"] #sunlight-leaves.video-ready {
   opacity: 0.3;
 }
 
