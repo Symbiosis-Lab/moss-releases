@@ -57,11 +57,16 @@
   }
 
   function enterSunlight() {
+    // Clean up any in-flight state from a prior call
+    clearTimeout(videoReadyTimer);
+    video.removeEventListener("playing", onVideoPlaying);
+
     // Phase 1: color shift + grain + warm wash (CSS-driven, instant)
     document.documentElement.setAttribute("data-theme", "sunlight");
     sessionStorage.setItem("theme", "sunlight");
 
     // Phase 2: video fades in only after actually playing
+    // Reset for rapid re-entry: clear previous ready state before re-registering
     video.classList.remove("video-ready");
     video.addEventListener("playing", onVideoPlaying);
     video.play().catch(function () {
