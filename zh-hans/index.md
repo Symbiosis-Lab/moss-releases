@@ -14,9 +14,11 @@ nav: false
 将文件夹打包成网站的桌面应用。右键，预览，上线。
 
 :::buttons
-[下载 macOS 版](https://github.com/Symbiosis-Lab/moss-releases/releases/latest)
+[下载 macOS 版](https://github.com/Symbiosis-Lab/moss-releases/releases/latest/download/moss.dmg)
 [文档](docs/)
 :::
+
+这是测试版软件——可以正常使用，但可能有粗糙的地方。
 
 :::grid 3
 **本地写作**

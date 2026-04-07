@@ -13,9 +13,11 @@ logo: assets/logo.svg
 A desktop app that turns your folder of markdown files into a website. The simplest and most powerful way to build your website.
 
 :::buttons
-[Download for macOS](https://github.com/Symbiosis-Lab/moss-releases/releases/latest)
+[Download for macOS](https://github.com/Symbiosis-Lab/moss-releases/releases/latest/download/moss.dmg)
 [Documentation](docs/)
 :::
+
+This is beta software — it works, but expect rough edges.
 
 :::grid 3
 **Write**

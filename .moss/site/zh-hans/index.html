@@ -9,8 +9,54 @@
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     
     
-    <link rel="stylesheet" href="/style.css?v=8d0fda22e2c5a5da"><link rel="stylesheet" href="/custom.css?v=f259617ebddc5941">
-    <!-- slot:head-end -->
+    <link rel="stylesheet" href="/style.css?v=083d145d33ece3cd"><link rel="stylesheet" href="/custom.css?v=e158770530b34a88">
+    <script>fetch('//api.mosspub.com/api/sites/landing/beacon',{method:'POST',body:JSON.stringify({path:location.pathname,referrer:document.referrer}),keepalive:true})</script>
+<style class="moss-email-style">/* Email subscribe form — injected by email plugin enhance hook */
+.footer-subscribe-form {
+  display: flex;
+  gap: var(--moss-space-sm);
+  align-items: baseline;
+  max-width: 18rem;
+}
+
+.footer-subscribe-form .moss-input {
+  flex: 1;
+}
+
+.footer-subscribe-form .moss-btn {
+  font-size: inherit;
+}
+
+@media (max-width: 48rem) {
+  .footer-subscribe-form .moss-input {
+    width: 10ch;
+    flex: none;
+  }
+}
+</style>
+<style class="moss-email-style">/* Email subscribe form — injected by email plugin enhance hook */
+.footer-subscribe-form {
+  display: flex;
+  gap: var(--moss-space-sm);
+  align-items: baseline;
+  max-width: 18rem;
+}
+
+.footer-subscribe-form .moss-input {
+  flex: 1;
+}
+
+.footer-subscribe-form .moss-btn {
+  font-size: inherit;
+}
+
+@media (max-width: 48rem) {
+  .footer-subscribe-form .moss-input {
+    width: 10ch;
+    flex: none;
+  }
+}
+</style>
 </head>
 <body>
     <header>
@@ -25,8 +71,8 @@
 
     <main>
         <article class="container">
-            <h1 id="随处写作，随处发布。一切由你掌控。">随处写作，随处发布。一切由你掌控。</h1><p>将文件夹打包成网站的桌面应用。右键，预览，上线。</p><div class="moss-buttons"><a href="https://github.com/Symbiosis-Lab/moss-releases/releases/latest" class="moss-btn moss-btn-primary">下载 macOS 版</a><a href="docs/" class="moss-btn moss-btn-secondary">文档</a></div>
-<div class="moss-grid" data-columns="3"><div class="moss-grid-card"><p><strong>本地写作</strong></p><p>Markdown 文件。使用内置编辑器，或者任意软件。</p></div>
+            <h1 id="随处写作，随处发布。一切由你掌控。">随处写作，随处发布。一切由你掌控。</h1><p>将文件夹打包成网站的桌面应用。右键，预览，上线。</p><div class="moss-buttons"><a href="https://github.com/Symbiosis-Lab/moss-releases/releases/latest/download/moss.dmg" class="moss-btn moss-btn-primary">下载 macOS 版</a><a href="docs/" class="moss-btn moss-btn-secondary">文档</a></div>
+<p>这是测试版软件——可以正常使用，但可能有粗糙的地方。</p><div class="moss-grid" data-columns="3"><div class="moss-grid-card"><p><strong>本地写作</strong></p><p>Markdown 文件。使用内置编辑器，或者任意软件。</p></div>
 <div class="moss-grid-card"><p><strong>右键发布</strong></p><p>预览、确认、发布。同步到各平台。</p></div>
 <div class="moss-grid-card"><p><strong>独立网站</strong></p><p>选择托管服务。购买域名，或者使用默认域名。</p></div></div>
 <h2 id="开放格式，本地优先">开放格式，本地优先</h2><p>内容存于你的计算机中，用你的操作系统管理内容，用共享文件夹多人协作。网站从本地计算机部署到服务器，零成本迁移。</p><h2 id="多渠道同步">多渠道同步</h2><h2 id="扩展">扩展</h2><p>moss 是一个基于 Tauri v2 的桌面应用，搭载 Rust 编译引擎和 JavaScript 插件系统。CLI 支持自动化流程和 CI 集成。详见<a href="docs/architecture/">架构说明</a>和<a href="docs/plugin-development/">插件开发</a>。</p>
@@ -39,7 +85,11 @@
             
         </div>
         <div class="footer-right">
-            <!-- slot:footer-right -->
+            <form action="https://buttondown.com/api/emails/embed-subscribe/newsletter" method="post" class="footer-subscribe-form moss-service-inactive" title="发布后启用"><input type="email" name="email" class="moss-input" placeholder="邮箱" required /><input type="hidden" value="1" name="embed" /><button type="submit" class="moss-btn">订阅</button></form>
+<form class="moss-subscribe-form" method="post" action="https://api.mosspub.com/api/sites/landing/subscribe">
+  <input type="email" name="email" placeholder="邮箱" required>
+  <button type="submit">订阅</button>
+</form>
         </div>
     </div>
 </footer>
@@ -55,7 +105,7 @@
     </div>
 
     <script src="/js/theme.js?v=aa573bb1fccb7453"></script>
-    <script src="/custom.js?v=f791a63eeb34cf1a"></script>
-    <!-- slot:body-end -->
+    <script src="/custom.js?v=7593ff570b30b2fe"></script>
+    
 </body>
 </html>

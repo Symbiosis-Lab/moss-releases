@@ -4,6 +4,28 @@
   --moss-content-width: 72ch;
 }
 
+/* Beta badge on site name */
+.site-name::after {
+  content: "BETA";
+  font-size: 0.55em;
+  font-weight: 600;
+  background: var(--moss-accent);
+  color: var(--moss-color-bg, #faf8f5);
+  padding: 1px 6px;
+  border-radius: 8px;
+  margin-left: 0.4em;
+  vertical-align: middle;
+  letter-spacing: 0.5px;
+}
+
+/* Muted footnote below download buttons */
+.moss-buttons + p {
+  font-size: 0.8rem;
+  color: var(--moss-color-muted, #9b9590);
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
 .nav-content {
   border-bottom: none;
 }
@@ -44,7 +66,13 @@ header {
   transition: opacity 1.2s ease-out;
 }
 
+/* Video stays hidden when sunlight activates — .video-ready
+   (added by JS after playback starts) fades it in. */
 [data-theme="sunlight"] #sunlight-leaves {
+  opacity: 0;
+}
+
+[data-theme="sunlight"] #sunlight-leaves.video-ready {
   opacity: 0.3;
 }
 

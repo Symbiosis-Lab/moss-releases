@@ -13,8 +13,54 @@
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     
     
-    <link rel="stylesheet" href="/style.css?v=8d0fda22e2c5a5da"><link rel="stylesheet" href="/custom.css?v=f259617ebddc5941">
-    <!-- slot:head-end -->
+    <link rel="stylesheet" href="/style.css?v=083d145d33ece3cd"><link rel="stylesheet" href="/custom.css?v=e158770530b34a88">
+    <script>fetch('//api.mosspub.com/api/sites/landing/beacon',{method:'POST',body:JSON.stringify({path:location.pathname,referrer:document.referrer}),keepalive:true})</script>
+<style class="moss-email-style">/* Email subscribe form — injected by email plugin enhance hook */
+.footer-subscribe-form {
+  display: flex;
+  gap: var(--moss-space-sm);
+  align-items: baseline;
+  max-width: 18rem;
+}
+
+.footer-subscribe-form .moss-input {
+  flex: 1;
+}
+
+.footer-subscribe-form .moss-btn {
+  font-size: inherit;
+}
+
+@media (max-width: 48rem) {
+  .footer-subscribe-form .moss-input {
+    width: 10ch;
+    flex: none;
+  }
+}
+</style>
+<style class="moss-email-style">/* Email subscribe form — injected by email plugin enhance hook */
+.footer-subscribe-form {
+  display: flex;
+  gap: var(--moss-space-sm);
+  align-items: baseline;
+  max-width: 18rem;
+}
+
+.footer-subscribe-form .moss-input {
+  flex: 1;
+}
+
+.footer-subscribe-form .moss-btn {
+  font-size: inherit;
+}
+
+@media (max-width: 48rem) {
+  .footer-subscribe-form .moss-input {
+    width: 10ch;
+    flex: none;
+  }
+}
+</style>
 </head>
 <body>
     <header>
@@ -29,8 +75,8 @@
 
     <main>
         <article class="container">
-            <h1 id="write-anywhere.-publish-everywhere.-own-everything.">Write anywhere. Publish everywhere. Own everything.</h1><p>A desktop app that turns your folder of markdown files into a website. The simplest and most powerful way to build your website.</p><div class="moss-buttons"><a href="https://github.com/Symbiosis-Lab/moss-releases/releases/latest" class="moss-btn moss-btn-primary">Download for macOS</a><a href="docs/" class="moss-btn moss-btn-secondary">Documentation</a></div>
-<div class="moss-grid" data-columns="3"><div class="moss-grid-card"><p><strong>Write</strong></p><p>Markdown files.
+            <h1 id="write-anywhere.-publish-everywhere.-own-everything.">Write anywhere. Publish everywhere. Own everything.</h1><p>A desktop app that turns your folder of markdown files into a website. The simplest and most powerful way to build your website.</p><div class="moss-buttons"><a href="https://github.com/Symbiosis-Lab/moss-releases/releases/latest/download/moss.dmg" class="moss-btn moss-btn-primary">Download for macOS</a><a href="docs/" class="moss-btn moss-btn-secondary">Documentation</a></div>
+<p>This is beta software — it works, but expect rough edges.</p><div class="moss-grid" data-columns="3"><div class="moss-grid-card"><p><strong>Write</strong></p><p>Markdown files.
 Use default editor, or any others.</p></div>
 <div class="moss-grid-card"><p><strong>Preview</strong></p><p>Right click, publish, confirm.</p></div>
 <div class="moss-grid-card"><p><strong>Publish</strong></p><p>Choose your host. Pick a domain, or not.</p></div></div>
@@ -44,7 +90,11 @@ Use default editor, or any others.</p></div>
             
         </div>
         <div class="footer-right">
-            <!-- slot:footer-right -->
+            <form action="https://buttondown.com/api/emails/embed-subscribe/newsletter" method="post" class="footer-subscribe-form moss-service-inactive" title="发布后启用"><input type="email" name="email" class="moss-input" placeholder="邮箱" required /><input type="hidden" value="1" name="embed" /><button type="submit" class="moss-btn">订阅</button></form>
+<form class="moss-subscribe-form" method="post" action="https://api.mosspub.com/api/sites/landing/subscribe">
+  <input type="email" name="email" placeholder="邮箱" required>
+  <button type="submit">订阅</button>
+</form>
         </div>
     </div>
 </footer>
@@ -60,7 +110,7 @@ Use default editor, or any others.</p></div>
     </div>
 
     <script src="/js/theme.js?v=aa573bb1fccb7453"></script>
-    <script src="/custom.js?v=f791a63eeb34cf1a"></script>
-    <!-- slot:body-end -->
+    <script src="/custom.js?v=7593ff570b30b2fe"></script>
+    
 </body>
 </html>
