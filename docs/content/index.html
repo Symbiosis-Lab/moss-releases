@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Content Structure - moss</title>
-    <meta name="description" content="How files and folders become pages and navigation.">
+    <title>内容结构 - moss</title>
+    <meta name="description" content="文件与文件夹如何转化为页面和导航。">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Content Structure">
+    <meta property="og:title" content="内容结构">
     <meta property="og:url" content="/docs/content/">
     <meta property="og:site_name" content="moss">
-    <meta property="og:description" content="How files and folders become pages and navigation.">
+    <meta property="og:description" content="文件与文件夹如何转化为页面和导航。">
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Content Structure",
+  "headline": "内容结构",
   "url": "/docs/content/",
-  "description": "How files and folders become pages and navigation.",
+  "description": "文件与文件夹如何转化为页面和导航。",
   "publisher": {
     "@type": "Organization",
     "name": "moss"
@@ -26,159 +26,117 @@
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     
     
-    <link rel="stylesheet" href="/style.css?v=8d0fda22e2c5a5da"><link rel="stylesheet" href="/custom.css?v=f259617ebddc5941">
+    <link rel="stylesheet" href="/style.css?v=f707c0be9c488a06"><link rel="stylesheet" href="/custom.css?v=855bc993d46212fc">
     <!-- slot:head-end -->
 </head>
 <body class="">
     <header>
         <nav class="main-nav container">
             <div class="nav-content">
-                <div class="nav-left"><a href="/" class="site-name"><img class="site-logo" src="/assets/logo.svg" alt="" aria-hidden="true">moss</a><span class="breadcrumb-separator">/</span><a href="/docs/" class="breadcrumb-segment">Documentation</a></div><div class="nav-right"><div class="nav-icons"><div class="nav-lang-toggle" aria-label="Language"><span class="nav-lang-current">EN</span> / <a href="/zh-hans/docs/content/" class="nav-lang-link" hreflang="zh-hans">简</a></div><button class="nav-theme-btn" type="button" aria-label="Toggle theme" onclick="toggleTheme()"><svg class="theme-toggle-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="1em" height="1em" fill="currentColor" stroke-linecap="round" viewBox="0 0 32 32"><clipPath id="theme-toggle__classic__cutout"><path d="M0-5h30a1 1 0 0 0 9 13v24H0Z"/></clipPath><g clip-path="url(#theme-toggle__classic__cutout)"><circle cx="16" cy="16" r="9.34"/><g stroke="currentColor" stroke-width="1"><path d="M16 5.5v-4"/><path d="M16 30.5v-4"/><path d="M1.5 16h4"/><path d="M26.5 16h4"/><path d="m23.4 8.6 2.8-2.8"/><path d="m5.7 26.3 2.9-2.9"/><path d="m5.8 5.8 2.8 2.8"/><path d="m23.4 23.4 2.9 2.9"/></g></g></svg></button></div></div>
+                <div class="nav-left"><a href="/" class="site-name">moss</a></div><div class="nav-right"><button class="mobile-menu-button" onclick="toggleMobileMenu()" aria-label="Toggle menu"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="nav-links"><a href="/docs/">Documentation</a><a href="/index/">青苔</a></div><div class="nav-icons"><button class="nav-theme-btn" type="button" aria-label="Toggle theme" onclick="toggleTheme()"><svg class="theme-toggle-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="1em" height="1em" fill="currentColor" viewBox="0 0 32 32"><clipPath id="theme-toggle__cutout"><path d="M0 0h42v30a1 1 0 00-16 13H0Z"/></clipPath><g clip-path="url(#theme-toggle__cutout)"><circle cx="16" cy="16" r="8.4"/><g><circle cx="16" cy="3.3" r="2.3"/><circle cx="27" cy="9.7" r="2.3"/><circle cx="27" cy="22.3" r="2.3"/><circle cx="16" cy="28.7" r="2.3"/><circle cx="5" cy="22.3" r="2.3"/><circle cx="5" cy="9.7" r="2.3"/></g></g></svg></button></div></div>
             </div>
         </nav>
     </header>
 
     <main>
         <article class="container">
-            <h1 class="article-title">Content Structure</h1>
+            <h1 class="article-title">内容结构</h1>
+<nav class="lang-switcher" aria-label="Language"><span class="lang-current">简</span> · <a href="docs/content/index-2" class="lang-link">EN</a></nav>
             
             <!-- slot:after-title -->
-            <h2 id="every-file-is-a-page">Every file is a page</h2><p>Every <code>.md</code> file in your folder becomes one page. Every folder becomes one section. There is no configuration step — open a folder in moss and the structure is already there.</p><pre><code>my-site/
+            <h2 id="每个文件对应一个页面" data-source-line="1">每个文件对应一个页面</h2><p data-source-line="3">文件夹中的每个 <code>.md</code> 文件都会生成一个页面，每个子文件夹都会成为一个栏目。无需任何配置——在 moss 中打开文件夹，结构已经就绪。</p><pre data-source-line="5"><code>my-site/
 ├── index.md          → /
 ├── about.md          → /about/
 └── posts/
     ├── index.md      → /posts/
     └── hello.md      → /posts/hello/
 </code></pre>
-<h2 id="urls-follow-the-file-path">URLs follow the file path</h2><table>
-<thead><tr><th>File</th><th>URL</th></tr></thead><tbody>
-<tr>
-<td><code>index.md</code></td><td><code>/</code></td></tr>
-<tr>
-<td><code>about.md</code></td><td><code>/about/</code></td></tr>
-<tr>
-<td><code>posts/hello.md</code></td><td><code>/posts/hello/</code></td></tr>
-<tr>
-<td><code>posts/index.md</code></td><td><code>/posts/</code></td></tr>
-<tr>
-<td><code>docs/getting-started.md</code></td><td><code>/docs/getting-started/</code></td></tr>
-</table>
-<p>Use <code>url</code> in frontmatter to override the default URL for any page:</p><pre><code class="language-yaml">---
+<h2 id="url-与文件路径一一对应" data-source-line="14">URL 与文件路径一一对应</h2><table><thead><tr><th>文件</th><th>URL</th></tr></thead><tbody>
+<tr><td><code>index.md</code></td><td><code>/</code></td></tr>
+<tr><td><code>about.md</code></td><td><code>/about/</code></td></tr>
+<tr><td><code>posts/hello.md</code></td><td><code>/posts/hello/</code></td></tr>
+<tr><td><code>posts/index.md</code></td><td><code>/posts/</code></td></tr>
+<tr><td><code>docs/getting-started.md</code></td><td><code>/docs/getting-started/</code></td></tr>
+</tbody></table>
+<p data-source-line="24">在 frontmatter 中使用 <code>url</code> 字段可以为任意页面指定自定义 URL：</p><pre data-source-line="26"><code class="language-yaml">---
 title: Hello World
 url: /blog/2024/hello/
 ---
 </code></pre>
-<h2 id="folders-become-section-pages">Folders become section pages</h2><p>When a folder has no <code>index.md</code>, moss auto-generates a section page that lists its children. Add an <code>index.md</code> to provide your own content for that page.</p><p>A file named the same as its parent folder also works as the folder index:</p><pre><code>posts/
-├── posts.md     ← serves as /posts/
-└── hello.md     ← serves as /posts/hello/
+<h2 id="文件夹成为栏目页面" data-source-line="33">文件夹成为栏目页面</h2><p data-source-line="35">当一个文件夹内没有 <code>index.md</code> 时，moss 会自动生成一个栏目页面，列出其中的所有内容。添加 <code>index.md</code> 可以为该页面提供自定义内容。</p><p data-source-line="37">与父文件夹同名的文件也可以作为文件夹索引页：</p><pre data-source-line="39"><code>posts/
+├── posts.md     ← 作为 /posts/
+└── hello.md     ← 作为 /posts/hello/
 </code></pre>
-<h2 id="root-pages-appear-in-navigation-automatically">Root pages appear in navigation automatically</h2><p>Pages at the root level appear in the header navigation. Control this with two frontmatter fields:</p><pre><code class="language-yaml">---
+<h2 id="根目录页面自动出现在导航中" data-source-line="45">根目录页面自动出现在导航中</h2><p data-source-line="47">根目录下的页面会出现在顶部导航中。通过两个 frontmatter 字段来控制：</p><pre data-source-line="49"><code class="language-yaml">---
 title: About
-nav: false      # omit from header nav entirely
-weight: 10      # lower numbers appear first
+nav: false      # 完全不显示在顶部导航中
+weight: 10      # 数值越小越靠前
 ---
 </code></pre>
-<p>Folders at the root level appear as navigation items when they have a title set in their <code>index.md</code>.</p><h2 id="child-lists-are-shown-by-default">Child lists are shown by default</h2><p>Section pages automatically list their children. Frontmatter controls how that list renders:</p><pre><code class="language-yaml">---
+<p data-source-line="57">根目录下的文件夹，只要其 <code>index.md</code> 中设置了标题，就会作为导航项显示。</p><h2 id="子页面列表默认显示" data-source-line="59">子页面列表默认显示</h2><p data-source-line="61">栏目页面会自动列出其子页面。Frontmatter 可以控制列表的展示方式：</p><pre data-source-line="63"><code class="language-yaml">---
 title: Posts
-children: false           # hide the child list entirely
-children_style: card      # "list" (default) or "card"
-children_group: year      # group by year (also: "none")
-children_depth: all       # "direct" (default) or "all" descendants
+children: false           # 完全隐藏子页面列表
+children_style: card      # "list"（默认）或 "card"
+children_group: year      # 按年份分组（也可选 "none"）
+children_depth: all       # "direct"（默认）或 "all"（所有层级）
 ---
 </code></pre>
-<p>Card layout uses the <code>cover</code> image from each child's frontmatter. Set <code>cover_type</code> to <code>"video"</code> or <code>"iframe"</code> for non-image covers.</p><h2 id="sort-order-is-predictable">Sort order is predictable</h2><p>Within any section, children are sorted in this order:</p><ol start="1">
-<li>Subfolders, alphabetically</li>
-<li>Files with a <code>date</code>, newest first</li>
-<li>Files without a <code>date</code>, alphabetically</li>
+<p data-source-line="73">卡片布局会使用每个子页面 frontmatter 中的 <code>cover</code> 图片。将 <code>cover_type</code> 设为 <code>"video"</code> 或 <code>"iframe"</code> 可支持非图片封面。</p><h2 id="排序规则明确可预期" data-source-line="75">排序规则明确可预期</h2><p data-source-line="77">在任意栏目中，子页面按以下顺序排列：</p><ol start="1" data-source-line="79">
+<li>子文件夹，按字母顺序</li>
+<li>有 <code>date</code> 的文件，最新的排在前面</li>
+<li>没有 <code>date</code> 的文件，按字母顺序</li>
 </ol>
-<p>Override with <code>weight</code> — lower weights sort first, ahead of any date-based ordering.</p><h2 id="visibility-has-three-levels">Visibility has three levels</h2><table>
-<thead><tr><th>Setting</th><th>Generated</th><th>Lists</th><th>Sitemap</th></tr></thead><tbody>
-<tr>
-<td><em>(default)</em></td><td>yes</td><td>yes</td><td>yes</td></tr>
-<tr>
-<td><code>unlisted: true</code></td><td>yes</td><td>no</td><td>no</td></tr>
-<tr>
-<td><code>draft: true</code></td><td>no</td><td>no</td><td>no</td></tr>
-</table>
-<p>Prefix a folder name with <code>_</code> to exclude it entirely from processing:</p><pre><code>my-site/
-├── _drafts/      ← ignored completely
-└── posts/        ← processed normally
+<p data-source-line="83">使用 <code>weight</code> 可覆盖默认排序——数值越小越靠前，优先级高于按日期排序。</p><h2 id="可见性分三个级别" data-source-line="85">可见性分三个级别</h2><table><thead><tr><th>设置</th><th>生成页面</th><th>出现在列表</th><th>Sitemap</th></tr></thead><tbody>
+<tr><td><em>(默认)</em></td><td>是</td><td>是</td><td>是</td></tr>
+<tr><td><code>unlisted: true</code></td><td>是</td><td>否</td><td>否</td></tr>
+<tr><td><code>draft: true</code></td><td>否</td><td>否</td><td>否</td></tr>
+</tbody></table>
+<p data-source-line="93">在文件夹名称前加 <code>_</code> 前缀，可将整个文件夹完全排除在处理范围之外：</p><pre data-source-line="95"><code>my-site/
+├── _drafts/      ← 完全忽略
+└── posts/        ← 正常处理
 </code></pre>
-<h2 id="frontmatter-reference">Frontmatter reference</h2><table>
-<thead><tr><th>Field</th><th>Type</th><th>Purpose</th></tr></thead><tbody>
-<tr>
-<td><code>title</code></td><td>string</td><td>Page title</td></tr>
-<tr>
-<td><code>date</code></td><td>string</td><td>Publication date (YYYY-MM-DD)</td></tr>
-<tr>
-<td><code>weight</code></td><td>integer</td><td>Nav/list ordering (lower = first)</td></tr>
-<tr>
-<td><code>url</code></td><td>string</td><td>Custom URL override</td></tr>
-<tr>
-<td><code>cover</code></td><td>string</td><td>Cover image for card layouts</td></tr>
-<tr>
-<td><code>cover_type</code></td><td>string</td><td><code>"video"</code>, <code>"iframe"</code>, or <code>"image"</code></td></tr>
-<tr>
-<td><code>nav</code></td><td>boolean</td><td>Show in header navigation</td></tr>
-<tr>
-<td><code>draft</code></td><td>boolean</td><td>Skip generation entirely</td></tr>
-<tr>
-<td><code>unlisted</code></td><td>boolean</td><td>Generate but hide from lists/sitemap</td></tr>
-<tr>
-<td><code>description</code></td><td>string</td><td>SEO meta description, list previews</td></tr>
-<tr>
-<td><code>tags</code></td><td>list</td><td>Content tags</td></tr>
-<tr>
-<td><code>children</code></td><td>boolean</td><td>Show child page list (default: true)</td></tr>
-<tr>
-<td><code>sidebar</code></td><td>string</td><td>Wikilink to folder for sidebar</td></tr>
-<tr>
-<td><code>children_style</code></td><td>string</td><td><code>"list"</code> (default) or <code>"card"</code></td></tr>
-<tr>
-<td><code>children_group</code></td><td>string</td><td><code>"year"</code> or <code>"none"</code></td></tr>
-<tr>
-<td><code>children_depth</code></td><td>string</td><td><code>"direct"</code> (default) or <code>"all"</code></td></tr>
-<tr>
-<td><code>series</code></td><td>bool/list</td><td>Series declaration</td></tr>
-<tr>
-<td><code>breadcrumb</code></td><td>boolean</td><td>Override site-wide breadcrumb</td></tr>
-<tr>
-<td><code>footer</code></td><td>boolean</td><td>Override site-wide footer</td></tr>
-<tr>
-<td><code>cascade</code></td><td>map</td><td>Push values to all descendants</td></tr>
-<tr>
-<td><code>also_in</code></td><td>list</td><td>Folder paths where article also appears</td></tr>
-<tr>
-<td><code>lang</code></td><td>string</td><td>Language override (<code>"en"</code>, <code>"zh-hans"</code>)</td></tr>
-<tr>
-<td><code>translationKey</code></td><td>string</td><td>Link files as translations</td></tr>
-<tr>
-<td><code>comments</code></td><td>boolean</td><td>Show comments (default: true)</td></tr>
-<tr>
-<td><code>uid</code></td><td>string</td><td>Content-addressable ID (auto-generated)</td></tr>
-<tr>
-<td><code>layout</code></td><td>string</td><td>Template override: <code>"page"</code> or <code>"article"</code></td></tr>
-<tr>
-<td><code>review_of</code></td><td>string</td><td>URL of reviewed work</td></tr>
-<tr>
-<td><code>rating</code></td><td>integer</td><td>Rating (1–5) for reviews</td></tr>
-</table>
-<p>Use <code>cascade</code> to push a value to all descendants without repeating it on every file:</p><pre><code class="language-yaml">---
+<h2 id="frontmatter-字段参考" data-source-line="101">Frontmatter 字段参考</h2><table><thead><tr><th>字段</th><th>类型</th><th>用途</th></tr></thead><tbody>
+<tr><td><code>title</code></td><td>string</td><td>页面标题</td></tr>
+<tr><td><code>date</code></td><td>string</td><td>发布日期（YYYY-MM-DD）</td></tr>
+<tr><td><code>weight</code></td><td>integer</td><td>导航/列表排序（数值越小越靠前）</td></tr>
+<tr><td><code>url</code></td><td>string</td><td>自定义 URL</td></tr>
+<tr><td><code>cover</code></td><td>string</td><td>卡片布局封面图</td></tr>
+<tr><td><code>cover_type</code></td><td>string</td><td><code>"video"</code>、<code>"iframe"</code> 或 <code>"image"</code></td></tr>
+<tr><td><code>nav</code></td><td>boolean</td><td>是否显示在顶部导航</td></tr>
+<tr><td><code>draft</code></td><td>boolean</td><td>跳过生成</td></tr>
+<tr><td><code>unlisted</code></td><td>boolean</td><td>生成但不出现在列表/Sitemap</td></tr>
+<tr><td><code>description</code></td><td>string</td><td>SEO 描述和列表摘要</td></tr>
+<tr><td><code>tags</code></td><td>list</td><td>内容标签</td></tr>
+<tr><td><code>children</code></td><td>boolean</td><td>是否显示子页面列表（默认：true）</td></tr>
+<tr><td><code>sidebar</code></td><td>string</td><td>用作侧边栏的文件夹 Wikilink</td></tr>
+<tr><td><code>children_style</code></td><td>string</td><td><code>"list"</code>（默认）或 <code>"card"</code></td></tr>
+<tr><td><code>children_group</code></td><td>string</td><td><code>"year"</code> 或 <code>"none"</code></td></tr>
+<tr><td><code>children_depth</code></td><td>string</td><td><code>"direct"</code>（默认）或 <code>"all"</code></td></tr>
+<tr><td><code>series</code></td><td>bool/list</td><td>系列声明</td></tr>
+<tr><td><code>breadcrumb</code></td><td>boolean</td><td>覆盖全站面包屑设置</td></tr>
+<tr><td><code>footer</code></td><td>boolean</td><td>覆盖全站页脚设置</td></tr>
+<tr><td><code>cascade</code></td><td>map</td><td>将值推送到所有子页面</td></tr>
+<tr><td><code>also_in</code></td><td>list</td><td>文章同时出现的其他文件夹路径</td></tr>
+<tr><td><code>lang</code></td><td>string</td><td>语言覆盖（<code>"en"</code>、<code>"zh-hans"</code>）</td></tr>
+<tr><td><code>translationKey</code></td><td>string</td><td>将多个文件关联为同一内容的翻译版本</td></tr>
+<tr><td><code>comments</code></td><td>boolean</td><td>是否显示评论（默认：true）</td></tr>
+<tr><td><code>uid</code></td><td>string</td><td>内容寻址 ID（自动生成）</td></tr>
+<tr><td><code>layout</code></td><td>string</td><td>模板覆盖：<code>"page"</code> 或 <code>"article"</code></td></tr>
+<tr><td><code>review_of</code></td><td>string</td><td>被评测作品的 URL</td></tr>
+<tr><td><code>rating</code></td><td>integer</td><td>评分（1–5 分）</td></tr>
+</tbody></table>
+<p data-source-line="134">使用 <code>cascade</code> 可以将某个值推送到所有子页面，无需在每个文件中重复设置：</p><pre data-source-line="136"><code class="language-yaml">---
 title: Posts
 cascade:
   comments: false
 ---
 </code></pre>
-<h2 id="bilingual-content-is-file-name-based">Bilingual content is file-name-based</h2><p>Append a language suffix to the filename to create a translation:</p><table>
-<thead><tr><th>File</th><th>Language</th></tr></thead><tbody>
-<tr>
-<td><code>about.md</code></td><td>site default</td></tr>
-<tr>
-<td><code>about.zh-hans.md</code></td><td>Simplified Chinese</td></tr>
-<tr>
-<td><code>about.en.md</code></td><td>English (explicit)</td></tr>
-</table>
-<p>Language is resolved in this priority order: <code>lang</code> frontmatter → filename suffix → content auto-detection → site default.</p><p>For translations with different filenames, use <code>translationKey</code> to link them:</p><pre><code class="language-yaml"># posts/hello.md
+<h2 id="双语内容通过文件名区分" data-source-line="144">双语内容通过文件名区分</h2><p data-source-line="146">在文件名后添加语言后缀即可创建翻译版本：</p><table><thead><tr><th>文件</th><th>语言</th></tr></thead><tbody>
+<tr><td><code>about.md</code></td><td>网站默认语言</td></tr>
+<tr><td><code>about.zh-hans.md</code></td><td>简体中文</td></tr>
+<tr><td><code>about.en.md</code></td><td>英文（显式指定）</td></tr>
+</tbody></table>
+<p data-source-line="154">语言解析的优先级顺序为：<code>lang</code> frontmatter → 文件名后缀 → 内容自动检测 → 网站默认语言。</p><p data-source-line="156">对于文件名不同的翻译，使用 <code>translationKey</code> 将它们关联起来：</p><pre data-source-line="158"><code class="language-yaml"># posts/hello.md
 ---
 translationKey: hello-post
 ---
@@ -189,32 +147,32 @@ translationKey: hello-post
 lang: zh-hans
 ---
 </code></pre>
-<h2 id="shortcodes-extend-markdown">Shortcodes extend Markdown</h2><p>Shortcodes use <code>:::</code> block syntax. Each one closes with <code>:::</code>.</p><p><strong>Hero image:</strong></p><pre><code class="language-markdown">:::hero image.jpg
-# Headline text
+<h2 id="短代码扩展-markdown" data-source-line="171">短代码扩展 Markdown</h2><p data-source-line="173">短代码使用 <code>:::</code> 块语法，每个短代码以 <code>:::</code> 结束。</p><p data-source-line="175"><strong>主图：</strong></p><pre data-source-line="176"><code class="language-markdown">:::hero image.jpg
+# 标题文字
 :::
 </code></pre>
-<p><strong>Grid layout:</strong></p><pre><code class="language-markdown">:::grid 3
-Content in column one.
+<p data-source-line="182"><strong>网格布局：</strong></p><pre data-source-line="183"><code class="language-markdown">:::grid 3
+第一列内容。
 
-Content in column two.
+第二列内容。
 
-Content in column three.
+第三列内容。
 :::
 </code></pre>
-<p><strong>Image gallery:</strong></p><pre><code class="language-markdown">:::gallery
+<p data-source-line="193"><strong>图片画廊：</strong></p><pre data-source-line="194"><code class="language-markdown">:::gallery
 ![](photo1.jpg)
 ![](photo2.jpg)
 ![](photo3.jpg)
 :::
 </code></pre>
-<p><strong>Table of contents:</strong></p><pre><code class="language-markdown">&lt;!--MOSS_TOC_PLACEHOLDER--&gt;
+<p data-source-line="202"><strong>目录：</strong></p><pre data-source-line="203"><code class="language-markdown">&lt;!--MOSS_TOC_PLACEHOLDER--&gt;
 :::
 </code></pre>
-<p><strong>Callout block:</strong></p><pre><code class="language-markdown">:::callout warning
-This action cannot be undone.
+<p data-source-line="208"><strong>提示块：</strong></p><pre data-source-line="209"><code class="language-markdown">:::callout warning
+此操作不可撤销。
 :::
 </code></pre>
-<p>Valid <code>callout</code> types: <code>note</code>, <code>warning</code>, <code>tip</code>.</p>
+<p data-source-line="215"><code>callout</code> 的有效类型：<code>note</code>、<code>warning</code>、<code>tip</code>。</p>
             <!-- slot:before-article-end -->
         </article>
         <!-- slot:after-article -->
@@ -223,7 +181,7 @@ This action cannot be undone.
     <footer class="container">
     <div class="footer-content">
         <div class="footer-left">
-            
+            <a href="/feed.xml" class="footer-link" data-external>RSS</a>
         </div>
         <div class="footer-right">
             <!-- slot:footer-right -->
@@ -231,18 +189,7 @@ This action cannot be undone.
     </div>
 </footer>
 
-    <div class="moss-colophon">
-        <a href="https://mosspub.com" target="_blank" rel="noopener">
-            <svg class="moss-colophon-icon" viewBox="-104 -105 1040 1049" aria-hidden="true">
-                <path fill="currentColor" d="M353.48,284.25c-.03-15.35-13.3-28.68-13.02-44.45.35-19.97,18.62-25.1,30.84-8.86,12.27,16.3,27.25,65.59,47.13,69.87,15.6,3.35,20.22-16.43,21.94-28.17,5.43-37.03,2.88-91.03.11-128.87-2.46-33.57-12.68-77.8.53-109.49,17.73-42.53,73.6-44.58,77.52,8.44,4.69,63.45-37.31,106.54-49.55,165.53-5.67,27.31-8.23,57.64-2,85.02,19.85,87.26,94.44-18.36,112.68-50.34,13.98-24.51,21.56-49.75,33.65-74.35,19.23-39.11,66.57-62.1,108.53-45.18,44.94,18.11,81.36,85.88,50.86,129.58-37.72,54.04-106.18,41.29-161.99,58.01-41.56,12.45-108.6,50.47-77.04,102.57,96.58,122.22,255.01,39.13,292.28,120.71,29.53,71.29-56.2,113.61-111.95,65.96-38.52-32.93-55.04-71.51-106.17-94.83-29.67-13.53-103.71-33.13-108.34,17.37-4.16,45.33,25.72,119.74,60.51,149.46,33.53,28.64,97.03,38.28,85.03,98.08-13.73,68.47-105.62,67.48-126.06-3.06-12.57-43.4-9.75-82.04-29.64-126.36-55.05-116.5-115.66-82.39-139.54,26.18-7,41.15,6.09,99.52-10.83,134.17-31.94,65.42-164.26,43.33-146.82-44.82,12.11-61.23,75.42-87.7,113.85-130.15,23.54-26.01,55.01-74.29,53.48-110.49-1.78-42.18-56.04-34.72-83.51-24.54-50.66,18.76-80.01,59.74-121.57,89.43-93.63,63.58-119.86-32.28-16.9-64.89,65.1-21.66,293.15-94.81,110.19-138.23-66.85-11.86-140.47,18.99-201.56-8.43-79.79-35.81-49.11-122.17,38.84-115.84,67.02,4.82,91.74,51.13,145.15,76.85,22.9,11.03,76.48,27.18,100.58,19.86,31.23-9.49,4.33-41.63,9.89-60.12,1.92-6.38,6.93-8.21,12.88-5.6Z"/>
-                <path fill="#91c127" d="M323.18,241.93c-13.07,8.61-21.8-13.96-28.28-22.59-7.94-10.58-16.74-21.56-25.9-31.1-28.12-29.26-66.01-47.97-72.39-92.61C189.42,45.37,218.91-3.67,274.03.22c82.95,5.85,62.53,119.82,75.51,175.59-2.67,10.44-9.56-.19-15.56-.6-23.21,1.86,16.7,52.67-10.8,66.73Z"/>
-            </svg>
-            Published with moss
-        </a>
-    </div>
-
-    <script src="/js/theme.js?v=aa573bb1fccb7453"></script>
-    <script src="/custom.js?v=f791a63eeb34cf1a"></script>
+    <script src="/js/theme.js?v=e6ed3a9342756390"></script>
     <!-- slot:body-end -->
 </body>
 </html>

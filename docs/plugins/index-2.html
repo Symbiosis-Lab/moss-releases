@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plugins & Features - moss</title>
+    <meta name="description" content="Built-in plugins and native features for publishing, comments, and more.">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Plugins &amp; Features">
+    <meta property="og:url" content="/docs/plugins/index-2.html">
+    <meta property="og:site_name" content="moss">
+    <meta property="og:description" content="Built-in plugins and native features for publishing, comments, and more.">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Plugins & Features",
+  "url": "/docs/plugins/index-2.html",
+  "description": "Built-in plugins and native features for publishing, comments, and more.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "moss"
+  }
+}
+</script>
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    
+    
+    <link rel="stylesheet" href="/style.css?v=f707c0be9c488a06"><link rel="stylesheet" href="/custom.css?v=855bc993d46212fc">
+    <!-- slot:head-end -->
+</head>
+<body class="">
+    <header>
+        <nav class="main-nav container">
+            <div class="nav-content">
+                <div class="nav-left"><a href="/" class="site-name">moss</a></div><div class="nav-right"><button class="mobile-menu-button" onclick="toggleMobileMenu()" aria-label="Toggle menu"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="nav-links"><a href="/docs/">Documentation</a><a href="/index/">青苔</a></div><div class="nav-icons"><button class="nav-theme-btn" type="button" aria-label="Toggle theme" onclick="toggleTheme()"><svg class="theme-toggle-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="1em" height="1em" fill="currentColor" viewBox="0 0 32 32"><clipPath id="theme-toggle__cutout"><path d="M0 0h42v30a1 1 0 00-16 13H0Z"/></clipPath><g clip-path="url(#theme-toggle__cutout)"><circle cx="16" cy="16" r="8.4"/><g><circle cx="16" cy="3.3" r="2.3"/><circle cx="27" cy="9.7" r="2.3"/><circle cx="27" cy="22.3" r="2.3"/><circle cx="16" cy="28.7" r="2.3"/><circle cx="5" cy="22.3" r="2.3"/><circle cx="5" cy="9.7" r="2.3"/></g></g></svg></button></div></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <article class="container">
+            <h1 class="article-title">Plugins & Features</h1>
+<nav class="lang-switcher" aria-label="Language"><span class="lang-current">EN</span> · <a href="docs/plugins/" class="lang-link">简</a></nav>
+            
+            <!-- slot:after-title -->
+            <p data-source-line="1">moss ships with two JavaScript plugins and four native Rust features. All are configured in <code>.moss/config.toml</code> in your project directory.</p><h2 id="plugins-(javascript)" data-source-line="3">Plugins (JavaScript)</h2><h3 id="github-pages" data-source-line="5">GitHub Pages</h3><p data-source-line="7">Deploy your site to GitHub Pages via GitHub Actions.</p><table><thead><tr><th>Setting</th><th>Type</th><th>Default</th><th>Description</th></tr></thead><tbody>
+<tr><td><code>auto_commit</code></td><td>boolean</td><td><code>true</code></td><td>Auto-commit on deploy</td></tr>
+<tr><td><code>video_max_size_mb</code></td><td>number</td><td><code>75</code></td><td>Max video size for deployment</td></tr>
+</tbody></table>
+<p data-source-line="14">See <a href="../deploy/">Deploy</a> for setup instructions.</p><h3 id="matters.town" data-source-line="16">Matters.town</h3><p data-source-line="18">Syndicate articles to <a href="https://matters.town">Matters.town</a> (POSSE — Publish on your Own Site, Syndicate Elsewhere).</p><table><thead><tr><th>Setting</th><th>Type</th><th>Default</th><th>Description</th></tr></thead><tbody>
+<tr><td><code>auto_publish</code></td><td>boolean</td><td><code>false</code></td><td>Auto-publish on build</td></tr>
+<tr><td><code>add_canonical_link</code></td><td>boolean</td><td><code>true</code></td><td>Add canonical link back to your site</td></tr>
+<tr><td><code>sync_on_build</code></td><td>boolean</td><td><code>true</code></td><td>Sync on every build</td></tr>
+<tr><td><code>sync_drafts</code></td><td>boolean</td><td><code>true</code></td><td>Include drafts in sync</td></tr>
+</tbody></table>
+<h2 id="native-features-(rust)" data-source-line="27">Native Features (Rust)</h2><h3 id="comments" data-source-line="29">Comments</h3><p data-source-line="31">Add Waline or Artalk comment sections to article pages.</p><pre data-source-line="33"><code class="language-toml">[features.comments]
+server_url = "https://your-comment-server.com"
+</code></pre>
+<p data-source-line="38">To disable comments on a specific page, add <code>comments: false</code> to its frontmatter.</p><h3 id="email-newsletter" data-source-line="40">Email Newsletter</h3><p data-source-line="42">Add a Buttondown subscribe form to the site footer.</p><pre data-source-line="44"><code class="language-toml">[features.email]
+api_key = "your-buttondown-api-key"
+</code></pre>
+<h3 id="analytics" data-source-line="49">Analytics</h3><p data-source-line="51">Privacy-focused analytics via GoatCounter.</p><pre data-source-line="53"><code class="language-toml">[features.analytics]
+script = "https://yoursite.goatcounter.com/count"
+</code></pre>
+<h3 id="review" data-source-line="58">Review</h3><p data-source-line="60">Display book and media review colophons on pages that use the <code>review_of</code> and <code>rating</code> frontmatter fields.</p><p data-source-line="62">No additional configuration required — enable by adding those fields to a page's frontmatter.</p><h2 id="disabling-plugins" data-source-line="64">Disabling plugins</h2><p data-source-line="66">To build without running any JavaScript plugins:</p><pre data-source-line="68"><code class="language-sh">moss compile folder/ --no-plugins
+</code></pre>
+
+            <!-- slot:before-article-end -->
+        </article>
+        <!-- slot:after-article -->
+    </main>
+
+    <footer class="container">
+    <div class="footer-content">
+        <div class="footer-left">
+            <a href="/feed.xml" class="footer-link" data-external>RSS</a>
+        </div>
+        <div class="footer-right">
+            <!-- slot:footer-right -->
+        </div>
+    </div>
+</footer>
+
+    <script src="/js/theme.js?v=e6ed3a9342756390"></script>
+    <!-- slot:body-end -->
+</body>
+</html>

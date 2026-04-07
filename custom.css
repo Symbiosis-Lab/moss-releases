@@ -44,7 +44,13 @@ header {
   transition: opacity 1.2s ease-out;
 }
 
+/* Video stays hidden when sunlight activates — .video-ready
+   (added by JS after playback starts) fades it in. */
 [data-theme="sunlight"] #sunlight-leaves {
+  opacity: 0;
+}
+
+[data-theme="sunlight"] #sunlight-leaves.video-ready {
   opacity: 0.3;
 }
 

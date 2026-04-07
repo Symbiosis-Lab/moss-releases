@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Structure - moss</title>
+    <meta name="description" content="How files and folders become pages and navigation.">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Content Structure">
+    <meta property="og:url" content="/docs/content/index-2.html">
+    <meta property="og:site_name" content="moss">
+    <meta property="og:description" content="How files and folders become pages and navigation.">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Content Structure",
+  "url": "/docs/content/index-2.html",
+  "description": "How files and folders become pages and navigation.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "moss"
+  }
+}
+</script>
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    
+    
+    <link rel="stylesheet" href="/style.css?v=f707c0be9c488a06"><link rel="stylesheet" href="/custom.css?v=855bc993d46212fc">
+    <!-- slot:head-end -->
+</head>
+<body class="">
+    <header>
+        <nav class="main-nav container">
+            <div class="nav-content">
+                <div class="nav-left"><a href="/" class="site-name">moss</a></div><div class="nav-right"><button class="mobile-menu-button" onclick="toggleMobileMenu()" aria-label="Toggle menu"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="nav-links"><a href="/docs/">Documentation</a><a href="/index/">青苔</a></div><div class="nav-icons"><button class="nav-theme-btn" type="button" aria-label="Toggle theme" onclick="toggleTheme()"><svg class="theme-toggle-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="1em" height="1em" fill="currentColor" viewBox="0 0 32 32"><clipPath id="theme-toggle__cutout"><path d="M0 0h42v30a1 1 0 00-16 13H0Z"/></clipPath><g clip-path="url(#theme-toggle__cutout)"><circle cx="16" cy="16" r="8.4"/><g><circle cx="16" cy="3.3" r="2.3"/><circle cx="27" cy="9.7" r="2.3"/><circle cx="27" cy="22.3" r="2.3"/><circle cx="16" cy="28.7" r="2.3"/><circle cx="5" cy="22.3" r="2.3"/><circle cx="5" cy="9.7" r="2.3"/></g></g></svg></button></div></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <article class="container">
+            <h1 class="article-title">Content Structure</h1>
+<nav class="lang-switcher" aria-label="Language"><span class="lang-current">EN</span> · <a href="docs/content/" class="lang-link">简</a></nav>
+            
+            <!-- slot:after-title -->
+            <h2 id="every-file-is-a-page" data-source-line="1">Every file is a page</h2><p data-source-line="3">Every <code>.md</code> file in your folder becomes one page. Every folder becomes one section. There is no configuration step — open a folder in moss and the structure is already there.</p><pre data-source-line="5"><code>my-site/
+├── index.md          → /
+├── about.md          → /about/
+└── posts/
+    ├── index.md      → /posts/
+    └── hello.md      → /posts/hello/
+</code></pre>
+<h2 id="urls-follow-the-file-path" data-source-line="14">URLs follow the file path</h2><table><thead><tr><th>File</th><th>URL</th></tr></thead><tbody>
+<tr><td><code>index.md</code></td><td><code>/</code></td></tr>
+<tr><td><code>about.md</code></td><td><code>/about/</code></td></tr>
+<tr><td><code>posts/hello.md</code></td><td><code>/posts/hello/</code></td></tr>
+<tr><td><code>posts/index.md</code></td><td><code>/posts/</code></td></tr>
+<tr><td><code>docs/getting-started.md</code></td><td><code>/docs/getting-started/</code></td></tr>
+</tbody></table>
+<p data-source-line="24">Use <code>url</code> in frontmatter to override the default URL for any page:</p><pre data-source-line="26"><code class="language-yaml">---
+title: Hello World
+url: /blog/2024/hello/
+---
+</code></pre>
+<h2 id="folders-become-section-pages" data-source-line="33">Folders become section pages</h2><p data-source-line="35">When a folder has no <code>index.md</code>, moss auto-generates a section page that lists its children. Add an <code>index.md</code> to provide your own content for that page.</p><p data-source-line="37">A file named the same as its parent folder also works as the folder index:</p><pre data-source-line="39"><code>posts/
+├── posts.md     ← serves as /posts/
+└── hello.md     ← serves as /posts/hello/
+</code></pre>
+<h2 id="root-pages-appear-in-navigation-automatically" data-source-line="45">Root pages appear in navigation automatically</h2><p data-source-line="47">Pages at the root level appear in the header navigation. Control this with two frontmatter fields:</p><pre data-source-line="49"><code class="language-yaml">---
+title: About
+nav: false      # omit from header nav entirely
+weight: 10      # lower numbers appear first
+---
+</code></pre>
+<p data-source-line="57">Folders at the root level appear as navigation items when they have a title set in their <code>index.md</code>.</p><h2 id="child-lists-are-shown-by-default" data-source-line="59">Child lists are shown by default</h2><p data-source-line="61">Section pages automatically list their children. Frontmatter controls how that list renders:</p><pre data-source-line="63"><code class="language-yaml">---
+title: Posts
+children: false           # hide the child list entirely
+children_style: card      # "list" (default) or "card"
+children_group: year      # group by year (also: "none")
+children_depth: all       # "direct" (default) or "all" descendants
+---
+</code></pre>
+<p data-source-line="73">Card layout uses the <code>cover</code> image from each child's frontmatter. Set <code>cover_type</code> to <code>"video"</code> or <code>"iframe"</code> for non-image covers.</p><h2 id="sort-order-is-predictable" data-source-line="75">Sort order is predictable</h2><p data-source-line="77">Within any section, children are sorted in this order:</p><ol start="1" data-source-line="79">
+<li>Subfolders, alphabetically</li>
+<li>Files with a <code>date</code>, newest first</li>
+<li>Files without a <code>date</code>, alphabetically</li>
+</ol>
+<p data-source-line="83">Override with <code>weight</code> — lower weights sort first, ahead of any date-based ordering.</p><h2 id="visibility-has-three-levels" data-source-line="85">Visibility has three levels</h2><table><thead><tr><th>Setting</th><th>Generated</th><th>Lists</th><th>Sitemap</th></tr></thead><tbody>
+<tr><td><em>(default)</em></td><td>yes</td><td>yes</td><td>yes</td></tr>
+<tr><td><code>unlisted: true</code></td><td>yes</td><td>no</td><td>no</td></tr>
+<tr><td><code>draft: true</code></td><td>no</td><td>no</td><td>no</td></tr>
+</tbody></table>
+<p data-source-line="93">Prefix a folder name with <code>_</code> to exclude it entirely from processing:</p><pre data-source-line="95"><code>my-site/
+├── _drafts/      ← ignored completely
+└── posts/        ← processed normally
+</code></pre>
+<h2 id="frontmatter-reference" data-source-line="101">Frontmatter reference</h2><table><thead><tr><th>Field</th><th>Type</th><th>Purpose</th></tr></thead><tbody>
+<tr><td><code>title</code></td><td>string</td><td>Page title</td></tr>
+<tr><td><code>date</code></td><td>string</td><td>Publication date (YYYY-MM-DD)</td></tr>
+<tr><td><code>weight</code></td><td>integer</td><td>Nav/list ordering (lower = first)</td></tr>
+<tr><td><code>url</code></td><td>string</td><td>Custom URL override</td></tr>
+<tr><td><code>cover</code></td><td>string</td><td>Cover image for card layouts</td></tr>
+<tr><td><code>cover_type</code></td><td>string</td><td><code>"video"</code>, <code>"iframe"</code>, or <code>"image"</code></td></tr>
+<tr><td><code>nav</code></td><td>boolean</td><td>Show in header navigation</td></tr>
+<tr><td><code>draft</code></td><td>boolean</td><td>Skip generation entirely</td></tr>
+<tr><td><code>unlisted</code></td><td>boolean</td><td>Generate but hide from lists/sitemap</td></tr>
+<tr><td><code>description</code></td><td>string</td><td>SEO meta description, list previews</td></tr>
+<tr><td><code>tags</code></td><td>list</td><td>Content tags</td></tr>
+<tr><td><code>children</code></td><td>boolean</td><td>Show child page list (default: true)</td></tr>
+<tr><td><code>sidebar</code></td><td>string</td><td>Wikilink to folder for sidebar</td></tr>
+<tr><td><code>children_style</code></td><td>string</td><td><code>"list"</code> (default) or <code>"card"</code></td></tr>
+<tr><td><code>children_group</code></td><td>string</td><td><code>"year"</code> or <code>"none"</code></td></tr>
+<tr><td><code>children_depth</code></td><td>string</td><td><code>"direct"</code> (default) or <code>"all"</code></td></tr>
+<tr><td><code>series</code></td><td>bool/list</td><td>Series declaration</td></tr>
+<tr><td><code>breadcrumb</code></td><td>boolean</td><td>Override site-wide breadcrumb</td></tr>
+<tr><td><code>footer</code></td><td>boolean</td><td>Override site-wide footer</td></tr>
+<tr><td><code>cascade</code></td><td>map</td><td>Push values to all descendants</td></tr>
+<tr><td><code>also_in</code></td><td>list</td><td>Folder paths where article also appears</td></tr>
+<tr><td><code>lang</code></td><td>string</td><td>Language override (<code>"en"</code>, <code>"zh-hans"</code>)</td></tr>
+<tr><td><code>translationKey</code></td><td>string</td><td>Link files as translations</td></tr>
+<tr><td><code>comments</code></td><td>boolean</td><td>Show comments (default: true)</td></tr>
+<tr><td><code>uid</code></td><td>string</td><td>Content-addressable ID (auto-generated)</td></tr>
+<tr><td><code>layout</code></td><td>string</td><td>Template override: <code>"page"</code> or <code>"article"</code></td></tr>
+<tr><td><code>review_of</code></td><td>string</td><td>URL of reviewed work</td></tr>
+<tr><td><code>rating</code></td><td>integer</td><td>Rating (1–5) for reviews</td></tr>
+</tbody></table>
+<p data-source-line="134">Use <code>cascade</code> to push a value to all descendants without repeating it on every file:</p><pre data-source-line="136"><code class="language-yaml">---
+title: Posts
+cascade:
+  comments: false
+---
+</code></pre>
+<h2 id="bilingual-content-is-file-name-based" data-source-line="144">Bilingual content is file-name-based</h2><p data-source-line="146">Append a language suffix to the filename to create a translation:</p><table><thead><tr><th>File</th><th>Language</th></tr></thead><tbody>
+<tr><td><code>about.md</code></td><td>site default</td></tr>
+<tr><td><code>about.zh-hans.md</code></td><td>Simplified Chinese</td></tr>
+<tr><td><code>about.en.md</code></td><td>English (explicit)</td></tr>
+</tbody></table>
+<p data-source-line="154">Language is resolved in this priority order: <code>lang</code> frontmatter → filename suffix → content auto-detection → site default.</p><p data-source-line="156">For translations with different filenames, use <code>translationKey</code> to link them:</p><pre data-source-line="158"><code class="language-yaml"># posts/hello.md
+---
+translationKey: hello-post
+---
+
+# posts/ni-hao.md
+---
+translationKey: hello-post
+lang: zh-hans
+---
+</code></pre>
+<h2 id="shortcodes-extend-markdown" data-source-line="171">Shortcodes extend Markdown</h2><p data-source-line="173">Shortcodes use <code>:::</code> block syntax. Each one closes with <code>:::</code>.</p><p data-source-line="175"><strong>Hero image:</strong></p><pre data-source-line="176"><code class="language-markdown">:::hero image.jpg
+# Headline text
+:::
+</code></pre>
+<p data-source-line="182"><strong>Grid layout:</strong></p><pre data-source-line="183"><code class="language-markdown">:::grid 3
+Content in column one.
+
+Content in column two.
+
+Content in column three.
+:::
+</code></pre>
+<p data-source-line="193"><strong>Image gallery:</strong></p><pre data-source-line="194"><code class="language-markdown">:::gallery
+![](photo1.jpg)
+![](photo2.jpg)
+![](photo3.jpg)
+:::
+</code></pre>
+<p data-source-line="202"><strong>Table of contents:</strong></p><pre data-source-line="203"><code class="language-markdown">&lt;!--MOSS_TOC_PLACEHOLDER--&gt;
+:::
+</code></pre>
+<p data-source-line="208"><strong>Callout block:</strong></p><pre data-source-line="209"><code class="language-markdown">:::callout warning
+This action cannot be undone.
+:::
+</code></pre>
+<p data-source-line="215">Valid <code>callout</code> types: <code>note</code>, <code>warning</code>, <code>tip</code>.</p>
+            <!-- slot:before-article-end -->
+        </article>
+        <!-- slot:after-article -->
+    </main>
+
+    <footer class="container">
+    <div class="footer-content">
+        <div class="footer-left">
+            <a href="/feed.xml" class="footer-link" data-external>RSS</a>
+        </div>
+        <div class="footer-right">
+            <!-- slot:footer-right -->
+        </div>
+    </div>
+</footer>
+
+    <script src="/js/theme.js?v=e6ed3a9342756390"></script>
+    <!-- slot:body-end -->
+</body>
+</html>
