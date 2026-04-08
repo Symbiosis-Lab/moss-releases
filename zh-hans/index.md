@@ -1,12 +1,11 @@
 ---
-lang: zh-hans
 children: false
-description: 将文件夹变成网站的桌面应用。
-logo: assets/logo.svg
+description: 从文件夹到网站
+uid: 41f7bc62
 title: 青苔
+logo: assets/logo.svg
 translationKey: homepage
-uid: ab49fc10
-nav: false
+lang: zh-hans
 ---
 
 # 随处写作，随处发布。一切由你掌控。
@@ -14,16 +13,16 @@ nav: false
 将文件夹打包成网站的桌面应用。右键，预览，上线。
 
 :::buttons
-[下载 macOS 版](https://github.com/Symbiosis-Lab/moss-releases/releases/latest/download/moss.dmg)
+[下载 macOS 版](https://github.com/Symbiosis-Lab/moss-releases/releases/latest)
 [文档](docs/)
 :::
 
-这是测试版软件——可以正常使用，但可能有粗糙的地方。
+目前为测试版软件。可以正常使用，但可能有粗糙的地方。谢谢你的[反馈](https://github.com/Symbiosis-Lab/moss-releases/issues)。
 
 :::grid 3
 **本地写作**
 
-Markdown 文件。使用内置编辑器，或者任意软件。
+Markdown 文件。使用内置编辑器、Obsidian、或者任意其他软件。
 ---
 **右键发布**
 
@@ -40,8 +39,12 @@ Markdown 文件。使用内置编辑器，或者任意软件。
 
 ## 多渠道同步
 
+标准静态网页，部署在任何服务器。内容发表到独立网站，同时同步到各个平台，再同步回评论。
 
+## 多媒体，自动处理
 
-## 扩展
+视频、图片、HTML、Jupyter 笔记本。放进文件夹，青苔处理其余一切。
 
-moss 是一个基于 Tauri v2 的桌面应用，搭载 Rust 编译引擎和 JavaScript 插件系统。CLI 支持自动化流程和 CI 集成。详见[架构说明](docs/architecture.md)和[插件开发](docs/plugin-development.md)。
+## 无限扩展
+
+通过 CSS 和 JavaScript 自定义设计，通过脚本插件自定义编译流程。CLI 支持自动化和 CI 集成。详见[扩展](docs/extend/)。

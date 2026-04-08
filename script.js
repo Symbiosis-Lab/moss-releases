@@ -26,6 +26,7 @@
 
 (function () {
   "use strict";
+
   // ── Create overlay DOM elements ──
   // These elements exist in the DOM always but are invisible (opacity: 0)
   // until [data-theme="sunlight"] activates them via CSS.

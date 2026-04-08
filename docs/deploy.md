@@ -3,7 +3,7 @@ title: Deploy
 uid: 36d59578
 weight: 4
 description: Publish your site to GitHub Pages.
-translationKey: deploy
+translationKey: docs-deploy
 ---
 
 ## Prerequisites
@@ -38,4 +38,4 @@ Set a custom domain in your GitHub repository settings under **Pages → Custom 
 
 ## What's next
 
-Zero-config deploy to mosspub.com is planned — no GitHub account required.
+Zero-config deploy to moss.host is planned — no GitHub account required.
