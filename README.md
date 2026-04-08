@@ -1,6 +1,10 @@
 # moss
 
-A desktop app that turns folders into websites.
+Your files become your website. One click.
+
+Publish text, audio, video, notebooks, and interactive work from your computer to your own domain. Sync to newsletters and platforms. You keep every file.
+
+**Markdown · Obsidian · Jupyter · HTML · Media**
 
 ## Download
 
@@ -10,12 +14,18 @@ Requires macOS 12+. Universal binary (Intel + Apple Silicon).
 
 ## Documentation
 
-Browse the [docs](site/docs/) or visit the [documentation site](https://symbiosis-lab.github.io/moss-releases/).
+Visit the [documentation site](https://mosspub.com/docs/) or browse the [source docs](site/docs/).
 
-## Plugins
+## Links
 
-Official plugins are open source: [moss-plugins](https://github.com/Symbiosis-Lab/moss-plugins)
+- [mosspub.com](https://mosspub.com) — hosted publishing platform
+- [Symbiosis Lab](https://symbiosis-lab.org) — the organization behind moss
+- [moss-plugins](https://github.com/Symbiosis-Lab/moss-plugins) — official open-source plugins
 
 ## Issues
 
 [Open an issue](https://github.com/Symbiosis-Lab/moss-releases/issues) for bug reports or feature requests.
+
+## License
+
+[MIT](LICENSE)
