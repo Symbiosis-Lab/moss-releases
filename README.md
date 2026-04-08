@@ -1,5 +1,7 @@
 # moss
 
+**[mosspub.com](https://mosspub.com)**
+
 Your files become your website. One click.
 
 Publish text, audio, video, notebooks, and interactive work from your computer to your own domain. Sync to newsletters and platforms. You keep every file.
@@ -15,12 +17,6 @@ Requires macOS 12+. Universal binary (Intel + Apple Silicon).
 ## Documentation
 
 Visit the [documentation site](https://mosspub.com/docs/) or browse the [source docs](site/docs/).
-
-## Links
-
-- [mosspub.com](https://mosspub.com) — hosted publishing platform
-- [Symbiosis Lab](https://symbiosis-lab.org) — the organization behind moss
-- [moss-plugins](https://github.com/Symbiosis-Lab/moss-plugins) — official open-source plugins
 
 ## Issues
 
