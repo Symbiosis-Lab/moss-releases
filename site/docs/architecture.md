@@ -1,5 +1,6 @@
 ---
 title: Architecture
+uid: 30480c6e
 weight: 6
 description: How the build pipeline works under the hood.
 ---

@@ -1,5 +1,6 @@
 ---
 title: 插件开发
+uid: 8c31660b
 weight: 8
 description: 构建你自己的 moss 插件。
 ---

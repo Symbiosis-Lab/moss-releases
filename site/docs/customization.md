@@ -1,5 +1,6 @@
 ---
 title: Customization
+uid: 403787e2
 weight: 3
 description: Change colors, fonts, and layout with CSS variables.
 ---

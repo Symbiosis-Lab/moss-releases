@@ -1,5 +1,6 @@
 ---
 title: 快速入门
+uid: 9699db32
 weight: 1
 description: 安装 moss，几分钟内发布你的第一个网站。
 ---

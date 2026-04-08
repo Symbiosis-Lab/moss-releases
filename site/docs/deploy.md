@@ -1,5 +1,6 @@
 ---
 title: Deploy
+uid: 6d45ea20
 weight: 4
 description: Publish your site to GitHub Pages.
 ---

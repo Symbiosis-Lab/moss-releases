@@ -1,5 +1,6 @@
 ---
 title: 部署
+uid: 6fb648ad
 weight: 4
 description: 将你的网站发布到 GitHub Pages。
 ---

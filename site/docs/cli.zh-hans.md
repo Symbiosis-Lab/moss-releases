@@ -1,5 +1,6 @@
 ---
 title: 命令行参考
+uid: fd682d12
 weight: 7
 description: moss 命令行界面。
 ---

@@ -1,5 +1,6 @@
 ---
 title: Plugins & Features
+uid: acfad60a
 weight: 5
 description: Built-in plugins and native features for publishing, comments, and more.
 ---

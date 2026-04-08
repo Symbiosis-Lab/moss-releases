@@ -1,5 +1,6 @@
 ---
 title: 插件与功能
+uid: 71ba37e1
 weight: 5
 description: 内置插件和发布、评论等原生功能。
 ---

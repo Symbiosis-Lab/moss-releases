@@ -6,6 +6,7 @@ children: false
 breadcrumb: true
 title: moss
 logo: assets/logo.svg
+lang: en
 ---
 
 # Write anywhere. Publish everywhere. Own everything.

@@ -1,5 +1,6 @@
 ---
 title: Getting Started
+uid: 6db78ba2
 weight: 1
 description: Install moss and publish your first site in minutes.
 ---

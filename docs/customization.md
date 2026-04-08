@@ -48,11 +48,23 @@ That file is the only thing you need — no build step, no config entry.
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `--moss-content-width` | 70ch | Maximum content width |
-| `--moss-content-width-sidebar` | 65ch | Content width with sidebar |
+| `--moss-content-width` | 67ch | Maximum content width |
+| `--moss-content-width-sidebar` | 62ch | Content width with sidebar |
+| `--moss-nav-width` | var(--moss-content-width) | Navigation and footer max-width |
 | `--moss-sidebar-width` | 280px | Sidebar width |
 | `--moss-site-max-width` | 1200px | Maximum site width |
 | `--moss-container-padding` | clamp(1rem, 5vw, 2rem) | Container side padding |
+
+### Spacing
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `--moss-space-xs` | 0.5rem | Extra small spacing (8px) |
+| `--moss-space-sm` | 1rem | Small spacing (16px) |
+| `--moss-space-md` | 1.5rem | Medium spacing (24px) |
+| `--moss-space-lg` | 2rem | Large spacing (32px) |
+| `--moss-space-xl` | 3rem | Extra large spacing (48px) |
+| `--moss-space-2xl` | 4rem | Double extra large spacing (64px) |
 
 ## Children Styles
 
@@ -113,3 +125,39 @@ cascade:
 ```
 
 All pages nested under this one will inherit `breadcrumb: true` and `nav: false` unless they override the value in their own frontmatter.
+
+## Component Classes
+
+Auto-generated components use stable `moss-*` class names that you can target in `style.css`. For shortcode components (like `:::grid`), use the `{.class}` syntax to add your own class handle instead.
+
+### Collection Grid
+
+| Class | Element |
+|-------|---------|
+| `.moss-collection-grid` | Grid container |
+| `.moss-collection-card` | Individual card |
+| `.moss-collection-card-cover` | Cover image wrapper |
+| `.moss-collection-card-content` | Content section below cover |
+| `.moss-collection-card-title` | Card title |
+| `.moss-collection-card-count` | Article count / subtitle |
+
+### Child Summary
+
+| Class | Element |
+|-------|---------|
+| `.moss-child-summary` | Summary card |
+| `.moss-child-summary-row` | Flex row (body + cover) |
+| `.moss-child-summary-body` | Text content area |
+| `.moss-child-summary-meta` | Date or count |
+| `.moss-child-summary-title` | Title |
+| `.moss-child-summary-description` | Description excerpt |
+| `.moss-child-summary-cover` | Side cover image |
+
+### Article List
+
+| Class | Element |
+|-------|---------|
+| `.moss-article-listing` | Listing container |
+| `.moss-article-item` | Individual list item |
+| `.moss-prefix-link` | Link with prefix (date/count) |
+| `.moss-year-group` | Year section heading |

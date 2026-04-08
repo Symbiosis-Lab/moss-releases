@@ -45,15 +45,48 @@
 
   // ── State helpers ──
 
+  var videoReadyTimer = null;
+  var VIDEO_TIMEOUT_MS = 8000;
+
+  function onVideoPlaying() {
+    clearTimeout(videoReadyTimer);
+    videoReadyTimer = null;
+    video.classList.add("video-ready");
+    video.removeEventListener("playing", onVideoPlaying);
+  }
+
   function enterSunlight() {
+    // Clean up any in-flight state from a prior call
+    clearTimeout(videoReadyTimer);
+    video.removeEventListener("playing", onVideoPlaying);
+
+    // Phase 1: color shift + grain + warm wash (CSS-driven, instant)
     document.documentElement.setAttribute("data-theme", "sunlight");
     sessionStorage.setItem("theme", "sunlight");
+
+    // Phase 2: video fades in only after actually playing
+    // Reset for rapid re-entry: clear previous ready state before re-registering
+    video.classList.remove("video-ready");
+    video.addEventListener("playing", onVideoPlaying);
     video.play().catch(function () {
-      // Autoplay may be blocked; CSS still applies the visual changes
+      // Autoplay blocked or video failed — static layers are enough
+      video.removeEventListener("playing", onVideoPlaying);
+      clearTimeout(videoReadyTimer);
+      videoReadyTimer = null;
     });
+
+    // Safety: if video hasn't started in 8s, leave it hidden
+    videoReadyTimer = setTimeout(function () {
+      video.removeEventListener("playing", onVideoPlaying);
+      videoReadyTimer = null;
+    }, VIDEO_TIMEOUT_MS);
   }
 
   function exitSunlight() {
+    clearTimeout(videoReadyTimer);
+    videoReadyTimer = null;
+    video.removeEventListener("playing", onVideoPlaying);
+    video.classList.remove("video-ready");
     video.pause();
     video.currentTime = 0;
   }

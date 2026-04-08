@@ -1,5 +1,6 @@
 ---
 title: 内容结构
+uid: 82fd2283
 weight: 2
 description: 文件与文件夹如何转化为页面和导航。
 ---

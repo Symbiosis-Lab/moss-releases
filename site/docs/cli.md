@@ -1,5 +1,6 @@
 ---
 title: CLI Reference
+uid: 239fcc32
 weight: 7
 description: Command-line interface for moss.
 ---

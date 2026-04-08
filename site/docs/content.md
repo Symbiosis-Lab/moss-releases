@@ -1,5 +1,6 @@
 ---
 title: Content Structure
+uid: 9d52d328
 weight: 2
 description: How files and folders become pages and navigation.
 ---

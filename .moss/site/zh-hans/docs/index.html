@@ -9,14 +9,37 @@
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     
     
-    <link rel="stylesheet" href="/style.css?v=8d0fda22e2c5a5da"><link rel="stylesheet" href="/custom.css?v=f259617ebddc5941">
-    <!-- slot:head-end -->
+    <link rel="stylesheet" href="/style.css?v=916b84b1652e786f"><link rel="stylesheet" href="/custom.css?v=e158770530b34a88">
+    <script>fetch('//api.mosspub.com/api/sites/landing/beacon',{method:'POST',body:JSON.stringify({path:location.pathname,referrer:document.referrer}),keepalive:true})</script>
+<style class="moss-email-style">/* Email subscribe form — injected by email plugin enhance hook */
+.footer-subscribe-form {
+  display: flex;
+  gap: var(--moss-space-sm);
+  align-items: baseline;
+  max-width: 18rem;
+}
+
+.footer-subscribe-form .moss-input {
+  flex: 1;
+}
+
+.footer-subscribe-form .moss-btn {
+  font-size: inherit;
+}
+
+@media (max-width: 48rem) {
+  .footer-subscribe-form .moss-input {
+    width: 10ch;
+    flex: none;
+  }
+}
+</style>
 </head>
 <body>
     <header>
         <nav class="main-nav container">
             <div class="nav-content">
-                <div class="nav-left"><a href="/zh-hans/" class="site-name"><img class="site-logo" src="/assets/logo.svg" alt="" aria-hidden="true">青苔</a></div><div class="nav-right"><div class="nav-icons"><div class="nav-lang-toggle" aria-label="Language"><span class="nav-lang-current">简</span> / <a href="/docs/" class="nav-lang-link" hreflang="en">EN</a></div><button class="nav-theme-btn" type="button" aria-label="Toggle theme" onclick="toggleTheme()"><svg class="theme-toggle-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="1em" height="1em" fill="currentColor" stroke-linecap="round" viewBox="0 0 32 32"><clipPath id="theme-toggle__classic__cutout"><path d="M0-5h30a1 1 0 0 0 9 13v24H0Z"/></clipPath><g clip-path="url(#theme-toggle__classic__cutout)"><circle cx="16" cy="16" r="9.34"/><g stroke="currentColor" stroke-width="1"><path d="M16 5.5v-4"/><path d="M16 30.5v-4"/><path d="M1.5 16h4"/><path d="M26.5 16h4"/><path d="m23.4 8.6 2.8-2.8"/><path d="m5.7 26.3 2.9-2.9"/><path d="m5.8 5.8 2.8 2.8"/><path d="m23.4 23.4 2.9 2.9"/></g></g></svg></button></div></div>
+                <div class="nav-left"><a href="/zh-hans/" class="site-name"><img class="site-logo" src="/assets/logo.svg" alt="" aria-hidden="true">青苔</a></div><div class="nav-right"><button class="mobile-menu-button" onclick="toggleMobileMenu()" aria-label="Toggle menu"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="nav-links"><a href="/site/docs/">Documentation</a><a href="/changelog/">Changelog</a><a href="/readme/">moss</a></div><div class="nav-icons"><div class="nav-lang-toggle" aria-label="Language"><span class="nav-lang-current">简</span> / <a href="/docs/" class="nav-lang-link" hreflang="en">EN</a></div><button class="nav-theme-btn" type="button" aria-label="Toggle theme" onclick="toggleTheme()"><svg class="theme-toggle-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="1em" height="1em" fill="currentColor" stroke-linecap="round" viewBox="0 0 32 32"><clipPath id="theme-toggle__classic__cutout"><path d="M0-5h30a1 1 0 0 0 9 13v24H0Z"/></clipPath><g clip-path="url(#theme-toggle__classic__cutout)"><circle cx="16" cy="16" r="9.34"/><g stroke="currentColor" stroke-width="1"><path d="M16 5.5v-4"/><path d="M16 30.5v-4"/><path d="M1.5 16h4"/><path d="M26.5 16h4"/><path d="m23.4 8.6 2.8-2.8"/><path d="m5.7 26.3 2.9-2.9"/><path d="m5.8 5.8 2.8 2.8"/><path d="m23.4 23.4 2.9 2.9"/></g></g></svg></button></div></div>
             </div>
         </nav>
     </header>
@@ -25,24 +48,24 @@
 
     <main>
         <article class="container">
-            <p>了解如何使用青苔将文件夹变成网站。</p><div class="article-listing summary-layout"><a href="/zh-hans/docs/architecture/" class="child-summary"><div class="child-summary-row"><div class="child-summary-body"><h3 class="child-summary-title">架构</h3><p class="child-summary-description">构建流程的内部工作原理。</p></div></div></a>
-<a href="/zh-hans/docs/cli/" class="child-summary"><div class="child-summary-row"><div class="child-summary-body"><h3 class="child-summary-title">命令行参考</h3><p class="child-summary-description">moss 命令行界面。</p></div></div></a>
-<a href="/zh-hans/docs/content/" class="child-summary"><div class="child-summary-row"><div class="child-summary-body"><h3 class="child-summary-title">内容结构</h3><p class="child-summary-description">文件与文件夹如何转化为页面和导航。</p></div></div></a>
-<a href="/zh-hans/docs/customization/" class="child-summary"><div class="child-summary-row"><div class="child-summary-body"><h3 class="child-summary-title">自定义</h3><p class="child-summary-description">通过 CSS 变量修改颜色、字体和布局。</p></div></div></a>
-<a href="/zh-hans/docs/getting-started/" class="child-summary"><div class="child-summary-row"><div class="child-summary-body"><h3 class="child-summary-title">快速入门</h3><p class="child-summary-description">安装 moss，几分钟内发布你的第一个网站。</p></div></div></a>
-<a href="/zh-hans/docs/deploy/" class="child-summary"><div class="child-summary-row"><div class="child-summary-body"><h3 class="child-summary-title">部署</h3><p class="child-summary-description">将你的网站发布到 GitHub Pages。</p></div></div></a>
-<a href="/zh-hans/docs/plugins/" class="child-summary"><div class="child-summary-row"><div class="child-summary-body"><h3 class="child-summary-title">插件与功能</h3><p class="child-summary-description">内置插件和发布、评论等原生功能。</p></div></div></a>
-<a href="/zh-hans/docs/plugin-development/" class="child-summary"><div class="child-summary-row"><div class="child-summary-body"><h3 class="child-summary-title">插件开发</h3><p class="child-summary-description">构建你自己的 moss 插件。</p></div></div></a></div>
+            <p>了解如何使用青苔将文件夹变成网站。</p><div class="moss-article-listing moss-summary-layout"><a href="/zh-hans/docs/architecture/" class="moss-child-summary"><div class="moss-child-summary-row"><div class="moss-child-summary-body"><h3 class="moss-child-summary-title">架构</h3><p class="moss-child-summary-description">构建流程的内部工作原理。</p></div></div></a>
+<a href="/zh-hans/docs/cli/" class="moss-child-summary"><div class="moss-child-summary-row"><div class="moss-child-summary-body"><h3 class="moss-child-summary-title">命令行参考</h3><p class="moss-child-summary-description">moss 命令行界面。</p></div></div></a>
+<a href="/zh-hans/docs/content/" class="moss-child-summary"><div class="moss-child-summary-row"><div class="moss-child-summary-body"><h3 class="moss-child-summary-title">内容结构</h3><p class="moss-child-summary-description">文件与文件夹如何转化为页面和导航。</p></div></div></a>
+<a href="/zh-hans/docs/customization/" class="moss-child-summary"><div class="moss-child-summary-row"><div class="moss-child-summary-body"><h3 class="moss-child-summary-title">自定义</h3><p class="moss-child-summary-description">通过 CSS 变量修改颜色、字体和布局。</p></div></div></a>
+<a href="/zh-hans/docs/getting-started/" class="moss-child-summary"><div class="moss-child-summary-row"><div class="moss-child-summary-body"><h3 class="moss-child-summary-title">快速入门</h3><p class="moss-child-summary-description">安装 moss，几分钟内发布你的第一个网站。</p></div></div></a>
+<a href="/zh-hans/docs/deploy/" class="moss-child-summary"><div class="moss-child-summary-row"><div class="moss-child-summary-body"><h3 class="moss-child-summary-title">部署</h3><p class="moss-child-summary-description">将你的网站发布到 GitHub Pages。</p></div></div></a>
+<a href="/zh-hans/docs/plugins/" class="moss-child-summary"><div class="moss-child-summary-row"><div class="moss-child-summary-body"><h3 class="moss-child-summary-title">插件与功能</h3><p class="moss-child-summary-description">内置插件和发布、评论等原生功能。</p></div></div></a>
+<a href="/zh-hans/docs/plugin-development/" class="moss-child-summary"><div class="moss-child-summary-row"><div class="moss-child-summary-body"><h3 class="moss-child-summary-title">插件开发</h3><p class="moss-child-summary-description">构建你自己的 moss 插件。</p></div></div></a></div>
         </article>
     </main>
 
     <footer class="container">
     <div class="footer-content">
-        <div class="footer-left">
-            
-        </div>
         <div class="footer-right">
-            <!-- slot:footer-right -->
+            <form class="footer-subscribe-form" method="post" action="https://api.mosspub.com/api/sites/landing/subscribe">
+  <input type="email" name="email" class="moss-input" placeholder="your@email.com" required>
+  <button type="submit" class="moss-btn">Subscribe</button>
+</form>
         </div>
     </div>
 </footer>
@@ -57,8 +80,8 @@
         </a>
     </div>
 
-    <script src="/js/theme.js?v=aa573bb1fccb7453"></script>
-    <script src="/custom.js?v=f791a63eeb34cf1a"></script>
-    <!-- slot:body-end -->
+    <script src="/js/theme.js?v=7feda3b590c41eb7"></script>
+    <script src="/custom.js?v=7593ff570b30b2fe"></script>
+    
 </body>
 </html>

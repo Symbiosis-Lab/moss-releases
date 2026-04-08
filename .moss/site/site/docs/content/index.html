@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Structure - moss</title>
+    <meta name="description" content="How files and folders become pages and navigation.">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Content Structure">
+    <meta property="og:url" content="/site/docs/content/">
+    <meta property="og:site_name" content="moss">
+    <meta property="og:description" content="How files and folders become pages and navigation.">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Content Structure",
+  "url": "/site/docs/content/",
+  "description": "How files and folders become pages and navigation.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "moss"
+  }
+}
+</script>
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    
+    
+    <link rel="stylesheet" href="/style.css?v=916b84b1652e786f"><link rel="stylesheet" href="/custom.css?v=e158770530b34a88">
+    <script>fetch('//api.mosspub.com/api/sites/landing/beacon',{method:'POST',body:JSON.stringify({path:location.pathname,referrer:document.referrer}),keepalive:true})</script>
+<style class="moss-email-style">/* Email subscribe form — injected by email plugin enhance hook */
+.footer-subscribe-form {
+  display: flex;
+  gap: var(--moss-space-sm);
+  align-items: baseline;
+  max-width: 18rem;
+}
+
+.footer-subscribe-form .moss-input {
+  flex: 1;
+}
+
+.footer-subscribe-form .moss-btn {
+  font-size: inherit;
+}
+
+@media (max-width: 48rem) {
+  .footer-subscribe-form .moss-input {
+    width: 10ch;
+    flex: none;
+  }
+}
+</style>
+</head>
+<body class="">
+    <header>
+        <nav class="main-nav container">
+            <div class="nav-content">
+                <div class="nav-left"><a href="/" class="site-name"><img class="site-logo" src="/assets/logo.svg" alt="" aria-hidden="true">moss</a><span class="breadcrumb-separator">/</span><a href="/site/" class="breadcrumb-segment">moss</a><span class="breadcrumb-separator">/</span><a href="/site/docs/" class="breadcrumb-segment">Documentation</a></div><div class="nav-right"><button class="mobile-menu-button" onclick="toggleMobileMenu()" aria-label="Toggle menu"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="nav-links"><a href="/site/docs/">Documentation</a><a href="/changelog/">Changelog</a><a href="/readme/">moss</a></div><div class="nav-icons"><div class="nav-lang-toggle" aria-label="Language"><span class="nav-lang-current">EN</span> / <a href="/zh-hans/site/docs/content/" class="nav-lang-link" hreflang="zh-hans">简</a></div><button class="nav-theme-btn" type="button" aria-label="Toggle theme" onclick="toggleTheme()"><svg class="theme-toggle-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="1em" height="1em" fill="currentColor" stroke-linecap="round" viewBox="0 0 32 32"><clipPath id="theme-toggle__classic__cutout"><path d="M0-5h30a1 1 0 0 0 9 13v24H0Z"/></clipPath><g clip-path="url(#theme-toggle__classic__cutout)"><circle cx="16" cy="16" r="9.34"/><g stroke="currentColor" stroke-width="1"><path d="M16 5.5v-4"/><path d="M16 30.5v-4"/><path d="M1.5 16h4"/><path d="M26.5 16h4"/><path d="m23.4 8.6 2.8-2.8"/><path d="m5.7 26.3 2.9-2.9"/><path d="m5.8 5.8 2.8 2.8"/><path d="m23.4 23.4 2.9 2.9"/></g></g></svg></button></div></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <article class="container">
+            <h1 class="article-title">Content Structure</h1>
+            
+            
+            <h2 id="every-file-is-a-page">Every file is a page</h2><p>Every <code>.md</code> file in your folder becomes one page. Every folder becomes one section. There is no configuration step — open a folder in moss and the structure is already there.</p><pre><code>my-site/
+├── index.md          → /
+├── about.md          → /about/
+└── posts/
+    ├── index.md      → /posts/
+    └── hello.md      → /posts/hello/
+</code></pre>
+<h2 id="urls-follow-the-file-path">URLs follow the file path</h2><table>
+<thead><tr><th>File</th><th>URL</th></tr></thead><tbody>
+<tr>
+<td><code>index.md</code></td><td><code>/</code></td></tr>
+<tr>
+<td><code>about.md</code></td><td><code>/about/</code></td></tr>
+<tr>
+<td><code>posts/hello.md</code></td><td><code>/posts/hello/</code></td></tr>
+<tr>
+<td><code>posts/index.md</code></td><td><code>/posts/</code></td></tr>
+<tr>
+<td><code>docs/getting-started.md</code></td><td><code>/docs/getting-started/</code></td></tr>
+</table>
+<p>Use <code>url</code> in frontmatter to override the default URL for any page:</p><pre><code class="language-yaml">---
+title: Hello World
+url: /blog/2024/hello/
+---
+</code></pre>
+<h2 id="folders-become-section-pages">Folders become section pages</h2><p>When a folder has no <code>index.md</code>, moss auto-generates a section page that lists its children. Add an <code>index.md</code> to provide your own content for that page.</p><p>A file named the same as its parent folder also works as the folder index:</p><pre><code>posts/
+├── posts.md     ← serves as /posts/
+└── hello.md     ← serves as /posts/hello/
+</code></pre>
+<h2 id="root-pages-appear-in-navigation-automatically">Root pages appear in navigation automatically</h2><p>Pages at the root level appear in the header navigation. Control this with two frontmatter fields:</p><pre><code class="language-yaml">---
+title: About
+nav: false      # omit from header nav entirely
+weight: 10      # lower numbers appear first
+---
+</code></pre>
+<p>Folders at the root level appear as navigation items when they have a title set in their <code>index.md</code>.</p><h2 id="child-lists-are-shown-by-default">Child lists are shown by default</h2><p>Section pages automatically list their children. Frontmatter controls how that list renders:</p><pre><code class="language-yaml">---
+title: Posts
+children: false           # hide the child list entirely
+children_style: card      # "list" (default) or "card"
+children_group: year      # group by year (also: "none")
+children_depth: all       # "direct" (default) or "all" descendants
+---
+</code></pre>
+<p>Card layout uses the <code>cover</code> image from each child's frontmatter. Set <code>cover_type</code> to <code>"video"</code> or <code>"iframe"</code> for non-image covers.</p><h2 id="sort-order-is-predictable">Sort order is predictable</h2><p>Within any section, children are sorted in this order:</p><ol start="1">
+<li>Subfolders, alphabetically</li>
+<li>Files with a <code>date</code>, newest first</li>
+<li>Files without a <code>date</code>, alphabetically</li>
+</ol>
+<p>Override with <code>weight</code> — lower weights sort first, ahead of any date-based ordering.</p><h2 id="visibility-has-three-levels">Visibility has three levels</h2><table>
+<thead><tr><th>Setting</th><th>Generated</th><th>Lists</th><th>Sitemap</th></tr></thead><tbody>
+<tr>
+<td><em>(default)</em></td><td>yes</td><td>yes</td><td>yes</td></tr>
+<tr>
+<td><code>unlisted: true</code></td><td>yes</td><td>no</td><td>no</td></tr>
+<tr>
+<td><code>draft: true</code></td><td>no</td><td>no</td><td>no</td></tr>
+</table>
+<p>Prefix a folder name with <code>_</code> to exclude it entirely from processing:</p><pre><code>my-site/
+├── _drafts/      ← ignored completely
+└── posts/        ← processed normally
+</code></pre>
+<h2 id="frontmatter-reference">Frontmatter reference</h2><table>
+<thead><tr><th>Field</th><th>Type</th><th>Purpose</th></tr></thead><tbody>
+<tr>
+<td><code>title</code></td><td>string</td><td>Page title</td></tr>
+<tr>
+<td><code>date</code></td><td>string</td><td>Publication date (YYYY-MM-DD)</td></tr>
+<tr>
+<td><code>weight</code></td><td>integer</td><td>Nav/list ordering (lower = first)</td></tr>
+<tr>
+<td><code>url</code></td><td>string</td><td>Custom URL override</td></tr>
+<tr>
+<td><code>cover</code></td><td>string</td><td>Cover image for card layouts</td></tr>
+<tr>
+<td><code>cover_type</code></td><td>string</td><td><code>"video"</code>, <code>"iframe"</code>, or <code>"image"</code></td></tr>
+<tr>
+<td><code>nav</code></td><td>boolean</td><td>Show in header navigation</td></tr>
+<tr>
+<td><code>draft</code></td><td>boolean</td><td>Skip generation entirely</td></tr>
+<tr>
+<td><code>unlisted</code></td><td>boolean</td><td>Generate but hide from lists/sitemap</td></tr>
+<tr>
+<td><code>description</code></td><td>string</td><td>SEO meta description, list previews</td></tr>
+<tr>
+<td><code>tags</code></td><td>list</td><td>Content tags</td></tr>
+<tr>
+<td><code>children</code></td><td>boolean</td><td>Show child page list (default: true)</td></tr>
+<tr>
+<td><code>sidebar</code></td><td>string</td><td>Wikilink to folder for sidebar</td></tr>
+<tr>
+<td><code>children_style</code></td><td>string</td><td><code>"list"</code> (default) or <code>"card"</code></td></tr>
+<tr>
+<td><code>children_group</code></td><td>string</td><td><code>"year"</code> or <code>"none"</code></td></tr>
+<tr>
+<td><code>children_depth</code></td><td>string</td><td><code>"direct"</code> (default) or <code>"all"</code></td></tr>
+<tr>
+<td><code>series</code></td><td>bool/list</td><td>Series declaration</td></tr>
+<tr>
+<td><code>breadcrumb</code></td><td>boolean</td><td>Override site-wide breadcrumb</td></tr>
+<tr>
+<td><code>footer</code></td><td>boolean</td><td>Override site-wide footer</td></tr>
+<tr>
+<td><code>cascade</code></td><td>map</td><td>Push values to all descendants</td></tr>
+<tr>
+<td><code>also_in</code></td><td>list</td><td>Folder paths where article also appears</td></tr>
+<tr>
+<td><code>lang</code></td><td>string</td><td>Language override (<code>"en"</code>, <code>"zh-hans"</code>)</td></tr>
+<tr>
+<td><code>translationKey</code></td><td>string</td><td>Link files as translations</td></tr>
+<tr>
+<td><code>comments</code></td><td>boolean</td><td>Show comments (default: true)</td></tr>
+<tr>
+<td><code>uid</code></td><td>string</td><td>Content-addressable ID (auto-generated)</td></tr>
+<tr>
+<td><code>layout</code></td><td>string</td><td>Template override: <code>"page"</code> or <code>"article"</code></td></tr>
+<tr>
+<td><code>review_of</code></td><td>string</td><td>URL of reviewed work</td></tr>
+<tr>
+<td><code>rating</code></td><td>integer</td><td>Rating (1–5) for reviews</td></tr>
+</table>
+<p>Use <code>cascade</code> to push a value to all descendants without repeating it on every file:</p><pre><code class="language-yaml">---
+title: Posts
+cascade:
+  comments: false
+---
+</code></pre>
+<h2 id="bilingual-content-is-file-name-based">Bilingual content is file-name-based</h2><p>Append a language suffix to the filename to create a translation:</p><table>
+<thead><tr><th>File</th><th>Language</th></tr></thead><tbody>
+<tr>
+<td><code>about.md</code></td><td>site default</td></tr>
+<tr>
+<td><code>about.zh-hans.md</code></td><td>Simplified Chinese</td></tr>
+<tr>
+<td><code>about.en.md</code></td><td>English (explicit)</td></tr>
+</table>
+<p>Language is resolved in this priority order: <code>lang</code> frontmatter → filename suffix → content auto-detection → site default.</p><p>For translations with different filenames, use <code>translationKey</code> to link them:</p><pre><code class="language-yaml"># posts/hello.md
+---
+translationKey: hello-post
+---
+
+# posts/ni-hao.md
+---
+translationKey: hello-post
+lang: zh-hans
+---
+</code></pre>
+<h2 id="shortcodes-extend-markdown">Shortcodes extend Markdown</h2><p>Shortcodes use <code>:::</code> block syntax. Each one closes with <code>:::</code>.</p><p><strong>Hero image:</strong></p><pre><code class="language-markdown">:::hero image.jpg
+# Headline text
+:::
+</code></pre>
+<p><strong>Grid layout:</strong></p><pre><code class="language-markdown">:::grid 3
+Content in column one.
+
+Content in column two.
+
+Content in column three.
+:::
+</code></pre>
+<p><strong>Image gallery:</strong></p><pre><code class="language-markdown">:::gallery
+![](photo1.jpg)
+![](photo2.jpg)
+![](photo3.jpg)
+:::
+</code></pre>
+<p><strong>Table of contents:</strong></p><pre><code class="language-markdown">&lt;!--MOSS_TOC_PLACEHOLDER--&gt;
+:::
+</code></pre>
+<p><strong>Callout block:</strong></p><pre><code class="language-markdown">:::callout warning
+This action cannot be undone.
+:::
+</code></pre>
+<p>Valid <code>callout</code> types: <code>note</code>, <code>warning</code>, <code>tip</code>.</p>
+            
+        </article>
+        
+    </main>
+
+    <footer class="container">
+    <div class="footer-content">
+        <div class="footer-right">
+            <form class="footer-subscribe-form" method="post" action="https://api.mosspub.com/api/sites/landing/subscribe">
+  <input type="email" name="email" class="moss-input" placeholder="your@email.com" required>
+  <button type="submit" class="moss-btn">Subscribe</button>
+</form>
+        </div>
+    </div>
+</footer>
+
+    <div class="moss-colophon">
+        <a href="https://mosspub.com" target="_blank" rel="noopener">
+            <svg class="moss-colophon-icon" viewBox="-104 -105 1040 1049" aria-hidden="true">
+                <path fill="currentColor" d="M353.48,284.25c-.03-15.35-13.3-28.68-13.02-44.45.35-19.97,18.62-25.1,30.84-8.86,12.27,16.3,27.25,65.59,47.13,69.87,15.6,3.35,20.22-16.43,21.94-28.17,5.43-37.03,2.88-91.03.11-128.87-2.46-33.57-12.68-77.8.53-109.49,17.73-42.53,73.6-44.58,77.52,8.44,4.69,63.45-37.31,106.54-49.55,165.53-5.67,27.31-8.23,57.64-2,85.02,19.85,87.26,94.44-18.36,112.68-50.34,13.98-24.51,21.56-49.75,33.65-74.35,19.23-39.11,66.57-62.1,108.53-45.18,44.94,18.11,81.36,85.88,50.86,129.58-37.72,54.04-106.18,41.29-161.99,58.01-41.56,12.45-108.6,50.47-77.04,102.57,96.58,122.22,255.01,39.13,292.28,120.71,29.53,71.29-56.2,113.61-111.95,65.96-38.52-32.93-55.04-71.51-106.17-94.83-29.67-13.53-103.71-33.13-108.34,17.37-4.16,45.33,25.72,119.74,60.51,149.46,33.53,28.64,97.03,38.28,85.03,98.08-13.73,68.47-105.62,67.48-126.06-3.06-12.57-43.4-9.75-82.04-29.64-126.36-55.05-116.5-115.66-82.39-139.54,26.18-7,41.15,6.09,99.52-10.83,134.17-31.94,65.42-164.26,43.33-146.82-44.82,12.11-61.23,75.42-87.7,113.85-130.15,23.54-26.01,55.01-74.29,53.48-110.49-1.78-42.18-56.04-34.72-83.51-24.54-50.66,18.76-80.01,59.74-121.57,89.43-93.63,63.58-119.86-32.28-16.9-64.89,65.1-21.66,293.15-94.81,110.19-138.23-66.85-11.86-140.47,18.99-201.56-8.43-79.79-35.81-49.11-122.17,38.84-115.84,67.02,4.82,91.74,51.13,145.15,76.85,22.9,11.03,76.48,27.18,100.58,19.86,31.23-9.49,4.33-41.63,9.89-60.12,1.92-6.38,6.93-8.21,12.88-5.6Z"/>
+                <path fill="#91c127" d="M323.18,241.93c-13.07,8.61-21.8-13.96-28.28-22.59-7.94-10.58-16.74-21.56-25.9-31.1-28.12-29.26-66.01-47.97-72.39-92.61C189.42,45.37,218.91-3.67,274.03.22c82.95,5.85,62.53,119.82,75.51,175.59-2.67,10.44-9.56-.19-15.56-.6-23.21,1.86,16.7,52.67-10.8,66.73Z"/>
+            </svg>
+            Published with moss
+        </a>
+    </div>
+
+    <script src="/js/theme.js?v=7feda3b590c41eb7"></script>
+    <script src="/custom.js?v=7593ff570b30b2fe"></script>
+    
+</body>
+</html>

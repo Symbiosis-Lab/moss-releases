@@ -1,5 +1,6 @@
 ---
 title: Plugin Development
+uid: 696bf5d3
 weight: 8
 description: Build your own moss plugins.
 ---
