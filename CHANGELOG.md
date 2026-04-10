@@ -2,6 +2,60 @@
 
 All notable changes to moss will be documented here.
 
+## [0.6.1] - 2026-04-10
+
+### Added
+- support PNG and ICO favicons in addition to SVG
+- website button opens settings when it's the sole channel
+- wire redirect system into build pipeline and deploy snapshot
+- switch generate_uid to random hex and add redirect path helpers
+- upgrade reqwest 0.11 -> 0.12 for HTTP/2 support
+- use bulk upload for faster deploys
+- add redirects module with pure redirect logic and tests (Task A)
+- highlight active footer link, matching nav behavior
+- unify divider snap/curve triggers + fix full-width titlebar layout
+- add updateActionPanelBump Tauri command binding
+- migrate [deployment] from config.toml to state.toml for existing sites
+
+### Fixed
+- correct article-map.json path in cli_tests
+- remove header padding gap above hero section
+- update stale comments referencing old threshold values
+- improve mobile footer layout — stack vertically, widen subscribe form
+- replace broken @tauri-apps/plugin-fs calls with Tauri commands
+- prevent rebuild loop from save_site_lang writing config.toml
+- show accurate upload progress during bulk deploy
+- add re-entry guard to async handleMouseDown
+- service toggles now trigger preview rebuild
+- emit per-file progress during bulk upload, extend deploy stale timeout
+- skip JupyterLite HTML in slot injection
+- auto-configure custom domains for moss-hosted sites
+- use append_data for tar paths longer than 100 bytes
+- address code review findings
+- use absolute URLs in redirect stubs
+- use real SHA-256 hashes for notebook outputs instead of sentinel
+- address architecture review findings
+- add upload_url origin validation and path traversal protection
+- improve chain resolution with cycle detection and use log::warn
+- simplify first_error to plain Option after mutex removal
+- remove mutex serialization in file uploads for true concurrency
+- divider position architecture — localStorage as single source of truth
+- layout-btn shows only in full-width + clamp restore position
+- remove index.lock before write-tree to handle iCloud re-locking
+- deploy heartbeat re-emits last known step instead of hardcoded 5/10
+- await Rust command before hiding layout-btn, keep button always visible
+- editor at y=0 in full-width mode so breadcrumb sits on titlebar
+- correct divider curve direction + restore full-width pencil button
+- GitHub Pages deploy pushes from .moss/build/site/ (not stale .moss/site/)
+- review feedback — push preview offscreen below window, fix stale comment
+- restore JupyterLite assets path to ~/.moss/assets/
+- reduce check_subscription logging verbosity and simplify error handling
+- decode URL-encoded pathname before syndication article lookup
+- await toggle save before re-rendering to prevent UI/config desync
+- close sub-pixel gap between card cover and content
+- left-drag bump not showing + pencil icon broken after snap
+
+
 ## [0.6.0] - 2026-04-08
 
 ### Added
