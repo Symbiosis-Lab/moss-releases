@@ -1,25 +1,22 @@
 ---
 title: Documentation
-nav: true
+uid: b4d68dc8
 weight: 1
 description: Learn how to use moss to turn folders into websites.
+translationKey: docs
 ---
 
-moss turns a folder of markdown files into a website.
+Right-click any folder in Finder and choose **Publish with moss**. If the folder has markdown files, you already have a website. If it's empty, moss opens the editor so you can create your first page.
 
-## Using moss
+Every `.md` file becomes a page. Every subfolder becomes a section. `index.md` in any folder becomes that folder's page.
 
-- [Getting Started](getting-started.md) — Install and publish your first site
-- [Content Structure](content.md) — How files become pages
-- [Customization](customization.md) — Colors, fonts, and layout
-- [Deploy](deploy.md) — Publish to GitHub Pages
-- [Plugins](plugins.md) — Matters.town syndication
+```
+my-site/
+├── index.md        ← your homepage
+├── about.md        ← /about/
+└── posts/
+    ├── index.md    ← /posts/
+    └── hello.md    ← /posts/hello/
+```
 
-## Understanding moss
-
-- [Architecture](architecture.md) — How the build pipeline works
-- [CLI Reference](cli.md) — Command-line interface
-
-## Extending moss
-
-- [Plugin Development](plugin-development.md) — Build your own plugins
+[[media|Images, videos, and notebooks]] go in the same folder — just reference them from markdown and moss handles the rest.

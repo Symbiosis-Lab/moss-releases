@@ -1,8 +1,10 @@
 ---
+title: moss
+lang: en
+translationKey: homepage
+uid: a48746ca
 children: false
 description: A desktop app that turns folders into websites.
-uid: a48746ca
-title: moss
 logo: assets/logo.svg
 ---
 
@@ -12,15 +14,17 @@ A desktop app that turns your folder of markdown files into a website.
 Right-click → your site is live.
 
 :::buttons
-[Download for macOS](https://github.com/Symbiosis-Lab/moss-releases/releases/latest)
+[Download for macOS](https://github.com/Symbiosis-Lab/moss-releases/releases/latest/download/moss.dmg)
 [Documentation](docs/)
 :::
+
+This is beta software still in testing. Please submit [an issue](https://github.com/Symbiosis-Lab/moss-releases/issues) or send us [an email](mailto:hi@symbiosis-lab.org) to let us know what you think.
 
 :::grid 3
 **Write**
 
 Markdown files.
-Use Obsidian, Typora, or the default editor.
+Use the default editor, Obsidian, Typora, or any other software.
 ---
 **Right-click**
 
@@ -37,8 +41,12 @@ Your files never leave your computer. No account needed to preview. No server to
 
 ## Publish anywhere
 
-Deploy to GitHub Pages with one click. Syndicate articles to [Matters.town](https://matters.town). Add comments to any page. Each is a feature you enable in settings.
+Standard static pages, hosted on any server. Publish to your own site, syndicate to platforms, sync back comments.
 
-## For developers
+## Multimedia, handled
 
-moss is a Tauri v2 desktop app with a Rust compilation engine and a JavaScript plugin system. The CLI works in automation and CI. See [Architecture](docs/architecture.md) and [Plugin Development](docs/plugin-development.md).
+Videos, images, HTML, Jupyter notebooks. Drop them in the folder, moss handles the rest.
+
+## Fully extensible
+
+Customize with CSS and JavaScript. Build plugins by dropping scripts into a folder. moss also works as a CLI for automation and CI. See [Extend](docs/extend/) for details.

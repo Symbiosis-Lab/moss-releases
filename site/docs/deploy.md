@@ -1,7 +1,9 @@
 ---
 title: Deploy
+uid: 36d59578
 weight: 4
 description: Publish your site to GitHub Pages.
+translationKey: docs-deploy
 ---
 
 ## Prerequisites
