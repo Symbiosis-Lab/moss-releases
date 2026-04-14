@@ -1,0 +1,41 @@
+:root {
+  --moss-color-bg: #f8f5f0;
+  --moss-color-text: #1a1a1a;
+  --moss-color-accent: #c04020;
+  --moss-color-surface: #f0ebe3;
+  --moss-color-muted: #7a7570;
+  --moss-font-body: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+}
+
+/* ── Painting/calligraphy display: full-width, image only ── */
+
+.moss-hero.plate {
+  max-height: none;
+}
+
+.moss-hero.plate img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.moss-hero.plate::before {
+  display: none;
+}
+
+body:has(.moss-hero.plate) main .container {
+  display: none;
+}
+
+@media (max-width: 48rem) {
+  .moss-hero.plate {
+    aspect-ratio: auto;
+  }
+
+  .moss-hero.plate img {
+    position: static;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}

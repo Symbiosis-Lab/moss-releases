@@ -1,0 +1,205 @@
+{
+  "articles": {
+    "書/扇面/": {
+      "source_path": "書/扇面.md",
+      "title": "扇面",
+      "content": "![书法·扇面](书法-扇面.jpg)\n\n扇面小幅，笔墨不减。字随扇形而布，疏密有致。\n\n小中见大，方寸之间自有天地。",
+      "html_content": "<p><img src=\"../书法-扇面.jpg\" data-placeholder-src=\"../书法-扇面.jpg\" width=\"800\" height=\"600\" loading=\"lazy\" alt=\"书法·扇面\" /></p><p>扇面小幅，笔墨不减。字随扇形而布，疏密有致。</p><p>小中见大，方寸之间自有天地。</p>",
+      "frontmatter": {
+        "cover": "扇面.jpg",
+        "description": "纸本水墨。扇面。",
+        "uid": "f48bcf3c"
+      },
+      "url_path": "書/扇面/",
+      "date": null,
+      "tags": [],
+      "uid": "f48bcf3c"
+    },
+    "畫/荷花禽鸟图/": {
+      "source_path": "畫/荷花禽鸟图.md",
+      "title": "荷花禽鸟图",
+      "content": "![荷花禽鸟图](荷花禽鸟图.jpg)\n\n荷塘之中，禽鸟数只，或栖或立。荷叶以大笔湿墨写出，浓淡相间。水面不画一笔，而水意自在。\n\n河上花，河上花，不知人世几繁华。天将秋水来交换，一夜凉风送到家。",
+      "html_content": "<p><img src=\"../荷花禽鸟图.jpg\" data-placeholder-src=\"../荷花禽鸟图.jpg\" width=\"3891\" height=\"1840\" loading=\"lazy\" style=\"background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/wAARCAAJABQDAREAAhEBAxEB/9sAQwAoHB4jHhkoIyEjLSsoMDxkQTw3Nzx7WF1JZJGAmZaPgIyKoLTmw6Cq2q2KjMj/y9ru9f///5vB////+v/m/f/4/9sAQwErLS08NTx2QUF2+KWMpfj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwBZXSPGR9KgojEkmTlcDtmmBKpXb/rAfxpAI/agCKboPrTQDBTEf//Z);background-size:cover\" alt=\"荷花禽鸟图\" /></p><p>荷塘之中，禽鸟数只，或栖或立。荷叶以大笔湿墨写出，浓淡相间。水面不画一笔，而水意自在。</p><p>河上花，河上花，不知人世几繁华。天将秋水来交换，一夜凉风送到家。</p>",
+      "frontmatter": {
+        "description": "纸本水墨。手卷。",
+        "cover": "荷花禽鸟图.jpg",
+        "uid": "d5a9f3e0"
+      },
+      "url_path": "畫/荷花禽鸟图/",
+      "date": null,
+      "tags": [],
+      "uid": "d5a9f3e0"
+    },
+    "文/磨墨记/": {
+      "source_path": "文/磨墨记.md",
+      "title": "磨墨记",
+      "content": "晨起，取墨于砚。\n\n墨须慢磨。急则墨浮，浮则无骨。研墨如参禅，不在速，在定。砚面微湿，墨锭轻按，顺时而转。百转之后，墨始浓。浓墨如漆，可写骨。淡墨如烟，可写远。浓淡之间，万物皆在。\n\n今日研墨半个时辰。窗外雀声不断。磨完方觉手凉。\n\n纸是泾县宣纸，去年友人所赠，薄而韧，吃墨极好。笔是湖州羊毫，用了三年，锋已秃，反倒趁手。新笔太利，如新交之人，不知其性。旧笔如旧友，一触即知深浅。\n\n山人年老，不能远游。唯以笔墨自娱而已。",
+      "html_content": "<p>晨起，取墨于砚。</p><p>墨须慢磨。急则墨浮，浮则无骨。研墨如参禅，不在速，在定。砚面微湿，墨锭轻按，顺时而转。百转之后，墨始浓。浓墨如漆，可写骨。淡墨如烟，可写远。浓淡之间，万物皆在。</p><p>今日研墨半个时辰。窗外雀声不断。磨完方觉手凉。</p><p>纸是泾县宣纸，去年友人所赠，薄而韧，吃墨极好。笔是湖州羊毫，用了三年，锋已秃，反倒趁手。新笔太利，如新交之人，不知其性。旧笔如旧友，一触即知深浅。</p><p>山人年老，不能远游。唯以笔墨自娱而已。</p>",
+      "frontmatter": {
+        "title": "磨墨记",
+        "description": "晨起磨墨。",
+        "uid": "a00daa8a"
+      },
+      "url_path": "文/磨墨记/",
+      "date": null,
+      "tags": [],
+      "uid": "a00daa8a"
+    },
+    "畫/山水/": {
+      "source_path": "畫/山水.md",
+      "title": "山水",
+      "content": "![山水](山水.jpg)\n\n仿郭忠恕笔意，而山形倾侧，树木扭曲，似稳实危。此中有真意，欲辨已忘言。",
+      "html_content": "<p><img src=\"../山水.jpg\" data-placeholder-src=\"../山水.jpg\" width=\"386\" height=\"893\" loading=\"lazy\" style=\"background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/wAARCAAUAAkDAREAAhEBAxEB/9sAQwAoHB4jHhkoIyEjLSsoMDxkQTw3Nzx7WF1JZJGAmZaPgIyKoLTmw6Cq2q2KjMj/y9ru9f///5vB////+v/m/f/4/9sAQwErLS08NTx2QUF2+KWMpfj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwC1nkjI+lQUOoAhkbGT/KgCTdQAMobrQA3YPegD/9k=);background-size:cover\" alt=\"山水\" /></p><p>仿郭忠恕笔意，而山形倾侧，树木扭曲，似稳实危。此中有真意，欲辨已忘言。</p>",
+      "frontmatter": {
+        "description": "纸本水墨。立轴。仿郭忠恕。",
+        "cover": "山水.jpg",
+        "uid": "44944db0"
+      },
+      "url_path": "畫/山水/",
+      "date": null,
+      "tags": [],
+      "uid": "44944db0"
+    },
+    "畫/鱼/": {
+      "source_path": "畫/鱼.md",
+      "title": "鱼",
+      "content": "![鱼](鱼.jpg)\n\n左右此何水，名之曰曲阿。\n更求渊注处，料得到无多。\n\n鱼目向上，不看来者。人问余何以画鱼如此。余不答。鱼知鱼所见。",
+      "html_content": "<p><img src=\"../鱼.jpg\" data-placeholder-src=\"../鱼.jpg\" width=\"2339\" height=\"3994\" loading=\"lazy\" style=\"background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/wAARCAAUAAwDAREAAhEBAxEB/9sAQwAoHB4jHhkoIyEjLSsoMDxkQTw3Nzx7WF1JZJGAmZaPgIyKoLTmw6Cq2q2KjMj/y9ru9f///5vB////+v/m/f/4/9sAQwErLS08NTx2QUF2+KWMpfj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCwp4HtUjGy/eH0pAOG1V3H0pgMdt204xkdKQD1GUGfSgZHIMEc54oEf//Z);background-size:cover\" alt=\"鱼\" /></p><p>左右此何水，名之曰曲阿。\n更求渊注处，料得到无多。</p><p>鱼目向上，不看来者。人问余何以画鱼如此。余不答。鱼知鱼所见。</p>",
+      "frontmatter": {
+        "description": "纸本水墨。",
+        "cover": "鱼.jpg",
+        "uid": 21392846
+      },
+      "url_path": "畫/鱼/",
+      "date": null,
+      "tags": [],
+      "uid": "dc981a23"
+    },
+    "畫/山水册/": {
+      "source_path": "畫/山水册.md",
+      "title": "山水册",
+      "content": "![山水册](山水册.jpg)\n\n山不高而有气，水不深而有意。皴法从董源来，而笔墨全是自家面目。\n\n山川不言，自有其道。",
+      "html_content": "<p><img src=\"../山水册.jpg\" data-placeholder-src=\"../山水册.jpg\" width=\"1496\" height=\"1882\" loading=\"lazy\" style=\"background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/wAARCAAUABADAREAAhEBAxEB/9sAQwAoHB4jHhkoIyEjLSsoMDxkQTw3Nzx7WF1JZJGAmZaPgIyKoLTmw6Cq2q2KjMj/y9ru9f///5vB////+v/m/f/4/9sAQwErLS08NTx2QUF2+KWMpfj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDQ6DrUlCAktzwKAGkgc5oAUNnnsaAE2g9RQABB1pAf/9k=);background-size:cover\" alt=\"山水册\" /></p><p>山不高而有气，水不深而有意。皴法从董源来，而笔墨全是自家面目。</p><p>山川不言，自有其道。</p>",
+      "frontmatter": {
+        "uid": "9285f333",
+        "cover": "山水册.jpg",
+        "description": "纸本水墨。册页。"
+      },
+      "url_path": "畫/山水册/",
+      "date": null,
+      "tags": [],
+      "uid": "9285f333"
+    },
+    "文/鱼目/": {
+      "source_path": "文/鱼目.md",
+      "title": "鱼目",
+      "content": "人问余何以画鱼皆白眼向天。\n\n余不能答。或曰不愿答。\n\n鱼在水中，水在天下。天下易主，水未曾变。鱼亦未曾变。鱼目所见，非尔所见。\n\n有人说此是遗民之愤。有人说此是禅家之悟。有人说画鱼就是画鱼。\n\n皆对。皆不对。\n\n余写八大山人四字，或似哭之，或似笑之。问余哭耶笑耶，余亦不知。\n\n鱼不解释自己的眼睛。",
+      "html_content": "<p>人问余何以画鱼皆白眼向天。</p><p>余不能答。或曰不愿答。</p><p>鱼在水中，水在天下。天下易主，水未曾变。鱼亦未曾变。鱼目所见，非尔所见。</p><p>有人说此是遗民之愤。有人说此是禅家之悟。有人说画鱼就是画鱼。</p><p>皆对。皆不对。</p><p>余写八大山人四字，或似哭之，或似笑之。问余哭耶笑耶，余亦不知。</p><p>鱼不解释自己的眼睛。</p>",
+      "frontmatter": {
+        "title": "鱼目",
+        "description": "人问余何以画鱼皆白眼向天。",
+        "uid": "c2cec882"
+      },
+      "url_path": "文/鱼目/",
+      "date": null,
+      "tags": [],
+      "uid": "c2cec882"
+    },
+    "畫/鱼石图/": {
+      "source_path": "畫/鱼石图.md",
+      "title": "鱼石图",
+      "content": "![鱼石图](鱼石图.jpg)\n\n鱼游石间，石立水中。鱼不知石，石不知鱼。各安其所，各得其乐。\n\n手卷横展，如行水边，一路看去，鱼石相伴。",
+      "html_content": "<p><img src=\"../鱼石图.jpg\" data-placeholder-src=\"../鱼石图.jpg\" width=\"900\" height=\"118\" loading=\"lazy\" style=\"background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/wAARCAADABQDAREAAhEBAxEB/9sAQwAoHB4jHhkoIyEjLSsoMDxkQTw3Nzx7WF1JZJGAmZaPgIyKoLTmw6Cq2q2KjMj/y9ru9f///5vB////+v/m/f/4/9sAQwErLS08NTx2QUF2+KWMpfj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwC/dEiLipGRKcgZ9KQyROFoA//Z);background-size:cover\" alt=\"鱼石图\" /></p><p>鱼游石间，石立水中。鱼不知石，石不知鱼。各安其所，各得其乐。</p><p>手卷横展，如行水边，一路看去，鱼石相伴。</p>",
+      "frontmatter": {
+        "cover": "鱼石图.jpg",
+        "uid": "11ff0c98",
+        "description": "纸本水墨。手卷。"
+      },
+      "url_path": "畫/鱼石图/",
+      "date": null,
+      "tags": [],
+      "uid": "11ff0c98"
+    },
+    "畫/荷花水鸟图/": {
+      "source_path": "畫/荷花水鸟图.md",
+      "title": "荷花水鸟图",
+      "content": "![荷花水鸟图](荷花水鸟图.jpg)\n\n荷茎一笔而成，自下而上，不曾断续。叶以湿墨大写，浓淡自分。水鸟栖于荷下，静如入定。\n\n半亩方塘一鉴开，天光云影共徘徊。",
+      "html_content": "<p><img src=\"../荷花水鸟图.jpg\" data-placeholder-src=\"../荷花水鸟图.jpg\" width=\"981\" height=\"2250\" loading=\"lazy\" style=\"background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/wAARCAAUAAkDAREAAhEBAxEB/9sAQwAoHB4jHhkoIyEjLSsoMDxkQTw3Nzx7WF1JZJGAmZaPgIyKoLTmw6Cq2q2KjMj/y9ru9f///5vB////+v/m/f/4/9sAQwErLS08NTx2QUF2+KWMpfj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwC0/DHqcmgCzj3oAgJXcyjqDzQBYzQBXKDJOT1oAmoA/9k=);background-size:cover\" alt=\"荷花水鸟图\" /></p><p>荷茎一笔而成，自下而上，不曾断续。叶以湿墨大写，浓淡自分。水鸟栖于荷下，静如入定。</p><p>半亩方塘一鉴开，天光云影共徘徊。</p>",
+      "frontmatter": {
+        "description": "纸本水墨。立轴。",
+        "uid": "bc928581",
+        "cover": "荷花水鸟图.jpg"
+      },
+      "url_path": "畫/荷花水鸟图/",
+      "date": null,
+      "tags": [],
+      "uid": "bc928581"
+    },
+    "畫/孤禽图/": {
+      "source_path": "畫/孤禽图.md",
+      "title": "孤禽图",
+      "content": "![孤禽图](孤禽图.jpg)\n\n孤鸟立于危石之上，缩颈敛翼，白眼向天。石不过数笔，鸟不过数笔，余皆空白。\n\n空白即是天地。",
+      "html_content": "<p><img src=\"../孤禽图.jpg\" data-placeholder-src=\"../孤禽图.jpg\" width=\"3668\" height=\"2769\" loading=\"lazy\" style=\"background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/wAARCAAPABQDAREAAhEBAxEB/9sAQwAoHB4jHhkoIyEjLSsoMDxkQTw3Nzx7WF1JZJGAmZaPgIyKoLTmw6Cq2q2KjMj/y9ru9f///5vB////+v/m/f/4/9sAQwErLS08NTx2QUF2+KWMpfj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwC60jBiB2qCgLsOfagBUO4ZNMBDGSScjk0gEMZJHTgUAKnyjBpgf//Z);background-size:cover\" alt=\"孤禽图\" /></p><p>孤鸟立于危石之上，缩颈敛翼，白眼向天。石不过数笔，鸟不过数笔，余皆空白。</p><p>空白即是天地。</p>",
+      "frontmatter": {
+        "uid": "4239a516",
+        "cover": "孤禽图.jpg",
+        "description": "纸本水墨。"
+      },
+      "url_path": "畫/孤禽图/",
+      "date": null,
+      "tags": [],
+      "uid": "4239a516"
+    },
+    "文/石涛来访/": {
+      "source_path": "文/石涛来访.md",
+      "title": "石涛来访",
+      "content": "石涛自扬州来南昌，至草堂小坐。\n\n十年不见，他胖了些，话也多了些。他说扬州的盐商喜欢买画，出手阔绰。我说我知道。他说你应该去。我说我不去。\n\n他看了案上新画的鱼，说：你的鱼还是翻白眼。我说：鱼生来如此。他大笑。\n\n饮酒至暮。他取纸画了一幅山水，笔墨纵横，与我全然不同。他画中有千山万壑，我画中只有一鸟一石。他说：你减到不能再减。我说：我还嫌多。\n\n他走时，将那幅山水留下。我把新画的鱼送了他。\n\n夜深回想，石涛的画如大江奔流，我的画如古井无波。各有各的水。",
+      "html_content": "<p>石涛自扬州来南昌，至草堂小坐。</p><p>十年不见，他胖了些，话也多了些。他说扬州的盐商喜欢买画，出手阔绰。我说我知道。他说你应该去。我说我不去。</p><p>他看了案上新画的鱼，说：你的鱼还是翻白眼。我说：鱼生来如此。他大笑。</p><p>饮酒至暮。他取纸画了一幅山水，笔墨纵横，与我全然不同。他画中有千山万壑，我画中只有一鸟一石。他说：你减到不能再减。我说：我还嫌多。</p><p>他走时，将那幅山水留下。我把新画的鱼送了他。</p><p>夜深回想，石涛的画如大江奔流，我的画如古井无波。各有各的水。</p>",
+      "frontmatter": {
+        "title": "石涛来访",
+        "description": "故人自扬州来。",
+        "uid": "70e529fa"
+      },
+      "url_path": "文/石涛来访/",
+      "date": null,
+      "tags": [],
+      "uid": "70e529fa"
+    },
+    "書/兰亭序/": {
+      "source_path": "書/兰亭序.md",
+      "title": "兰亭序",
+      "content": "![书法·兰亭序](书法-兰亭序.jpg)\n\n临右军兰亭集序。笔意在篆隶行草之间，不拘一体。字如人立，各有姿态，偏而不倒。\n\n书者，心画也。",
+      "html_content": "<p><img src=\"../书法-兰亭序.jpg\" data-placeholder-src=\"../书法-兰亭序.jpg\" width=\"800\" height=\"600\" loading=\"lazy\" alt=\"书法·兰亭序\" /></p><p>临右军兰亭集序。笔意在篆隶行草之间，不拘一体。字如人立，各有姿态，偏而不倒。</p><p>书者，心画也。</p>",
+      "frontmatter": {
+        "uid": "694ec09f",
+        "cover": "兰亭序.jpg",
+        "description": "纸本水墨。临王羲之兰亭集序。"
+      },
+      "url_path": "書/兰亭序/",
+      "date": null,
+      "tags": [],
+      "uid": "694ec09f"
+    },
+    "畫/枯木来禽图/": {
+      "source_path": "畫/枯木来禽图.md",
+      "title": "枯木来禽图",
+      "content": "![枯木来禽图](枯木来禽图.jpg)\n\n枯枝横斜，以飞白出之，笔中有枯，枯中有骨。二禽栖于其上，相对无言。\n\n树已无叶，鸟犹不去。",
+      "html_content": "<p><img src=\"../枯木来禽图.jpg\" data-placeholder-src=\"../枯木来禽图.jpg\" width=\"2290\" height=\"4000\" loading=\"lazy\" style=\"background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/wAARCAAUAAsDAREAAhEBAxEB/9sAQwAoHB4jHhkoIyEjLSsoMDxkQTw3Nzx7WF1JZJGAmZaPgIyKoLTmw6Cq2q2KjMj/y9ru9f///5vB////+v/m/f/4/9sAQwErLS08NTx2QUF2+KWMpfj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCYNyo9qgoa33qAEB24NMQrn5jSGAXIByelADH4Y0Af/9k=);background-size:cover\" alt=\"枯木来禽图\" /></p><p>枯枝横斜，以飞白出之，笔中有枯，枯中有骨。二禽栖于其上，相对无言。</p><p>树已无叶，鸟犹不去。</p>",
+      "frontmatter": {
+        "cover": "枯木来禽图.jpg",
+        "description": "纸本水墨。立轴。",
+        "uid": "b19717aa"
+      },
+      "url_path": "畫/枯木来禽图/",
+      "date": null,
+      "tags": [],
+      "uid": "b19717aa"
+    }
+  },
+  "pages": {
+    "": "八大山人.md",
+    "畫/": "畫/畫.md",
+    "文/": "文/文.md",
+    "書/": "書/書.md"
+  }
+}
