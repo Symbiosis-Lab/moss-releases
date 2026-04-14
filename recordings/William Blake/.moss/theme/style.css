@@ -1,0 +1,150 @@
+/* William Blake — Lambeth, October 1793
+   Libre Caslon Text: the web Caslon, THE English typeface of Blake's era.
+   IM Fell English: actual 18th-century Fell Types from Oxford. */
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=IM+Fell+English:ital@0;1&display=swap');
+
+:root {
+  --moss-color-bg: #f5efe3;
+  --moss-color-text: #2c2416;
+  --moss-color-accent: #8b6914;
+  --moss-color-surface: #efe8d8;
+  --moss-color-muted: #8a7d6f;
+  --moss-font-body: 'Libre Caslon Text', Georgia, serif;
+  --moss-font-heading: 'IM Fell English', Georgia, serif;
+}
+
+/* Portrait plates in collection grid */
+.moss-collection-card-cover {
+  aspect-ratio: 3 / 4;
+}
+
+/* ── Plate display: full-width, image only ── */
+
+.moss-hero.plate {
+  max-height: none;
+}
+
+.moss-hero.plate img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.moss-hero.plate::before {
+  display: none;
+}
+
+/* Hide article content below plate */
+body:has(.moss-hero.plate) main .container {
+  display: none;
+}
+
+/* ── Homepage hero ── */
+
+.moss-hero.illuminated {
+  max-height: none;
+  min-height: 80vh;
+}
+
+.moss-hero.illuminated img {
+  object-fit: contain;
+  background: var(--moss-color-bg);
+}
+
+.moss-hero.illuminated::before {
+  background: linear-gradient(180deg,
+    rgba(44, 36, 22, 0.05) 0%,
+    rgba(44, 36, 22, 0.4) 70%,
+    rgba(44, 36, 22, 0.7) 100%);
+}
+
+.moss-hero.illuminated .moss-hero-content {
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 80%;
+  text-align: center;
+}
+
+.moss-hero.illuminated .moss-hero-content h1,
+.moss-hero.illuminated .moss-hero-content p {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-style: italic;
+  color: #f5efe3;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* ── Journal styling ── */
+
+/* Decorated drop cap on first paragraph */
+.moss-article-body > p:first-of-type::first-letter {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 3.5em;
+  float: left;
+  line-height: 0.8;
+  margin-right: 0.1em;
+  color: var(--moss-color-accent);
+}
+
+/* Article titles in period italic */
+.article-title {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-style: italic;
+  text-shadow: 0 1px 1px rgba(139, 105, 20, 0.15);
+}
+
+/* Ornamental section dividers */
+.moss-article-body hr {
+  border: none;
+  text-align: center;
+  margin: var(--moss-space-xl) 0;
+}
+
+.moss-article-body hr::after {
+  content: '\2767';
+  font-size: 1.5rem;
+  color: var(--moss-color-accent);
+  opacity: 0.6;
+}
+
+/* Full-bleed images in journal entries */
+.moss-article-body img {
+  border-radius: 0;
+  margin-left: calc(-1 * var(--moss-container-padding));
+  margin-right: calc(-1 * var(--moss-container-padding));
+  width: calc(100% + 2 * var(--moss-container-padding));
+  max-width: none;
+  box-shadow: 0 4px 24px rgba(44, 36, 22, 0.12);
+}
+
+/* Plate pages: images handled by hero */
+body:has(.moss-hero.plate) .moss-article-body img {
+  margin: 0;
+  width: auto;
+  max-width: 100%;
+  box-shadow: none;
+}
+
+/* ── Responsive ── */
+
+/* Override default mobile hero for plate pages:
+   default forces aspect-ratio: 4/5 and object-fit: cover which crops plates */
+@media (max-width: 48rem) {
+  .moss-hero.plate {
+    aspect-ratio: auto;
+  }
+
+  .moss-hero.plate img {
+    position: static;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 480px) {
+  .moss-article-body > p:first-of-type::first-letter {
+    font-size: 2.5em;
+  }
+}
