@@ -1,0 +1,492 @@
+{
+  "articles": {
+    "journal/prospectus/": {
+      "source_path": "journal/prospectus.md",
+      "title": "To the Public",
+      "content": "The Labours of the Artist, the Poet, the Musician, have been proverbially attended by poverty and obscurity; this was never the fault of the Public, but was owing to a neglect of means to propagate such works as have wholly absorbed the Man of Genius. Even Milton and Shakespeare could not publish their own works.\n\nThis difficulty has been obviated by the Author of the following productions now presented to the Public; who has invented a method of Printing both Letter-press and Engraving in a style more ornamental, uniform, and grand, than any before discovered, while it produces works at less than one fourth of the expense.\n\n---\n\nIf a method of Printing which combines the Painter and the Poet is a phenomenon worthy of public attention, provided that it exceeds in elegance all former methods, the Author is sure of his reward.\n\nMr. Blake's powers of invention very early engaged the attention of many persons of eminence and fortune; by whose means he has been regularly enabled to bring before the Public works (he is not afraid to say) of equal magnitude and consequence with the productions of any age or country.\n\n---\n\nThe following are the Subjects of the several Works now published and on Sale at Mr. Blake's, No. 13, Hercules Buildings, Lambeth:\n\n1. Job, a Historical Engraving. Size 1 ft. 7½ in. by 1 ft. 2 in.: price 12s.\n2. Edward and Elinor, a Historical Engraving. Size 1 ft. 6½ in. by 1 ft.: price 10s. 6d.\n3. America, a Prophecy, in Illuminated Printing. Folio, with 18 designs: price 10s. 6d.\n4. Visions of the Daughters of Albion, in Illuminated Printing. Folio, with 8 designs: price 7s. 6d.\n5. The Book of Thel, a Poem in Illuminated Printing. Quarto, with 6 designs: price 3s.\n6. The Marriage of Heaven and Hell, in Illuminated Printing. Quarto, with 14 designs: price 7s. 6d.\n7. Songs of Innocence, in Illuminated Printing. Octavo, with 25 designs: price 5s.\n8. Songs of Experience, in Illuminated Printing. Octavo, with 25 designs: price 5s.\n9. The History of England, a small book of Engravings. Price 3s.\n10. The Gates of Paradise, a small book of Engravings. Price 3s.\n\nThe Illuminated Books are Printed in Colours, and on the most beautiful wove paper that could be procured.\n\nNo Subscriptions for the numerous great works now in hand are asked, for none are wanted; but the Author will produce his works, and offer them to sale at a fair price.",
+      "html_content": "<p>The Labours of the Artist, the Poet, the Musician, have been proverbially attended by poverty and obscurity; this was never the fault of the Public, but was owing to a neglect of means to propagate such works as have wholly absorbed the Man of Genius. Even Milton and Shakespeare could not publish their own works.</p>\n<p>This difficulty has been obviated by the Author of the following productions now presented to the Public; who has invented a method of Printing both Letter-press and Engraving in a style more ornamental, uniform, and grand, than any before discovered, while it produces works at less than one fourth of the expense.</p>\n<hr />\n<p>If a method of Printing which combines the Painter and the Poet is a phenomenon worthy of public attention, provided that it exceeds in elegance all former methods, the Author is sure of his reward.</p>\n<p>Mr. Blake's powers of invention very early engaged the attention of many persons of eminence and fortune; by whose means he has been regularly enabled to bring before the Public works (he is not afraid to say) of equal magnitude and consequence with the productions of any age or country.</p>\n<hr />\n<p>The following are the Subjects of the several Works now published and on Sale at Mr. Blake's, No. 13, Hercules Buildings, Lambeth:</p>\n<ol>\n<li>Job, a Historical Engraving. Size 1 ft. 7½ in. by 1 ft. 2 in.: price 12s.</li>\n<li>Edward and Elinor, a Historical Engraving. Size 1 ft. 6½ in. by 1 ft.: price 10s. 6d.</li>\n<li>America, a Prophecy, in Illuminated Printing. Folio, with 18 designs: price 10s. 6d.</li>\n<li>Visions of the Daughters of Albion, in Illuminated Printing. Folio, with 8 designs: price 7s. 6d.</li>\n<li>The Book of Thel, a Poem in Illuminated Printing. Quarto, with 6 designs: price 3s.</li>\n<li>The Marriage of Heaven and Hell, in Illuminated Printing. Quarto, with 14 designs: price 7s. 6d.</li>\n<li>Songs of Innocence, in Illuminated Printing. Octavo, with 25 designs: price 5s.</li>\n<li>Songs of Experience, in Illuminated Printing. Octavo, with 25 designs: price 5s.</li>\n<li>The History of England, a small book of Engravings. Price 3s.</li>\n<li>The Gates of Paradise, a small book of Engravings. Price 3s.</li>\n</ol>\n<p>The Illuminated Books are Printed in Colours, and on the most beautiful wove paper that could be procured.</p>\n<p>No Subscriptions for the numerous great works now in hand are asked, for none are wanted; but the Author will produce his works, and offer them to sale at a fair price.</p>\n",
+      "frontmatter": {
+        "uid": "p1793a001",
+        "date": "1793-10-10",
+        "title": "To the Public",
+        "description": "A Prospectus, October 10, 1793."
+      },
+      "url_path": "journal/prospectus/",
+      "date": "1793-10-10",
+      "tags": [],
+      "uid": "p1793a001"
+    },
+    "innocence/infant-joy/": {
+      "source_path": "innocence/infant-joy.md",
+      "title": "infant joy",
+      "content": ":::hero {.plate}\n![Infant Joy](../infant-joy.jpg)\n:::",
+      "frontmatter": {
+        "description": "Songs of Innocence, 1789. Relief etching with hand colouring.",
+        "uid": "5b43402d",
+        "cover": "infant-joy.jpg"
+      },
+      "url_path": "innocence/infant-joy/",
+      "date": null,
+      "tags": [],
+      "uid": "5b43402d"
+    },
+    "the-marriage-of-heaven-and-hell/the-voice-of-the-devil/": {
+      "source_path": "the-marriage-of-heaven-and-hell/the-voice-of-the-devil.md",
+      "title": "the voice of the devil",
+      "content": ":::hero {.plate}\n![The Voice of the Devil](../the-voice-of-the-devil.jpg)\n:::",
+      "frontmatter": {
+        "cover": "the-voice-of-the-devil.jpg",
+        "description": "The Marriage of Heaven and Hell, c. 1790. The Voice of the Devil.",
+        "uid": "f0b24d8e"
+      },
+      "url_path": "the-marriage-of-heaven-and-hell/the-voice-of-the-devil/",
+      "date": null,
+      "tags": [],
+      "uid": "f0b24d8e"
+    },
+    "innocence/the-little-boy-lost/": {
+      "source_path": "innocence/the-little-boy-lost.md",
+      "title": "the little boy lost",
+      "content": ":::hero {.plate}\n![The Little Boy Lost](../the-little-boy-lost.jpg)\n:::",
+      "frontmatter": {
+        "cover": "the-little-boy-lost.jpg",
+        "description": "Songs of Innocence, 1789. Relief etching with hand colouring.",
+        "uid": "2468e4b1"
+      },
+      "url_path": "innocence/the-little-boy-lost/",
+      "date": null,
+      "tags": [],
+      "uid": "2468e4b1"
+    },
+    "innocence/title-page/": {
+      "source_path": "innocence/title-page.md",
+      "title": "title page",
+      "content": ":::hero {.plate}\n![Title Page](../title-page.jpg)\n:::",
+      "frontmatter": {
+        "cover": "title-page.jpg",
+        "description": "Songs of Innocence, 1789. Title page.",
+        "uid": "d4f08c19"
+      },
+      "url_path": "innocence/title-page/",
+      "date": null,
+      "tags": [],
+      "uid": "d4f08c19"
+    },
+    "gates-of-paradise/i-have-said-to-the-worm/": {
+      "source_path": "gates-of-paradise/i-have-said-to-the-worm.md",
+      "title": "i have said to the worm",
+      "content": ":::hero {.plate}\n![I Have Said to the Worm](../i-have-said-to-the-worm.jpg)\n:::",
+      "frontmatter": {
+        "cover": "i-have-said-to-the-worm.jpg",
+        "description": "For Children: The Gates of Paradise, 1793. I have said to the Worm: Thou art my mother.",
+        "uid": "58a0f1d6"
+      },
+      "url_path": "gates-of-paradise/i-have-said-to-the-worm/",
+      "date": null,
+      "tags": [],
+      "uid": "58a0f1d6"
+    },
+    "the-marriage-of-heaven-and-hell/title-page/": {
+      "source_path": "the-marriage-of-heaven-and-hell/title-page.md",
+      "title": "title page",
+      "content": ":::hero {.plate}\n![Title Page](../title-page.jpg)\n:::",
+      "frontmatter": {
+        "cover": "title-page.jpg",
+        "uid": "e6d04a9c",
+        "description": "The Marriage of Heaven and Hell, c. 1790. Title page."
+      },
+      "url_path": "the-marriage-of-heaven-and-hell/title-page/",
+      "date": null,
+      "tags": [],
+      "uid": "e6d04a9c"
+    },
+    "gates-of-paradise/aged-ignorance/": {
+      "source_path": "gates-of-paradise/aged-ignorance.md",
+      "title": "aged ignorance",
+      "content": ":::hero {.plate}\n![Aged Ignorance](../aged-ignorance.jpg)\n:::",
+      "frontmatter": {
+        "uid": "c4e37b29",
+        "cover": "aged-ignorance.jpg",
+        "description": "For Children: The Gates of Paradise, 1793. Aged Ignorance."
+      },
+      "url_path": "gates-of-paradise/aged-ignorance/",
+      "date": null,
+      "tags": [],
+      "uid": "c4e37b29"
+    },
+    "visions-of-the-daughters-of-albion/frontispiece/": {
+      "source_path": "visions-of-the-daughters-of-albion/frontispiece.md",
+      "title": "frontispiece",
+      "content": ":::hero {.plate}\n![Frontispiece](../frontispiece.jpg)\n:::",
+      "frontmatter": {
+        "uid": "b3d7e096",
+        "cover": "frontispiece.jpg",
+        "description": "Visions of the Daughters of Albion, 1793. Frontispiece."
+      },
+      "url_path": "visions-of-the-daughters-of-albion/frontispiece/",
+      "date": null,
+      "tags": [],
+      "uid": "b3d7e096"
+    },
+    "america-a-prophecy/frontispiece/": {
+      "source_path": "america-a-prophecy/frontispiece.md",
+      "title": "frontispiece",
+      "content": ":::hero {.plate}\n![Frontispiece](../frontispiece.jpg)\n:::",
+      "frontmatter": {
+        "uid": "91cf4a2b",
+        "description": "America a Prophecy, 1793. Chained Orc.",
+        "cover": "frontispiece.jpg"
+      },
+      "url_path": "america-a-prophecy/frontispiece/",
+      "date": null,
+      "tags": [],
+      "uid": "91cf4a2b"
+    },
+    "the-book-of-thel/title-page/": {
+      "source_path": "the-book-of-thel/title-page.md",
+      "title": "title page",
+      "content": ":::hero {.plate}\n![Title Page](../title-page.jpg)\n:::",
+      "frontmatter": {
+        "uid": "c5e491f0",
+        "cover": "title-page.jpg",
+        "description": "The Book of Thel, 1789. Title page."
+      },
+      "url_path": "the-book-of-thel/title-page/",
+      "date": null,
+      "tags": [],
+      "uid": "c5e491f0"
+    },
+    "journal/to-reveley/": {
+      "source_path": "journal/to-reveley.md",
+      "title": "Letter to Mr. Reveley",
+      "content": "Dear Sir,\n\nI am very sorry for the bad account of your health, and shall be very happy to take any share in the engraving that you may think proper.\n\nI have been engaged in some small things which I hope to show you very soon. The difficulty of getting work of any consequence is such that I am glad of any employment which will keep my hand in practice and my family from want.\n\nYour obedient servant,\nWilliam Blake\n\n13 Hercules Buildings, Lambeth\nOctober 18, 1791",
+      "html_content": "<p>Dear Sir,</p>\n<p>I am very sorry for the bad account of your health, and shall be very happy to take any share in the engraving that you may think proper.</p>\n<p>I have been engaged in some small things which I hope to show you very soon. The difficulty of getting work of any consequence is such that I am glad of any employment which will keep my hand in practice and my family from want.</p>\n<p>Your obedient servant,\nWilliam Blake</p>\n<p>13 Hercules Buildings, Lambeth\nOctober 18, 1791</p>\n",
+      "frontmatter": {
+        "description": "A letter concerning engraving work.",
+        "date": "1791-10-18",
+        "title": "Letter to Mr. Reveley",
+        "uid": "j1791a005"
+      },
+      "url_path": "journal/to-reveley/",
+      "date": "1791-10-18",
+      "tags": [],
+      "uid": "j1791a005"
+    },
+    "innocence/the-ecchoing-green/": {
+      "source_path": "innocence/the-ecchoing-green.md",
+      "title": "the ecchoing green",
+      "content": ":::hero {.plate}\n![The Ecchoing Green](../the-ecchoing-green.jpg)\n:::",
+      "frontmatter": {
+        "cover": "the-ecchoing-green.jpg",
+        "description": "Songs of Innocence, 1789. Relief etching with hand colouring.",
+        "uid": "7a49484d"
+      },
+      "url_path": "innocence/the-ecchoing-green/",
+      "date": null,
+      "tags": [],
+      "uid": "7a49484d"
+    },
+    "gates-of-paradise/i-found-him-beneath-a-tree/": {
+      "source_path": "gates-of-paradise/i-found-him-beneath-a-tree.md",
+      "title": "i found him beneath a tree",
+      "content": ":::hero {.plate}\n![I Found Him Beneath a Tree](../i-found-him-beneath-a-tree.jpg)\n:::",
+      "frontmatter": {
+        "description": "For Children: The Gates of Paradise, 1793. I found him beneath a Tree.",
+        "uid": "6b12d8a0",
+        "cover": "i-found-him-beneath-a-tree.jpg"
+      },
+      "url_path": "gates-of-paradise/i-found-him-beneath-a-tree/",
+      "date": null,
+      "tags": [],
+      "uid": "6b12d8a0"
+    },
+    "visions-of-the-daughters-of-albion/title-page/": {
+      "source_path": "visions-of-the-daughters-of-albion/title-page.md",
+      "title": "title page",
+      "content": ":::hero {.plate}\n![Title Page](../title-page.jpg)\n:::",
+      "frontmatter": {
+        "cover": "title-page.jpg",
+        "description": "Visions of the Daughters of Albion, 1793. Title page.",
+        "uid": "46a1fc83"
+      },
+      "url_path": "visions-of-the-daughters-of-albion/title-page/",
+      "date": null,
+      "tags": [],
+      "uid": "46a1fc83"
+    },
+    "innocence/night/": {
+      "source_path": "innocence/night.md",
+      "title": "night",
+      "content": ":::hero {.plate}\n![Night](../night.jpg)\n:::",
+      "frontmatter": {
+        "uid": "3b71d9a4",
+        "description": "Songs of Innocence, 1789. Night.",
+        "cover": "night.jpg"
+      },
+      "url_path": "innocence/night/",
+      "date": null,
+      "tags": [],
+      "uid": "3b71d9a4"
+    },
+    "the-marriage-of-heaven-and-hell/a-memorable-fancy/": {
+      "source_path": "the-marriage-of-heaven-and-hell/a-memorable-fancy.md",
+      "title": "a memorable fancy",
+      "content": ":::hero {.plate}\n![A Memorable Fancy](../a-memorable-fancy.jpg)\n:::",
+      "frontmatter": {
+        "uid": "8a1d63b7",
+        "cover": "a-memorable-fancy.jpg",
+        "description": "The Marriage of Heaven and Hell, c. 1790. The Printing House in Hell."
+      },
+      "url_path": "the-marriage-of-heaven-and-hell/a-memorable-fancy/",
+      "date": null,
+      "tags": [],
+      "uid": "8a1d63b7"
+    },
+    "journal/i-shant-live-five-years/": {
+      "source_path": "journal/i-shant-live-five-years.md",
+      "title": "I Say I Shan't Live Five Years",
+      "content": "I say I shan't live five years. And if I live one it will be a Wonder.",
+      "html_content": "<p>I say I shan't live five years. And if I live one it will be a Wonder.</p>\n",
+      "frontmatter": {
+        "uid": "j1793a006",
+        "description": "A notebook entry.",
+        "title": "I Say I Shan't Live Five Years",
+        "date": "1793-06-01"
+      },
+      "url_path": "journal/i-shant-live-five-years/",
+      "date": "1793-06-01",
+      "tags": [],
+      "uid": "j1793a006"
+    },
+    "journal/on-swedenborg/": {
+      "source_path": "journal/on-swedenborg.md",
+      "title": "Annotations on Swedenborg",
+      "content": "I was once a follower of Swedenborg. Catherine and I signed the register of the New Church in April of eighty-nine. We believed then that he had seen Heaven and conversed with Angels.\n\nBut I have read further, and I find that Swedenborg has not written one new truth. He has written all the old falsehoods.\n\n---\n\n*Swedenborg writes*: \"That the Divine Love and the Divine Wisdom, proceeding from the Lord, appear as a Sun.\"\n\n**Blake**: He tells us that God is a Sun, and that Heaven is a place. But I say that every Bird that cuts the airy way is an immense world of delight, closed by your senses five. Heaven is not a place but a state.\n\n---\n\n*Swedenborg writes*: \"That there are degrees of love and wisdom.\"\n\n**Blake**: Here Swedenborg speaks like a predestinarian. He says some souls are closer to God than others. But I say that all souls are equal in the sight of Eternity. One Law for the Lion & Ox is Oppression.\n\n---\n\n*Swedenborg writes*: \"That the Lord from eternity, who is Jehovah, created the universe and all things therein by means of the sun of the spiritual world.\"\n\n**Blake**: Lies & Priestcraft. He supposes that God created the world as a watchmaker creates a watch — from the outside. But Creation is from within — the Poetic Genius in every man is the true God.\n\n---\n\nI have now perused the whole of Swedenborg's theological works. Good and Evil are here both Good and the two contraries Married. But there is no progression. Swedenborg's Angels are dull. He has described to us a Heaven where a man may be virtuous and comfortable for ever, but not a Heaven where he may burn with desire and create without ceasing.\n\nWithout Contraries is no progression.",
+      "html_content": "<p>I was once a follower of Swedenborg. Catherine and I signed the register of the New Church in April of eighty-nine. We believed then that he had seen Heaven and conversed with Angels.</p>\n<p>But I have read further, and I find that Swedenborg has not written one new truth. He has written all the old falsehoods.</p>\n<hr />\n<p><em>Swedenborg writes</em>: \"That the Divine Love and the Divine Wisdom, proceeding from the Lord, appear as a Sun.\"</p>\n<p><strong>Blake</strong>: He tells us that God is a Sun, and that Heaven is a place. But I say that every Bird that cuts the airy way is an immense world of delight, closed by your senses five. Heaven is not a place but a state.</p>\n<hr />\n<p><em>Swedenborg writes</em>: \"That there are degrees of love and wisdom.\"</p>\n<p><strong>Blake</strong>: Here Swedenborg speaks like a predestinarian. He says some souls are closer to God than others. But I say that all souls are equal in the sight of Eternity. One Law for the Lion &amp; Ox is Oppression.</p>\n<hr />\n<p><em>Swedenborg writes</em>: \"That the Lord from eternity, who is Jehovah, created the universe and all things therein by means of the sun of the spiritual world.\"</p>\n<p><strong>Blake</strong>: Lies &amp; Priestcraft. He supposes that God created the world as a watchmaker creates a watch — from the outside. But Creation is from within — the Poetic Genius in every man is the true God.</p>\n<hr />\n<p>I have now perused the whole of Swedenborg's theological works. Good and Evil are here both Good and the two contraries Married. But there is no progression. Swedenborg's Angels are dull. He has described to us a Heaven where a man may be virtuous and comfortable for ever, but not a Heaven where he may burn with desire and create without ceasing.</p>\n<p>Without Contraries is no progression.</p>\n",
+      "frontmatter": {
+        "uid": "j1790a003",
+        "title": "Annotations on Swedenborg",
+        "date": "1790-03-01",
+        "description": "Marginalia on Swedenborg's Divine Love and Divine Wisdom."
+      },
+      "url_path": "journal/on-swedenborg/",
+      "date": "1790-03-01",
+      "tags": [],
+      "uid": "j1790a003"
+    },
+    "the-marriage-of-heaven-and-hell/proverbs-of-hell/": {
+      "source_path": "the-marriage-of-heaven-and-hell/proverbs-of-hell.md",
+      "title": "proverbs of hell",
+      "content": ":::hero {.plate}\n![Proverbs of Hell](../proverbs-of-hell.jpg)\n:::",
+      "frontmatter": {
+        "cover": "proverbs-of-hell.jpg",
+        "uid": "29c87f15",
+        "description": "The Marriage of Heaven and Hell, c. 1790. Proverbs of Hell."
+      },
+      "url_path": "the-marriage-of-heaven-and-hell/proverbs-of-hell/",
+      "date": null,
+      "tags": [],
+      "uid": "29c87f15"
+    },
+    "journal/on-lavater/": {
+      "source_path": "journal/on-lavater.md",
+      "title": "Annotations on Lavater",
+      "content": "I have read Lavater's *Aphorisms on Man* with attention, and find in many of them the voice of true wisdom — and in others, the voice of a man who mistakes prudence for virtue.\n\n---\n\n*Aphorism*: \"Know, in the first place, that mankind agree in essence, as they do in their limbs and senses.\"\n\n**Blake**: Aye — this is true philosophy. But Reynolds would have us believe that the essence of Art is conformity to a general idea. The essence of Man is particularity.\n\n---\n\n*Aphorism*: \"The greatest of characters, no doubt, was he, who, free of all trifling accidental helps, could see objects through one grand immutable medium, always at hand, and proof against illusion and time, reflected by every object, and invariably traced through all the fluctuation of things.\"\n\n**Blake**: This is the vision of the Prophet. This is what I see when I look at a common thistle — Eternity in a grain of sand.\n\n---\n\n*Aphorism*: \"Who has not observed that the voice, the look, the gesture of him who relates a transaction, give the true character of it — who has not found that many a narrative was half believed for no other reason than that it was told in a manner which carried conviction?\"\n\n**Blake**: True. The manner of telling a thing is the thing itself. Execution is the Chariot of Genius.\n\n---\n\n*Aphorism*: \"The sublimest act is to set another before you.\"\n\n**Blake**: I mark this with ! — for it is the foundation of all virtue. He who does not prefer another to himself is selfish, and Selfishness is the cloak of Villainy.\n\n---\n\n*Aphorism*: \"He alone has energy that cannot be deprived of it.\"\n\n**Blake**: Energy is Eternal Delight. He who desires but acts not, breeds pestilence.\n\n---\n\n*Aphorism*: \"The enemy of art is the enemy of nature.\"\n\n**Blake**: I agree entirely. Art is the Tree of Life. Science is the Tree of Death. God is Jesus.\n\n---\n\n*Aphorism*: \"Between the best and the worst there are, you say, innumerable degrees — and you are right; but admit that I am right too in saying that the best and the worst differ only in one thing — in the object of their love.\"\n\n**Blake**: Excellent. This is a golden sentence. All love is holy. A man can only be judged by the object of his desire.",
+      "html_content": "<p>I have read Lavater's <em>Aphorisms on Man</em> with attention, and find in many of them the voice of true wisdom — and in others, the voice of a man who mistakes prudence for virtue.</p>\n<hr />\n<p><em>Aphorism</em>: \"Know, in the first place, that mankind agree in essence, as they do in their limbs and senses.\"</p>\n<p><strong>Blake</strong>: Aye — this is true philosophy. But Reynolds would have us believe that the essence of Art is conformity to a general idea. The essence of Man is particularity.</p>\n<hr />\n<p><em>Aphorism</em>: \"The greatest of characters, no doubt, was he, who, free of all trifling accidental helps, could see objects through one grand immutable medium, always at hand, and proof against illusion and time, reflected by every object, and invariably traced through all the fluctuation of things.\"</p>\n<p><strong>Blake</strong>: This is the vision of the Prophet. This is what I see when I look at a common thistle — Eternity in a grain of sand.</p>\n<hr />\n<p><em>Aphorism</em>: \"Who has not observed that the voice, the look, the gesture of him who relates a transaction, give the true character of it — who has not found that many a narrative was half believed for no other reason than that it was told in a manner which carried conviction?\"</p>\n<p><strong>Blake</strong>: True. The manner of telling a thing is the thing itself. Execution is the Chariot of Genius.</p>\n<hr />\n<p><em>Aphorism</em>: \"The sublimest act is to set another before you.\"</p>\n<p><strong>Blake</strong>: I mark this with ! — for it is the foundation of all virtue. He who does not prefer another to himself is selfish, and Selfishness is the cloak of Villainy.</p>\n<hr />\n<p><em>Aphorism</em>: \"He alone has energy that cannot be deprived of it.\"</p>\n<p><strong>Blake</strong>: Energy is Eternal Delight. He who desires but acts not, breeds pestilence.</p>\n<hr />\n<p><em>Aphorism</em>: \"The enemy of art is the enemy of nature.\"</p>\n<p><strong>Blake</strong>: I agree entirely. Art is the Tree of Life. Science is the Tree of Death. God is Jesus.</p>\n<hr />\n<p><em>Aphorism</em>: \"Between the best and the worst there are, you say, innumerable degrees — and you are right; but admit that I am right too in saying that the best and the worst differ only in one thing — in the object of their love.\"</p>\n<p><strong>Blake</strong>: Excellent. This is a golden sentence. All love is holy. A man can only be judged by the object of his desire.</p>\n",
+      "frontmatter": {
+        "title": "Annotations on Lavater",
+        "date": "1789-01-01",
+        "uid": "j1789a002",
+        "description": "Marginalia on J.C. Lavater's Aphorisms on Man, translated by Henry Fuseli."
+      },
+      "url_path": "journal/on-lavater/",
+      "date": "1789-01-01",
+      "tags": [],
+      "uid": "j1789a002"
+    },
+    "innocence/the-chimney-sweeper-innocence/": {
+      "source_path": "innocence/the-chimney-sweeper-innocence.md",
+      "title": "the chimney sweeper innocence",
+      "content": ":::hero {.plate}\n![The Chimney Sweeper](../the-chimney-sweeper-innocence.jpg)\n:::",
+      "frontmatter": {
+        "cover": "the-chimney-sweeper-innocence.jpg",
+        "description": "Songs of Innocence, 1789. Relief etching with hand colouring.",
+        "uid": "5711467b"
+      },
+      "url_path": "innocence/the-chimney-sweeper-innocence/",
+      "date": null,
+      "tags": [],
+      "uid": "5711467b"
+    },
+    "america-a-prophecy/orcs-speech/": {
+      "source_path": "america-a-prophecy/orcs-speech.md",
+      "title": "orcs speech",
+      "content": ":::hero {.plate}\n![Orc's Speech](../orcs-speech.jpg)\n:::",
+      "frontmatter": {
+        "description": "America a Prophecy, 1793. The morning comes, the night decays.",
+        "uid": "e7035d6f",
+        "cover": "orcs-speech.jpg"
+      },
+      "url_path": "america-a-prophecy/orcs-speech/",
+      "date": null,
+      "tags": [],
+      "uid": "e7035d6f"
+    },
+    "innocence/the-divine-image/": {
+      "source_path": "innocence/the-divine-image.md",
+      "title": "the divine image",
+      "content": ":::hero {.plate}\n![The Divine Image](../the-divine-image.jpg)\n:::",
+      "frontmatter": {
+        "uid": "92a8ea45",
+        "description": "Songs of Innocence, 1789. Relief etching with hand colouring.",
+        "cover": "the-divine-image.jpg"
+      },
+      "url_path": "innocence/the-divine-image/",
+      "date": null,
+      "tags": [],
+      "uid": "92a8ea45"
+    },
+    "visions-of-the-daughters-of-albion/oothoons-speech/": {
+      "source_path": "visions-of-the-daughters-of-albion/oothoons-speech.md",
+      "title": "oothoons speech",
+      "content": ":::hero {.plate}\n![Oothoon's Speech](../oothoons-speech.jpg)\n:::",
+      "frontmatter": {
+        "cover": "oothoons-speech.jpg",
+        "description": "Visions of the Daughters of Albion, 1793. Oothoon's speech.",
+        "uid": "d82b5e17"
+      },
+      "url_path": "visions-of-the-daughters-of-albion/oothoons-speech/",
+      "date": null,
+      "tags": [],
+      "uid": "d82b5e17"
+    },
+    "innocence/the-lamb/": {
+      "source_path": "innocence/the-lamb.md",
+      "title": "the lamb",
+      "content": ":::hero {.plate}\n![The Lamb](../the-lamb.jpg)\n:::",
+      "frontmatter": {
+        "uid": "60458a43",
+        "cover": "the-lamb.jpg",
+        "description": "Songs of Innocence, 1789. Relief etching with hand colouring."
+      },
+      "url_path": "innocence/the-lamb/",
+      "date": null,
+      "tags": [],
+      "uid": "60458a43"
+    },
+    "innocence/frontispiece/": {
+      "source_path": "innocence/frontispiece.md",
+      "title": "frontispiece",
+      "content": ":::hero {.plate}\n![Frontispiece](../frontispiece.jpg)\n:::",
+      "frontmatter": {
+        "description": "Songs of Innocence, 1789. The Piper, frontispiece.",
+        "uid": "a1c3b7e2",
+        "cover": "frontispiece.jpg"
+      },
+      "url_path": "innocence/frontispiece/",
+      "date": null,
+      "tags": [],
+      "uid": "a1c3b7e2"
+    },
+    "the-book-of-thel/thels-motto/": {
+      "source_path": "the-book-of-thel/thels-motto.md",
+      "title": "thels motto",
+      "content": ":::hero {.plate}\n![Thel's Motto](../thels-motto.jpg)\n:::",
+      "frontmatter": {
+        "description": "The Book of Thel, 1789. Does the Eagle know what is in the pit?",
+        "cover": "thels-motto.jpg",
+        "uid": "7d3a26b8"
+      },
+      "url_path": "the-book-of-thel/thels-motto/",
+      "date": null,
+      "tags": [],
+      "uid": "7d3a26b8"
+    },
+    "america-a-prophecy/plate-12/": {
+      "source_path": "america-a-prophecy/plate-12.md",
+      "title": "plate 12",
+      "content": ":::hero {.plate}\n![Plate 12](../plate-12.jpg)\n:::",
+      "frontmatter": {
+        "cover": "plate-12.jpg",
+        "description": "America a Prophecy, 1793. Plate 12.",
+        "uid": "3af89c54"
+      },
+      "url_path": "america-a-prophecy/plate-12/",
+      "date": null,
+      "tags": [],
+      "uid": "3af89c54"
+    },
+    "innocence/holy-thursday/": {
+      "source_path": "innocence/holy-thursday.md",
+      "title": "holy thursday",
+      "content": ":::hero {.plate}\n![Holy Thursday](../holy-thursday.jpg)\n:::",
+      "frontmatter": {
+        "cover": "holy-thursday.jpg",
+        "description": "Songs of Innocence, 1789. Holy Thursday.",
+        "uid": "8e2a5f6d"
+      },
+      "url_path": "innocence/holy-thursday/",
+      "date": null,
+      "tags": [],
+      "uid": "8e2a5f6d"
+    },
+    "innocence/spring/": {
+      "source_path": "innocence/spring.md",
+      "title": "spring",
+      "content": ":::hero {.plate}\n![Spring](../spring.jpg)\n:::",
+      "frontmatter": {
+        "uid": "f3985ae8",
+        "cover": "spring.jpg",
+        "description": "Songs of Innocence, 1789. Relief etching with hand colouring."
+      },
+      "url_path": "innocence/spring/",
+      "date": null,
+      "tags": [],
+      "uid": "f3985ae8"
+    },
+    "journal/notebook-poems/": {
+      "source_path": "journal/notebook-poems.md",
+      "title": "Poems from My Notebook",
+      "content": "These verses I have set down in my notebook but not yet committed to copper. Some may find their way into future works; others are for my eyes alone. I record them here as they came to me.\n\n---\n\nNever seek to tell thy Love\\\nLove that never told can be\\\nFor the gentle wind does move\\\nSilently invisibly\n\nI told my love I told my love\\\nI told her all my heart\\\nTrembling cold in ghastly fears\\\nAh she doth depart\n\nSoon as she was gone from me\\\nA traveller came by\\\nSilently invisibly\\\nHe took her with a sigh\n\n---\n\nI saw a chapel all of gold\\\nThat none did dare to enter in\\\nAnd many weeping stood without\\\nWeeping mourning worshipping\n\nI saw a serpent rise between\\\nThe white pillars of the door\\\nAnd he forcd & forcd & forcd\\\nDown the golden hinges tore\n\nAnd along the pavement sweet\\\nSet with pearls & rubies bright\\\nAll his slimy length he drew\\\nTill upon the altar white\n\nVomiting his poison out\\\nOn the bread & on the wine\\\nSo I turnd into a sty\\\nAnd laid me down among the swine\n\n---\n\nI asked a thief to steal me a peach\\\nHe turned up his eyes\\\nI ask'd a lithe lady to lie her down\\\nHoly & meek she cries\n\nAs soon as I went an angel came\\\nHe winkd at the thief\\\nAnd smild at the dame\\\nAnd without one word spoke\\\nHad a peach from the tree\\\nAnd twixt earnest & joke\\\nEnjoyd the Lady\n\n---\n\nSoft Snow\n\nI walked abroad in a snowy day\\\nI askd the soft snow with me to play\\\nShe playd & she melted in all her prime\\\nAnd the winter calld it a dreadful crime",
+      "html_content": "<p>These verses I have set down in my notebook but not yet committed to copper. Some may find their way into future works; others are for my eyes alone. I record them here as they came to me.</p>\n<hr />\n<p>Never seek to tell thy Love<br />\nLove that never told can be<br />\nFor the gentle wind does move<br />\nSilently invisibly</p>\n<p>I told my love I told my love<br />\nI told her all my heart<br />\nTrembling cold in ghastly fears<br />\nAh she doth depart</p>\n<p>Soon as she was gone from me<br />\nA traveller came by<br />\nSilently invisibly<br />\nHe took her with a sigh</p>\n<hr />\n<p>I saw a chapel all of gold<br />\nThat none did dare to enter in<br />\nAnd many weeping stood without<br />\nWeeping mourning worshipping</p>\n<p>I saw a serpent rise between<br />\nThe white pillars of the door<br />\nAnd he forcd &amp; forcd &amp; forcd<br />\nDown the golden hinges tore</p>\n<p>And along the pavement sweet<br />\nSet with pearls &amp; rubies bright<br />\nAll his slimy length he drew<br />\nTill upon the altar white</p>\n<p>Vomiting his poison out<br />\nOn the bread &amp; on the wine<br />\nSo I turnd into a sty<br />\nAnd laid me down among the swine</p>\n<hr />\n<p>I asked a thief to steal me a peach<br />\nHe turned up his eyes<br />\nI ask'd a lithe lady to lie her down<br />\nHoly &amp; meek she cries</p>\n<p>As soon as I went an angel came<br />\nHe winkd at the thief<br />\nAnd smild at the dame<br />\nAnd without one word spoke<br />\nHad a peach from the tree<br />\nAnd twixt earnest &amp; joke<br />\nEnjoyd the Lady</p>\n<hr />\n<p>Soft Snow</p>\n<p>I walked abroad in a snowy day<br />\nI askd the soft snow with me to play<br />\nShe playd &amp; she melted in all her prime<br />\nAnd the winter calld it a dreadful crime</p>\n",
+      "frontmatter": {
+        "date": "1793-06-15",
+        "description": "Poems not yet engraved. From the notebook at Hercules Buildings.",
+        "title": "Poems from My Notebook",
+        "uid": "j1793a004"
+      },
+      "url_path": "journal/notebook-poems/",
+      "date": "1793-06-15",
+      "tags": [],
+      "uid": "j1793a004"
+    },
+    "the-marriage-of-heaven-and-hell/a-song-of-liberty/": {
+      "source_path": "the-marriage-of-heaven-and-hell/a-song-of-liberty.md",
+      "title": "a song of liberty",
+      "content": ":::hero {.plate}\n![A Song of Liberty](../a-song-of-liberty.jpg)\n:::",
+      "frontmatter": {
+        "cover": "a-song-of-liberty.jpg",
+        "description": "The Marriage of Heaven and Hell, c. 1790. A Song of Liberty.",
+        "uid": "5c9e2a41"
+      },
+      "url_path": "the-marriage-of-heaven-and-hell/a-song-of-liberty/",
+      "date": null,
+      "tags": [],
+      "uid": "5c9e2a41"
+    },
+    "the-book-of-thel/thel-and-the-clod/": {
+      "source_path": "the-book-of-thel/thel-and-the-clod.md",
+      "title": "thel and the clod",
+      "content": ":::hero {.plate}\n![Thel and the Clod](../thel-and-the-clod.jpg)\n:::",
+      "frontmatter": {
+        "uid": "14bf58e3",
+        "description": "The Book of Thel, 1789. Thel and the Clod of Clay.",
+        "cover": "thel-and-the-clod.jpg"
+      },
+      "url_path": "the-book-of-thel/thel-and-the-clod/",
+      "date": null,
+      "tags": [],
+      "uid": "14bf58e3"
+    }
+  }
+}

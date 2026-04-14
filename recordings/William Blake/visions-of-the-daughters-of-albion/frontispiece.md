@@ -5,5 +5,5 @@ uid: b3d7e096
 ---
 
 :::hero {.plate}
-![Frontispiece](../frontispiece.jpg)
+![Frontispiece](frontispiece.jpg)
 :::

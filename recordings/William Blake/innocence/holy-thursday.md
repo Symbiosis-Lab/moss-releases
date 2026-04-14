@@ -5,5 +5,5 @@ uid: 8e2a5f6d
 ---
 
 :::hero {.plate}
-![Holy Thursday](../holy-thursday.jpg)
+![Holy Thursday](holy-thursday.jpg)
 :::

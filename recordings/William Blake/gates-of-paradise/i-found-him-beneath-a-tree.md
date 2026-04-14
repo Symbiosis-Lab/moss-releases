@@ -5,5 +5,5 @@ uid: 6b12d8a0
 ---
 
 :::hero {.plate}
-![I Found Him Beneath a Tree](../i-found-him-beneath-a-tree.jpg)
+![I Found Him Beneath a Tree](i-found-him-beneath-a-tree.jpg)
 :::

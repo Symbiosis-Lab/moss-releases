@@ -5,5 +5,5 @@ uid: 2468e4b1
 ---
 
 :::hero {.plate}
-![The Little Boy Lost](../the-little-boy-lost.jpg)
+![The Little Boy Lost](the-little-boy-lost.jpg)
 :::

@@ -5,5 +5,5 @@ uid: 14bf58e3
 ---
 
 :::hero {.plate}
-![Thel and the Clod](../thel-and-the-clod.jpg)
+![Thel and the Clod](thel-and-the-clod.jpg)
 :::

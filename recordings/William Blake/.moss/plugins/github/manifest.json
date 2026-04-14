@@ -1,0 +1,19 @@
+{
+  "name": "github",
+  "version": "1.5.0",
+  "description": "Deploy to GitHub Pages via GitHub Actions",
+  "author": "moss team",
+  "entry": "main.bundle.js",
+  "capabilities": ["deploy"],
+  "domain": "github.com",
+  "global_name": "GithubPlugin",
+  "icon": "icon.svg",
+  "config": {
+    "auto_commit": true,
+    "video_max_size_mb": 75
+  },
+  "config_schema": {
+    "auto_commit": "boolean",
+    "video_max_size_mb": "number"
+  }
+}

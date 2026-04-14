@@ -5,5 +5,5 @@ uid: c4e37b29
 ---
 
 :::hero {.plate}
-![Aged Ignorance](../aged-ignorance.jpg)
+![Aged Ignorance](aged-ignorance.jpg)
 :::

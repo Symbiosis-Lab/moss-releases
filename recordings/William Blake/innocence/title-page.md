@@ -5,5 +5,5 @@ uid: d4f08c19
 ---
 
 :::hero {.plate}
-![Title Page](../title-page.jpg)
+![Title Page](title-page.jpg)
 :::

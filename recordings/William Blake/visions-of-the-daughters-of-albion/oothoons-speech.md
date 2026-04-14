@@ -5,5 +5,5 @@ uid: d82b5e17
 ---
 
 :::hero {.plate}
-![Oothoon's Speech](../oothoons-speech.jpg)
+![Oothoon's Speech](oothoons-speech.jpg)
 :::

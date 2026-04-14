@@ -5,5 +5,5 @@ uid: 8a1d63b7
 ---
 
 :::hero {.plate}
-![A Memorable Fancy](../a-memorable-fancy.jpg)
+![A Memorable Fancy](a-memorable-fancy.jpg)
 :::

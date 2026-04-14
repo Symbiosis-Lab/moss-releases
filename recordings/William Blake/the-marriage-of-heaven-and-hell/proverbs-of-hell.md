@@ -5,5 +5,5 @@ uid: 29c87f15
 ---
 
 :::hero {.plate}
-![Proverbs of Hell](../proverbs-of-hell.jpg)
+![Proverbs of Hell](proverbs-of-hell.jpg)
 :::

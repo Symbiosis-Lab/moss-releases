@@ -5,5 +5,5 @@ uid: 92a8ea45
 ---
 
 :::hero {.plate}
-![The Divine Image](../the-divine-image.jpg)
+![The Divine Image](the-divine-image.jpg)
 :::

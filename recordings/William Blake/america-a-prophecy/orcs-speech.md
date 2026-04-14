@@ -5,5 +5,5 @@ uid: e7035d6f
 ---
 
 :::hero {.plate}
-![Orc's Speech](../orcs-speech.jpg)
+![Orc's Speech](orcs-speech.jpg)
 :::

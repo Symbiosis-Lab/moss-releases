@@ -5,5 +5,5 @@ uid: 60458a43
 ---
 
 :::hero {.plate}
-![The Lamb](../the-lamb.jpg)
+![The Lamb](the-lamb.jpg)
 :::

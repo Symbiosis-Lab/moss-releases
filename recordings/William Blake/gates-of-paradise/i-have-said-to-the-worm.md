@@ -5,5 +5,5 @@ uid: 58a0f1d6
 ---
 
 :::hero {.plate}
-![I Have Said to the Worm](../i-have-said-to-the-worm.jpg)
+![I Have Said to the Worm](i-have-said-to-the-worm.jpg)
 :::

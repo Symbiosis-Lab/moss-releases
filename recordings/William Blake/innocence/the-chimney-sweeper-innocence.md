@@ -5,5 +5,5 @@ uid: 5711467b
 ---
 
 :::hero {.plate}
-![The Chimney Sweeper](../the-chimney-sweeper-innocence.jpg)
+![The Chimney Sweeper](the-chimney-sweeper-innocence.jpg)
 :::

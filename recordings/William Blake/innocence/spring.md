@@ -5,5 +5,5 @@ uid: f3985ae8
 ---
 
 :::hero {.plate}
-![Spring](../spring.jpg)
+![Spring](spring.jpg)
 :::

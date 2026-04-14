@@ -5,5 +5,5 @@ uid: 7d3a26b8
 ---
 
 :::hero {.plate}
-![Thel's Motto](../thels-motto.jpg)
+![Thel's Motto](thels-motto.jpg)
 :::

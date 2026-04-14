@@ -5,5 +5,5 @@ uid: 5c9e2a41
 ---
 
 :::hero {.plate}
-![A Song of Liberty](../a-song-of-liberty.jpg)
+![A Song of Liberty](a-song-of-liberty.jpg)
 :::

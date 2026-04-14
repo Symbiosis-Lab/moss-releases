@@ -5,5 +5,5 @@ uid: 7a49484d
 ---
 
 :::hero {.plate}
-![The Ecchoing Green](../the-ecchoing-green.jpg)
+![The Ecchoing Green](the-ecchoing-green.jpg)
 :::

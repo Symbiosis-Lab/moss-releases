@@ -5,5 +5,5 @@ uid: 3b71d9a4
 ---
 
 :::hero {.plate}
-![Night](../night.jpg)
+![Night](night.jpg)
 :::

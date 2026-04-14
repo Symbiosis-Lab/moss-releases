@@ -1,0 +1,11 @@
+{
+  "source_oid": "a377a7c8e7c72914b00db250d3cf07e63c51c866857a074bfa5cb09ca50c9f90",
+  "source_size": 1939806,
+  "transforms": {
+    "media/meta": {
+      "oid": "58057dc925f2df83704365f700c969126aa8277fbcffa6b11c90007cab9f4967",
+      "size": 1003,
+      "params": {}
+    }
+  }
+}

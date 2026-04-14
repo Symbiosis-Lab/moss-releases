@@ -5,5 +5,5 @@ uid: 5b43402d
 ---
 
 :::hero {.plate}
-![Infant Joy](../infant-joy.jpg)
+![Infant Joy](infant-joy.jpg)
 :::
