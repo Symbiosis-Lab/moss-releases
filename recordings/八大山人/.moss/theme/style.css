@@ -4,7 +4,22 @@
   --moss-color-accent: #c04020;
   --moss-color-surface: #f0ebe3;
   --moss-color-muted: #7a7570;
-  --moss-font-body: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+  --moss-font-body: "Noto Serif TC", "Source Han Serif TC", "Songti TC", "Noto Serif SC", serif;
+  --moss-font-heading: "Noto Serif TC", "Source Han Serif TC", "Songti TC", "Noto Serif SC", serif;
+  --moss-content-width: 50ch;
+  --moss-space-xl: 4rem;
+  --moss-space-2xl: 6rem;
+  --moss-font-size-base: 1.2rem;
+}
+
+/* 留白: generous line height for classical Chinese */
+.moss-article-body {
+  line-height: 2;
+}
+
+/* More breathing room between collection items */
+.moss-child-summary {
+  margin-bottom: var(--moss-space-xl);
 }
 
 /* ── Painting/calligraphy display: full-width, image only ── */
