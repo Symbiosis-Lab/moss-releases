@@ -9,37 +9,30 @@ These files are the content that each artist "creates" during the landing page s
 3. The artist creates a NEW piece of content — types text, drags in an image
 4. The preview updates live, showing the new content appear on their site
 
-## William Blake — "How I Print My Illuminated Books"
+## William Blake — "The Ancients" (1824)
 
-**What happens in the recording**: Blake writes a journal entry about his relief etching method. He types the text in the editor, drags a plate image into the entry, and the preview updates.
+**What happens in the recording**: Blake writes about the young disciples — Samuel Palmer, George Richmond — who finally recognize his work. He types the journal entry in the editor. The preview updates live.
 
-**File**: `blake/the-method.md`
+**File**: `blake/the-ancients.md`
 
 **To put it back after recording**: 
 ```bash
-cp "recordings/research/recording-content/blake/the-method.md" "recordings/William Blake/journal/the-method.md"
+cp "recordings/research/recording-content/blake/the-ancients.md" "recordings/William Blake/journal/the-ancients.md"
 ```
 
-## 八大山人 — 安晚帖鱼 (Anwan Album Fish, 1694)
+## 八大山人 — 河上花歌 (1697)
 
-**What happens in the recording**: 八大山人 adds a new painting to his 畫 collection. He creates the markdown file, drags in the fish painting image, and adds the four-line inscription "左右此何水，名之曰曲河。更求渊注处，料得晚霞多。" The preview updates to show the painting full-width.
+**What happens in the recording**: 八大山人 writes the 37-line poem for his 13-meter masterpiece scroll 河上花圖. He types the poem in the editor in vertical classical Chinese. The preview updates live.
 
-**Files**: 
-- `bada-shanren/安晚帖鱼.md` (painting page)
-- `bada-shanren/安晚帖鱼.jpg` (painting image)
-- `bada-shanren/安晚帖鱼题诗.md` (inscription in 文 section)
+**File**: `bada-shanren/河上花歌.md`
 
 **To put it back after recording**:
 ```bash
-cp "recordings/research/recording-content/bada-shanren/安晚帖鱼.md" "recordings/八大山人/畫/安晚帖鱼.md"
-cp "recordings/research/recording-content/bada-shanren/安晚帖鱼.jpg" "recordings/八大山人/畫/安晚帖鱼.jpg"
-cp "recordings/research/recording-content/bada-shanren/安晚帖鱼题诗.md" "recordings/八大山人/文/安晚帖鱼题诗.md"
+cp "recordings/research/recording-content/bada-shanren/河上花歌.md" "recordings/八大山人/文/河上花歌.md"
 ```
 
-## Decisions Documented
+## What's on Each Site When Recording Starts
 
-- **Blake's recording piece**: "The Method" / "How I Print" — describes his relief etching process, Catherine's role, the vision from his brother Robert. Perfect for recording because it involves typing a journal entry AND dragging in a plate image to illustrate the technique.
+**Blake**: Full biographical timeline 1772-1824 (15 journal entries), 11 illuminated books with ~49 plates. Everything except "The Ancients" and "The Last Day."
 
-- **八大山人's recording piece**: 安晚帖鱼 — the Anwan Album fish painting (1694). His most characteristic subject (white-eyed fish), from the site's focal year, with a short four-line inscription. Perfect for recording because it shows adding a painting (image drag) and writing a brief poem (vertical Chinese text input).
-
-- **Why these pieces**: Both demonstrate moss's core capabilities (text editing, image drag-drop, live preview) while being authentic to each artist's practice. Blake wrote about his method; 八大山人 painted fish and wrote cryptic poems.
+**八大山人**: Full biographical timeline 1644-1696 (11 文 entries), ~18 paintings spanning 1665-1696, 3 calligraphy works. Everything except 河上花歌 and post-1697 works (双雁, 双鹰图).
