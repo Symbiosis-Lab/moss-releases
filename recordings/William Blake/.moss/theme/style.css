@@ -40,41 +40,6 @@ body:has(.moss-hero.plate) main .container {
   display: none;
 }
 
-/* ── Homepage hero ── */
-
-.moss-hero.illuminated {
-  max-height: none;
-  min-height: 80vh;
-}
-
-.moss-hero.illuminated img {
-  object-fit: contain;
-  background: var(--moss-color-bg);
-}
-
-.moss-hero.illuminated::before {
-  background: linear-gradient(180deg,
-    rgba(44, 36, 22, 0.05) 0%,
-    rgba(44, 36, 22, 0.4) 70%,
-    rgba(44, 36, 22, 0.7) 100%);
-}
-
-.moss-hero.illuminated .moss-hero-content {
-  bottom: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 80%;
-  text-align: center;
-}
-
-.moss-hero.illuminated .moss-hero-content h1,
-.moss-hero.illuminated .moss-hero-content p {
-  font-family: 'IM Fell English', Georgia, serif;
-  font-style: italic;
-  color: #f5efe3;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-}
-
 /* ── Journal styling ── */
 
 /* Decorated drop cap on first paragraph */
