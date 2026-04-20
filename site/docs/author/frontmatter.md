@@ -77,6 +77,12 @@ These fields control how a [[structure#^folder-page|folder page]] displays its c
 
 Card layout uses the `cover` image from each child's frontmatter.
 
+Set `children: false` to fully opt out of the auto-emitted child listing on a
+folder page or the homepage. This suppresses both listing styles — the inline
+list/summary layout (`.moss-article-listing`) and the card grid
+(`.moss-collection-grid`) — so custom homepages and folder landing pages can
+lay out their own content without a trailing auto-generated index.
+
 ## Media
 
 | Field | Type | Default | Description |
