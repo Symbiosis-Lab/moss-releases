@@ -102,8 +102,6 @@ The toggle shows the page's current language, followed by links to each availabl
 
 ## Shared partials across languages
 
-<!-- BEHAVIOR DEPENDS ON Phase 2 Task 2.4; confirm shipped before publishing this page -->
-
 You can extract shared markdown (like a footer) into a file and transclude it into pages across languages:
 
 ```markdown
