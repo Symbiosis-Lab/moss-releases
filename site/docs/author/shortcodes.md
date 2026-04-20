@@ -89,9 +89,11 @@ Cells automatically recognize and render:
 - **Markdown links**: `[text](url)` — rendered inline.
 - **Bare URLs**: `https://example.com` on its own line — auto-linked.
 
-### Friend-card auto-conversion
+### Single-link grid cells
 
-A grid cell whose substantive content is **only** a single external markdown link is rendered as a "friend-card" — a visual card pointing to another site. Adding a short inline description still counts as "only a link":
+A grid cell whose substantive content is exactly one markdown link is rendered as a single `<a>` wrapping the whole cell. The link's target (internal or external) and the content inside the link brackets (plain text, image, heading, paragraph, or any combination) do not change this rule.
+
+**External link** (`http://` or `https://`) → `.moss-grid-card.friend-card`. moss auto-fetches link metadata (title, favicon) if configured. Use for link directories and blogrolls:
 
 ```markdown
 :::grid 3
@@ -105,7 +107,30 @@ A memory-safe systems language.
 :::
 ```
 
-If the cell contains anything else — a heading, an image, or more than a link plus description — it renders as regular cell content. This lets you mix friend-cards and rich cells in the same grid.
+**Internal link** (site-relative path: `/foo`, `./foo`, or a wikilink target) → `.moss-grid-card.link-card`. No metadata fetch. Use for navigation grids, work portfolios, and show-detail cards:
+
+```markdown
+:::grid 2 {.work-cards}
+[![[poster-farewell.webp]]
+#### Farewell, and Erase
+A multilingual ethnodrama · May 2026](/farewell)
+---
+[![[daowu-home.jpg]]
+#### A House of Daowu
+Miao-language community theatre](/daowu)
+:::
+```
+
+The link's brackets can contain an image, headings, and paragraphs; moss emits one `<a>` wrapping all of them.
+
+A cell with anything else — two links, text plus a link, a heading plus a standalone paragraph — renders as regular cell content, unwrapped. This lets you mix clickable cards and rich cells in the same grid.
+
+Theme CSS targets each flavor independently:
+
+```css
+.moss-grid-card.friend-card { … }  /* external link cell */
+.moss-grid-card.link-card   { … }  /* internal link cell */
+```
 
 ### Number of columns and ratios
 
@@ -122,6 +147,40 @@ Narrow right.
 ```
 
 Ratios must have the same number of segments as the column count.
+
+## Named-class fenced divs
+
+When you need to style a region of markdown without introducing a named shortcode, use a bare `:::` fence with an attribute block:
+
+```markdown
+::: {.tagline}
+Civic engagement through community-centered performance.
+:::
+```
+
+renders as
+
+```html
+<div class="tagline">
+  <p>Civic engagement through community-centered performance.</p>
+</div>
+```
+
+Full markdown is rendered inside the div — headings, lists, images, links, even nested shortcodes all work normally. Multiple classes are supported:
+
+```markdown
+::: {.hero .narrow}
+## Our story
+
+Founded in 2018, we make theatre that listens.
+:::
+```
+
+Nesting follows the same arity rule as other shortcodes: the outer fence uses `:::`, the inner fence uses `::::`, and so on.
+
+A bare `:::` with no attribute block (no `{.class}`) is not a shortcode — it remains literal text in the output.
+
+Use named-class fenced divs instead of `<div class="…">` HTML wrappers. The class lives in your `.moss/theme/style.css`; the markdown stays readable.
 
 ## Gallery
 
