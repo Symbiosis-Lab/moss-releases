@@ -151,3 +151,19 @@ Then target them in CSS:
   border-radius: 50%;
 }
 ```
+
+### Layout in the class, not inline
+
+For responsive column ratios, define `grid-template-columns` on your class and omit the ratio on the shortcode — `:::grid 2 {.two-col-split}` instead of `:::grid 2 2:1 {.two-col-split}`. Passing a ratio emits an inline `style=""` on the container, which beats `@media` rules and forces `!important` overrides.
+
+```css
+.two-col-split {
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  .two-col-split { grid-template-columns: 1fr; }
+}
+```
+
+See [[shortcodes#Custom layouts with CSS classes]] for the full pattern.
