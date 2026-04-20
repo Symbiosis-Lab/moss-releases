@@ -88,6 +88,140 @@ lang: zh-hans
 - **图片**：`![描述](path.jpg)` 或 `![[photo.jpg]]`
 - **裸 URL**：`https://example.com`——自动转为链接
 
+### 单链接栏
+
+当一栏的全部实质内容仅为一个 markdown 链接时，moss 会把整栏包裹成一个 `<a>`。链接目标（内部或外部）和方括号内的内容（纯文字、图片、标题、段落，或任意组合）都不影响这一规则。
+
+**外部链接**（`http://` 或 `https://`）→ `.moss-grid-card.friend-card`。如有配置，moss 会自动抓取链接元数据（标题、favicon）。适用于友情链接页、链接目录：
+
+```markdown
+:::grid 3
+[MDN](https://developer.mozilla.org)
+---
+[Rust](https://rust-lang.org)
+
+一门内存安全的系统语言。
+---
+[GitHub](https://github.com)
+:::
+```
+
+**内部链接**（站内相对路径：`/foo`、`./foo`，或 wikilink 目标）→ `.moss-grid-card.link-card`。不抓取元数据。适用于导航网格、作品集、详情卡片：
+
+```markdown
+:::grid 2 {.work-cards}
+[![[poster-farewell.webp]]
+#### 改删别姬
+多语言民族志戏剧 · 2026 年 5 月](/farewell)
+---
+[![[daowu-home.jpg]]
+#### 棹乌之家
+苗语社区戏剧](/daowu)
+:::
+```
+
+链接的方括号内可以包含图片、标题和段落；moss 会输出一个 `<a>` 包裹全部内容。
+
+如果栏内包含其他内容——两个链接、文字加链接、独立的标题加段落——将渲染为普通栏内容，不会被包裹。这样可在同一网格中混合可点击卡片与富文本栏。
+
+主题 CSS 可独立针对两种变体：
+
+```css
+.moss-grid-card.friend-card { … }  /* 外部链接栏 */
+.moss-grid-card.link-card   { … }  /* 内部链接栏 */
+```
+
+### 文件夹链接自动转换与关闭
+
+`:::grid N` 中，若某一栏的全部内容仅为一个指向**已知文件夹**的内部链接，moss 会自动将其转换为 `moss-collection-card`——与 `children_style: card` 文件夹列表使用的同款卡片。moss 会读取该文件夹的封面图、标题和子页面数量，渲染完整卡片样式。
+
+```markdown
+:::grid 3
+[[work]]
+---
+[[essays]]
+---
+[[archive]]
+:::
+```
+
+这是默认行为，对于栏目索引页面通常正是所需效果。
+
+**用 `.no-cards` 关闭自动转换：**
+
+```markdown
+:::grid 3 {.no-cards}
+[[work]]
+---
+[[essays]]
+---
+[[archive]]
+:::
+```
+
+`.no-cards` 修饰符完全跳过自动转换。适用场景：
+
+- **导航网格**——页脚列表只需纯链接，不需要集合卡片。
+- **Hero 分栏布局**——某栏含有 CTA 按钮，不应呈现为卡片。
+- **复合链接网格**——栏内使用 `[…](/url)` 包裹模式，应渲染为 `.link-card` 或 `.friend-card`，而非集合卡片。
+
+CSS 目标选择器：
+
+```css
+.moss-collection-grid { … }        /* 自动转换后的文件夹网格 */
+.moss-collection-card { … }        /* 单张集合卡片 */
+```
+
+### 列数与比例
+
+`:::grid N` 中 `N` 是列数。可选 `a:b:c…` 比例设置各列宽度比：
+
+```markdown
+:::grid 3 2:1:1
+左宽。
+---
+中窄。
+---
+右窄。
+:::
+```
+
+比例段数必须与列数一致。
+
+## 命名类围栏 div
+
+当需要给一段 markdown 区域加样式，又不想引入新的具名短代码时，可以用不带短代码名的 `:::` 围栏加属性块：
+
+```markdown
+::: {.tagline}
+通过社区剧场推动公民行动。
+:::
+```
+
+渲染为
+
+```html
+<div class="tagline">
+  <p>通过社区剧场推动公民行动。</p>
+</div>
+```
+
+div 内部按完整 markdown 渲染——标题、列表、图片、链接，甚至嵌套短代码都正常工作。支持多个类名：
+
+```markdown
+::: {.hero .narrow}
+## 我们的故事
+
+创立于 2018 年，我们做的是倾听的剧场。
+:::
+```
+
+嵌套遵循和其他短代码相同的 arity 规则：外层 `:::`，内层 `::::`，再内层 `:::::`。
+
+没有属性块（没有 `{.class}`）的光秃 `:::` 不是短代码——它会保留为字面文本输出。
+
+命名类围栏 div 用来替代 `<div class="…">` HTML 包装。类名放进 `.moss/theme/style.css`，markdown 保持可读。
+
 ## Gallery
 
 图片画廊。
@@ -159,47 +293,6 @@ lang: zh-hans
 > 第一段。
 >
 > 第二段，可以用**粗体**等格式。
-```
-
-### 文件夹链接自动转换与关闭
-
-`:::grid N` 中，若某一栏的全部内容仅为一个指向**已知文件夹**的内部链接，moss 会自动将其转换为 `moss-collection-card`——与 `children_style: card` 文件夹列表使用的同款卡片。moss 会读取该文件夹的封面图、标题和子页面数量，渲染完整卡片样式。
-
-```markdown
-:::grid 3
-[[work]]
----
-[[essays]]
----
-[[archive]]
-:::
-```
-
-这是默认行为，对于栏目索引页面通常正是所需效果。
-
-**用 `.no-cards` 关闭自动转换：**
-
-```markdown
-:::grid 3 {.no-cards}
-[[work]]
----
-[[essays]]
----
-[[archive]]
-:::
-```
-
-`.no-cards` 修饰符完全跳过自动转换。适用场景：
-
-- **导航网格**——页脚列表只需纯链接，不需要集合卡片。
-- **Hero 分栏布局**——某栏含有 CTA 按钮，不应呈现为卡片。
-- **复合链接网格**——栏内使用 `[…](/url)` 包裹模式，应渲染为 `.link-card` 或 `.friend-card`，而非集合卡片。
-
-CSS 目标选择器：
-
-```css
-.moss-collection-grid { … }        /* 自动转换后的文件夹网格 */
-.moss-collection-card { … }        /* 单张集合卡片 */
 ```
 
 ## 属性
