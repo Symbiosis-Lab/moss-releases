@@ -41,7 +41,10 @@ When multiple files could match, moss picks the best one:
 1. Exact filename match
 2. Filename without extension
 3. Folder note (self-named file)
-4. Closest directory first (files nearer to the linking page win ties)
+4. Same language tree as the source page (e.g. `![[footer]]` from `zh-hans/about.md` prefers `zh-hans/footer.md` over root `footer.md`)
+5. Closest directory first (files nearer to the linking page win remaining ties)
+
+Explicit paths like `[[zh-hans/footer]]` always win over the language-tree preference.
 
 ## Embeds
 
