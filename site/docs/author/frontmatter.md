@@ -46,7 +46,8 @@ These fields control how the page appears in the site's navigation and chrome.
 | `nav` | boolean | `true` for root pages | Show in header navigation |
 | `weight` | integer | — | Sort order in nav and lists (lower = first) |
 | `breadcrumb` | boolean | site default | Show breadcrumb trail on this page |
-| `footer` | boolean | site default | Show footer on this page |
+| `footer` | boolean | site default | Show this page as a link in the site footer |
+| `footer_align` | string | `"left"` | Align this page's footer link (`"left"` or `"right"`) |
 <!-- auto:end:frontmatter-navigation -->
 
 ## Visibility
@@ -72,6 +73,8 @@ These fields control how a [[structure#^folder-page|folder page]] displays its c
 | `children_source` | string | — | Wikilink to folder whose children to show instead |
 <!-- auto:end:frontmatter-children -->
 
+`children_source` takes a wikilink target, e.g. `children_source: "[[news]]"`.
+
 Card layout uses the `cover` image from each child's frontmatter.
 
 ## Media
@@ -83,6 +86,25 @@ Card layout uses the `cover` image from each child's frontmatter.
 | `logo` | string | — | Logo image displayed in the site header |
 
 See [[media#Cover images]] for details.
+
+## Layout
+
+These fields control how the page's content is typeset and sized.
+
+| Field | Type | Default | Description |
+|-------|------|---------|-------------|
+| `typesetting` | string | `"horizontal"` | `"horizontal"` or `"vertical"` (right-to-left columns for CJK) |
+| `content_width` | string | default (`67ch`) | `"wide"` (80ch, good for grids/tables) or `"full"` (site max, good for dashboards) |
+
+Set these in a folder's `cascade` to apply them to a whole section:
+
+```yaml
+---
+title: Dashboards
+cascade:
+  content_width: full
+---
+```
 
 ## Cross-listing
 

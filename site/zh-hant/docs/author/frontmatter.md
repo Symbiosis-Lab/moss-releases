@@ -47,7 +47,8 @@ Frontmatter 不是必填的。沒有 frontmatter 的檔案一樣會變成頁面�
 | `nav` | boolean | 根目錄頁面為 `true` | 是否顯示在頂部導覽列 |
 | `weight` | integer | — | 導覽和列表中的排序（數值越小越前面） |
 | `breadcrumb` | boolean | 網站預設 | 是否顯示麵包屑導覽 |
-| `footer` | boolean | 網站預設 | 是否顯示頁尾 |
+| `footer` | boolean | 網站預設 | 是否作為連結出現在網站頁尾 |
+| `footer_align` | string | `"left"` | 頁尾連結對齊方式（`"left"` 或 `"right"`） |
 <!-- auto:end:frontmatter-navigation -->
 
 ## 可見性
@@ -75,6 +76,8 @@ Frontmatter 不是必填的。沒有 frontmatter 的檔案一樣會變成頁面�
 | `children_source` | string | — | Wikilink 指向另一個資料夾，顯示其子頁面 |
 <!-- auto:end:frontmatter-children -->
 
+`children_source` 的值是一個 wikilink，例如 `children_source: "[[news]]"`。
+
 卡片佈局會使用每個子頁面 frontmatter 中的 `cover` 圖片。
 
 ## 媒體
@@ -86,6 +89,25 @@ Frontmatter 不是必填的。沒有 frontmatter 的檔案一樣會變成頁面�
 | `logo` | string | — | 顯示在網站標頭的 Logo 圖片 |
 
 詳見 [[media#封面圖]]。
+
+## 版面
+
+控制頁面內文的排版方向和寬度。
+
+| 欄位 | 類型 | 預設值 | 說明 |
+|------|------|--------|------|
+| `typesetting` | string | `"horizontal"` | `"horizontal"`（預設）或 `"vertical"`（CJK 右起直排） |
+| `content_width` | string | 預設（`67ch`） | `"wide"`（80ch，適合多欄/表格）或 `"full"`（網站最大寬度，適合儀表板） |
+
+也可以在資料夾的 `cascade` 中設定，套用到整個區塊：
+
+```yaml
+---
+title: 儀表板
+cascade:
+  content_width: full
+---
+```
 
 ## 交叉列表
 
