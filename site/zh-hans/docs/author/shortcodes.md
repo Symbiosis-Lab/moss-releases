@@ -265,6 +265,64 @@ div 内部按完整 markdown 渲染——标题、列表、图片、链接，甚
 :::
 ```
 
+### 嵌套进 grid
+
+嵌套短代码遵循 **arity 规则**：内层围栏比外层多一个冒号。因此 `:::grid` 内可以放 `::::buttons`，而 `::::buttons` 内还可以放 `:::::callouts`，依此类推。每个围栏的裸闭合标记（`:::`、`::::`、`:::::`）与同等冒号数的开始标记匹配。若闭合行冒号数有误，解析器会将其视为字面内容，而不是静默吞掉周围文本。
+
+```markdown
+:::grid 2 2:3 {.hero-split}
+# 宣传资料
+
+::::buttons {.inverted}
+[下载 PDF](https://example.com/deck.pdf)
+[联系我们](mailto:hi@example.com)
+::::
+---
+联系信息
+:::
+```
+
+现有从未嵌套过围栏的站点无需改动——普通的 `:::grid ... :::` 不含更深层的块，解析方式完全不变。
+
+## 用 CSS 类名自定义布局
+
+当你需要超出内置短代码的布局——两栏分割、不对称 hero、侧边栏加主内容区——可以用 `{.classname}` 附加一个类名，把布局逻辑交给 `.moss/theme/style.css` 管理。这样 CSS 集中在一处，响应式的 `@media` 规则也不需要 `!important`。
+
+**推荐做法。** 使用 `:::grid N {.your-class}`（不写比例），在 CSS 中定义比例：
+
+```markdown
+:::grid 2 {.two-col-split}
+# 主旨
+
+主内容区——标题、段落、图片，随你放。
+---
+侧边栏，放标注或元数据。
+:::
+```
+
+```css
+/* .moss/theme/style.css */
+.two-col-split {
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  .two-col-split { grid-template-columns: 1fr; }
+}
+```
+
+grid 容器渲染为 `<div class="moss-grid two-col-split">`，你的类名与内置 `moss-grid` 并列，可以覆盖它的 `grid-template-columns`。
+
+**避免的做法。** 在 `:::grid 2 2:1 {.two-col-split}` 中同时写比例，会在容器上输出内联 `style="grid-template-columns:2fr 1fr"`。内联样式优先级高于样式表规则，导致 `@media` 查询失效——除非给每条属性都加 `!important`，这在整站推广后将成为维护陷阱。
+
+**经验法则。** 一次性布局且不需要响应式时，用比例形式（`:::grid 2 2:1`）。只要需要 `@media` 行为，或同一形状在多个页面复用，就换成命名类。
+
+完整的组件类名列表见 [[css#短代码类名]]。
+
+## 标注
+
+标注（`> [!type]` 引用块）有独立的文档页面——语法和完整类型列表见 [[callouts]]。
+
 ## 提示框
 
 用于提示、警告和注意事项的高亮块。兼容 Obsidian 语法：
