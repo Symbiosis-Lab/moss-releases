@@ -46,6 +46,8 @@ my-site/
 
 This works for small sites, but mixing it with folder-per-language in the same folder is ambiguous — stick to one style per site.
 
+Bare `.zh` is accepted as shorthand for `.zh-hans` — `about.zh.md` resolves exactly like `about.zh-hans.md` (URL `/zh-hans/about/`, `lang="zh-hans"`). Use whichever form you prefer; `.zh-hant` / `.zh-tw` remain distinct for Traditional Chinese.
+
 ## Frontmatter fields
 
 | Field | Type | Purpose |
