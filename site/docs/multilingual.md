@@ -48,6 +48,21 @@ This works for small sites, but mixing it with folder-per-language in the same f
 
 Bare `.zh` is accepted as shorthand for `.zh-hans` — `about.zh.md` resolves exactly like `about.zh-hans.md` (URL `/zh-hans/about/`, `lang="zh-hans"`). Use whichever form you prefer; `.zh-hant` / `.zh-tw` remain distinct for Traditional Chinese.
 
+## Mixed-structure warning
+
+If a single language uses **both** styles — say, `zh-hans/index.md` (folder-per-language) AND `index.zh-hans.md` (sibling suffix) — moss emits a compile-time warning:
+
+```
+[warn] Mixed multilingual structure detected for language 'zh-hans'. Found
+       both sibling suffix file (index.zh-hans.md) and folder-based
+       translation (zh-hans/...). Prefer folder-per-language — see
+       https://docs.mosspub.com/multilingual for the canonical pattern.
+```
+
+Both styles still compile; the warning is just a nudge. To silence it, pick one style per language and move the other files over. Folder-per-language (the canonical shape above) is almost always the better choice — URLs mirror the folder tree, and adding more pages doesn't keep stacking `.lang.md` copies next to originals.
+
+Different languages may use different styles without triggering the warning; it only fires when the **same** language appears in both shapes.
+
 ## Frontmatter fields
 
 | Field | Type | Purpose |
