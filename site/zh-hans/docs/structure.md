@@ -9,6 +9,35 @@ lang: zh-hans
 
 文件夹里的每个 `.md` 文件都会变成一个页面，每个子文件夹变成一个栏目。不需要任何配置——在 moss 中打开文件夹，网站结构已经成型。
 
+## 文件夹树 = 网站树
+
+moss 将文件夹结构直接映射为 URL 结构。`work/farewell.md` 发布后的地址是 `/work/farewell/`。文件夹变成站点栏目，导航、面包屑和固定链接都随文件系统而定。新建一个文件夹就是新建一个栏目，文件夹嵌套即页面嵌套。
+
+**站点树示例及对应 URL：**
+
+```
+work/
+├── index.md            →  /work/
+├── farewell.md         →  /work/farewell/
+└── daowu/
+    ├── index.md        →  /work/daowu/
+    └── gallery.md      →  /work/daowu/gallery/
+about.md                →  /about/
+index.md                →  /
+```
+
+面包屑遵循同一层级结构——在首页设置 `breadcrumb: true`，每个页面都会自动生成面包屑导航（`首页 / 作品 / 再见`），无需手动编写面包屑块。
+
+### 排除的文件夹
+
+以下文件夹名称保留给静态资源，**不会**被当作内容处理：
+
+`assets/`、`images/`、`static/`、`public/`、`img/`、`css/`、`js/`、`fonts/`、`node_modules/`
+
+名称以 `.`（点）或 `_`（下划线）开头的文件夹也会被排除。
+
+这些文件夹中的文件会原样对外提供，但不会生成页面或栏目。将图片放在这里，用 `![[文件名.ext]]` wikilink 引用——无论源页面在哪，moss 都能解析。
+
 ## 文件夹页面
 
 文件夹中的 `index.md` 就是该文件夹的页面。访问文件夹的 URL 时，看到的就是它。
