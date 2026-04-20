@@ -9,7 +9,16 @@ lang: zh-hant
 
 ## 自訂樣式表
 
-在專案根目錄建立 `style.css`。moss 會在預設主題之後載入它，所以你的規則直接覆蓋預設值。
+在專案的 `.moss/theme/` 目錄下建立 `style.css`（moss 在你開啟資料夾時會自動建立 `.moss/theme/`）。moss 會在預設主題之後載入它，所以你的規則直接覆蓋預設值。
+
+```
+my-site/
+├── .moss/
+│   └── theme/
+│       └── style.css   ← 自訂 CSS 放這裡
+├── index.md
+└── ...
+```
 
 ```css
 :root {
@@ -20,6 +29,9 @@ lang: zh-hant
 ```
 
 不需要建置步驟，不需要設定。檔案自動載入。
+
+> [!note] 自行託管字型
+> 把 `.woff2` 檔案放在 `.moss/theme/fonts/` 下，在 `style.css` 中用 `@font-face { src: url('fonts/myfont.woff2') }` 引用。`.moss/theme/` 目錄作為網站根目錄的兄弟目錄對外提供。
 
 ## 變數
 

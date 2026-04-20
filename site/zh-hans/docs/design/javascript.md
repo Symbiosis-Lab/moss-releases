@@ -9,7 +9,16 @@ lang: zh-hans
 
 ## 自定义脚本
 
-在项目根目录创建 `script.js`。moss 在所有内置脚本之后加载它，代码运行时 DOM 已经就绪。
+在项目的 `.moss/theme/` 目录下创建 `script.js`（moss 在你打开文件夹时会自动创建 `.moss/theme/`）。moss 在所有内置脚本之后加载它，代码运行时 DOM 已经就绪。
+
+```
+my-site/
+├── .moss/
+│   └── theme/
+│       └── script.js   ← 自定义 JS 放在这里
+├── index.md
+└── ...
+```
 
 ```javascript
 // script.js

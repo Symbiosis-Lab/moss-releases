@@ -8,7 +8,16 @@ translationKey: docs-design-css
 
 ## Custom stylesheet
 
-Create `style.css` in your project root. moss loads it after the default theme, so your rules override the defaults.
+Create `style.css` inside `.moss/theme/` in your project folder (moss creates `.moss/theme/` automatically when you open the folder). moss loads it after the default theme, so your rules override the defaults.
+
+```
+my-site/
+├── .moss/
+│   └── theme/
+│       └── style.css   ← your custom CSS goes here
+├── index.md
+└── ...
+```
 
 ```css
 :root {
@@ -19,6 +28,9 @@ Create `style.css` in your project root. moss loads it after the default theme, 
 ```
 
 No build step, no config entry. The file is loaded automatically.
+
+> [!note] Self-hosted fonts
+> Drop `.woff2` files in `.moss/theme/fonts/` and reference them from your `style.css` with `@font-face { src: url('fonts/myfont.woff2') }`. The `.moss/theme/` directory is served as a sibling of the site root.
 
 ## Variables
 

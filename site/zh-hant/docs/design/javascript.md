@@ -9,7 +9,16 @@ lang: zh-hant
 
 ## 自訂指令碼
 
-在專案根目錄建立 `script.js`。moss 會在所有內建指令碼之後載入它，所以你的程式碼執行時 DOM 已經就緒。
+在專案的 `.moss/theme/` 目錄下建立 `script.js`（moss 在你開啟資料夾時會自動建立 `.moss/theme/`）。moss 會在所有內建指令碼之後載入它，所以你的程式碼執行時 DOM 已經就緒。
+
+```
+my-site/
+├── .moss/
+│   └── theme/
+│       └── script.js   ← 自訂 JS 放這裡
+├── index.md
+└── ...
+```
 
 ```javascript
 // script.js

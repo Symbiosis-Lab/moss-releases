@@ -8,7 +8,7 @@ translationKey: docs-design
 
 Two files, both optional:
 
-- **`style.css`** — override [[css|colors, fonts, spacing, and component styles]]
-- **`script.js`** — add [[javascript|custom behavior and interactions]]
+- **`.moss/theme/style.css`** — override [[css|colors, fonts, spacing, and component styles]]
+- **`.moss/theme/script.js`** — add [[javascript|custom behavior and interactions]]
 
-Both go in your project root. No build step, no configuration. moss loads them automatically.
+Both go under `.moss/theme/` in your project folder. No build step, no configuration. moss loads them automatically.

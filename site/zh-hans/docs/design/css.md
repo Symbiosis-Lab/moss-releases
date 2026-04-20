@@ -9,7 +9,16 @@ lang: zh-hans
 
 ## 自定义样式表
 
-在项目根目录创建 `style.css`。moss 在默认主题之后加载它，你的规则会覆盖默认值。
+在项目的 `.moss/theme/` 目录下创建 `style.css`（moss 在你打开文件夹时会自动创建 `.moss/theme/`）。moss 在默认主题之后加载它，你的规则会覆盖默认值。
+
+```
+my-site/
+├── .moss/
+│   └── theme/
+│       └── style.css   ← 自定义 CSS 放在这里
+├── index.md
+└── ...
+```
 
 ```css
 :root {
@@ -20,6 +29,9 @@ lang: zh-hans
 ```
 
 不需要构建步骤，不需要配置。文件自动加载。
+
+> [!note] 自托管字体
+> 把 `.woff2` 文件放在 `.moss/theme/fonts/` 下，在 `style.css` 中用 `@font-face { src: url('fonts/myfont.woff2') }` 引用。`.moss/theme/` 目录作为站点根目录的兄弟目录对外提供。
 
 ## 变量
 

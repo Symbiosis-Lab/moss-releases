@@ -8,7 +8,16 @@ translationKey: docs-design-javascript
 
 ## Custom script
 
-Create `script.js` in your project root. moss loads it after all built-in scripts, so the DOM is ready when your code runs.
+Create `script.js` inside `.moss/theme/` in your project folder (moss creates `.moss/theme/` automatically when you open the folder). moss loads it after all built-in scripts, so the DOM is ready when your code runs.
+
+```
+my-site/
+├── .moss/
+│   └── theme/
+│       └── script.js   ← your custom JS goes here
+├── index.md
+└── ...
+```
 
 ```javascript
 // script.js
