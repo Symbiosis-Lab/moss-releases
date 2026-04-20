@@ -1,8 +1,8 @@
 ---
-title: 連結與嵌入
+title: Wikilink 與嵌入
 uid: 6ae0fb4a
-weight: 4
-description: Wikilink、嵌入、交叉引用和雙語內容。
+weight: 3
+description: 連結頁面、嵌入章節、引用段落。
 translationKey: docs-author-links
 lang: zh-hant
 ---
@@ -82,43 +82,4 @@ moss 將資料夾變成網站。 ^intro
 
 相對路徑和絕對路徑都可以。外部連結自動在新分頁開啟。
 
-## 雙語內容
-
-在檔名後加語言後綴就能建立翻譯：
-
-| 檔案 | 語言 |
-|------|------|
-| `about.md` | 網站預設語言 |
-| `about.zh-hans.md` | 簡體中文 |
-| `about.zh-hant.md` | 繁體中文 |
-| `about.en.md` | 英文（明確指定） |
-
-存在翻譯時，頁面上會自動出現語言切換按鈕。
-
-### 語言偵測
-
-moss 按以下順序判斷頁面語言：
-
-1. frontmatter 中的 `lang` 欄位
-2. 檔名後綴（`.zh-hans.md`）
-3. 內容自動偵測
-4. 網站預設語言
-
-### 不同檔名的翻譯
-
-如果翻譯使用了不同的檔名，用 `translationKey` 把它們連結起來：
-
-```yaml
-# posts/hello.md
----
-translationKey: hello-post
----
-
-# posts/ni-hao.md
----
-translationKey: hello-post
-lang: zh-hans
----
-```
-
-兩個檔案會顯示語言切換按鈕，互相連結。
+多語言相關內容（`translationKey`、語言樹、自動語言切換按鈕）已搬到 [[../multilingual|多語言網站]]。

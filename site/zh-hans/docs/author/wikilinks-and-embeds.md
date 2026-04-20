@@ -1,8 +1,8 @@
 ---
-title: 链接与嵌入
+title: Wikilink 与嵌入
 uid: d7ca7969
-weight: 4
-description: Wikilink、嵌入、交叉引用和双语内容。
+weight: 3
+description: 链接页面、嵌入章节、引用段落。
 translationKey: docs-author-links
 lang: zh-hans
 ---
@@ -82,42 +82,4 @@ moss 将文件夹变成网站。 ^intro
 
 相对路径和绝对路径都可以。外部链接自动在新标签页打开。
 
-## 双语内容
-
-在文件名后追加语言后缀即可创建翻译版本：
-
-| 文件 | 语言 |
-|------|------|
-| `about.md` | 站点默认语言 |
-| `about.zh-hans.md` | 简体中文 |
-| `about.zh-hant.md` | 繁体中文 |
-| `about.en.md` | 英文（显式声明） |
-
-有翻译版本时，页面会自动出现语言切换按钮。
-
-### 语言检测
-
-moss 按以下顺序确定页面语言：
-
-1. `lang` frontmatter 字段
-2. 文件名后缀（`.zh-hans.md`）
-3. 内容自动检测
-4. 站点默认语言
-
-### 关联不同文件名的翻译
-
-如果翻译版本使用了不同的文件名，用 `translationKey` 将它们关联：
-
-```yaml
-# posts/hello.md
----
-translationKey: hello-post
----
-
-# posts/ni-hao.md
----
-translationKey: hello-post
----
-```
-
-两个文件都会显示语言切换按钮，互相链接。
+多语言相关内容（`translationKey`、语言树、自动语言切换按钮）已迁移到 [[../multilingual|多语言站点]]。
