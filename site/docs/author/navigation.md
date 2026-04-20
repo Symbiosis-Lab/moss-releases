@@ -81,9 +81,7 @@ For custom content at the end of the right footer column, plugins and themes can
 
 ## Language-scoped navigation
 
-<!-- BEHAVIOR DEPENDS ON Phase 2 Task 2.2; confirm shipped before publishing this page -->
-
-On a multilingual site, the header nav shows only pages in the current page's language tree — visitors on the English homepage see the English nav; visitors on the Chinese homepage see the Chinese nav. The language toggle (separate icon in the header) lets them switch trees.
+Nav items are scoped to the current page's language tree automatically. On a multilingual site, the header nav shows only pages in the current page's language — visitors on the English homepage see the English nav; visitors on the Chinese homepage see the Chinese nav. The language toggle (separate icon in the header) lets them switch trees.
 
 If `nav: true` is set on a page in one language tree, the corresponding page in another tree needs its own `nav: true` — `nav` is per-page, not global.
 
