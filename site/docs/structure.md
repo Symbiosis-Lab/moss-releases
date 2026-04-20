@@ -8,6 +8,35 @@ translationKey: docs-structure
 
 Every `.md` file in your folder becomes a page. Every subfolder becomes a section.
 
+## Folder tree = site tree
+
+moss maps your folder tree directly to your URL tree. A file at `work/farewell.md` publishes at `/work/farewell/`. Folders become site sections. Navigation, breadcrumbs, and permalinks all follow the filesystem. To add a new section, create a folder. To nest pages, nest folders.
+
+**Example site tree and resulting URLs:**
+
+```
+work/
+├── index.md            →  /work/
+├── farewell.md         →  /work/farewell/
+└── daowu/
+    ├── index.md        →  /work/daowu/
+    └── gallery.md      →  /work/daowu/gallery/
+about.md                →  /about/
+index.md                →  /
+```
+
+Breadcrumbs reflect this same hierarchy — set `breadcrumb: true` on the homepage and every page gets an automatic trail (`Home / Work / Farewell`). No hand-rolled breadcrumb blocks needed.
+
+### Excluded folders
+
+The following folder names are reserved for static assets and are **not** treated as content:
+
+`assets/`, `images/`, `static/`, `public/`, `img/`, `css/`, `js/`, `fonts/`, `node_modules/`
+
+Any folder whose name starts with `.` (dot) or `_` (underscore) is also excluded.
+
+Files inside these folders are served as-is but will not become pages or sections. Put images here and reference them with `![[filename.ext]]` wikilinks — moss resolves them regardless of where the source page lives.
+
 ## Folder pages
 
 `index.md` in any folder becomes that folder's page. moss also recognizes `readme.md`, `_index.md`, and `main.md` (checked in that order, case-insensitive). ^folder-page

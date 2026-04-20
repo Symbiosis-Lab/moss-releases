@@ -27,6 +27,15 @@ When a design call requires a visual treatment, try in this order:
 - Clickable grid card: wrap the cell's content in a single markdown link `[![[cover.jpg]] ## Title\n Desc](/target)`. moss wraps the cell in one `<a>`. Do NOT hand-write `<a>` wrappers. See [[shortcodes#Single-link grid cells]].
 - Frontmatter is for metadata (`title`, `uid`, `lang`, `translationKey`, `nav`, `weight`, `description`). Never for visual content.
 - moss auto-emits `<h1>` from the page title — do not duplicate with `# Heading` if `title:` frontmatter is already set and the theme renders it. Use `#` in markdown only when the heading belongs in the content flow.
+- **Folder tree = site tree.** Put related pages in a folder (`work/`, `essays/`). moss generates breadcrumbs automatically when `breadcrumb: true` is on the homepage frontmatter. Never hand-roll `::: {.breadcrumb}` blocks.
+- **Use moss-emitted class names in CSS, not invented parallels.** `.moss-grid`, `.moss-grid-card`, `.moss-buttons`, `.moss-btn-primary`, `.moss-hero`, `.moss-hero-content`, `.callout`, `.callout-pending`, `.moss-collection-card`, `.moss-child-summary`. Target these directly. See [[css#Component classes]] for the full list.
+- **Single-link grid cells wrap in `<a>`.** A cell containing only `[…](url)` — whether the link text is inline or compound block content (image + heading + paragraph separated by blank lines) — becomes one `<a>` with block-level children. Do not hand-write `<a>` wrappers.
+- **`.no-cards` opts out of folder-link auto-conversion.** Use `:::grid N {.no-cards}` for navigation grids, mixed-content grids, or compound-link grids where cells should render as `.link-card` / `.friend-card` rather than collection cards.
+- **Pandoc-style heading/paragraph/hr attributes do NOT parse.** `# Title {.class}`, `paragraph\n{.class}`, and `---\n{.section-divider}` are not supported. Use `::: {.class}` fenced divs or CSS selectors on element structure instead.
+- **Arity rule for nested fenced divs.** Inner fence uses more colons than outer: `:::` contains `::::` contains `:::::`. The bare close of each fence must match the opener's colon count. Same-arity nesting emits a warning and renders as literal text.
+- **Frontmatter is a fixed schema.** Arbitrary custom fields are silently ignored. `description:` is for SEO/previews only — it is not rendered as a visible page deck. Decks use `> blockquote` immediately after `# H1`.
+- **Wikilink language-tree resolution.** `![[page]]` inside `zh-hans/file.md` prefers `zh-hans/page.md` over root `page.md`. Use an explicit path prefix (`![[zh-hans/page]]`) to override.
+- **Images in excluded folders are served as static files, not pages.** `assets/`, `images/`, `static/`, `public/`, `img/`, `css/`, `js/`, `fonts/`, `node_modules/`, and any dot- or underscore-prefixed folder are excluded from content processing. Reference their files via `![[filename.ext]]` wikilinks.
 
 ## If you think you need HTML, stop and ask
 

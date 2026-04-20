@@ -46,6 +46,28 @@ When multiple files could match, moss picks the best one:
 
 Explicit paths like `[[zh-hans/footer]]` always win over the language-tree preference.
 
+## Image embeds
+
+Embed images with `!` before the brackets:
+
+```markdown
+![[photo.jpg]]
+![[poster-farewell.webp]]
+```
+
+moss resolves the filename by searching the entire content tree — you don't need a relative path. Put images in an excluded asset folder (`assets/`, `images/`, `static/`, `public/`) so they are served but not treated as content pages, then reference them by bare filename from any markdown file.
+
+```
+work/
+├── index.md         ← uses ![[poster-farewell.webp]]
+└── assets/
+    └── poster-farewell.webp   ← not a page; served as a static file
+```
+
+The language-tree preference (rule 4 above) applies to image resolution too: `![[photo.jpg]]` inside `zh-hans/about.md` prefers `zh-hans/photo.jpg` if it exists.
+
+**Pipe syntax** controls display: `![[photo.jpg|contain top]]`. See [[media]] for the full option set.
+
 ## Embeds
 
 Pull content from another page inline using `!` before the brackets:

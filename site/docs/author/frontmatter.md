@@ -22,6 +22,12 @@ The rest of the file is your content.
 
 Frontmatter is optional. A file without it still becomes a page — moss uses the filename as the title.
 
+### Fixed schema
+
+Frontmatter uses a **fixed schema** — moss only recognizes the fields listed on this page. Arbitrary custom fields are silently ignored. If you need custom per-page metadata, store it in body content: a markdown paragraph, a `::: {.meta}` fenced div, or a data table.
+
+`description:` is for SEO meta tags, Open Graph previews, and sitemap summaries. It is **not** rendered as a visible page deck. For a visible subtitle or lead paragraph, use a `> blockquote` immediately after the `# H1` — the default theme styles `h1 + blockquote` as a deck.
+
 ## Identity
 
 These fields describe what the page is.
@@ -45,7 +51,7 @@ These fields control how the page appears in the site's navigation and chrome.
 |-------|------|---------|-------------|
 | `nav` | boolean | `true` for root pages | Show in header navigation |
 | `weight` | integer | — | Sort order in nav and lists (lower = first) |
-| `breadcrumb` | boolean | site default | Show breadcrumb trail on this page |
+| `breadcrumb` | boolean | site default | Show breadcrumb trail on this page. Set `true` on the homepage to activate breadcrumbs site-wide; set `false` on any page to opt it out. |
 | `footer` | boolean | site default | Show this page as a link in the site footer |
 | `footer_align` | string | `"left"` | Align this page's footer link (`"left"` or `"right"`) |
 <!-- auto:end:frontmatter-navigation -->
