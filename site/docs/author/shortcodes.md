@@ -187,33 +187,40 @@ Contact info
 
 Existing sites that never nested fences continue to work unchanged — a plain `:::grid ... :::` with no deeper blocks still parses the same way.
 
-## Section
+## Custom layouts with CSS classes
 
-`:::section {.classname}` wraps its contents in a `<section class="classname">` element — useful for attaching custom CSS classes to a free-form region of a page without dropping to raw HTML.
+When you need a layout beyond the built-in shortcodes — a two-column split, an asymmetric hero, a sidebar-plus-main region — attach a named class with `{.classname}` and let `.moss/theme/style.css` own the layout. This keeps CSS together in one place and makes mobile `@media` rules work without `!important`.
 
-<!-- BEHAVIOR DEPENDS ON Phase 2 Task 2.10; confirm shipped before publishing this page -->
+**Do this.** Use `:::grid N {.your-class}` (no ratio), then define the ratio in CSS:
 
 ```markdown
-:::section {.hero-split}
-# Welcome
+:::grid 2 {.two-col-split}
+# Pitch
 
-Some intro copy. All standard markdown inside.
+Main content area — headings, paragraphs, images, anything.
+---
+Sidebar with call-outs or metadata.
 :::
 ```
 
-Pair this with a CSS rule in `.moss/theme/style.css` to control layout:
-
 ```css
-.hero-split {
-  display: grid;
+/* .moss/theme/style.css */
+.two-col-split {
   grid-template-columns: 2fr 1fr;
+  gap: 2rem;
 }
 @media (max-width: 768px) {
-  .hero-split { grid-template-columns: 1fr; }
+  .two-col-split { grid-template-columns: 1fr; }
 }
 ```
 
-Named classes like this keep layout out of inline `style=""` attributes, so mobile `@media` rules work without `!important` overrides.
+The grid container is rendered as `<div class="moss-grid two-col-split">`, so your class sits alongside the built-in `moss-grid` and can override its `grid-template-columns`.
+
+**Avoid this.** Passing a ratio (`:::grid 2 2:1 {.two-col-split}`) emits an inline `style="grid-template-columns:2fr 1fr"` on the container. Inline styles beat stylesheet rules, so your mobile `@media` query will have no effect unless you add `!important` to every property — a maintenance trap once the pattern spreads across many pages.
+
+**Rule of thumb.** Use the ratio form (`:::grid 2 2:1`) for one-off layouts where you won't need responsive overrides. Reach for a named class the moment you need `@media` behaviour, or whenever the same shape repeats across pages.
+
+See [[css#Shortcode classes]] for the full list of component class names you can target.
 
 ## Callouts
 
