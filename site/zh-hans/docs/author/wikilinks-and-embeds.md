@@ -105,3 +105,44 @@ moss 将文件夹变成网站。 ^intro
 相对路径和绝对路径都可以。外部链接自动在新标签页打开。
 
 多语言相关内容（`translationKey`、语言树、自动语言切换按钮）已迁移到 [[../multilingual|多语言站点]]。
+
+## 双语内容
+
+在文件名后附加语言后缀即可创建译文：
+
+| 文件 | 语言 |
+|------|------|
+| `about.md` | 站点默认语言 |
+| `about.zh-hans.md` | 简体中文 |
+| `about.zh-hant.md` | 繁体中文 |
+| `about.en.md` | 英文（显式指定） |
+
+有译文时，页面上会自动出现语言切换按钮。
+
+### 语言检测
+
+moss 按以下顺序确定页面语言：
+
+1. frontmatter 的 `lang` 字段
+2. 文件名后缀（`.zh-hans.md`）
+3. 内容自动检测
+4. 站点默认语言
+
+### 为不同文件名的译文建立关联
+
+译文文件名不同时，用 `translationKey` 将它们关联起来：
+
+```yaml
+# posts/hello.md
+---
+translationKey: hello-post
+---
+
+# posts/ni-hao.md
+---
+translationKey: hello-post
+lang: zh-hans
+---
+```
+
+两个文件都会显示互相跳转的语言切换按钮。

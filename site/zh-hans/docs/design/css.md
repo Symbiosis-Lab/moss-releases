@@ -244,3 +244,19 @@ my-site/
   border-radius: 50%;
 }
 ```
+
+### 布局写在类里，而不是内联
+
+需要响应式列宽时，在自定义类中定义 `grid-template-columns`，短代码中省略比例——用 `:::grid 2 {.two-col-split}` 而非 `:::grid 2 2:1 {.two-col-split}`。写了比例就会在容器上输出内联 `style=""`，优先级高于 `@media` 规则，每条属性都得加 `!important` 才能覆盖。
+
+```css
+.two-col-split {
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  .two-col-split { grid-template-columns: 1fr; }
+}
+```
+
+完整模式见 [[shortcodes#用 CSS 类名自定义布局]]。
