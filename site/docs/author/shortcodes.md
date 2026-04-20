@@ -132,33 +132,7 @@ A styled row of buttons from markdown links. The first link becomes the primary 
 
 ## Callouts
 
-Highlighted blocks for notes, warnings, and tips. Uses Obsidian-compatible syntax:
-
-```markdown
-> [!note]
-> This is a note callout.
-
-> [!warning] Careful
-> This action cannot be undone.
-
-> [!tip] Pro tip
-> You can nest markdown inside callouts.
-```
-
-The word after `[!` sets the type. An optional title follows on the same line.
-
-**All callout types:**
-
-`note`, `tip`, `warning`, `caution`, `important`, `info`, `abstract`, `todo`, `success`, `question`, `failure`, `danger`, `bug`, `example`, `quote`
-
-Callouts can span multiple paragraphs — use `>` on empty lines:
-
-```markdown
-> [!note] Long callout
-> First paragraph.
->
-> Second paragraph with **formatting**.
-```
+Callouts (`> [!type]` blockquotes) live on their own page — see [[callouts]] for syntax and the full list of types.
 
 ## Attributes
 
