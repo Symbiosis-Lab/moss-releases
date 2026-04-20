@@ -168,15 +168,15 @@ A styled row of buttons from markdown links. The first link becomes the primary 
 
 Use `{.class}` to attach a modifier class — for example `::::buttons {.inverted}` for a light-on-dark variant.
 
-<!-- BEHAVIOR DEPENDS ON Phase 2 Task 2.5; confirm shipped before publishing this page -->
 ### Nesting inside grid
 
-Nesting shortcodes uses an **arity rule**: the inner fence uses more colons than the outer. So a `:::grid` contains `::::buttons`, which in turn could contain `:::::callouts`, and so on. The bare close of each fence (`:::`, `::::`, `:::::`) matches the opener with the same colon count.
+Nesting shortcodes uses an **arity rule**: the inner fence uses more colons than the outer. So a `:::grid` contains `::::buttons`, which in turn could contain `:::::callouts`, and so on. The bare close of each fence (`:::`, `::::`, `:::::`) matches the opener with the same colon count. If a closing line has the wrong colon count, the parser treats it as literal content instead of silently swallowing surrounding text.
 
 ```markdown
-:::grid 2
-Pitch deck
-::::buttons
+:::grid 2 2:3 {.hero-split}
+# Pitch deck
+
+::::buttons {.inverted}
 [Download PDF](https://example.com/deck.pdf)
 [Request intro](mailto:hi@example.com)
 ::::
@@ -184,6 +184,8 @@ Pitch deck
 Contact info
 :::
 ```
+
+Existing sites that never nested fences continue to work unchanged — a plain `:::grid ... :::` with no deeper blocks still parses the same way.
 
 ## Section
 
