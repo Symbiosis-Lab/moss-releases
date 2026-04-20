@@ -132,6 +132,47 @@ Theme CSS targets each flavor independently:
 .moss-grid-card.link-card   { … }  /* internal link cell */
 ```
 
+### Folder-link auto-conversion and opt-out
+
+A `:::grid N` cell whose only content is an internal link to a **known folder** is automatically converted into a `moss-collection-card` — the same card used by the `children_style: card` folder listing. moss fetches the folder's cover image, title, and child count and renders the full card layout.
+
+```markdown
+:::grid 3
+[[work]]
+---
+[[essays]]
+---
+[[archive]]
+:::
+```
+
+This is the default behavior and usually what you want for section-index pages.
+
+**Opt out with `.no-cards`:**
+
+```markdown
+:::grid 3 {.no-cards}
+[[work]]
+---
+[[essays]]
+---
+[[archive]]
+:::
+```
+
+The `.no-cards` modifier bypasses auto-conversion entirely. Use it for:
+
+- **Navigation grids** — footer column lists where you want plain links, not collection cards.
+- **Hero-split layouts** — one cell has a CTA button and should not look like a card.
+- **Compound-link grids** — cells use the `[…](/url)` wrapping pattern and should render as `.link-card` or `.friend-card`, not collection cards.
+
+CSS targets:
+
+```css
+.moss-collection-grid { … }        /* auto-converted folder grid */
+.moss-collection-card { … }        /* individual collection card */
+```
+
 ### Number of columns and ratios
 
 `:::grid N` where `N` is the column count. Optional `a:b:c…` ratio sets fractional widths:
