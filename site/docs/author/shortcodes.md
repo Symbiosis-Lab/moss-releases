@@ -80,12 +80,49 @@ Team member three.
 
 ### Grid cell content
 
+Cells are separated by `---` on its own line. Each cell is markdown — headings, paragraphs, lists, images, links, all work as usual.
+
 Cells automatically recognize and render:
 
-- **Wikilinks**: `[[folder_name]]` or `[[Article Title]]` — rendered as cards with covers
-- **Markdown links**: `[text](url)`
-- **Images**: `![alt](path.jpg)` or `![[photo.jpg]]`
-- **Bare URLs**: `https://example.com` — auto-converted to links
+- **Wikilinks to folders/articles**: `[[folder_name]]` or `[[Article Title]]` — rendered as cards with the target's cover, title, and date/count.
+- **Images**: `![alt](path.jpg)` or `![[photo.jpg]]` — inlined with responsive sizing. Pipe syntax (`|contain top`) works — see [[media]].
+- **Markdown links**: `[text](url)` — rendered inline.
+- **Bare URLs**: `https://example.com` on its own line — auto-linked.
+
+<!-- BEHAVIOR DEPENDS ON Phase 2 Task 2.3; confirm shipped before publishing this page -->
+### Friend-card auto-conversion
+
+A grid cell whose substantive content is **only** a single external markdown link is rendered as a "friend-card" — a visual card pointing to another site. Adding a short inline description still counts as "only a link":
+
+```markdown
+:::grid 3
+[MDN](https://developer.mozilla.org)
+---
+[Rust](https://rust-lang.org)
+
+A memory-safe systems language.
+---
+[GitHub](https://github.com)
+:::
+```
+
+If the cell contains anything else — a heading, an image, or more than a link plus description — it renders as regular cell content. This lets you mix friend-cards and rich cells in the same grid.
+
+### Number of columns and ratios
+
+`:::grid N` where `N` is the column count. Optional `a:b:c…` ratio sets fractional widths:
+
+```markdown
+:::grid 3 2:1:1
+Wide left.
+---
+Narrow middle.
+---
+Narrow right.
+:::
+```
+
+Ratios must have the same number of segments as the column count.
 
 ## Gallery
 
@@ -129,6 +166,53 @@ A styled row of buttons from markdown links. The first link becomes the primary 
 [View source](https://github.com/example)
 :::
 ```
+
+Use `{.class}` to attach a modifier class — for example `::::buttons {.inverted}` for a light-on-dark variant.
+
+<!-- BEHAVIOR DEPENDS ON Phase 2 Task 2.5; confirm shipped before publishing this page -->
+### Nesting inside grid
+
+Nesting shortcodes uses an **arity rule**: the inner fence uses more colons than the outer. So a `:::grid` contains `::::buttons`, which in turn could contain `:::::callouts`, and so on. The bare close of each fence (`:::`, `::::`, `:::::`) matches the opener with the same colon count.
+
+```markdown
+:::grid 2
+Pitch deck
+::::buttons
+[Download PDF](https://example.com/deck.pdf)
+[Request intro](mailto:hi@example.com)
+::::
+---
+Contact info
+:::
+```
+
+## Section
+
+`:::section {.classname}` wraps its contents in a `<section class="classname">` element — useful for attaching custom CSS classes to a free-form region of a page without dropping to raw HTML.
+
+<!-- BEHAVIOR DEPENDS ON Phase 2 Task 2.10; confirm shipped before publishing this page -->
+
+```markdown
+:::section {.hero-split}
+# Welcome
+
+Some intro copy. All standard markdown inside.
+:::
+```
+
+Pair this with a CSS rule in `.moss/theme/style.css` to control layout:
+
+```css
+.hero-split {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+@media (max-width: 768px) {
+  .hero-split { grid-template-columns: 1fr; }
+}
+```
+
+Named classes like this keep layout out of inline `style=""` attributes, so mobile `@media` rules work without `!important` overrides.
 
 ## Callouts
 
