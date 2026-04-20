@@ -89,7 +89,6 @@ Cells automatically recognize and render:
 - **Markdown links**: `[text](url)` — rendered inline.
 - **Bare URLs**: `https://example.com` on its own line — auto-linked.
 
-<!-- BEHAVIOR DEPENDS ON Phase 2 Task 2.3; confirm shipped before publishing this page -->
 ### Friend-card auto-conversion
 
 A grid cell whose substantive content is **only** a single external markdown link is rendered as a "friend-card" — a visual card pointing to another site. Adding a short inline description still counts as "only a link":
