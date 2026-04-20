@@ -23,6 +23,12 @@ description: 搜索引擎和列表预览用的简短摘要。
 
 Frontmatter 不是必须的。没有 frontmatter 的文件照样会变成页面——moss 会用文件名作为标题。
 
+### 固定字段表
+
+Frontmatter 使用**固定字段表**——moss 只识别本页列出的字段，其他自定义字段会被静默忽略。如果需要存储自定义的页面元数据，请写在正文中：一段 markdown 段落、`::: {.meta}` 围栏分区或数据表格。
+
+`description:` 用于 SEO meta 标签、Open Graph 预览和 sitemap 摘要，**不会**渲染为页面上可见的导语。若需要可见的副标题或引言，请在 `# H1` 正下方加一段 `> 引用块`——默认主题会将 `h1 + blockquote` 样式化为导语。
+
 ## 标识
 
 描述页面本身的字段。
@@ -46,7 +52,7 @@ Frontmatter 不是必须的。没有 frontmatter 的文件照样会变成页面�
 |------|------|--------|------|
 | `nav` | boolean | 根目录页面默认 `true` | 是否显示在顶部导航栏 |
 | `weight` | integer | — | 导航和列表中的排序（数值越小越靠前） |
-| `breadcrumb` | boolean | 站点默认值 | 是否显示面包屑 |
+| `breadcrumb` | boolean | 站点默认值 | 是否显示面包屑。在首页设为 `true` 可全站启用面包屑；在任意页面设为 `false` 可单独关闭。 |
 | `footer` | boolean | 站点默认值 | 是否作为链接出现在网站页脚 |
 | `footer_align` | string | `"left"` | 页脚链接对齐方式（`"left"` 或 `"right"`） |
 <!-- auto:end:frontmatter-navigation -->

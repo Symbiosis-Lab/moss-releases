@@ -44,6 +44,28 @@ moss 会用文本匹配文件名、标题和 slug 来解析链接。不需要写
 3. 文件夹笔记（与文件夹同名的文件）
 4. 就近原则（与链接所在页面同目录的文件优先）
 
+## 图片嵌入
+
+在括号前加 `!` 嵌入图片：
+
+```markdown
+![[photo.jpg]]
+![[poster-farewell.webp]]
+```
+
+moss 会在整个内容树中搜索文件名来解析路径——无需填写相对路径。将图片放入排除的资源文件夹（`assets/`、`images/`、`static/`、`public/`），这样它们会被对外提供服务，但不会被视为内容页面。之后在任意 markdown 文件中，用裸文件名引用即可。
+
+```
+work/
+├── index.md         ← 使用 ![[poster-farewell.webp]]
+└── assets/
+    └── poster-farewell.webp   ← 不是页面；作为静态文件提供
+```
+
+语言树优先级（上方第 4 条规则）同样适用于图片解析：`zh-hans/about.md` 中的 `![[photo.jpg]]` 若存在 `zh-hans/photo.jpg`，则优先使用该版本。
+
+**管道语法**控制显示方式：`![[photo.jpg|contain top]]`。完整选项见 [[media]]。
+
 ## 嵌入
 
 在方括号前加 `!` 可以将其他页面的内容内联到当前页面：

@@ -132,7 +132,99 @@ my-site/
 | `.moss-article-listing` | 列表容器 |
 | `.moss-article-item` | 单条列表项 |
 | `.moss-prefix-link` | 带前缀的链接（日期/数量） |
+| `.moss-prefix-link-prefix` | 前缀部分（日期/数量标签） |
+| `.moss-prefix-link-title` | 标题部分 |
+| `.moss-prefix-link-suffix` | 后缀部分（可选的尾部标签） |
 | `.moss-year-group` | 年份分组标题 |
+| `.moss-year-group--summary` | 摘要样式的年份分组 |
+| `.moss-child-section-divider` | 子栏目之间的分隔线 |
+
+### Grid 短代码
+
+| 类名 | 元素 |
+|------|------|
+| `.moss-grid` | 网格容器（`:::grid N`） |
+| `.moss-grid-card` | 单个网格单元格 |
+| `.moss-grid-card.friend-card` | 包裹外部链接的网格单元格（自动获取元数据） |
+| `.moss-grid-card.link-card` | 包裹内部文章链接的网格单元格 |
+
+### 集合封面
+
+| 类名 | 元素 |
+|------|------|
+| `.moss-collection-cover` | 文件夹页面顶部的全宽封面区域 |
+| `.moss-collection-cover-row` | 封面内的弹性行 |
+| `.moss-collection-cover-body` | 封面的文字内容区 |
+| `.moss-cover-label` | 集合封面内的标签文字 |
+
+### Hero 短代码
+
+| 类名 | 元素 |
+|------|------|
+| `.moss-hero` | Hero 容器（`:::hero`） |
+| `.moss-hero-content` | Hero 内部的叠加文字区域 |
+
+### Buttons 短代码
+
+| 类名 | 元素 |
+|------|------|
+| `.moss-buttons` | 按钮行容器（`::::buttons`） |
+| `.moss-buttons.inverted` | 深色背景上的浅色按钮行变体 |
+| `.moss-btn` | 单个按钮 |
+| `.moss-btn-primary` | 第一个（主要）按钮 |
+| `.moss-btn-secondary` | 后续（次要）按钮 |
+
+### Gallery 短代码
+
+| 类名 | 元素 |
+|------|------|
+| `.moss-gallery` | 图库容器（`:::gallery`） |
+| `.moss-gallery-item` | 单张图库图片 |
+
+### 目录短代码
+
+| 类名 | 元素 |
+|------|------|
+| `.moss-toc` | 目录容器（`:::toc`） |
+
+### 标注
+
+| 类名 | 元素 |
+|------|------|
+| `.callout` | 标注外层包裹 |
+| `.callout-<type>` | 类型修饰符（如 `.callout-note`、`.callout-warning`、`.callout-pending`） |
+| `.callout-title` | 标注标题行 |
+| `.callout-content` | 标注正文内容 |
+
+### 子文件夹列表（自动生成栏目列表）
+
+| 类名 | 元素 |
+|------|------|
+| `.moss-folder-item` | 文件夹列表中的行 |
+| `.moss-folder-link` | 文件夹列表项中的链接 |
+| `.moss-folder-title` | 文件夹列表项中的标题 |
+| `.moss-folder-description` | 文件夹列表项中的描述 |
+
+### 系列导航
+
+| 类名 | 元素 |
+|------|------|
+| `.moss-series-nav` | 系列导航块 |
+| `.moss-series-nav-links` | 上一篇/下一篇链接容器 |
+| `.moss-series-nav-link` | 单个上一篇或下一篇链接 |
+| `.moss-series-nav-prev` | 上一篇链接 |
+| `.moss-series-nav-next` | 下一篇链接 |
+| `.moss-series-nav-arrow` | 系列链接内的箭头符号 |
+| `.moss-series-nav-title` | 系列链接内的文章标题 |
+| `.moss-series-nav-collection-row` | 显示所属集合的行 |
+| `.moss-series-nav-collection` | 系列导航中的集合名称/链接 |
+
+### 其他
+
+| 类名 | 元素 |
+|------|------|
+| `.moss-colophon` | 版权页 / 页脚注释块 |
+| `.moss-summary-layout` | 摘要布局包裹层 |
 <!-- auto:end:component-classes -->
 
 ## 短代码类名
