@@ -9,4 +9,4 @@ lang: zh-hans
 
 文件夹已经是网站了，下一步是控制每个页面的呈现方式。
 
-用 [[frontmatter]] 控制标题、日期、可见性。用 [[shortcodes]] 创建多栏、图库、大图等布局。用 [[links|wikilink 和嵌入]]连接页面、引用内容。
+用 [[frontmatter]] 控制标题、日期、可见性。用 [[shortcodes]] 创建多栏、图库、大图等布局。用 [[callouts|标注]] 突出重要内容。用 [[wikilinks-and-embeds|wikilink 和嵌入]]连接页面、引用内容；用 [[navigation|导航和页脚]]塑造网站外观。
