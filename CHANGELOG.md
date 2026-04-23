@@ -2,6 +2,330 @@
 
 All notable changes to moss will be documented here.
 
+## [0.6.2] - 2026-04-23
+
+### Added
+- add sign_and_build helper with proptest invariant
+- emit per-page progress from html_pages render loop
+- update Rust register_domain to new server contract
+- rebuild domain payment widget around resolveRegistrant
+- ISO 3166-1 alpha-2 country list for domain widget
+- emit markdown render progress through pipeline
+- wire get_stored_payment_method to seta /api/payment/methods
+- surface silent publish phases + skip unchanged rebuilds
+- charge saved card server-side for repeat domain purchases
+- charge_saved_for_domain Tauri command
+- resolve subscription via /auth/whoami (PR D)
+- emit default /subscribe/{confirmed,expired}/ landing pages
+- detect revocation via always-on whoami reconcile (PR B)
+- always register section, show re-verify on 403
+- sort lookup (exact TLD) before creative suggestions
+- inline AJAX + animated confirmation for moss-hosted forms
+- set dropdown max-height to 360px
+- pin exact match; cap AVAILABLE section at 8
+- lower minQueryLength to 1
+- dropdown uses NAME_SUGGEST path for creative alternatives
+- propagate exactMatch through search state
+- surface exact_match from NAME_SUGGEST through Tauri command
+- deploy registers Detached; close handler unconditionally tears down UI
+- run redirect pipeline at publish time
+- add write_bytes_if_changed helper for derived state
+- add .no-cards opt-out for grid folder-link conversion
+- prefill registrant name and phone from last purchase
+- persist selected host in pill input during purchase flow
+- add compound-link pre-pass for grid cells
+- put geo map and country list side-by-side
+- add 'open in new window' button to immersive mode
+- toggle_syndicator_hook owns rebuild; add BUILTIN_CHANNEL_TOGGLED event
+- remove FeatureKey::Subscribe, email now driven by hooks.syndicate
+- consume reconcile store in deployment tab; reset on project switch
+- move internal-files toggle from nav to root context menu
+- migrate legacy [features].subscribe via project-open hooks
+- add reconcile session store with localStorage-backed cooldown
+- add ReconcileOutcome + project-open coordinator; drop redundant PublicIdentity.verified
+- add run_project_open_hooks sequencer for on-open side effects
+- implement Change B — generalized link-cell wrap
+- implement Change A — bare fenced divs
+- warn on mixed multilingual structure (folder + sibling)
+- fenced-div nesting via inner-more-colons arity rule
+- scope nav items to current page's language tree
+- wikilink resolution prefers same-language-tree candidates
+- add debug/error logging to domain search controller
+- restore email-gate footer link in domain dropdown from v0.6.1
+- honor explicit site.lang in .moss/config.toml
+- warn when style.css is at project root instead of .moss/theme/
+- extract ComboSearchController, adopt domain-flow-state, section-descriptor labels
+- accept .zh suffix as shorthand for .zh-hans
+- default CSS for .callout-pending (dashed border, pale fill)
+- lazy email reconciliation via /auth/whoami
+- partition domain search into Available+Taken, sort by price, two-phase TLD search
+- add pending callout type for placeholder content
+- wire local-first aggregation into AnalyticsSection
+- client-side aggregate + JSONL parser
+- Rust events sync + Tauri command
+- show search-failed row with retry on domain search errors
+- consolidate 5-stack placeholders into one coming-soon note
+- use alias names + full ISO-2 lookup for countries
+- apply country filter to header + fade/suppress breakdowns
+- render dismissible filter chip when country selected
+- use renderGeoMap in place of COUNTRIES bar chart
+- add CSS tokens and classes for geo map + filter chip
+- restore keyboard navigation in domain dropdown
+- renderGeoMap pure renderer for choropleth + list
+- bucketForViews shading helper for geo map
+- generate projected country paths for geo map
+- Spotlight-style domain combo with inline purchase results
+- moss domain list/link for custom-domain management
+- arrow-key navigation + ARIA for Domain dropdown
+- inline confirm/error UX for domain reassignment
+- 30s domain status polling while Waiting for DNS
+- transitional warning for pages missing body H1
+- folder-cover renders label via moss-cover-label span
+- chrome surfaces consume label, not title
+- stop injecting article-title H1
+- inline purchase-flow expansion below Domain caption
+- derive label and has_body_h1 in markdown processing
+- Domain pill-combo + dropdown + caption state machine
+- add label field to ParsedDocument
+- seta bindings for owned-domain listing, assignment, and status
+- Email field with Verified/Unverified/Waiting pill states
+- close editor on open, restore on close
+- 24px corner radius matching window
+- inject --moss-window-radius from WINDOW_CORNER_RADIUS
+- glass-pill settings components
+- add --moss-window-radius + dropdown surface tokens
+- dispatch preview mode to iframe on toggle and load
+- toggle moss-mobile class on moss-preview-mode message
+- add --moss-radius-window matching WINDOW_CORNER_RADIUS
+- canonical www URL + Live polling + CDN indicator
+- CriticMarkup support in editor and compiler
+- rebuild on .moss/theme/** and .moss/data/**
+- pre-deploy hint banner
+- TOML syntax highlighting via @codemirror/legacy-modes
+- add hammer-icon toggle to show .moss/ in tree
+- plumb showInternal through FileTree
+- add show_internal flag to list_tree/list_directory
+- moss tab — app-level settings section with auto-update preference
+- app-level config infrastructure with auto-update preference
+- StateMessage — shared empty/loading/error presentation
+- Table — aligned row pattern for tabular data
+- Toggle — reusable switch with TS helper and tests
+- Section — add general-purpose section primitive
+- Field — add __help and __error slots
+- Input — unify --boxed modifier, refactor select as thin layer
+- Button — add --small, --danger; adopt transition and focus tokens
+- add spacing scale, transitions, focus ring to app tokens
+- distinguish empty/error/ok states; surface sync failures
+- mirror divider hover/drag state on action panel's right edge
+- multi-format file viewer for non-text files in editor
+- Visual template for image pages — black background, no chrome
+- glass pill chrome redesign (Liquid Glass titlebar)
+- image-as-page generation + visual page layout
+- parse notebook title from .ipynb JSON metadata
+- add mark-and-sweep garbage collection for orphaned cache entries (#355)
+- redesign vertical typesetting with Chinese numerals, cards, and dates
+- shortcode syntax highlighting + build-time code highlighting
+- single-column nav + vertical summary cards
+- add wheel-to-horizontal scroll for vertical-rl mode
+- full-body vertical-rl layout + colophon i18n
+- date range switches all dashboard sections, not just chart
+- add hover tooltip to analytics time-series chart
+- auto-start moss from mcp-server-wrapper.sh
+- add email flyout component, bindings, and event bus integration
+- add vertical typesetting support for CJK content
+- implement subscriber management UI
+- auto-add data-track to :::buttons links for analytics
+- auto-track clicks on elements with data-track attribute
+- add browser, OS, screen, UTM, and events sections to analytics dashboard
+- enhance beacon script with screen_bucket and UTM fields
+- add time-series sparkline and comparison indicator to analytics dashboard
+- wire native email syndication into channel pipeline
+- multi-language editor support, syntax highlighting, and ASCII art rendering
+- add drag-in and drag-out support to editor action panel
+- add copy_files_to_project command and tauri-plugin-drag
+- render home file on same row as its folder in file tree
+- add email settings section and update channel terminology
+- PublicationManager loads built-in channel icons
+- unified channel grid in settings modal
+- add unified channel model backend
+
+### Fixed
+- filter home_children by language in multilingual sites (#542)
+- sign the encoded path in upload_file
+- harden subdomain field — IME safety, length cap, invalid-char hint, submit guard
+- always slugify subdomain input, strip invalid chars as typed
+- post-review P1 findings on v0.6.2 batch (19 new commits)
+- right-align lone footer-right instead of flipping to left
+- drop obsolete client-side subscription pre-flight
+- drop saturate(8) filter hack from trial-expiring text
+- caption no longer self-references the custom domain
+- prune sources cache + add warm-cache regression test
+- make lazy runtime spawn idempotent + tauri:// fallback for CLI dev
+- plumb country_hint through Rust PaymentIntent + ChargeSavedResult
+- show City field for everything except US (matches server reality)
+- snapshots regen + tooltip selector + search step for new UX
+- tolerate missing `active` field from whoami
+- update hero CSS test and domain dropdown scenarios for shipped UX
+- typecheck failures blocking PR #502
+- P0/P1 findings from post-v0.6.1 code review
+- off-session consent disclosure + drop handleNextAction any-cast
+- accept requires_capture status for phase 2 manual capture
+- use seta-returned billing address for saved-card flow
+- force full billing address collection via granular Stripe fields
+- stop loaderror render loop on terminal PaymentIntent
+- reset button chrome on .moss-link and migrate title= tooltips
+- revoked-state gating + double-click guard + rename to re-authorize
+- surface Stripe configuration failures instead of empty gap
+- migrate deploy-time subscription check to whoami path
+- normalize channel icon size to 18px
+- re-search on focus, dynamic preconnect URL, stale test comment
+- address review — register in manifest, user override
+- add SiteDataResponse.subscribers + update MOSSPUB_VPS_IP
+- drop AVAILABLE cap, hide taken creative suggestions
+- address review — consolidate lang enum, scope CSS
+- sanitizer drops non-ASCII chars (defense-in-depth)
+- dropdown opens on focus only when owned domains exist
+- refresh pill on built-in channel toggle
+- open-new-window button uses anchor + opener plugin
+- preserve natural aspect on mobile when no overlay
+- preserve dots in Rust sanitizer so user TLD reaches moss-seta
+- extract TaskGuard helper; apply Detached to plugin-based deploy_site
+- widen DeployGuard to cover entire push_site_inner
+- include redirect stub hashes in upload manifest
+- domain combo placeholder now on input, not separate label
+- re-enable button before exit click in aria-label revert test
+- regenerate snapshots + fix 2 behavioral failures
+- clear pending-purchase pill on payment error; shrink try/catch
+- emit target=_blank on compound external links
+- correctly detect nested brackets in compound-link pre-pass
+- friendly hint for invalid input, strip raw API error noise
+- show TLD fallback price when registry returns null
+- guard open-deployed-host click against non-https schemes
+- channel pill spacing, deployment panel polish
+- remove duplicate test_theme_style_edit_regenerates_custom_css
+- re-enable button before second click in immersive toggle test
+- re-enable button before exit click in exitFullscreen test
+- add removeToastById to toast-manager mock in app-open.test
+- mock runProjectOpenHooks in app-events.test.ts
+- update deployment-email tests for reconciliation architecture change
+- update test expectations for email-channel unification refactor
+- remove orphaned ReconcileOutcome definition, use canonical from identity::commands
+- remove duplicate pull_site_data_if_hosted_impl definition
+- align-items flex-start for consistency with rest of site.css
+- remove stale panelTrigger selector and add internal-btn regression test
+- immersive mode for directory-style iframes + nav icons alignment
+- replace grid-auto-rows: 1fr with align-items: start in .moss-grid
+- add missing --- opening delimiter to people.md
+- remove orphaned panel-trigger dead code
+- address review findings
+- align buttons EOF behavior with grid (best-effort render)
+- friend-card auto-convert triggers only when cell is exclusively a link
+- Batch G review cleanup — encapsulation, test helper wiring, retry guard, label kind, hint reorder
+- show Searching-more hint on empty-popular; show AVAILABLE label when TAKEN also renders
+- rebuild events cursor from events.jsonl when sidecar missing
+- serialize concurrent event syncs with per-site mutex
+- syncAnalyticsEvents returns number not string (matches Rust usize)
+- restore Stripe checkout via DomainPaymentWidget; retire stacked combo
+- filter chip uses DOM construction; document mouseover/mouseleave split
+- revert combo on click-outside; preserve in-flight marker for newer query
+- add land-neutral token to prefers-color-scheme dark block
+- harden renderGeoMap against dup/unknown/empty ISO-2 inputs
+- caption includes subdomain when no custom domain configured
+- domain dropdown overlays below instead of pushing layout
+- restyle Re-verify as subtle link with tooltip
+- add sidebar gutter so tab pill doesn't touch edges
+- don't restore editor on close
+- add aria-label to Domain combobox + focus Reassign on confirm
+- swap three missed chrome sites; clarify test framing
+- preserve body H1 in all title-derivation branches
+- caption uses subdomain, not custom host; rename OwnedDomain to AssignableDomain
+- pass folderPath explicitly and reset cache on folder switch
+- error feedback, post-unmount guards, focus on reverify
+- wire tab id + contentEl aria-labelledby; drop dead addStaticItem call
+- extend backdrop over titlebar stripe
+- dark-mode dropdown coverage + themed underline color
+- gate injected titlebar padding on :not(.moss-mobile)
+- breathable horizontal gap on wrapped mobile nav
+- round mobile phone frame to match window corner
+- anchor consequence curve to window right edge, not preview iframe edge
+- raise bump-SVG z-index above titlebar so curves reach top
+- move .moss gitignore ownership into .moss/.gitignore
+- window.location.href; untrack remaining built JS from git
+- divider color, collapse-curve polish, titlebar consolidation, surgical internal-toggle, shared tooltips, code highlight
+- address review follow-ups on setContent + setValues
+- preserve cursor + focus on preview refresh
+- map webp_variants through dir_overrides and derive srcset from <img src>
+- guard wrap_img_in_picture against count mismatch
+- register partial .webp outputs on cancellation (arch re-review gap)
+- protect .webp outputs and isolate cancel flag (arch review)
+- address Task 3 code-review nits
+- preserve legacy theme files when .moss/build/ exists
+- address architecture-review criticals + important items
+- glass pill system polish — Safari-faithful dark theme, 48px titlebar, iframe scroll-under
+- close see-through gap between editor and preview webviews
+- hide moss-internal fields from chip bar
+- polish hammer toggle — kebab-case key, distinct active state, a11y
+- clear FileTree indexes on reload; strengthen re-home check
+- address final code-review nits — dead branch + Windows atomicity doc
+- address arch-review gates — auto-update UI + --moss-error token
+- drop stale dark-mode fallback on border-light
+- universal breadcrumb middle-truncation pattern
+- show muted hint for invalid input instead of raw API error
+- nav wraps based on actual content fit, not viewport heuristic
+- page color via postMessage (cross-origin iframe requires it)
+- divider line extends to titlebar, remove close button, guard title listener
+- reduce control panel margin and center channel pill
+- add --moss-color-bg CSS variable fallback for page color
+- address code review findings for file viewer
+- use .any() in watcher pre-filter to avoid dropping mixed-path events
+- read --moss-color-bg CSS variable for page color extraction
+- use setTimeout(100) for theme change color re-extraction
+- scope matters auth token to project storage, preventing cross-project leaks
+- delay page color extraction after theme toggle
+- remove color-mix transparency — use page color at full opacity
+- nav buttons are circles (44px, border-radius 50%)
+- nav button hover clipped to pill shape
+- iframe background matches page color (removes white stripe)
+- page color semi-transparency + full-height nav button hover area
+- nav pill focus state, iframe boundary, page color tinting
+- pill polish — circles, hover states, channel divider, page color tinting
+- use TypeScript sources for fullscreen + series nav
+- URL autocomplete matches CJK paths and bare "/"
+- use URL-space paths consistently in image-page detection
+- Visual template auto-detect precedence + JS asset sync
+- muted shortcode colors, folder-note link resolution, Cmd+hover cursor
+- reload editor frontmatter when file changes on disk
+- close settings modal on editor open + fix breadcrumb text collapse
+- quote UIDs in YAML frontmatter to prevent scientific notation corruption
+- run cache GC on blocking thread to avoid UI freeze
+- only count bytes_freed after successful file removal
+- HTML-escape notebook title to prevent XSS from metadata
+- truncate breadcrumb segments on mobile to prevent overflow (#481)
+- breadcrumb dot spacing above and below
+- enforce content height constraint with min-height: 0
+- spacing, card sizing, colophon, and alignment
+- correct card layout, title-before-count order, Ma spacing
+- cancel stale video conversion when opening folder without existing window
+- theme-aware scrollbar colors
+- dark mode toggle specificity + left scrollbar in vertical layout
+- heal editor-preview sync after rebuild
+- eliminate white strips + force visible scrollbar
+- simplify body CSS for WebKit scroll compatibility
+- correct child summary card layout in full-body vertical-rl
+- detect duplicate UIDs and allow iCloud atomic save events
+- reinitialize settings sections on folder switch
+- redesign chart hover with column hit targets, split labels
+- prevent PluginSection from overwriting EmailSection in settings
+- address code review — doc ownership, derive Default, indent
+- address critical review issues — unsubscribe URLs, syndicator filter, email-only flow, UTF-8 safety
+- address code review issues in newsletter renderer
+- compute comparison indicator from daily data for correct date ranges
+- address all review findings for syntax highlighting feature
+- use Option+drag for native drag-out, fix image URL encoding
+- address code review — reuse copy_dir_recursive, handle partial failures
+- address code review findings for unified channels
+
+
 ## [0.6.1] - 2026-04-10
 
 ### Added
