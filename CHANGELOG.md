@@ -2,6 +2,50 @@
 
 All notable changes to moss will be documented here.
 
+## [0.6.3] - 2026-04-23
+
+### Added
+- post-nav scroll re-assertion for editor-driven navigations
+- identity validation for editor→preview scroll-sync
+- identity validation for preview→editor scroll-sync
+- show blueprint grid pre-IPC and wire stage transitions
+- include url in moss-scroll-position messages
+- stage-aware progress label with scan/materialize/compile phases
+- always emit navigate-preview on file select; fall back to / for 404 recovery
+- add progress-panel stage state machine
+- wire echo token for editor-driven preview navigation
+- add PreviewStage field to state machine
+- echo suppression token for editor-driven navigations
+- emit scan-progress and scan-complete events
+- add activePage canonical state to NavigationManager
+- add ScanProgress and ScanComplete event payloads
+- gate Modify events on source-content change
+- add should_rebuild_for_paths gate over hashes.json
+- add source_metadata_matches with mtime+size fast path
+- add SiteHashes::source_metadata_for accessor
+- separate installed/enabled/syndicated storage; migrate hooks.syndicate to [channels.*]
+- versioned config migration module with v0 to v1 (hooks.syndicate to channels)
+
+### Fixed
+- preserve notebook hashes from carried-forward stale prune
+- address review — move reset into function, add TODO(#524) markers
+- isolate notebook cancellation from video cancel flag
+- clear pendingEcho on no-op navigateToPage to prevent stale-echo misclassification
+- bidirectional identity hardening — pathname comparison + sourceFile null-window drop
+- prevent double scroll on editor-driven same-URL navigation
+- clear stage on compile error so 'Opening folder…' doesn't stick
+- reset .site-logo vertical margins
+- route raw-TOML writers through migration path
+- address review — TODO(#524) markers + negative test assertions
+- preserve notebook outputs from stale cleanup
+- per-page toggle is in-memory only; isSyndicatedTo accepts email:<date>
+- label cloud downloads with actual provider, not always iCloud
+- remove horizontal drift, add revert-to-idle
+- absolutely center nav pill on the preview midpoint
+- replace lang-equality filter on home_children with language-tree scoping
+- release.yml detects stale tag pointing at wrong SHA (P1-10)
+
+
 ## [0.6.2] - 2026-04-23
 
 ### Added
