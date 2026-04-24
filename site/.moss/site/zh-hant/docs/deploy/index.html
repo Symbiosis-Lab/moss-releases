@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>部署 - 青苔</title>
+    <meta name="description" content="將網站發佈到 mosspub.com 或 GitHub Pages。">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="部署">
+    <meta property="og:url" content="/zh-hant/docs/deploy/">
+    <meta property="og:site_name" content="青苔">
+    <meta property="og:description" content="將網站發佈到 mosspub.com 或 GitHub Pages。">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "部署",
+  "url": "/zh-hant/docs/deploy/",
+  "description": "將網站發佈到 mosspub.com 或 GitHub Pages。",
+  "publisher": {
+    "@type": "Organization",
+    "name": "青苔"
+  }
+}
+</script>
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    
+    
+    <link rel="stylesheet" href="/style.css?v=9e39dd9c728d4cb6"><link rel="stylesheet" href="/custom.css?v=ad91e43c9a83b48a">
+    <script>(function(){var b='//api.mosspub.com/api/sites/landing/beacon';var u=new URLSearchParams(location.search);var s=function(d){fetch(b,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d),keepalive:true})};
+s({path:location.pathname,referrer:document.referrer||null,screen_bucket:innerWidth<768?'mobile':innerWidth<1024?'tablet':'desktop',utm_source:u.get('utm_source'),utm_medium:u.get('utm_medium')});
+document.querySelectorAll('[data-track]').forEach(function(el){el.addEventListener('click',function(){s({path:location.pathname,event:el.getAttribute('data-track')})})})})()</script>
+</head>
+<body class="">
+    <header>
+        <nav class="main-nav container">
+            <div class="nav-content">
+                <div class="nav-left"><a href="/zh-hant/" class="site-name"><img class="site-logo" src="/assets/logo.svg" alt="" aria-hidden="true">青苔</a><span class="breadcrumb-separator">/</span><a href="/zh-hant/docs/" class="breadcrumb-segment">文件</a></div><div class="nav-right"><div class="nav-icons"><div class="nav-lang-toggle" aria-label="Language"><span class="nav-lang-current">繁</span> / <a href="/zh-hans/docs/deploy/" class="nav-lang-link" hreflang="zh-hans">简</a> / <a href="/docs/deploy/" class="nav-lang-link" hreflang="en">EN</a></div><button class="nav-theme-btn" type="button" aria-label="Toggle theme" onclick="toggleTheme()"><svg class="theme-toggle-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="1em" height="1em" fill="currentColor" stroke-linecap="round" viewBox="0 0 32 32"><clipPath id="theme-toggle__classic__cutout"><path d="M0-5h30a1 1 0 0 0 9 13v24H0Z"/></clipPath><g clip-path="url(#theme-toggle__classic__cutout)"><circle cx="16" cy="16" r="9.34"/><g stroke="currentColor" stroke-width="1"><path d="M16 5.5v-4"/><path d="M16 30.5v-4"/><path d="M1.5 16h4"/><path d="M26.5 16h4"/><path d="m23.4 8.6 2.8-2.8"/><path d="m5.7 26.3 2.9-2.9"/><path d="m5.8 5.8 2.8 2.8"/><path d="m23.4 23.4 2.9 2.9"/></g></g></svg></button></div></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <article class="container">
+            <h1 class="article-title">部署</h1>
+            
+            
+            <h2 id="mosspub.com">mosspub.com</h2><p>最簡單的發佈方式。預覽不需要註冊——右鍵資料夾，點擊發佈。</p><ol start="1">
+<li>在 moss 中開啟資料夾。</li>
+<li>點擊工具列的部署按鈕。</li>
+<li>選擇一個子網域（如 <code>yourname.mosspub.com</code>），或者繫結自有網域。</li>
+</ol>
+<p>網站即刻上線。後續部署只更新有變化的檔案。</p><h2 id="github-pages">GitHub Pages</h2><p>透過 GitHub Actions 將網站部署到自己的 GitHub 儲存庫。</p><h3 id="前置條件">前置條件</h3><ul>
+<li>GitHub 帳號</li>
+<li>GitHub 儲存庫（公開或私有）</li>
+</ul>
+<h3 id="設定">設定</h3><ol start="1">
+<li>在 moss 中開啟資料夾。</li>
+<li>點擊工具列的設定圖示。</li>
+<li>在「發佈」選項中，點擊「連接 GitHub」。</li>
+<li>透過 GitHub 的裝置授權流程——moss 顯示一個代碼，在 GitHub 頁面輸入即可。</li>
+<li>選擇要部署到的儲存庫。</li>
+</ol>
+<h3 id="部署">部署</h3><p>點擊部署按鈕。首次部署大約需要一分鐘——moss 會自動建立 GitHub Actions 工作流程。之後的部署更快。</p><p>moss 提交編譯後的網站、推送到儲存庫，GitHub Actions 自動部署到 GitHub Pages。</p><p><strong>外掛設定：</strong></p><table>
+<thead><tr><th>設定</th><th>預設值</th><th>說明</th></tr></thead><tbody>
+<tr>
+<td><code>auto_commit</code></td><td><code>true</code></td><td>部署時自動提交變更</td></tr>
+<tr>
+<td><code>video_max_size_mb</code></td><td><code>75</code></td><td>部署時允許的最大影片檔案大小</td></tr>
+</table>
+<h3 id="自訂網域">自訂網域</h3><p>在 GitHub 儲存庫的 <strong>Settings → Pages → Custom domain</strong> 中設定自訂網域，也可以直接在 moss 的網域設定中設定。</p>
+            
+        </article>
+        
+    </main>
+
+    <footer class="container">
+    <div class="footer-content">
+        <div class="footer-right">
+            
+        </div>
+    </div>
+</footer>
+
+    <div class="moss-colophon">
+        <a href="https://mosspub.com" target="_blank" rel="noopener">
+            <svg class="moss-colophon-icon" viewBox="-104 -105 1040 1049" aria-hidden="true">
+                <path fill="currentColor" d="M353.48,284.25c-.03-15.35-13.3-28.68-13.02-44.45.35-19.97,18.62-25.1,30.84-8.86,12.27,16.3,27.25,65.59,47.13,69.87,15.6,3.35,20.22-16.43,21.94-28.17,5.43-37.03,2.88-91.03.11-128.87-2.46-33.57-12.68-77.8.53-109.49,17.73-42.53,73.6-44.58,77.52,8.44,4.69,63.45-37.31,106.54-49.55,165.53-5.67,27.31-8.23,57.64-2,85.02,19.85,87.26,94.44-18.36,112.68-50.34,13.98-24.51,21.56-49.75,33.65-74.35,19.23-39.11,66.57-62.1,108.53-45.18,44.94,18.11,81.36,85.88,50.86,129.58-37.72,54.04-106.18,41.29-161.99,58.01-41.56,12.45-108.6,50.47-77.04,102.57,96.58,122.22,255.01,39.13,292.28,120.71,29.53,71.29-56.2,113.61-111.95,65.96-38.52-32.93-55.04-71.51-106.17-94.83-29.67-13.53-103.71-33.13-108.34,17.37-4.16,45.33,25.72,119.74,60.51,149.46,33.53,28.64,97.03,38.28,85.03,98.08-13.73,68.47-105.62,67.48-126.06-3.06-12.57-43.4-9.75-82.04-29.64-126.36-55.05-116.5-115.66-82.39-139.54,26.18-7,41.15,6.09,99.52-10.83,134.17-31.94,65.42-164.26,43.33-146.82-44.82,12.11-61.23,75.42-87.7,113.85-130.15,23.54-26.01,55.01-74.29,53.48-110.49-1.78-42.18-56.04-34.72-83.51-24.54-50.66,18.76-80.01,59.74-121.57,89.43-93.63,63.58-119.86-32.28-16.9-64.89,65.1-21.66,293.15-94.81,110.19-138.23-66.85-11.86-140.47,18.99-201.56-8.43-79.79-35.81-49.11-122.17,38.84-115.84,67.02,4.82,91.74,51.13,145.15,76.85,22.9,11.03,76.48,27.18,100.58,19.86,31.23-9.49,4.33-41.63,9.89-60.12,1.92-6.38,6.93-8.21,12.88-5.6Z"/>
+                <path fill="#91c127" d="M323.18,241.93c-13.07,8.61-21.8-13.96-28.28-22.59-7.94-10.58-16.74-21.56-25.9-31.1-28.12-29.26-66.01-47.97-72.39-92.61C189.42,45.37,218.91-3.67,274.03.22c82.95,5.85,62.53,119.82,75.51,175.59-2.67,10.44-9.56-.19-15.56-.6-23.21,1.86,16.7,52.67-10.8,66.73Z"/>
+            </svg>
+            Published with moss
+        </a>
+    </div>
+
+    <script src="/js/theme.js?v=7feda3b590c41eb7"></script>
+    <script src="/js/highlight.js?v=6fd3d51e360daab7"></script>
+    <script src="/js/preview.js"></script>
+    <script src="/custom.js?v=7593ff570b30b2fe"></script>
+    
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>連結與嵌入 - 青苔</title>
+    <meta name="description" content="Wikilink、嵌入、交叉引用和雙語內容。">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="連結與嵌入">
+    <meta property="og:url" content="/zh-hant/docs/author/links/">
+    <meta property="og:site_name" content="青苔">
+    <meta property="og:description" content="Wikilink、嵌入、交叉引用和雙語內容。">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "連結與嵌入",
+  "url": "/zh-hant/docs/author/links/",
+  "description": "Wikilink、嵌入、交叉引用和雙語內容。",
+  "publisher": {
+    "@type": "Organization",
+    "name": "青苔"
+  }
+}
+</script>
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    
+    
+    <link rel="stylesheet" href="/style.css?v=9e39dd9c728d4cb6"><link rel="stylesheet" href="/custom.css?v=ad91e43c9a83b48a">
+    <script>(function(){var b='//api.mosspub.com/api/sites/landing/beacon';var u=new URLSearchParams(location.search);var s=function(d){fetch(b,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d),keepalive:true})};
+s({path:location.pathname,referrer:document.referrer||null,screen_bucket:innerWidth<768?'mobile':innerWidth<1024?'tablet':'desktop',utm_source:u.get('utm_source'),utm_medium:u.get('utm_medium')});
+document.querySelectorAll('[data-track]').forEach(function(el){el.addEventListener('click',function(){s({path:location.pathname,event:el.getAttribute('data-track')})})})})()</script>
+</head>
+<body class="">
+    <header>
+        <nav class="main-nav container">
+            <div class="nav-content">
+                <div class="nav-left"><a href="/zh-hant/" class="site-name"><img class="site-logo" src="/assets/logo.svg" alt="" aria-hidden="true">青苔</a><span class="breadcrumb-separator">/</span><a href="/zh-hant/docs/" class="breadcrumb-segment">文件</a><span class="breadcrumb-separator">/</span><a href="/zh-hant/docs/author/" class="breadcrumb-segment">撰寫</a></div><div class="nav-right"><div class="nav-icons"><div class="nav-lang-toggle" aria-label="Language"><span class="nav-lang-current">繁</span> / <a href="/zh-hans/docs/author/links/" class="nav-lang-link" hreflang="zh-hans">简</a> / <a href="/docs/author/links/" class="nav-lang-link" hreflang="en">EN</a></div><button class="nav-theme-btn" type="button" aria-label="Toggle theme" onclick="toggleTheme()"><svg class="theme-toggle-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="1em" height="1em" fill="currentColor" stroke-linecap="round" viewBox="0 0 32 32"><clipPath id="theme-toggle__classic__cutout"><path d="M0-5h30a1 1 0 0 0 9 13v24H0Z"/></clipPath><g clip-path="url(#theme-toggle__classic__cutout)"><circle cx="16" cy="16" r="9.34"/><g stroke="currentColor" stroke-width="1"><path d="M16 5.5v-4"/><path d="M16 30.5v-4"/><path d="M1.5 16h4"/><path d="M26.5 16h4"/><path d="m23.4 8.6 2.8-2.8"/><path d="m5.7 26.3 2.9-2.9"/><path d="m5.8 5.8 2.8 2.8"/><path d="m23.4 23.4 2.9 2.9"/></g></g></svg></button></div></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <article class="container">
+            <h1 class="article-title">連結與嵌入</h1>
+            
+            
+            <h2 id="wikilink">Wikilink</h2><p>用雙括號連結網站中的任何頁面：</p><pre><code class="language-markdown">詳見 [[structure]] 頁面。
+</code></pre>
+<p>moss 會用文字去比對檔名、標題和 slug 來解析連結。不需要寫完整路徑——<code>[[getting-started]]</code> 能自動找到 <code>docs/start/getting-started.md</code>。</p><p><strong>自訂顯示文字：</strong></p><pre><code class="language-markdown">參考 [[structure|內容結構說明]]。
+</code></pre>
+<p><strong>連結到標題：</strong></p><pre><code class="language-markdown">看 [[structure#URL]] 的說明。
+</code></pre>
+<p><strong>連結到區塊引用：</strong></p><pre><code class="language-markdown">如 [[structure#^intro]] 所述。
+</code></pre>
+<h3 id="解析規則">解析規則</h3><p>當多個檔案可能匹配時，moss 依以下順序選擇：</p><ol start="1">
+<li>完全符合的檔名</li>
+<li>去掉副檔名後的檔名</li>
+<li>資料夾筆記（與資料夾同名的檔案）</li>
+<li>目錄距離優先（離當前頁面最近的檔案勝出）</li>
+</ol>
+<h2 id="嵌入">嵌入</h2><p>在雙括號前加 <code>!</code>，將其他頁面的內容內嵌到當前頁面：</p><pre><code class="language-markdown">![[structure#^intro]]
+</code></pre>
+<p>這會把被引用的段落直接插入當前頁面。嵌入支援：</p><ul>
+<li><strong>整頁</strong>：<code>![[media]]</code>——嵌入整個頁面的內容</li>
+<li><strong>章節</strong>：<code>![[structure#URL]]</code>——嵌入該標題下的所有內容</li>
+<li><strong>區塊</strong>：<code>![[structure#^intro]]</code>——嵌入標記了區塊 ID 的單一段落</li>
+</ul>
+<p>moss 會偵測循環嵌入，在形成無限迴圈之前停止。</p><h2 id="區塊引用">區塊引用</h2><p>在任何段落末尾加上 <code>^block-id</code> 作為標記：</p><pre><code class="language-markdown">moss 將資料夾變成網站。 ^intro
+</code></pre>
+<p>其他頁面可以用 <code>[[page#^intro]]</code> 連結到這個段落，或用 <code>![[page#^intro]]</code> 嵌入它。區塊 ID 是穩定的——改寫段落內容或修改上方標題都不會影響它。</p><h2 id="markdown-連結">Markdown 連結</h2><p>標準 markdown 連結照常使用：</p><pre><code class="language-markdown">[造訪範例](https://example.com)
+[關於頁面](about.md)
+[章節連結](/docs/structure/)
+</code></pre>
+<p>相對路徑和絕對路徑都可以。外部連結自動在新分頁開啟。</p><h2 id="雙語內容">雙語內容</h2><p>在檔名後加語言後綴就能建立翻譯：</p><table>
+<thead><tr><th>檔案</th><th>語言</th></tr></thead><tbody>
+<tr>
+<td><code>about.md</code></td><td>網站預設語言</td></tr>
+<tr>
+<td><code>about.zh-hans.md</code></td><td>簡體中文</td></tr>
+<tr>
+<td><code>about.zh-hant.md</code></td><td>繁體中文</td></tr>
+<tr>
+<td><code>about.en.md</code></td><td>英文（明確指定）</td></tr>
+</table>
+<p>存在翻譯時，頁面上會自動出現語言切換按鈕。</p><h3 id="語言偵測">語言偵測</h3><p>moss 按以下順序判斷頁面語言：</p><ol start="1">
+<li>frontmatter 中的 <code>lang</code> 欄位</li>
+<li>檔名後綴（<code>.zh-hans.md</code>）</li>
+<li>內容自動偵測</li>
+<li>網站預設語言</li>
+</ol>
+<h3 id="不同檔名的翻譯">不同檔名的翻譯</h3><p>如果翻譯使用了不同的檔名，用 <code>translationKey</code> 把它們連結起來：</p><pre><code class="language-yaml"># posts/hello.md
+---
+translationKey: hello-post
+---
+
+# posts/ni-hao.md
+---
+translationKey: hello-post
+lang: zh-hans
+---
+</code></pre>
+<p>兩個檔案會顯示語言切換按鈕，互相連結。</p>
+            
+        </article>
+        
+    </main>
+
+    <footer class="container">
+    <div class="footer-content">
+        <div class="footer-right">
+            
+        </div>
+    </div>
+</footer>
+
+    <div class="moss-colophon">
+        <a href="https://mosspub.com" target="_blank" rel="noopener">
+            <svg class="moss-colophon-icon" viewBox="-104 -105 1040 1049" aria-hidden="true">
+                <path fill="currentColor" d="M353.48,284.25c-.03-15.35-13.3-28.68-13.02-44.45.35-19.97,18.62-25.1,30.84-8.86,12.27,16.3,27.25,65.59,47.13,69.87,15.6,3.35,20.22-16.43,21.94-28.17,5.43-37.03,2.88-91.03.11-128.87-2.46-33.57-12.68-77.8.53-109.49,17.73-42.53,73.6-44.58,77.52,8.44,4.69,63.45-37.31,106.54-49.55,165.53-5.67,27.31-8.23,57.64-2,85.02,19.85,87.26,94.44-18.36,112.68-50.34,13.98-24.51,21.56-49.75,33.65-74.35,19.23-39.11,66.57-62.1,108.53-45.18,44.94,18.11,81.36,85.88,50.86,129.58-37.72,54.04-106.18,41.29-161.99,58.01-41.56,12.45-108.6,50.47-77.04,102.57,96.58,122.22,255.01,39.13,292.28,120.71,29.53,71.29-56.2,113.61-111.95,65.96-38.52-32.93-55.04-71.51-106.17-94.83-29.67-13.53-103.71-33.13-108.34,17.37-4.16,45.33,25.72,119.74,60.51,149.46,33.53,28.64,97.03,38.28,85.03,98.08-13.73,68.47-105.62,67.48-126.06-3.06-12.57-43.4-9.75-82.04-29.64-126.36-55.05-116.5-115.66-82.39-139.54,26.18-7,41.15,6.09,99.52-10.83,134.17-31.94,65.42-164.26,43.33-146.82-44.82,12.11-61.23,75.42-87.7,113.85-130.15,23.54-26.01,55.01-74.29,53.48-110.49-1.78-42.18-56.04-34.72-83.51-24.54-50.66,18.76-80.01,59.74-121.57,89.43-93.63,63.58-119.86-32.28-16.9-64.89,65.1-21.66,293.15-94.81,110.19-138.23-66.85-11.86-140.47,18.99-201.56-8.43-79.79-35.81-49.11-122.17,38.84-115.84,67.02,4.82,91.74,51.13,145.15,76.85,22.9,11.03,76.48,27.18,100.58,19.86,31.23-9.49,4.33-41.63,9.89-60.12,1.92-6.38,6.93-8.21,12.88-5.6Z"/>
+                <path fill="#91c127" d="M323.18,241.93c-13.07,8.61-21.8-13.96-28.28-22.59-7.94-10.58-16.74-21.56-25.9-31.1-28.12-29.26-66.01-47.97-72.39-92.61C189.42,45.37,218.91-3.67,274.03.22c82.95,5.85,62.53,119.82,75.51,175.59-2.67,10.44-9.56-.19-15.56-.6-23.21,1.86,16.7,52.67-10.8,66.73Z"/>
+            </svg>
+            Published with moss
+        </a>
+    </div>
+
+    <script src="/js/theme.js?v=7feda3b590c41eb7"></script>
+    <script src="/js/highlight.js?v=6fd3d51e360daab7"></script>
+    <script src="/js/preview.js"></script>
+    <script src="/custom.js?v=7593ff570b30b2fe"></script>
+    
+</body>
+</html>

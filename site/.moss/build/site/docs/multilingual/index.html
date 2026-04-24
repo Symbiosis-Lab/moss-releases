@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilingual sites - moss</title>
+    <meta name="description" content="Folder-per-language structure, translation keys, and automatic language toggle.">
+    <meta name="theme-color" content="#faf8f5" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#1a1816" media="(prefers-color-scheme: dark)">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Multilingual sites">
+    <meta property="og:url" content="/docs/multilingual/">
+    <meta property="og:site_name" content="moss">
+    <meta property="og:description" content="Folder-per-language structure, translation keys, and automatic language toggle.">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Multilingual sites",
+  "url": "/docs/multilingual/",
+  "description": "Folder-per-language structure, translation keys, and automatic language toggle.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "moss"
+  }
+}
+</script>
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    
+    
+    <link rel="stylesheet" href="/style.css?v=7b387eb880270b65"><link rel="stylesheet" href="/custom.css?v=ad91e43c9a83b48a">
+    <script>(function(){var b='//api.mosspub.com/api/sites/landing/beacon';var u=new URLSearchParams(location.search);var s=function(d){fetch(b,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d),keepalive:true})};
+s({path:location.pathname,referrer:document.referrer||null,screen_bucket:innerWidth<768?'mobile':innerWidth<1024?'tablet':'desktop',utm_source:u.get('utm_source'),utm_medium:u.get('utm_medium')});
+document.querySelectorAll('[data-track]').forEach(function(el){el.addEventListener('click',function(){s({path:location.pathname,event:el.getAttribute('data-track')})})})})()</script>
+</head>
+<body class="">
+    <header>
+        <nav class="main-nav container">
+            <div class="nav-content">
+                <div class="nav-left"><a href="/" class="site-name"><img class="site-logo" src="/assets/logo.svg" alt="" aria-hidden="true">moss</a><span class="breadcrumb-separator">/</span><a href="/docs/" class="breadcrumb-segment">Documentation</a></div><div class="nav-right"><div class="nav-icons"><div class="nav-lang-toggle" aria-label="Language"><span class="nav-lang-current">EN</span> / <a href="/zh-hans/docs/multilingual/" class="nav-lang-link" hreflang="zh-hans">简</a> / <a href="/zh-hant/docs/multilingual/" class="nav-lang-link" hreflang="zh-hant">繁</a></div><button class="nav-theme-btn" type="button" aria-label="Toggle theme" onclick="toggleTheme()"><svg class="theme-toggle-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="1em" height="1em" fill="currentColor" stroke-linecap="round" viewBox="0 0 32 32"><clipPath id="theme-toggle__classic__cutout"><path d="M0-5h30a1 1 0 0 0 9 13v24H0Z"/></clipPath><g clip-path="url(#theme-toggle__classic__cutout)"><circle cx="16" cy="16" r="9.34"/><g stroke="currentColor" stroke-width="1"><path d="M16 5.5v-4"/><path d="M16 30.5v-4"/><path d="M1.5 16h4"/><path d="M26.5 16h4"/><path d="m23.4 8.6 2.8-2.8"/><path d="m5.7 26.3 2.9-2.9"/><path d="m5.8 5.8 2.8 2.8"/><path d="m23.4 23.4 2.9 2.9"/></g></g></svg></button></div></div>
+            </div>
+        </nav>
+    </header>
+
+    
+    <main>
+        <article class="container">
+            
+            
+            <p>moss supports sites in English (<code>en</code>), Simplified Chinese (<code>zh-hans</code> / <code>zh-cn</code>), and Traditional Chinese (<code>zh-hant</code> / <code>zh-tw</code>). Any of these can be the site default; the rest appear behind an automatic language toggle in the header.</p><h2 id="folder-per-language-(canonical)">Folder-per-language (canonical)</h2><p>Put each language in its own top-level folder, named by language code:</p><pre><code>my-site/
+├── index.md            ← EN homepage (site default)
+├── about.md
+├── posts/
+│   └── hello.md
+├── zh-hans/
+│   ├── index.md        ← 中文简体 homepage
+│   ├── about.md
+│   └── posts/
+│       └── hello.md
+└── zh-hant/
+    ├── index.md
+    └── about.md
+</code></pre>
+<p>Each language tree mirrors the site structure. URLs follow the same pattern: <code>/</code>, <code>/about/</code>, <code>/posts/hello/</code> for the default language; <code>/zh-hans/</code>, <code>/zh-hans/about/</code>, etc. for others.</p><p>This is the recommended structure — clear, scalable, and maps 1:1 to the URL layout visitors see.</p><h2 id="sibling-suffix-(legacy)">Sibling suffix (legacy)</h2><p>moss also accepts per-file language suffixes — <code>.zh-hans.md</code>, <code>.zh-hant.md</code>, <code>.en.md</code>:</p><pre><code>my-site/
+├── index.md
+├── index.zh-hans.md    ← Simplified Chinese homepage
+└── about.md
+└── about.zh-hans.md
+</code></pre>
+<p>This works for small sites, but mixing it with folder-per-language in the same folder is ambiguous — stick to one style per site.</p><p>Bare <code>.zh</code> is accepted as shorthand for <code>.zh-hans</code> — <code>about.zh.md</code> resolves exactly like <code>about.zh-hans.md</code> (URL <code>/zh-hans/about/</code>, <code>lang="zh-hans"</code>). Use whichever form you prefer; <code>.zh-hant</code> / <code>.zh-tw</code> remain distinct for Traditional Chinese.</p><h2 id="mixed-structure-warning">Mixed-structure warning</h2><p>If a single language uses <strong>both</strong> styles — say, <code>zh-hans/index.md</code> (folder-per-language) AND <code>index.zh-hans.md</code> (sibling suffix) — moss emits a compile-time warning:</p><pre><code>[warn] Mixed multilingual structure detected for language &#39;zh-hans&#39;. Found
+       both sibling suffix file (index.zh-hans.md) and folder-based
+       translation (zh-hans/...). Prefer folder-per-language — see
+       https://docs.mosspub.com/multilingual for the canonical pattern.
+</code></pre>
+<p>Both styles still compile; the warning is just a nudge. To silence it, pick one style per language and move the other files over. Folder-per-language (the canonical shape above) is almost always the better choice — URLs mirror the folder tree, and adding more pages doesn't keep stacking <code>.lang.md</code> copies next to originals.</p><p>Different languages may use different styles without triggering the warning; it only fires when the <strong>same</strong> language appears in both shapes.</p><h2 id="frontmatter-fields">Frontmatter fields</h2><table>
+<thead><tr><th>Field</th><th>Type</th><th>Purpose</th></tr></thead><tbody>
+<tr>
+<td><code>lang</code></td><td>string</td><td>Explicit language code (<code>"en"</code>, <code>"zh-hans"</code>, <code>"zh-hant"</code>). Overrides filename/content detection.</td></tr>
+<tr>
+<td><code>translationKey</code></td><td>string</td><td>Links files as translations of each other when filenames differ.</td></tr>
+</table>
+<p>Use <code>translationKey</code> when translated versions have different filenames (e.g., <code>posts/hello.md</code> and <code>posts/ni-hao.md</code>):</p><pre><code class="language-yaml"><span class="source yaml"><span class="comment line number-sign yaml"><span class="punctuation definition comment line number-sign yaml">#</span> posts/hello.md
+</span><span class="entity other document begin yaml">---</span>
+<span class="string unquoted plain out yaml"><span class="entity name tag yaml">translationKey</span></span><span class="punctuation separator key-value mapping yaml">:</span> <span class="string unquoted plain out yaml">post-hello</span>
+<span class="entity other document begin yaml">---</span>
+
+<span class="comment line number-sign yaml"><span class="punctuation definition comment line number-sign yaml">#</span> zh-hans/posts/ni-hao.md
+</span><span class="entity other document begin yaml">---</span>
+<span class="string unquoted plain out yaml"><span class="entity name tag yaml">translationKey</span></span><span class="punctuation separator key-value mapping yaml">:</span> <span class="string unquoted plain out yaml">post-hello</span>
+<span class="string unquoted plain out yaml"><span class="entity name tag yaml">lang</span></span><span class="punctuation separator key-value mapping yaml">:</span> <span class="string unquoted plain out yaml">zh-hans</span>
+<span class="entity other document begin yaml">---</span>
+</span></code></pre>
+<h2 id="resolution-chain">Resolution chain</h2><p>For each file, moss determines the language by checking (in order):</p><ol start="1">
+<li>The <code>lang</code> frontmatter field</li>
+<li>The filename suffix (<code>.zh-hans.md</code>)</li>
+<li>Content auto-detection (script and character analysis)</li>
+<li>The site default language</li>
+</ol>
+<p>The first step that yields a recognized language wins.</p><h2 id="setting-the-site-default">Setting the site default</h2><p>By default, moss treats the root-level (<code>en</code>) tree as the site default. To publish another language at <code>/</code>, set <code>lang</code> in the root <code>index.md</code>:</p><pre><code class="language-yaml"><span class="source yaml"><span class="entity other document begin yaml">---</span>
+<span class="string unquoted plain out yaml"><span class="entity name tag yaml">title</span></span><span class="punctuation separator key-value mapping yaml">:</span> <span class="string unquoted plain out yaml">我的网站</span>
+<span class="string unquoted plain out yaml"><span class="entity name tag yaml">lang</span></span><span class="punctuation separator key-value mapping yaml">:</span> <span class="string unquoted plain out yaml">zh-hans</span>
+<span class="entity other document begin yaml">---</span>
+</span></code></pre>
+<p>Then the Simplified Chinese tree serves at <code>/</code> and English at <code>/en/</code>.</p><h2 id="automatic-language-toggle">Automatic language toggle</h2><p>When two or more language versions of a page are linked (via matching paths in folder-per-language, matching filenames in sibling-suffix, or matching <code>translationKey</code>), moss emits a language toggle in the site header.</p><p>The toggle shows the page's current language, followed by links to each available translation. Nothing to configure — it appears automatically as soon as a second language file exists.</p><h2 id="shared-partials-across-languages">Shared partials across languages</h2><p>You can extract shared markdown (like a footer) into a file and transclude it into pages across languages:</p><pre><code class="language-markdown"><span class="text html markdown"><span class="meta block-level markdown"><span class="markup heading 1 markdown"><span class="punctuation definition heading begin markdown">#</span> </span><span class="markup heading 1 markdown"><span class="entity name section markdown">zh-hans/about.md</span><span class="meta whitespace newline markdown">
+</span></span></span><span class="meta paragraph markdown">Some about copy.
+
+</span><span class="meta paragraph markdown">![[footer]]
+</span></span></code></pre>
+<p>moss resolves <code>![[footer]]</code> by looking in the current page's language tree first (so <code>zh-hans/footer.md</code> wins from inside <code>zh-hans/</code>), then falling back to the root. This lets each language keep its own partial where needed, while defaulting to a shared one.</p><p>See <a class="wikilink" href="../author/wikilinks-and-embeds/">author/wikilinks-and-embeds</a> for the full transclusion syntax.</p><h2 id="related-pages">Related pages</h2><ul>
+<li><a class="wikilink" href="../author/frontmatter/">author/frontmatter</a> — <code>lang</code>, <code>translationKey</code>, and the full field reference</li>
+<li><a class="wikilink" href="../author/wikilinks-and-embeds/">author/wikilinks-and-embeds</a> — transclusion and cross-page linking</li>
+<li><a class="wikilink" href="../structure/">structure</a> — how folders become URLs</li>
+</ul>
+
+            
+        </article>
+        
+    </main>
+
+    <footer class="container">
+    <div class="footer-content">
+        <div class="footer-right">
+            
+        </div>
+    </div>
+</footer>
+
+    <div class="moss-colophon">
+        <a href="https://mosspub.com" target="_blank" rel="noopener">
+            <svg class="moss-colophon-icon" viewBox="-104 -105 1040 1049" aria-hidden="true">
+                <path fill="currentColor" d="M353.48,284.25c-.03-15.35-13.3-28.68-13.02-44.45.35-19.97,18.62-25.1,30.84-8.86,12.27,16.3,27.25,65.59,47.13,69.87,15.6,3.35,20.22-16.43,21.94-28.17,5.43-37.03,2.88-91.03.11-128.87-2.46-33.57-12.68-77.8.53-109.49,17.73-42.53,73.6-44.58,77.52,8.44,4.69,63.45-37.31,106.54-49.55,165.53-5.67,27.31-8.23,57.64-2,85.02,19.85,87.26,94.44-18.36,112.68-50.34,13.98-24.51,21.56-49.75,33.65-74.35,19.23-39.11,66.57-62.1,108.53-45.18,44.94,18.11,81.36,85.88,50.86,129.58-37.72,54.04-106.18,41.29-161.99,58.01-41.56,12.45-108.6,50.47-77.04,102.57,96.58,122.22,255.01,39.13,292.28,120.71,29.53,71.29-56.2,113.61-111.95,65.96-38.52-32.93-55.04-71.51-106.17-94.83-29.67-13.53-103.71-33.13-108.34,17.37-4.16,45.33,25.72,119.74,60.51,149.46,33.53,28.64,97.03,38.28,85.03,98.08-13.73,68.47-105.62,67.48-126.06-3.06-12.57-43.4-9.75-82.04-29.64-126.36-55.05-116.5-115.66-82.39-139.54,26.18-7,41.15,6.09,99.52-10.83,134.17-31.94,65.42-164.26,43.33-146.82-44.82,12.11-61.23,75.42-87.7,113.85-130.15,23.54-26.01,55.01-74.29,53.48-110.49-1.78-42.18-56.04-34.72-83.51-24.54-50.66,18.76-80.01,59.74-121.57,89.43-93.63,63.58-119.86-32.28-16.9-64.89,65.1-21.66,293.15-94.81,110.19-138.23-66.85-11.86-140.47,18.99-201.56-8.43-79.79-35.81-49.11-122.17,38.84-115.84,67.02,4.82,91.74,51.13,145.15,76.85,22.9,11.03,76.48,27.18,100.58,19.86,31.23-9.49,4.33-41.63,9.89-60.12,1.92-6.38,6.93-8.21,12.88-5.6Z"/>
+                <path fill="#91c127" d="M323.18,241.93c-13.07,8.61-21.8-13.96-28.28-22.59-7.94-10.58-16.74-21.56-25.9-31.1-28.12-29.26-66.01-47.97-72.39-92.61C189.42,45.37,218.91-3.67,274.03.22c82.95,5.85,62.53,119.82,75.51,175.59-2.67,10.44-9.56-.19-15.56-.6-23.21,1.86,16.7,52.67-10.8,66.73Z"/>
+            </svg>
+            Published with moss
+        </a>
+    </div>
+
+    <script src="/js/theme.js?v=24d92d39bef266e5"></script>
+    <script src="/js/preview.js"></script>
+    <script src="/custom.js?v=7593ff570b30b2fe"></script>
+    
+</body>
+</html>
