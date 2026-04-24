@@ -1,14 +1,23 @@
 ---
-title: Documentation
+translationKey: docs
+description: Learn how to use moss to turn folders into websites.
 uid: b4d68dc8
 weight: 1
-description: Learn how to use moss to turn folders into websites.
-translationKey: docs
+title: Documentation
 ---
 
-Right-click any folder in Finder and choose **Publish with moss**. If the folder has markdown files, you already have a website. If it's empty, moss opens the editor so you can create your first page.
+# Documentation
 
-Every `.md` file becomes a page. Every subfolder becomes a section. `index.md` in any folder becomes that folder's page.
+After installing moss, right-click any folder and choose **Publish with moss** to preview your website. Edit with the built-in moss editor or any markdown editor you like.
+
+- Every folder becomes a page, [[author/frontmatter#Children|listing its children]] by default.
+  - A folder full of [[media|media files]] becomes a gallery.
+  - Images and videos are automatically compressed and converted for the web.
+- Every `.md` file becomes a page.
+  - Its URL is derived from its path in the folder, unless [[author/frontmatter#Advanced|overridden]] with `url` in frontmatter.
+  - `index.md`, `readme.md`, `_index.md`, `main.md`, or a file named after the folder (e.g. `recipes.md` inside `recipes/`) become the [[structure#^folder-page|folder's page]]. Language-suffixed variants like `index.zh-hans.md` also work.
+  - At the root of a flat site, `about.md` (and `关于.md` / `關於.md`) appear as navigation items automatically. In organized sites with subfolders, every root-level page shows up in navigation — control this with [[author/frontmatter#Navigation|`nav` in frontmatter]].
+- Reference media or markdown files with a relative path or just the filename — moss resolves it to the nearest match in the file tree.
 
 ```
 my-site/
@@ -19,4 +28,6 @@ my-site/
     └── hello.md    ← /posts/hello/
 ```
 
-[[media|Images, videos, and notebooks]] go in the same folder — just reference them from markdown and moss handles the rest.
+When you're ready, [[deploy|publish to GitHub Pages]] and connect your own domain.
+
+Start with [[structure]] to see how files, folders, and URLs fit together.

@@ -1,11 +1,11 @@
 ---
 title: moss
+description: A desktop app that turns folders into websites.
+children: false
+uid: a48746ca
+logo: assets/logo.svg
 lang: en
 translationKey: homepage
-uid: a48746ca
-children: false
-description: A desktop app that turns folders into websites.
-logo: assets/logo.svg
 ---
 
 # Write anywhere. Publish everywhere. Own everything.
