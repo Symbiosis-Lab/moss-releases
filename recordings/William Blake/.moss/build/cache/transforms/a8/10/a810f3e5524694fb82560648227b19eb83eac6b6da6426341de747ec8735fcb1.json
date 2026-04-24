@@ -2,6 +2,15 @@
   "source_oid": "a810f3e5524694fb82560648227b19eb83eac6b6da6426341de747ec8735fcb1",
   "source_size": 5084328,
   "transforms": {
+    "image/webp": {
+      "oid": "e9af5fbd30c6733b47cb6ca5da6805945bbfe69b30c5aa2331814801c71a172b",
+      "size": 541950,
+      "params": {
+        "max_edge": 2400,
+        "quality": 80,
+        "strip_exif": true
+      }
+    },
     "media/meta": {
       "oid": "7aa8e379a87da91874c9a3a0fb04018bb659222f0c04eb545f2fdc4b753b5549",
       "size": 975,

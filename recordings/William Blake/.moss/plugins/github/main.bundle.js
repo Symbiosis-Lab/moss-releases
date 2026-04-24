@@ -614,10 +614,9 @@ Remove or reduce these files before deploying.`
       if (!fetchResult.success) {
         console.log("   No remote history to fetch (first deploy)");
       }
-      onProgress(1, "Writing .gitignore...");
       await executeBinary({
         binaryPath: "sh",
-        args: ["-c", 'printf "node_modules/\\n.DS_Store\\n.moss/*\\n!.moss/build/\\n.moss/build/*\\n!.moss/build/site/\\n" > .gitignore'],
+        args: ["-c", "[ -f .gitignore ] && sed -i '' '/^\\.moss/d;/^!\\.moss/d' .gitignore || true"],
         workingDir: ".",
         timeoutMs: 5e3,
         env: {}

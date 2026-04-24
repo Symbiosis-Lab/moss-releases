@@ -1,121 +1,984 @@
 {
   "files": {
-    "innocence/holy-thursday.jpg": "0f6c02ac9b5564cf97f48e1acfd9877989cf4fcf085f531027f756de0335b472",
-    "songs-of-experience/infant-sorrow/index.html": "296e37a9f43eed22",
-    "innocence/frontispiece.jpg": "978d3cf3341996d7fb14a37f8b085a21e269df69a6e4079adb58f9bc365ede9a",
-    "index.html": "df061e8c32ef9d4d",
-    "songs-of-experience/the-sick-rose.jpg": "1e1ab04a15be2e53bf5265444f0c5e3a33e822795c6c5ad6763cc77d5d3a1976",
-    "journal/on-lavater/index.html": "b45c396bd257da27",
-    "visions-of-the-daughters-of-albion/frontispiece/index.html": "a15b7b9accfa475d",
-    "the-marriage-of-heaven-and-hell/a-song-of-liberty/index.html": "28258640f7976d7b",
-    "journal/to-reveley/index.html": "ef9dfc7847ceda63",
-    "innocence/the-lamb/index.html": "09fb97e411e5736d",
-    "europe-a-prophecy/title-page.jpg": "f7c2020a88feda4b30c40c4a55e9b96cca0d9a001e6cf0effbf3172b29b67d15",
-    "america-a-prophecy/orcs-speech.jpg": "c7efb5689349379035e6749ec5f6e10a1bd9b9fe5801ef7c915741174cac4885",
-    "journal/the-last-day/index.html": "6534895927bc1965",
-    "the-marriage-of-heaven-and-hell/index.html": "d93dbea2dafdff33",
-    "the-marriage-of-heaven-and-hell/a-memorable-fancy.jpg": "e8a1cf3027eb5b9cea3a9fb7cd18c50248b27645d3a7cb10b2ebbb495f1cda26",
-    "the-marriage-of-heaven-and-hell/the-voice-of-the-devil/index.html": "92f91c2858ba284a",
-    "js/theme.js": "c1b3b134e7b7da56",
-    "journal/on-reynolds/index.html": "fed95b415a26a7da",
-    "gates-of-paradise/aged-ignorance.jpg": "55cb7822d48c6cf72b0de9ad859c4401d691043f2075acc7225272deed2f40bb",
-    "europe-a-prophecy/index.html": "fa751bdf967e333e",
-    "america-a-prophecy/index.html": "09617e66ab34fc2f",
-    "america-a-prophecy/frontispiece.jpg": "a810f3e5524694fb82560648227b19eb83eac6b6da6426341de747ec8735fcb1",
-    "visions-of-the-daughters-of-albion/oothoons-speech.jpg": "ccf0b403bca1adc9d783261fefa7cdec54df0a9a740fa4939c0bb738a0084121",
-    "songs-of-experience/the-chimney-sweeper-experience/index.html": "dc833af9f7b6177c",
-    "the-marriage-of-heaven-and-hell/title-page.jpg": "e86a9c40973d1c0d942eb2edcbca2aef8676780d64896b7a6f56b32b09f34f19",
-    "america-a-prophecy/plate-12.jpg": "4995246a5fbc024299526aa4a477e2985315759756903e60cd090d6a39b47b7a",
-    "innocence/the-chimney-sweeper-innocence/index.html": "fd0b5167eb01b12a",
-    "gates-of-paradise/i-found-him-beneath-a-tree.jpg": "7631d5bce0f41d3a370a212c9bc91c607d7241dfdeffeb46be4ca9be34d8cca0",
-    "gates-of-paradise/i-have-said-to-the-worm.jpg": "b2c8875f1f79eff505d947bfe97b2a9edc5e1298a1c4ad0ab52e52e1f60a828c",
-    "songs-of-experience/london.jpg": "a377a7c8e7c72914b00db250d3cf07e63c51c866857a074bfa5cb09ca50c9f90",
-    "journal/apprenticeship/index.html": "39288629f66a66cf",
-    "the-marriage-of-heaven-and-hell/title-page/index.html": "df9db871b20ab02d",
-    "the-book-of-thel/title-page/index.html": "248506f62390933d",
-    "journal/to-butts-1802/index.html": "617778a0a9643bea",
-    "innocence/night.jpg": "c2c17239bc61660f785cbe29ca8765fdafb3d00865a2f2216ebbf7f6bb5429b2",
-    "journal/the-ancients/index.html": "69c37eb1204d674d",
-    "innocence/the-chimney-sweeper-innocence.jpg": "4b99f2dcbd9b41e078c845a62b04f769fe75a4d71d5b837867e9a46428920688",
-    "visions-of-the-daughters-of-albion/title-page.jpg": "14f0bf8eba1f72e1550a35c19d4b768b9025471e75ea09ccf850e18bb02e9546",
-    "the-book-of-urizen/urizen-in-the-void/index.html": "5d4af286cd0ea9ec",
-    "the-marriage-of-heaven-and-hell/proverbs-of-hell/index.html": "c5e91ebb15f4f72b",
-    "gates-of-paradise/i-found-him-beneath-a-tree/index.html": "12c156dc522f0d0e",
-    "america-a-prophecy/plate-12/index.html": "b4c9a6946fe9897b",
-    "the-book-of-urizen/los-howling.jpg": "310d2427c5a0beab2e1c991eee8ffcb32352e6868e5d0cc5c3833344b6861563",
-    "the-book-of-urizen/los-howling/index.html": "68d8fb97cb587e0a",
-    "songs-of-experience/the-sick-rose/index.html": "52a1c0fcab1b77c5",
-    "gates-of-paradise/i-have-said-to-the-worm/index.html": "04291ff1d627fdb7",
-    "style.css": "129692b98690bb21",
-    "innocence/the-ecchoing-green/index.html": "81fefbbf9bbaeb60",
-    "europe-a-prophecy/the-ancient-of-days/index.html": "c34f00a145bdfca0",
-    "europe-a-prophecy/the-ancient-of-days.jpg": "486416feca87e9b9f2e49768645ae210507dbd3ab3d355da65e200ab0d4d9a68",
-    "innocence/infant-joy/index.html": "1ccc297628ccb9f0",
-    "innocence/the-little-boy-lost.jpg": "2fdc74aeaeceb467bf1c007aeb7bb97bd4500a397f1613e73076764631ccff0a",
-    "innocence/spring.jpg": "0736c129450ee780279fd164deabe57be3bda4bc804b0cbe19cab88db0e3c0c7",
-    "america-a-prophecy/orcs-speech/index.html": "ee4a3354f3fdf786",
-    "the-marriage-of-heaven-and-hell/the-voice-of-the-devil.jpg": "cfcbdadec3f3eb11629e538bf59e9fca09f688a26e262700d564462a55c16009",
-    "songs-of-experience/the-tyger/index.html": "58573292048a2e89",
-    "journal/prospectus/index.html": "a87ea6e24d34b19d",
-    "visions-of-the-daughters-of-albion/frontispiece.jpg": "d16bca79f905a03786943f6696874966c72a7b3fd12bd042e2ec9e1c89341347",
-    "the-book-of-thel/title-page.jpg": "d997678768633c12f207101e6a8e81855cfa9ae4a31b7d1860c62b420aa81190",
-    "songs-of-experience/title-page/index.html": "ab702be0555e244b",
-    "innocence/index.html": "e1e640c3a902a271",
-    "america-a-prophecy/frontispiece/index.html": "36d370564ed3306c",
-    "songs-of-experience/index.html": "a10807cea661c9c1",
-    "innocence/the-little-boy-lost/index.html": "0253910222bdf594",
-    "innocence/the-divine-image.jpg": "cd241524822ac4a494505f2efc5909b53a272a773f07d8c3037bc8b30d46f248",
-    "assets/favicon.svg": "71385febe72280ac",
-    "llms.txt": "db239994285966bf",
-    "the-marriage-of-heaven-and-hell/a-song-of-liberty.jpg": "3cca8c5c9ffc7366126d655e06ee0ab64fc8233a4ff8601421078acd00e1a568",
-    "the-marriage-of-heaven-and-hell/proverbs-of-hell.jpg": "8574b7ab5382fd2003653aeafaa56e4f618abb6a8302dfd61fadabc94bb757d1",
-    "journal/index.html": "a0f3152bd9309f1a",
-    "innocence/the-ecchoing-green.jpg": "552bb0388331e7d969a5b033531bb949f92d7a7ad57eda83b8a96101e91b7565",
-    "innocence/spring/index.html": "5badbf5712f706a6",
-    "journal/the-exhibition/index.html": "18c70217a84258b4",
-    "innocence/title-page/index.html": "121f86c80d481cfe",
-    "songs-of-experience/a-poison-tree.jpg": "5a2ba63da6ac05394534b62831f6afba2590b9e65be056c1f55e19f73f78a3e8",
-    "songs-of-experience/a-poison-tree/index.html": "41a2b8c77e94d721",
-    "visions-of-the-daughters-of-albion/oothoons-speech/index.html": "d27582611a3759b0",
-    "gates-of-paradise/index.html": "9b19a393deed30de",
-    "songs-of-experience/the-tyger.jpg": "4973f9b6a4a44c28dc3f2f53e66e9b6e8d6791c894440c22eb5c0a3310fdec67",
-    "innocence/infant-joy.jpg": "7737f17cc077e6193f9197b6e247cebb0b3743f217b3074f704d4c17564edfac",
-    "the-book-of-urizen/urizen-in-the-void.jpg": "9676f65cb5ae2a10b80fa81e75f1cc7967551f31a65797c6c99e66f4d16e612b",
-    "journal/to-trusler/index.html": "09ab5589c5ca94ca",
-    "songs-of-experience/the-chimney-sweeper-experience.jpg": "59fc8604e6f394dbb79fdcf082de2ad184cabecf3b802ca97a00403f553b108f",
-    "gates-of-paradise/aged-ignorance/index.html": "48a03f03d7b01714",
-    "the-book-of-thel/thel-and-the-clod.jpg": "b921238e3b9177795b816377a034dd1e2a24c44acef49877ae8afead331f18a0",
-    "innocence/night/index.html": "f6d90ff85047ebce",
-    "europe-a-prophecy/title-page/index.html": "01334ee25c195e5e",
-    "journal/notebook-poems/index.html": "12e19e50472ec8e8",
-    "the-book-of-thel/index.html": "e3ae545cbfdf41ec",
-    "songs-of-experience/title-page.jpg": "32f32d11b69fa4669363d5a152f7b0aaa60b217c6938d72e0294e92ab2db8964",
-    "songs-of-experience/london/index.html": "49f7879a690b39cb",
-    "innocence/frontispiece/index.html": "2be5ca1be0bda476",
-    "the-book-of-urizen/title-page.jpg": "ca6a26a96534c5fa0f7b00675288fd31331e7fafde29ba4ba9bc7b6ca98b37c4",
-    "visions-of-the-daughters-of-albion/index.html": "ad88a75cefa269d9",
-    "the-book-of-thel/thels-motto.jpg": "e4aab5b635aaa509b9cf2fc8648ff53e83942965bd0405c9fe713c97cf092968",
-    "songs-of-experience/infant-sorrow.jpg": "26fdc5ff941ed179a0456d5b9bcd3d803ab496829d649e3e59affd29e704f2f2",
-    "innocence/holy-thursday/index.html": "40994e27a3156bb7",
-    "the-book-of-thel/thels-motto/index.html": "d6a6fd1546dcb0bd",
+    "america-a-prophecy/05-plate-5.jpg": "059cfff2323598b347cffc84c409eaeeefa1ba784cac23949b51705721d79c04",
+    "innocence/a-dream/index.html": "95114cb241bac318",
+    "qr/plate-23.svg": "a00eb0a32a290c74",
+    "the-book-of-thel/04-plate-4.jpg": "204ec0fead8d52d8a88ae659fb9c89be9ee22293e2280e9aa59e292a51ce29b8",
+    "qr/night-2.svg": "fc398d8ac5d808c6",
+    "innocence/11-the-chimney-sweeper.jpg": "5e92b6b65cc5c47278dad22913d8bccf9098e4a7e375dc67c7eafd404a020876",
+    "the-marriage-of-heaven-and-hell/the-argument/index.html": "948f7c67e147d9c9",
+    "qr/plate-6.svg": "a5eb87af0a70bc5e",
+    "qr/orcs-speech.svg": "f030c74065efaea8",
+    "the-book-of-thel/plate-7/index.html": "d4d302bc72afc4b8",
+    "america-a-prophecy/03-preludium-1.jpg": "2b735309157316173767cad435ea5b672d6d994fa9e03d4cc90581d057b256f4",
+    "journal/the-exhibition/index.html": "f4577e065c446f1d",
+    "america-a-prophecy/13-plate-13.jpg": "647e199eda452b6e702a099bcf05ffdce3e78fa89bee1740158b774d372da006",
+    "the-marriage-of-heaven-and-hell/23-plate-23.jpg": "140c99205fc864c454643a1a1014b11f3f5bf9daaf0ffbfcd3e39b6c2b303644",
+    "the-marriage-of-heaven-and-hell/plate-23/index.html": "6a5d30cff6a50a19",
+    "innocence/24-infant-joy.jpg": "7737f17cc077e6193f9197b6e247cebb0b3743f217b3074f704d4c17564edfac",
+    "america-a-prophecy/07-plate-7.jpg": "7d423f81ea61bb9b3f77ed617c8161c73136aeb20a7fd477373a8a03938e8c1b",
+    "qr/a-dream.svg": "ef5a1d708862cd5f",
+    "qr/the-exhibition.svg": "c64650d83dcc5364",
+    "innocence/the-lamb/index.html": "83c8b3e17f4ae017",
+    "qr/the-shepherd.svg": "f8ab0f1cc474e282",
+    "qr/the-argument.svg": "2c8b278a34d62c7f",
+    "visions-of-the-daughters-of-albion/plate-10/index.html": "431c397dc1d8c3e8",
+    "america-a-prophecy/plate-6/index.html": "0df302e862ef02c9",
+    "qr/marriage.svg": "c5f5ea3f94ff5d7b",
+    "innocence/23-nurses-song.jpg": "848dc123e87f30557b7e21df2388faeb3ca291a2e377973c759e7422fd4d02ee",
+    "journal/the-bastille/index.html": "50f6f8cae2355763",
+    "qr/nurses-song.svg": "352f5d7f14051f61",
+    "innocence/17-the-divine-image.jpg": "cd241524822ac4a494505f2efc5909b53a272a773f07d8c3037bc8b30d46f248",
+    "america-a-prophecy/14-plate-14.jpg": "3897b9b944e754a8dfbe6eed1966d6ac8d7b808f883d3a460ee0dfb7be51a1b6",
+    "innocence/index.html": "4eff830b6ea7f068",
+    "innocence/20-night-2.jpg": "31578e37a6272c883e9e5d13325aad53335d407ec84901294a35c2f65ed82914",
+    "visions-of-the-daughters-of-albion/11-plate-11.jpg": "b769feec1130891f76f206a9f2e7d69a42067f81fe29809a7fdcbb1d082f2b94",
+    "innocence/06-the-ecchoing-green-2.jpg": "78f4477790fc38f2b34a5ff042f4e093e9e7ca8c5b578f212082cdd20cef0f35",
+    "the-book-of-thel/05-plate-5.jpg": "1c91f71ec6e3e9d9449d38eae9098423e9972eb927f60a5646a879d05c964319",
+    "qr/to-trusler.svg": "bd62fe579cb1393f",
+    "qr/plate-14.svg": "debaaf0449033338",
+    "journal/index.html": "96c580ff61c68a02",
+    "the-marriage-of-heaven-and-hell/14-plate-14.jpg": "7226e69800748a65a7e4e1d2dd84464a706ff980d976d9b972b2e229abfba441",
+    "the-book-of-thel/02-title-page.jpg": "d997678768633c12f207101e6a8e81855cfa9ae4a31b7d1860c62b420aa81190",
+    "gates-of-paradise/plate-12/index.html": "ebf735c0e01494d2",
+    "america-a-prophecy/12-plate-12.jpg": "05cd4b6744b56551e2fda23488d73bc220f7f71ff3d93dc5e91153e56e9413c4",
+    "america-a-prophecy/15-plate-15.jpg": "cbac5aa7a8135a547a09ecdac8773cd39dae3b7c9515cdb0e70b0857870c772f",
+    "innocence/infant-joy/index.html": "83dae643c89b842a",
+    "america-a-prophecy/plate-14/index.html": "cdfcf7871f05da18",
+    "america-a-prophecy/orcs-speech/index.html": "dfdd184ecb6e2b95",
+    "innocence/holy-thursday/index.html": "08805038dde311fb",
+    "america-a-prophecy/plate-17/index.html": "389c7766118b4782",
+    "gates-of-paradise/fire/index.html": "b9eb2a41a6a8aecc",
+    "visions-of-the-daughters-of-albion/plate-9/index.html": "85f375689655d745",
+    "the-marriage-of-heaven-and-hell/07-proverbs-of-hell-1.jpg": "9cff67e63080d3bef4bf78a9daa52205e981c4fd7df6bce63fbfd5ba8f81e344",
+    "america-a-prophecy/plate-15/index.html": "3f215848be97681d",
+    "innocence/13-the-little-boy-found.jpg": "6cb449c9bddaf4509d8aac4732ad782943db197da1eef773c5043601af5c3601",
+    "america-a-prophecy/18-plate-18.jpg": "1c20af70efe6d9b1a45bf94cfd3c217410d2092c84f9a73ea3c517cafb8124f9",
+    "america-a-prophecy/plate-13/index.html": "402df52132dd9964",
+    "gates-of-paradise/03-i-found-him-beneath-a-tree.jpg": "6112798c9aeebc0db898e6b7a9c85cd4b19496fddee1ae778f6c8730e4cab201",
+    "qr/to-butts-1802.svg": "a38926cb2f0e5291",
+    "qr/night-1.svg": "e54ed01f092040b0",
+    "qr/plate-24.svg": "92bc8c1751767760",
+    "qr/plate-10.svg": "2c6a8238eda85271",
+    "qr/i-found-him-beneath-a-tree.svg": "4b27c75e2c587d41",
+    "visions-of-the-daughters-of-albion/plate-8/index.html": "39339b1bca860058",
+    "america-a-prophecy/preludium-2/index.html": "5e5ea2a64dfebe20",
+    "the-book-of-thel/01-thels-motto.jpg": "e4aab5b635aaa509b9cf2fc8648ff53e83942965bd0405c9fe713c97cf092968",
+    "the-marriage-of-heaven-and-hell/plate-19/index.html": "0d6657fb749dd521",
+    "innocence/05-the-ecchoing-green-1.jpg": "82ce1ae5b434eedde53207130dc006bdc5f96ad055afdb5397025244ac4fdb42",
+    "the-marriage-of-heaven-and-hell/plate-16/index.html": "2088378d3e603735",
+    "innocence/the-shepherd/index.html": "1338e3b71dc66b8a",
+    "journal/on-lavater/index.html": "c93844d163f90a04",
+    "qr/the-chimney-sweeper.svg": "6d1a7ac79afdfa22",
+    "qr/plate-12.svg": "eff80006fcddece4",
+    "the-book-of-thel/plate-4/index.html": "bffeb8839014ed0b",
+    "sitemap.xml": "a579c492955d88ee",
+    "qr/plate-9.svg": "643b936ca5803552",
+    "the-marriage-of-heaven-and-hell/24-plate-24.jpg": "f134b060cdfed3a5481941967f078591e3da19293951a11a112b1fa8faa35651",
+    "gates-of-paradise/title-page/index.html": "a70391392beed5f8",
+    "index.html": "4ed612ea4b09cbd0",
+    "gates-of-paradise/plate-8/index.html": "dde14de88933ddad",
+    "the-marriage-of-heaven-and-hell/02-the-argument.jpg": "6b66667b027fd67ce56c0f7c64bc603625115d470c05d9931f61b4819970a3fc",
+    "america-a-prophecy/02-title-page.jpg": "3c925146307d9d308025d26646adad4bcb6000d691ea09560c5d19291501e96e",
+    "the-marriage-of-heaven-and-hell/the-voice-of-the-devil/index.html": "0b0f756b6a8c6475",
+    "visions-of-the-daughters-of-albion/plate-4/index.html": "2d8695df72e008bd",
+    "robots.txt": "972114795dd55811",
+    "qr/on-anothers-sorrow-1.svg": "f0c0cd9267451f06",
+    "the-book-of-thel/08-plate-8.jpg": "53661913d83133adb323bcca6cc0d1a7c6570d1e6136108146e76d2ad5daf3f7",
+    "the-marriage-of-heaven-and-hell/08-proverbs-of-hell-2.jpg": "dabb4f04aaf4544ad453aa8bba3b60f79302d63e69fef67a7c8db7bcf524c037",
+    "the-book-of-thel/index.html": "7135fd9e70b210a0",
+    "visions-of-the-daughters-of-albion/plate-11/index.html": "4bf29a37bfcce996",
+    "the-marriage-of-heaven-and-hell/20-plate-20.jpg": "bd4dddcc9153b5754233c5b1b8d192720f824ef5ffc5a2d7f8f15b299b45ccae",
+    "visions-of-the-daughters-of-albion/02-title-page.jpg": "14f0bf8eba1f72e1550a35c19d4b768b9025471e75ea09ccf850e18bb02e9546",
+    "innocence/a-cradle-song-2/index.html": "dc1f8362d0998d0f",
+    "gates-of-paradise/13-plate-13.jpg": "b7b6b0a08380da95c229ab781d333a034b4b1f180129ed19d3e3bb831547bb4f",
+    "qr/the-little-black-boy-2.svg": "cf6d83b646a65312",
+    "innocence/laughing-song/index.html": "1c06be02d9c6630f",
+    "visions-of-the-daughters-of-albion/frontispiece/index.html": "5adcc16d4dbd42c4",
+    "qr/air.svg": "cb0c7234ac4875bc",
+    "visions-of-the-daughters-of-albion/plate-6/index.html": "76983f78c3ca6cdf",
+    "gates-of-paradise/02-title-page.jpg": "daff1ceef831094da7e8a9343d247386845ea98d9287550f3cec3461f11471c7",
+    "qr/notebook-poems.svg": "94ca2a4036a1fc15",
+    "qr/on-reynolds.svg": "a469e15d8bbf0133",
+    "innocence/12-the-little-boy-lost.jpg": "cbb9a92c5e1b8f2933e2395dc6abeb50bd82c3b10f6121a0cd563035a26a245d",
+    "the-marriage-of-heaven-and-hell/25-a-song-of-liberty-1.jpg": "9d7d9bbc1cadfe44228c47d19e7222586db6b7a83c6319315603731c579523eb",
+    "america-a-prophecy/16-plate-16.jpg": "35c41a57eb6f34dc8f4ecdef3b8081273107da3ceba7d408d00a1b2c562cdcb0",
     "custom.css": "8f31e92c64459774",
-    "journal/on-swedenborg/index.html": "83f1b704227b7c4d",
-    "innocence/the-divine-image/index.html": "2d5b00de06b6bb19",
-    "the-book-of-thel/thel-and-the-clod/index.html": "4fc254cea387cacf",
-    "journal/i-shant-live-five-years/index.html": "50ca95d213c470c2",
-    "the-book-of-urizen/title-page/index.html": "7be7ed85734419f7",
-    "the-book-of-urizen/index.html": "3af8e969886eac15",
-    "innocence/the-lamb.jpg": "fc5223405ead48e6216fed296696ed03cc82b69401eef90e57cd900062f11000",
-    "journal/marriage/index.html": "6fb7ae6562d2feaa",
-    "visions-of-the-daughters-of-albion/title-page/index.html": "945a139a1d7f4ea1",
-    "the-marriage-of-heaven-and-hell/a-memorable-fancy/index.html": "3cd0dcab9042ba2e",
-    "journal/the-bastille/index.html": "126dae6d6ffd5b73",
-    "js/preview.js": "34297f2ece2ae404",
-    "innocence/title-page.jpg": "60bda3a20b72a164ccb7464b29b3f2f2c5613ab7d41e514f48563f1753907c9b",
-    "_previews.json": "87cff0c5b7cda51e"
+    "america-a-prophecy/plate-12/index.html": "0f78848f4616e936",
+    "the-marriage-of-heaven-and-hell/15-a-memorable-fancy-1.jpg": "f3c421dca0e9ae1c715da24951b3fb91feda2b22fd7f2dd9040f5cd6cd371cd9",
+    "the-marriage-of-heaven-and-hell/plate-4/index.html": "ea88493666ace775",
+    "qr/the-voice-of-the-devil.svg": "2c673d627d4ef270",
+    "visions-of-the-daughters-of-albion/08-plate-8.jpg": "4f9e48e7712b7caef6804f271c6df659606fd7f9579bfaf58915124d0daa8c5c",
+    "gates-of-paradise/09-plate-9.jpg": "519e167cbc4245bf0ce75aaef64c9a5c486b63fff2f14dc2426c00b8ab85381f",
+    "visions-of-the-daughters-of-albion/06-plate-6.jpg": "95b6d26713967bef4342522f4e2fd3b44dd318161d811b3c48f4ce274a044f6e",
+    "innocence/the-ecchoing-green-1/index.html": "be4e3335cdd40123",
+    "the-marriage-of-heaven-and-hell/10-proverbs-of-hell-4.jpg": "02f787965257c62e87b7a1367415f0fce477cc5d46425e0f3c65e9c0b64cbe5a",
+    "the-marriage-of-heaven-and-hell/plate-12/index.html": "3469cc9b08c36ac3",
+    "innocence/08-the-little-black-boy-1.jpg": "eeb4fe7e9ee9aff5ed169a7418ff8cc7e175b166da85791c57176437a08cac4c",
+    "qr/prospectus.svg": "6684856867c6f6a9",
+    "the-marriage-of-heaven-and-hell/01-title-page.jpg": "e86a9c40973d1c0d942eb2edcbca2aef8676780d64896b7a6f56b32b09f34f19",
+    "qr/the-little-boy-found.svg": "42796624a85b7724",
+    "qr/a-cradle-song-2.svg": "758c7b808d42f189",
+    "innocence/26-on-anothers-sorrow-1.jpg": "b41a4e82ce0b669dc1ecd2c8d57442d4d98ebd419ad79527d80eb1f9c5403019",
+    "qr/proverbs-of-hell-2.svg": "77dbb688fd2e152c",
+    "innocence/18-holy-thursday.jpg": "a0b41645b658029c75e69b9cbd9d0cd0a9ed5003abccd3cdf89b40059a69c6c9",
+    "journal/to-trusler/index.html": "6d822ca2d1e52f74",
+    "gates-of-paradise/05-earth.jpg": "cabe759ef0bb968c7dce37237c2069ce1a5dd16a83cfcf2448eb362f7f414235",
+    "innocence/the-little-black-boy-1/index.html": "e116ed67bf75fa28",
+    "the-marriage-of-heaven-and-hell/plate-5/index.html": "7b4d04fc0d65c535",
+    "innocence/on-anothers-sorrow-1/index.html": "77ad2f8a61f093ce",
+    "the-marriage-of-heaven-and-hell/21-plate-21.jpg": "943daaa838c77873212435ab1127915c586848ee3dcb32a1c7afe283e2aba4e7",
+    "qr/spring-2.svg": "66cc24a5d5d56dee",
+    "innocence/16-a-cradle-song-2.jpg": "2954e45d77a62fe713289df2bc849852c2e16ba5ad50604158f32919be290113",
+    "the-book-of-thel/plate-3/index.html": "6ca6d7bf212ccadd",
+    "the-marriage-of-heaven-and-hell/title-page/index.html": "6eeeafd03d2f9fe1",
+    "qr/proverbs-of-hell-1.svg": "efb0b89ba115d47b",
+    "gates-of-paradise/index.html": "3d702f624dcd6e92",
+    "innocence/spring-1/index.html": "5be2ff1a0aaeec67",
+    "innocence/the-ecchoing-green-2/index.html": "0a2754c9eb7126f2",
+    "qr/thels-motto.svg": "74a3b602365ccbb3",
+    "america-a-prophecy/10-plate-10.jpg": "b9aff9fdefb02b48d908dbf1d5643b0fa443cf84a438c6f2fdefaef52cc460cd",
+    "the-marriage-of-heaven-and-hell/27-a-song-of-liberty-3.jpg": "59c32fe1d4283f879c973f712cd3d7c7167142129ec18dd624ac247ea8758134",
+    "gates-of-paradise/07-fire.jpg": "75a60f7681a5514834ce722f39a9d3341634b2bfa1774b5b3227a6c06a9c2a46",
+    "the-marriage-of-heaven-and-hell/proverbs-of-hell-2/index.html": "b3e72635924c6ad9",
+    "innocence/nurses-song/index.html": "a0233ff681fa8f98",
+    "innocence/19-night-1.jpg": "c9f4cbd5bf6c64cdf25d701a734c258a5404dc0bdc765dafb866dbbfa60a8090",
+    "the-marriage-of-heaven-and-hell/09-proverbs-of-hell-3.jpg": "52cdb0ea9663a01b2aa6a6d0d3bd520c1a63e082e7712d4e42d712ce480308c7",
+    "gates-of-paradise/plate-15/index.html": "7d0cdbbb8c6fa457",
+    "innocence/04-the-shepherd.jpg": "080b5d400a33b3ac409ee966cbddd518263c25410ba5e76766d7875b033062fc",
+    "innocence/the-chimney-sweeper/index.html": "e4893562e454dcaf",
+    "the-marriage-of-heaven-and-hell/plate-20/index.html": "d85f111c02f1bb61",
+    "qr/on-anothers-sorrow-2.svg": "485d705500e14cbc",
+    "js/preview.js": "20e2f7a9b285cc9d",
+    "innocence/09-the-little-black-boy-2.jpg": "e94ac9d5eeee44fac632d4a50624df76392267fdcd803393658300ad8d2bf0a2",
+    "qr/spring-1.svg": "948d3cb970ff7f78",
+    "qr/earth.svg": "c5ffb7d3323c02b0",
+    "qr/plate-7.svg": "6568b195a66d5a37",
+    "america-a-prophecy/plate-9/index.html": "f2dfe671b3db33aa",
+    "innocence/the-blossom/index.html": "6a1890e61ecd828f",
+    "gates-of-paradise/16-i-have-said-to-the-worm.jpg": "acc005455bbdff1d897f2309b8b702378ba620c9289176c4edff5b36ed602445",
+    "innocence/introduction/index.html": "ca526bc5b9352dca",
+    "qr/plate-18.svg": "b1246ede7c93aac9",
+    "innocence/03-introduction.jpg": "665c52388311c3dd0aa773cb2b9ee54f80b036ebd41ea56da9ab85a1ff77f717",
+    "gates-of-paradise/14-aged-ignorance.jpg": "f1dd70972240b3c4fb67112d33ebf6ba3620832ead3873a9ebc6aea2a24919ae",
+    "the-book-of-thel/03-plate-3.jpg": "dff525ade4b5ecf53a659f61324cbb2507fde89df10abc0d092c5ae158491495",
+    "innocence/22-spring-2.jpg": "90098fbe0be1d3e7aa130443f9853b51d60252831020cdfb8aae6ea2cf12ec3c",
+    "qr/i-shant-live-five-years.svg": "8fb3ae8431ff4130",
+    "america-a-prophecy/17-plate-17.jpg": "11e3c3778a843652dfcf2b18b7452d3523f90756154f621b85c616e0c383c705",
+    "the-book-of-thel/06-thel-and-the-clod.jpg": "c946eb3926e7423ecb54cf14e30861bb7f963dafd108ece807656fdde07bbe0a",
+    "the-marriage-of-heaven-and-hell/plate-22/index.html": "02ae2b98e2905aad",
+    "gates-of-paradise/aged-ignorance/index.html": "aaaeb6bbf57cff59",
+    "the-marriage-of-heaven-and-hell/a-song-of-liberty-2/index.html": "b109a6925d3ac6b3",
+    "the-marriage-of-heaven-and-hell/12-plate-12.jpg": "b6470a2c8cce0b247aceef34221942324a7e7b42b377a9cb2f6cf1dc08414486",
+    "america-a-prophecy/01-frontispiece.jpg": "a810f3e5524694fb82560648227b19eb83eac6b6da6426341de747ec8735fcb1",
+    "gates-of-paradise/plate-10/index.html": "c0b49a09e6639764",
+    "qr/apprenticeship.svg": "87b33cdc3adc1e6d",
+    "the-book-of-thel/plate-5/index.html": "d359f08edbc3a044",
+    "qr/plate-20.svg": "2371bcde433de2a8",
+    "qr/a-memorable-fancy-1.svg": "4d522d06ab8847d9",
+    "qr/frontispiece.svg": "683df488f93ecdde",
+    "innocence/spring-2/index.html": "1dbd841655eaa80d",
+    "qr/thel-and-the-clod.svg": "2701c38155a9712a",
+    "innocence/title-page/index.html": "0e708c09b2304ebc",
+    "qr/plate-16.svg": "7a2fc1e0cdfac145",
+    "gates-of-paradise/04-water.jpg": "39b1d015f6261fb7a77d697523ae373e21e140a7ebfef6194f06ef6a6b960571",
+    "journal/i-shant-live-five-years/index.html": "a8a0b0c99a764c65",
+    "llms.txt": "2a3ea022f7371ce2",
+    "qr/holy-thursday.svg": "4aed24e5fbf7570c",
+    "the-marriage-of-heaven-and-hell/a-memorable-fancy-1/index.html": "d10f1655a20baaa6",
+    "gates-of-paradise/10-plate-10.jpg": "33c4e26abc3ff5ebdf7e3f4819c5eb19816c5479e257c1f4adc7d2eb2b9a62ff",
+    "the-marriage-of-heaven-and-hell/16-plate-16.jpg": "bfc70ee9e3089ca33c2bc0ea5f148e19665768f4b6c5f2145bd2506feb5934ed",
+    "gates-of-paradise/air/index.html": "33b8ceae3aa61753",
+    "innocence/frontispiece/index.html": "292a7491707fa497",
+    "qr/a-song-of-liberty-3.svg": "16a4d93b601dbd04",
+    "the-marriage-of-heaven-and-hell/04-plate-4.jpg": "58d20dbc4d3c2c8d86811b6f6379e8543b3127748a5349dfd0297572b8c2ef10",
+    "gates-of-paradise/12-plate-12.jpg": "a75929fe92c606b098297996e330325e577cbe63bf099643093edade92a172ce",
+    "the-marriage-of-heaven-and-hell/index.html": "44aded553a122b09",
+    "the-marriage-of-heaven-and-hell/plate-13/index.html": "b9dd3e6bd8f502a5",
+    "the-marriage-of-heaven-and-hell/plate-24/index.html": "89700e959cba551f",
+    "qr/a-cradle-song-1.svg": "ae3a3a4c08536c92",
+    "the-marriage-of-heaven-and-hell/19-plate-19.jpg": "e15dfb96796eafd703a3877538d27bd5b75689e0052b8510629c8dc6d2396751",
+    "america-a-prophecy/11-plate-11.jpg": "28c10ff59afb9a9bea706d8df28440cd7f616be58846f4c564eace49732a8f11",
+    "innocence/night-1/index.html": "be9b87c46ba7e78c",
+    "qr/water.svg": "7a7587932aab9d3c",
+    "innocence/07-the-lamb.jpg": "fc5223405ead48e6216fed296696ed03cc82b69401eef90e57cd900062f11000",
+    "gates-of-paradise/17-plate-17.jpg": "bc38a108dc6e727ae30d0f88524579ba64d37c29237e307a4d7ad1f79874cd43",
+    "visions-of-the-daughters-of-albion/plate-5/index.html": "2a3cdbb9bbe40d4e",
+    "qr/on-lavater.svg": "73e3173d215a5f5f",
+    "the-marriage-of-heaven-and-hell/05-plate-5.jpg": "e251a8a0cdab9493de3f04c5915780d5fb6f4af6331107c7a902266d9a79866a",
+    "america-a-prophecy/preludium-1/index.html": "3b7bd200923897ce",
+    "the-marriage-of-heaven-and-hell/18-plate-18.jpg": "fb3be6d0a17197bd877624b4466e35178b8af3654e4c939820eaa30a7705daeb",
+    "gates-of-paradise/01-frontispiece.jpg": "1ada5fc03d32723b4affd2379254c9a35fceb63372d784e8ebaef15b7e41029c",
+    "qr/plate-5.svg": "793cf608ef26fb35",
+    "journal/on-reynolds/index.html": "bd0978134fe20b1e",
+    "qr/preludium-2.svg": "ca5b857ebab8fce0",
+    "america-a-prophecy/title-page/index.html": "bf7cf2835ff4979e",
+    "america-a-prophecy/plate-11/index.html": "0d5dddc3db6a057f",
+    "innocence/the-divine-image/index.html": "c061e85f4279f8ff",
+    "visions-of-the-daughters-of-albion/index.html": "cbaee19bb19fd8f1",
+    "visions-of-the-daughters-of-albion/the-argument/index.html": "c2ddda2a7d677544",
+    "qr/the-ecchoing-green-2.svg": "9e43e97374b2ffc8",
+    "qr/fire.svg": "df66bb0e4386596f",
+    "america-a-prophecy/plate-16/index.html": "dce3ae97cb398f90",
+    "america-a-prophecy/08-orcs-speech.jpg": "bfcf6c8854319504cc08fbbdd20c8a17c5da9b9bfac53200797f2fc4d09624f6",
+    "qr/to-reveley.svg": "1b7f29cb3844238f",
+    "qr/the-divine-image.svg": "14cad697435ee12b",
+    "the-marriage-of-heaven-and-hell/13-plate-13.jpg": "ab5aeb5139d868349f0374b8780ce26e1e3a1bf062af5c9a25cb5125579b90f9",
+    "qr/a-song-of-liberty-2.svg": "f106730052f91ffb",
+    "journal/notebook-poems/index.html": "92e0df48e96b1a58",
+    "visions-of-the-daughters-of-albion/plate-7/index.html": "d814e7642a332f10",
+    "gates-of-paradise/08-plate-8.jpg": "4e7f0150bf40425a72c40aaa89bbf13aaab4fb29f604fdbd7e7b5a3c5a938bd9",
+    "the-marriage-of-heaven-and-hell/plate-21/index.html": "f661cf7ab7eb57e9",
+    "visions-of-the-daughters-of-albion/01-frontispiece.jpg": "d16bca79f905a03786943f6696874966c72a7b3fd12bd042e2ec9e1c89341347",
+    "gates-of-paradise/06-air.jpg": "779b1b302c4d5b41a701b6053f64b25cdaba49c17c640dcb0e42005c957bffeb",
+    "innocence/a-cradle-song-1/index.html": "01aa0e10ed0306a3",
+    "qr/i-have-said-to-the-worm.svg": "a48fe6638b16d334",
+    "_previews.json": "e40f9a102fc57a07",
+    "the-marriage-of-heaven-and-hell/plate-18/index.html": "327858853278ee46",
+    "visions-of-the-daughters-of-albion/title-page/index.html": "d2c333ff4e15a62d",
+    "innocence/25-a-dream.jpg": "2477ab74e438542b1fa54bdfe60f9d27ee0ba492558c3b9656fdf537913f03be",
+    "journal/prospectus/index.html": "024e81ec36a65bea",
+    "feed.xml": "0c814e3874d80375",
+    "america-a-prophecy/04-preludium-2.jpg": "1aaef60e2a68e0b44ee74a07403deddcb0e2a335af841b20541b80a6d3a98c4a",
+    "innocence/14-laughing-song.jpg": "28700e9d3bdee3868f4821c92c2408538caf339f528d60a5b053a2faf7dee061",
+    "qr/infant-joy.svg": "5e2b99ed020d50fe",
+    "gates-of-paradise/plate-18/index.html": "f147bb1a04cb2b22",
+    "innocence/21-spring-1.jpg": "3748c3099e105a5f513a2d7f5dfeafdfd0ea4c437ff9b1115e31caf87d83f4e1",
+    "qr/the-little-boy-lost.svg": "dc597fc1f02b6f6c",
+    "qr/title-page.svg": "74f307ed2b4b2328",
+    "journal/the-method/index.html": "c4c30d2edd61f9d1",
+    "qr/plate-11.svg": "384bb94a1e9cebd4",
+    "journal/marriage/index.html": "ca251956d36e0a65",
+    "the-book-of-thel/plate-8/index.html": "47f64119fff44754",
+    "the-marriage-of-heaven-and-hell/plate-6/index.html": "eb6b27c2e09c97a7",
+    "qr/plate-21.svg": "2dd3cb74b7c3b2c1",
+    "qr/plate-4.svg": "864df49e02ccb980",
+    "gates-of-paradise/i-have-said-to-the-worm/index.html": "beb132941f24348b",
+    "the-marriage-of-heaven-and-hell/26-a-song-of-liberty-2.jpg": "9b3bea87ac699916e045ec96c3449cd8ec8e99dae8a864f7160d3131d4f80006",
+    "visions-of-the-daughters-of-albion/04-plate-4.jpg": "ccf0b403bca1adc9d783261fefa7cdec54df0a9a740fa4939c0bb738a0084121",
+    "qr/the-blossom.svg": "56663ffb8643f8b5",
+    "qr/plate-22.svg": "fa86fc00f08dc283",
+    "gates-of-paradise/plate-17/index.html": "4328ab897280f12e",
+    "qr/plate-13.svg": "b3f066b6f93eb6a2",
+    "qr/introduction.svg": "65e79dfb270bf3e4",
+    "qr/the-ecchoing-green-1.svg": "7b32a50087117005",
+    "visions-of-the-daughters-of-albion/03-the-argument.jpg": "14f0bf8eba1f72e1550a35c19d4b768b9025471e75ea09ccf850e18bb02e9546",
+    "the-marriage-of-heaven-and-hell/06-plate-6.jpg": "5a09160fe4bf9c24740c872a38766190b17cc5b42e48973cfc60f02dd03a3cf3",
+    "gates-of-paradise/water/index.html": "06b780361875af47",
+    "the-book-of-thel/thel-and-the-clod/index.html": "237b9a197090b21d",
+    "innocence/night-2/index.html": "46b36f7d1cb7bb22",
+    "the-marriage-of-heaven-and-hell/11-plate-11.jpg": "09ac0c4bbbeb40278f6bb1c4f4bf39012182c1f321e468a5e75cbe48358cbdb0",
+    "america-a-prophecy/index.html": "12c885f2d2a0dd60",
+    "qr/preludium-1.svg": "a915944244eed544",
+    "innocence/27-on-anothers-sorrow-2.jpg": "5d8813c752fd7bd3b977aac5de9212573eeb3e5524bf4bee70a0692c40443e7e",
+    "the-marriage-of-heaven-and-hell/a-song-of-liberty-1/index.html": "88f072c2b14ce652",
+    "journal/to-reveley/index.html": "28dc00cef692bea1",
+    "america-a-prophecy/plate-7/index.html": "844446980e61e083",
+    "america-a-prophecy/09-plate-9.jpg": "490a45a451ba0440904538d4472b215b4b60eb1913a091853621ba208c39ed63",
+    "gates-of-paradise/plate-13/index.html": "54a43ec4a8a2f9d7",
+    "the-marriage-of-heaven-and-hell/plate-14/index.html": "1d66d09754f7d277",
+    "innocence/on-anothers-sorrow-2/index.html": "0abcbb029d6e5641",
+    "qr/the-lamb.svg": "511ab523aaefc36b",
+    "qr/proverbs-of-hell-4.svg": "886ecbc90c248e30",
+    "qr/plate-15.svg": "8f4c3e7adee05704",
+    "the-marriage-of-heaven-and-hell/proverbs-of-hell-4/index.html": "82763d864b95faf1",
+    "america-a-prophecy/frontispiece/index.html": "e77d58ec75ac0227",
+    "the-marriage-of-heaven-and-hell/proverbs-of-hell-3/index.html": "b65e81b5605c43ac",
+    "the-marriage-of-heaven-and-hell/17-plate-17.jpg": "734c55e1581f4fa4eeb252b92b9e271cebc3b72384c38c32f7f555babe297502",
+    "gates-of-paradise/11-plate-11.jpg": "81c9413eeef923f32db095f221d8af240eefe96ab63dd265190a5c394431f12f",
+    "qr/plate-19.svg": "b271af2f21e7a9c0",
+    "the-book-of-thel/title-page/index.html": "72340adf5ed0333c",
+    "innocence/the-little-boy-lost/index.html": "595124deafab35b0",
+    "qr/the-bastille.svg": "71e7b6c6b4250838",
+    "gates-of-paradise/earth/index.html": "4adf7b1c559115f9",
+    "innocence/the-little-black-boy-2/index.html": "706884f970d2557f",
+    "visions-of-the-daughters-of-albion/07-plate-7.jpg": "6bc11805a9900c7cb558fd3fdf7e491a13564e430d1ca908a035d10ade929d32",
+    "visions-of-the-daughters-of-albion/05-plate-5.jpg": "a5768cb4a805e1e805126154ccb5bcaf5da77d7708cdf1e211668a06d2e1af7d",
+    "gates-of-paradise/plate-11/index.html": "6081a9d02a31535a",
+    "visions-of-the-daughters-of-albion/10-plate-10.jpg": "30b24bb46b4e319b0019618671e9e8881af12488c9cde02bc01290be617b17fb",
+    "the-marriage-of-heaven-and-hell/plate-17/index.html": "917b40cddbefa3d9",
+    "qr/the-little-black-boy-1.svg": "fa6ff6c05081f378",
+    "the-book-of-thel/07-plate-7.jpg": "b921238e3b9177795b816377a034dd1e2a24c44acef49877ae8afead331f18a0",
+    "the-marriage-of-heaven-and-hell/22-plate-22.jpg": "6401facd7f53ecde77d0e7a50bb74ffe9f6e0686ffd84239060591ed1c0046b4",
+    "qr/proverbs-of-hell-3.svg": "fec6ef0a213d1a23",
+    "qr/aged-ignorance.svg": "9424816314145574",
+    "journal/on-swedenborg/index.html": "81affca222faa2ea",
+    "visions-of-the-daughters-of-albion/09-plate-9.jpg": "95b6d26713967bef4342522f4e2fd3b44dd318161d811b3c48f4ce274a044f6e",
+    "the-marriage-of-heaven-and-hell/03-the-voice-of-the-devil.jpg": "fc4d65139654f6d73806ecf76adb59d32f033b2cf8105d04c3fdbffc7c0f740f",
+    "qr/plate-8.svg": "1006e29ac0da168f",
+    "gates-of-paradise/frontispiece/index.html": "c66667b5686f232f",
+    "qr/the-method.svg": "2b0c6eedd8e48365",
+    "america-a-prophecy/06-plate-6.jpg": "953104b86d7594a8ce57a9faac45f4b2ec19c05554049ab941e4f3702d7efb03",
+    "journal/to-butts-1802/index.html": "7362aecf6498d9d0",
+    "qr/plate-3.svg": "a8ca706c45136755",
+    "qr/a-song-of-liberty-1.svg": "a69113e5be92531f",
+    "journal/apprenticeship/index.html": "0676ce4bbe1d7522",
+    "the-marriage-of-heaven-and-hell/proverbs-of-hell-1/index.html": "7b1e2a733745b0cc",
+    "gates-of-paradise/i-found-him-beneath-a-tree/index.html": "0d415e8e63cddebf",
+    "innocence/15-a-cradle-song-1.jpg": "3bce8a9141b4dd8f8da766c3a80212da4068fb665553af103621e9a9ad919fcc",
+    "assets/favicon.svg": "71385febe72280ac",
+    "qr/on-swedenborg.svg": "e2d2c57c02405188",
+    "qr/plate-17.svg": "c5d2545d851edf28",
+    "style.css": "f77cceb512d98aab",
+    "js/theme.js": "9826305cafe06daa",
+    "gates-of-paradise/18-plate-18.jpg": "54dad1bb950e3cfea1fb53c4a0f86bb9239a9281df4eb03fcc1b82ec754e9404",
+    "the-marriage-of-heaven-and-hell/a-song-of-liberty-3/index.html": "741e74dc2edeaaf8",
+    "gates-of-paradise/15-plate-15.jpg": "98c2fcc8ac23ab26a4ef0dc8fc24c76bad3fd3d2260d3d10a02340b674ac5e86",
+    "the-book-of-thel/thels-motto/index.html": "ff7fa26b5cde06ec",
+    "america-a-prophecy/plate-5/index.html": "2f6cd2579084b69f",
+    "innocence/10-the-blossom.jpg": "5c119586a5908a309384287fdf3dc02f69915d46205ca31e53850e606f6d3b03",
+    "gates-of-paradise/plate-9/index.html": "eb21b038d7fe525c",
+    "america-a-prophecy/plate-10/index.html": "d1d2b213817b51cc",
+    "the-marriage-of-heaven-and-hell/plate-11/index.html": "ba246aafa0e7ed3d",
+    "innocence/the-little-boy-found/index.html": "3bd8a1ff932f13df",
+    "innocence/02-title-page.jpg": "60bda3a20b72a164ccb7464b29b3f2f2c5613ab7d41e514f48563f1753907c9b",
+    "innocence/01-frontispiece.jpg": "978d3cf3341996d7fb14a37f8b085a21e269df69a6e4079adb58f9bc365ede9a",
+    "america-a-prophecy/plate-18/index.html": "11065fa6dc77e4a1",
+    "qr/laughing-song.svg": "4fb79fcb673c1eb3"
   },
-  "sources": {},
+  "sources": {
+    "innocence/27-on-anothers-sorrow-2.jpg": {
+      "hash": "5d8813c752fd7bd3b977aac5de9212573eeb3e5524bf4bee70a0692c40443e7e",
+      "size": 2085464,
+      "mtime": 1776473491
+    },
+    "innocence/15-a-cradle-song-1.jpg": {
+      "hash": "3bce8a9141b4dd8f8da766c3a80212da4068fb665553af103621e9a9ad919fcc",
+      "size": 2286544,
+      "mtime": 1776473491
+    },
+    "innocence/06-the-ecchoing-green-2.jpg": {
+      "hash": "78f4477790fc38f2b34a5ff042f4e093e9e7ca8c5b578f212082cdd20cef0f35",
+      "size": 1955766,
+      "mtime": 1776473491
+    },
+    "the-marriage-of-heaven-and-hell/10-proverbs-of-hell-4.jpg": {
+      "hash": "02f787965257c62e87b7a1367415f0fce477cc5d46425e0f3c65e9c0b64cbe5a",
+      "size": 891187,
+      "mtime": 1776473491
+    },
+    "the-marriage-of-heaven-and-hell/11-plate-11.jpg": {
+      "hash": "09ac0c4bbbeb40278f6bb1c4f4bf39012182c1f321e468a5e75cbe48358cbdb0",
+      "size": 875958,
+      "mtime": 1776473491
+    },
+    "innocence/20-night-2.jpg": {
+      "hash": "31578e37a6272c883e9e5d13325aad53335d407ec84901294a35c2f65ed82914",
+      "size": 2150342,
+      "mtime": 1776473491
+    },
+    "innocence/04-the-shepherd.jpg": {
+      "hash": "080b5d400a33b3ac409ee966cbddd518263c25410ba5e76766d7875b033062fc",
+      "size": 2035689,
+      "mtime": 1776473491
+    },
+    "visions-of-the-daughters-of-albion/07-plate-7.jpg": {
+      "hash": "6bc11805a9900c7cb558fd3fdf7e491a13564e430d1ca908a035d10ade929d32",
+      "size": 3497669,
+      "mtime": 1776473491
+    },
+    "visions-of-the-daughters-of-albion/10-plate-10.jpg": {
+      "hash": "30b24bb46b4e319b0019618671e9e8881af12488c9cde02bc01290be617b17fb",
+      "size": 3912594,
+      "mtime": 1776473491
+    },
+    "america-a-prophecy/09-plate-9.jpg": {
+      "hash": "490a45a451ba0440904538d4472b215b4b60eb1913a091853621ba208c39ed63",
+      "size": 2125528,
+      "mtime": 1776473491
+    },
+    "gates-of-paradise/11-plate-11.jpg": {
+      "hash": "81c9413eeef923f32db095f221d8af240eefe96ab63dd265190a5c394431f12f",
+      "size": 137813,
+      "mtime": 1776473491
+    },
+    "america-a-prophecy/07-plate-7.jpg": {
+      "hash": "7d423f81ea61bb9b3f77ed617c8161c73136aeb20a7fd477373a8a03938e8c1b",
+      "size": 2170810,
+      "mtime": 1776473491
+    },
+    "the-marriage-of-heaven-and-hell/02-the-argument.jpg": {
+      "hash": "6b66667b027fd67ce56c0f7c64bc603625115d470c05d9931f61b4819970a3fc",
+      "size": 953675,
+      "mtime": 1776473491
+    },
+    "america-a-prophecy/15-plate-15.jpg": {
+      "hash": "cbac5aa7a8135a547a09ecdac8773cd39dae3b7c9515cdb0e70b0857870c772f",
+      "size": 1513517,
+      "mtime": 1776473491
+    },
+    "the-marriage-of-heaven-and-hell/05-plate-5.jpg": {
+      "hash": "e251a8a0cdab9493de3f04c5915780d5fb6f4af6331107c7a902266d9a79866a",
+      "size": 910738,
+      "mtime": 1776473491
+    },
+    "innocence/08-the-little-black-boy-1.jpg": {
+      "hash": "eeb4fe7e9ee9aff5ed169a7418ff8cc7e175b166da85791c57176437a08cac4c",
+      "size": 2070463,
+      "mtime": 1776473491
+    },
+    "innocence/03-introduction.jpg": {
+      "hash": "665c52388311c3dd0aa773cb2b9ee54f80b036ebd41ea56da9ab85a1ff77f717",
+      "size": 2452488,
+      "mtime": 1776473491
+    },
+    "the-marriage-of-heaven-and-hell/04-plate-4.jpg": {
+      "hash": "58d20dbc4d3c2c8d86811b6f6379e8543b3127748a5349dfd0297572b8c2ef10",
+      "size": 789310,
+      "mtime": 1776473491
+    },
+    "america-a-prophecy/01-frontispiece.jpg": {
+      "hash": "a810f3e5524694fb82560648227b19eb83eac6b6da6426341de747ec8735fcb1",
+      "size": 5084328,
+      "mtime": 1776473491
+    },
+    "the-book-of-thel/06-thel-and-the-clod.jpg": {
+      "hash": "c946eb3926e7423ecb54cf14e30861bb7f963dafd108ece807656fdde07bbe0a",
+      "size": 2021946,
+      "mtime": 1776473491
+    },
+    "the-marriage-of-heaven-and-hell/23-plate-23.jpg": {
+      "hash": "140c99205fc864c454643a1a1014b11f3f5bf9daaf0ffbfcd3e39b6c2b303644",
+      "size": 888128,
+      "mtime": 1776473491
+    },
+    "america-a-prophecy/04-preludium-2.jpg": {
+      "hash": "1aaef60e2a68e0b44ee74a07403deddcb0e2a335af841b20541b80a6d3a98c4a",
+      "size": 2247050,
+      "mtime": 1776473491
+    },
+    "gates-of-paradise/13-plate-13.jpg": {
+      "hash": "b7b6b0a08380da95c229ab781d333a034b4b1f180129ed19d3e3bb831547bb4f",
+      "size": 148641,
+      "mtime": 1776473491
+    },
+    "innocence/24-infant-joy.jpg": {
+      "hash": "7737f17cc077e6193f9197b6e247cebb0b3743f217b3074f704d4c17564edfac",
+      "size": 2048583,
+      "mtime": 1776473491
+    },
+    "the-marriage-of-heaven-and-hell/21-plate-21.jpg": {
+      "hash": "943daaa838c77873212435ab1127915c586848ee3dcb32a1c7afe283e2aba4e7",
+      "size": 1018927,
+      "mtime": 1776473491
+    },
+    "visions-of-the-daughters-of-albion/04-plate-4.jpg": {
+      "hash": "ccf0b403bca1adc9d783261fefa7cdec54df0a9a740fa4939c0bb738a0084121",
+      "size": 3883376,
+      "mtime": 1776473491
+    },
+    "innocence/22-spring-2.jpg": {
+      "hash": "90098fbe0be1d3e7aa130443f9853b51d60252831020cdfb8aae6ea2cf12ec3c",
+      "size": 2032482,
+      "mtime": 1776473491
+    },
+    "innocence/07-the-lamb.jpg": {
+      "hash": "fc5223405ead48e6216fed296696ed03cc82b69401eef90e57cd900062f11000",
+      "size": 2128196,
+      "mtime": 1776473491
+    },
+    "visions-of-the-daughters-of-albion/11-plate-11.jpg": {
+      "hash": "b769feec1130891f76f206a9f2e7d69a42067f81fe29809a7fdcbb1d082f2b94",
+      "size": 11338495,
+      "mtime": 1776473491
+    },
+    "the-marriage-of-heaven-and-hell/15-a-memorable-fancy-1.jpg": {
+      "hash": "f3c421dca0e9ae1c715da24951b3fb91feda2b22fd7f2dd9040f5cd6cd371cd9",
+      "size": 953286,
+      "mtime": 1776473491
+    },
+    "the-marriage-of-heaven-and-hell/26-a-song-of-liberty-2.jpg": {
+      "hash": "9b3bea87ac699916e045ec96c3449cd8ec8e99dae8a864f7160d3131d4f80006",
+      "size": 956644,
+      "mtime": 1776473491
+    },
+    "the-book-of-thel/05-plate-5.jpg": {
+      "hash": "1c91f71ec6e3e9d9449d38eae9098423e9972eb927f60a5646a879d05c964319",
+      "size": 1937357,
+      "mtime": 1776473491
+    },
+    "the-book-of-thel/04-plate-4.jpg": {
+      "hash": "204ec0fead8d52d8a88ae659fb9c89be9ee22293e2280e9aa59e292a51ce29b8",
+      "size": 2095964,
+      "mtime": 1776473491
+    },
+    "america-a-prophecy/11-plate-11.jpg": {
+      "hash": "28c10ff59afb9a9bea706d8df28440cd7f616be58846f4c564eace49732a8f11",
+      "size": 1317148,
+      "mtime": 1776473491
+    },
+    "gates-of-paradise/10-plate-10.jpg": {
+      "hash": "33c4e26abc3ff5ebdf7e3f4819c5eb19816c5479e257c1f4adc7d2eb2b9a62ff",
+      "size": 209231,
+      "mtime": 1776473491
+    },
+    "visions-of-the-daughters-of-albion/05-plate-5.jpg": {
+      "hash": "a5768cb4a805e1e805126154ccb5bcaf5da77d7708cdf1e211668a06d2e1af7d",
+      "size": 120881,
+      "mtime": 1776473491
+    },
+    "the-marriage-of-heaven-and-hell/12-plate-12.jpg": {
+      "hash": "b6470a2c8cce0b247aceef34221942324a7e7b42b377a9cb2f6cf1dc08414486",
+      "size": 857532,
+      "mtime": 1776473491
+    },
+    "gates-of-paradise/04-water.jpg": {
+      "hash": "39b1d015f6261fb7a77d697523ae373e21e140a7ebfef6194f06ef6a6b960571",
+      "size": 188614,
+      "mtime": 1776473491
+    },
+    "america-a-prophecy/05-plate-5.jpg": {
+      "hash": "059cfff2323598b347cffc84c409eaeeefa1ba784cac23949b51705721d79c04",
+      "size": 2201014,
+      "mtime": 1776473491
+    },
+    "gates-of-paradise/01-frontispiece.jpg": {
+      "hash": "1ada5fc03d32723b4affd2379254c9a35fceb63372d784e8ebaef15b7e41029c",
+      "size": 202088,
+      "mtime": 1776473491
+    },
+    "innocence/09-the-little-black-boy-2.jpg": {
+      "hash": "e94ac9d5eeee44fac632d4a50624df76392267fdcd803393658300ad8d2bf0a2",
+      "size": 2165645,
+      "mtime": 1776473491
+    },
+    "the-marriage-of-heaven-and-hell/19-plate-19.jpg": {
+      "hash": "e15dfb96796eafd703a3877538d27bd5b75689e0052b8510629c8dc6d2396751",
+      "size": 995804,
+      "mtime": 1776473491
+    },
+    "innocence/14-laughing-song.jpg": {
+      "hash": "28700e9d3bdee3868f4821c92c2408538caf339f528d60a5b053a2faf7dee061",
+      "size": 2057289,
+      "mtime": 1776473491
+    },
+    "gates-of-paradise/05-earth.jpg": {
+      "hash": "cabe759ef0bb968c7dce37237c2069ce1a5dd16a83cfcf2448eb362f7f414235",
+      "size": 204366,
+      "mtime": 1776473491
+    },
+    "gates-of-paradise/07-fire.jpg": {
+      "hash": "75a60f7681a5514834ce722f39a9d3341634b2bfa1774b5b3227a6c06a9c2a46",
+      "size": 208946,
+      "mtime": 1776473491
+    },
+    "visions-of-the-daughters-of-albion/01-frontispiece.jpg": {
+      "hash": "d16bca79f905a03786943f6696874966c72a7b3fd12bd042e2ec9e1c89341347",
+      "size": 3733851,
+      "mtime": 1776473491
+    },
+    "gates-of-paradise/17-plate-17.jpg": {
+      "hash": "bc38a108dc6e727ae30d0f88524579ba64d37c29237e307a4d7ad1f79874cd43",
+      "size": 162535,
+      "mtime": 1776473491
+    },
+    "the-book-of-thel/08-plate-8.jpg": {
+      "hash": "53661913d83133adb323bcca6cc0d1a7c6570d1e6136108146e76d2ad5daf3f7",
+      "size": 2046556,
+      "mtime": 1776473491
+    },
+    "america-a-prophecy/14-plate-14.jpg": {
+      "hash": "3897b9b944e754a8dfbe6eed1966d6ac8d7b808f883d3a460ee0dfb7be51a1b6",
+      "size": 2077660,
+      "mtime": 1776473491
+    },
+    "the-marriage-of-heaven-and-hell/27-a-song-of-liberty-3.jpg": {
+      "hash": "59c32fe1d4283f879c973f712cd3d7c7167142129ec18dd624ac247ea8758134",
+      "size": 238820,
+      "mtime": 1776473491
+    },
+    "the-marriage-of-heaven-and-hell/22-plate-22.jpg": {
+      "hash": "6401facd7f53ecde77d0e7a50bb74ffe9f6e0686ffd84239060591ed1c0046b4",
+      "size": 851585,
+      "mtime": 1776473491
+    },
+    "innocence/26-on-anothers-sorrow-1.jpg": {
+      "hash": "b41a4e82ce0b669dc1ecd2c8d57442d4d98ebd419ad79527d80eb1f9c5403019",
+      "size": 2088896,
+      "mtime": 1776473491
+    },
+    "innocence/23-nurses-song.jpg": {
+      "hash": "848dc123e87f30557b7e21df2388faeb3ca291a2e377973c759e7422fd4d02ee",
+      "size": 2377022,
+      "mtime": 1776473491
+    },
+    "visions-of-the-daughters-of-albion/09-plate-9.jpg": {
+      "hash": "95b6d26713967bef4342522f4e2fd3b44dd318161d811b3c48f4ce274a044f6e",
+      "size": 3537714,
+      "mtime": 1776473491
+    },
+    "gates-of-paradise/18-plate-18.jpg": {
+      "hash": "54dad1bb950e3cfea1fb53c4a0f86bb9239a9281df4eb03fcc1b82ec754e9404",
+      "size": 145295,
+      "mtime": 1776473491
+    },
+    "the-marriage-of-heaven-and-hell/08-proverbs-of-hell-2.jpg": {
+      "hash": "dabb4f04aaf4544ad453aa8bba3b60f79302d63e69fef67a7c8db7bcf524c037",
+      "size": 859964,
+      "mtime": 1776473491
+    },
+    "america-a-prophecy/06-plate-6.jpg": {
+      "hash": "953104b86d7594a8ce57a9faac45f4b2ec19c05554049ab941e4f3702d7efb03",
+      "size": 2306274,
+      "mtime": 1776473491
+    },
+    "the-marriage-of-heaven-and-hell/13-plate-13.jpg": {
+      "hash": "ab5aeb5139d868349f0374b8780ce26e1e3a1bf062af5c9a25cb5125579b90f9",
+      "size": 823167,
+      "mtime": 1776473491
+    },
+    "visions-of-the-daughters-of-albion/06-plate-6.jpg": {
+      "hash": "95b6d26713967bef4342522f4e2fd3b44dd318161d811b3c48f4ce274a044f6e",
+      "size": 3537714,
+      "mtime": 1776473491
+    },
+    "innocence/21-spring-1.jpg": {
+      "hash": "3748c3099e105a5f513a2d7f5dfeafdfd0ea4c437ff9b1115e31caf87d83f4e1",
+      "size": 2188333,
+      "mtime": 1776473491
+    },
+    "innocence/12-the-little-boy-lost.jpg": {
+      "hash": "cbb9a92c5e1b8f2933e2395dc6abeb50bd82c3b10f6121a0cd563035a26a245d",
+      "size": 2025433,
+      "mtime": 1776473491
+    },
+    "innocence/13-the-little-boy-found.jpg": {
+      "hash": "6cb449c9bddaf4509d8aac4732ad782943db197da1eef773c5043601af5c3601",
+      "size": 2015576,
+      "mtime": 1776473491
+    },
+    "america-a-prophecy/08-orcs-speech.jpg": {
+      "hash": "bfcf6c8854319504cc08fbbdd20c8a17c5da9b9bfac53200797f2fc4d09624f6",
+      "size": 2315637,
+      "mtime": 1776473491
+    },
+    "the-book-of-thel/03-plate-3.jpg": {
+      "hash": "dff525ade4b5ecf53a659f61324cbb2507fde89df10abc0d092c5ae158491495",
+      "size": 2161716,
+      "mtime": 1776473491
+    },
+    "the-book-of-thel/02-title-page.jpg": {
+      "hash": "d997678768633c12f207101e6a8e81855cfa9ae4a31b7d1860c62b420aa81190",
+      "size": 2074685,
+      "mtime": 1776473491
+    },
+    "the-marriage-of-heaven-and-hell/16-plate-16.jpg": {
+      "hash": "bfc70ee9e3089ca33c2bc0ea5f148e19665768f4b6c5f2145bd2506feb5934ed",
+      "size": 1005720,
+      "mtime": 1776473491
+    },
+    "the-marriage-of-heaven-and-hell/07-proverbs-of-hell-1.jpg": {
+      "hash": "9cff67e63080d3bef4bf78a9daa52205e981c4fd7df6bce63fbfd5ba8f81e344",
+      "size": 885129,
+      "mtime": 1776473491
+    },
+    "the-marriage-of-heaven-and-hell/03-the-voice-of-the-devil.jpg": {
+      "hash": "fc4d65139654f6d73806ecf76adb59d32f033b2cf8105d04c3fdbffc7c0f740f",
+      "size": 1035973,
+      "mtime": 1776473491
+    },
+    "innocence/16-a-cradle-song-2.jpg": {
+      "hash": "2954e45d77a62fe713289df2bc849852c2e16ba5ad50604158f32919be290113",
+      "size": 2035740,
+      "mtime": 1776473491
+    },
+    "innocence/19-night-1.jpg": {
+      "hash": "c9f4cbd5bf6c64cdf25d701a734c258a5404dc0bdc765dafb866dbbfa60a8090",
+      "size": 2132187,
+      "mtime": 1776473491
+    },
+    "america-a-prophecy/18-plate-18.jpg": {
+      "hash": "1c20af70efe6d9b1a45bf94cfd3c217410d2092c84f9a73ea3c517cafb8124f9",
+      "size": 2719749,
+      "mtime": 1776473491
+    },
+    "gates-of-paradise/15-plate-15.jpg": {
+      "hash": "98c2fcc8ac23ab26a4ef0dc8fc24c76bad3fd3d2260d3d10a02340b674ac5e86",
+      "size": 211689,
+      "mtime": 1776473491
+    },
+    "gates-of-paradise/12-plate-12.jpg": {
+      "hash": "a75929fe92c606b098297996e330325e577cbe63bf099643093edade92a172ce",
+      "size": 141532,
+      "mtime": 1776473491
+    },
+    "gates-of-paradise/06-air.jpg": {
+      "hash": "779b1b302c4d5b41a701b6053f64b25cdaba49c17c640dcb0e42005c957bffeb",
+      "size": 166221,
+      "mtime": 1776473491
+    },
+    "the-marriage-of-heaven-and-hell/25-a-song-of-liberty-1.jpg": {
+      "hash": "9d7d9bbc1cadfe44228c47d19e7222586db6b7a83c6319315603731c579523eb",
+      "size": 889596,
+      "mtime": 1776473491
+    },
+    "visions-of-the-daughters-of-albion/03-the-argument.jpg": {
+      "hash": "14f0bf8eba1f72e1550a35c19d4b768b9025471e75ea09ccf850e18bb02e9546",
+      "size": 3924687,
+      "mtime": 1776473491
+    },
+    "gates-of-paradise/09-plate-9.jpg": {
+      "hash": "519e167cbc4245bf0ce75aaef64c9a5c486b63fff2f14dc2426c00b8ab85381f",
+      "size": 166028,
+      "mtime": 1776473491
+    },
+    "gates-of-paradise/16-i-have-said-to-the-worm.jpg": {
+      "hash": "acc005455bbdff1d897f2309b8b702378ba620c9289176c4edff5b36ed602445",
+      "size": 147926,
+      "mtime": 1776473491
+    },
+    "innocence/10-the-blossom.jpg": {
+      "hash": "5c119586a5908a309384287fdf3dc02f69915d46205ca31e53850e606f6d3b03",
+      "size": 2126506,
+      "mtime": 1776473491
+    },
+    "gates-of-paradise/14-aged-ignorance.jpg": {
+      "hash": "f1dd70972240b3c4fb67112d33ebf6ba3620832ead3873a9ebc6aea2a24919ae",
+      "size": 147520,
+      "mtime": 1776473491
+    },
+    "the-marriage-of-heaven-and-hell/24-plate-24.jpg": {
+      "hash": "f134b060cdfed3a5481941967f078591e3da19293951a11a112b1fa8faa35651",
+      "size": 935220,
+      "mtime": 1776473491
+    },
+    "gates-of-paradise/08-plate-8.jpg": {
+      "hash": "4e7f0150bf40425a72c40aaa89bbf13aaab4fb29f604fdbd7e7b5a3c5a938bd9",
+      "size": 110586,
+      "mtime": 1776473491
+    },
+    "innocence/01-frontispiece.jpg": {
+      "hash": "978d3cf3341996d7fb14a37f8b085a21e269df69a6e4079adb58f9bc365ede9a",
+      "size": 2283797,
+      "mtime": 1776473491
+    },
+    "america-a-prophecy/12-plate-12.jpg": {
+      "hash": "05cd4b6744b56551e2fda23488d73bc220f7f71ff3d93dc5e91153e56e9413c4",
+      "size": 3265017,
+      "mtime": 1776473491
+    },
+    "the-book-of-thel/07-plate-7.jpg": {
+      "hash": "b921238e3b9177795b816377a034dd1e2a24c44acef49877ae8afead331f18a0",
+      "size": 2070907,
+      "mtime": 1776473491
+    },
+    "the-marriage-of-heaven-and-hell/09-proverbs-of-hell-3.jpg": {
+      "hash": "52cdb0ea9663a01b2aa6a6d0d3bd520c1a63e082e7712d4e42d712ce480308c7",
+      "size": 830135,
+      "mtime": 1776473491
+    },
+    "america-a-prophecy/13-plate-13.jpg": {
+      "hash": "647e199eda452b6e702a099bcf05ffdce3e78fa89bee1740158b774d372da006",
+      "size": 1405495,
+      "mtime": 1776473491
+    },
+    "innocence/11-the-chimney-sweeper.jpg": {
+      "hash": "5e92b6b65cc5c47278dad22913d8bccf9098e4a7e375dc67c7eafd404a020876",
+      "size": 2044333,
+      "mtime": 1776473491
+    },
+    "the-marriage-of-heaven-and-hell/06-plate-6.jpg": {
+      "hash": "5a09160fe4bf9c24740c872a38766190b17cc5b42e48973cfc60f02dd03a3cf3",
+      "size": 984452,
+      "mtime": 1776473491
+    },
+    "gates-of-paradise/03-i-found-him-beneath-a-tree.jpg": {
+      "hash": "6112798c9aeebc0db898e6b7a9c85cd4b19496fddee1ae778f6c8730e4cab201",
+      "size": 178020,
+      "mtime": 1776473491
+    },
+    "gates-of-paradise/02-title-page.jpg": {
+      "hash": "daff1ceef831094da7e8a9343d247386845ea98d9287550f3cec3461f11471c7",
+      "size": 106624,
+      "mtime": 1776473491
+    },
+    "innocence/05-the-ecchoing-green-1.jpg": {
+      "hash": "82ce1ae5b434eedde53207130dc006bdc5f96ad055afdb5397025244ac4fdb42",
+      "size": 2302685,
+      "mtime": 1776473491
+    },
+    "innocence/18-holy-thursday.jpg": {
+      "hash": "a0b41645b658029c75e69b9cbd9d0cd0a9ed5003abccd3cdf89b40059a69c6c9",
+      "size": 2454164,
+      "mtime": 1776473491
+    },
+    "innocence/02-title-page.jpg": {
+      "hash": "60bda3a20b72a164ccb7464b29b3f2f2c5613ab7d41e514f48563f1753907c9b",
+      "size": 2252531,
+      "mtime": 1776473491
+    },
+    "the-marriage-of-heaven-and-hell/17-plate-17.jpg": {
+      "hash": "734c55e1581f4fa4eeb252b92b9e271cebc3b72384c38c32f7f555babe297502",
+      "size": 968050,
+      "mtime": 1776473491
+    },
+    "innocence/25-a-dream.jpg": {
+      "hash": "2477ab74e438542b1fa54bdfe60f9d27ee0ba492558c3b9656fdf537913f03be",
+      "size": 2150848,
+      "mtime": 1776473491
+    },
+    "visions-of-the-daughters-of-albion/02-title-page.jpg": {
+      "hash": "14f0bf8eba1f72e1550a35c19d4b768b9025471e75ea09ccf850e18bb02e9546",
+      "size": 3924687,
+      "mtime": 1776473491
+    },
+    "america-a-prophecy/02-title-page.jpg": {
+      "hash": "3c925146307d9d308025d26646adad4bcb6000d691ea09560c5d19291501e96e",
+      "size": 5699594,
+      "mtime": 1776473491
+    },
+    "the-marriage-of-heaven-and-hell/01-title-page.jpg": {
+      "hash": "e86a9c40973d1c0d942eb2edcbca2aef8676780d64896b7a6f56b32b09f34f19",
+      "size": 236198,
+      "mtime": 1776473491
+    },
+    "the-marriage-of-heaven-and-hell/14-plate-14.jpg": {
+      "hash": "7226e69800748a65a7e4e1d2dd84464a706ff980d976d9b972b2e229abfba441",
+      "size": 903987,
+      "mtime": 1776473491
+    },
+    "america-a-prophecy/10-plate-10.jpg": {
+      "hash": "b9aff9fdefb02b48d908dbf1d5643b0fa443cf84a438c6f2fdefaef52cc460cd",
+      "size": 1525235,
+      "mtime": 1776473491
+    },
+    "the-book-of-thel/01-thels-motto.jpg": {
+      "hash": "e4aab5b635aaa509b9cf2fc8648ff53e83942965bd0405c9fe713c97cf092968",
+      "size": 539482,
+      "mtime": 1776473491
+    },
+    "innocence/17-the-divine-image.jpg": {
+      "hash": "cd241524822ac4a494505f2efc5909b53a272a773f07d8c3037bc8b30d46f248",
+      "size": 2091833,
+      "mtime": 1776473491
+    },
+    "visions-of-the-daughters-of-albion/08-plate-8.jpg": {
+      "hash": "4f9e48e7712b7caef6804f271c6df659606fd7f9579bfaf58915124d0daa8c5c",
+      "size": 3975769,
+      "mtime": 1776473491
+    },
+    "america-a-prophecy/03-preludium-1.jpg": {
+      "hash": "2b735309157316173767cad435ea5b672d6d994fa9e03d4cc90581d057b256f4",
+      "size": 2215933,
+      "mtime": 1776473491
+    },
+    "the-marriage-of-heaven-and-hell/20-plate-20.jpg": {
+      "hash": "bd4dddcc9153b5754233c5b1b8d192720f824ef5ffc5a2d7f8f15b299b45ccae",
+      "size": 841344,
+      "mtime": 1776473491
+    },
+    "the-marriage-of-heaven-and-hell/18-plate-18.jpg": {
+      "hash": "fb3be6d0a17197bd877624b4466e35178b8af3654e4c939820eaa30a7705daeb",
+      "size": 1012147,
+      "mtime": 1776473491
+    },
+    "america-a-prophecy/16-plate-16.jpg": {
+      "hash": "35c41a57eb6f34dc8f4ecdef3b8081273107da3ceba7d408d00a1b2c562cdcb0",
+      "size": 2364578,
+      "mtime": 1776473491
+    },
+    "america-a-prophecy/17-plate-17.jpg": {
+      "hash": "11e3c3778a843652dfcf2b18b7452d3523f90756154f621b85c616e0c383c705",
+      "size": 2254088,
+      "mtime": 1776473491
+    }
+  },
   "video_outputs": [],
+  "image_outputs": [
+    "innocence/09-the-little-black-boy-2.webp",
+    "america-a-prophecy/03-preludium-1.webp",
+    "the-marriage-of-heaven-and-hell/21-plate-21.webp",
+    "the-marriage-of-heaven-and-hell/09-proverbs-of-hell-3.webp",
+    "the-marriage-of-heaven-and-hell/04-plate-4.webp",
+    "the-marriage-of-heaven-and-hell/17-plate-17.webp",
+    "america-a-prophecy/13-plate-13.webp",
+    "innocence/19-night-1.webp",
+    "america-a-prophecy/17-plate-17.webp",
+    "the-marriage-of-heaven-and-hell/26-a-song-of-liberty-2.webp",
+    "visions-of-the-daughters-of-albion/03-the-argument.webp",
+    "america-a-prophecy/08-orcs-speech.webp",
+    "the-marriage-of-heaven-and-hell/13-plate-13.webp",
+    "visions-of-the-daughters-of-albion/06-plate-6.webp",
+    "the-marriage-of-heaven-and-hell/25-a-song-of-liberty-1.webp",
+    "the-book-of-thel/02-title-page.webp",
+    "innocence/24-infant-joy.webp",
+    "gates-of-paradise/07-fire.webp",
+    "visions-of-the-daughters-of-albion/07-plate-7.webp",
+    "visions-of-the-daughters-of-albion/01-frontispiece.webp",
+    "america-a-prophecy/06-plate-6.webp",
+    "the-marriage-of-heaven-and-hell/27-a-song-of-liberty-3.webp",
+    "visions-of-the-daughters-of-albion/04-plate-4.webp",
+    "america-a-prophecy/18-plate-18.webp",
+    "visions-of-the-daughters-of-albion/09-plate-9.webp",
+    "the-book-of-thel/07-plate-7.webp",
+    "visions-of-the-daughters-of-albion/08-plate-8.webp",
+    "america-a-prophecy/16-plate-16.webp",
+    "america-a-prophecy/02-title-page.webp",
+    "the-book-of-thel/04-plate-4.webp",
+    "the-marriage-of-heaven-and-hell/24-plate-24.webp",
+    "innocence/20-night-2.webp",
+    "america-a-prophecy/10-plate-10.webp",
+    "innocence/16-a-cradle-song-2.webp",
+    "the-book-of-thel/08-plate-8.webp",
+    "gates-of-paradise/15-plate-15.webp",
+    "innocence/17-the-divine-image.webp",
+    "the-marriage-of-heaven-and-hell/14-plate-14.webp",
+    "america-a-prophecy/05-plate-5.webp",
+    "the-book-of-thel/03-plate-3.webp",
+    "innocence/07-the-lamb.webp",
+    "innocence/11-the-chimney-sweeper.webp",
+    "the-marriage-of-heaven-and-hell/03-the-voice-of-the-devil.webp",
+    "the-marriage-of-heaven-and-hell/05-plate-5.webp",
+    "the-book-of-thel/01-thels-motto.webp",
+    "america-a-prophecy/04-preludium-2.webp",
+    "the-marriage-of-heaven-and-hell/16-plate-16.webp",
+    "the-marriage-of-heaven-and-hell/15-a-memorable-fancy-1.webp",
+    "the-marriage-of-heaven-and-hell/11-plate-11.webp",
+    "visions-of-the-daughters-of-albion/02-title-page.webp",
+    "innocence/12-the-little-boy-lost.webp",
+    "the-marriage-of-heaven-and-hell/18-plate-18.webp",
+    "innocence/04-the-shepherd.webp",
+    "america-a-prophecy/11-plate-11.webp",
+    "innocence/23-nurses-song.webp",
+    "gates-of-paradise/10-plate-10.webp",
+    "innocence/27-on-anothers-sorrow-2.webp",
+    "the-marriage-of-heaven-and-hell/07-proverbs-of-hell-1.webp",
+    "the-marriage-of-heaven-and-hell/10-proverbs-of-hell-4.webp",
+    "innocence/02-title-page.webp",
+    "america-a-prophecy/07-plate-7.webp",
+    "innocence/08-the-little-black-boy-1.webp",
+    "innocence/06-the-ecchoing-green-2.webp",
+    "innocence/15-a-cradle-song-1.webp",
+    "innocence/05-the-ecchoing-green-1.webp",
+    "the-marriage-of-heaven-and-hell/02-the-argument.webp",
+    "innocence/10-the-blossom.webp",
+    "visions-of-the-daughters-of-albion/11-plate-11.webp",
+    "innocence/21-spring-1.webp",
+    "the-marriage-of-heaven-and-hell/19-plate-19.webp",
+    "the-marriage-of-heaven-and-hell/08-proverbs-of-hell-2.webp",
+    "innocence/03-introduction.webp",
+    "innocence/18-holy-thursday.webp",
+    "innocence/25-a-dream.webp",
+    "the-marriage-of-heaven-and-hell/12-plate-12.webp",
+    "america-a-prophecy/12-plate-12.webp",
+    "america-a-prophecy/14-plate-14.webp",
+    "the-marriage-of-heaven-and-hell/22-plate-22.webp",
+    "innocence/14-laughing-song.webp",
+    "the-book-of-thel/05-plate-5.webp",
+    "america-a-prophecy/15-plate-15.webp",
+    "the-marriage-of-heaven-and-hell/20-plate-20.webp",
+    "innocence/22-spring-2.webp",
+    "innocence/01-frontispiece.webp",
+    "america-a-prophecy/01-frontispiece.webp",
+    "the-book-of-thel/06-thel-and-the-clod.webp",
+    "innocence/13-the-little-boy-found.webp",
+    "innocence/26-on-anothers-sorrow-1.webp",
+    "visions-of-the-daughters-of-albion/10-plate-10.webp",
+    "the-marriage-of-heaven-and-hell/23-plate-23.webp",
+    "the-marriage-of-heaven-and-hell/06-plate-6.webp",
+    "america-a-prophecy/09-plate-9.webp",
+    "the-marriage-of-heaven-and-hell/01-title-page.webp"
+  ],
   "plugin_fingerprint": null,
-  "compiler_fingerprint": "106061304-1776172716237206091"
+  "compiler_fingerprint": "110305656-1776896714626388964"
 }

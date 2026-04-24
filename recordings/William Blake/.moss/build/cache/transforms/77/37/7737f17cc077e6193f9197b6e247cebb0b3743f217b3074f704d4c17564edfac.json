@@ -6,6 +6,15 @@
       "oid": "2a7662734cd3c1db826fc35517f24ac702aed5217ed811aaec12ebda027ddb3e",
       "size": 1015,
       "params": {}
+    },
+    "image/webp": {
+      "oid": "02530b99b2f79fcd0bf3090686e7b47d713d7923282bf2928dc1d701749010c0",
+      "size": 443612,
+      "params": {
+        "max_edge": 2400,
+        "quality": 80,
+        "strip_exif": true
+      }
     }
   }
 }
