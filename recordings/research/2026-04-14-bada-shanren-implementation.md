@@ -11,6 +11,7 @@
 **Design spec:** `recordings/research/bada-shanren-site-design.md`
 **Research:** `recordings/research/bada-shanren-complete-research.md`
 
+uid: 0d9ff5aa
 ---
 
 ## File Structure

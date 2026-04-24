@@ -1,120 +1,90 @@
 {
   "articles": {
-    "畫/鱼石图/": {
-      "source_path": "畫/鱼石图.md",
-      "title": "鱼石图",
-      "content": ":::hero {.plate}\n![魚石圖](../鱼石图.jpg)\n:::",
+    "文/邵長蘅來訪/": {
+      "source_path": "文/邵長蘅來訪.md",
+      "title": "邵長蘅來訪",
+      "content": "庚午秋，邵子湘自南京來。託僧澹雪約余，於北蘭寺相見。\n\n是日大雨。余先至。\n\n相見之際，互相凝視，握手大笑，如故人重逢。\n\n余仍不語。癢不自禁，輒作手語。手語不盡，則取筆墨，疾書相酬。\n\n對燭夜談，燭盡方別。\n\n邵子湘後為余作傳。",
+      "html_content": "<p>庚午秋，邵子湘自南京來。託僧澹雪約余，於北蘭寺相見。</p><p>是日大雨。余先至。</p><p>相見之際，互相凝視，握手大笑，如故人重逢。</p><p>余仍不語。癢不自禁，輒作手語。手語不盡，則取筆墨，疾書相酬。</p><p>對燭夜談，燭盡方別。</p><p>邵子湘後為余作傳。</p>",
       "frontmatter": {
-        "description": "紙本水墨。手卷。",
-        "cover": "鱼石图.jpg",
-        "uid": "11ff0c98"
+        "uid": "w1690a006",
+        "date": "1690-01-01",
+        "description": "庚午年。北蘭寺。",
+        "title": "邵長蘅來訪"
       },
-      "url_path": "畫/鱼石图/",
+      "url_path": "文/邵長蘅來訪/",
+      "date": "1690-01-01",
+      "tags": [],
+      "uid": "w1690a006"
+    },
+    "畫/雙雁圖/": {
+      "source_path": "畫/雙雁圖.md",
+      "title": "雙雁圖",
+      "content": ":::hero {.plate}\n![雙雁圖](雙雁圖.jpg)\n:::",
+      "frontmatter": {
+        "cover": "雙雁圖.jpg",
+        "description": "紙本水墨。約庚辰年。立軸。",
+        "uid": "ab3c4d5e"
+      },
+      "url_path": "畫/雙雁圖/",
       "date": null,
       "tags": [],
-      "uid": "11ff0c98"
+      "uid": "ab3c4d5e"
     },
-    "畫/山水/": {
-      "source_path": "畫/山水.md",
-      "title": "山水",
-      "content": ":::hero {.plate}\n![山水](../山水.jpg)\n:::",
+    "畫/丁香花圖/": {
+      "source_path": "畫/丁香花圖.md",
+      "title": "丁香花圖",
+      "content": ":::hero {.plate}\n![丁香花圖](丁香花圖.jpg)\n:::",
       "frontmatter": {
-        "cover": "山水.jpg",
-        "description": "紙本水墨。立軸。仿郭忠恕。",
-        "uid": "44944db0"
+        "cover": "丁香花圖.jpg",
+        "uid": "cd5e6f7a",
+        "description": "紙本設色。約庚午年。冊頁。仿鮑山筆意。"
       },
-      "url_path": "畫/山水/",
+      "url_path": "畫/丁香花圖/",
       "date": null,
       "tags": [],
-      "uid": "44944db0"
+      "uid": "cd5e6f7a"
     },
-    "畫/荷花禽鸟图/": {
-      "source_path": "畫/荷花禽鸟图.md",
-      "title": "荷花禽鸟图",
-      "content": ":::hero {.plate}\n![荷花禽鳥圖](../荷花禽鸟图.jpg)\n:::",
+    "畫/花鳥蟲魚圖冊/": {
+      "source_path": "畫/花鳥蟲魚圖冊.md",
+      "title": "花鳥蟲魚圖冊",
+      "content": ":::hero {.plate}\n![花鳥蟲魚圖冊](花鳥蟲魚圖冊.jpg)\n:::",
       "frontmatter": {
-        "uid": "d5a9f3e0",
-        "description": "紙本水墨。手卷。",
-        "cover": "荷花禽鸟图.jpg"
+        "description": "紙本水墨。約戊辰己巳年。冊頁十一開。始署八大山人之冊。",
+        "uid": "bc4d5e6f",
+        "cover": "花鳥蟲魚圖冊.jpg"
       },
-      "url_path": "畫/荷花禽鸟图/",
+      "url_path": "畫/花鳥蟲魚圖冊/",
+      "date": null,
+      "tags": [],
+      "uid": "bc4d5e6f"
+    },
+    "畫/松鹿圖/": {
+      "source_path": "畫/松鹿圖.md",
+      "title": "松鹿圖",
+      "content": ":::hero {.plate}\n![松鹿圖](松鹿圖.jpg)\n:::",
+      "frontmatter": {
+        "cover": "松鹿圖.jpg",
+        "uid": "a4d82b19",
+        "description": "紙本水墨。壬午年。立軸。"
+      },
+      "url_path": "畫/松鹿圖/",
+      "date": null,
+      "tags": [],
+      "uid": "a4d82b19"
+    },
+    "畫/荷花禽鳥圖/": {
+      "source_path": "畫/荷花禽鳥圖.md",
+      "title": "荷花禽鳥圖",
+      "content": ":::hero {.plate}\n![荷花禽鳥圖](荷花禽鳥圖.jpg)\n:::",
+      "frontmatter": {
+        "cover": "荷花禽鳥圖.jpg",
+        "description": "紙本水墨。手卷。",
+        "uid": "d5a9f3e0"
+      },
+      "url_path": "畫/荷花禽鳥圖/",
       "date": null,
       "tags": [],
       "uid": "d5a9f3e0"
-    },
-    "書/扇面/": {
-      "source_path": "書/扇面.md",
-      "title": "扇面",
-      "content": ":::hero {.plate}\n![扇面](扇面.jpg)\n:::",
-      "frontmatter": {
-        "cover": "扇面.jpg",
-        "uid": "f48bcf3c",
-        "description": "紙本水墨。扇面。"
-      },
-      "url_path": "書/扇面/",
-      "date": null,
-      "tags": [],
-      "uid": "f48bcf3c"
-    },
-    "文/致方士琯书/": {
-      "source_path": "文/致方士琯书.md",
-      "title": "致方士琯書",
-      "content": "承惠書並筆墨，感感。近日苦於腳疾，不能遠行，尚冀秋涼再晤。\n\n---\n\n前日承索畫數幀，已屬草草。近來目力漸衰，非昔比也。畫債甚多，容當緩緩奉上。\n\n---\n\n弟居城南，菲薄度日。所幸筆墨尚在，聊以自遣。方兄遠寄紙筆，銘感不已。",
-      "html_content": "<p>承惠書並筆墨，感感。近日苦於腳疾，不能遠行，尚冀秋涼再晤。</p><hr />\n<p>前日承索畫數幀，已屬草草。近來目力漸衰，非昔比也。畫債甚多，容當緩緩奉上。</p><hr />\n<p>弟居城南，菲薄度日。所幸筆墨尚在，聊以自遣。方兄遠寄紙筆，銘感不已。</p>",
-      "frontmatter": {
-        "title": "致方士琯書",
-        "uid": "w1690a002",
-        "description": "與方士琯往來書札。",
-        "date": "1690-01-01"
-      },
-      "url_path": "文/致方士琯书/",
-      "date": "1690-01-01",
-      "tags": [],
-      "uid": "w1690a002"
-    },
-    "畫/安晚帖鱼/": {
-      "source_path": "畫/安晚帖鱼.md",
-      "title": "安晚帖鱼",
-      "content": ":::hero {.plate}\n![安晚帖魚](../安晚帖鱼.jpg)\n:::",
-      "frontmatter": {
-        "description": "紙本水墨。甲戌年。",
-        "uid": "a3f7c219",
-        "cover": "安晚帖鱼.jpg"
-      },
-      "url_path": "畫/安晚帖鱼/",
-      "date": null,
-      "tags": [],
-      "uid": "a3f7c219"
-    },
-    "書/兰亭序/": {
-      "source_path": "書/兰亭序.md",
-      "title": "兰亭序",
-      "content": ":::hero {.plate}\n![蘭亭序](../兰亭序.jpg)\n:::",
-      "frontmatter": {
-        "uid": "694ec09f",
-        "cover": "兰亭序.jpg",
-        "description": "紙本水墨。臨王羲之蘭亭集序。"
-      },
-      "url_path": "書/兰亭序/",
-      "date": null,
-      "tags": [],
-      "uid": "694ec09f"
-    },
-    "文/安晚帖鱼题诗/": {
-      "source_path": "文/安晚帖鱼题诗.md",
-      "title": "安晚帖魚題詩",
-      "content": "左右此何水，名之曰曲河。\\\n更求淵注處，料得晚霞多。",
-      "html_content": "<p>左右此何水，名之曰曲河。<br />\n更求淵注處，料得晚霞多。</p>",
-      "frontmatter": {
-        "description": "甲戌年。為安晚堂作。",
-        "date": "1694-01-01",
-        "title": "安晚帖魚題詩",
-        "uid": "w1694a007"
-      },
-      "url_path": "文/安晚帖鱼题诗/",
-      "date": "1694-01-01",
-      "tags": [],
-      "uid": "w1694a007"
     },
     "文/八大山人/": {
       "source_path": "文/八大山人.md",
@@ -122,106 +92,298 @@
       "content": "甲子年秋七月朔，書黃庭內景經。始署「八大山人」。\n\n八大者，四方四隅，皆我為大，而無大於我也。\n\n又或曰：取八大人覺經之義。\n\n「八大山人」四字聯綴：似哭之，似笑之。\n\n哭笑不得之意。",
       "html_content": "<p>甲子年秋七月朔，書黃庭內景經。始署「八大山人」。</p><p>八大者，四方四隅，皆我為大，而無大於我也。</p><p>又或曰：取八大人覺經之義。</p><p>「八大山人」四字聯綴：似哭之，似笑之。</p><p>哭笑不得之意。</p>",
       "frontmatter": {
-        "uid": "w1684a005",
         "date": "1684-01-01",
         "description": "甲子年。得名。",
-        "title": "八大山人"
+        "title": "八大山人",
+        "uid": "w1684a005"
       },
       "url_path": "文/八大山人/",
       "date": "1684-01-01",
       "tags": [],
       "uid": "w1684a005"
     },
-    "文/孔雀题诗/": {
-      "source_path": "文/孔雀题诗.md",
-      "title": "孔雀竹石圖題詩",
-      "content": "孔雀名花雨竹屏，竹梢強半墨生成。\\\n如何了得論三耳，恰是逢春坐二更。",
-      "html_content": "<p>孔雀名花雨竹屏，竹梢強半墨生成。<br />\n如何了得論三耳，恰是逢春坐二更。</p>",
+    "畫/荷花冊-弗利爾/": {
+      "source_path": "畫/荷花冊-弗利爾.md",
+      "title": "荷花冊 弗利爾",
+      "content": ":::hero {.plate}\n![荷花冊](荷花冊-弗利爾.jpg)\n:::",
       "frontmatter": {
-        "date": "1695-01-01",
-        "description": "諷宋犖。",
-        "uid": "w1695a008",
-        "title": "孔雀竹石圖題詩"
+        "uid": "fa8b9c0d",
+        "cover": "荷花冊-弗利爾.jpg",
+        "description": "紙本水墨。約乙巳年。冊頁八開。傳綮時期。"
       },
-      "url_path": "文/孔雀题诗/",
-      "date": "1695-01-01",
-      "tags": [],
-      "uid": "w1695a008"
-    },
-    "畫/枯木来禽图/": {
-      "source_path": "畫/枯木来禽图.md",
-      "title": "枯木来禽图",
-      "content": ":::hero {.plate}\n![枯木來禽圖](../枯木来禽图.jpg)\n:::",
-      "frontmatter": {
-        "cover": "枯木来禽图.jpg",
-        "uid": "b19717aa",
-        "description": "紙本水墨。立軸。"
-      },
-      "url_path": "畫/枯木来禽图/",
+      "url_path": "畫/荷花冊-弗利爾/",
       "date": null,
       "tags": [],
-      "uid": "b19717aa"
+      "uid": "fa8b9c0d"
     },
-    "畫/鱼/": {
-      "source_path": "畫/鱼.md",
-      "title": "鱼",
-      "content": ":::hero {.plate}\n![魚](../鱼.jpg)\n:::",
+    "畫/花卉圖卷-故宫/": {
+      "source_path": "畫/花卉圖卷-故宫.md",
+      "title": "花卉圖卷 故宫",
+      "content": ":::hero {.plate}\n![花卉圖卷](花卉圖卷-故宫.jpg)\n:::",
       "frontmatter": {
-        "uid": 21392846,
-        "cover": "鱼.jpg",
-        "description": "紙本水墨。"
+        "description": "紙本水墨。手卷。故宮博物院藏。荷蘭竹石果蔬。",
+        "cover": "花卉圖卷-故宫.jpg",
+        "uid": "3c4d5e6f"
       },
-      "url_path": "畫/鱼/",
+      "url_path": "畫/花卉圖卷-故宫/",
       "date": null,
       "tags": [],
-      "uid": "0ac2ad83"
+      "uid": "3c4d5e6f"
     },
-    "畫/孔雀竹石图/": {
-      "source_path": "畫/孔雀竹石图.md",
-      "title": "孔雀竹石图",
-      "content": ":::hero {.plate}\n![孔雀竹石圖](../孔雀竹石图.jpg)\n:::",
+    "畫/孔雀竹石圖/": {
+      "source_path": "畫/孔雀竹石圖.md",
+      "title": "孔雀竹石圖",
+      "content": ":::hero {.plate}\n![孔雀竹石圖](孔雀竹石圖.jpg)\n:::",
       "frontmatter": {
         "description": "紙本水墨。諷宋犖。",
-        "cover": "孔雀竹石图.jpg",
+        "cover": "孔雀竹石圖.jpg",
         "uid": "f2a85e06"
       },
-      "url_path": "畫/孔雀竹石图/",
+      "url_path": "畫/孔雀竹石圖/",
       "date": null,
       "tags": [],
       "uid": "f2a85e06"
     },
-    "文/邵长蘅来访/": {
-      "source_path": "文/邵长蘅来访.md",
-      "title": "邵長蘅來訪",
-      "content": "庚午秋，邵子湘自南京來。託僧澹雪約余，於北蘭寺相見。\n\n是日大雨。余先至。\n\n相見之際，互相凝視，握手大笑，如故人重逢。\n\n余仍不語。癢不自禁，輒作手語。手語不盡，則取筆墨，疾書相酬。\n\n對燭夜談，燭盡方別。\n\n邵子湘後為余作傳。",
-      "html_content": "<p>庚午秋，邵子湘自南京來。託僧澹雪約余，於北蘭寺相見。</p><p>是日大雨。余先至。</p><p>相見之際，互相凝視，握手大笑，如故人重逢。</p><p>余仍不語。癢不自禁，輒作手語。手語不盡，則取筆墨，疾書相酬。</p><p>對燭夜談，燭盡方別。</p><p>邵子湘後為余作傳。</p>",
+    "畫/雙鷹圖/": {
+      "source_path": "畫/雙鷹圖.md",
+      "title": "雙鷹圖",
+      "content": ":::hero {.plate}\n![雙鷹圖](雙鷹圖.jpg)\n:::",
       "frontmatter": {
-        "title": "邵長蘅來訪",
-        "description": "庚午年。北蘭寺。",
-        "date": "1690-01-01",
-        "uid": "w1690a006"
+        "uid": "e7c31a02",
+        "description": "紙本水墨。壬午年。立軸。",
+        "cover": "雙鷹圖.jpg"
       },
-      "url_path": "文/邵长蘅来访/",
-      "date": "1690-01-01",
-      "tags": [],
-      "uid": "w1690a006"
-    },
-    "畫/荷花水鸟图/": {
-      "source_path": "畫/荷花水鸟图.md",
-      "title": "荷花水鸟图",
-      "content": ":::hero {.plate}\n![荷花水鳥圖](../荷花水鸟图.jpg)\n:::",
-      "frontmatter": {
-        "uid": "bc928581",
-        "cover": "荷花水鸟图.jpg",
-        "description": "紙本水墨。立軸。"
-      },
-      "url_path": "畫/荷花水鸟图/",
+      "url_path": "畫/雙鷹圖/",
       "date": null,
       "tags": [],
-      "uid": "bc928581"
+      "uid": "e7c31a02"
     },
-    "文/古梅题诗/": {
-      "source_path": "文/古梅题诗.md",
+    "畫/竹石圖/": {
+      "source_path": "畫/竹石圖.md",
+      "title": "竹石圖",
+      "content": ":::hero {.plate}\n![竹石圖](竹石圖.jpg)\n:::",
+      "frontmatter": {
+        "description": "紙本水墨。立軸。",
+        "uid": "9a3b4c5d",
+        "cover": "竹石圖.jpg"
+      },
+      "url_path": "畫/竹石圖/",
+      "date": null,
+      "tags": [],
+      "uid": "9a3b4c5d"
+    },
+    "畫/雜畫冊/": {
+      "source_path": "畫/雜畫冊.md",
+      "title": "雜畫冊",
+      "content": ":::hero {.plate}\n![雜畫冊](雜畫冊.jpg)\n:::",
+      "frontmatter": {
+        "uid": "6a1b3c85",
+        "cover": "雜畫冊.jpg",
+        "description": "紙本水墨。冊頁十二開。"
+      },
+      "url_path": "畫/雜畫冊/",
+      "date": null,
+      "tags": [],
+      "uid": "6a1b3c85"
+    },
+    "畫/山水/": {
+      "source_path": "畫/山水.md",
+      "title": "山水",
+      "content": ":::hero {.plate}\n![山水](山水.jpg)\n:::",
+      "frontmatter": {
+        "cover": "山水.jpg",
+        "uid": "44944db0",
+        "description": "紙本水墨。立軸。仿郭忠恕。"
+      },
+      "url_path": "畫/山水/",
+      "date": null,
+      "tags": [],
+      "uid": "44944db0"
+    },
+    "畫/芝蘭清供圖/": {
+      "source_path": "畫/芝蘭清供圖.md",
+      "title": "芝蘭清供圖",
+      "content": ":::hero {.plate}\n![芝蘭清供圖](芝蘭清供圖.jpg)\n:::",
+      "frontmatter": {
+        "cover": "芝蘭清供圖.jpg",
+        "description": "紙本水墨。丙寅年。立軸。花押由「三月十九日」變形而成，暗指崇禎煤山殉國之日。",
+        "uid": "7a8b9c0d"
+      },
+      "url_path": "畫/芝蘭清供圖/",
+      "date": null,
+      "tags": [],
+      "uid": "7a8b9c0d"
+    },
+    "畫/荷花雙鳧圖/": {
+      "source_path": "畫/荷花雙鳧圖.md",
+      "title": "荷花雙鳧圖",
+      "content": ":::hero {.plate}\n![荷花雙鳧圖](荷花雙鳧圖.jpg)\n:::",
+      "frontmatter": {
+        "uid": "b8e142dc",
+        "description": "紙本水墨。約丙子年。",
+        "cover": "荷花雙鳧圖.jpg"
+      },
+      "url_path": "畫/荷花雙鳧圖/",
+      "date": null,
+      "tags": [],
+      "uid": "b8e142dc"
+    },
+    "畫/花卉圖卷/": {
+      "source_path": "畫/花卉圖卷.md",
+      "title": "花卉圖卷",
+      "content": ":::hero {.plate}\n![花卉圖卷](花卉圖卷.jpg)\n:::",
+      "frontmatter": {
+        "uid": "2b3c4d5e",
+        "description": "紙本水墨。手卷。故宮博物院藏。題詩數段，早期筆意。",
+        "cover": "花卉圖卷.jpg"
+      },
+      "url_path": "畫/花卉圖卷/",
+      "date": null,
+      "tags": [],
+      "uid": "2b3c4d5e"
+    },
+    "書/黃庭內景經/": {
+      "source_path": "書/黃庭內景經.md",
+      "title": "黃庭內景經",
+      "content": ":::hero {.plate}\n![黃庭內景經](黃庭內景經.jpg)\n:::",
+      "frontmatter": {
+        "uid": "3e6091bf",
+        "cover": "黃庭內景經.jpg",
+        "description": "紙本。甲子年。始署八大山人。"
+      },
+      "url_path": "書/黃庭內景經/",
+      "date": null,
+      "tags": [],
+      "uid": "3e6091bf"
+    },
+    "書/蘭亭序/": {
+      "source_path": "書/蘭亭序.md",
+      "title": "蘭亭序",
+      "content": ":::hero {.plate}\n![蘭亭序](蘭亭序.jpg)\n:::",
+      "frontmatter": {
+        "description": "紙本水墨。臨王羲之蘭亭集序。",
+        "uid": "694ec09f",
+        "cover": "蘭亭序.jpg"
+      },
+      "url_path": "書/蘭亭序/",
+      "date": null,
+      "tags": [],
+      "uid": "694ec09f"
+    },
+    "畫/落花圖/": {
+      "source_path": "畫/落花圖.md",
+      "title": "落花圖",
+      "content": ":::hero {.plate}\n![落花圖](落花圖.jpg)\n:::",
+      "frontmatter": {
+        "cover": "落花圖.jpg",
+        "description": "紙本水墨。約壬申年。冊頁。",
+        "uid": "de6f7a8b"
+      },
+      "url_path": "畫/落花圖/",
+      "date": null,
+      "tags": [],
+      "uid": "de6f7a8b"
+    },
+    "畫/古梅圖/": {
+      "source_path": "畫/古梅圖.md",
+      "title": "古梅圖",
+      "content": ":::hero {.plate}\n![古梅圖](古梅圖.jpg)\n:::",
+      "frontmatter": {
+        "uid": "4d1a6c23",
+        "description": "紙本水墨。立軸。",
+        "cover": "古梅圖.jpg"
+      },
+      "url_path": "畫/古梅圖/",
+      "date": null,
+      "tags": [],
+      "uid": "4d1a6c23"
+    },
+    "畫/蘆雁圖/": {
+      "source_path": "畫/蘆雁圖.md",
+      "title": "蘆雁圖",
+      "content": ":::hero {.plate}\n![蘆雁圖](蘆雁圖.jpg)\n:::",
+      "frontmatter": {
+        "cover": "蘆雁圖.jpg",
+        "description": "紙本水墨。立軸。",
+        "uid": "3b7f5e04"
+      },
+      "url_path": "畫/蘆雁圖/",
+      "date": null,
+      "tags": [],
+      "uid": "3b7f5e04"
+    },
+    "畫/傳綮寫生冊/": {
+      "source_path": "畫/傳綮寫生冊.md",
+      "title": "傳綮寫生冊",
+      "content": ":::hero {.plate}\n![傳綮寫生冊](傳綮寫生冊.jpg)\n:::",
+      "frontmatter": {
+        "uid": "0a1b2c3d",
+        "cover": "傳綮寫生冊.jpg",
+        "description": "紙本水墨。己亥年。冊頁十五開。最早存世之作。"
+      },
+      "url_path": "畫/傳綮寫生冊/",
+      "date": null,
+      "tags": [],
+      "uid": "0a1b2c3d"
+    },
+    "畫/魚/": {
+      "source_path": "畫/魚.md",
+      "title": "魚",
+      "content": ":::hero {.plate}\n![魚](魚.jpg)\n:::",
+      "frontmatter": {
+        "cover": "魚.jpg",
+        "uid": 21392846,
+        "description": "紙本水墨。"
+      },
+      "url_path": "畫/魚/",
+      "date": null,
+      "tags": [],
+      "uid": "3abe0d70"
+    },
+    "畫/花卉卷/": {
+      "source_path": "畫/花卉卷.md",
+      "title": "花卉卷",
+      "content": ":::hero {.plate}\n![花卉卷](花卉卷.jpg)\n:::",
+      "frontmatter": {
+        "cover": "花卉卷.jpg",
+        "description": "紙本水墨。手卷。",
+        "uid": "3c8f4b78"
+      },
+      "url_path": "畫/花卉卷/",
+      "date": null,
+      "tags": [],
+      "uid": "3c8f4b78"
+    },
+    "畫/蔬果卷/": {
+      "source_path": "畫/蔬果卷.md",
+      "title": "蔬果卷",
+      "content": ":::hero {.plate}\n![蔬果卷](蔬果卷.jpg)\n:::",
+      "frontmatter": {
+        "description": "紙本水墨。手卷。",
+        "cover": "蔬果卷.jpg",
+        "uid": "6d9a5c89"
+      },
+      "url_path": "畫/蔬果卷/",
+      "date": null,
+      "tags": [],
+      "uid": "6d9a5c89"
+    },
+    "畫/雙鵒圖/": {
+      "source_path": "畫/雙鵒圖.md",
+      "title": "雙鵒圖",
+      "content": ":::hero {.plate}\n![雙鵒圖](雙鵒圖.jpg)\n:::",
+      "frontmatter": {
+        "description": "絹本水墨。立軸。",
+        "cover": "雙鵒圖.jpg",
+        "uid": "5e6f7a8b"
+      },
+      "url_path": "畫/雙鵒圖/",
+      "date": null,
+      "tags": [],
+      "uid": "5e6f7a8b"
+    },
+    "文/古梅題詩/": {
+      "source_path": "文/古梅題詩.md",
       "title": "古梅圖題詩",
       "content": "分付梅花吳道人，幽幽翟翟莫相親。\\\n南山之南北山北，老得焚魚掃虜塵。",
       "html_content": "<p>分付梅花吳道人，幽幽翟翟莫相親。<br />\n南山之南北山北，老得焚魚掃虜塵。</p>",
@@ -231,180 +393,510 @@
         "description": "題古梅圖。",
         "title": "古梅圖題詩"
       },
-      "url_path": "文/古梅题诗/",
+      "url_path": "文/古梅題詩/",
       "date": "1696-01-01",
       "tags": [],
       "uid": "w1696a009"
     },
-    "文/落发/": {
-      "source_path": "文/落发.md",
-      "title": "落髮",
-      "content": "奉母朱氏攜弟至奉新山中，薙髮為僧。法名傳綮，字刃庵。\n\n住山二十年，從學者常百餘人。\n\n不敢言姓。不敢言名。不敢言故國。\n\n問則不答。答則以手指天。",
-      "html_content": "<p>奉母朱氏攜弟至奉新山中，薙髮為僧。法名傳綮，字刃庵。</p><p>住山二十年，從學者常百餘人。</p><p>不敢言姓。不敢言名。不敢言故國。</p><p>問則不答。答則以手指天。</p>",
+    "文/河上花歌/": {
+      "source_path": "文/河上花歌.md",
+      "title": "河上花歌",
+      "content": "河上花歌。\n\n蕙巖先生囑畫此卷，自丁丑五月以至六七八月，荷葉荷花落成，戲作河上花歌。\n\n![河上花圖](河上花圖-detail.jpg)\n\n河上花，河上花。\\\n河上老人今白髮，前度河花紅似霞。\n\n記得五十年前事，\\\n河上遊來今始知。\\\n花開花落兩由之，\\\n一日看盡長安花。\n\n少時不識月，呼作白玉盤。\\\n今朝花開好，明日花落殘。\n\n東西南北怪底同，\\\n朝還並蒂難重陳，\\\n至今想見芝山人。",
+      "html_content": "<p>河上花歌。</p><p>蕙巖先生囑畫此卷，自丁丑五月以至六七八月，荷葉荷花落成，戲作河上花歌。</p><p><picture><source srcset=\"../河上花圖-detail.webp\" type=\"image/webp\"><img src=\"../河上花圖-detail.jpg\" data-placeholder-src=\"../河上花圖-detail.jpg\" width=\"3891\" height=\"1840\" loading=\"lazy\" style=\"background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/wAARCAAJABQDAREAAhEBAxEB/9sAQwAoHB4jHhkoIyEjLSsoMDxkQTw3Nzx7WF1JZJGAmZaPgIyKoLTmw6Cq2q2KjMj/y9ru9f///5vB////+v/m/f/4/9sAQwErLS08NTx2QUF2+KWMpfj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwBZXSPGR9KgojEkmTlcDtmmBKpXb/rAfxpAI/agCKboPrTQDBTEf//Z);background-size:cover\" alt=\"河上花圖\" /></picture></p><p>河上花，河上花。<br />\n河上老人今白髮，前度河花紅似霞。</p><p>記得五十年前事，<br />\n河上遊來今始知。<br />\n花開花落兩由之，<br />\n一日看盡長安花。</p><p>少時不識月，呼作白玉盤。<br />\n今朝花開好，明日花落殘。</p><p>東西南北怪底同，<br />\n朝還並蒂難重陳，<br />\n至今想見芝山人。</p>",
       "frontmatter": {
-        "title": "落髮",
-        "uid": "w1648a002",
-        "date": "1648-01-01",
-        "description": "戊子年。薙髮為僧。"
+        "title": "河上花歌",
+        "date": "1697-01-01",
+        "description": "丁丑年。蕙巖先生囑畫河上花圖卷，戲作此歌。",
+        "uid": "w1697a010"
       },
-      "url_path": "文/落发/",
-      "date": "1648-01-01",
+      "url_path": "文/河上花歌/",
+      "date": "1697-01-01",
       "tags": [],
-      "uid": "w1648a002"
+      "uid": "w1697a010"
     },
-    "文/哑/": {
-      "source_path": "文/哑.md",
-      "title": "啞",
-      "content": "還城。書一大「啞」字署門，不與人語。\n\n然善笑。喜飲益甚。\n\n賭酒勝則笑啞啞，數負則拳勝者背，笑愈啞啞不可止。\n\n醉則往往唏噓泣下。",
-      "html_content": "<p>還城。書一大「啞」字署門，不與人語。</p><p>然善笑。喜飲益甚。</p><p>賭酒勝則笑啞啞，數負則拳勝者背，笑愈啞啞不可止。</p><p>醉則往往唏噓泣下。</p>",
+    "畫/楊柳浴禽圖/": {
+      "source_path": "畫/楊柳浴禽圖.md",
+      "title": "楊柳浴禽圖",
+      "content": ":::hero {.plate}\n![楊柳浴禽圖](楊柳浴禽圖.jpg)\n:::",
       "frontmatter": {
-        "title": "啞",
-        "description": "庚申年。閉門不語。",
-        "uid": "w1680a004",
-        "date": "1680-01-01"
+        "description": "紙本水墨。立軸。",
+        "cover": "楊柳浴禽圖.jpg",
+        "uid": "5c3f8b12"
       },
-      "url_path": "文/哑/",
-      "date": "1680-01-01",
-      "tags": [],
-      "uid": "w1680a004"
-    },
-    "文/发狂/": {
-      "source_path": "文/发狂.md",
-      "title": "發狂",
-      "content": "臨川令胡亦堂招余修縣志。居官署逾年。\n\n忽忽不自得，遂發狂疾。忽大笑，忽痛哭竟日。\n\n一夕，裂其浮屠服，焚之，走還會城。\n\n獨自徜徉市肆間。常戴布帽，曳長領袍，履穿踵決，拂袖翩躚行。市中兒隨觀嘩笑，人莫識也。",
-      "html_content": "<p>臨川令胡亦堂招余修縣志。居官署逾年。</p><p>忽忽不自得，遂發狂疾。忽大笑，忽痛哭竟日。</p><p>一夕，裂其浮屠服，焚之，走還會城。</p><p>獨自徜徉市肆間。常戴布帽，曳長領袍，履穿踵決，拂袖翩躚行。市中兒隨觀嘩笑，人莫識也。</p>",
-      "frontmatter": {
-        "title": "發狂",
-        "date": "1679-01-01",
-        "description": "己未年。臨川。",
-        "uid": "w1679a003"
-      },
-      "url_path": "文/发狂/",
-      "date": "1679-01-01",
-      "tags": [],
-      "uid": "w1679a003"
-    },
-    "文/个山小像/": {
-      "source_path": "文/个山小像.md",
-      "title": "個山小像自題",
-      "content": "個山小像。時年四十有九。\n\n---\n\n生在曹洞臨濟有，穿過臨濟曹洞有。\\\n洞曹臨濟兩俱非，嬴嬴然若喪家之狗。\\\n還識得此人麼？\n\n---\n\n沒毛驢，初生兔。\\\n剺破面門，手足無措。\\\n莫是悲他世上人，到頭不識來時路。\\\n今朝且喜當行，穿過葛藤露布。\\\n咄！",
-      "html_content": "<p>個山小像。時年四十有九。</p><hr />\n<p>生在曹洞臨濟有，穿過臨濟曹洞有。<br />\n洞曹臨濟兩俱非，嬴嬴然若喪家之狗。<br />\n還識得此人麼？</p><hr />\n<p>沒毛驢，初生兔。<br />\n剺破面門，手足無措。<br />\n莫是悲他世上人，到頭不識來時路。<br />\n今朝且喜當行，穿過葛藤露布。<br />\n咄！</p>",
-      "frontmatter": {
-        "description": "甲寅年。黃安平寫像，自題。",
-        "date": "1674-01-01",
-        "uid": "w1674a001",
-        "title": "個山小像自題"
-      },
-      "url_path": "文/个山小像/",
-      "date": "1674-01-01",
-      "tags": [],
-      "uid": "w1674a001"
-    },
-    "畫/河上花图/": {
-      "source_path": "畫/河上花图.md",
-      "title": "河上花图",
-      "content": ":::hero {.plate}\n![河上花圖](../河上花图.jpg)\n:::",
-      "frontmatter": {
-        "cover": "河上花图.jpg",
-        "uid": "c5d09a3e",
-        "description": "紙本水墨。丁丑年。河上花圖卷。"
-      },
-      "url_path": "畫/河上花图/",
+      "url_path": "畫/楊柳浴禽圖/",
       "date": null,
       "tags": [],
-      "uid": "c5d09a3e"
+      "uid": "5c3f8b12"
     },
-    "文/国破/": {
-      "source_path": "文/国破.md",
-      "title": "國破",
-      "content": "甲申三月十九日，思宗皇帝崩於煤山。\n\n是年，清兵入關，鐵騎南下。乙酉年，南昌陷。宗室遭屠，父死，妻亡。\n\n余年十八。\n\n天地之間，忽然只剩下一個人。",
-      "html_content": "<p>甲申三月十九日，思宗皇帝崩於煤山。</p><p>是年，清兵入關，鐵騎南下。乙酉年，南昌陷。宗室遭屠，父死，妻亡。</p><p>余年十八。</p><p>天地之間，忽然只剩下一個人。</p>",
+    "畫/山水冊/": {
+      "source_path": "畫/山水冊.md",
+      "title": "山水冊",
+      "content": ":::hero {.plate}\n![山水冊](山水冊.jpg)\n:::",
       "frontmatter": {
-        "description": "甲申年。天崩地裂。",
-        "date": "1644-01-01",
-        "title": "國破",
-        "uid": "w1644a001"
+        "cover": "山水冊.jpg",
+        "uid": "9285f333",
+        "description": "紙本水墨。冊頁。"
       },
-      "url_path": "文/国破/",
-      "date": "1644-01-01",
-      "tags": [],
-      "uid": "w1644a001"
-    },
-    "畫/山水册/": {
-      "source_path": "畫/山水册.md",
-      "title": "山水册",
-      "content": ":::hero {.plate}\n![山水冊](../山水册.jpg)\n:::",
-      "frontmatter": {
-        "cover": "山水册.jpg",
-        "description": "紙本水墨。冊頁。",
-        "uid": "9285f333"
-      },
-      "url_path": "畫/山水册/",
+      "url_path": "畫/山水冊/",
       "date": null,
       "tags": [],
       "uid": "9285f333"
     },
-    "畫/孤禽图/": {
-      "source_path": "畫/孤禽图.md",
-      "title": "孤禽图",
-      "content": ":::hero {.plate}\n![孤禽圖](../孤禽图.jpg)\n:::",
+    "書/臨河集序/": {
+      "source_path": "書/臨河集序.md",
+      "title": "臨河集序",
+      "content": ":::hero {.plate}\n![臨河集序](臨河集序.jpg)\n:::",
       "frontmatter": {
-        "cover": "孤禽图.jpg",
-        "description": "紙本水墨。",
-        "uid": "4239a516"
+        "uid": "4d5e6f7a",
+        "description": "紙本水墨。己卯年。行楷。冊頁三開。張大千大風堂舊藏。",
+        "cover": "臨河集序.jpg"
       },
-      "url_path": "畫/孤禽图/",
+      "url_path": "書/臨河集序/",
+      "date": null,
+      "tags": [],
+      "uid": "4d5e6f7a"
+    },
+    "文/發狂/": {
+      "source_path": "文/發狂.md",
+      "title": "發狂",
+      "content": "臨川令胡亦堂招余修縣志。居官署逾年。\n\n忽忽不自得，遂發狂疾。忽大笑，忽痛哭竟日。\n\n一夕，裂其浮屠服，焚之，走還會城。\n\n獨自徜徉市肆間。常戴布帽，曳長領袍，履穿踵決，拂袖翩躚行。市中兒隨觀嘩笑，人莫識也。",
+      "html_content": "<p>臨川令胡亦堂招余修縣志。居官署逾年。</p><p>忽忽不自得，遂發狂疾。忽大笑，忽痛哭竟日。</p><p>一夕，裂其浮屠服，焚之，走還會城。</p><p>獨自徜徉市肆間。常戴布帽，曳長領袍，履穿踵決，拂袖翩躚行。市中兒隨觀嘩笑，人莫識也。</p>",
+      "frontmatter": {
+        "date": "1679-01-01",
+        "description": "己未年。臨川。",
+        "uid": "w1679a003",
+        "title": "發狂"
+      },
+      "url_path": "文/發狂/",
+      "date": "1679-01-01",
+      "tags": [],
+      "uid": "w1679a003"
+    },
+    "畫/河上花圖/": {
+      "source_path": "畫/河上花圖.md",
+      "title": "河上花圖",
+      "content": ":::hero {.plate}\n![河上花圖](河上花圖.jpg)\n:::",
+      "frontmatter": {
+        "cover": "河上花圖.jpg",
+        "uid": "c5d09a3e",
+        "description": "紙本水墨。丁丑年。河上花圖卷。"
+      },
+      "url_path": "畫/河上花圖/",
+      "date": null,
+      "tags": [],
+      "uid": "c5d09a3e"
+    },
+    "文/國破/": {
+      "source_path": "文/國破.md",
+      "title": "國破",
+      "content": "甲申三月十九日，思宗皇帝崩於煤山。\n\n是年，清兵入關，鐵騎南下。乙酉年，南昌陷。宗室遭屠，父死，妻亡。\n\n余年十八。\n\n天地之間，忽然只剩下一個人。",
+      "html_content": "<p>甲申三月十九日，思宗皇帝崩於煤山。</p><p>是年，清兵入關，鐵騎南下。乙酉年，南昌陷。宗室遭屠，父死，妻亡。</p><p>余年十八。</p><p>天地之間，忽然只剩下一個人。</p>",
+      "frontmatter": {
+        "uid": "w1644a001",
+        "description": "甲申年。天崩地裂。",
+        "title": "國破",
+        "date": "1644-01-01"
+      },
+      "url_path": "文/國破/",
+      "date": "1644-01-01",
+      "tags": [],
+      "uid": "w1644a001"
+    },
+    "畫/荷花翠鳥圖/": {
+      "source_path": "畫/荷花翠鳥圖.md",
+      "title": "荷花翠鳥圖",
+      "content": ":::hero {.plate}\n![荷花翠鳥圖](荷花翠鳥圖.jpg)\n:::",
+      "frontmatter": {
+        "uid": "58c6d0a3",
+        "description": "紙本水墨。立軸。",
+        "cover": "荷花翠鳥圖.jpg"
+      },
+      "url_path": "畫/荷花翠鳥圖/",
+      "date": null,
+      "tags": [],
+      "uid": "58c6d0a3"
+    },
+    "畫/魚石圖/": {
+      "source_path": "畫/魚石圖.md",
+      "title": "魚石圖",
+      "content": ":::hero {.plate}\n![魚石圖](魚石圖.jpg)\n:::",
+      "frontmatter": {
+        "description": "紙本水墨。己卯年。立軸。",
+        "uid": "11ff0c98",
+        "cover": "魚石圖.jpg"
+      },
+      "url_path": "畫/魚石圖/",
+      "date": null,
+      "tags": [],
+      "uid": "11ff0c98"
+    },
+    "文/啞/": {
+      "source_path": "文/啞.md",
+      "title": "啞",
+      "content": "還城。書一大「啞」字署門，不與人語。\n\n然善笑。喜飲益甚。\n\n賭酒勝則笑啞啞，數負則拳勝者背，笑愈啞啞不可止。\n\n醉則往往唏噓泣下。",
+      "html_content": "<p>還城。書一大「啞」字署門，不與人語。</p><p>然善笑。喜飲益甚。</p><p>賭酒勝則笑啞啞，數負則拳勝者背，笑愈啞啞不可止。</p><p>醉則往往唏噓泣下。</p>",
+      "frontmatter": {
+        "date": "1680-01-01",
+        "title": "啞",
+        "uid": "w1680a004",
+        "description": "庚申年。閉門不語。"
+      },
+      "url_path": "文/啞/",
+      "date": "1680-01-01",
+      "tags": [],
+      "uid": "w1680a004"
+    },
+    "書/草書五言排律/": {
+      "source_path": "書/草書五言排律.md",
+      "title": "草書五言排律",
+      "content": ":::hero {.plate}\n![草書五言排律](草書五言排律.jpg)\n:::",
+      "frontmatter": {
+        "description": "紙本。草書。",
+        "cover": "草書五言排律.jpg",
+        "uid": "5b2c3d4e"
+      },
+      "url_path": "書/草書五言排律/",
+      "date": null,
+      "tags": [],
+      "uid": "5b2c3d4e"
+    },
+    "畫/山水軸/": {
+      "source_path": "畫/山水軸.md",
+      "title": "山水軸",
+      "content": ":::hero {.plate}\n![山水軸](山水軸.jpg)\n:::",
+      "frontmatter": {
+        "cover": "山水軸.jpg",
+        "description": "紙本水墨。立軸。",
+        "uid": "7e0b6d9a"
+      },
+      "url_path": "畫/山水軸/",
+      "date": null,
+      "tags": [],
+      "uid": "7e0b6d9a"
+    },
+    "畫/墨荷軸/": {
+      "source_path": "畫/墨荷軸.md",
+      "title": "墨荷軸",
+      "content": ":::hero {.plate}\n![墨荷軸](墨荷軸.jpg)\n:::",
+      "frontmatter": {
+        "cover": "墨荷軸.jpg",
+        "description": "紙本水墨。立軸。",
+        "uid": "9a6d1f56"
+      },
+      "url_path": "畫/墨荷軸/",
+      "date": null,
+      "tags": [],
+      "uid": "9a6d1f56"
+    },
+    "畫/竹石鴛鴦/": {
+      "source_path": "畫/竹石鴛鴦.md",
+      "title": "竹石鴛鴦",
+      "content": ":::hero {.plate}\n![竹石鴛鴦](竹石鴛鴦.jpg)\n:::",
+      "frontmatter": {
+        "uid": "8f2a3b4c",
+        "cover": "竹石鴛鴦.jpg",
+        "description": "紙本水墨。立軸。"
+      },
+      "url_path": "畫/竹石鴛鴦/",
+      "date": null,
+      "tags": [],
+      "uid": "8f2a3b4c"
+    },
+    "文/安晚帖魚題詩/": {
+      "source_path": "文/安晚帖魚題詩.md",
+      "title": "安晚帖魚題詩",
+      "content": "左右此何水，名之曰曲河。\\\n更求淵注處，料得晚霞多。",
+      "html_content": "<p>左右此何水，名之曰曲河。<br />\n更求淵注處，料得晚霞多。</p>",
+      "frontmatter": {
+        "description": "甲戌年。為安晚堂作。",
+        "uid": "w1694a007",
+        "date": "1694-01-01",
+        "title": "安晚帖魚題詩"
+      },
+      "url_path": "文/安晚帖魚題詩/",
+      "date": "1694-01-01",
+      "tags": [],
+      "uid": "w1694a007"
+    },
+    "畫/魚鴨圖卷/": {
+      "source_path": "畫/魚鴨圖卷.md",
+      "title": "魚鴨圖卷",
+      "content": ":::hero {.plate}\n![魚鴨圖卷](魚鴨圖卷.jpg)\n:::",
+      "frontmatter": {
+        "cover": "魚鴨圖卷.jpg",
+        "description": "紙本水墨。手卷。",
+        "uid": "1b7e2a67"
+      },
+      "url_path": "畫/魚鴨圖卷/",
+      "date": null,
+      "tags": [],
+      "uid": "1b7e2a67"
+    },
+    "畫/孤禽圖/": {
+      "source_path": "畫/孤禽圖.md",
+      "title": "孤禽圖",
+      "content": ":::hero {.plate}\n![孤禽圖](孤禽圖.jpg)\n:::",
+      "frontmatter": {
+        "uid": "4239a516",
+        "cover": "孤禽圖.jpg",
+        "description": "紙本水墨。"
+      },
+      "url_path": "畫/孤禽圖/",
       "date": null,
       "tags": [],
       "uid": "4239a516"
     },
-    "畫/荷花双凫图/": {
-      "source_path": "畫/荷花双凫图.md",
-      "title": "荷花双凫图",
-      "content": ":::hero {.plate}\n![荷花雙鳧圖](../荷花双凫图.jpg)\n:::",
+    "畫/荷花水鳥圖/": {
+      "source_path": "畫/荷花水鳥圖.md",
+      "title": "荷花水鳥圖",
+      "content": ":::hero {.plate}\n![荷花水鳥圖](荷花水鳥圖.jpg)\n:::",
       "frontmatter": {
-        "uid": "b8e142dc",
-        "cover": "荷花双凫图.jpg",
-        "description": "紙本水墨。約丙子年。"
+        "cover": "荷花水鳥圖.jpg",
+        "uid": "bc928581",
+        "description": "紙本水墨。立軸。"
       },
-      "url_path": "畫/荷花双凫图/",
+      "url_path": "畫/荷花水鳥圖/",
       "date": null,
       "tags": [],
-      "uid": "b8e142dc"
+      "uid": "bc928581"
     },
-    "畫/荷花册/": {
-      "source_path": "畫/荷花册.md",
-      "title": "荷花册",
-      "content": ":::hero {.plate}\n![荷花冊](../荷花册.jpg)\n:::",
+    "畫/荷花冊/": {
+      "source_path": "畫/荷花冊.md",
+      "title": "荷花冊",
+      "content": ":::hero {.plate}\n![荷花冊](荷花冊.jpg)\n:::",
       "frontmatter": {
-        "cover": "荷花册.jpg",
-        "description": "紙本水墨。約乙巳年。",
-        "uid": "17b3d4c9"
+        "uid": "17b3d4c9",
+        "cover": "荷花冊.jpg",
+        "description": "紙本水墨。約乙巳年。"
       },
-      "url_path": "畫/荷花册/",
+      "url_path": "畫/荷花冊/",
       "date": null,
       "tags": [],
       "uid": "17b3d4c9"
     },
-    "書/黄庭内景经/": {
-      "source_path": "書/黄庭内景经.md",
-      "title": "黄庭内景经",
-      "content": ":::hero {.plate}\n![黃庭內景經](黄庭内景经.jpg)\n:::",
+    "畫/秋林獨釣圖/": {
+      "source_path": "畫/秋林獨釣圖.md",
+      "title": "秋林獨釣圖",
+      "content": ":::hero {.plate}\n![秋林獨釣圖](秋林獨釣圖.jpg)\n:::",
       "frontmatter": {
-        "uid": "3e6091bf",
-        "description": "紙本。甲子年。始署八大山人。",
-        "cover": "黄庭内景经.jpg"
+        "uid": "8e4b7d34",
+        "cover": "秋林獨釣圖.jpg",
+        "description": "紙本水墨。立軸。"
       },
-      "url_path": "書/黄庭内景经/",
+      "url_path": "畫/秋林獨釣圖/",
       "date": null,
       "tags": [],
-      "uid": "3e6091bf"
+      "uid": "8e4b7d34"
+    },
+    "畫/安晚帖魚/": {
+      "source_path": "畫/安晚帖魚.md",
+      "title": "安晚帖魚",
+      "content": ":::hero {.plate}\n![安晚帖魚](安晚帖魚.jpg)\n:::",
+      "frontmatter": {
+        "cover": "安晚帖魚.jpg",
+        "description": "紙本水墨。甲戌年。",
+        "uid": "a3f7c219"
+      },
+      "url_path": "畫/安晚帖魚/",
+      "date": null,
+      "tags": [],
+      "uid": "a3f7c219"
+    },
+    "書/行書琵琶行卷/": {
+      "source_path": "書/行書琵琶行卷.md",
+      "title": "行書琵琶行卷",
+      "content": ":::hero {.plate}\n![行書琵琶行卷](行書琵琶行卷.jpg)\n:::",
+      "frontmatter": {
+        "cover": "行書琵琶行卷.jpg",
+        "uid": "4a1b2c3d",
+        "description": "紙本。行書。臨白居易琵琶行。手卷。"
+      },
+      "url_path": "書/行書琵琶行卷/",
+      "date": null,
+      "tags": [],
+      "uid": "4a1b2c3d"
+    },
+    "畫/枯木寒鴉圖/": {
+      "source_path": "畫/枯木寒鴉圖.md",
+      "title": "枯木寒鴉圖",
+      "content": ":::hero {.plate}\n![枯木寒鴉圖](枯木寒鴉圖.jpg)\n:::",
+      "frontmatter": {
+        "cover": "枯木寒鴉圖.jpg",
+        "uid": "7a2e9d01",
+        "description": "紙本水墨。立軸。枯木棲鴉。"
+      },
+      "url_path": "畫/枯木寒鴉圖/",
+      "date": null,
+      "tags": [],
+      "uid": "7a2e9d01"
+    },
+    "文/致方士琯書/": {
+      "source_path": "文/致方士琯書.md",
+      "title": "致方士琯書",
+      "content": "![致方士琯書](致方士琯書.jpg)\n\n承惠書並筆墨，感感。近日苦於腳疾，不能遠行，尚冀秋涼再晤。\n\n---\n\n前日承索畫數幀，已屬草草。近來目力漸衰，非昔比也。畫債甚多，容當緩緩奉上。\n\n---\n\n弟居城南，菲薄度日。所幸筆墨尚在，聊以自遣。方兄遠寄紙筆，銘感不已。",
+      "html_content": "<p><picture><source srcset=\"../致方士琯書.webp\" type=\"image/webp\"><img src=\"../致方士琯書.jpg\" data-placeholder-src=\"../致方士琯書.jpg\" width=\"2605\" height=\"3618\" loading=\"lazy\" style=\"background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/wAARCAAUAA4DAREAAhEBAxEB/9sAQwAoHB4jHhkoIyEjLSsoMDxkQTw3Nzx7WF1JZJGAmZaPgIyKoLTmw6Cq2q2KjMj/y9ru9f///5vB////+v/m/f/4/9sAQwErLS08NTx2QUF2+KWMpfj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDRIORSGCglutADgOTk0AKtADRQAo4NAH//2Q==);background-size:cover\" alt=\"致方士琯書\" /></picture></p><p>承惠書並筆墨，感感。近日苦於腳疾，不能遠行，尚冀秋涼再晤。</p><hr />\n<p>前日承索畫數幀，已屬草草。近來目力漸衰，非昔比也。畫債甚多，容當緩緩奉上。</p><hr />\n<p>弟居城南，菲薄度日。所幸筆墨尚在，聊以自遣。方兄遠寄紙筆，銘感不已。</p>",
+      "frontmatter": {
+        "date": "1690-01-01",
+        "description": "與方士琯往來書札。",
+        "title": "致方士琯書",
+        "uid": "w1690a002"
+      },
+      "url_path": "文/致方士琯書/",
+      "date": "1690-01-01",
+      "tags": [],
+      "uid": "w1690a002"
+    },
+    "畫/荷石圖/": {
+      "source_path": "畫/荷石圖.md",
+      "title": "荷石圖",
+      "content": ":::hero {.plate}\n![荷石圖](荷石圖.jpg)\n:::",
+      "frontmatter": {
+        "cover": "荷石圖.jpg",
+        "uid": "6f7a8b9c",
+        "description": "紙本水墨。立軸。款署八大山人，鈐「可得神仙」、「八大山人」白文印。"
+      },
+      "url_path": "畫/荷石圖/",
+      "date": null,
+      "tags": [],
+      "uid": "6f7a8b9c"
+    },
+    "書/酒德頌/": {
+      "source_path": "書/酒德頌.md",
+      "title": "酒德頌",
+      "content": ":::hero {.plate}\n![酒德頌](酒德頌.jpg)\n:::",
+      "frontmatter": {
+        "description": "紙本。行書。臨劉伶酒德頌。仿黃山谷筆意。手卷。",
+        "cover": "酒德頌.jpg",
+        "uid": "1a2b3c4d"
+      },
+      "url_path": "書/酒德頌/",
+      "date": null,
+      "tags": [],
+      "uid": "1a2b3c4d"
+    },
+    "書/耿湋詩/": {
+      "source_path": "書/耿湋詩.md",
+      "title": "耿湋詩",
+      "content": ":::hero {.plate}\n![耿湋詩](耿湋詩.jpg)\n:::",
+      "frontmatter": {
+        "description": "紙本。草書。約己卯年。臨耿湋題清源寺詩。立軸。",
+        "cover": "耿湋詩.jpg",
+        "uid": "ef7a8b9c"
+      },
+      "url_path": "書/耿湋詩/",
+      "date": null,
+      "tags": [],
+      "uid": "ef7a8b9c"
+    },
+    "書/扇面/": {
+      "source_path": "書/扇面.md",
+      "title": "扇面",
+      "content": ":::hero {.plate}\n![扇面](扇面.jpg)\n:::",
+      "frontmatter": {
+        "description": "紙本水墨。扇面。",
+        "uid": "f48bcf3c",
+        "cover": "扇面.jpg"
+      },
+      "url_path": "書/扇面/",
+      "date": null,
+      "tags": [],
+      "uid": "f48bcf3c"
+    },
+    "文/落髮/": {
+      "source_path": "文/落髮.md",
+      "title": "落髮",
+      "content": "奉母朱氏攜弟至奉新山中，薙髮為僧。法名傳綮，字刃庵。\n\n住山二十年，從學者常百餘人。\n\n不敢言姓。不敢言名。不敢言故國。\n\n問則不答。答則以手指天。",
+      "html_content": "<p>奉母朱氏攜弟至奉新山中，薙髮為僧。法名傳綮，字刃庵。</p><p>住山二十年，從學者常百餘人。</p><p>不敢言姓。不敢言名。不敢言故國。</p><p>問則不答。答則以手指天。</p>",
+      "frontmatter": {
+        "date": "1648-01-01",
+        "description": "戊子年。薙髮為僧。",
+        "uid": "w1648a002",
+        "title": "落髮"
+      },
+      "url_path": "文/落髮/",
+      "date": "1648-01-01",
+      "tags": [],
+      "uid": "w1648a002"
+    },
+    "畫/枯木來禽圖/": {
+      "source_path": "畫/枯木來禽圖.md",
+      "title": "枯木來禽圖",
+      "content": ":::hero {.plate}\n![枯木來禽圖](枯木來禽圖.jpg)\n:::",
+      "frontmatter": {
+        "cover": "枯木來禽圖.jpg",
+        "description": "紙本水墨。立軸。",
+        "uid": "b19717aa"
+      },
+      "url_path": "畫/枯木來禽圖/",
+      "date": null,
+      "tags": [],
+      "uid": "b19717aa"
+    },
+    "畫/梅花軸/": {
+      "source_path": "畫/梅花軸.md",
+      "title": "梅花軸",
+      "content": ":::hero {.plate}\n![梅花軸](梅花軸.jpg)\n:::",
+      "frontmatter": {
+        "cover": "梅花軸.jpg",
+        "uid": "2f5c8e45",
+        "description": "紙本水墨。立軸。"
+      },
+      "url_path": "畫/梅花軸/",
+      "date": null,
+      "tags": [],
+      "uid": "2f5c8e45"
+    },
+    "文/孔雀題詩/": {
+      "source_path": "文/孔雀題詩.md",
+      "title": "孔雀竹石圖題詩",
+      "content": "孔雀名花雨竹屏，竹梢強半墨生成。\\\n如何了得論三耳，恰是逢春坐二更。",
+      "html_content": "<p>孔雀名花雨竹屏，竹梢強半墨生成。<br />\n如何了得論三耳，恰是逢春坐二更。</p>",
+      "frontmatter": {
+        "title": "孔雀竹石圖題詩",
+        "description": "諷宋犖。",
+        "uid": "w1695a008",
+        "date": "1695-01-01"
+      },
+      "url_path": "文/孔雀題詩/",
+      "date": "1695-01-01",
+      "tags": [],
+      "uid": "w1695a008"
+    },
+    "文/個山小像/": {
+      "source_path": "文/個山小像.md",
+      "title": "個山小像自題",
+      "content": "個山小像。時年四十有九。\n\n---\n\n生在曹洞臨濟有，穿過臨濟曹洞有。\\\n洞曹臨濟兩俱非，嬴嬴然若喪家之狗。\\\n還識得此人麼？\n\n---\n\n沒毛驢，初生兔。\\\n剺破面門，手足無措。\\\n莫是悲他世上人，到頭不識來時路。\\\n今朝且喜當行，穿過葛藤露布。\\\n咄！",
+      "html_content": "<p>個山小像。時年四十有九。</p><hr />\n<p>生在曹洞臨濟有，穿過臨濟曹洞有。<br />\n洞曹臨濟兩俱非，嬴嬴然若喪家之狗。<br />\n還識得此人麼？</p><hr />\n<p>沒毛驢，初生兔。<br />\n剺破面門，手足無措。<br />\n莫是悲他世上人，到頭不識來時路。<br />\n今朝且喜當行，穿過葛藤露布。<br />\n咄！</p>",
+      "frontmatter": {
+        "uid": "w1674a001",
+        "description": "甲寅年。黃安平寫像，自題。",
+        "title": "個山小像自題",
+        "date": "1674-01-01"
+      },
+      "url_path": "文/個山小像/",
+      "date": "1674-01-01",
+      "tags": [],
+      "uid": "w1674a001"
+    },
+    "畫/猫石圖/": {
+      "source_path": "畫/猫石圖.md",
+      "title": "猫石圖",
+      "content": ":::hero {.plate}\n![猫石圖](猫石圖.jpg)\n:::",
+      "frontmatter": {
+        "uid": "d29e4f17",
+        "cover": "猫石圖.jpg",
+        "description": "紙本水墨。手卷。"
+      },
+      "url_path": "畫/猫石圖/",
+      "date": null,
+      "tags": [],
+      "uid": "d29e4f17"
     }
   },
   "pages": {
-    "文/": "文/文.md",
-    "畫/": "畫/畫.md",
+    "書/": "書/書.md",
     "": "八大山人.md",
-    "書/": "書/書.md"
+    "文/": "文/文.md",
+    "畫/": "畫/畫.md"
   }
 }
