@@ -1,3 +1,191 @@
 # Changelog
 
 All notable changes to moss will be documented here.
+
+## [0.6.0] - 2026-04-08
+
+### Added
+- surface tension snap indicator for divider
+- unified preview→editor click-to-source for shortcodes, frontmatter, and template chrome
+- split deployment state from config.toml into state.toml
+- hover link preview for all moss sites
+- add loading state for notebook viewer pages
+- immersive mode for notebooks + data file co-location
+- support .moss/ as preferred location for custom CSS, JS, and theme assets
+- adaptive flat/organized site mode with smart defaults
+- add JupyterLite support for interactive notebooks
+- add Pandoc-style {.class} attribute syntax to all ::: shortcodes
+- snap preview closed at mobile width (390px) instead of 40px from edge
+- add children_style: grid, remove inline image-heading card restructuring
+- add LinkedIn, X, and 小红书 plugins
+- add 豆瓣 plugin — structured review pull, push scaffold
+- add Substack plugin — pull, push, sync
+- children accepts wikilink to target specific folder
+- add progress bar, redesign toast, rename deploy_method to "moss"
+- default subdomain from site name + real availability check with hint reset
+- write cumulative CHANGELOG.md to moss-releases on each release
+- add bound account guard to prevent unwanted article sync
+- unify lock timings, annotate title, add selection sync
+- add is_explicit flag to extract_date_from_doc
+- detect script.js and emit custom.js with cache busting
+- add logo frontmatter field for nav site logo
+- add user_js_tag placeholder for custom.js injection
+- add user_js_path() for custom.js cache busting
+- dispatch moss-theme-change event on theme toggle
+- language-aware text alignment defaults
+- per-language site name, convention-based logo, home path
+- add RSS toggle to Settings UI
+- add rss feature toggle to suppress RSS footer link and feed generation
+- add "Published with moss" colophon badge to generated sites
+- use directory-based URLs for translated pages
+- add language toggle in nav bar and fix translation URLs
+- wire click-to-navigate through app shell to editor
+- proportional scroll interpolation + click-to-navigate
+- add data-source-line to li, hr, table, tr elements
+- strip data-source-line from production HTML, keep in preview
+- improve chip bar overflow menu and narrow divider snap zones
+- add --moss-nav-width CSS variable for decoupled nav/footer width
+- add per-page content_width frontmatter field
+- add :::buttons directive for styled CTA button rows
+- environment-aware subdomain suffix and UI badge in first-publish modal
+- beacon host derived from resolved environment
+- environment resolution for oracle URL, site suffix, and beacon host
+- show subscription status in publishing settings
+- add services settings page with toggles for analytics, comments, email
+- inject Artalk widget and subscribe form for moss-hosted sites
+- add analytics dashboard in settings reading from local data
+- inject analytics beacon for moss-hosted sites + pull data on open
+- add success toast, soft lock UX, opaque progress bar
+- redesign first publish modal with trial flow
+- add subscription check before deploy, expose check_subscription_status command
+- add llms.txt generator and fix RSS tag passthrough
+- parallel uploads, client-side validation, server timestamp
+- add moss-service-inactive class to forms when endpoint is missing
+- add [features] toggle, [services] endpoint config, and service status CSS
+- add FirstPublishModal wizard for first-time publishing
+- add FIRST_PUBLISH_COMPLETE event to event bus
+- add push_site, setup_moss_host, and get_deploy_config commands
+- add site hosting API types and methods
+- add deploy progress types and event emission
+- add site_id field to DomainDeploymentConfig
+- add hero heading and CTA link styles to core CSS
+- migrate from OS keychain to file-based key storage (v3)
+- complete data fetching, client JS, syndication, analytics migration
+- add review data fetching from NeoDB API (TDD)
+- wire native features into run_pipeline()
+- add generate_native_slots() for pipeline integration
+- add native email subscribe form rendering (TDD)
+- add native comment section rendering (TDD)
+- add native review colophon rendering (TDD)
+- add FeaturesConfig and review/rating frontmatter fields
+
+### Fixed
+- align tauri-plugin-fs Rust crate (2.5) with JS package (2.5.0)
+- resolve_page_source prefers ArticleMap for multilingual file lookup
+- left-drag bump direction, accent line style, snap at MOBILE_WIDTH
+- target hover preview to wikilinks only, improve seta logging, update doc paths
+- match site name and breadcrumb sizes on mobile, fix vertical alignment
+- watcher uses theme/ not assets/, update stale doc comments
+- theme pipeline, migration timing, and test fixtures
+- divider can't be dragged far enough right (feedback loop)
+- expand only direct children, show home files first
+- preserve ^block-id prefix in embed markers
+- use configured site language for primary page selection, support block ref embeds
+- address code review findings for notebook enhancements
+- address code review findings for notebook integration
+- update code syntax accent colors to match new dark mode palette
+- restore toggle alignment on narrow screens without nav links
+- notebook viewer HTML missing from canonical output + stale cleanup
+- replace card subgrid with flexbox to eliminate white line artifact
+- services settings empty + RSS missing from footer
+- count all leaf descendants recursively for collection grid cards
+- resolve 240+ Dependabot security alerts
+- always render article-title H1, remove matching body H1
+- cosmetic improvements — nav alignment, article grammar, RSS footer default
+- stale cleanup was deleting JupyterLite assets from output
+- address code review findings (path traversal, URL encoding)
+- correct merged doc comment and stale path in output layout
+- index notebook files in build_content_graph
+- JupyterLite path resolution and contents manifest
+- footer layout, subscribe form CSS bug, and mobile nav overflow
+- restore prose in doc comments changed by mechanical rename
+- update stale class names in snapshot_tests.rs normalization regexes
+- remove moss-moss- double prefix in card-video.test.ts
+- make AppKit functions thread-safe, remove dead autoresize masks
+- dispatch AppKit calls to main thread in action panel creation
+- nav/footer follow content_width, auto-detect summary for descriptions
+- inline grid equal image/row heights + regression tests
+- close subgrid gap between card cover and content, use 4:3 cover
+- card grid visual alignment — subgrid, 3:2 aspect ratio, smart text wrap
+- adaptive card layout — same-line count vs stacked subtitle
+- collection card layout — stack title and subtitle vertically
+- grid card subtitle uses frontmatter description only, empty for bare leaf pages
+- grid card subtitle shows description for folders too, document grid design
+- children YAML pre-processing stops after frontmatter closes
+- nav site-name wraps naturally on mobile, toggle aligns to last row
+- nav site-name right spacing and toggle vertical alignment
+- allow nav links to wrap on mobile to prevent horizontal overflow
+- nav layout, hero crop, and site-name clamp for mobile
+- address review feedback on CSS changes
+- improve mobile responsiveness for tables, hero, and grid cards
+- clear stale site config + use native opener for visit button
+- align nav-surface height with titlebar (38px)
+- position traffic lights via AppKit after window/webview creation
+- use absolute path for tauri-specta bindings output
+- consolidate slot injection to prevent marker leaks + rebuild before deploy
+- address architecture review — handleGitHub result check, typed bindings
+- address code review — trailing slash, unit tests, push failure toast
+- deploy method routing, error recovery, and GitHub Pages guard
+- user-friendly error messages + log full errors to Rust backend
+- address code review — reqwest timeout, 404 vs 5xx, blur rerender
+- route auth through Rust backend, debounced availability check
+- address code review — i18n error strings, dead CSS, stale JSDoc
+- preserve line count in shortcode processors
+- hide Comment button when comments disabled, i18n copy attribution
+- hide trailing space after heading markers in live preview
+- align site logo with breadcrumb text baseline
+- override base .moss-btn:hover green fill on secondary buttons
+- use structural translation root check for auto-index filter
+- make translation root directories transparent in breadcrumbs
+- componentize BaseModal — shared CSS for all modals
+- simplify secondary button hover to border-only
+- secondary button hover text unreadable when green
+- copy small videos (<100MB) as regular assets
+- prevent duplicate title heading on homepage translations
+- add data-moss-preview attribute for preview-only service forms
+- re-apply hidden title after adding action-panel webview
+- skip root script.js in asset copy loop
+- address logo review findings
+- reset window title after action-panel webview opens
+- hide empty footer via CSS, keep slot marker for plugin injection
+- decouple footer RSS from domain, hide empty footer, render inactive service forms
+- also suppress feed.xml generation when rss feature is disabled
+- handle root homepage in to_pretty_url
+- sync permalink after slug dedup, add 3-language test
+- address review findings — stale docs and shortcode annotations
+- switch server back to site-stage/ after no-changes rebuild
+- remove remaining MAX_BROWSER_WIDTH references causing runtime error
+- replace fixed MAX_BROWSER_WIDTH with dynamic max, narrow snap-full to 40px
+- address code review for :::buttons directive
+- remove preview iframe title tooltip on hover
+- exclude .moss-btn from article link hover color override
+- add missing serde import for HostingEnvironmentInfo in domain commands
+- deduplicate homepage translation instead of creating /index/ directory
+- add title suffix and description for Page-template pages
+- recognize language-suffixed home files and prioritize site language in slug dedup
+- invoke pull_site_data_if_hosted on folder open for analytics
+- RegisterSiteResponse deserializes server's 'id' field
+- address code and architecture review findings
+- address code review issues
+- align sync protocol with oracle API
+- prevent user style.css from overwriting default CSS in output
+- add site_id field to integration test struct literals
+- preserve existing dns_target when saving deployment info
+- load comments from all social sources, not just comment.json
+- ensure review cover image path is absolute
+- cache comment provider, spawn_blocking for native slots, dedup article-map parsing
+- use moss-core home detection for analytics migration
+- address code review findings
+- skip re-downloading comments deleted by user
+- show progress during enhance phase and auto-refresh preview after slot injection
+
