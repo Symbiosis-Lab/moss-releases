@@ -37,6 +37,10 @@ Frontmatter 不是必填的。沒有 frontmatter 的檔案一樣會變成頁面�
 | `lang` | string | 自動偵測 | 語言覆蓋（`"en"`、`"zh-hans"`、`"zh-hant"`） |
 <!-- auto:end:frontmatter-identity -->
 
+`title:` 有兩個作用。一是作為頁面的*介面標籤*——用於瀏覽器分頁標題、導覽連結、麵包屑、RSS 和社群媒體 meta；二是在**文章**頁面的正文沒有 `# H1`（且 `:::hero` 區塊中也沒有 H1）時，moss 會在正文最上方注入 `<h1 class="moss-article-title">{title}</h1>`，讓讀者始終能看到可見的頁面標題。若沒有 `title:`，moss 會以檔名（首字母大寫）作為兩種用途的兜底——這符合 Obsidian 中「檔名即為文件標題」的慣例。
+
+如果想單獨關閉某篇文章自動注入的標題（例如某個排版像首頁的特殊頁面），可以寫 `title: ""`（顯式的空字串）。這與省略 `title:` 不同——省略會回退到檔名。資料夾/索引頁面（`index.md`、`main.md`、自命名的 `foo/foo.md` 等）從不注入；它們按作者所寫的正文渲染。
+
 ## 導覽
 
 控制頁面在網站導覽和介面中如何呈現。
