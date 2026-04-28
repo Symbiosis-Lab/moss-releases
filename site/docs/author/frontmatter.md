@@ -42,6 +42,10 @@ These fields describe what the page is.
 | `lang` | string | auto-detected | Language override (`"en"`, `"zh-hans"`, `"zh-hant"`) |
 <!-- auto:end:frontmatter-identity -->
 
+`title:` plays two roles. First, it is the page's *chrome label* — feeding the browser tab title, navigation links, breadcrumbs, RSS, and social-media meta. Second, on **article** pages whose body has no `# H1` (and no `H1` inside a `:::hero` block), moss injects `<h1 class="moss-article-title">{title}</h1>` at the top of the rendered body so the reader always sees a visible page heading. If `title:` is absent, moss falls back to the title-cased filename for both purposes — matching the Obsidian convention that the filename *is* the document's title.
+
+To suppress the auto-injected heading on a specific article (for example, a one-off page styled like a homepage), set `title: ""` (an explicit empty string). This is distinct from omitting the field, which falls through to the filename. Folder/index pages (`index.md`, `main.md`, self-named `foo/foo.md`, etc.) never auto-inject; they render the body as authored.
+
 ## Navigation
 
 These fields control how the page appears in the site's navigation and chrome.
