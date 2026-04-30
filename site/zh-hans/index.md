@@ -13,11 +13,9 @@ uid: 41f7bc62
 把文件夹打包成独立网站。右键，预览，发布。
 
 :::buttons
-[下载 macOS 版](https://github.com/Symbiosis-Lab/moss-releases/releases/latest/download/moss.dmg)
+[申请测试版](#青苔正在封闭测试)
 [文档](docs/)
 :::
-
-目前为测试版软件。请通过 [issue](https://github.com/Symbiosis-Lab/moss-releases/issues) 或者[邮件](mailto:hi@symbiosis-lab.org)告诉我们你的想法。
 
 :::grid 3
 **本地写作**
@@ -48,3 +46,15 @@ Markdown 文件。使用内置编辑器、Obsidian、或者任意其他软件。
 ## 无限扩展，AI 支持
 
 通过 CSS 和 JavaScript 自定义设计，通过脚本插件自定义编译流程。CLI 支持自动化和 CI 集成。详见[扩展](docs/extend/)。
+
+## 青苔正在封闭测试
+
+我们正在分批邀请写作者，一边打磨细节。
+留下你的邮箱，等到你那一批，我们会发送一份构建版本，通常在报名后几周内。
+
+:::subscribe
+description: 一封邮件。没有通讯，没有营销。只在有新版本时联系你。
+button: 申请测试
+:::
+
+如果你只想远远看看，发布版在 [GitHub](https://github.com/Symbiosis-Lab/moss-releases) 上，反馈邮箱 [hi@symbiosis-lab.org](mailto:hi@symbiosis-lab.org)。

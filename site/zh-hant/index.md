@@ -14,11 +14,9 @@ translationKey: homepage
 將資料夾打包成網站的桌面應用。右鍵，預覽，上線。
 
 :::buttons
-[下載 macOS 版](https://github.com/Symbiosis-Lab/moss-releases/releases/latest/download/moss.dmg)
+[申請測試版](#青苔正在封閉測試)
 [文件](docs/)
 :::
-
-目前為測試版軟體。請通過 [issue](https://github.com/Symbiosis-Lab/moss-releases/issues) 或者[郵件](mailto:hi@symbiosis-lab.org)告訴我們你的想法。
 
 :::grid 3
 **本機寫作**
@@ -49,3 +47,15 @@ Markdown 檔案。使用內建編輯器、Obsidian、或者任何軟體。
 ## 無限擴充
 
 透過 CSS 和 JavaScript 自訂設計，透過指令碼外掛自訂編譯流程。CLI 支援自動化和 CI 整合。詳見[擴充](docs/extend/)。
+
+## 青苔正在封閉測試
+
+我們正在分批邀請寫作者，一邊打磨細節。
+留下你的郵箱，等到你那一批，我們會發送一份建構版本，通常在報名後幾週內。
+
+:::subscribe
+description: 一封郵件。沒有電子報，沒有行銷。只在有新版本時聯絡你。
+button: 申請測試
+:::
+
+如果你只想遠遠看看，發佈版在 [GitHub](https://github.com/Symbiosis-Lab/moss-releases) 上，回饋郵箱 [hi@symbiosis-lab.org](mailto:hi@symbiosis-lab.org)。
