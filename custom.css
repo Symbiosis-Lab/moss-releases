@@ -4,6 +4,27 @@
   --moss-content-width: 72ch;
 }
 
+/* Beta badge — inline superscript after site name */
+.site-name::after {
+  content: "BETA";
+  font-size: 0.45em;
+  font-weight: 600;
+  background: var(--moss-accent);
+  color: var(--moss-color-bg, #faf8f5);
+  padding: 1px 6px;
+  border-radius: 8px;
+  margin-left: 0.3em;
+  vertical-align: super;
+  letter-spacing: 0.5px;
+}
+
+/* Muted footnote below download buttons — left-aligned to match buttons */
+.moss-buttons + p {
+  font-size: 0.8rem;
+  color: var(--moss-color-muted, #9b9590);
+  margin-top: 0.5rem;
+}
+
 .nav-content {
   border-bottom: none;
 }
@@ -54,12 +75,12 @@ header {
   opacity: 0.3;
 }
 
-/* Warm color wash — subtle warm tint over everything including images.
-   Simulates the slight amber cast of sunlight on a screen outdoors. */
+/* Warm color wash — barely perceptible amber tint.
+   Just enough to unify the page under a warm light without yellowing text. */
 #sunlight-wash {
   position: fixed;
   inset: 0;
-  background: rgba(255, 200, 100, 0.04);
+  background: rgba(255, 210, 120, 0.02);
   mix-blend-mode: multiply;
   pointer-events: none;
   z-index: 998;

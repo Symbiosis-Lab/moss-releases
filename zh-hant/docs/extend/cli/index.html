@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deploy - moss</title>
-    <meta name="description" content="Publish your site to GitHub Pages.">
+    <title>命令列 - 青苔</title>
+    <meta name="description" content="用於測試和自動化的命令列介面。">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Deploy">
-    <meta property="og:url" content="/docs/deploy/">
-    <meta property="og:site_name" content="moss">
-    <meta property="og:description" content="Publish your site to GitHub Pages.">
+    <meta property="og:title" content="命令列">
+    <meta property="og:url" content="/zh-hant/docs/extend/cli/">
+    <meta property="og:site_name" content="青苔">
+    <meta property="og:description" content="用於測試和自動化的命令列介面。">
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Deploy",
-  "url": "/docs/deploy/",
-  "description": "Publish your site to GitHub Pages.",
+  "headline": "命令列",
+  "url": "/zh-hant/docs/extend/cli/",
+  "description": "用於測試和自動化的命令列介面。",
   "publisher": {
     "@type": "Organization",
-    "name": "moss"
+    "name": "青苔"
   }
 }
 </script>
@@ -35,35 +35,43 @@ document.querySelectorAll('[data-track]').forEach(function(el){el.addEventListen
     <header>
         <nav class="main-nav container">
             <div class="nav-content">
-                <div class="nav-left"><a href="/" class="site-name"><img class="site-logo" src="/assets/logo.svg" alt="" aria-hidden="true">moss</a><span class="breadcrumb-separator">/</span><a href="/docs/" class="breadcrumb-segment">Documentation</a></div><div class="nav-right"><div class="nav-icons"><div class="nav-lang-toggle" aria-label="Language"><span class="nav-lang-current">EN</span> / <a href="/zh-hans/docs/deploy/" class="nav-lang-link" hreflang="zh-hans">简</a> / <a href="/zh-hant/docs/deploy/" class="nav-lang-link" hreflang="zh-hant">繁</a></div><button class="nav-theme-btn" type="button" aria-label="Toggle theme" onclick="toggleTheme()"><svg class="theme-toggle-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="1em" height="1em" fill="currentColor" stroke-linecap="round" viewBox="0 0 32 32"><clipPath id="theme-toggle__classic__cutout"><path d="M0-5h30a1 1 0 0 0 9 13v24H0Z"/></clipPath><g clip-path="url(#theme-toggle__classic__cutout)"><circle cx="16" cy="16" r="9.34"/><g stroke="currentColor" stroke-width="1"><path d="M16 5.5v-4"/><path d="M16 30.5v-4"/><path d="M1.5 16h4"/><path d="M26.5 16h4"/><path d="m23.4 8.6 2.8-2.8"/><path d="m5.7 26.3 2.9-2.9"/><path d="m5.8 5.8 2.8 2.8"/><path d="m23.4 23.4 2.9 2.9"/></g></g></svg></button></div></div>
+                <div class="nav-left"><a href="/zh-hant/" class="site-name"><img class="site-logo" src="/assets/logo.svg" alt="" aria-hidden="true">青苔</a><span class="breadcrumb-separator">/</span><a href="/zh-hant/docs/" class="breadcrumb-segment">文件</a><span class="breadcrumb-separator">/</span><a href="/zh-hant/docs/extend/" class="breadcrumb-segment">擴充</a></div><div class="nav-right"><div class="nav-icons"><div class="nav-lang-toggle" aria-label="Language"><span class="nav-lang-current">繁</span> / <a href="/zh-hans/docs/extend/cli/" class="nav-lang-link" hreflang="zh-hans">简</a> / <a href="/docs/extend/cli/" class="nav-lang-link" hreflang="en">EN</a></div><button class="nav-theme-btn" type="button" aria-label="Toggle theme" onclick="toggleTheme()"><svg class="theme-toggle-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="1em" height="1em" fill="currentColor" stroke-linecap="round" viewBox="0 0 32 32"><clipPath id="theme-toggle__classic__cutout"><path d="M0-5h30a1 1 0 0 0 9 13v24H0Z"/></clipPath><g clip-path="url(#theme-toggle__classic__cutout)"><circle cx="16" cy="16" r="9.34"/><g stroke="currentColor" stroke-width="1"><path d="M16 5.5v-4"/><path d="M16 30.5v-4"/><path d="M1.5 16h4"/><path d="M26.5 16h4"/><path d="m23.4 8.6 2.8-2.8"/><path d="m5.7 26.3 2.9-2.9"/><path d="m5.8 5.8 2.8 2.8"/><path d="m23.4 23.4 2.9 2.9"/></g></g></svg></button></div></div>
             </div>
         </nav>
     </header>
 
     <main>
         <article class="container">
-            <h1 class="article-title">Deploy</h1>
+            <h1 class="article-title">命令列</h1>
             
             
-            <h2 id="prerequisites">Prerequisites</h2><ul>
-<li>A GitHub account</li>
-<li>A GitHub repository (public or private)</li>
-</ul>
-<h2 id="setup">Setup</h2><ol start="1">
-<li>Open your folder in moss.</li>
-<li>Click the settings icon in the toolbar.</li>
-<li>Under "Publishing", click "Connect GitHub".</li>
-<li>Authorize moss via GitHub's device flow — a code appears in moss; enter it on GitHub when prompted.</li>
-<li>Select the repository to deploy to.</li>
-</ol>
-<h2 id="deploy">Deploy</h2><p>Click the deploy button. The first deploy takes about a minute — moss creates a GitHub Actions workflow automatically. Subsequent deploys are faster.</p><p>moss commits your compiled site, pushes to the repository, and GitHub Actions deploys it to GitHub Pages.</p><p><strong>Plugin settings:</strong></p><table>
-<thead><tr><th>Setting</th><th>Default</th><th>Description</th></tr></thead><tbody>
+            <h2 id="指令">指令</h2><table>
+<thead><tr><th>指令</th><th>說明</th></tr></thead><tbody>
 <tr>
-<td><code>auto_commit</code></td><td><code>true</code></td><td>Automatically commit changes on deploy</td></tr>
+<td><code>moss preview &lt;folder&gt;</code></td><td>開啟資料夾進行預覽，監看檔案變更並即時重載</td></tr>
 <tr>
-<td><code>video_max_size_mb</code></td><td><code>75</code></td><td>Maximum video file size for deployment</td></tr>
+<td><code>moss compile &lt;folder&gt;</code></td><td>將資料夾編譯為靜態網站（輸出至 <code>.moss/site/</code>）</td></tr>
+<tr>
+<td><code>moss compile &lt;folder&gt; --serve</code></td><td>編譯後啟動本機 HTTP 伺服器</td></tr>
+<tr>
+<td><code>moss compile &lt;folder&gt; --watch</code></td><td>編譯後監看檔案變更</td></tr>
+<tr>
+<td><code>moss compile &lt;folder&gt; --no-plugins</code></td><td>編譯時不執行外掛</td></tr>
+<tr>
+<td><code>moss deploy &lt;folder&gt;</code></td><td>部署到已設定的託管平臺</td></tr>
 </table>
-<h2 id="custom-domain">Custom domain</h2><p>Set a custom domain in your GitHub repository settings under <strong>Pages → Custom domain</strong>. You can also configure it directly in moss's domain settings.</p><h2 id="what's-next">What's next</h2><p>Zero-config deploy to moss.host is planned — no GitHub account required.</p>
+<h2 id="ci-與自動化">CI 與自動化</h2><p>moss 可以在無介面的環境下運行——不需要 GUI：</p><pre><code class="language-bash">moss compile /path/to/folder --no-plugins
+</code></pre>
+<p>編譯輸出是完整的靜態網站，位於 <code>.moss/site/</code>——標準的 HTML、CSS 和 JS，可以部署到任何地方。</p><h2 id="開發">開發</h2><p>供 moss 本身的貢獻者使用：</p><pre><code class="language-bash"># 啟動開發伺服器，支援即時重載
+npm run dev
+
+# 透過命令列預覽資料夾（路由到正在運行的開發實例）
+npm run moss -- preview ~/Sites/my-blog
+
+# 不重啟即切換資料夾
+npm run moss -- preview ~/Sites/other-folder
+</code></pre>
+<p>單一實例外掛會將命令列指令路由到正在運行的開發實例，讓你快速切換資料夾而無需重新編譯。</p>
             
         </article>
         
