@@ -14,11 +14,9 @@ A desktop app that turns your folder of markdown files into a website.
 Right-click → your site is live.
 
 :::buttons
-[Download for macOS](https://github.com/Symbiosis-Lab/moss-releases/releases/latest/download/moss.dmg)
+[Request beta access](#moss-is-in-closed-beta)
 [Documentation](docs/)
 :::
-
-This is beta software still in testing. Please submit [an issue](https://github.com/Symbiosis-Lab/moss-releases/issues) or send us [an email](mailto:hi@symbiosis-lab.org) to let us know what you think.
 
 :::grid 3
 **Write**
@@ -32,7 +30,7 @@ Select your folder in Finder. Click "Publish with moss."
 ---
 **Done**
 
-Your site is live. Navigation, styling, dark mode — all handled.
+Your site is live. Navigation, styling, dark mode, all handled.
 :::
 
 ## Your files, your site
@@ -50,3 +48,15 @@ Videos, images, HTML, Jupyter notebooks. Drop them in the folder, moss handles t
 ## Fully extensible
 
 Customize with CSS and JavaScript. Build plugins by dropping scripts into a folder. moss also works as a CLI for automation and CI. See [Extend](docs/extend/) for details.
+
+## moss is in closed beta
+
+We're inviting writers in waves while we sand the rough edges.
+Leave your email and we'll send a build when it's your turn, usually within a few weeks of signing up.
+
+:::subscribe
+description: One email. No newsletter, no marketing. We write only when there's a build for you.
+button: Request access
+:::
+
+If you'd rather just watch from a distance, the releases are on [GitHub](https://github.com/Symbiosis-Lab/moss-releases) and you can send notes to [hi@symbiosis-lab.org](mailto:hi@symbiosis-lab.org).
