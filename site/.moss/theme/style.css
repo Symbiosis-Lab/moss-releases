@@ -33,6 +33,16 @@ header {
   padding-bottom: var(--moss-space-lg);
 }
 
+/* Footer: smaller text sitting close to the divider.
+   Default moss footer renders at body font-size with an xs-rem gap below
+   the divider; on the releases site we want a tighter, lower-key footer. */
+footer.container::before {
+  margin-bottom: 0.25rem;
+}
+footer.container > * {
+  font-size: 0.8em;
+}
+
 /* ── Sunlight theme — "kindle under sunlight" ambient mode ──
    Activated by script.js via data-theme="sunlight" on <html>.
    Extends light color scheme with warmer tones. */
