@@ -2,6 +2,154 @@
 
 All notable changes to moss will be documented here.
 
+## [0.6.4] - 2026-05-02
+
+### Added
+- drive heading element from compute_heading_state
+- compute heading state in Rust as single source of truth
+- verbatim authored surface — strip slot chrome
+- preserve filename case verbatim, mirror Rust pipeline
+- preserve filename case verbatim, drop per-word title-casing
+- strip ASCII punctuation, collapse hyphens, trim per segment
+- heading element bound to filename, rename + breadcrumb trim coupled to heading: bool
+- dblclick folder rows to rename
+- drop .md from tree filenames, dim suffix for other types
+- add pinned heading element above CM6
+- thicken divider hairline 1px → 2px
+- auto-H1 uses filename, gated on heading: false (not title="")
+- add heading: Option<bool> frontmatter field
+- rewrite title cascade as strict contract
+- add dedup_leading_h1 helper
+- add has_h1_in_hero helper
+- wire cover resolver and favicon rasterizer into pipeline
+- move date row + reading prefs below the title block
+- inject site meta defaults into bundled SPA index.html
+- generate auto OG card per page when no frontmatter cover
+- wire canonical link and twitter card tags into templates
+- auto-inject article H1 from title or filename
+- canonical URL helper enforcing www-prefix for purchased domains
+- og:locale, og:image dimensions, twitter card tags
+- add inject_article_title_h1 helper
+- rasterize favicon to PNG (16/32/180), letter-mark fallback
+- auto-generated OG card via resvg (1200x630, content-hashed)
+- cover-image fallback chain (frontmatter → body → card)
+- emit mode-tagged manifest entries + upload symlinks
+- resolve macOS Finder Aliases as URL aliases
+- resolve macOS Bookmark alias files via CoreFoundation
+- detect macOS Bookmark Data alias files by magic
+- clean up stale symlinks between builds
+- preserve symlinks during asset copy
+- scaffold symlink preservation module
+- default 16/9 aspect-ratio for html iframe embeds
+- guard against author-written moss-newtab: literal
+- asset links open in new tab
+- synchronously prewarm link-meta before render in CLI mode
+- redesign bare-URL link preview, scope global img rule
+- inherit doc language from ancestor lang folder
+- wire frontend panel + Tauri commands
+- user-note dialog + build provenance + retention bumps
+- client-side state machine for deployment setup tracking
+- expand file-tree context menus + fix breadcrumb right-click
+- surface ticket id + Error.name preservation test
+- structured payment warns + console+uncaught bridge
+- v1 to v2 migration promotes per-service sections to [services.<kind>]
+- add Delete and Reveal to file-tree context menus
+- introduce PageKind { Article, Folder, Asset }
+- route [text](target) links through ContentGraph
+- fake scrollbar below titlebar clearance zone
+
+### Fixed
+- move generate-bindings outside src/bin/ to dodge Tauri disk scan
+- auto-inject moss-hosted subscribe form only when no footer.md
+- comments require explicit opt-in on every host
+- dblclick on breadcrumb segs starts inline rename
+- address review — race guard, focus guard, error log, more tests
+- always show current file in breadcrumb
+- render at default body font-size
+- align divider with body text on all viewports
+- align divider with body content extent (not article outer box)
+- skip pageview beacon while serving preview
+- move font-size to children — fixes ch-unit max-width shrink
+- tighten default chrome — smaller, closer to divider, left-aligned
+- restore default chrome (divider + muted) on footer.container
+- emit subscribe landing pages for all moss-deployed sites
+- is_close_fence panics on multi-byte UTF-8 lines
+- sweep unresolved href prefixes from shortcode-emitted HTML
+- apply P1 findings from final review round
+- hydration + button-state CSS lost track of moss-subscribe-form rename
+- honor [services.comments] enabled = false
+- close listen-during-stop race + parity polish
+- derive deployment tab dot from live setup snapshot
+- apply review feedback for change-card swap
+- don't flash "Processing..." on submit while swapping card
+- apply followup-PR review feedback
+- hrefs/title-h1 in draft + titlebar strip painted
+- heading polish — no hover/focus chrome; show file in expanded tree
+- heading sits above CM6 content (flex-direction column)
+- apply code/arch review feedback
+- heading scrolls with markdown body (re-parent into cm-scroller)
+- syndicate strictly post-deploy + path/heartbeat/titlebar fixes
+- heading resolves index→parent-folder; remove dead cascade entry
+- preserve body-H1 → title fallback for index pages
+- force no-drag on nav pill descendants
+- gate generate-bindings bin behind dev-tools feature
+- emit <video src=> so .mov→.mp4 rewriter matches
+- inject title above buried section H1s; tighten date spacing
+- inject favicon link into bundled SPA <head>
+- keep frontmatter chips in sync with the .md file
+- skip empty meta tags; document no-head SPA passthrough
+- walk scan limit to char boundary in inject_shell_frame_class
+- regression tests + twitter alt for auto OG card
+- gate injection on raw <h1 presence, not extract_h1_only
+- make generate-bindings compile in release mode
+- skip og:locale when locale is blank; doc twitter alt fallback
+- guard og_card against long titles and bad color input
+- make generate-bindings compile in release mode
+- sort grid-style child cards by url_path when not pre-sorted
+- tied weights fall through to alphabetical for cross-platform determinism
+- second round of CI fixes for v0.6.4
+- CI failures on v0.6.4 release PR
+- final review fixes (SAFETY comments, non-macOS alias warn)
+- address initial review I1+I2 (live_symlinks invariant, sync_dir partial-failure)
+- preserve symlinks through stage→site sync
+- detect local iframes with query strings or fragments
+- address review of CLI link-meta prewarm
+- make non-page-map asset hrefs root-aware
+- add 1px border to .link-preview for dark-mode legibility
+- address review of 021f09e8b
+- promote translationKey:home to folder index (closes #587)
+- preserve query string through resolve_link
+- preserve query string in markdown link resolution
+- address review findings on link-preview redesign
+- trim archeology comment after dual-walk removal
+- media files in assets/ folders reach variant pipeline
+- widen detect_project_lang sample size from 5 to 20
+- emit `<html lang>` per page, not site default
+- thread site_lang through build pipeline (closes #545)
+- eliminate 48px chrome-clearance flash on iframe load
+- backfill first_checking_at on resume for legacy state.toml
+- prefer extension-matching candidates in resolve_path tiebreaker
+- R4 review fixes — recheck Noop debounce, defensive bounds
+- no em-dash in user-facing cert copy; clear streak on recheck
+- replace --moss-chrome-top var probe with class toggle
+- file-tree scrollbar only on overflow + match breadcrumb spacing
+- tighten pi16 assertions, expand PII denylist
+- respect chrome-top safe area in mobile header padding
+- call elements.submit() before stripe.confirmPayment()
+- suppress Metadata(Any) events on directories to break iCloud rebuild loop
+- restore top clearance under floating titlebar via opt-in CSS var
+- add Debug+PartialEq to VideoConversionOutcome, update pipeline singleflight test
+- restore test-build by using crate:: paths in relocated asset tests
+- collection card cover owns geometry, children fill absolutely
+- address code-review findings on file-tree delete
+- update sync test to use skip_schema field name
+- filter children listings by PageKind
+- recognize nested callouts
+- render inline markdown in first paragraph; close divs at column 0
+- parse ![](path) markdown image syntax inside :::gallery
+- grant CodeQL actions:read for telemetry API
+
+
 ## [0.6.3] - 2026-04-23
 
 ### Added
