@@ -180,11 +180,6 @@ Auto-generated components use stable `.moss-*` class names. Target these in your
 | `.moss-gallery` | Gallery container (`:::gallery`) |
 | `.moss-gallery-item` | Individual gallery image |
 
-### Table of contents shortcode
-
-| Class | Element |
-|-------|---------|
-
 ### Callouts
 
 | Class | Element |
