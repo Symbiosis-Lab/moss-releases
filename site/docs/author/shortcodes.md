@@ -13,7 +13,7 @@ Shortcodes are special blocks in your markdown that create layouts and component
 ```markdown
 :::grid 2
 Column one content.
----
++++
 Column two content.
 :::
 ```
@@ -47,21 +47,21 @@ A multi-column layout. Specify the number of columns and optionally a ratio.
 ```markdown
 :::grid 3
 First column.
----
++++
 Second column.
----
++++
 Third column.
 :::
 ```
 
-Cells are separated by `---`. The number after `grid` sets the column count.
+Cells are separated by `+++`. The number after `grid` sets the column count.
 
 **With ratio control:**
 
 ```markdown
 :::grid 2 1:2
 Narrow sidebar.
----
++++
 Wide main content area.
 :::
 ```
@@ -71,16 +71,16 @@ Wide main content area.
 ```markdown
 :::grid 3 {.profiles .featured}
 Team member one.
----
++++
 Team member two.
----
++++
 Team member three.
 :::
 ```
 
 ### Grid cell content
 
-Cells are separated by `---` on its own line. Each cell is markdown — headings, paragraphs, lists, images, links, all work as usual.
+Cells are separated by `+++` on its own line. Each cell is markdown — headings, paragraphs, lists, images, links, all work as usual.
 
 Cells automatically recognize and render:
 
@@ -98,11 +98,11 @@ A grid cell whose substantive content is exactly one markdown link is rendered a
 ```markdown
 :::grid 3
 [MDN](https://developer.mozilla.org)
----
++++
 [Rust](https://rust-lang.org)
 
 A memory-safe systems language.
----
++++
 [GitHub](https://github.com)
 :::
 ```
@@ -114,7 +114,7 @@ A memory-safe systems language.
 [![[poster-farewell.webp]]
 #### Farewell, and Erase
 A multilingual ethnodrama · May 2026](/farewell)
----
++++
 [![[daowu-home.jpg]]
 #### A House of Daowu
 Miao-language community theatre](/daowu)
@@ -139,9 +139,9 @@ A `:::grid N` cell whose only content is an internal link to a **known folder** 
 ```markdown
 :::grid 3
 [[work]]
----
++++
 [[essays]]
----
++++
 [[archive]]
 :::
 ```
@@ -153,9 +153,9 @@ This is the default behavior and usually what you want for section-index pages.
 ```markdown
 :::grid 3 {.no-cards}
 [[work]]
----
++++
 [[essays]]
----
++++
 [[archive]]
 :::
 ```
@@ -180,9 +180,9 @@ CSS targets:
 ```markdown
 :::grid 3 2:1:1
 Wide left.
----
++++
 Narrow middle.
----
++++
 Narrow right.
 :::
 ```
@@ -246,15 +246,6 @@ Optionally specify a column count:
 :::
 ```
 
-## Table of contents
-
-Insert a table of contents generated from the page's headings.
-
-```markdown
-:::toc
-:::
-```
-
 ## Buttons
 
 A styled row of buttons from markdown links. The first link becomes the primary button; the rest are secondary.
@@ -298,7 +289,7 @@ When you need a layout beyond the built-in shortcodes — a two-column split, an
 # Pitch
 
 Main content area — headings, paragraphs, images, anything.
----
++++
 Sidebar with call-outs or metadata.
 :::
 ```
@@ -333,7 +324,7 @@ Add custom CSS classes to any shortcode block using `{.class}` syntax:
 ```markdown
 :::grid 2 {.comparison}
 Before
----
++++
 After
 :::
 ```

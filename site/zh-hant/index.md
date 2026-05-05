@@ -1,12 +1,12 @@
 ---
-title: 青苔
-nav: false
-lang: zh-hant
-children: false
-description: 從資料夾到網站
 logo: assets/logo.svg
-uid: 2f17d02a
+children: false
+nav: false
 translationKey: homepage
+uid: 2f17d02a
+description: 從資料夾到網站
+title: 青苔
+lang: zh-hant
 ---
 
 # 隨處書寫，隨處發佈。一切由你掌控。
@@ -22,11 +22,11 @@ translationKey: homepage
 **本機寫作**
 
 Markdown 檔案。使用內建編輯器、Obsidian、或者任何軟體。
----
++++
 **右鍵發佈**
 
 預覽、確認、發佈。同步到各平台。
----
++++
 **獨立網站**
 
 選擇託管服務。購買網域，或者使用預設網域。
@@ -53,9 +53,9 @@ Markdown 檔案。使用內建編輯器、Obsidian、或者任何軟體。
 我們正在分批邀請寫作者，一邊打磨細節。
 留下你的郵箱，等到你那一批，我們會發送一份建構版本，通常在報名後幾週內。
 
-:::subscribe
-description: 一封郵件。沒有電子報，沒有行銷。只在有新版本時聯絡你。
-button: 申請測試
+僅一封郵件：只在有新版本時聯絡你。
+
+:::subscribe {button="申請測試"}
 :::
 
 如果你只想遠遠看看，發佈版在 [GitHub](https://github.com/Symbiosis-Lab/moss-releases) 上，回饋郵箱 [hi@symbiosis-lab.org](mailto:hi@symbiosis-lab.org)。
