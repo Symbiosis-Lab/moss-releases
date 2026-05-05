@@ -14,7 +14,7 @@ lang: zh-hant
 ```markdown
 :::grid 2
 第一欄內容。
----
++++
 第二欄內容。
 :::
 ```
@@ -48,21 +48,21 @@ lang: zh-hant
 ```markdown
 :::grid 3
 第一欄。
----
++++
 第二欄。
----
++++
 第三欄。
 :::
 ```
 
-欄位之間用 `---` 分隔，`grid` 後面的數字是欄數。
+欄位之間用 `+++` 分隔，`grid` 後面的數字是欄數。
 
 **指定比例：**
 
 ```markdown
 :::grid 2 1:2
 窄的側欄。
----
++++
 寬的主內容區。
 :::
 ```
@@ -72,9 +72,9 @@ lang: zh-hant
 ```markdown
 :::grid 3 {.profiles .featured}
 成員一。
----
++++
 成員二。
----
++++
 成員三。
 :::
 ```
@@ -108,15 +108,6 @@ lang: zh-hant
 ![](photo1.jpg)
 ![](photo2.jpg)
 ![](photo3.jpg)
-:::
-```
-
-## 目錄
-
-根據頁面標題自動產生目錄。
-
-```markdown
-:::toc
 :::
 ```
 
@@ -168,7 +159,7 @@ lang: zh-hant
 ```markdown
 :::grid 2 {.comparison}
 之前
----
++++
 之後
 :::
 ```

@@ -15,7 +15,7 @@ Control each page with [[frontmatter]] — title, date, visibility, and more. Ad
 When a page needs a specific visual treatment, try in this order:
 
 1. **Plain markdown + CSS selector.** Use `## Mission`, `> quote`, `*byline*`, `- item`. Let the theme select the resulting HTML. Zero new vocabulary.
-2. **A moss-native shortcode.** `:::grid N`, `::::buttons`, `:::hero`, `:::gallery`, `:::toc`, `> [!pending]`. These emit well-known class names that the default theme already styles. See [[shortcodes]].
+2. **A moss-native shortcode.** `:::grid N`, `::::buttons`, `:::hero`, `:::gallery`, `> [!pending]`. These emit well-known class names that the default theme already styles. See [[shortcodes]].
 3. **Named-class fenced div.** `::: {.class}` attaches a CSS class to a region without introducing a new shortcode. Pair with a CSS rule in `.moss/theme/style.css`. See [[shortcodes#Named-class fenced divs]].
 4. **Custom shortcode.** Rare; only when you need new behavior the parser doesn't already support.
 

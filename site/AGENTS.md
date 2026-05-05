@@ -32,6 +32,8 @@ When a design call requires a visual treatment, try in this order:
 - **Single-link grid cells wrap in `<a>`.** A cell containing only `[…](url)` — whether the link text is inline or compound block content (image + heading + paragraph separated by blank lines) — becomes one `<a>` with block-level children. Do not hand-write `<a>` wrappers.
 - **`.no-cards` opts out of folder-link auto-conversion.** Use `:::grid N {.no-cards}` for navigation grids, mixed-content grids, or compound-link grids where cells should render as `.link-card` / `.friend-card` rather than collection cards.
 - **Pandoc-style heading/paragraph/hr attributes do NOT parse.** `# Title {.class}`, `paragraph\n{.class}`, and `---\n{.section-divider}` are not supported. Use `::: {.class}` fenced divs or CSS selectors on element structure instead.
+- **Cell divider is `+++`, not `---`.** `:::grid` and `:::buttons` separate cells with a line of `+++`. `---` is the CommonMark thematic break and never a moss control character. Bodies without `+++` are a single cell — backward-compatible with one-link-per-line buttons.
+- **Configuration goes in `{}`, not in body.** `:::subscribe {placeholder="…" button="…"}` not body lines. `:::grid {cols=2}` or positional `:::grid 2`. Description text and any framing prose are written as ordinary markdown above and around the shortcode.
 - **Arity rule for nested fenced divs.** Inner fence uses more colons than outer: `:::` contains `::::` contains `:::::`. The bare close of each fence must match the opener's colon count. Same-arity nesting emits a warning and renders as literal text.
 - **Frontmatter is a fixed schema.** Arbitrary custom fields are silently ignored. `description:` is for SEO/previews only — it is not rendered as a visible page deck. Decks use `> blockquote` immediately after `# H1`.
 - **Wikilink language-tree resolution.** `![[page]]` inside `zh-hans/file.md` prefers `zh-hans/page.md` over root `page.md`. Use an explicit path prefix (`![[zh-hans/page]]`) to override.
@@ -53,3 +55,5 @@ When a design call requires a visual treatment, try in this order:
 - [[wikilinks-and-embeds]] — image wikilinks, partial transclusion
 - [[callouts]] — `> [!note]` blockquote variants
 - [[frontmatter]] — all recognized metadata fields
+
+The full grammar reference (attribute parser, cell divider, unknown-name fallback, escape rules) lives in moss's `docs/architecture/shortcode-grammar.md`.

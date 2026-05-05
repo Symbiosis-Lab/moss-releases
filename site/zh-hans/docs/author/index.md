@@ -16,7 +16,7 @@ lang: zh-hans
 页面需要特定视觉处理时，按以下优先级尝试：
 
 1. **纯 markdown + CSS 选择器。** 使用 `## 标题`、`> 引用`、`*署名*`、`- 列表项`，让主题根据生成的 HTML 来应用样式。零额外语法。
-2. **moss 原生短代码。** `:::grid N`、`::::buttons`、`:::hero`、`:::gallery`、`:::toc`、`> [!pending]`。这些短代码生成固定的类名，默认主题已经有对应样式。参见 [[shortcodes]]。
+2. **moss 原生短代码。** `:::grid N`、`::::buttons`、`:::hero`、`:::gallery`、`> [!pending]`。这些短代码生成固定的类名，默认主题已经有对应样式。参见 [[shortcodes]]。
 3. **命名类围栏分区。** `::: {.class}` 为一个区域附加 CSS 类，无需引入新短代码。配合 `.moss/theme/style.css` 中的 CSS 规则使用。参见 [[shortcodes#Named-class fenced divs]]。
 4. **自定义短代码。** 较少见；仅在需要解析器尚不支持的新行为时使用。
 

@@ -14,7 +14,7 @@ lang: zh-hans
 ```markdown
 :::grid 2
 第一栏内容。
----
++++
 第二栏内容。
 :::
 ```
@@ -48,21 +48,21 @@ lang: zh-hans
 ```markdown
 :::grid 3
 第一栏。
----
++++
 第二栏。
----
++++
 第三栏。
 :::
 ```
 
-用 `---` 分隔各栏。`grid` 后面的数字指定列数。
+用 `+++` 分隔各栏。`grid` 后面的数字指定列数。
 
 **自定义比例：**
 
 ```markdown
 :::grid 2 1:2
 窄侧边栏。
----
++++
 宽主内容区。
 :::
 ```
@@ -72,9 +72,9 @@ lang: zh-hans
 ```markdown
 :::grid 3 {.profiles .featured}
 成员一。
----
++++
 成员二。
----
++++
 成员三。
 :::
 ```
@@ -97,11 +97,11 @@ lang: zh-hans
 ```markdown
 :::grid 3
 [MDN](https://developer.mozilla.org)
----
++++
 [Rust](https://rust-lang.org)
 
 一门内存安全的系统语言。
----
++++
 [GitHub](https://github.com)
 :::
 ```
@@ -113,7 +113,7 @@ lang: zh-hans
 [![[poster-farewell.webp]]
 #### 改删别姬
 多语言民族志戏剧 · 2026 年 5 月](/farewell)
----
++++
 [![[daowu-home.jpg]]
 #### 棹乌之家
 苗语社区戏剧](/daowu)
@@ -138,9 +138,9 @@ lang: zh-hans
 ```markdown
 :::grid 3
 [[work]]
----
++++
 [[essays]]
----
++++
 [[archive]]
 :::
 ```
@@ -152,9 +152,9 @@ lang: zh-hans
 ```markdown
 :::grid 3 {.no-cards}
 [[work]]
----
++++
 [[essays]]
----
++++
 [[archive]]
 :::
 ```
@@ -179,9 +179,9 @@ CSS 目标选择器：
 ```markdown
 :::grid 3 2:1:1
 左宽。
----
++++
 中窄。
----
++++
 右窄。
 :::
 ```
@@ -245,15 +245,6 @@ div 内部按完整 markdown 渲染——标题、列表、图片、链接，甚
 :::
 ```
 
-## 目录
-
-插入由页面标题自动生成的目录。
-
-```markdown
-:::toc
-:::
-```
-
 ## Buttons
 
 将 markdown 链接渲染为按钮行。第一个链接是主按钮，其余为次要按钮。
@@ -295,7 +286,7 @@ div 内部按完整 markdown 渲染——标题、列表、图片、链接，甚
 # 主旨
 
 主内容区——标题、段落、图片，随你放。
----
++++
 侧边栏，放标注或元数据。
 :::
 ```
@@ -360,7 +351,7 @@ grid 容器渲染为 `<div class="moss-grid two-col-split">`，你的类名与�
 ```markdown
 :::grid 2 {.comparison}
 之前
----
++++
 之后
 :::
 ```

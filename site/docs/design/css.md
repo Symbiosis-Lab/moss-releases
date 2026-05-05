@@ -184,7 +184,6 @@ Auto-generated components use stable `.moss-*` class names. Target these in your
 
 | Class | Element |
 |-------|---------|
-| `.moss-toc` | TOC container (`:::toc`) |
 
 ### Callouts
 
