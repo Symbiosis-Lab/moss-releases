@@ -2,6 +2,149 @@
 
 All notable changes to moss will be documented here.
 
+## [0.6.5] - 2026-05-12
+
+### Added
+- migrate non-normalized hashes.json keys on load
+- add typed OutputPath newtype enforcing slug normalization
+- migrate non-normalized hashes.json keys on load
+- add typed OutputPath newtype enforcing slug normalization
+- debug-assert catches missed source_to_output registration
+- prepend folder-title h1 when folder index has no cover
+- emit semantic h1 via folder_title helper
+- add folder_title helper
+- promote series-nav to sibling of <article> so the comment toggle hugs its divider
+- breadcrumb extension hiding, flex layout, no horizontal overflow
+- five-zone tree sort with publish-date and folder recency
+- add read_frontmatter_only helper for tree construction
+- DateSource enum, resolve_publish_date helper, TreeNode publish_date fields
+- add date_from_filename_prefix primitive
+- add date_from_frontmatter primitive
+- mirror divider gap above toggle, drop "0" prefix at zero count
+- drain pending_renames + suppress shadowed deleted_paths
+- push old/new pair to pending_renames after fs::rename succeeds
+- add pending_renames queue to RebuildState
+- bump summary-card type ladder to 1.125 / 1 / 0.875rem
+- dual-mode heading commit routed by HeadingSource
+- FormRenderer.setFieldValue (empty-preserving)
+- pipeline + editor backend through compute()
+- unify children/sidebar feed family with location + limit
+- drop heading: frontmatter field
+- consolidate title resolution + body-based hero detection
+- folder cards consume scan-cached dominant color
+- auto-inject Buttondown form on self-hosted with api_key
+- default order — links above auto-injected subscribe form
+- tab visibility tracks section registration
+- default-hidden tabs + setAvailable API
+- emit <link rel=alternate hreflang> in <head>
+- add build_hreflang_link_tags helper
+- Pandoc-style implicit figures + uniform empty-alt guard
+- deprecation warnings + stale comment cleanup (#613)
+- add thumb-swap.js for missing-thumbnail fallback
+- ship pass + restore for_deferred dual-arg + module docs
+- BackgroundHandle materialization barrier
+- ManifestCoordinator + EmitMessage + BuildContext channel form
+- BuildContext emit handle (render-phase forms)
+- PendingManifest/SealedManifest typestate
+- complete Step 2c — delete :::toc, rename shortcode.rs
+- port :::grid to typed AST (Step 2b of #613)
+- port :::hero to typed AST (Step 2 Hero)
+- rename type alias PayloadFor → MossEventOf
+- add onMossEvent helper for typed dispatch
+- derive Clone on MossEvent + drop noise comment
+- add typed MossEvent bus + wrapper
+- migrate :::subscribe to attribute-based config (Task F)
+- pure-CSS regions and unknown-name fallback (Tasks D + E)
+- multi-line attribute blocks in shortcode opener
+- +++ cell divider helper for unified shortcode grammar
+- attribute-block parser for unified shortcode grammar
+- watch channel + set_progress for menu-bar consumers
+- plumb cancel flag into execute_generate_plugin (closes #548 follow-up)
+- wire bridge_call for *ConversionState cancellation
+- cancel asset copy on window close (closes #506)
+- close window immediately, drain JoinSet in background
+- construct FolderSession per open folder, drain on switch
+- add FolderSession with cancel token + JoinSet
+- add TaskSupervisor with typed Detached metadata
+
+### Fixed
+- lowercase-only dir normalization + moss-host CLI deploy bypass
+- address progress panel review feedback
+- preserve filename + jupyter passthrough; filter dotfiles; drop em-dash
+- skip dot-prefixed files in asset copy phase
+- asset link normalization + actionable deploy error
+- asset link normalization + actionable deploy error
+- apply code/arch review feedback
+- pass entityId on embed uploads, mirror cover-upload reorder
+- scope comments override so series-nav→footer keeps 80px gap
+- surface error toast on catastrophic plugin failure
+- drop em-dash from search_domains error toast
+- add breathing room above footer divider (80px)
+- align Buttondown detection with newsletter send routing
+- tighten unified-grid invariant per code+arch review
+- publish click no-ops on article when email channel has no audience
+- drop redundant breadcrumb separator glyph
+- restore unified breadcrumb+tree grid for column alignment
+- byte-safe date parsing, no panic on non-ASCII filenames
+- align series-nav divider with footer divider via ::before pseudo
+- mobile edge-alignment without forced wrap (v3)
+- folder-h1 sources from doc.title to match dedup source
+- address review feedback on mobile edge-alignment
+- index-page dedup so folder-title h1 doesn't duplicate body h1
+- edge-align nav and subscribe form below 32rem
+- sort children by date before take(n) on body listings
+- restore selection→quote→comment float-shell flow
+- clear source_to_output on PendingManifest::new + unify mutex-poison recovery
+- preserve `?query` and `#fragment` in iframe src=
+- bump comment section margin-top selector specificity
+- persist source→output mapping in manifest, drop heuristic guessing
+- resolve hints to output paths via manifest, not extension swap
+- root self-named home file detection (regression)
+- collapse comment toggle flush above footer divider
+- cover picture-wrapped images in figure margin reset
+- address reviewer findings
+- address review feedback on feed consolidation
+- tighten figure-caption spacing, switch to child combinator
+- video covers get dominant color via .thumb.jpg
+- badge corner-positioning works for all callers
+- slugify asset URL directory segments; footer breathing room
+- also slugify Phase 2 cascade prefix; tighten tests + docs
+- slugify folder segments in URL paths
+- restore divider + left alignment when flex-shape rule activates
+- generation counter prevents stale-apply on rapid folder switch
+- tighten ApplyOpts types to match production callers
+- one runProjectOpenHooks call per folder lifecycle
+- make setAvailable a true no-op when visibility unchanged
+- always unlink orphan *.placeholder.svg from output dir
+- center loader by overriding object-position on placeholder swap
+- self-heal fingerprint skip when canonical outputs are missing
+- atomic link_to via temp+rename; sweep stale .tmp siblings
+- loosen figcaption margin to space-sm for adequate visual separation
+- tighten figure caption pairing, restore section-h1 top margin
+- purge stale opt-out narrative + add integration tests
+- empty alt for `![[file]]` no-alias; drop v2→v3 opt-out
+- width-based chip truncation + promote-from-more-menu
+- eager migration + CSS scope + test coverage
+- include `_*` files and percent-encode wikilink asset URLs
+- recurse into CssRegion + Unknown bodies for nested fenced divs
+- drop Option wrapper in #621 variant A test call (post-rebase)
+- defer stale-file cleanup past seal (closes #621)
+- tighten copy_deferred_assets tx parameter to non-Option; clean up stale blocking_insert! comment refs
+- folder_session.rs:33 stale doc reference (post-B rename)
+- restore spinner UX in thumb-swap; clarify Pattern A/E comment
+- unit test + accurate comments for register_with_hash mode-prefix preservation
+- remove SVG placeholder generation (Pattern E, closes #615)
+- rename legacy MossEvent interface; update orchestrator doc comments
+- delete orphan window-resized listener and dead test mock
+- persist SealedManifest after each build (closes B1 from review)
+- use spawn_blocking for image/video dispatch (post-Task 8)
+- use xxHash3 in PendingManifest::register for byte-identical manifests
+- apply Step 2a reviewer feedback (3 blockers + cleanup)
+- shutdown prior session if reg.insert returns a replacement
+- review fixups (DetachedScope on panic, dock icon when detached, runtime consistency, doc comments)
+- align breadcrumb with traffic lights, match preview titlebar height
+
+
 ## [0.6.4] - 2026-05-02
 
 ### Added
