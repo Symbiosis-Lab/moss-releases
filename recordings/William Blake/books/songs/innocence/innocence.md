@@ -1,11 +1,9 @@
 ---
 cover: 01-frontispiece.jpg
-description: Songs of Innocence, 1789. The piping down the valleys wild.
+description: *Songs of Innocence*, 1789. 27 plates.
 children_style: grid
 series: true
 weight: 1
 uid: 8cec444c
-source: To be re-sourced from Library of Congress Copy Z (Rosenwald) for unity of binding with Experience.
+source: Plate scans from earlier provenance (Blake Archive). For reading text see *innocence-text.md* in this folder (Project Gutenberg ebook #1934, public domain).
 ---
-
-I wrote down what the Piper sung to me, & I shewed the plates to a child & a Lamb. The child wept to hear the songs. The plates are in this room. Read them, then walk through to the other half.

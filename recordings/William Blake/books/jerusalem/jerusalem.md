@@ -1,17 +1,12 @@
 ---
-cover: chapter-1-to-the-public/01-frontispiece.jpg
-description: Jerusalem, The Emanation of the Giant Albion. 1804–1820. Four Chapters, one hundred plates.
+description: *Jerusalem, The Emanation of the Giant Albion*, c. 1804–1820. 100 plates in four chapters of 25. Illuminated relief etching.
 children_style: list
 weight: 18
 uid: blk-jerusalem
-source_copy: Copy E (Yale Center for British Art, Mellon gift) — the only fully coloured copy.
+source: Yale Center for British Art, Mellon collection, Copy E — the only fully coloured copy. Image acquisition pending (Yale IIIF endpoint available; not yet harvested). Reading text via Project Gutenberg / Ellis-Yeats.
 plates_pending: 100
 ---
 
-The work of sixteen years. Four Chapters, one hundred plates. Each Chapter opens with an Address — to the Public, to the Jews, to the Deists, to the Christians — & each Address is the doorway.
+The longest of the illuminated books. Four chapters, each opening with a prose Address: *To the Public* (Chapter 1), *To the Jews* (Chapter 2), *To the Deists* (Chapter 3), *To the Christians* (Chapter 4).
 
-I began this in the cottage at Felpham & finish'd it at South Molton Street in the latter year of the long Peace. I sold most copies uncoloured, for I was poor. One copy, fully painted thro' & thro', passed thro' several hands after Catherine's death & sits now at Yale in America.
-
-Read it as you would read a city. Walk the streets. Do not be impatient with the houses you do not enter.
-
-*Of the Sleep of Ulro! and of the passage through Eternal Death! and of the awaking to Eternal Life.*
+Sub-folders correspond to the chapter divisions.

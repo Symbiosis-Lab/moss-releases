@@ -1,19 +1,11 @@
 ---
-title: From the Vala Manuscript
-description: Two Nights from *The Four Zoas*, c. 1796–1807. The work outgrew the manuscript & I poured it into *Milton* & *Jerusalem*.
+description: *Vala, or The Four Zoas*, c. 1796–1807. Unpublished manuscript epic, 9 Nights, ~4000 lines. Manuscript at British Library Add. MS 39764.
 children_style: list
 weight: 5
 uid: blk-vala
-source: Manuscript at British Library (Add. MS 39764). Selections via Ellis & Yeats, *Works of William Blake* (1893), public domain.
+source: Manuscript at British Library. Public-domain text in Ellis & Yeats, *Works of William Blake* vols. II–III (1893).
 ---
 
-*Vala*, or *The Four Zoas*, was the great Epic I undertook in the Lambeth years & worked at through Felpham. I called it first *Vala, a Dream of Nine Nights*, & then I changed the title to *The Four Zoas*. I revised & revised, & at last I let it lie — the work outgrew the manuscript, & I poured the matter into *Milton* & *Jerusalem*.
+Blake worked on *Vala* (later retitled *The Four Zoas*) from c. 1796 through 1807, accumulating multiple states of revision on the same sheets. He never engraved it. Much of its matter was later transposed, with substantial change, into *Milton* and *Jerusalem*.
 
-But the Manuscript contains the Nights in their first heat, & a Reader who loves *Milton* & *Jerusalem* will want to see the furnace they were forged in.
-
-I shew here:
-
-- **Night the First** — the beginning of the long Dream. Tharmas & Enion, the fall of the Four Zoas.
-- **Night the Ninth** — the Last Judgment. The waking of Albion, the burning of Mystery, the great harvest of the Nations.
-
-*(Full transcripts to be drawn from Erdman ed., pp. 297–304 & 386–407.)*
+Full text via Ellis-Yeats (1893) or Erdman (1988); per-Night extraction from primary source pending.

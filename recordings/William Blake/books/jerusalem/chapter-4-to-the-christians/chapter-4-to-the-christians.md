@@ -1,21 +1,11 @@
 ---
-description: Jerusalem, Chapter 4. Plates 76–100. The Address to the Christians.
+description: *Jerusalem*, Chapter 4. Plates 76–100. The Address to the Christians.
 children_style: grid
 series: true
 weight: 4
 uid: blk-jer-ch4
 plates_pending: 25
+source: Plate scans pending from YCBA Copy E. Reading text via public-domain editions (Ellis-Yeats 1893, Project Gutenberg).
 ---
 
-## To the Christians
-
-I give you the end of a golden string,
-Only wind it into a ball:
-It will lead you in at Heavens gate,
-Built in Jerusalems wall.
-
-Devils are False Religions. Saul. Saul. Why persecutest thou me.
-
-*England! awake! awake! awake! Jerusalem thy Sister calls!* Why wilt thou sleep the sleep of death, And close her from thy ancient walls?
-
-[Plates 76–100 to be sourced from YCBA Copy E IIIF — including the great closing plates of the awakening of Albion.]
+*Chapter 4 opens with Blake's printed Address "To the Christians." For the verbatim Address text, consult Erdman, *Complete Poetry and Prose*, pp. 144 (Ch. 1), 171 (Ch. 2), 200 (Ch. 3), 229 (Ch. 4), or the Blake Archive's plate-by-plate transcriptions.*

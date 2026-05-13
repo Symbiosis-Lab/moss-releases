@@ -1,14 +1,20 @@
 ---
 title: Tiriel
-description: A Manuscript of c. 1789, in seven sections, with twelve wash drawings — abandoned, but coherent. Blake's first attempt at an epic.
+description: *Tiriel*, c. 1789. Manuscript narrative poem with twelve wash drawings. Never engraved by Blake. Manuscript text at the Victoria & Albert Museum; drawings dispersed (BM, Yale, V&A). Public-domain transcription below from Ellis & Yeats (1893).
 date: 1789-01-01
 uid: blk-tiriel
 weight: 2
-source: Ellis & Yeats, *Works of William Blake* vol. II (1893). Public domain. OCR via Internet Archive.
-note: Tiriel survives in manuscript at the V&A (text) + drawings at British Museum (9), Yale (2), V&A (1). I cast it off & did not engrave it. It is a Cast Off Garment.
+source: Edwin John Ellis & W. B. Yeats, eds., *The Works of William Blake* vol. II (Bernard Quaritch, 1893), pp. 82–94. Public domain. OCR via Internet Archive worksofwilliambl02blakuoft.
+ocr_note: Light cleanup for spacing and OCR artifacts; the Ellis-Yeats editorial commentary is interleaved with the poem text in the source and has not been separated out here.
 ---
 
-[A Cast Off Garment. I drafted the text & made twelve wash-drawings to it about 1789. I did not put it on copper. It is published here because it is coherent & finished after its own kind — a poem of the blind tyrant Tiriel cursing his children before his death.]
+Blake drafted *Tiriel* about 1789, in the period between *Songs of Innocence* (1789) and *The Marriage of Heaven and Hell* (c. 1790). He made twelve wash drawings to illustrate it, but did not engrave the text and never published it. The poem narrates the death of the blind tyrant Tiriel, cursing his children.
+
+Twelve illustration drawings survive: nine at the British Museum, two at the Yale Center for British Art, one at the Victoria & Albert Museum.
+
+The text below is from Ellis & Yeats, vol. II, 1893.
+
+---
 
 This book, supposed by Swinburne to be the first of the
 " Prophetic" series, is a treatise on Old Age written in the
@@ -1506,3 +1512,5 @@ having left the heart that won't believe.
 (5) The Owl. -n
 
 (6) The Tiger. I Night.
+
+*— End of text as transmitted by Ellis & Yeats, vol. II, 1893. Public domain.*

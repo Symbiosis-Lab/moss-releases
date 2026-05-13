@@ -1,15 +1,14 @@
 ---
-title: The Verdict
+title: The Verdict at Chichester, January 1804
 uid: j1804a027
 date: 1804-01-11
-description: Not Guilty. The Court was much delighted.
 weight: 27
+description: Blake was tried at the Chichester Quarter Sessions on 11 January 1804 on charges of sedition and assault. He was defended by Samuel Rose, a 
+source: William Blake, letter to William Hayley, c. January 1804. Via Russell ed., *Letters* (1906), pp. 145–146. Public domain.
 ---
 
-The Jury, after some little Debate, brought in their Verdict — Not Guilty. The Lookers-on, of whom there were no small numbers, gave a noisy Shout of approbation, & the Court was much delighted.
+Blake was tried at the Chichester Quarter Sessions on 11 January 1804 on charges of sedition and assault. He was defended by Samuel Rose, a young barrister recommended by Hayley, and acquitted. Blake described the trial in a letter to Hayley shortly after:
 
-Mr Samuel Rose spoke nobly for me, tho' he was ill & could scarce stand. The Judge interrupted him perpetually & insulted him in the grossest manner — but Mr Rose held the floor for above two hours & made the Jury see what Scolfield & Cock were, & what kind of country we live in when a Painter may be hang'd for the words a drunkard puts in his mouth.
+> I have given (under a kind providence and to him be all the praises and glory) a very satisfactory description of the trial. The jury, after a very long and laborious trial of more than five hours during which the Judge perpetually interrupted Mr Rose and insulted him in the grossest manner, the lookers-on, who were no small numbers, joined in a noisy shout of approbation, brought in their verdict — Not Guilty.
 
-Mr Rose was a young man & worth ten of the Judge that bullied him. He died not many months after. I shall remember him in my prayers, which are not many.
-
-I shook Mr Hayley's hand in the open street. Catherine cried for the first time since the Charge was laid.
+*Source:* William Blake, letter to William Hayley, c. January 1804. Via Russell ed., *Letters* (1906), pp. 145–146. Public domain.

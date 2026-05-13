@@ -5,6 +5,5 @@ weight: 2
 uid: blk-letters
 ---
 
-The verse-letters to Mr Butts read as poems & should be read so. The Manifesto to Dr Trusler is plain prose & a plain quarrel. The last letter to Cumberland I wrote four months before I died: I have been very near the Gates of Death, but I am returned a little.
 
-Read them in date order, or by Recipient — both have their use.
+Twenty-seven of Blake's surviving letters, 1791–1827, transcribed from Archibald G. B. Russell, ed., *The Letters of William Blake Together with a Life by Frederick Tatham* (Methuen, 1906; public domain).

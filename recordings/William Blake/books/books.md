@@ -6,6 +6,5 @@ weight: 3
 uid: blk-books
 ---
 
-I printed these by a method shewn me by my Brother Robert after his death. The plates are of copper, drawn upon in reverse with an acid-resistant ground compleat of asphaltum dissolved in turpentine; the plain surfaces are eaten away with aquafortis until the letters & figures stand up in relief. They are inked & printed; then tinted, mostly by Catherine, with water-colours.
 
-Each Copy is a different work. I have made them as the hour required them, & no two are alike.
+The seventeen illuminated books Blake published, plus *Poetical Sketches* (1783, letterpress). Plate images sourced from the Library of Congress Rosenwald Collection via IIIF (public domain) and the Blake Archive (CC BY-NC-SA 3.0).

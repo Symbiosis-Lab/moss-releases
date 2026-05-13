@@ -1,17 +1,11 @@
 ---
-description: All Religions Are One, c. 1788. The Voice of one crying in the Wilderness.
+description: *All Religions Are One*, c. 1788. Seven aphorisms and a frontispiece, illuminated relief etching.
 children_style: grid
 series: true
 weight: 4
 uid: blk-arone
-source: To be sourced from Huntington Library Copy A (the only essentially complete impression) via Blake Archive.
-plates_pending: 10
+plates_present: 0
+source: Huntington Library, Copy A (the only essentially complete impression). Blake Archive transcription available; plate images not yet downloaded.
 ---
 
-The first of my works printed by the new Method. A tract of seven Principles & a frontispiece, that the religions of the heathen & the philosophy of the schools are all derived from the Poetic Genius.
-
-*The Voice of one crying in the Wilderness*
-
-PRINCIPLE 1st: That the Poetic Genius is the true Man, & that the body or outward form of Man is derived from the Poetic Genius. Likewise that the forms of all things are derived from their Genius, which by the Antients was call'd an Angel & Spirit & Demon.
-
-PRINCIPLE 7th: As all men are alike (tho' infinitely various) So all Religions: & as all similars have one source. The true Man is the source, he being the Poetic Genius.
+*This folder contains plate scans for All Religions Are One. For verbatim plate text and bibliographic detail, consult Erdman's *Complete Poetry and Prose of William Blake* (Anchor, rev. 1988) or the [William Blake Archive](https://www.blakearchive.org).*

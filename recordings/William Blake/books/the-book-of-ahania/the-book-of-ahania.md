@@ -1,17 +1,11 @@
 ---
-description: The Book of Ahania, 1795. Fuzon, on a chariot iron-wing'd. The hidden sorrow of Urizen.
+description: *The Book of Ahania*, 1795. Intaglio-etched (rather than relief), 6 plates. Only one complete copy survives.
 children_style: grid
 series: true
 weight: 12
 uid: blk-ahania
-source: Library of Congress, Rosenwald Collection (item 48031699). Copy A — the only complete copy that survives. ~4000 px. Public domain.
 plates_present: 5
+source: Library of Congress, Rosenwald Collection (item 48031699), Copy A — the only complete copy. Public domain.
 ---
 
-A continental prophecy, etched in intaglio rather than relief — that is, the lines are below the surface of the plate instead of above. The printing is sharper but the labour is greater. I made few copies; only one survives compleat.
-
-Ahania is the Emanation of Urizen — his hidden sorrow, his cast-off love. He has thrown her away in the moment of his fall, & she wanders thereafter as a parted Shadow.
-
-> She fell down a faint shadow wandring
-> In chaos and circling dark Urizen,
-> As the moon anguishd circles the earth.
+*This folder contains plate scans for The Book of Ahania. For verbatim plate text and bibliographic detail, consult Erdman's *Complete Poetry and Prose of William Blake* (Anchor, rev. 1988) or the [William Blake Archive](https://www.blakearchive.org).*

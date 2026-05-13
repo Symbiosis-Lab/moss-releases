@@ -1,12 +1,13 @@
 ---
-title: Catherine
+title: Married Catherine Boucher, August 1782
 uid: j1782a011
 date: 1782-08-18
-description: I married Catherine Boucher at St. Mary's, Battersea.
+description: Married Catherine Boucher at St Mary's, Battersea.
+source: Parish register of St Mary, Battersea (the entry is reproduced in Bentley's *Blake Records*, 2nd ed. 2004); biographical context in Tatham 1832 and Gilchrist 1880.
 ---
 
-On the eighteenth of August I married Catherine Boucher at the church of St. Mary, Battersea. She is the daughter of a market-gardener. When I first told her of my love, she pitied me — and I knew then that she was the woman for me, for Pity divides the soul.
+William Blake married Catherine Sophia Boucher at the parish church of St Mary, Battersea, on 18 August 1782. Catherine signed the register with a mark — she could not at that time write her name. She was the daughter of a Battersea market-gardener.
 
-She signed the register with a mark, for she could not write her name.
+Tatham records that Catherine subsequently learned (under Blake's instruction) to read, to write, to draw, and to assist him at the press — printing his engravings and, on most surviving copies of the illuminated books, hand-colouring the plates.
 
-I have taught her to read, to write, to draw, and to print. She is now my partner in all things. Without her I could not make my books.
+*Source:* Frederick Tatham, *Life of William Blake* (c. 1832; via Russell ed., 1906); Alexander Gilchrist, *Life of William Blake* (Macmillan, 2nd ed. 1880).

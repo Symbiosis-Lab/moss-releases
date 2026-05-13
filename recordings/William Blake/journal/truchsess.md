@@ -1,19 +1,14 @@
 ---
-title: The Light of My Youth
+title: The Truchsessian Gallery, October 1804
 uid: j1804a028
 date: 1804-10-23
-description: I was again enlightened with the light I enjoyed in my youth. From a letter to Mr Hayley.
 weight: 28
+description: Blake described the experience of seeing the Truchsessian Gallery at the New Road in a letter to William Hayley dated 23 October 1804. The l
+source: William Blake, letter to William Hayley, 23 October 1804. Text via Archibald G. B. Russell, ed., *The Letters of William Blake* (Methuen, 1906), pp. 167–168. Public domain.
 ---
 
-I am again Emerged into the Light of Day.
+Blake described the experience of seeing the Truchsessian Gallery at the New Road in a letter to William Hayley dated 23 October 1804. The letter is in the Letters archive of this site; the key passage follows.
 
-The Truchsessian Gallery of Pictures, lately set up by Count Truchsess at the New Road, opened to me a thing not seen these twenty years:
+> Suddenly, on the day after visiting the Truchsessian Gallery of Pictures, I was again enlightened with the light I enjoyed in my youth, and which has for exactly twenty years been closed from me as by a door and by window-shutters... I have entirely reduced that spectrous Fiend to his station, whose annoyance has been the ruin of my Labours for the last passed twenty years of my life. — *See also: letters/1804-10-23-to-hayley-truchsess.md for the full letter.*
 
-*I was again enlightened with the light I enjoyed in my youth, and which has for exactly twenty years been closed from me as by a door and by window-shutters.*
-
-I have entirely reduc'd that Spectrous Fiend to his station, whose annoyance has been the ruin of my Labours for the last passed twenty years of my life. He is the enemy of Conjugal Love & is the Jupiter of the Greeks, an iron-hearted Tyrant, the Ruiner of antient Greece.
-
-Now my course of life shall be different. I shall paint again as I painted at twenty-two.
-
-(*Felpham was a sleep. The Soldier in the garden was a Sleep. The Trial was a Sleep. They are over now, & I am awake.*)
+*Source:* William Blake, letter to William Hayley, 23 October 1804. Text via Archibald G. B. Russell, ed., *The Letters of William Blake* (Methuen, 1906), pp. 167–168. Public domain.

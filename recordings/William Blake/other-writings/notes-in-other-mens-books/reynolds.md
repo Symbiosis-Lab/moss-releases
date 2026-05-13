@@ -2,15 +2,19 @@
 title: Annotations on Reynolds
 uid: blk-notes-reynolds
 date: 1808-01-01
-description: Marginal notes written in Blake's copy of *The Works of Sir Joshua Reynolds*, ed. Edmond Malone (1798). The most ferocious Public Address Blake ever wrote.
+description: Blake's marginal annotations in his own copy of *The Works of Sir Joshua Reynolds*, ed. Edmond Malone (3 vols., 1798). Public-domain transcription from Ellis & Yeats (1893).
 weight: 1
 source: Edwin John Ellis & W. B. Yeats, eds., *The Works of William Blake, Poetic, Symbolic, and Critical*, vol. II (Bernard Quaritch, London, 1893), pp. 318ff. Public domain. OCR via Internet Archive worksofwilliambl02blakuoft.
-ocr_note: Light cleanup; spacing & line breaks normalized. Blake's spelling preserved.
+ocr_note: Light cleanup for spacing and OCR artifacts; Blake's spelling and capitalization preserved. Ellis & Yeats's running quotations from Reynolds are kept inline so the reader can follow what Blake was answering, plate by plate.
 ---
 
-[Restored to this site at Blake's own insistence: *"They are not private. They are the most ferocious Public Address I ever wrote, & I wrote them in his book because his book was the public dogma of the Royal Academy."*]
+Blake annotated his copy of Reynolds's *Discourses on Art* (in the 1798 collected *Works*) at length, probably between 1798 and 1809. The annotations cover the title page, fly-leaves, table of contents, and the margins of Discourses I through VIII. Blake's copy is now at the British Library.
 
-[Ellis & Yeats's editorial introduction & the running quotations from Reynolds are kept so the reader can follow what Blake was answering, plate by plate.]
+Ellis & Yeats (1893) reproduced the annotations in full, interleaving them with the running text of Reynolds they answer; that arrangement is preserved here.
+
+What follows is verbatim from Ellis & Yeats, vol. II, pp. 318ff. The format throughout is: a passage from Reynolds (often introduced by "To :") followed by Blake's response (introduced by "Blake :"). Punctuation, capitalization, and emphases are as Blake set them.
+
+---
 
 to
 
@@ -2903,7 +2907,5 @@ carrying a helmet in one hand and a sting in the other, is copied, and only
 slightly reduced from the full-length painting, now very dark, of the " Ghost
 of a Flea," also called "A Vampire," and really signifying the military spirit,
 or the ideal form of bloodthirstiness. That even this is a "fallen son of
-Eden " is indicated by the falling star in the background.
 
-The engravings from Blair's Grave are described in the Memoir, p. 110.
-The Laocoon engraving is referred to in the Memoir, p. 120.
+*— End of annotations as transmitted by Ellis & Yeats, vol. II, 1893. Public domain.*

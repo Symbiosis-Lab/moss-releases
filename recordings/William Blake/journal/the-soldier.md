@@ -1,17 +1,14 @@
 ---
-title: The Soldier in the Garden
+title: The Soldier in the Garden, August 1803
 uid: j1803a025
 date: 1803-08-12
-description: Scolfield the Dragoon came drunk into my garden, & would not stir.
 weight: 25
+description: On 12 August 1803, an off-duty soldier named John Scolfield, brought into Blake's garden at Felpham by a gardener, refused to leave when ask
+source: William Blake, letter to Thomas Butts, 16 August 1803. Russell ed., *The Letters of William Blake* (Methuen, 1906), pp. 119–123. Full letter at letters/1803-08-16-to-butts-scofield.md in this site.
 ---
 
-The Fellow Scolfield, a private of Captain Leathes's troop of the 1st Regiment of Dragoons, came drunk into my Garden, brought there by my gardener Hosier without my asking. Being asked to depart, he would not stir.
+On 12 August 1803, an off-duty soldier named John Scolfield, brought into Blake's garden at Felpham by a gardener, refused to leave when asked. Blake forcibly removed him. Four days later Blake described the incident to Thomas Butts:
 
-So I took him by the Elbows & march'd him sixty yards down the lane to the Fox Inn where he is quartered. The whole village saw it.
+> I am at present in a bustle to defend myself against a very unwarrantable warrant from a justice of peace in Chichester, which was taken out against me by a private in Captain Leathe's troop of 1st or Royal Dragoons, for an assault and seditious words. The wretched man has terribly perjured himself, as has his comrade ; for, as to sedition, not one word relating to the king or government was spoken by either him or me. His enmity arises from my having turned him out of my garden...
 
-For this he hath sworn before the Justices that I damn'd the King & his Soldiers, calling them all Slaves — which I never said, nor would say tho' I were alone with my Catherine. Another soldier, Cock, has sworn the same.
-
-The charge is Sedition. Mr Hayley will stand my friend & has engaged a young Counsel, Mr Samuel Rose. They speak of Transportation.
-
-God defend me. I have offended no one but a drunkard.
+*Source:* William Blake, letter to Thomas Butts, 16 August 1803. Russell ed., *The Letters of William Blake* (Methuen, 1906), pp. 119–123. Full letter at letters/1803-08-16-to-butts-scofield.md in this site.

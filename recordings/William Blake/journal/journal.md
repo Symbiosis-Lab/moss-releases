@@ -5,4 +5,5 @@ weight: 1
 uid: a1600b6d
 ---
 
-Read these in the order they fell. I have not arranged them by Theme, for a life is not a treatise.
+
+Biographical entries drawn from primary-source biographies (Tatham 1832, Gilchrist 1880) and from Blake's own letters. Each entry quotes verbatim from its named source.

@@ -1,17 +1,43 @@
 ---
-title: Newgate Burns
+title: The Gordon Riots, June 1780
 uid: j1780a009
 date: 1780-06-06
-description: The Gordon mob at Newgate, the sixth of June. They say I was in the front rank — & they say truly.
 weight: 9
+description: Gilchrist records that Blake, walking through London on the third day of the Gordon No-Popery Riots, was caught up in the mob and forced int
+source: Alexander Gilchrist, *Life of William Blake, "Pictor Ignotus"* (Macmillan, 2nd ed. 1880), vol. I, pp. 35–36. Public domain.
 ---
 
-The sixth of June, the Gordon mob came down Holborn against the New Prison. I was caught up in it walking home from Basire's. There were twenty thousand of us in the streets — Apprentices, Coal-heavers, Sailors, & every kind of Londoner.
+Gilchrist records that Blake, walking through London on the third day of the Gordon No-Popery Riots, was caught up in the mob and forced into its front rank as it stormed Newgate Prison.
 
-They burnt the door, then the gates, then the whole Building. The prisoners came out blinking into the smoke, three hundred felons free. I saw a Boy of twelve walk out of his cell holding a chain in his hand & weeping.
+> Gordon No-Popery Riots rolled through Town. Half London
+> was sacked, and its citizens for six days laid under forced
+> contributions by a mob some forty thousand strong of boys,
+> pickpockets, and ' roughs/ In this outburst of anarchy, Blake
+> long remembered an involuntary participation of his own.
+> On the third day, Tuesday, 6th of June, 'the Mass-houses'
+> having already been demolished — one, in Blake's near neigh-
+> bourhood, Warwick Street, Golden Square — and various pri-
+> vate houses also ; the rioters, flushed with gin and victory,
+> were turning their attention to grander schemes of devastation.
+> That evening, the artist happened to be walking in a route
+> chosen by one of the mobs at large, whose course lay from
+> Justice Hyde's house near Leicester Fields, for the destruction
+> of which less than an hour had sufficed, through Long Acre,
+> 
+> 
+> 
+> 
+> past the quiet house of Blake's old master, engraver Basire
+> in Great Queen Street, Lincoln's Inn Fields, and down Hoi-
+> born, bound for Newgate. Suddenly, he encountered the
+> advancing wave of triumphant Blackguardism, and was forced
+> (for from such a great surging mob there is no disentangle-
+> ment) to go along in the very front rank, and witness the
+> storm and burning of the fortress-like prison, and release
+> of its three hundred inmates. This was a peculiar experience
+> for a spiritual poet ; not without peril, had a drunken soldier
+> chanced to have identified him during the after weeks of
+> indiscriminate vengeance : those black weeks when strings
+> of boys under fourteen were hung up in a row to vindicate
 
-They say I was in the front rank — & they say truly. I did not raise the fire, but I did not turn away.
-
-That night I went home to my Father's & did not speak. The next day I went back to my Engraving. But I had seen the People rise & the Iron Door go down, & I have not since believed that any Door is for ever.
-
-*The tygers of wrath are wiser than the horses of instruction.*
+*Source:* Alexander Gilchrist, *Life of William Blake, "Pictor Ignotus"* (Macmillan, 2nd ed. 1880), vol. I, pp. 35–36. Public domain.

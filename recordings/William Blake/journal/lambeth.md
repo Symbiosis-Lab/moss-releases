@@ -1,17 +1,16 @@
 ---
-title: Hercules Buildings
+title: Hercules Buildings, Lambeth (1790–1800)
 uid: j1790a013
 date: 1790-12-01
-description: 13 Hercules Buildings, Lambeth. £40 a year. A garden, a vine, & a south-facing window for the press.
 weight: 13
+description: Blake's residence at No. 13 Hercules Buildings, Lambeth, 1790–1800. Site of *Songs of Experience*, *The Marriage of Heaven and Hell*, *Visions*, *America*, *Europe*, *Urizen*, and the other Lambeth books.
+source: Alexander Gilchrist, *Life of William Blake, "Pictor Ignotus"* (Macmillan, 2nd ed. 1880), vol. I, p. 112. Public domain.
 ---
 
-We have removed from Poland Street to No. 13 Hercules Buildings, in Lambeth, across the river. The house is roomy — three storeys & a small Garden behind, with a vine that bears black grapes in good years. The rent is forty pounds. Catherine likes the air, which is freer than the Soho streets.
+Blake and Catherine moved from 28 Poland Street, Soho, to No. 13 Hercules Buildings, Lambeth, in late 1790. They lived there approximately ten years, until the move to Felpham in September 1800. The house was a three-storey terrace with a small back garden, and rented at about £40 per annum. Gilchrist records one anecdote of the Lambeth years, transmitted to him via Thomas Butts:
 
-At the end of the little garden there is a summer-house. Mr Butts called one day & found Catherine & me sitting there, freed from those troublesome disguises which have prevailed since the Fall. I called out: Come in! It is only Adam & Eve, you know. We had been reciting passages from Paradise Lost, in character; the garden of Hercules Buildings had to represent the Garden of Eden.
+> At the end of the little garden in Hercules Buildings there was a summer-house. Mr. Butts calling one day found Mr. and Mrs. Blake sitting in this summer-house, freed from 'those troublesome disguises' which have prevailed since the Fall. 'Come in!' cried Blake; 'its only Adam and Eve, you know!' Husband and wife had been reciting passages from Paradise Lost, in character, and the garden of Hercules Buildings had to represent the Garden of Eden.
 
-The press stands at the back of the parlour, by the south-facing window where the light comes in. The asphaltum is mixed in the kitchen. The drying-line is strung across the small Garden.
+The illuminated books made at Hercules Buildings include *Songs of Innocence and of Experience* (1789, completed 1794), *The Book of Thel* (1789), *The Marriage of Heaven and Hell* (c. 1790), *Visions of the Daughters of Albion* (1793), *America* (1793), *Europe* (1794), *The First Book of Urizen* (1794), and the Lambeth continental prophecies (1795).
 
-In this house I have made the *Songs of Innocence and of Experience*, & *Thel*, & *The Marriage of Heaven and Hell*, & *Visions of the Daughters of Albion*, & *America*, & *Europe*, & the *Book of Urizen*, & the rest of the Lambeth books. Eleven years here. The years of greatest fire.
-
-[Source: Alexander Gilchrist, *Life of William Blake, "Pictor Ignotus"* (Macmillan, 2nd ed. 1880), vol. I, p. 112. The passage in single-quotes within Gilchrist's text — "those troublesome disguises" — Gilchrist set off as a delicate phrase, possibly quoting Blake's own. Gilchrist credits the anecdote to Thomas Butts; he notes that "Mr Linnell, the friend of Blake's later years, regards it with incredulity," but defends Butts' authority for the Lambeth period as "unimpeachable." Ellis & Yeats (*Works of William Blake*, 1893, vol. I, p. 42) disputed the anecdote on theological grounds but did not deny its provenance. Most subsequent biographers — Symons, Wilson, Bentley, Ackroyd — have accepted it as substantially true.]
+*Source:* Gilchrist 1880, vol. I, p. 112. Gilchrist credits the anecdote to Butts; he notes Linnell "regards it with incredulity," but defends Butts' authority for the Lambeth period as "unimpeachable." Ellis & Yeats (1893, vol. I, p. 42) disputed it on theological grounds.

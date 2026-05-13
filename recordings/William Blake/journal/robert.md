@@ -2,14 +2,26 @@
 title: Robert
 uid: j1787a021
 date: 1787-02-11
-description: My dear Brother Robert was taken from me this 11th of February, being but nineteen years old.
 weight: 11
+description: Frederick Tatham, writing his Life of Blake c. 1832 from his own acquaintance with Catherine Blake, describes William's bond with his younge
+source: Frederick Tatham, *Life of William Blake* (composed c. 1832, first published in Archibald G. B. Russell, ed., *The Letters of William Blake Together with a Life by Frederick Tatham*, Methuen, 1906), p. 3.
 ---
 
-My dear Brother Robert was taken from me this eleventh of February, being but nineteen years old. He was the youngest of us, & the one whose Art I had most hope of.
+Frederick Tatham, writing his Life of Blake c. 1832 from his own acquaintance with Catherine Blake, describes William's bond with his younger brother Robert. (Modern scholarship — see Bentley, *Blake Records*, 2nd ed. 2004, pp. 32–34 — places Robert's age at death at 19, not Tatham's 24.)
 
-I sat by him many days & nights. At the moment he expir'd I beheld his Soul ascend rejoicing thro' the ceiling, clapping its hands for joy. Catherine saw it too.
+> celled together, and, like all true lovers, delighted
+> in and enhanced each other's beauties.
+> 
+> " For they were nursed upon the self-same hill,
+> Fed the same flock by fountain, shade, and rill."
+> 
+> Robert was of amiable and docile temper, and
+> of a tender and affectionate mind, and like many
+> of those who appear born for early death, his
+> short life was but as the narrow porch to his
+> eternal lot : he died of consumption at twenty-four
+> years of age. Miss Catherine, the only daughter,
+> is still living, having survived nearly all her
+> relations.
 
-Since then he comes to me oft in Vision, & sits in the chair beside the press. In the summer of the year after next — eighty-eight — he stood in my chamber as plainly as you stand, & laid before me the manner of the Etching. The Songs are made by his hand as well as mine.
-
-He was buried at Bunhill Fields where I shall be buried too, in time, & where my Father lies before us.
+*Source:* Frederick Tatham, *Life of William Blake* (composed c. 1832, first published in Archibald G. B. Russell, ed., *The Letters of William Blake Together with a Life by Frederick Tatham*, Methuen, 1906), p. 3.

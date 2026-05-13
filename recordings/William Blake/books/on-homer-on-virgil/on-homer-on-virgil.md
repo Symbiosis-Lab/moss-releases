@@ -1,20 +1,11 @@
 ---
-description: On Homer's Poetry [and] On Virgil, c. 1822. Two short tracts on one plate. The Classics, & the question of the True Sublime.
+description: *On Homer's Poetry [and] On Virgil*, c. 1822. Two short prose tracts on a single relief-etched plate.
 children_style: grid
 series: true
 weight: 15
 uid: blk-homer-virgil
-date: 1822-01-01
-source: Library of Congress holds Copy B (search item 17002227 etc.); not yet downloaded. Blake Archive serves Copy B at lower resolution.
-plates_pending: 2
+plates_present: 0
+source: Plate images pending. Text via Erdman, *Complete Poetry and Prose* (1988), pp. 269–270; Blake Archive transcription also available.
 ---
 
-A single plate, etched relief, divided into two short tracts: *On Homer's Poetry* on the upper half, *On Virgil* on the lower. Late, dense, oracular.
-
-*Sacred Truth has pronounced that Greece & Rome, as Babylon & Egypt: so far from being parents of Arts & Sciences as they pretend: were destroyers of all Art.*
-
-*Homer is the Center of All — I mean of Moral Vegetable Wisdom. & the Holy Ghost as well as the Devil are Three Persons.*
-
-*Let it here be Noted that the Greek Fables originated in Spiritual Mystery & Real Vision.*
-
-[Plate text to be drawn from Erdman ed. pp. 269–270 — Blake Archive transcription available.]
+*This folder contains plate scans for On Homer's Poetry [and] On Virgil. For verbatim plate text and bibliographic detail, consult Erdman's *Complete Poetry and Prose of William Blake* (Anchor, rev. 1988) or the [William Blake Archive](https://www.blakearchive.org).*
