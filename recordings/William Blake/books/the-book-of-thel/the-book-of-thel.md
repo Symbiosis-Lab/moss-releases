@@ -5,4 +5,5 @@ children_style: grid
 series: true
 weight: 2
 uid: b7e1a001
+source: Existing 8 plates from Blake Archive Copy F + 9 additional spreads from LoC Rosenwald Copy in loc-rosenwald/ subfolder.
 ---
