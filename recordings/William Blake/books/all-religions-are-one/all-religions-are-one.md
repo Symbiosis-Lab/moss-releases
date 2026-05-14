@@ -5,7 +5,7 @@ series: true
 weight: 4
 uid: blk-arone
 date: 1788-01-01
-plates_present: 8
+plates_present: 9
 plates_canonical: 10
 source: Huntington Library, Copy A (the only essentially complete impression). Plate images via Wikimedia Commons (public domain).
 ---
@@ -17,13 +17,13 @@ Plates present:
 - Plate 3 (The Argument) ✓
 - Plate 4 (Principle 1st) ✓
 - Plate 5 (Principle 2d) ✓
-- Plate 6 (Principle 3) — *pending* (Wikimedia search returned no exact match)
+- Plate 6 (Principle 3d) ✓  (added pass-7 from Wikimedia category enumeration)
 - Plate 7 (Principle 4) ✓
 - Plate 8 (Principle 5) ✓
 - Plate 9 (Principle 6) ✓
 - Plate 10 (Principle 7d) ✓
 
-**8 of 10 plates.** Only Plate 6 (Principle 3) outstanding.
+**9 of 10 plates.** Only Plate 2 (Title page) outstanding from this Wikimedia upload; alternates exist (`Plate_2_Title_page_alternate`) — left for a future verifier with Huntington direct access.
 
 The Argument:
 
