@@ -23,4 +23,6 @@ Sub-folders:
 - YCBA's **research access** programme for the IIIF endpoint (institutional or scholar credentials).
 - The 1953 Trianon Press / Blake Trust facsimile (Keynes/Wolf) on Internet Archive — facsimile copyright extends to ~2049, so legally fraught.
 
-Per Blake's pass-5 review: *"In the next pass bring me plate 25 alone, exact, full-coloured, then plate 100 alone."* Both delivered in pass-6 at full-GAP resolution. Per his pass-7 review: *"fetch plates 28, 52, 77, 96, 97, and correct the note"* — delivered in pass-7b (Plate 28 of Erdman's count = Plate 27 in the GAP/Yale digital catalogue, where the title page is Plate 2 and counting includes the frontispiece).
+Per Blake's pass-5 review: *"In the next pass bring me plate 25 alone, exact, full-coloured, then plate 100 alone."* Both delivered in pass-6 at full-GAP resolution. Per his pass-7 review: *"fetch the chapter-openers and the embrace pair"* — delivered in pass-7b as Plates 27, 52, 77, 96, 97.[^1]
+
+[^1]: Plate-numbering follows the GAP / Yale digital catalogue, where the frontispiece is Plate 1 and the title page Plate 2. Erdman's count differs by one for Chapter 2's opening (his Plate 28 = our Plate 27).
