@@ -7,7 +7,7 @@ uid: blk-color-prints
 date: 1795-06-01
 plates_present: 12
 plates_canonical: 12
-source: Wikimedia Commons (public domain — Blake d. 1827). Each file mirrors an institutional digitization; see attribution table below for per-file source.
+source: Wikimedia Commons mirrors of institutional originals, with two plates (lamech, house) re-acquired in pass-7d directly from Tate Britain's media server at 1536px wide after the Wikimedia uploads were found to be corrupt (a PDF document and a DjVu document filed under .jpg extension). See attribution table for per-file source.
 ---
 
 The twelve canonical subjects of Blake's 1795 Large Color Prints, all present:
@@ -36,9 +36,9 @@ The twelve canonical subjects of Blake's 1795 Large Color Prints, all present:
 | `pity.jpg` | Pity | Tate Britain (N05062, via Google Art Project) | B&M 310 |
 | `hecate.jpg` | Hecate (Night of Enitharmon's Joy) | Tate Britain (N05056) | B&M 316 |
 | `elohim.jpg` | Elohim Creating Adam | Tate Britain (N05055) | B&M 289 |
-| `lamech.jpg` | Lamech and His Two Wives | Tate Britain (N05057) | B&M 297 |
+| `lamech.jpg` | Lamech and His Two Wives | Tate Britain (N05057, direct from media.tate.org.uk — pass-7d) | B&M 297 |
 | `naomi.jpg` | Naomi entreating Ruth and Orpah | Victoria & Albert Museum | B&M 299 |
-| `house.jpg` | The House of Death | Tate Britain (N05061) | B&M 320 |
+| `house.jpg` | The House of Death | Tate Britain (N05061, direct from media.tate.org.uk — pass-7d) | B&M 320 |
 | `good.jpg` | The Good and Evil Angels | Tate Britain (N05060) | B&M 323 |
 | `satan.jpg` | Satan Exulting over Eve | J. Paul Getty Museum (84.GG.39) | B&M 292 |
 | `god_judging_adam.jpg` | God Judging Adam | Tate Britain | B&M 294 |
