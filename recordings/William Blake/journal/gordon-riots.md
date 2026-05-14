@@ -40,4 +40,6 @@ Gilchrist records that Blake, walking through London on the third day of the Gor
 > indiscriminate vengeance : those black weeks when strings
 > of boys under fourteen were hung up in a row to vindicate
 
+*Editorial note:* G. E. Bentley Jr., *The Stranger from Paradise* (Yale, 2001), pp. 41–43, treats Blake's "involuntary participation" in the front rank as Gilchrist's literary reconstruction rather than documented eyewitness fact. Gilchrist had no contemporary written source for Blake's presence; the account derives from late hearsay in the Linnell circle of the 1820s. The storming of Newgate by the mob on the evening of 6 June 1780 is documented in *Annual Register* 1780 pp. 257–266 and contemporary newspapers; Blake's specific presence is not.
+
 *Source:* Alexander Gilchrist, *Life of William Blake, "Pictor Ignotus"* (Macmillan, 2nd ed. 1880), vol. I, pp. 35–36. Public domain.

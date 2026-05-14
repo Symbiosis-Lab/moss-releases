@@ -8,7 +8,7 @@ source: Russell ed., *The Letters of William Blake* (Methuen, 1906). PD. OCR via
 ocr_note: Text recovered from 1906 OCR; spacing & date glyphs lightly normalized. Original spelling preserved.
 ---
 
-\2th April 1827.
+12 April 1827.
 
 I have been very near the gates of death, and
 have returned very weak, and an old man, feeble
@@ -20,12 +20,9 @@ taken with poor Job. I know too well that the
 great majority of Englishmen are fond of the
 indefinite, which they measure by Newton's-
 
-^ The letter is undated.
+ 
 
-2 Newton is continually alluded to by Blake as the type of
-materiahstic science and abstract philosophy (see note 2, p. 91).
 
-/
 
 doctrine of the fluxions of an atom, a thing which
 does not exist. These are politicians, and think

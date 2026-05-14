@@ -1,22 +1,22 @@
 ---
 title: The Pickering Manuscript
-description: Fair-copy manuscript, c. 1807, of ten short poems. Manuscript at the Morgan Library, MA 1473. Text via Ellis & Yeats (1893) and Sampson (1905), public domain.
+description: Fair-copy manuscript of ten short poems, c. 1807. Manuscript at the Morgan Library, MA 1473. Text via Ellis & Yeats (1893), public domain.
 children_style: list
 weight: 2
 uid: blk-pickering
 date: 1807-01-01
-source: Edwin John Ellis & W. B. Yeats, eds., *The Works of William Blake* vol. III (1893); cross-checked with John Sampson, *The Poetical Works of William Blake* (1905). Both public domain. Original manuscript: Morgan Library MA 1473.
+source: Edwin John Ellis & W. B. Yeats, eds., *The Works of William Blake* vol. III (Bernard Quaritch, 1893). Public domain. Note: John Sampson, *The Poetical Works of William Blake* (1905), is textually superior for the Pickering MS; a Sampson-sourced version is pending.
 ---
 
 Contents (each in its own file in this folder):
 
-- *Auguries of Innocence*
-- *The Mental Traveller* (not yet extracted; OCR limitations)
+- *Auguries of Innocence* — *(present, with OCR fixes)*
 - *The Crystal Cabinet*
 - *Mary*
 - *Long John Brown and Little Mary Bell*
 - *William Bond*
 - *The Land of Dreams*
-- *The Smile* (not yet extracted)
-- *The Golden Net* (not yet extracted)
-- *The Grey Monk* (not yet extracted)
+- *The Mental Traveller* — pending; Ellis-Yeats placement scattered, Sampson 1905 recommended
+- *The Smile* — pending; same
+- *The Golden Net* — pending; same
+- *The Grey Monk* — pending; same

@@ -5,6 +5,7 @@ date: 1807-01-01
 uid: blk-auguries
 weight: 1
 source: Edwin John Ellis & W. B. Yeats, eds., *The Works of William Blake* vol. III (Bernard Quaritch, 1893), pp. 76–80. Public domain. OCR via Internet Archive worksofwilliambl03blakuoft.
+ocr_fixes: 13 May 2026 — corrected 1893-OCR R→E substitutions (Redbreast, Repeats, Came), corrected 'Puns'→'Runs' in famous line, 'liand'→'hand', 'bovver'→'bower', 'arc'→'are', 'land?'→'lands'. Original Ellis-Yeats text remains the textual base.
 ocr_note: Running heads & page numbers stripped; spacing normalized; Blake's punctuation preserved.
 ---
 
@@ -13,10 +14,10 @@ AUGURIES OF INNOCENCE
 TO see a world in a grain of sand,
 And a heaven in a wild flower ;
 
-Hold infinity in the palm of your liand,
+Hold infinity in the palm of your hand,
 And eternity in an hour.
 
-A Robin Eedbreast in a cage
+A Robin Redbreast in a cage
 
 Puts all Heaven in a rage ;
 
@@ -68,11 +69,11 @@ Shall feel the spider's enmity ;
 
 He who torments the chafer's sprite
 
-Weaves a bovver in endless night.
+Weaves a bower in endless night.
 
 The caterpillar on the leaf
 
-Eepeats to thee thy mother's grief ;
+Repeats to thee thy mother's grief ;
 
 The wild deer wandering here and there
 
@@ -136,7 +137,7 @@ Are toadstools on the miser's bags.
 
 
 One mite wrong from the labourer's hands
-Shall buy and sell the miser's land?,
+Shall buy and sell the miser's lands,
 Or, if protected from on high,
 Shall that whole nation sell and buy ;
 The poor man's farthing is worth more
@@ -206,10 +207,10 @@ Every morn and every night
 Some are born to sweet delight ;
 Some are born to sweet delight,
 Some are born to endless night.
-Joy and woe arc woven fine,
+Joy and woe are woven fine,
 A clothing for the soul divine ;
 Under every grief and pine
-Puns a joy with silken twine.
+Runs a joy with silken twine.
 
 
 

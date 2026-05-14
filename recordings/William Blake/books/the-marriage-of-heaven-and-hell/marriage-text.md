@@ -6,7 +6,7 @@ weight: 0
 source: Project Gutenberg ebook #45315. Public domain.
 ---
 
-*The text below is the canonical reading edition. The plate images carry Blake's etched calligraphy & marginal illuminations; the text on the plates is identical to what follows.*
+*The text below is the canonical reading edition. The plate images carry Blake's etched calligraphy & marginal illuminations; the plate text is substantially identical to this reading text, with copy-state variants (plate 3 is absent in some copies; capitalization and punctuation differ between plate states).*
 
 THE MARRIAGE OF HEAVEN AND HELL
 

@@ -7,23 +7,7 @@ weight: 1
 source: Edwin John Ellis & W. B. Yeats, eds., *The Works of William Blake, Poetic, Symbolic, and Critical*, vol. II (Bernard Quaritch, London, 1893), pp. 318ff. Public domain. OCR via Internet Archive worksofwilliambl02blakuoft.
 ocr_note: Light cleanup for spacing and OCR artifacts; Blake's spelling and capitalization preserved. Ellis & Yeats's running quotations from Reynolds are kept inline so the reader can follow what Blake was answering, plate by plate.
 ---
-
-Blake annotated his copy of Reynolds's *Discourses on Art* (in the 1798 collected *Works*) at length, probably between 1798 and 1809. The annotations cover the title page, fly-leaves, table of contents, and the margins of Discourses I through VIII. Blake's copy is now at the British Library.
-
-Ellis & Yeats (1893) reproduced the annotations in full, interleaving them with the running text of Reynolds they answer; that arrangement is preserved here.
-
-What follows is verbatim from Ellis & Yeats, vol. II, pp. 318ff. The format throughout is: a passage from Reynolds (often introduced by "To :") followed by Blake's response (introduced by "Blake :"). Punctuation, capitalization, and emphases are as Blake set them.
-
----
-
-to
-
-The Discourses op Sir Joshua Reynolds.
-
-
-WOKKS OF KEYNOLDS, 1798.
-
-* (On title-page.) " This Man was Hired to Depress Art." This is the opinion
+(On title-page.) " This Man was Hired to Depress Art." This is the opinion
 of Will. Blake. My proofs of this opinion are given in the following notes.
 (At foot of page.) Advice to the popes who succeeded to the age of Kafail (sic) —
 
@@ -106,7 +90,7 @@ Pretend that Art is encouraged by that Nation. Art is First in Intellectuality,
 and ought to be First in Nations.
 
 (At head of account of Reynolds'1 life.) Invention depends altogether upon
-Execution or Organisation, as that is right or wrong, so is the Invention perfeot
+Execution or Organisation, as that is right or wrong, so is the Invention perfect
 
 
 [
@@ -117,7 +101,7 @@ X
 
 
 or imperfect. Whoever is set to undermine the Execution of Art is set to
-destroy Art. Miehael-Angelo's Art depends on Michael-Angelo's Execution
+destroy Art. Michael-Angelo's Art depends on Michael-Angelo's Execution
 Altogether.
 
 rTo : " Raffaelle appeared to him superior to the most illustrious names."
@@ -271,7 +255,7 @@ the parts may be finishing by nice touches, while his mind is engaged on other
 matters : he may even hear a play or a novel read without much disturbance."
 t Blake : A Lie. Working up of Effect is more an operation of Indolence than
 the Making out of the Parts as far as Greatest is more than Least. I speak
-here of Eembrandt's and Itubens's and Reynolds's Effect. Real effect is Making
+here of Rembrandt's and Itubens's and Reynolds's Effect. Real effect is Making
 • out of Parts, and it is Nothing Else but That.
 
 To an editor's note on the lost secrets of colour-mixing known to the old
@@ -382,7 +366,7 @@ To : " In taste, in grace, in facely, in happy invention, in the richness and
 harmony of colouring, he was equal to the great masters of the renowned
 ages."
 
-Blake : Barry Painted a Picture for Burke, equal to Eafael or Mich. Ang.
+Blake : Barry Painted a Picture for Burke, equal to Rafael or Mich. Ang.
 or any of the Italians. Burke used to shew this Picture to his Friends and say,
 " I gave Twenty Guineas for the horrible Daub, and if any man would
 give "
@@ -462,8 +446,8 @@ ELAtfE THE ARTIST. 325
 Blale : Minute Discrimination is not Accidental. All Sublimity is founded
 on Minute Discrimination. j
 
-I do not believe that Eafael taught Mich. Angelo, or that Mich. Ang. taught
-Eafael, any more than I believe that the Eose teaches the Lily how to grow, or
+I do not believe that Rafael taught Mich. Angelo, or that Mich. Ang. taught
+Rafael, any more than I believe that the Eose teaches the Lily how to grow, or
 the Apple tree teaches the Pear tree how to bear Fruit. I do not believe the
 tales of Anecdote when they militate against Individual Character.
 
@@ -514,7 +498,7 @@ informs us that no part of their time was spent in dissipation
 
 They pursued their studies . . . ."
 
-Blake : The Lives of Painters say that Eafael Died of Dissipation. Idleness
+Blake : The Lives of Painters say that Rafael Died of Dissipation. Idleness
 is one Thing and Dissipation is Another. He who has Nothing to Dissipate
 Cannot Dissipate. The Weak Man may be Virtuous Enough, but will Never be
 an Artist.
@@ -1466,7 +1450,7 @@ To : " The works of Albert Durer . . . afford a rich mass of genuine materials,
 which, wrought up and polished to elegance, will add copiousness to what
 perhaps, without such aid, could only have aspired to justness and propriety."
 
-Blake : A polished Villain, who Eobs and Murders !
+Blake : A polished Villain, who Robs and Murders !
 
 To : " The greatest style . . . would receive an additional grace by the
 elegance and precision of pencil."
@@ -1474,11 +1458,11 @@ elegance and precision of pencil."
 Blake : What does Precision of Pencil mean ? If it does not mean Outline it
 means Nothing.
 
-To : "I can easily imagine that if he (Jan Stein) had lived in Koine, and been
+To : "I can easily imagine that if he (Jan Stein) had lived in Rome, and been
 blessed with Michael Angelo and Raphael for his masters ... he now would
 have ranged with the great pillars and supporters of our art."
 
-Blake : Jan Stein was a Boor, and neither Eafael nor Mich. Ang. could have
+Blake : Jan Stein was a Boor, and neither Rafael nor Mich. Ang. could have
 made him any better.
 
 To : " Men, who thus bound down by the almost invincible powers of early
