@@ -1,17 +1,19 @@
 ---
-description: *Jerusalem, The Emanation of the Giant Albion*, c. 1804–1820. 100 plates in four chapters of 25. Illuminated relief etching.
+description: *Jerusalem, The Emanation of the Giant Albion*, c. 1804–1820. 100 plates in four chapters of 25. Illuminated relief etching. Blake's longest illuminated work.
 children_style: list
 weight: 18
 uid: blk-jerusalem
-source: Library of Congress, Rosenwald Collection (item 48038103). 205 plate images from the 2024 rescan, including detail captures at multiple regions per plate. Public domain. Note: the 2024 LoC scan set contains more files than canonical plates because each plate is captured at multiple resolutions and detail crops; the 100 canonical plates can be assembled by selecting one whole-plate scan per page.
-plates_present: 205 (including high-resolution detail captures)
 plates_canonical: 100
+plates_present_uncoloured: 203 (LoC Rosenwald 2024 rescan with detail captures)
+plates_present_coloured_e: 9
+source: Two copies represented — the **uncoloured Rosenwald Copy** (Library of Congress, item 48038103, 2024 high-resolution rescan, public domain) and the **fully coloured Copy E** (held at Yale Center for British Art, Mellon collection — Blake's only complete coloured copy; images mirrored from Wikimedia Commons where uploaders worked from Blake Archive / Yale digitisation).
 ---
 
 The longest of the illuminated books. Four chapters, each opening with a prose Address: *To the Public* (Chapter 1), *To the Jews* (Chapter 2), *To the Deists* (Chapter 3), *To the Christians* (Chapter 4).
 
 Sub-folders:
-- *plates/* — 205 LoC IIIF captures (the body of the work, with detail scans)
-- *chapter-1-to-the-public/*, *chapter-2-to-the-jews/*, *chapter-3-to-the-deists/*, *chapter-4-to-the-christians/* — placeholder chapter folders with editorial Addresses; per-chapter plate assignment from the 100 canonical pages pending.
+- *plates/* — 203 plate images of the uncoloured LoC Rosenwald copy (full canonical 100 plates plus high-resolution detail captures).
+- *copy-e-coloured/* — 9 plates of the fully-coloured **Copy E** (Yale Center for British Art, Mellon gift). Copy E is the only complete coloured copy of Jerusalem extant; Blake himself painted these plates in his last years. Acquisition from Wikimedia Commons is partial as of this pass (Wikimedia rate-limits aggressive download); the remaining plates can be acquired in future passes from the same source.
+- *chapter-1-to-the-public/* etc. — chapter folder scaffolding with verbatim Address prose.
 
-[Note: Yale Center for British Art holds the only fully-coloured copy (Copy E, Mellon gift); the LoC set is the Rosenwald uncoloured copy. Coloured Jerusalem reproductions are best consulted via the Blake Archive's Copy E images, CC BY-NC-SA.]
+Blake's instruction (per his fourth review of this project): *"A Reader cannot understand my late mind without Jerusalem coloured."*
