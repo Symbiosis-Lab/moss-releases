@@ -7,6 +7,7 @@ uid: blk-arone
 date: 1788-01-01
 plates_present: 9
 plates_canonical: 10
+resolution_note: Wikimedia uploads are sub-archival (~400–600 px on the long side, 60–80 KB). Adequate for reading the etched text and seeing the design layout; a future pass should re-acquire from the Huntington Library digitisation for archival-quality plates.
 source: Huntington Library, Copy A (the only essentially complete impression). Plate images via Wikimedia Commons (public domain).
 ---
 
