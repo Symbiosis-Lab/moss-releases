@@ -68,4 +68,12 @@ The reception history of Blake's manuscripts after Catherine Blake's death in Oc
 > 
 > Blake, and was the means of her not only selling
 
+
+## Modern scholarly assessment
+
+G. E. Bentley Jr., in *The Stranger from Paradise: A Biography of William Blake* (Yale University Press, 2001), pp. 437–438, and in *Blake Records* (2nd ed., 2004), examines the disposition of Blake's residual works in detail. Bentley concludes that Tatham did inherit a substantial residue from Catherine, that some manuscripts were physically destroyed (the Irvingite influence is documented), but that others were sold or scattered rather than burnt — meaning Tatham's reputation as "the man who burnt Blake" is too simple. Bentley's account weighs both sides: Linnell's "emphatic No" against the bequest narrative, and the documentary evidence (now scattered across museum collections worldwide) of works Tatham did acquire and dispose of.
+
+For modern critical assessment, consult Bentley *Records* 2nd ed. (2004), pp. 525–532 and pp. 547–554. Both works are in copyright but are the principal modern source for the disposition of Blake's literary remains.
+
+
 *Source:* Story, *Life of John Linnell* (1892), vol. I, pp. ~241. Public domain.
