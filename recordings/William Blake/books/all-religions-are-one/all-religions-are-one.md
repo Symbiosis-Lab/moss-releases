@@ -5,26 +5,25 @@ series: true
 weight: 4
 uid: blk-arone
 date: 1788-01-01
-plates_present: 9
+plates_present: 10
 plates_canonical: 10
-resolution_note: Wikimedia uploads are sub-archival (~400–600 px on the long side, 60–80 KB). Adequate for reading the etched text and seeing the design layout; a future pass should re-acquire from the Huntington Library digitisation for archival-quality plates.
-source: Huntington Library, Copy A (the only essentially complete impression). Plate images via Wikimedia Commons (public domain).
+resolution_note: Pass-8 re-acquired all 10 plates from the William Blake Archive at 300 DPI (~1100–1400 wide × ~1400–1700 tall, 330–430 KB per plate), replacing the pre-pass-8 Wikimedia uploads which were sub-archival (~400–600 px on the long side). All plates are now legible at typical display sizes; magnification reveals expected fine-line softening of the Huntington digitisation behind the Blake Archive's CDN.
+source: Huntington Library, Copy A (the only essentially complete impression). Plate images via the **William Blake Archive** (blakearchive.org) under research-use terms with attribution. URL pattern `https://www.blakearchive.org/images/aro.a.pN.300.jpg`.
 ---
 
-Blake's first work in his new method of relief-etching. Ten plates total: frontispiece, argument, and seven principles.
+Blake's first work in his new method of relief-etching. Ten plates total: frontispiece, argument, and seven principles. **Complete: 10 of 10 plates.**
 
 Plates present:
 - Plate 1 (Frontispiece — *The Voice of one crying in the Wilderness*) ✓
+- Plate 2 (Title page) ✓  (added pass-8 from Blake Archive)
 - Plate 3 (The Argument) ✓
 - Plate 4 (Principle 1st) ✓
 - Plate 5 (Principle 2d) ✓
-- Plate 6 (Principle 3d) ✓  (added pass-7 from Wikimedia category enumeration)
+- Plate 6 (Principle 3d) ✓
 - Plate 7 (Principle 4) ✓
 - Plate 8 (Principle 5) ✓
 - Plate 9 (Principle 6) ✓
-- Plate 10 (Principle 7d) ✓
-
-**9 of 10 plates.** Only Plate 2 (Title page) outstanding from this Wikimedia upload; alternates exist (`Plate_2_Title_page_alternate`) — left for a future verifier with Huntington direct access.
+- Plate 10 (Principle 7th) ✓
 
 The Argument:
 
