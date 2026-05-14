@@ -21,8 +21,7 @@ The reception history of Blake's manuscripts after Catherine Blake's death in Oc
 > ' Life of William Blake,' that Mrs. Blake bequeathed
 > ' the remaining stock of his works, still consider-
 > able,' to Mr. Tatham. But, against this statement
-> in his copy of the ' Life,' Linnell wrote an emphatic
-> 4 No.' Whatever may have been the artist's au-
+> in his copy of the ' Life,' Linnell wrote an emphatic 'No.'' Whatever may have been the artist's au-
 > thority for his belief, it is certain that he would not
 > VOL. i. 1 6
 > 

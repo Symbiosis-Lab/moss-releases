@@ -8,16 +8,6 @@ source: Alexander Gilchrist, *Life of William Blake, "Pictor Ignotus"* (Macmilla
 ocr_note: Light cleanup for spacing and OCR artifacts; Blake's punctuation and capitalization preserved as Gilchrist transmitted them.
 ---
 
-' from its two leading sides ; belief in vision and belief in
-' mercy/
-
-(From A Critical Essay on William Blake, by Algernon
-Charles Swinburne, pp. 295-296, where The Ghost of Abel
-was first printed.)
-
-
-A VISION OF THE LAST JUDGMENT.
-
 THE Last Judgment is not fable, or allegory, but vision.
 Fable, or allegory, is a totally distinct and inferior kind of
 poetry. Vision, or imagination, is a representation of what
@@ -43,7 +33,6 @@ however, somewhat accommodated my figure of Time to the
 common opinion ; as I myself am also infected with it, and
 my vision is also infected, and I see Time aged — alas ! too
 much so. Allegories are things that relate to moral virtues.
-
 
 1 86 SELECTIONS FROM BLAKE'S WRITINGS.
 
@@ -88,11 +77,7 @@ existent images are considered as less permanent than the
 things of vegetable and generative nature. Yet the oak dies
 as well as the lettuce ; but its eternal image or individuality
 
-
 A VISION OF THE LAST JUDGMENT.
-
-
-
 
 never dies, but renews by its seed. Just so the imaginative
 image returns by the seed of contemplative thought. The
@@ -133,7 +118,6 @@ the abyss. Sin is also represented as a female bound in one
 of the serpent's folds, surrounded by her fiends. Death is
 chained to the cross, and Time falls together with Death,
 dragged down by a demon crowned with laurel. Another
-
 
 1 88 SELECTIONS FROM BLAKE'S WRITINGS.
 
@@ -177,9 +161,6 @@ But to proceed with the description of those on the left
 hand. Beneath the cloud on which Moses kneels are two
 figures, a male and a female, chained together by the feet-
 
-
-A VISION OF THE LAST JUDGMENT. 189
-
 They represent those who perished by the Flood. Beneath
 them a multitude of their associates are seen falling headlong.
 By the side of them is a mighty fiend with a book in his hand,
@@ -217,7 +198,6 @@ one hand, and drags them down with the other. On the rock,
 and above the gate, a fiend with wings urges the wicked
 onward with fiery darts. He is Hazael, the Syrian, who
 drives abroad all those who rebel against their Saviour.
-
 
 1 90 SELECTIONS FROM BLAKE'S WRITINGS.
 
@@ -260,7 +240,6 @@ while they despise and laugh at what others fear. Beneath
 her feet is a flaming cavern, in which are seen her kings, and
 councillors, and warriors, descending in flames, lamenting, and
 
-
 A VISION OF THE LAST JUDGMENT. IQI
 
 looking upon her in astonishment and terror, and Hell is
@@ -300,7 +279,6 @@ is composed of the innocent civilised heathen and the
 uncivilised savage, who, having not the law, do by nature the
 things contained in the law. This state appears like a female
 crowned with stars, driven into the wilderness : she has the
-
 
 IQ2 SELECTIONS FROM BLAKE'S WRITINGS.
 
@@ -342,9 +320,6 @@ the remains of civilisation in the state from whence Adam
 was taken. Also, on the right hand of Noah, a female
 descends to meet her lover or husband, representative of that
 love called friendship, which looks for no other heaven than
-
-
-A VISION OF THE LAST JUDGMENT. 193
 
 the beloved, and in him sees all reflected as in a glass of
 eternal diamond.
@@ -388,8 +363,6 @@ two figures represent the two seasons of Spring and Autumn,
 
 VOL. II. O
 
-
-
 while, beneath the feet of Noah, four seasons represent the
 changed state made by the Flood.
 
@@ -431,9 +404,6 @@ two witnesses are subduing their enemies.
 On the cloud are opened the books of remembrance of life
 and of death : before that of life, on the right, some figures
 
-
-A VISION OF THE LAST JUDGMENT. 195
-
 bow in lamentation ; before that of death, on the left, the
 Pharisees are pleading their own righteousness. The one
 shines with beams of light, the other utters lightnings and
@@ -473,9 +443,6 @@ the Church and opposes it is no less an agent of religion than
 he who is in it : to be an error, and to be cast out, is a part
 of God's design. No man can embrace true art till he has
 explored and cast out false art (such is the nature of mortal
-
-
-
 
 things) ; or he will be himself cast out by those who have
 already embraced true art. Thus, my picture is a history of
@@ -519,9 +486,6 @@ there is no such thing in eternity as a female will.
 
 On the side next Baptism are seen those called in the
 
-
-A VISION OF THE LAST JUDGMENT. 197
-
 Bible Nursing Fathers and Nursing Mothers : they represent
 Education. On the side next the Lord's Supper, the Holy
 Family, consisting of Mary, Joseph, John the Baptist,
@@ -560,8 +524,6 @@ the various arts of poverty, and cruelty of all kinds. The
 modern Church crucifies Christ with the head downwards.
 Woe, woe, woe to you, hypocrites ! Even murder, which
 the Courts of Justice (more merciful than the Church) are
-
-
 
 whispered to allow, is not done in passion, but in cool-
 blooded design and intention.

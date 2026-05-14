@@ -40,9 +40,6 @@ those of artists who are unacquainted with drawing, is now
 to be decided by the public. Mr. Blake's inventive powers,
 and his scientific knowledge of drawing, are on all hands
 
-
-PUBLIC ADDRESS. 165
-
 /
 
 acknowledged ; it only remains to be certified whether
@@ -83,8 +80,6 @@ called great men of late years ought to rouse the public in-
 dignation of men of sense in all professions. Yet I do not
 shrink from the. comparison in either relief or strength of
 colour with either Rembrandt or Rubens ; on the contrary, I
-
-
 
 court the comparison, and fear not the result,— but not in a
 dark corner. Their effects are, in every picture, the same ;
@@ -130,7 +125,6 @@ rickety princes and princesses, higgledy-piggledy. On the
 contrary, Giulio Romano's * Palace of T. at Mantua ' is
 allowed on all hands to be the production of a man of the
 
-
 PUBLIC ADDRESS. 1 67
 
 most profound sense and genius ; and yet his execution is
@@ -170,7 +164,6 @@ they continue to refuse, theirs is the loss, not mine, and theirs
 is the contempt of posterity. I have enough in the approba-
 tion of fellow-labourers : this is my glory and exceeding great
 reward. I go on, and nothing can hinder my course.
-
 
 1 68 SELECTIONS FROM BLAKE'S WRITINGS.
 
@@ -216,9 +209,6 @@ they did not understand drawing, but because they did not
 into men's ears ? I do not condemn Strange or Woollett
 because they did not understand drawing, but because they
 
-
-PUBLIC ADDRESS. 169
-
 did not understand engraving. I do not condemn Pope or
 Dryden because they did not understand imagination, but
 because they did not understand verse. Their colouring,,
@@ -257,7 +247,6 @@ with contempt. He did not care for this any more than
 West did, who hesitated and equivocated with me upon the
 same subject ; at which time he asserted that Woollett's prints
 were superior to Basire's, because they had more labour and
-
 
 1 70 SELECTIONS FROM BLAKE'S WRITINGS.
 
@@ -299,11 +288,7 @@ than to think of improving what cannot be improved. It is
 very true what you have said for these thirty-two years : I
 am mad, or else you are so. Both of us cannot be in our
 
-
 PUBLIC ADDRESS.
-
-
-
 
 right senses. Posterity will judge by our works. Woollett's
 and Strange's works are like those of Titian and Correggio,
@@ -343,7 +328,6 @@ engraver without being a master of drawing, is an impostor.
 We may be clever as pugilists, but as artists, we are, and
 have long been, the contempt of the Continent. Gravelot
 once said to my master Basire : ' De English may be
-
 
 1/2 SELECTIONS FROM BLAKE'S WRITINGS.
 
@@ -388,9 +372,6 @@ to all. The English artist may be assured that he is doing
 an injury and injustice to his country while he studies and
 imitates the effects of nature. England will never rival Italy
 
-
-PUBLIC ADDRESS. 173
-
 while we servilely copy what the wise Italians, Raphael and
 Michael Angelo, scorned, nay abhorred, as Vasari tells us.
 What kind of intellect must he have who sees only the
@@ -431,7 +412,6 @@ these can be done without premiums. Let them encourage
 what exists already, and not endeavour to counteract by
 tricks. Let it no more be said that empires encourage arts,
 for it is arts that encourage empires. Arts and artists are
-
 
 1/4 SELECTIONS FROM BLAKE'S WRITINGS.
 
@@ -475,9 +455,6 @@ above the great public monuments in Westminster, St. Paul's,
 and other cathedrals. To the Society for the Encouragement
 of Art I address myself with respectful duty, request;ng their
 
-
-PUBLIC ADDRESS. 175
-
 consideration of my plan as a great public means of advanc-
 ing fine art in Protestant communities. Monuments to the
 dead painters by historical and poetical artists, like Barry and
@@ -517,7 +494,6 @@ which I shall soon publish. Secret calumny and open pro-
 fessions of friendship are common enough all the world over,
 but have never been so good an occasion of poetic imagery.
 When a base man means to be your enemy, he always begins
-
 
 1/6 SELECTIONS FROM BLAKE'S WRITINGS.
 
@@ -560,9 +536,6 @@ to be done, in England, where drawing, the foundation, is
 condemned, and absurd nonsense about dots and lozenges
 and clean strokes made to occupy the attention to the neglect
 
-
-PUBLIC ADDRESS. 177
-
 of all real art. I defy any man to cut cleaner strokes than
 I do, or rougher, when I please ; and assert, that he who
 thinks he can engrave or paint either, without being a master
@@ -574,12 +547,9 @@ a public duty. -
 
 WILLIAM BLAKE.
 
-
 VOL. II. N
 
-
 1/8 SELECTIONS FROM BLAKE'S WRITINGS.
-
 
 NOTE.
 
@@ -617,7 +587,6 @@ To wood-cut on copper : Lay a ground as for etching ; trace,
 &c., and, instead of etching the blacks, etch the whites, and
 bite it in.
 
-
 SIBYLLINE LEAVES.
 On Homer 's Poetry.
 
@@ -647,11 +616,7 @@ and Evil.
 The Classics it is, the Classics, and not Goths or monks,
 that desolate Europe with wars.
 
-
-
-
 l8o SELECTIONS FROM BLAKE'S WRITINGS.
-
 
 On Virgil.
 
@@ -671,7 +636,6 @@ copy, and buy and sell, and criticise, but not make. Grecian
 is mathematic form. Mathematic form is eternal in the
 reasoning memory. Living form is eternal existence. Gothic
 is living form.
-
 
 THE GHOST OF ABEL.
 
@@ -713,7 +677,6 @@ Seven times, O Eve, thou hast fainted over the Dead.
 Ah ! Ah !
 
 (EVE revives.}
-
 
 1 82 SELECTIONS FROM BLAKE'S WRITINGS.
 
@@ -771,7 +734,6 @@ Tho' terribly afflicted, as we also are : yet Jehovah sees
 
 him
 
-
 THE GHOST OF ABEL. 183
 
 Alive and not dead ; were it not better to believe Vision
@@ -827,7 +789,6 @@ Thou shalt thyself be sacrificed to me thy God on Calvary.
 'EHOVAH.— Such is my will (thunders) that thou thyself
 
 go to Eternal Death.
-
 
 1 84 SELECTIONS FROM BLAKE'S WRITINGS.
 

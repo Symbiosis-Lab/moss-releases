@@ -9,7 +9,7 @@ ocr_note: Light cleanup for spacing and OCR artifacts; Blake's spelling and capi
 ---
 (On title-page.) " This Man was Hired to Depress Art." This is the opinion
 of Will. Blake. My proofs of this opinion are given in the following notes.
-(At foot of page.) Advice to the popes who succeeded to the age of Kafail (sic) —
+(At foot of page.) Advice to the popes who succeeded to the age of Rafael (sic) —
 
 Degrade first the Arts, if you'd Mankind Degrade.
 Hire Idiots to Paint with cold light and not shade.
@@ -255,7 +255,7 @@ the parts may be finishing by nice touches, while his mind is engaged on other
 matters : he may even hear a play or a novel read without much disturbance."
 t Blake : A Lie. Working up of Effect is more an operation of Indolence than
 the Making out of the Parts as far as Greatest is more than Least. I speak
-here of Rembrandt's and Itubens's and Reynolds's Effect. Real effect is Making
+here of Rembrandt's and Rubens's and Reynolds's Effect. Real effect is Making
 • out of Parts, and it is Nothing Else but That.
 
 To an editor's note on the lost secrets of colour-mixing known to the old
@@ -447,7 +447,7 @@ Blale : Minute Discrimination is not Accidental. All Sublimity is founded
 on Minute Discrimination. j
 
 I do not believe that Rafael taught Mich. Angelo, or that Mich. Ang. taught
-Rafael, any more than I believe that the Eose teaches the Lily how to grow, or
+Rafael, any more than I believe that the Rose teaches the Lily how to grow, or
 the Apple tree teaches the Pear tree how to bear Fruit. I do not believe the
 tales of Anecdote when they militate against Individual Character.
 
@@ -2539,7 +2539,7 @@ himself in his loins — the narrow Canaanite valley.
 path of Milton. Abraham had the seed of Christ the Awakener in him. Eeuben,
 the slumberer, tried to take its place.)
 
-10. (on page 18.) Purity and Love, as the Lily and Eose, sending forth their
+10. (on page 18.) Purity and Love, as the Lily and Rose, sending forth their
 spiritual human forms to meet and mingle.
 
 11. (on page 19.) Albion's children, exiled from his breast, pass to and fro

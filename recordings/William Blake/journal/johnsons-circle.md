@@ -22,15 +22,15 @@ Blake's commercial relationship with Johnson dates from at least 1779 and ran in
 Knowles describes Mary Wollstonecraft's relation to the Johnson circle:
 
 > first brought into notice by the Rev. John
-> Hewlett, w^ho, to forward her views in getting
-> employment by wTiting on literary subjects,
+> Hewlett, who, to forward her views in getting
+> employment by writing on literary subjects,
 > introduced her to Mr. Joseph Johnson, book-
 > seller, in St. Paul's Church-yard. The house
 > and purse of this liberal man were always open
 > to authors w^io possessed talents, and w4io re-
 > quired pecuniary assistance ; and such being
 > the case with ^Irs. Wollstonecraft, she w^as a
-> frequent visitor at ]Mr. Johnson's : there Fuseli
+> frequent visitor at Mr. Johnson's : there Fuseli
 > met her ; but as he was not very ready to make
 > new acquaintances, and was not only a shy man,
 > but had rather a repidsive manner to those he
@@ -55,7 +55,7 @@ Knowles describes Mary Wollstonecraft's relation to the Johnson circle:
 > assert and secure their liberties, which no pre-
 > vious period in the history of the world had
 > afforded. The same feelings animated the
-> bosom of Mrs. WoUstonecraft : this was kept
+> bosom of Mrs. Wollstonecraft : this was kept
 > up, and indeed heightened by her then daily
 > occupation, that of translating from the French
 > the political pamphlets of the day, which at this
@@ -82,7 +82,7 @@ Knowles describes Mary Wollstonecraft's relation to the Johnson circle:
 > philosophers, being destroyed by murderers and
 > madmen.
 > 
-> JNIrs. Wollstonecraft had the strongest desire
+> Mrs. Wollstonecraft had the strongest desire
 > to be useful to her connexions and friends, and
 > she began her career in life by sacrificing her
 > feelings and comforts to what she fancied pu-
