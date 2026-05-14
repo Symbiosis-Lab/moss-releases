@@ -1,32 +1,34 @@
 ---
 title: The Smile
-description: From the Pickering Manuscript, c. 1807. Public-domain text from John Sampson's 1905 *Poetical Works of William Blake* (Oxford), the textually-superior edition recommended by the textual scholar.
+description: From the Pickering Manuscript, c. 1807. Public-domain text from John Sampson's *Poetical Works of William Blake* (Oxford, Clarendon Press, 1905), p. 274.
 date: 1807-01-01
 uid: blk-pickering-the-smile
 weight: 1
-source: John Sampson, ed., *The Poetical Works of William Blake: A New and Verbatim Text from the Manuscript Engraved and Letterpress Originals* (Oxford, Clarendon Press, 1905), pp. 286–295 (approx.). Public domain. OCR via Internet Archive poeticalworksofw00blakuoft, lines 18730–18835.
-ocr_note: Light cleanup for spacing and OCR running-head artifacts; Blake's punctuation, capitalization, and ampersands preserved as Sampson transmitted them.
+source: John Sampson, ed., *The Poetical Works of William Blake: A New and Verbatim Text from the Manuscript Engraved and Letterpress Originals* (Oxford, Clarendon Press, 1905), p. 274. Public domain. OCR via Internet Archive poeticalworksofw00blakuoft, lines 18728–18835.
+ocr_note: Pass-3 polish v2 — verse body separated from Sampson's textual apparatus line-by-line (the apparatus is interleaved at page transitions throughout the poem in the source); apparatus moved to a *Variants* block below. Stanza marginal line-numbers, running heads ("Pickering MS, …"), and signature marks ("T 2") stripped. Blake's punctuation, capitalization, ampersands preserved as Sampson transmitted them.
 ---
 
-There is a Smile of Love, i
+The Smile
+
+There is a Smile of Love,
 
 And there is a Smile of Deceit,
 And there is a Smile of Smiles
 In which these two Smiles meet.
 
-And there is a Frown of Hate, 5
+And there is a Frown of Hate,
 
 And there is a Frown of Disdain,
 And there is a Frown of Frowns
 Which you strive to forget in vain,
 
-For it sticks in the Heart's deep core 9
+For it sticks in the Heart's deep core
 
 And it sticks in the deep Back-bone —
 And no Smile that ever was smil'd.
 But only one Smile alone,
 
-That betwixt the Cradle & Grave 13
+That betwixt the Cradle & Grave
 
 It only once Smil'd can be ;
 And, when it once is Smil'd,
@@ -34,8 +36,6 @@ There's an end to all Misery.
 
 Pickering MS. p. i. DGR and all edd. except Shep. entitle 'Smile and
 Frown .'
-
-4 these] the DGR. 11-16 And . . . Misery] DGR, followed by
 
 WMR and EY, evade the anacoluthon by reading :
 
@@ -48,11 +48,8 @@ That when it once is smiled
 There's an end to all misery.'
 
 WBY, with less violence, adopts DGR's reading of 1. 11, omits the round
-brackets, and retains the ' And ' in 1. 15. 12 Cp. ' The Crystal Cabinet,'
 
 1.17.
-
-
 
 Prefatory Note to ' The Golden Net '
 
@@ -108,3 +105,10 @@ Three virgins at the break of day : —
 "Whither, young man, whither away?"'
 This is one of Blake's * threefold ' poems. See note to ' The Crystal
 Cabinet.'
+
+## Variants (Sampson 1905, textual apparatus)
+
+*Sampson's interleaved variant readings, cross-references, and stanza-line citations. EY = Ellis & Yeats; DGR = Rossetti; Shep. = Shepherd.*
+
+4 these] the DGR. 11-16 And . . . Misery] DGR, followed by
+brackets, and retains the ' And ' in 1. 15. 12 Cp. ' The Crystal Cabinet,'

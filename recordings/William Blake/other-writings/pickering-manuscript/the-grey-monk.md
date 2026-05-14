@@ -1,25 +1,25 @@
 ---
 title: The Grey Monk
-description: From the Pickering Manuscript, c. 1807. Public-domain text from John Sampson's 1905 *Poetical Works of William Blake* (Oxford), the textually-superior edition recommended by the textual scholar.
+description: From the Pickering Manuscript, c. 1807. Public-domain text from John Sampson's *Poetical Works of William Blake* (Oxford, Clarendon Press, 1905), p. 284.
 date: 1807-01-01
 uid: blk-pickering-the-grey-monk
 weight: 1
-source: John Sampson, ed., *The Poetical Works of William Blake: A New and Verbatim Text from the Manuscript Engraved and Letterpress Originals* (Oxford, Clarendon Press, 1905), pp. 286–295 (approx.). Public domain. OCR via Internet Archive poeticalworksofw00blakuoft, lines 19672–19903.
-ocr_note: Light cleanup for spacing and OCR running-head artifacts; Blake's punctuation, capitalization, and ampersands preserved as Sampson transmitted them.
+source: John Sampson, ed., *The Poetical Works of William Blake: A New and Verbatim Text from the Manuscript Engraved and Letterpress Originals* (Oxford, Clarendon Press, 1905), p. 284. Public domain. OCR via Internet Archive poeticalworksofw00blakuoft, lines 19669–19903.
+ocr_note: Pass-3 polish v2 — verse body separated from Sampson's textual apparatus line-by-line (the apparatus is interleaved at page transitions throughout the poem in the source); apparatus moved to a *Variants* block below. Stanza marginal line-numbers, running heads ("Pickering MS, …"), and signature marks ("T 2") stripped. Blake's punctuation, capitalization, ampersands preserved as Sampson transmitted them.
 ---
 
-* I die, I die ! ' the Mother said, i
+The Grey Monk
+
+* I die, I die ! ' the Mother said,
 
 ' My Children die for lack of Bread.
 What more has the merciless Tyrant said ? '
 The Monk sat down on the Stony Bed.
 
-The blood red ran from the grey Monk's side, 5
+The blood red ran from the grey Monk's side,
 His hands & feet were wounded wide,
 His Body bent, his arms & knees
 Like to the roots of ancient trees.
-
-Pickering MS. p. 12.
 
 I I die, I die] I see, I see MS. Book, DGR, WHY. 2 die] will die
 
@@ -29,10 +29,7 @@ sat him down DGR, WMR. the] her MS. Book, DGR, WMR, WBY.
 
 5-8 The . . . trees] R^, DGR, and WBY omit.
 
-
-Pickering MS, 285
-
-His eye was dry ; no tear could flow : 9
+His eye was dry ; no tear could flow :
 
 A hollow groan first spoke his woe.
 
@@ -40,35 +37,31 @@ He trembled & shudder'd upon the Bed ;
 
 At length with a feeble cry he said :
 
-' When God commanded this hand to write 13
+' When God commanded this hand to write
 
 In the studious hours of deep midnight,
 He told me the writing I wrote should prove
 The Bane of all that on Earth I love.
 
-* My brother starv'd between two Walls, 17
+* My brother starv'd between two Walls,
 His Children's Cry my soul appalls ;
 
 I mock'd at the wrack and griding chain,
 My bent body mocks their torturing pain.
 
-'Thy Father drew his Sword in the North, 21
+'Thy Father drew his Sword in the North,
 
 With his thousands strong he marched forth ;
 Thy Brother has arm'd himself in Steel,
 To avenge the wrongs thy Children feel.
 
-* But vain the Sword and vain the Bow, 35
+* But vain the Sword and vain the Bow,
 They never can work War's overthrow.
 
 The Hermit's Prayer and the Widow's Tear
 Alone can free the World from fear.
 
-
-9 tear] tears WBY. 10 first spoke] bespoke RS DGR, WMR, WBY.
-
 II, 12 He . . . said] WBY inverts the order of these two Hnes. 12 with]
-WBY omits. 14 studious] shadowy DGR, WMR, WBY. 15 the
 
 writing] that all MS. Book, DGR, WMR, WBY. 13-16 In a letter to
 
@@ -81,7 +74,6 @@ And all my friends be with doubts beguil'd ?
 Must my Wife live in my Sister's bane ?
 Or my sister survive on my Love's pain ? '
 
-18 His] Thy R^, DGR, WBY. Cry] crying DGR. 19 griding] grinding
 Shep. ; the grinding WMR, WBY. 20 mocks their] mocks at their
 
 MS. Book, DGR, WMR, WBY. 21 See note to version in MS.
@@ -94,16 +86,15 @@ DGR, WMR. 24 avenge] revenge MS. Book, DGR, WMR. wrongs]
 
 wrongs that R^
 
-
 2 86 Pickering MS.
 
-' For a Tear is an Intellectual Thing, 29
+' For a Tear is an Intellectual Thing,
 
 And a Sigh is the Sword of an Angel King,
 And the bitter groan of the Martyr's woe
 Is an Arrow from the Almightie's Bow.
 
-* The hand of Vengeance found the Bed 33
+* The hand of Vengeance found the Bed
 
 To which the Purple Tyrant fled ;
 
@@ -128,12 +119,9 @@ And every wound it has made shall heal.'
 29 a Tear] the tear MS. Book, WBY. 31 the Martyr's] a martyr's DGR,
 WMR, WBY. 33 found] sought MS. Book, WBY.
 
-
 Prefatory Note to ' Auguries of
 Innocence '
 
-
-Pickering MS. p. 13. Written in a single column, without marginal
 additions, marks of transposition, or numerical rearrangement of lines. The
 couplets are not divided into sections, nor is there a terminal line or other
 mark of separation between the opening stanza and the proverb-couplets
@@ -148,8 +136,6 @@ times aaaa. The few exceptions to this rule have the appearance of being
 marginal interpolations. The first five stanzas (11. 5-24) deal with cruelty
 or kindness to animals, its penalty or reward — a theme which may have
 been suggested to Blake's mind while engraving the plates for Hayley's
-
-
 
 Ballads. In the sixth stanza (11. 25-28) Blake wanders off into a different
 aspect of animal life, obscene or noxious animals symbolizing human
@@ -209,8 +195,6 @@ I print the text as in the original MS., followed in smaller type by my own
 revised version for those who may prefer to read the poem as a whole,
 instead of as a number of disconnected proverb-couplets.
 
-
-
 With this may be compared Rossetti's rearrangement : —
 
 (a) 11. 1-4.
@@ -236,3 +220,13 @@ An example of this may be seen in Rossetti's penultimate section, where,
 by the juxtaposition of two separate passages, Blake is made to argue that
 a correct apprehension of the fact that some are born to misery and endless
 night will enable us to go through life with safety.
+
+## Variants (Sampson 1905, textual apparatus)
+
+*Sampson's interleaved variant readings, cross-references, and stanza-line citations. EY = Ellis & Yeats; DGR = Rossetti; Shep. = Shepherd.*
+
+Pickering MS. p. 12.
+9 tear] tears WBY. 10 first spoke] bespoke RS DGR, WMR, WBY.
+WBY omits. 14 studious] shadowy DGR, WMR, WBY. 15 the
+18 His] Thy R^, DGR, WBY. Cry] crying DGR. 19 griding] grinding
+Pickering MS. p. 13. Written in a single column, without marginal

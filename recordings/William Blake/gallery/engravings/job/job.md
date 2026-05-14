@@ -4,10 +4,10 @@ description: *Illustrations of the Book of Job*, 1826. Twenty-one engravings plu
 children_style: grid
 weight: 1
 uid: blk-job
-date: 1826-03-08
+date: 1825-01-01
 plates_present: 14
 plates_canonical: 22
-source: Metropolitan Museum of Art, Open Access (CC0). Individual plates with Met object IDs 371142 (Job and His Family), 383467 (Destruction of Job's Sons), 383460 (Messengers tell Job), 383458 (Satan Smiting Job with Boils), 383459 (Job's Comforters), 383456 (Job's Despair), 383451 (Job rebuked), 383290 (Job's Evil Dreams), 383464 (Lord Answering Job), 383506 (Job's Sacrifice), 383470 (Job accepting Charity), 383469 (Job and his Daughters), 383468 (Job and his Wife restored), and the Title Page (383462).
+source: Metropolitan Museum of Art, Open Access (CC0) — the **Linnell India-paper proof set**, Rogers Fund 1917, accession 17.65.1ff. These are 1825 proof states (presented to Linnell before publication); the published 1826 letterpress impressions on French paper appear in other institutions. Individual plates with Met object IDs 371142 (Job and His Family), 383467 (Destruction of Job's Sons), 383460 (Messengers tell Job), 383458 (Satan Smiting Job with Boils), 383459 (Job's Comforters), 383456 (Job's Despair), 383451 (Job rebuked), 383290 (Job's Evil Dreams), 383464 (Lord Answering Job), 383506 (Job's Sacrifice), 383470 (Job accepting Charity), 383469 (Job and his Daughters), 383468 (Job and his Wife restored), and the Title Page (383462).
 
 The Met holds 14 of the 22 plates; 8 are not in the Met's Open Access collection. The British Museum holds the Linnell proof set (BM 1923,0613.1–22) which would complete the series.
 ---

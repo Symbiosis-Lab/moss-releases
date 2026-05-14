@@ -1,17 +1,16 @@
 ---
 title: The Golden Net
-description: From the Pickering Manuscript, c. 1807. Public-domain text from John Sampson's 1905 *Poetical Works of William Blake* (Oxford), the textually-superior edition recommended by the textual scholar.
+description: From the Pickering Manuscript, c. 1807. Public-domain text from John Sampson's *Poetical Works of William Blake* (Oxford, Clarendon Press, 1905), p. 275.
 date: 1807-01-01
 uid: blk-pickering-the-golden-net
 weight: 1
-source: John Sampson, ed., *The Poetical Works of William Blake: A New and Verbatim Text from the Manuscript Engraved and Letterpress Originals* (Oxford, Clarendon Press, 1905), pp. 286–295 (approx.). Public domain. OCR via Internet Archive poeticalworksofw00blakuoft, lines 18835–19030.
-ocr_note: Light cleanup for spacing and OCR running-head artifacts; Blake's punctuation, capitalization, and ampersands preserved as Sampson transmitted them.
+source: John Sampson, ed., *The Poetical Works of William Blake: A New and Verbatim Text from the Manuscript Engraved and Letterpress Originals* (Oxford, Clarendon Press, 1905), p. 275. Public domain. OCR via Internet Archive poeticalworksofw00blakuoft, lines 18836–19029.
+ocr_note: Pass-3 polish v2 — verse body separated from Sampson's textual apparatus line-by-line (the apparatus is interleaved at page transitions throughout the poem in the source); apparatus moved to a *Variants* block below. Stanza marginal line-numbers, running heads ("Pickering MS, …"), and signature marks ("T 2") stripped. Blake's punctuation, capitalization, ampersands preserved as Sampson transmitted them.
 ---
 
 The Golden Net
 
-
-Three Virgins at the break of day, i
+Three Virgins at the break of day,
 
 'Whither, young man, whither away?
 
@@ -19,7 +18,7 @@ Alas for woe ! alas for woe ! '
 
 They cry, & tears for ever flow.
 
-The one was cloth'd in flames of fire, 5
+The one was cloth'd in flames of fire,
 
 The other cloth'd in iron wire,
 
@@ -27,9 +26,6 @@ The other cloth'd in tears & sighs,
 
 Dazling bright before my Eyes.
 
-Pickering MS. p. 2.
-
-1, a] R' begins with an amended version of Blake's second draft of the
 opening of the poem (MS, Book, p. 14, col. i del.) —
 
 ' Beneath the white thorn stood in May
@@ -69,9 +65,7 @@ desire MS. Book 1st rdg. del. 7 other cloth'd] third was clothed
 RS DGR, WMR, EY. tears and sighs] sighs & tears MS. Book ist
 rdg. del.
 
-
-
-They bore a Net of Golden twine 9
+They bore a Net of Golden twine
 
 To hang upon the Branches fine.
 
@@ -79,7 +73,7 @@ Pitying I wept to see the woe
 
 That Love & Beauty undergo,
 
-To be consum'd in burning Fires 13
+To be consum'd in burning Fires
 
 And in ungratified desires,
 
@@ -87,7 +81,7 @@ And in tears cloth'd night & day
 
 Melted all my Soul away.
 
-When they saw my Tears, a Smile 17
+When they saw my Tears, a Smile
 
 That did Heaven itself beguile,
 
@@ -95,7 +89,7 @@ Bore the Golden Net aloft,
 
 As on downy Pinions soft,
 
-Over the Morning of my Day. 21
+Over the Morning of my Day.
 
 Underneath the Net I stray,
 
@@ -103,11 +97,9 @@ Now intreating Burning Fire,
 
 Now intreating Iron Wire,
 
-Now intreating Tears & Sighs. 25
+Now intreating Tears & Sighs.
 
 O when will the morning rise ?
-
-9 Cp. the lines in ' How sweet I roam'd from field to field ' {Poetical
 
 Sketches) : —
 
@@ -132,18 +124,14 @@ burning Fires] flames of fire WBY. 14 ungratified desires] unsatisfied
 
 desire WBY. 16 Melted] It melted R' and all edd. 17 my Tears] me
 
-weep Ri. 18 That] which R>. did] might DGR, WMR, EY. 20 on]
 by MS. Book, R', WBY. 21 Over] O'er MS. Book, R'. 23 Burning
 
 Fire] flaming fire MS. Book ; Flaming-fire R' and all edd. except Shep.
-24 Iron Wire] iron wire MS. Book ; sweet desire ibid. 1st rdg. del. ;
 Iron-wire R* and all edd. except Shep. 25 Tears & sighs] Tears-and-
 
 Sighs R' and all edd. except Shep. and WBY. 26 O . . . rise] When,
 
 O when, will Morning rise? MS. Book 1st rdg. del.
-
-
 
 Prefatory Note to 'The Mental
 Traveller '
@@ -194,8 +182,14 @@ of his Critical Essay, and Messrs. Ellis and Yeats' interpretation as ' at the
 same time a sun-myth and a story of the Incarnation ' on pp. 34-36 of the
 second volume of their large edition of Blake's Works.
 
-
-SAMPSON
-
-
 2 74 Picker i7tg MS.
+
+## Variants (Sampson 1905, textual apparatus)
+
+*Sampson's interleaved variant readings, cross-references, and stanza-line citations. EY = Ellis & Yeats; DGR = Rossetti; Shep. = Shepherd.*
+
+Pickering MS. p. 2.
+1, a] R' begins with an amended version of Blake's second draft of the
+9 Cp. the lines in ' How sweet I roam'd from field to field ' {Poetical
+weep Ri. 18 That] which R>. did] might DGR, WMR, EY. 20 on]
+24 Iron Wire] iron wire MS. Book ; sweet desire ibid. 1st rdg. del. ;
