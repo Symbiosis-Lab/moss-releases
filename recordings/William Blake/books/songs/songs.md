@@ -7,7 +7,7 @@ uid: blk-songs
 source: Four hand-coloured copies from the William Blake Archive (Copy B BM, Copy Y Met, Copy AA Fitzwilliam — added pass-12) plus the existing LoC Copy Z bound-state captures. Plate-text transcriptions from Project Gutenberg ebook #1934 (public domain).
 ---
 
-> *"Songs of Innocence and of Experience. That is the book most readers think they know and least know. Bring every copy you can find to a clean state — let the reader see that The Tyger in 1794 ink is not The Tyger in 1826 ink."*
+> *"Songs of Innocence and of Experience. That is the book most readers think they know and least know. Bring every copy you can find to a clean state — let the reader see that The Tyger in 1794 ink is not The Tyger in 1826 ink. The Prophecies can wait; they are for the few. Innocence and Experience are for the many, and the many are owed accuracy."*
 > *(Per Blake's pass-11 review of this archive.)*
 
 Blake printed *Songs* by relief etching, then hand-coloured each copy. **No two copies are identical.** The colouring, the plate order, and even the selection of which plates appear vary across the ~30 known surviving copies. Pass-12 brings four coloured copies side by side from the William Blake Archive.
@@ -16,7 +16,7 @@ Blake printed *Songs* by relief etching, then hand-coloured each copy. **No two 
 
 - *copy-b-bm/* — **Copy B** (British Museum). 54 plates at ~888×1389 each. One of the earlier combined Innocence + Experience copies — Blake's own colouring on the 1794 paper.
 
-- *copy-y-met/* — **Copy Y** (Metropolitan Museum of Art). 54 plates. Late printing, fully-finished colouring.
+- *copy-y-met/* — **Copy Y** (Metropolitan Museum of Art). 54 plates. Printed *c.* 1825 — Blake's late hand, the patience of an old man returning to old work.
 
 - *copy-aa-fitzwilliam/* — **Copy AA** (Fitzwilliam Museum). 54 plates. Posthumous Catherine/Tatham printing — the colours added after Blake's death.
 
@@ -31,7 +31,7 @@ Blake printed *Songs* by relief etching, then hand-coloured each copy. **No two 
 A reader who comes to *The Tyger* from a printed anthology meets one set of words and no colour. A reader who comes here meets:
 
 - in **Copy B** (1794, BM) Blake's own colouring on the original paper;
-- in **Copy Y** (Met, late printing) the same composition under further years of revision;
+- in **Copy Y** (Met, *c.* 1825) the same composition under further years of revision — Blake's hand grown deliberate;
 - in **Copy AA** (Fitzwilliam, posthumous) the after-Blake recolouring by Catherine and Tatham — visibly different in palette, since their hand was not his;
 - in **Copy Z** (LoC, bound) the volume as a bound reading object, plates seen in their leaf pairings.
 
