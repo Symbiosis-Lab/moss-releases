@@ -3,7 +3,6 @@ title: To Trusler
 uid: l17990823
 date: 1799-08-23
 description: out with the spiritual world, especially if I should
-recipient: Trusler
 source: Russell ed., *The Letters of William Blake* (Methuen, 1906). PD. OCR via Internet Archive lettersofwilliam00blak.
 ocr_note: Text recovered from 1906 OCR; spacing & date glyphs lightly normalized. Original spelling preserved.
 ---

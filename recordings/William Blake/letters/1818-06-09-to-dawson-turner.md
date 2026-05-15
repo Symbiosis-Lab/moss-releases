@@ -3,7 +3,6 @@ title: To Dawson Turner — 9 June 1818
 uid: l18180609
 date: 1818-06-09
 description: Blake's own catalogue raisonné of the illuminated books with prices. Essential as a primary-source price-list.
-recipient: Dawson Turner
 source: Russell ed., *Letters* (1906), pp. 173–174. Public domain.
 ---
 

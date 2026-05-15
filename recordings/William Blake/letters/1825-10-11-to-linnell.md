@@ -2,8 +2,7 @@
 title: To Linnell
 uid: l18251011
 date: 1825-10-11
-description: coach. And I may say I accompanied him part of
-recipient: Linnell
+description: On accompanying Linnell partway by coach; among the earliest of the deathbed-period letters.
 source: Russell ed., *The Letters of William Blake* (Methuen, 1906). PD. OCR via Internet Archive lettersofwilliam00blak.
 ocr_note: Text recovered from 1906 OCR; spacing & date glyphs lightly normalized. Original spelling preserved.
 ---

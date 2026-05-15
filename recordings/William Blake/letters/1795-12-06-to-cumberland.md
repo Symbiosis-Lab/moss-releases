@@ -3,7 +3,6 @@ title: To Cumberland — 6 December 1795
 uid: l17951206
 date: 1795-12-06
 description: The earliest surviving Blake letter. On the relief-etching method.
-recipient: Cumberland
 source: Russell ed., *The Letters of William Blake* (Methuen, 1906), pp. 41–43. Public domain. OCR via Internet Archive lettersofwilliam00blak.
 ---
 

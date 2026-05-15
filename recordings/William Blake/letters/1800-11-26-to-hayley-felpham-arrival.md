@@ -2,8 +2,7 @@
 title: To Hayley — 26 November 1800
 uid: l18001126
 date: 1800-11-26
-description: From Felpham, after arrival. Blake at work on miniatures and engravings for Hayley.
-recipient: Hayley
+description: Felpham arrival; 'Absorbed by the poets Milton, Homer, Camoens, Ercilla, Ariosto, and Spenser.'
 source: Russell ed., *Letters* (1906), pp. 81–82. Public domain.
 ---
 

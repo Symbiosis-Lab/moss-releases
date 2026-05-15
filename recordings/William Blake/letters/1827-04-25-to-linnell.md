@@ -2,8 +2,7 @@
 title: To Linnell
 uid: l18270425
 date: 1827-04-25
-description: I think, both in health and in work. I thank you
-recipient: Linnell
+description: Recovery in progress; thanks for £10; on Job, Dante engravings, the Stedman plates.
 source: Russell ed., *The Letters of William Blake* (Methuen, 1906). PD. OCR via Internet Archive lettersofwilliam00blak.
 ocr_note: Text recovered from 1906 OCR; spacing & date glyphs lightly normalized. Original spelling preserved.
 ---

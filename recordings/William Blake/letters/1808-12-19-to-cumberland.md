@@ -2,8 +2,7 @@
 title: To Cumberland
 uid: l18081219
 date: 1808-12-19
-description: by your kind ardour in my cause, and should
-recipient: Cumberland
+description: From South Molton Street; thanks for Cumberland's encouragement.
 source: Russell ed., *The Letters of William Blake* (Methuen, 1906). PD. OCR via Internet Archive lettersofwilliam00blak.
 ocr_note: Text recovered from 1906 OCR; spacing & date glyphs lightly normalized. Original spelling preserved.
 ---

@@ -2,8 +2,7 @@
 title: To Linnell
 uid: l18270703
 date: 1827-07-03
-description: you are so kind as to send me at this time. My
-recipient: Linnell
+description: Final Linnell letter; relapse after Hampstead; thanks for £10. Blake dies six weeks later.
 source: Russell ed., *The Letters of William Blake* (Methuen, 1906). PD. OCR via Internet Archive lettersofwilliam00blak.
 ocr_note: Text recovered from 1906 OCR; spacing & date glyphs lightly normalized. Original spelling preserved.
 ---

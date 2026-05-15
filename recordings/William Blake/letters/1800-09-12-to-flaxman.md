@@ -3,7 +3,6 @@ title: To Flaxman
 uid: l18000912
 date: 1800-09-12
 description: My dearest Friend, — It is to you I owe all my
-recipient: Flaxman
 source: Russell ed., *The Letters of William Blake* (Methuen, 1906). PD. OCR via Internet Archive lettersofwilliam00blak.
 ocr_note: Text recovered from 1906 OCR; spacing & date glyphs lightly normalized. Original spelling preserved.
 ---

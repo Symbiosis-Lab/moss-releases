@@ -2,8 +2,7 @@
 title: To Flaxman
 uid: l18011019
 date: 1801-10-19
-description: great work is accomplished. Peace ^ opens the
-recipient: Flaxman
+description: Verse-style epistle to Flaxman; on work, Hayley, and Felpham.
 source: Russell ed., *The Letters of William Blake* (Methuen, 1906). PD. OCR via Internet Archive lettersofwilliam00blak.
 ocr_note: Text recovered from 1906 OCR; spacing & date glyphs lightly normalized. Original spelling preserved.
 ---

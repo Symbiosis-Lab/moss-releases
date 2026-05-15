@@ -2,8 +2,7 @@
 title: To Linnell
 uid: l18260729
 date: 1826-07-29
-description: Young's addition to Mr, Fincham's prescription for
-recipient: Linnell
+description: On Dr Young's prescription (dandelion addition); delirium and pain too sharp for thought.
 source: Russell ed., *The Letters of William Blake* (Methuen, 1906). PD. OCR via Internet Archive lettersofwilliam00blak.
 ocr_note: Text recovered from 1906 OCR; spacing & date glyphs lightly normalized. Original spelling preserved.
 ---

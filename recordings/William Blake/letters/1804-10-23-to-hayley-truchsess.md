@@ -3,7 +3,6 @@ title: To Hayley
 uid: l18041023
 date: 1804-10-23
 description: note to Mr. Payne, and have had the cash from
-recipient: Hayley
 source: Russell ed., *The Letters of William Blake* (Methuen, 1906). PD. OCR via Internet Archive lettersofwilliam00blak.
 ocr_note: Text recovered from 1906 OCR; spacing & date glyphs lightly normalized. Original spelling preserved.
 ---

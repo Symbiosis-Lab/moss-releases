@@ -2,8 +2,7 @@
 title: To Cumberland
 uid: l17990826
 date: 1799-08-26
-description: written to you to thank you for your kind recom-
-recipient: Cumberland
+description: On the Truslers' rejection of the Malevolence design; Blake's defence of his own genius.
 source: Russell ed., *The Letters of William Blake* (Methuen, 1906). PD. OCR via Internet Archive lettersofwilliam00blak.
 ocr_note: Text recovered from 1906 OCR; spacing & date glyphs lightly normalized. Original spelling preserved.
 ---

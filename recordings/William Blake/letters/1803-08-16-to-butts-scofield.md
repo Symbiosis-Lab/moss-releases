@@ -2,8 +2,7 @@
 title: To Butts
 uid: l18030816
 date: 1803-08-16
-description: hope will please you. This, I believe, about
-recipient: Butts
+description: Seven drawings sent. Blake's own account of the Scofield soldier incident that led to his sedition trial.
 source: Russell ed., *The Letters of William Blake* (Methuen, 1906). PD. OCR via Internet Archive lettersofwilliam00blak.
 ocr_note: Text recovered from 1906 OCR; spacing & date glyphs lightly normalized. Original spelling preserved.
 ---

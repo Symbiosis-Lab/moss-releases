@@ -3,7 +3,6 @@ title: To Cumberland
 uid: l18270412
 date: 1827-04-12
 description: I have been very near the gates of death, and
-recipient: Cumberland
 source: Russell ed., *The Letters of William Blake* (Methuen, 1906). PD. OCR via Internet Archive lettersofwilliam00blak.
 ocr_note: Text recovered from 1906 OCR; spacing & date glyphs lightly normalized. Original spelling preserved.
 ---

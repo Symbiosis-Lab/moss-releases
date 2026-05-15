@@ -2,10 +2,9 @@
 title: To Cumberland
 uid: l18270402
 date: 1827-04-02
-description: I have been very near the gates of death, and
+description: Late Cumberland correspondence; preview of the deathbed letter that follows ten days later.
 have returned very weak, and an old man, feeble
 and tottering, but not in 
-recipient: Cumberland
 source: The Letters of William Blake, ed. Archibald G. B. Russell (Methuen, 1906). Public domain. OCR via Internet Archive item lettersofwilliam00blak.
 ---
 

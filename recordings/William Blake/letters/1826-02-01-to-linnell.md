@@ -2,8 +2,7 @@
 title: To Linnell
 uid: l18260201
 date: 1826-02-01
-description: cannot come to you. And this on two accounts
-recipient: Linnell
+description: Too ill to come; invites Linnell to share a mutton chop instead.
 source: Russell ed., *The Letters of William Blake* (Methuen, 1906). PD. OCR via Internet Archive lettersofwilliam00blak.
 ocr_note: Text recovered from 1906 OCR; spacing & date glyphs lightly normalized. Original spelling preserved.
 ---

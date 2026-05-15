@@ -2,8 +2,7 @@
 title: To Cumberland
 uid: l17961223
 date: 1796-12-23
-description: pricks of conscience on account of not acknow-
-recipient: Cumberland
+description: On engraving work; one of the early letters from the years of obscurity.
 source: Russell ed., *The Letters of William Blake* (Methuen, 1906). PD. OCR via Internet Archive lettersofwilliam00blak.
 ocr_note: Text recovered from 1906 OCR; spacing & date glyphs lightly normalized. Original spelling preserved.
 ---
