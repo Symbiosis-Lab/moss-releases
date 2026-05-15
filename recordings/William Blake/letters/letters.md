@@ -1,5 +1,5 @@
 ---
-description: Thirty-one of Blake's surviving letters, 1791–1827, transcribed from Archibald G. B. Russell, ed., *The Letters of William Blake Together with a Life by Frederick Tatham* (Methuen, 1906; public domain). Russell prints ~46 letters; this selection privileges the substantive — verse-epistles, manifestos, the deathbed letter — over the transactional.
+description: Thirty-two of Blake's surviving letters, 1791–1827, transcribed from Archibald G. B. Russell, ed., *The Letters of William Blake Together with a Life by Frederick Tatham* (Methuen, 1906; public domain). Russell prints ~46 letters; this selection privileges the substantive — verse-epistles, manifestos, the deathbed letter — over the transactional.
 children_style: list
 weight: 2
 uid: "0188e34c"
@@ -26,9 +26,10 @@ The letters are where the engraver stops being a figure on a plate and becomes a
 - *1803-07-06-to-butts* — the Riposo painting
 - *1803-08-16-to-butts-scofield* — the soldier incident in Blake's own words
 
-**Linnell (5 letters, 1825–1827).** The deathbed cycle — gratitude for the £10 instalments, dandelion prescriptions, the relapse after the Hampstead visit, the final letter six weeks before death.
+**Linnell (6 letters, 1825–1827).** The deathbed cycle — gratitude for the £10 instalments, dandelion prescriptions, the relapse after the Hampstead visit, the final letter six weeks before death.
 
 - *1825-10-11-to-linnell*
+- *1825-11-10-to-linnell* — first explicit Job-plates reference in the Linnell correspondence
 - *1826-02-01-to-linnell* — too ill, mutton chop instead
 - *1826-07-29-to-linnell* — Dr Young's dandelion prescription
 - *1827-04-25-to-linnell* — recovery in progress
