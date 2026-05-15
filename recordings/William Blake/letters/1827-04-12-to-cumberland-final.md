@@ -2,7 +2,7 @@
 title: To Cumberland
 uid: l18270412
 date: 1827-04-12
-description: I have been very near the gates of death, and
+description: The deathbed letter, twelve days before Blake's death: 'I have been very near the gates of death, and have returned very weak and an Old Man feeble and tottering, but not in spirit and life, not in the real man, the imagination, which liveth for ever.'
 source: Russell ed., *The Letters of William Blake* (Methuen, 1906). PD. OCR via Internet Archive lettersofwilliam00blak.
 ocr_note: Text recovered from 1906 OCR; spacing & date glyphs lightly normalized. Original spelling preserved.
 ---

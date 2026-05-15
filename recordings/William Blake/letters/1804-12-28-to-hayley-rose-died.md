@@ -2,7 +2,7 @@
 title: To Hayley
 uid: l18041228
 date: 1804-12-28
-description: as my generous advocate^ is a public loss, which
+description: On the death of Samuel Rose, Blake's barrister at the 1804 Felpham sedition trial: 'so excellent a man as my generous advocate ... is a public loss.'
 source: Russell ed., *The Letters of William Blake* (Methuen, 1906). PD. OCR via Internet Archive lettersofwilliam00blak.
 ocr_note: Text recovered from 1906 OCR; spacing & date glyphs lightly normalized. Original spelling preserved.
 ---
