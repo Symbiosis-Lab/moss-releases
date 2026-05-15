@@ -1,5 +1,4 @@
 ---
-title: Tiriel
 description: *Tiriel*, c. 1789. Manuscript narrative poem with twelve wash drawings. Never engraved by Blake. Manuscript text at the Victoria & Albert Museum; drawings dispersed (BM, Yale, V&A). Public-domain transcription below from Ellis & Yeats (1893).
 date: 1789-01-01
 uid: blk-tiriel

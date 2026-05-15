@@ -1,5 +1,5 @@
 ---
-description: Thirty-nine of Blake's surviving letters, 1791–1827, transcribed from Archibald G. B. Russell, ed., *The Letters of William Blake Together with a Life by Frederick Tatham* (Methuen, 1906; public domain). Russell prints ~46 letters; this selection privileges the substantive — verse-epistles, manifestos, the trial-cluster, the medical sequence, the deathbed letter.
+description: Forty-one of Blake's surviving letters, 1791–1827, transcribed from Archibald G. B. Russell, ed., *The Letters of William Blake Together with a Life by Frederick Tatham* (Methuen, 1906; public domain). Russell prints ~46 letters; this selection privileges the substantive — verse-epistles, manifestos, the trial-cluster, the medical sequence, the deathbed letter.
 children_style: list
 weight: 2
 ---
@@ -36,7 +36,7 @@ The letters are where the engraver stops being a figure on a plate and becomes a
 - *1827-04-25-to-linnell* — recovery in progress
 - *1827-07-03-to-linnell* — relapse; the last Linnell letter
 
-**Hayley (11 letters, 1800–1805).** From Felpham, then after the return to South Molton Street. The 1804 cluster (added pass-13 + 14) is the *trial sequence* — Blake writing from London immediately after his acquittal at Chichester for the Scofield charge.
+**Hayley (13 letters, 1800–1805).** From Felpham, then after the return to South Molton Street. The 1804 cluster (added pass-13 + 14) is the *trial sequence* — Blake writing from London immediately after his acquittal at Chichester for the Scofield charge.
 
 - *1800-11-26-to-hayley-felpham-arrival* — Milton, Homer, Camoens, Ercilla, Ariosto, Spenser
 - *1803-10-26-to-hayley*
@@ -47,7 +47,9 @@ The letters are where the engraver stops being a figure on a plate and becomes a
 - *1804-06-22-to-hayley* — three sublime Romney designs in Blake's lodgings
 - *1804-09-10-to-hayley* — returning books; the Romney project continues
 - *1804-10-23-to-hayley-truchsess* — *"I was again enlightened with the light I enjoyed in my youth"*
+- *1804-12-13-to-hayley* — sending proofs of *The Shipwreck* and *The Portrait* engravings, with Flaxman's approval
 - *1804-12-28-to-hayley-rose-died* — on Samuel Rose's death
+- *1805-01-22-to-hayley* — closes the trial-aftermath year; Phillips' offer for the *Ballads*
 - *1805-12-11-to-hayley* — on the reception of *Blair's Grave*
 
 **Cumberland (6 letters, 1795–1827).** The earliest extant Blake letter (the relief-etching manifesto) through the deathbed letter twelve days before death.

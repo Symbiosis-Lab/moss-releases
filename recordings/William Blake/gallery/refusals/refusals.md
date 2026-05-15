@@ -1,5 +1,4 @@
 ---
-title: Refusals
 description: A record of Blake's public refusals — of patronage, of commercial expedience, of the Royal Academy's terms, of generalising aesthetic. Documented entirely by Blake himself in his letters, his annotations on Reynolds, and his unpublished *Public Address* (Notebook, c. 1810). The text below is verbatim from primary sources.
 weight: 8
 uid: blk-refusals
