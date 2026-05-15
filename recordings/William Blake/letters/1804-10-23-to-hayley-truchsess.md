@@ -43,11 +43,7 @@ in town — hope soon to have the pleasure of seeing
 him, with the courage of conscious industry,
 worthy of his former kindness to me. For now !
 O Glory ! and O Delight ! I have entirely reduced
-that spectrous fiend* to his station, whose annoy-
-
-^ Miss Poole.
-
-^ Samuel Rose (see note 2, p. 140). ^ See p. 52.
+that spectrous fiend* to his station, whose annoy- Miss Poole. Samuel Rose (see note 2, p. 140). See p. 52.
 
 * The Spectre, in Blake's writings, is the reasoning power in man,
 which, if not kept in proper subjection, is continually restraining his
@@ -59,10 +55,10 @@ of conjugal love, and is the Jupiter of the Greeks,
 an iron-hearted tyrant, the ruiner of ancient Greece.
 I speak with perfect confidence and certainty of
 the fact which has passed upon me. Nebuchad-
-nezzar ^ had seven times passed over him ; I have
+nezzar had seven times passed over him ; I have
 had twenty. Thank God I was not altogether a
 beast as he was ; but I was a slave bound in a
-mill ^ among beasts and devils. These beasts and
+mill among beasts and devils. These beasts and
 these devils are now, together with myself, become
 children of light and liberty, and my feet and
 my wife's feet are free from fetters. O lovely
@@ -73,14 +69,10 @@ of the philosophy which mihtates against faith ; it is the introducer
 of the tyranny of law and dogma (which, in his opinion, was the
 iruin of ancient Greek thought) ; its commonest, as well as its
 most deadly, manifestation is education ; in art it is the academic
-rule.
-
-^ The outcast monarch is the subject of one of Blake's " printed
+rule. The outcast monarch is the subject of one of Blake's " printed
 drawings " : a terrible picture of wild insanity, used paradoxically by
 Blake to symbolise the bestial existence of man under the domination
-of Reason.
-
-^ Cp. a line which is found engraved beneath some examples of
+of Reason. Cp. a line which is found engraved beneath some examples of
 Blake's print of " Glad Day " : " Albion rose from where he labour'd at
 the Mill with Slaves, | . . . " The mill is, in art, the mechanical
 method pursued by those who believe that genius can be acquired by

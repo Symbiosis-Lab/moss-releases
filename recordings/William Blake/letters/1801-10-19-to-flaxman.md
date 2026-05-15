@@ -10,7 +10,7 @@ ocr_note: Text recovered from 1906 OCR; spacing & date glyphs lightly normalized
 i()tk October 1801.
 
 Dear Flaxman, — I rejoice to hear that your
-great work is accomplished. Peace ^ opens the
+great work is accomplished. Peace opens the
 way to greater still. The kingdoms of this world
 are now become the kingdoms of God and His
 Christ, and we shall reign with Him for ever and
@@ -27,13 +27,9 @@ me. I have promised him to send my designs for
 Comus^ when I have done them, directed to you.
 
 Now I hope to see the great works of art, as
-they are so near to Felpham : Paris being scarce
-
-^ Buonaparte opened negotiations of peace at the close of
+they are so near to Felpham : Paris being scarce Buonaparte opened negotiations of peace at the close of
 1 801, and the Peace of Amiens was concluded in the following
-March.
-
-^ There are two sets of eight drawings each for Comus^ one of
+March. There are two sets of eight drawings each for Comus^ one of
 them formerly in the collection of Alfred Aspland, the other, from
 J. C. Strange's collection, now in the Boston Museum of Fine Arts —
 neither of them of extraordinary merit. It is uncertain which of the

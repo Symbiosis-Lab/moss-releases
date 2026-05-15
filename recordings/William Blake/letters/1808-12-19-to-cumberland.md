@@ -10,9 +10,7 @@ ocr_note: Text recovered from 1906 OCR; spacing & date glyphs lightly normalized
 \<^th December 1808.
 
 Dear Cumberland, — I am very much obliged
-by your kind ardour in my cause, and should
-
-^ His son.
+by your kind ardour in my cause, and should His son.
 
 immediately engage in reviewing my former
 pursuits of painting if I had not so long been
@@ -32,9 +30,7 @@ disarranging my time, which in future must alone
 be designing and painting. When I have got my
 work printed I will send it you first of anybody.
 In the meantime, believe me to be your sincere
-friend, Will. Blake.
-
-^ The scheme seems to have fallen through. He alludes to it again
+friend, Will. Blake. The scheme seems to have fallen through. He alludes to it again
 in the prospectus issued 15th May 1809, where, speaking of the art of
 fresco-painting, he says : " The art has been lost : I have recovered it.
 How this was done, will be told, together with the whole process, in a

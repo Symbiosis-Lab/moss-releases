@@ -26,9 +26,7 @@ morning air ; and that, in my cousin's time, I found
 I could bear with safety, and perhaps benefit. I
 believe my constitution to be a good one, but it
 has many peculiarities that no one but myself can
-know. When I was young, Hampstead, Highgate,
-
-^ Francis Legatt Chantrey, R.A. (i 781-1842), sculptor ; knighted
+know. When I was young, Hampstead, Highgate, Francis Legatt Chantrey, R.A. (i 781-1842), sculptor ; knighted
 in 183s ; founder of the Chantrey Bequest.
 
 Hornsey, Muswell Hill, and even Islington/ and

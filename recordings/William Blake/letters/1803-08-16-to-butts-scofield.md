@@ -21,8 +21,7 @@ much good. I omitted (very unaccountably) to
 copy out in my last letter that passage in my rough
 sketch which related to your kindness in offering
 to exhibit my two last pictures in the gallery in
-Berners Street. It was in these words : "I
-^ See note 3, p. 118.
+Berners Street. It was in these words : "I See note 3, p. 118.
 
 sincerely thank you for your kind offer of exhibiting
 my two pictures. The trouble you take on my
@@ -70,7 +69,7 @@ and strike me, and raging and cursing, which drew
 out several neighbours. At length, when I had
 got him to where he was quartered, which was very
 quickly done, we were met at the gate by the
-master of the house, the Fox Inn ^ (who is the
+master of the house, the Fox Inn (who is the
 proprietor of my cottage), and his wife and daughter,
 and the man's comrade, and several other people.
 My landlord compelled the soldiers to go indoors,
@@ -80,9 +79,7 @@ on account of sedition was uttered at that time.
 This method of revenge was planned between them
 after they had got together into the stable. This
 is the whole outline. I have for witnesses : the
-gardener, who is hostler at the Fox, and who
-
-^ The inn still flourishes.
+gardener, who is hostler at the Fox, and who The inn still flourishes.
 
 evidences that, to his knowledge, no word of the
 remotest tendency to government or sedition was
@@ -140,9 +137,7 @@ graced sergeant ; his name is John Scholfield.^
 Perhaps it will be in your power to learn somewhat
 
 1 Printer of Hayley's Ballads^ The Life of Cowper, The Trimnphs
-of Temper^ etc. etc.
-
-^ The name past in Blake's mythology, and occurs frequently in
+of Temper^ etc. etc. The name past in Blake's mythology, and occurs frequently in
 Jerusalem^ and once in Milton,
 
 about the man. I am very ignorant of what I am

@@ -44,9 +44,7 @@ upon.
 Pray let me entreat you to persevere in your
 designing ; it is the only source of pleasure. All
 your other pleasures depend upon it : it is the tree ;
-your pleasures are the fruit. Your inventions of
-
-^ " Art can never exist without Naked Beauty displayed " (one of
+your pleasures are the fruit. Your inventions of " Art can never exist without Naked Beauty displayed " (one of
 the "Laocoon " sentences).
 
 5
@@ -57,7 +55,7 @@ for ours, who love and admire your works ; but,
 above all, for the sake of the arts. Do not throw
 aside for any long time the honour intended you by
 nature to revive the Greek workmanship. I study
-your outlines ^ as usual, just as if they were
+your outlines as usual, just as if they were
 antiques.
 
 As to myself, about whom you are so kindly
@@ -65,12 +63,7 @@ interested, I live by miracle. I am painting small
 pictures from the Bible. For as to engraving, in
 which art I cannot reproach myself with any
 neglect, yet I am laid by in a corner as if I did
-not exist, and since my Young's Night Thoughts ^
-have been published, even Johnson^ and Fuseli*
-
-^ i.e. in the Thoughts on Outline.
-
-^ The Complaint and the Consolation; or, Night Thoughts., by
+not exist, and since my Young's Night Thoughts have been published, even Johnson^ and Fuseli* i.e. in the Thoughts on Outline. The Complaint and the Consolation; or, Night Thoughts., by
 Edward Young. London : Printed for R. Edwards, 1797 : folio, with
 43 illustrations designed and engraved by Blake.
 

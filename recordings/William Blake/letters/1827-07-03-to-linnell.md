@@ -14,9 +14,7 @@ you are so kind as to send me at this time. My
 journey to Hampstead on Sunday brought on a
 relapse which has lasted till now. I find I am
 not so well as I thought ; I must not go on in
-a youthful style. However, I am upon the
-
-^ Probably the varnished water-colour on panel of "Ugolino with
+a youthful style. However, I am upon the Probably the varnished water-colour on panel of "Ugolino with
 his Sons and Grandsons in Prison," now in the possession of Mrs.
 Graham Smith.
 
@@ -49,9 +47,7 @@ of men, that the Pharisee's reward might not be my
 lot. I do not see, however, why the sonnet may
 not be published without the name of Mr. Blake
 or myself, but simply addressed to the friend of
-neglected genius, or something like that. I am
-
-^ Bernard Barton (1784-1849), the quaker poet, friend of
+neglected genius, or something like that. I am Bernard Barton (1784-1849), the quaker poet, friend of
 Charles Lamb and Edward Fitzgerald. He lived at Woodbridge,
 Suffolk.
 
@@ -70,7 +66,7 @@ some things and the addition of others with
 which I could have furnished him.
 
 When I first became acquainted with Mr.
-Blake ^ he lived in a first floor in South Molton
+Blake he lived in a first floor in South Molton
 Street, and upon his landlord's leaving off business
 and retiring to France, he moved to Fountain
 Court, Strand,^ where he died. Here he occupied
@@ -82,9 +78,7 @@ all his collection of old prints to Messrs. Colnaghi
 & Co. After that I represented his case to Sir
 
 1 The Lives of the most eminent British Painters^ Sculptors^ and
-Architects^ by Allan Cunningham, 1830 : vol. ii. pp. 142-179.
-
-^ Linnell was introduced to Blake, by George Cumberland, in
+Architects^ by Allan Cunningham, 1830 : vol. ii. pp. 142-179. Linnell was introduced to Blake, by George Cumberland, in
 1818.
 
 ' In 1821.

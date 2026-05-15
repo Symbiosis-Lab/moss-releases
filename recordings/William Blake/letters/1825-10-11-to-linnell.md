@@ -16,14 +16,10 @@ the way on his journey in the coach. For we both
 got in, together with another passenger, and entered
 into conversation, when at length we found that we
 were all three proceeding on our journey. But as
-I had not paid, and did not wish to pay for or take
-
-^ Probably Thomas Heaphy (1775-1835), engraver and water-
+I had not paid, and did not wish to pay for or take Probably Thomas Heaphy (1775-1835), engraver and water-
 colour artist.
 
-2 Addressed to Collins' Farm, North End, Hampstead.
-
-^ John Linnell (1792-1882), portrait and landscape painter :
+2 Addressed to Collins' Farm, North End, Hampstead. John Linnell (1792-1882), portrait and landscape painter :
 pupil of John Varley and fellow-pupil of Mulready. He was
 introduced to Blake by George Cumberland (see note i, p. 53) in
 18 18, and remained ujitil the end a generous patron and friend. He

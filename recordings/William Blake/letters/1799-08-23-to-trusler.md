@@ -20,9 +20,7 @@ had hoped your plan comprehended all species of
 this art, and especially that you would not regret
 that species which gives existence to every other,
 namely, visions of eternity. You say that I
-want somebody to elucidate my ideas. But you
-
-^ In the Descriptive Catalogue and elsewhere Blake roundly
+want somebody to elucidate my ideas. But you In the Descriptive Catalogue and elsewhere Blake roundly
 denounces the methods of Rembrandt ; and, in the notes to Reynolds's
 Discourses, writes : " Rembrandt was a generaliser," and to generalise
 " is to be an idiot."
@@ -98,16 +96,12 @@ world is all one continued vision of fancy or
 
 imagination, and I feel flattered when I am told
 
-so. What is it sets Homer, Virgil, and Milton in
-
-^ " The nature of my work is visionary, or imaginative," Blake
+so. What is it sets Homer, Virgil, and Milton in " The nature of my work is visionary, or imaginative," Blake
 wrote, many years later, in A Vision of the Last Judgment (see
 Gilchrist, 1880, vol. ii. p. 186).
 
 2 "A fool sees not the same tree that a wise man sees " (Blake's
-Marriage of Heaven and Hell).
-
-^ The significance of these words is accurately defined by a
+Marriage of Heaven and Hell). The significance of these words is accurately defined by a
 sentence referring to the prophetical books in Dr. Rudolf Kassner's
 brilliant essay on Blake : "Die Worte des Dichters konnen nicht
 nur das bedeuten, was er mit ihnen sagen will, sondern sie sind

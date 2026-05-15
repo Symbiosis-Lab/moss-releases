@@ -105,16 +105,9 @@ d.
 
 
 12 large prints,* size of each about 2 ft. by 1^ ft.,
-historical and poetical, printed in colours. Each 5 5
-
-
-^ (1775-1858), born at Great Yarmouth; botanist and antiquary,
+historical and poetical, printed in colours. Each 5 5 (1775-1858), born at Great Yarmouth; botanist and antiquary,
 patron of art, and especially of the Norwich School of water-colour
-drawing.
-
-2 See p. 223, and Gilchrist (1880), vol. ii. p. 286.
-
-^ Probably Ozias Humphrey, the miniaturist.
+drawing. Probably Ozias Humphrey, the miniaturist.
 
 * These are the prints which may best be described as Printed
 Drawings ; in which first the outline and then the colours were
@@ -148,9 +141,7 @@ difference as to perfect independence of judgment,
 
 stamped off from a mill-board on to the drawing paper — the pigment
 being tempered with a mixture of copal varnish and glue. The most
-famous of them is the " Creation of Adam."
-
-^ It is uncertain to whom this note was addressed. It is most
+famous of them is the " Creation of Adam." It is uncertain to whom this note was addressed. It is most
 likely to have been John Linnell, whose acquaintance Blake had made
 the year before.
 

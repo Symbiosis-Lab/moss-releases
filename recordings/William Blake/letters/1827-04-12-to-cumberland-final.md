@@ -34,8 +34,7 @@ French Revolution Englishmen are all inter-
 measurable by one another : certainly a happy
 state of agreement, in which I for one do not
 agree. God keep you and me from the divinity
-of yes, and no too — the yea, nay, creeping Jesus ^
-— from supposing up and down to be the same
+of yes, and no too — the yea, nay, creeping Jesus — from supposing up and down to be the same
 thing, as all experimentalists must suppose.
 
 You are desirous, I know, to dispose of some
@@ -45,9 +44,7 @@ great loss. I am now painting a set of the
 Songs of Innocence and Experience for a friend
 at ten guineas. The last work I produced is
 a poem entitled Jerusalem, the Emanation of the
-Giant' Albion, but find that to print it will cost my
-
-^ cp. "Everlasting Gospel" (Sampson's ed. of the Poems, p. 250,
+Giant' Albion, but find that to print it will cost my cp. "Everlasting Gospel" (Sampson's ed. of the Poems, p. 250,
 11. 21, 22) :
 
 " If he had been Antichrist, creeping Jesus,
@@ -64,9 +61,7 @@ finished, but it is not likely I shall find a customer
 for it.^
 
 As you wish me to send you a list with the
-prices, they are as follows : ^
-
-£ s.
+prices, they are as follows : £ s.
 
 d.
 
@@ -106,9 +101,7 @@ Urizen .....
 
 o
 
-The little card^ I will do as soon as possible.
-
-^ Jerusalem, the Emanation of the Giant Albion, 1 804. Printed
+The little card^ I will do as soon as possible. Jerusalem, the Emanation of the Giant Albion, 1 804. Printed
 by W. Blake, Sth. Molton St. First edition in ordinary type, edited
 by Maclagan & Russell, and published by A. H. Bullen, 1904. The
 actual copy referred to in this letter, the only one finished (z>. both

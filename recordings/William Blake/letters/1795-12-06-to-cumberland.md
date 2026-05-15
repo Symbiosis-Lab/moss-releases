@@ -17,10 +17,7 @@ manner, notwithstanding the pretended philosophy
 which teaches that execution is the power of one
 and invention of another.* Locke says it is the
 same faculty that invents judges, and I say he who
-can invent can execute.
-
-
-^ The letter is addressed to Bishopsgate, near Egham, Surrey.
+can invent can execute. The letter is addressed to Bishopsgate, near Egham, Surrey.
 It is not known when Cumberland first became acquainted with
 Blake, but it is certain that he remained until the last the truest
 and most generous of friends. He was the means of introducing
@@ -45,8 +42,7 @@ p. 168) : " Execution is only the result of invention."
 
 
 
-As to laying on the wax, it is as follows : ^
-Take a cake of virgin wax (I don't know what
+As to laying on the wax, it is as follows : Take a cake of virgin wax (I don't know what
 animal produces it), and stroke it regularly over
 the surface of a warm plate (the plate must be
 warm enough to melt the wax as it passes over),
@@ -68,9 +64,7 @@ The pressure necessary to roll off the lines is
 the same as when you print, or not quite so great.
 I have not been able to send a proof of the bath,
 though I have done the corrections, my paper not
-being in order.
-
-^ The directions, which follow, have to do with the transference
+being in order. The directions, which follow, have to do with the transference
 of a drawing to a metal plate for engraving. The plates in question
 are, doubtless, those of the Thoughts on Outline which appeared the
 next year.
@@ -86,8 +80,7 @@ Plants fruits of life & beauty there." — Rossetti MS,
 
 
 
-Extract from a Letter from Richard Cosway ^
-to George Cumberland.
+Extract from a Letter from Richard Cosway to George Cumberland.
 
 2']th December 1795.
 
@@ -98,7 +91,7 @@ to pronounce it one of the most beautiful composi-
 tions I ever beheld of that great man. I hope it
 will not be long before I shall be able to request
 a sight of the picture. Why do you not get Blake
-to make an engraving of it ? ^ I should think he
+to make an engraving of it ? I should think he
 would be delighted to undertake such a work, and
 it would certainly pay him very well for whatever
 time and pains he hiay bestow upon such a plate,
@@ -106,8 +99,4 @@ as we have so very few of Leonardo's works well
 engraved, and the composition of this picture is
 so very graceful and pleasing, I am convinced he
 might put almost any price on the print and assure
-himself of a very extensive sale. . . .
-
-^ The celebrated miniaturist.
-
-^ As far as I know, Blake never did so.
+himself of a very extensive sale. . . . The celebrated miniaturist. As far as I know, Blake never did so.

@@ -10,7 +10,7 @@ To William Hayley.
 
 Felpham, 2^th November 1800.
 
-Dear Sir, — Absorbed by the poets ^ Milton,
+Dear Sir, — Absorbed by the poets Milton,
 Homer, Camoens, Ercllla, Ariosto, and Spenser,
 whose physiognomies have been my delightful
 study, Little Tom^ has been of late unattended
@@ -107,11 +107,7 @@ to George Romney.
 paint in miniature, and in truth he has made a
 very creditable copy from your admirable portrait
 of the dear departed bard, from which he will
-also make an engraving.^ . . .
-
-^ Of Hayley's house.
-
-^ The original drawing was executed by Romney while on
+also make an engraving.^ . . . Of Hayley's house. The original drawing was executed by Romney while on
 a visit to Hayley at Eartham in 1792, and was the inspiration of
 Cowper's sonnet To George Romney, Esq. ; it has recently passed
 from the possession of Bertram Vaughan Johnson, Esq., into the

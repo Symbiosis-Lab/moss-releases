@@ -31,9 +31,7 @@ Providence rewards them ; how all your brethren
 say: "The sound of his harp and his flute heard
 from his secret forest cheers us to the labours
 of life, and we plow and reap, forgetting our
-labour."
-
-^ Thoughts on Outline (see note i, p. 53).
+labour." Thoughts on Outline (see note i, p. 53).
 
 Let us see you sometimes as well as sometimes
 hear from you, and let us often see your works.

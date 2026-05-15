@@ -37,8 +37,7 @@ French Revolution Englishmen are all inter-
 measurable by one another : certainly a happy
 state of agreement, in which I for one do not
 agree. God keep you and me from the divinity
-of yes, and no too — the yea, nay, creeping Jesus ^
-— from supposing up and down to be the same
+of yes, and no too — the yea, nay, creeping Jesus — from supposing up and down to be the same
 thing, as all experimentalists must suppose.
 
 You are desirous, I know, to dispose of some
@@ -66,9 +65,7 @@ finished, but it is not likely I shall find a customer
 for it.^
 
 As you wish me to send you a list with the
-prices, they are as follows : ^
-
-£ s.
+prices, they are as follows : £ s.
 
 d.
 

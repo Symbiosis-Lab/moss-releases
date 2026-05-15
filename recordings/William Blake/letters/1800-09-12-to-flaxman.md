@@ -10,14 +10,8 @@ ocr_note: Text recovered from 1906 OCR; spacing & date glyphs lightly normalized
 12^^ September 1800.
 
 My dearest Friend, — It is to you I owe all my
-present happiness.* It is to you I owe perhaps the
-
-^ See note i, p. 53.
-
-^ Published in 1800, with three engravings by Blake (see note r,
-p. 69).
-
-^ See note i, p. 51.
+present happiness.* It is to you I owe perhaps the See note i, p. 53. Published in 1800, with three engravings by Blake (see note r,
+p. 69). See note i, p. 51.
 
 * Flaxman had been the means of introducing him to Hayley,
 and thus of his going to Felpham.
@@ -50,28 +44,22 @@ a season.
 And now Flaxman hath given me Hayley his friend to be mine,
 such my lot upon Earth.
 
-Now my lot in the Heavens is this, Milton ^ lov'd me in child-
+Now my lot in the Heavens is this, Milton lov'd me in child-
 hood and shew'd me his face.
 
-Ezra came with Isaah ^ the Prophet, but Shakespeare in riper
-years gave me his hand,
-
-^ Flaxman met Blake, through Stothard, about 1780. In 1787
-he went to Italy, and remained there until 1794.
-
-^ Milton is several times alluded to in the Marriage of Heaven
+Ezra came with Isaah the Prophet, but Shakespeare in riper
+years gave me his hand, Flaxman met Blake, through Stothard, about 1780. In 1787
+he went to Italy, and remained there until 1794. Milton is several times alluded to in the Marriage of Heaven
 and Hell (1790), and afterwards gave his name to one of the pro-
-phetical books, dated 1804.
+phetical books, dated 1804. See Marriage of Heaven and Hell.
 
-^ See Marriage of Heaven and Hell.
-
-Paracelsus and Behmen ^ appeared to me, terrors appeared in
+Paracelsus and Behmen appeared to me, terrors appeared in
 
 the Heavens above,
 And in Hell beneath, and a mighty and awful change threatened
 
 the Earth.2
-The American war ^ began. All its dark horrors passed before my
+The American war began. All its dark horrors passed before my
 
 face
 Across the Atlantic to France. Then the French Revolution*

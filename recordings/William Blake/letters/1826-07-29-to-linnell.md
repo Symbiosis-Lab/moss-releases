@@ -26,9 +26,7 @@ sincerely, William Blake.
 
 P.S. — Fincham is a pupil of Abernethy's. This
 is what gives me great pleasure. I did not know
-it before yesterday — from Mr. Fincham.
-
-^ It was in the end called James : the next being given Blake's
+it before yesterday — from Mr. Fincham. It was in the end called James : the next being given Blake's
 name of William.
 
 67.

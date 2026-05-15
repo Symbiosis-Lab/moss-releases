@@ -80,9 +80,3 @@ tyrant, he calls free, lay the bound or build the roof. Nor pale
 religious lechery call that virginity that wishes, but acts not!
 
 For everything that lives is holy.
-
-
-
-
-
-End of Project Gutenberg's The Marriage of Heaven and Hell, by William Blake

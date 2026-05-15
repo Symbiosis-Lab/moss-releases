@@ -11,9 +11,7 @@ South Molton Street,
 28/^ December 1804.
 
 Dear Sir, — The death of so excellent a man
-as my generous advocate^ is a public loss, which
-
-^ Samuel Rose (see note 2, p. 140).
+as my generous advocate^ is a public loss, which Samuel Rose (see note 2, p. 140).
 
 those who knew him can best estimate, and to those
 who have an affection for him like yours, is a loss
@@ -58,8 +56,8 @@ on you for more money ; but, however, your kind
 answer to my request makes me doubly thank you.
 The two cartoons which I have of " Hecate " and
 " Pliny" are very unequal in point of finishing : the
-" Pliny " ^ in a sketch, though admirably contrived for
-an effect equal to Rembrandt. But the '* Hecate " ^ is
+" Pliny " in a sketch, though admirably contrived for
+an effect equal to Rembrandt. But the '* Hecate " is
 a finished production, which will call for all the en-
 graver's nicest attention. Indeed it is more finished
 than '* The Shipwreck " ; it is everbody['s] favourite
@@ -72,9 +70,7 @@ Mr. Parker on the subject, before I decided on " The
 Shipwreck," and it was his opinion, and he says it
 still is so, that a print of that size cannot be done
 under thirty guineas, if finished, and, if a sketch,
-fifteen guineas; as, therefore, "Hecate" must be a
-
-^ See note i, p. 128. ^ See pp. 134 and 164. ^ See p. 147.
+fifteen guineas; as, therefore, "Hecate" must be a See note i, p. 128. See pp. 134 and 164. See p. 147.
 
 finished plate, I consider thirty guineas as its price,
 and the " Pliny " fifteen guineas.
@@ -95,7 +91,7 @@ remarks on it in addition, I hope to make it a
 infinitely better the next proof. I feel very much
 gratified at your approval of my "Queen Catherine" :*
 beg to observe that the print of " Romeo and the
-Apothecary " ^ annexed to your copy is a shamefully
+Apothecary " annexed to your copy is a shamefully
 worn-out impression, but it was the only one I could
 get at Johnson's. I left a good impression of it
 when I left Felpham last in one of Heath's
