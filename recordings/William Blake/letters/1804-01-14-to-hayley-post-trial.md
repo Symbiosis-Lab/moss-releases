@@ -20,7 +20,7 @@ ways endeavouring to throw the rider, that it is a
 miracle if a stranger escape with his life. All this
 I learned with some alarm, and heard also what the
 soldier said confirmed by another person in the
-, coach. I therefore, as it is my duty, beg and
+coach. I therefore, as it is my duty, beg and
 entreat you never to mount that wretched horse
 again, nor again trust to one who has been so
 
