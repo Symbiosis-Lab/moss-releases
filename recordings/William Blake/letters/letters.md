@@ -1,5 +1,5 @@
 ---
-description: Thirty-two of Blake's surviving letters, 1791–1827, transcribed from Archibald G. B. Russell, ed., *The Letters of William Blake Together with a Life by Frederick Tatham* (Methuen, 1906; public domain). Russell prints ~46 letters; this selection privileges the substantive — verse-epistles, manifestos, the deathbed letter — over the transactional.
+description: Thirty-one of Blake's surviving letters, 1791–1827, transcribed from Archibald G. B. Russell, ed., *The Letters of William Blake Together with a Life by Frederick Tatham* (Methuen, 1906; public domain). Russell prints ~46 letters; this selection privileges the substantive — verse-epistles, manifestos, the deathbed letter — over the transactional.
 children_style: list
 weight: 2
 uid: "0188e34c"
@@ -52,7 +52,7 @@ The letters are where the engraver stops being a figure on a plate and becomes a
 - *1827-04-02-to-cumberland-final*
 - *1827-04-12-to-cumberland-final* — the deathbed letter: *"the real man, the imagination, which liveth for ever"*
 
-**Other (6 letters).**
+**Other (5 letters).**
 
 - *1791-10-18-to-reveley* — earliest letter (engraving question)
 - *1799-08-23-to-trusler* — manifesto: *"I see Every thing I paint In This World"*

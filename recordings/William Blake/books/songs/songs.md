@@ -14,7 +14,7 @@ Blake printed *Songs* by relief etching, then hand-coloured each copy. **No two 
 
 ## Sub-folders
 
-- *copy-b-bm/* — **Copy B** (British Museum). 54 plates at ~888×1389 each. One of the earlier combined Innocence + Experience copies — Blake's own colouring on the 1794 paper.
+- *copy-b-bm/* — **Copy B** (British Museum). 54 plates at ~888×1389 each. One of the earlier combined Innocence + Experience copies — Blake's own colouring on the 1794 paper. **Binding-order caveat:** Copy B's bound sequence is not the canonical plate-order Blake later settled on, so object *N* in this folder does not always match the same canonical plate as object *N* in Copy Y or Copy AA. (For example, object 42 in Copy B is *The Little Girl Lost* — Bentley/Erdman canonical plate 36 — while object 42 in Copy Y and Copy AA is *The Tyger*.) Cross-copy comparisons should use canonical plate identity, not file-number, for plates where Copy B's binding diverges.
 
 - *copy-y-met/* — **Copy Y** (Metropolitan Museum of Art). 54 plates. Printed *c.* 1825 — Blake's late hand, the patience of an old man returning to old work.
 
