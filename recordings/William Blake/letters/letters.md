@@ -1,5 +1,5 @@
 ---
-description: Thirty-eight of Blake's surviving letters, 1791–1827, transcribed from Archibald G. B. Russell, ed., *The Letters of William Blake Together with a Life by Frederick Tatham* (Methuen, 1906; public domain). Russell prints ~46 letters; this selection privileges the substantive — verse-epistles, manifestos, the trial-cluster, the medical sequence, the deathbed letter.
+description: Thirty-nine of Blake's surviving letters, 1791–1827, transcribed from Archibald G. B. Russell, ed., *The Letters of William Blake Together with a Life by Frederick Tatham* (Methuen, 1906; public domain). Russell prints ~46 letters; this selection privileges the substantive — verse-epistles, manifestos, the trial-cluster, the medical sequence, the deathbed letter.
 children_style: list
 weight: 2
 ---
@@ -36,12 +36,13 @@ The letters are where the engraver stops being a figure on a plate and becomes a
 - *1827-04-25-to-linnell* — recovery in progress
 - *1827-07-03-to-linnell* — relapse; the last Linnell letter
 
-**Hayley (10 letters, 1800–1805).** From Felpham, then after the return to South Molton Street. The 1804 cluster (added pass-13) is the *trial sequence* — Blake writing from London immediately after his acquittal at Chichester for the Scofield charge.
+**Hayley (11 letters, 1800–1805).** From Felpham, then after the return to South Molton Street. The 1804 cluster (added pass-13 + 14) is the *trial sequence* — Blake writing from London immediately after his acquittal at Chichester for the Scofield charge.
 
 - *1800-11-26-to-hayley-felpham-arrival* — Milton, Homer, Camoens, Ercilla, Ariosto, Spenser
 - *1803-10-26-to-hayley*
 - *1804-01-14-to-hayley-post-trial* — *"Flaxman welcomed me with kind affection and generous exultation in my escape from the arrows of darkness"* — London the day after the trial
 - *1804-04-27-to-hayley* — trial aftermath; the Romney biography work
+- *1804-05-04-to-hayley* — on Romney's portraits and the engraving plan
 - *1804-05-11-to-hayley* — Hayley's reading list and the Romney engravings
 - *1804-06-22-to-hayley* — three sublime Romney designs in Blake's lodgings
 - *1804-09-10-to-hayley* — returning books; the Romney project continues

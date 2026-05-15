@@ -1,9 +1,9 @@
 ---
 title: To Linnell
 date: 1826-08-01
-description: Mid-illness summer letter; bridges the gap between the 1826-07-29 'dandelion' letter and the 1827 Linnell sequence.
+description: Mid-illness summer letter; 'only bones and sinews, all strings and bobbins like a weaver's loom.'
 source: Russell ed., *The Letters of William Blake* (Methuen, 1906). PD. OCR via Internet Archive lettersofwilliam00blak.
-ocr_note: Text recovered from 1906 OCR; spacing & date glyphs lightly normalized. Original spelling preserved. Russell's footnote bodies stripped.
+ocr_note: Text recovered from 1906 OCR. Russell running heads, footnote bodies, and trailing-address lines stripped. Hyphenated word-breaks rejoined. Date glyphs normalized. Original spelling preserved.
 ---
 
 1st August 1826.
@@ -23,40 +23,3 @@ pain and from that sickness to which there is no
 name. Thank God ! I feel no more of it, and have
 great hopes that the disease is gone. — I am, dear
 Sir, yours sincerely, William Blake.
-
-February 1827.
-
-Dear Sir, — I thank you for the five pounds
-received to-day. Am getting better every morning, but slowly, as I am still feeble and tottering ;
-though all the symptoms of my complaint seem
-almost gone. The fine weather is very beneficial
-and comfortable to me. I go on, as I think, improving my engravings of Dante ^ more and more ;
-and shall soon get proofs of these four which I
-have ; and beg the favour of you to send me the
-two plates of Dante which you have, that I may
-finish them sufficiently to make show of colour and
-strength.
-
-I have thought and thought of the removal. I
-cannot get my mind out of a state of terrible fear
-at such a step. The more I think, the more I feel
-terror at what I wished at first, and thought a thing
-of benefit and good hope. You will attribute it to
-its right cause — intellectual peculiarity, that must
-be myself alone shut up in myself, or reduced to
-nothing. I could tell you of visions and dreams
-upon the subject. I have asked and entreated
-Divine help ; but fear continues upon me, and I
-must relinquish the step that I had wished to take,
-and still wish, but in vain.
-
-Inferno. The finest of the set is the " Paolo and Francesca," here
-reproduced ; it is an illustration of the last line of the fifth canto :
-" e caddi, come corpo morto cade " ; where Dante swoons with pity at
-the story of the one and the tears of the other, while the two are
-rejoining the whirlwind of lovers.
-
-Your success in your profession is, above all
-things to me, most gratifying. May it go on to
-the perfection you wish, and more. So wishes
-also yours sincerely,

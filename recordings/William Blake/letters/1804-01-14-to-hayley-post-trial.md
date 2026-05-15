@@ -3,10 +3,10 @@ title: To Hayley
 date: 1804-01-14
 description: Post-trial return to London. 'Flaxman welcomed me with kind affection and generous exultation in my escape from the arrows of darkness.' Catherine ill on his arrival.
 source: Russell ed., *The Letters of William Blake* (Methuen, 1906). PD. OCR via Internet Archive lettersofwilliam00blak.
-ocr_note: Text recovered from 1906 OCR; spacing & date glyphs lightly normalized. Original spelling preserved. Russell's footnote bodies stripped.
+ocr_note: Text recovered from 1906 OCR. Russell running heads, footnote bodies, and trailing-address lines stripped. Hyphenated word-breaks rejoined. Date glyphs normalized. Original spelling preserved.
 ---
 
-London, 14th January 1804.
+London, \14th January 1804.
 
 Dear Sir, — I write immediately on my arrival,
 not merely to inform you that in a conversation
@@ -20,7 +20,7 @@ ways endeavouring to throw the rider, that it is a
 miracle if a stranger escape with his life. All this
 I learned with some alarm, and heard also what the
 soldier said confirmed by another person in the
-,coach. I therefore, as it is my duty, beg and
+, coach. I therefore, as it is my duty, beg and
 entreat you never to mount that wretched horse
 again, nor again trust to one who has been so
 
