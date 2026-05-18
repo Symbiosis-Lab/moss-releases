@@ -64,12 +64,6 @@ In the same entry, on the demons that Blake holds responsible for the corruption
 
 > These Pictures, among numerous others painted for experiment, were the result of temptations and perturbations, labouring to destroy Imaginative power, by means of that infernal machine, called Chiaro Oscuro, in the hands of Venetian and Flemish Demons; whose enmity to the Painter himself, and to all Artists who study in the Florentine and Roman Schools, may be removed by an exhibition and exposure of their vile tricks. They cause that every thing in art shall become a Machine. They cause that the execution shall be all blocked up with brown shadows. They put the original Artist in fear and doubt of his own original conception.
 
-## On finished line
-
-From Number XV (*Ruth — A Drawing*) of the 1809 Catalogue — the closing statement of Blake's principle, applied throughout the temperas:
-
-> The great and golden rule of art, as well as of life, is this: That the more distinct, sharp, and wirey the bounding line, the more perfect the work of art; and the less keen and sharp, the greater is the evidence of weak imitation, plagiarism, and bungling. Great inventors, in all ages, knew this: Protogenes and Apelles knew each other by this line. Rafael and Michael Angelo, and Albert Durer, are known by this and this alone.
-
 ## Adam Naming the Beasts; Eve Naming the Birds
 
 ![[adam.jpg]]
