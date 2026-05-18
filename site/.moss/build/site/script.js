@@ -4,8 +4,8 @@
  * Activation:
  *   - Long-press the theme toggle button (hold ≥500ms)
  *   - Keyboard: press [S] to toggle sunlight mode on/off
- *   - Time-of-day: auto-activates between 11am–4pm local time if no
- *     explicit theme was set this session
+ *   - Default on first visit: activates automatically unless the user has
+ *     already chosen a theme this session
  *
  * Deactivation:
  *   - Long-press the theme toggle again
@@ -196,34 +196,12 @@
     });
   }
 
-  // ── Time-of-day auto-activation ──
-  // Only activate if all three conditions are met:
-  //   1. No theme explicitly set this session (sessionStorage empty)
-  //   2. Current hour is between 11am and 4pm local time
-  //   3. System color scheme preference is light
-
-  function checkTimeOfDay() {
-    var saved = sessionStorage.getItem("theme");
-    if (saved) return; // User already made a choice this session
-
-    var hour = new Date().getHours();
-    if (hour < 11 || hour >= 16) return; // Outside sunlight hours
-
-    var prefersDark =
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches;
-    if (prefersDark) return; // Respect system dark mode users
-
-    enterSunlight();
-  }
-
   // ── Initialization ──
-  // Restore sunlight mode if it was saved, otherwise check time of day.
+  // Sunlight is the default first-visit experience. Skip only if the user
+  // already chose a different theme this session.
 
   var savedTheme = sessionStorage.getItem("theme");
-  if (savedTheme === "sunlight") {
+  if (savedTheme === "sunlight" || !savedTheme) {
     enterSunlight();
-  } else {
-    checkTimeOfDay();
   }
 })();

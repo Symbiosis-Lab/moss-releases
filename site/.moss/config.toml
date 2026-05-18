@@ -1,7 +1,5 @@
-[features]
-comments = false
-rss = false
-subscribe = false
+schema_version = 3
 
 [site]
 lang = "en"
+rss_footer = false

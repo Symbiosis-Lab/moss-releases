@@ -122,8 +122,10 @@ my-site/
 <div class="callout callout-note">
   <div class="callout-title">自托管字体</div>
   <div class="callout-content">
+
 把 `.woff2` 文件放在 `.moss/theme/fonts/` 下，在 `style.css` 中用 `@font-face { src: url('fonts/myfont.woff2') }` 引用。`.moss/theme/` 目录作为站点根目录的兄弟目录对外提供。
-  </div>
+
+</div>
 </div>
 
 ## 变量
@@ -274,12 +276,6 @@ my-site/
 | `.moss-gallery` | 图库容器（`:::gallery`） |
 | `.moss-gallery-item` | 单张图库图片 |
 
-### 目录短代码
-
-| 类名 | 元素 |
-|------|------|
-| `.moss-toc` | 目录容器（`:::toc`） |
-
 ### 标注
 
 | 类名 | 元素 |
@@ -384,8 +380,10 @@ my-site/
 <div class="callout callout-note">
   <div class="callout-title">自行託管字型</div>
   <div class="callout-content">
+
 把 `.woff2` 檔案放在 `.moss/theme/fonts/` 下，在 `style.css` 中用 `@font-face { src: url('fonts/myfont.woff2') }` 引用。`.moss/theme/` 目錄作為網站根目錄的兄弟目錄對外提供。
-  </div>
+
+</div>
 </div>
 
 ## 變數
@@ -538,8 +536,10 @@ No build step, no config entry. The file is loaded automatically.
 <div class="callout callout-note">
   <div class="callout-title">Self-hosted fonts</div>
   <div class="callout-content">
+
 Drop `.woff2` files in `.moss/theme/fonts/` and reference them from your `style.css` with `@font-face { src: url('fonts/myfont.woff2') }`. The `.moss/theme/` directory is served as a sibling of the site root.
-  </div>
+
+</div>
 </div>
 
 ## Variables
@@ -690,12 +690,6 @@ Auto-generated components use stable `.moss-*` class names. Target these in your
 | `.moss-gallery` | Gallery container (`:::gallery`) |
 | `.moss-gallery-item` | Individual gallery image |
 
-### Table of contents shortcode
-
-| Class | Element |
-|-------|---------|
-| `.moss-toc` | TOC container (`:::toc`) |
-
 ### Callouts
 
 | Class | Element |
@@ -809,6 +803,12 @@ Frontmatter 使用**固定字段表**——moss 只识别本页列出的字段�
 | `tags` | list | — | 内容标签 |
 | `lang` | string | 自动检测 | 语言覆盖（`"en"`、`"zh-hans"`、`"zh-hant"`） |
 <!-- auto:end:frontmatter-identity -->
+
+`title:` 是页面标题。在文章页面上，moss 始终将其渲染为正文上方的 `<h1 class="moss-article-title">`——若 `title:` 缺省则使用文件名（首字母大写）。如果正文本身以 `# 同名标题` 开头，该正文 H1 会被自动去重，读者只看到一个标题，而非两个。
+
+正文中其他位置的 `# H1` 是章节标题，而非文档标题。moss 不会从正文结构推断标题——请在 `title:` 中写明，或依赖文件名。
+
+如需在某篇文章上单独关闭注入的标题（例如某个特殊设计的着陆页），可写 `title: ""`（显式空字符串）。这与省略 `title:` 不同——省略会回退到文件名。文件夹与索引页面从不注入；它们的正文按作者所写渲染。
 
 ## 导航
 
@@ -962,6 +962,12 @@ Frontmatter 不是必填的。沒有 frontmatter 的檔案一樣會變成頁面�
 | `tags` | list | — | 內容標籤 |
 | `lang` | string | 自動偵測 | 語言覆蓋（`"en"`、`"zh-hans"`、`"zh-hant"`） |
 <!-- auto:end:frontmatter-identity -->
+
+`title:` 是頁面標題。在文章頁面上，moss 始終將其渲染為正文上方的 `<h1 class="moss-article-title">`——若 `title:` 缺省則使用檔名（首字母大寫）。如果正文本身以 `# 同名標題` 開頭，該正文 H1 會被自動去重，讀者只看到一個標題，而非兩個。
+
+正文中其他位置的 `# H1` 是章節標題，而非文件標題。moss 不會從正文結構推斷標題——請在 `title:` 中寫明，或依賴檔名。
+
+如需在某篇文章上單獨關閉注入的標題（例如某個特殊設計的著陸頁），可寫 `title: ""`（顯式空字串）。這與省略 `title:` 不同——省略會回退到檔名。資料夾與索引頁面從不注入；它們的正文按作者所寫渲染。
 
 ## 導覽
 
@@ -1121,6 +1127,12 @@ These fields describe what the page is.
 | `tags` | list | — | Content tags |
 | `lang` | string | auto-detected | Language override (`"en"`, `"zh-hans"`, `"zh-hant"`) |
 <!-- auto:end:frontmatter-identity -->
+
+`title:` is the page's title. On article pages moss always renders it as `<h1 class="moss-article-title">` above the body — using the filename (title-cased) when `title:` is absent. If the body itself opens with `# Same Title`, that body H1 is deduplicated so the reader sees one title, not two.
+
+Body H1s anywhere else are section headers, not document titles. moss does not infer the title from body structure — write the title in `title:` or rely on the filename.
+
+To suppress the injected title on a specific article (for example, a bespoke landing page), set `title: ""` (an explicit empty string). This is distinct from omitting the field, which falls back to the filename. Folder and index pages never inject; their bodies render as authored.
 
 ## Navigation
 
@@ -2303,7 +2315,7 @@ Shortcodes are special blocks in your markdown that create layouts and component
 ```markdown
 :::grid 2
 Column one content.
----
++++
 Column two content.
 :::
 ```
@@ -2337,21 +2349,21 @@ A multi-column layout. Specify the number of columns and optionally a ratio.
 ```markdown
 :::grid 3
 First column.
----
++++
 Second column.
----
++++
 Third column.
 :::
 ```
 
-Cells are separated by `---`. The number after `grid` sets the column count.
+Cells are separated by `+++`. The number after `grid` sets the column count.
 
 **With ratio control:**
 
 ```markdown
 :::grid 2 1:2
 Narrow sidebar.
----
++++
 Wide main content area.
 :::
 ```
@@ -2361,16 +2373,16 @@ Wide main content area.
 ```markdown
 :::grid 3 {.profiles .featured}
 Team member one.
----
++++
 Team member two.
----
++++
 Team member three.
 :::
 ```
 
 ### Grid cell content
 
-Cells are separated by `---` on its own line. Each cell is markdown — headings, paragraphs, lists, images, links, all work as usual.
+Cells are separated by `+++` on its own line. Each cell is markdown — headings, paragraphs, lists, images, links, all work as usual.
 
 Cells automatically recognize and render:
 
@@ -2388,11 +2400,11 @@ A grid cell whose substantive content is exactly one markdown link is rendered a
 ```markdown
 :::grid 3
 [MDN](https://developer.mozilla.org)
----
++++
 [Rust](https://rust-lang.org)
 
 A memory-safe systems language.
----
++++
 [GitHub](https://github.com)
 :::
 ```
@@ -2404,7 +2416,7 @@ A memory-safe systems language.
 [![[poster-farewell.webp]]
 #### Farewell, and Erase
 A multilingual ethnodrama · May 2026](/farewell)
----
++++
 [![[daowu-home.jpg]]
 #### A House of Daowu
 Miao-language community theatre](/daowu)
@@ -2429,9 +2441,9 @@ A `:::grid N` cell whose only content is an internal link to a **known folder** 
 ```markdown
 :::grid 3
 [[work]]
----
++++
 [[essays]]
----
++++
 [[archive]]
 :::
 ```
@@ -2443,9 +2455,9 @@ This is the default behavior and usually what you want for section-index pages.
 ```markdown
 :::grid 3 {.no-cards}
 [[work]]
----
++++
 [[essays]]
----
++++
 [[archive]]
 :::
 ```
@@ -2470,9 +2482,9 @@ CSS targets:
 ```markdown
 :::grid 3 2:1:1
 Wide left.
----
++++
 Narrow middle.
----
++++
 Narrow right.
 :::
 ```
@@ -2536,15 +2548,6 @@ Optionally specify a column count:
 :::
 ```
 
-## Table of contents
-
-Insert a table of contents generated from the page's headings.
-
-```markdown
-:::toc
-:::
-```
-
 ## Buttons
 
 A styled row of buttons from markdown links. The first link becomes the primary button; the rest are secondary.
@@ -2588,7 +2591,7 @@ When you need a layout beyond the built-in shortcodes — a two-column split, an
 # Pitch
 
 Main content area — headings, paragraphs, images, anything.
----
++++
 Sidebar with call-outs or metadata.
 :::
 ```
@@ -2623,7 +2626,7 @@ Add custom CSS classes to any shortcode block using `{.class}` syntax:
 ```markdown
 :::grid 2 {.comparison}
 Before
----
++++
 After
 :::
 ```
@@ -3249,7 +3252,7 @@ async enhance(ctx) {
 ```markdown
 :::grid 2
 第一栏内容。
----
++++
 第二栏内容。
 :::
 ```
@@ -3283,21 +3286,21 @@ async enhance(ctx) {
 ```markdown
 :::grid 3
 第一栏。
----
++++
 第二栏。
----
++++
 第三栏。
 :::
 ```
 
-用 `---` 分隔各栏。`grid` 后面的数字指定列数。
+用 `+++` 分隔各栏。`grid` 后面的数字指定列数。
 
 **自定义比例：**
 
 ```markdown
 :::grid 2 1:2
 窄侧边栏。
----
++++
 宽主内容区。
 :::
 ```
@@ -3307,9 +3310,9 @@ async enhance(ctx) {
 ```markdown
 :::grid 3 {.profiles .featured}
 成员一。
----
++++
 成员二。
----
++++
 成员三。
 :::
 ```
@@ -3332,11 +3335,11 @@ async enhance(ctx) {
 ```markdown
 :::grid 3
 [MDN](https://developer.mozilla.org)
----
++++
 [Rust](https://rust-lang.org)
 
 一门内存安全的系统语言。
----
++++
 [GitHub](https://github.com)
 :::
 ```
@@ -3348,7 +3351,7 @@ async enhance(ctx) {
 [![[poster-farewell.webp]]
 #### 改删别姬
 多语言民族志戏剧 · 2026 年 5 月](/farewell)
----
++++
 [![[daowu-home.jpg]]
 #### 棹乌之家
 苗语社区戏剧](/daowu)
@@ -3373,9 +3376,9 @@ async enhance(ctx) {
 ```markdown
 :::grid 3
 [[work]]
----
++++
 [[essays]]
----
++++
 [[archive]]
 :::
 ```
@@ -3387,9 +3390,9 @@ async enhance(ctx) {
 ```markdown
 :::grid 3 {.no-cards}
 [[work]]
----
++++
 [[essays]]
----
++++
 [[archive]]
 :::
 ```
@@ -3414,9 +3417,9 @@ CSS 目标选择器：
 ```markdown
 :::grid 3 2:1:1
 左宽。
----
++++
 中窄。
----
++++
 右窄。
 :::
 ```
@@ -3480,15 +3483,6 @@ div 内部按完整 markdown 渲染——标题、列表、图片、链接，甚
 :::
 ```
 
-## 目录
-
-插入由页面标题自动生成的目录。
-
-```markdown
-:::toc
-:::
-```
-
 ## Buttons
 
 将 markdown 链接渲染为按钮行。第一个链接是主按钮，其余为次要按钮。
@@ -3530,7 +3524,7 @@ div 内部按完整 markdown 渲染——标题、列表、图片、链接，甚
 # 主旨
 
 主内容区——标题、段落、图片，随你放。
----
++++
 侧边栏，放标注或元数据。
 :::
 ```
@@ -3595,7 +3589,7 @@ grid 容器渲染为 `<div class="moss-grid two-col-split">`，你的类名与�
 ```markdown
 :::grid 2 {.comparison}
 之前
----
++++
 之后
 :::
 ```
@@ -3613,7 +3607,7 @@ grid 容器渲染为 `<div class="moss-grid two-col-split">`，你的类名与�
 ```markdown
 :::grid 2
 第一欄內容。
----
++++
 第二欄內容。
 :::
 ```
@@ -3647,21 +3641,21 @@ grid 容器渲染为 `<div class="moss-grid two-col-split">`，你的类名与�
 ```markdown
 :::grid 3
 第一欄。
----
++++
 第二欄。
----
++++
 第三欄。
 :::
 ```
 
-欄位之間用 `---` 分隔，`grid` 後面的數字是欄數。
+欄位之間用 `+++` 分隔，`grid` 後面的數字是欄數。
 
 **指定比例：**
 
 ```markdown
 :::grid 2 1:2
 窄的側欄。
----
++++
 寬的主內容區。
 :::
 ```
@@ -3671,9 +3665,9 @@ grid 容器渲染为 `<div class="moss-grid two-col-split">`，你的类名与�
 ```markdown
 :::grid 3 {.profiles .featured}
 成員一。
----
++++
 成員二。
----
++++
 成員三。
 :::
 ```
@@ -3707,15 +3701,6 @@ grid 容器渲染为 `<div class="moss-grid two-col-split">`，你的类名与�
 ![](photo1.jpg)
 ![](photo2.jpg)
 ![](photo3.jpg)
-:::
-```
-
-## 目錄
-
-根據頁面標題自動產生目錄。
-
-```markdown
-:::toc
 :::
 ```
 
@@ -3767,7 +3752,7 @@ grid 容器渲染为 `<div class="moss-grid two-col-split">`，你的类名与�
 ```markdown
 :::grid 2 {.comparison}
 之前
----
++++
 之後
 :::
 ```
@@ -4227,8 +4212,10 @@ npx vitest run
 <div class="callout callout-pending">
   <div class="callout-title">Translation pending</div>
   <div class="callout-content">
+
 This page is available in English. Full Chinese translation coming soon.
-  </div>
+
+</div>
 </div>
 
 See the English version: [Callouts](/docs/author/callouts/)
@@ -4240,8 +4227,10 @@ See the English version: [Callouts](/docs/author/callouts/)
 <div class="callout callout-pending">
   <div class="callout-title">Translation pending</div>
   <div class="callout-content">
+
 This page is available in English. Full Chinese translation coming soon.
-  </div>
+
+</div>
 </div>
 
 See the English version: [Callouts](/docs/author/callouts/)
@@ -4497,7 +4486,7 @@ Control each page with [frontmatter](moss-resolved:docs/author/frontmatter.md) �
 When a page needs a specific visual treatment, try in this order:
 
 1. **Plain markdown + CSS selector.** Use `## Mission`, `> quote`, `*byline*`, `- item`. Let the theme select the resulting HTML. Zero new vocabulary.
-2. **A moss-native shortcode.** `:::grid N`, `::::buttons`, `:::hero`, `:::gallery`, `:::toc`, `> [!pending]`. These emit well-known class names that the default theme already styles. See [shortcodes](moss-resolved:docs/author/shortcodes.md).
+2. **A moss-native shortcode.** `:::grid N`, `::::buttons`, `:::hero`, `:::gallery`, `> [!pending]`. These emit well-known class names that the default theme already styles. See [shortcodes](moss-resolved:docs/author/shortcodes.md).
 3. **Named-class fenced div.** `::: {.class}` attaches a CSS class to a region without introducing a new shortcode. Pair with a CSS rule in `.moss/theme/style.css`. See [shortcodes > Named-class fenced divs](moss-resolved:docs/author/shortcodes.md#named-class-fenced-divs).
 4. **Custom shortcode.** Rare; only when you need new behavior the parser doesn't already support.
 
@@ -4878,8 +4867,10 @@ npm run moss -- preview ~/Sites/other-folder
 <div class="callout callout-pending">
   <div class="callout-title">Translation pending</div>
   <div class="callout-content">
+
 This page is available in English. Full Chinese translation coming soon.
-  </div>
+
+</div>
 </div>
 
 See the English version: [Multilingual sites](/docs/multilingual/)
@@ -4891,8 +4882,10 @@ See the English version: [Multilingual sites](/docs/multilingual/)
 <div class="callout callout-pending">
   <div class="callout-title">Translation pending</div>
   <div class="callout-content">
+
 This page is available in English. Full Chinese translation coming soon.
-  </div>
+
+</div>
 </div>
 
 See the English version: [Multilingual sites](/docs/multilingual/)
@@ -4904,8 +4897,10 @@ See the English version: [Multilingual sites](/docs/multilingual/)
 <div class="callout callout-pending">
   <div class="callout-title">Translation pending</div>
   <div class="callout-content">
+
 This page is available in English. Full Chinese translation coming soon.
-  </div>
+
+</div>
 </div>
 
 See the English version: [Navigation & footer](/docs/author/navigation/)
@@ -4917,8 +4912,10 @@ See the English version: [Navigation & footer](/docs/author/navigation/)
 <div class="callout callout-pending">
   <div class="callout-title">Translation pending</div>
   <div class="callout-content">
+
 This page is available in English. Full Chinese translation coming soon.
-  </div>
+
+</div>
 </div>
 
 See the English version: [Navigation & footer](/docs/author/navigation/)
@@ -4936,7 +4933,7 @@ See the English version: [Navigation & footer](/docs/author/navigation/)
 页面需要特定视觉处理时，按以下优先级尝试：
 
 1. **纯 markdown + CSS 选择器。** 使用 `## 标题`、`> 引用`、`*署名*`、`- 列表项`，让主题根据生成的 HTML 来应用样式。零额外语法。
-2. **moss 原生短代码。** `:::grid N`、`::::buttons`、`:::hero`、`:::gallery`、`:::toc`、`> [!pending]`。这些短代码生成固定的类名，默认主题已经有对应样式。参见 [shortcodes](moss-resolved:zh-hans/docs/author/shortcodes.md)。
+2. **moss 原生短代码。** `:::grid N`、`::::buttons`、`:::hero`、`:::gallery`、`> [!pending]`。这些短代码生成固定的类名，默认主题已经有对应样式。参见 [shortcodes](moss-resolved:zh-hans/docs/author/shortcodes.md)。
 3. **命名类围栏分区。** `::: {.class}` 为一个区域附加 CSS 类，无需引入新短代码。配合 `.moss/theme/style.css` 中的 CSS 规则使用。参见 [shortcodes > Named-class fenced divs](moss-resolved:zh-hans/docs/author/shortcodes.md#named-class-fenced-divs)。
 4. **自定义短代码。** 较少见；仅在需要解析器尚不支持的新行为时使用。
 
@@ -5079,6 +5076,8 @@ When a design call requires a visual treatment, try in this order:
 - **Single-link grid cells wrap in `<a>`.** A cell containing only `[…](url)` — whether the link text is inline or compound block content (image + heading + paragraph separated by blank lines) — becomes one `<a>` with block-level children. Do not hand-write `<a>` wrappers.
 - **`.no-cards` opts out of folder-link auto-conversion.** Use `:::grid N {.no-cards}` for navigation grids, mixed-content grids, or compound-link grids where cells should render as `.link-card` / `.friend-card` rather than collection cards.
 - **Pandoc-style heading/paragraph/hr attributes do NOT parse.** `# Title {.class}`, `paragraph\n{.class}`, and `---\n{.section-divider}` are not supported. Use `::: {.class}` fenced divs or CSS selectors on element structure instead.
+- **Cell divider is `+++`, not `---`.** `:::grid` and `:::buttons` separate cells with a line of `+++`. `---` is the CommonMark thematic break and never a moss control character. Bodies without `+++` are a single cell — backward-compatible with one-link-per-line buttons.
+- **Configuration goes in `{}`, not in body.** `:::subscribe {placeholder="…" button="…"}` not body lines. `:::grid {cols=2}` or positional `:::grid 2`. Description text and any framing prose are written as ordinary markdown above and around the shortcode.
 - **Arity rule for nested fenced divs.** Inner fence uses more colons than outer: `:::` contains `::::` contains `:::::`. The bare close of each fence must match the opener's colon count. Same-arity nesting emits a warning and renders as literal text.
 - **Frontmatter is a fixed schema.** Arbitrary custom fields are silently ignored. `description:` is for SEO/previews only — it is not rendered as a visible page deck. Decks use `> blockquote` immediately after `# H1`.
 - **Wikilink language-tree resolution.** `![[page]]` inside `zh-hans/file.md` prefers `zh-hans/page.md` over root `page.md`. Use an explicit path prefix (`![[zh-hans/page]]`) to override.
@@ -5101,9 +5100,23 @@ When a design call requires a visual treatment, try in this order:
 - [callouts](moss-resolved:docs/author/callouts.md) — `> [!note]` blockquote variants
 - [frontmatter](moss-resolved:docs/author/frontmatter.md) — all recognized metadata fields
 
+The full grammar reference (attribute parser, cell divider, unknown-name fallback, escape rules) lives in moss's `docs/architecture/shortcode-grammar.md`.
+
 ---
 
-## Manifest
+## footer
+
+[共生实验室](https://symbiosis-lab.org) · 2026
+
+---
+
+## footer
+
+[共生實驗室](https://symbiosis-lab.org) · 2026
+
+---
+
+## manifest
 
 ## 目录结构
 
@@ -5295,25 +5308,23 @@ A desktop app that turns your folder of markdown files into a website.
 Right-click → your site is live.
 
 :::buttons
-[Download for macOS](https://github.com/Symbiosis-Lab/moss-releases/releases/latest/download/moss.dmg)
-[Documentation](docs/)
+[Request beta access](#moss-is-in-closed-beta)
+[Documentation](moss-resolved:docs/index.md)
 :::
-
-This is beta software still in testing. Please submit [an issue](https://github.com/Symbiosis-Lab/moss-releases/issues) or send us [an email](mailto:hi@symbiosis-lab.org) to let us know what you think.
 
 :::grid 3
 **Write**
 
 Markdown files.
 Use the default editor, Obsidian, Typora, or any other software.
----
++++
 **Right-click**
 
 Select your folder in Finder. Click "Publish with moss."
----
++++
 **Done**
 
-Your site is live. Navigation, styling, dark mode — all handled.
+Your site is live. Navigation, styling, dark mode, all handled.
 :::
 
 ## Your files, your site
@@ -5324,13 +5335,25 @@ Your files never leave your computer. No account needed to preview. No server to
 
 Standard static pages, hosted on any server. Publish to your own site, syndicate to platforms, sync back comments.
 
-## Multimedia, handled
+## Multimedia automated
 
 Videos, images, HTML, Jupyter notebooks. Drop them in the folder, moss handles the rest.
 
 ## Fully extensible
 
-Customize with CSS and JavaScript. Build plugins by dropping scripts into a folder. moss also works as a CLI for automation and CI. See [Extend](docs/extend/) for details.
+Customize with CSS and JavaScript. Build plugins by dropping scripts into a folder. Vibe-coding ready, but always human-friendly.
+
+## moss is in closed beta
+
+We're inviting writers in waves while we sand the rough edges.
+Leave your email and we'll send a build when it's your turn, usually within a few weeks of signing up.
+
+One email. We write only when there's a build for you.
+
+:::subscribe {button="Request access"}
+:::
+
+If you'd rather just watch from a distance, the releases are on [GitHub](https://github.com/Symbiosis-Lab/moss-releases) and you can send notes to [hi@symbiosis-lab.org](mailto:hi@symbiosis-lab.org).
 
 ---
 
@@ -5341,21 +5364,19 @@ Customize with CSS and JavaScript. Build plugins by dropping scripts into a fold
 把文件夹打包成独立网站。右键，预览，发布。
 
 :::buttons
-[下载 macOS 版](https://github.com/Symbiosis-Lab/moss-releases/releases/latest/download/moss.dmg)
-[文档](docs/)
+[申请测试版](#青苔正在封闭测试)
+[文档](moss-resolved:docs/index.md)
 :::
-
-目前为测试版软件。请通过 [issue](https://github.com/Symbiosis-Lab/moss-releases/issues) 或者[邮件](mailto:hi@symbiosis-lab.org)告诉我们你的想法。
 
 :::grid 3
 **本地写作**
 
 Markdown 文件。使用内置编辑器、Obsidian、或者任意其他软件。
----
++++
 **右键发布**
 
 预览、确认、发布。同步到各平台。
----
++++
 **独立网站**
 
 选择托管服务。购买域名，或者使用默认域名。
@@ -5373,9 +5394,21 @@ Markdown 文件。使用内置编辑器、Obsidian、或者任意其他软件。
 
 视频、图片、HTML、Jupyter Notebook。放进文件夹，青苔处理其余一切。
 
-## 无限扩展，AI 支持
+## 无限扩展
 
-通过 CSS 和 JavaScript 自定义设计，通过脚本插件自定义编译流程。CLI 支持自动化和 CI 集成。详见[扩展](docs/extend/)。
+通过 CSS 和 JavaScript 自定义设计，通过脚本插件自定义编译流程。尽情 vibe code，青苔让你的网站可读、可维护。
+
+## 青苔正在封闭测试
+
+我们正在分批邀请写作者，一边打磨细节。
+留下你的邮箱，等到你那一批，我们会发送一份构建版本，通常在报名后几周内。
+
+仅一封邮件：只在有新版本时联系你。
+
+:::subscribe {button="申请测试"}
+:::
+
+如果你只想远远看看，发布版在 [GitHub](https://github.com/Symbiosis-Lab/moss-releases) 上，反馈邮箱 [hi@symbiosis-lab.org](mailto:hi@symbiosis-lab.org)。
 
 ---
 
@@ -5386,21 +5419,19 @@ Markdown 文件。使用内置编辑器、Obsidian、或者任意其他软件。
 將資料夾打包成網站的桌面應用。右鍵，預覽，上線。
 
 :::buttons
-[下載 macOS 版](https://github.com/Symbiosis-Lab/moss-releases/releases/latest/download/moss.dmg)
-[文件](docs/)
+[申請測試版](#青苔正在封閉測試)
+[文件](moss-resolved:docs/index.md)
 :::
-
-目前為測試版軟體。請通過 [issue](https://github.com/Symbiosis-Lab/moss-releases/issues) 或者[郵件](mailto:hi@symbiosis-lab.org)告訴我們你的想法。
 
 :::grid 3
 **本機寫作**
 
 Markdown 檔案。使用內建編輯器、Obsidian、或者任何軟體。
----
++++
 **右鍵發佈**
 
 預覽、確認、發佈。同步到各平台。
----
++++
 **獨立網站**
 
 選擇託管服務。購買網域，或者使用預設網域。
@@ -5420,5 +5451,17 @@ Markdown 檔案。使用內建編輯器、Obsidian、或者任何軟體。
 
 ## 無限擴充
 
-透過 CSS 和 JavaScript 自訂設計，透過指令碼外掛自訂編譯流程。CLI 支援自動化和 CI 整合。詳見[擴充](docs/extend/)。
+透過 CSS 和 JavaScript 自訂設計，透過指令碼外掛自訂編譯流程。CLI 支援自動化和 CI 整合。詳見[擴充](moss-resolved:docs/extend/index.md)。
+
+## 青苔正在封閉測試
+
+我們正在分批邀請寫作者，一邊打磨細節。
+留下你的郵箱，等到你那一批，我們會發送一份建構版本，通常在報名後幾週內。
+
+僅一封郵件：只在有新版本時聯絡你。
+
+:::subscribe {button="申請測試"}
+:::
+
+如果你只想遠遠看看，發佈版在 [GitHub](https://github.com/Symbiosis-Lab/moss-releases) 上，回饋郵箱 [hi@symbiosis-lab.org](mailto:hi@symbiosis-lab.org)。
 
