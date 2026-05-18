@@ -2,6 +2,132 @@
 
 All notable changes to moss will be documented here.
 
+## [0.6.6] - 2026-05-18
+
+### Added
+- auto-iframe folder/ embeds with source index.html
+- wire data-width on embed wrappers (P9 follow-up)
+- register new vocabulary from listing-sort feature
+- wire data-width on wikilink-synthesized images (P9 follow-up)
+- wire data-width attribute on hero/gallery/grid (Phase 1 follow-up to P9)
+- warn on pre-v1 class vocabulary in user themes (Phase 1 PR-1d)
+- collapse buttons, grid-card kinds, image aspects (Phase 1 PR-1c.4-6)
+- collapse embeds to .moss-embed[data-type] (Phase 1 PR-1c.3)
+- collapse callouts to .callout[data-type] (Phase 1 PR-1c.2)
+- collapse cards vocabulary (Phase 1 PR-1c.1)
+- wrap default CSS in @layer cascade and stamp html version (Phase 1 PR-1b)
+- write .moss/contract.json on every build (Phase 2)
+- moss agents init - scaffold .moss/AGENTS.md (Phase 2)
+- stage v1 vocabulary in COMPONENTS (Phase 1 PR-1a)
+- moss describe - JSON + human output of moss contract (Phase 2)
+- generate reference.md from COMPONENTS + tokens (Phase 0b Task 4)
+- seed COMPONENTS with current emitted vocabulary (Phase 0b Task 2)
+- canonical agents.md worldview for AI agents (Phase 2)
+- add COMPONENTS const table for HTML contract (Phase 0b Task 1)
+- render folder-list markers via shared listing pipeline
+- emit folder-list marker for ![[/folder/|params]]
+- drive chrome from resolved_sort.series_default
+- emit container wrapper + data-list-axis attributes
+- auto-fill + container queries; per-axis card density
+- folder count subtitle when no description (non-date only)
+- meta slot becomes sort-driven; migrate call sites
+- drive listings through resolved_sort
+- populate resolved_sort on every folder index
+- ParsedDocument carries sort + resolved_sort; impls SortableDoc
+- normalize legacy series:[list] at deserialize
+- add sort:; move order: alias from series:
+- sort_by_resolved dispatch
+- resolve_folder_sort inference cascade
+- resolve_folder_sort inference cascade
+- SortField + SortAxis + ResolvedSort
+- SortField + SortAxis + ResolvedSort
+- add generate-contract-docs dev-bin (Phase 0a)
+- add format_root_block formatter for tokens.json (Phase 0a)
+- add contract::tokens loader for W3C Design Tokens (Phase 0a)
+- add tokens.json — declarative source for CSS public-API tokens (Phase 0a)
+- tokenizeDividerLine accepts +++ and ---
+- async shortcode scanner plugin via Tauri IPC
+- expose scan_shortcodes Tauri command
+- editor_scan skips fenced code blocks
+- editor_scan recognizes +++ and --- grid dividers
+- editor_scan finds top-level shortcode block fences
+- scaffold editor_scan position-aware shortcode scanner
+- Step 8 — synthesizer owns figure wrapper for standalone images
+- retire first_body_image regex (Step 5 of structural-html-emission)
+- post-Step-7 follow-ups (cloud-storage, timeout UX, e2e tests)
+- route colophon cover through image synthesizer
+- retire wrap_img_in_picture (Step 7 of structural-html-emission)
+- route gallery thumbnails through synthesizer
+- cascade homepage hero into OG image and description
+- wire production callers through render_cover_html manifest
+- scaffold media_lookup + eager params on render_cover_html
+- route link-preview favicon through structural synthesizer
+- route :::hero image through structural synthesizer
+- route markdown Tag::Image through structural synthesizer
+- visual polish — band centering, kicker styling, vertical mode
+- format article count as CJK numerals in vertical CJK mode
+- add optional kicker slot to FolderCardProps + ChildItemProps
+- embed Inter font for deterministic rasterization
+- resolve_cover_chain returns typed CoverRef end-to-end
+- fallible from_source + typed for_* constructors
+- emit absolute og:image and twitter:image URLs
+- plumb resolved SiteUrl through HTML generation
+- accept --site-url override for build-time host injection
+- resolve_site_url walks CLI → env → state.toml → localhost
+- introduce SiteUrl type with parse, from_host, to_absolute, host
+
+### Fixed
+- make canonical-link failure fatal; document load-bearing carry-forward
+- drop intermediate hashes.json write; sync seal+persist
+- mark-and-sweep prune untouched carry-forward at seal
+- never register a .webp variant that did not land on disk
+- apply pretty-URL adjustment to iframe src
+- right-align form-only auto-injected footer via data-moss-shape
+- slugify folder_id for url_path lookups
+- await background handle in headless builds with exits_after_build
+- hoist pointer-events:none on cover video to shared rule
+- scope list-layout card overrides to data-layout="list"
+- repair frontend CSS tests broken by v1 contract refactor
+- make nextStage monotonic — unstuck "Generating pages… (N / N)"
+- flip Open-Q1 entries to Status::Emerging (Phase 0b review fix)
+- remove em-dashes from user-facing descriptions
+- restore internal tokens that were inadvertently deleted in Phase 0a Task 4
+- add error-path tests + drop unused import (Task 2 review fixes)
+- fold service accepts hyphenated shortcode names
+- scanner tolerates undefined/partial invoke results
+- EditorRange uses u32 so TS binding is number not string
+- editor_scan accepts hyphens in shortcode names
+- seed atomic in bridge_to_atomic to eliminate cancel race
+- address arch review findings (DRY wrap_in_figure, detector helper, CSS comment)
+- handle resolve-phase raw-HTML media in figure helper
+- strip resolver sentinels at body_cover_path capture (arch review)
+- address pre-merge review findings (warning UI surface, doc, names)
+- same off-by-one in video task counter
+- off-by-one in image counter + surface server-start failure
+- apply task-completed counters; surface server-start failure
+- persist + reuse dir_overrides for colophon synthesizer lookup
+- top-align grid card text within the band
+- bound per-notebook I/O with a 30s timeout
+- let grid card band grow with description text
+- wire child_summary covers through synthesizer manifest
+- suppress LQIP style when extra_attrs carries style=
+- register ImageOutputs/ImageVariants into wire manifest
+- address impl-review findings on structural-html-emission branch
+- align <picture>-wrapped images in single-image paragraphs
+- update test selectors to bare [data-typesetting] form
+- rename inner head wrapper to .moss-card-list-head
+- skip moss-folder-title H1 on translation-home pages
+- remove footer hint bar; defer selection-toolbar layout reads
+- update iCloud pre-warm critical list for /_moss/ namespace
+- update hardcoded /js/ paths to /_moss/js/ namespace
+- drop dead dir_overrides param + field
+- clarify allow comment on body-link format!
+- trim double-blank + bind url once in test
+- code review followups for Phase 5
+- correct doc tense, add empty-input test, localhost note
+- load system fonts so title and site name actually render
+
+
 ## [0.6.5] - 2026-05-12
 
 ### Added
