@@ -1,8 +1,8 @@
 ---
-description: William Blake, 1757–1827. A site gathering Blake's illuminated books, letters, prose, and pictorial work — transcribed from public-domain primary sources, with images from the Library of Congress Rosenwald Collection, the Blake Archive, and other institutional digital repositories.
-children_style: list
-children_depth: direct
 uid: 8f508658
+children_style: grid
+description: William Blake, 1757–1827. A site gathering Blake's illuminated books, letters, prose, and pictorial work — transcribed from public-domain primary sources, with images from the Library of Congress Rosenwald Collection, the Blake Archive, and other institutional digital repositories.
+children_depth: direct
 ---
 
 *I must Create a System, or be enslav'd by another Man's; I will not Reason & Compare: my business is to Create.* — William Blake, *Jerusalem*, plate 10.

@@ -713,6 +713,7 @@ Remove or reduce these files before deploying.`
       );
       if (!push.success) throw new Error(`git push failed: ${sanitize(push.stderr, token)}`);
       onProgress(100, "Deployed!");
+      onProgress(100, "Backing up source...");
       let sha = "";
       try {
         const findResult = await executeBinary({
@@ -1892,7 +1893,7 @@ Install git by running: xcode-select --install`;
     console.log(`   Using git: ${gitPath}`);
     try {
       if (!context.site_files || context.site_files.length === 0) {
-        const msg = "Site directory is empty. Please compile your site first.";
+        const msg = "Site directory is empty. Please build your site first.";
         await reportError2(msg, "validation", true);
         return { success: false, message: msg };
       }
@@ -1951,8 +1952,10 @@ Install git by running: xcode-select --install`;
       let deployResult = { commitSha: "", orphanSha: "", treeChanged: false };
       let currentPhase = "Deploying...";
       let currentStep = 5;
+      let postDeployPhase = false;
       const heartbeat = setInterval(() => {
-        reportProgress2("deploying", currentStep, 10, currentPhase);
+        const stage = postDeployPhase ? "verifying" : "deploying";
+        reportProgress2(stage, currentStep, 10, currentPhase);
       }, DEPLOY_HEARTBEAT_INTERVAL_MS);
       let domain = context.domain;
       if (!domain) {
@@ -1974,8 +1977,14 @@ Install git by running: xcode-select --install`;
           domain,
           onProgress: (percent, message2) => {
             currentPhase = message2;
-            currentStep = Math.min(5 + Math.floor(percent / 100 * 4), 9);
-            reportProgress2("deploying", currentStep, 10, message2);
+            if (percent >= 100) {
+              postDeployPhase = true;
+              currentStep = 10;
+              reportProgress2("verifying", currentStep, 10, message2);
+            } else {
+              currentStep = Math.min(5 + Math.floor(percent / 100 * 4), 9);
+              reportProgress2("deploying", currentStep, 10, message2);
+            }
           }
         });
       } finally {
