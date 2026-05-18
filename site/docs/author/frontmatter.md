@@ -95,6 +95,36 @@ list/summary layout (`.moss-article-listing`) and the card grid
 (`.moss-collection-grid`) — so custom homepages and folder landing pages can
 lay out their own content without a trailing auto-generated index.
 
+### Sort
+
+`sort` controls how a folder's children are ordered, which in turn shapes how the cards look.
+
+| Value | Order | Card meta |
+|---|---|---|
+| `date` | newest first | year · month |
+| `weight` | by `weight` integer, lowest first; unweighted fall to the end | (none) |
+| `title` | alphabetical | (none) |
+| `[a, b, c]` | explicit list of child stems first, in that order; rest by inferred axis | (none) |
+
+```yaml
+---
+title: Projects
+sort: title
+---
+```
+
+When `sort` is absent, moss infers it from the children:
+
+1. Any child has a `weight` field → `sort: weight`
+2. At least 80% of children have a `date` field → `sort: date`
+3. Otherwise → `sort: title`
+
+So most folders need no `sort` declaration — a blog folder is automatically `date`, a docs folder with weights is automatically `weight`, and a folder of dateless projects is automatically `title`.
+
+**Why sort drives appearance:** date listings put the date in each card's meta slot; weight and title listings omit the meta slot entirely (no empty space). Folder cards in non-date listings show a small "N articles" subtitle only when they have no description.
+
+The legacy `order: [...]` field is a back-compat alias for `sort: [...]`.
+
 ## Media
 
 | Field | Type | Default | Description |
@@ -129,7 +159,7 @@ cascade:
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
 | `also_in` | list | — | Folder paths where this article also appears in child lists |
-| `series` | bool/list | — | Series declaration — group related articles in reading order |
+| `series` | boolean | inferred | Render prev/next chrome on each child of this folder |
 
 `also_in` makes an article appear in multiple sections without duplicating the file:
 
@@ -141,6 +171,18 @@ also_in:
   - featured
 ---
 ```
+
+`series` toggles the prev/next navigation chrome at the bottom of each child article. It defaults to on for folders with `sort: weight` (or an explicit list) — moss assumes authored order implies sequential reading. For `sort: date` and `sort: title` it defaults to off. Set it explicitly to override:
+
+```yaml
+# A weighted docs folder, but you don't want prev/next chrome
+---
+title: Reference
+series: false
+---
+```
+
+You can also opt a single child out by setting `series: false` on that article's own frontmatter.
 
 ## Advanced
 
