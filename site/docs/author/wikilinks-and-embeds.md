@@ -81,8 +81,57 @@ This inserts the referenced paragraph directly into the current page. Embeds wor
 - **Full page**: `![[media]]` — embeds the entire page content
 - **Section**: `![[structure#URLs]]` — embeds everything under that heading
 - **Block**: `![[structure#^intro]]` — embeds a single paragraph marked with a block ID
+- **Folder listing**: `![[journal/]]` — embeds another folder's children as cards (see below)
 
 moss detects circular embeds and stops before creating an infinite loop.
+
+## Folder listings
+
+A wikilink whose path ends with `/` embeds a folder's children inline:
+
+```markdown
+# William Blake's Notebooks
+
+A personal record of my reading and writing.
+
+## Recent journal
+
+![[journal/|limit:5,more]]
+
+## Books
+```
+
+The trailing slash is the signal that this is a folder, not a page. The cards inherit the target folder's `sort` (see [[frontmatter#Sort]]) — so a `journal/` folder with dated entries renders date-sorted cards here, and a `projects/` folder of dateless entries renders alphabetically.
+
+**Pipe parameters** (comma-separated):
+
+| Param | Meaning |
+|---|---|
+| `limit:N` | cap at N items |
+| `more` | append a "More →" link to the source folder when truncated |
+| `sort:date` / `sort:weight` / `sort:title` | override the source folder's sort axis for this embed only |
+
+Examples:
+
+```markdown
+![[journal/]]                       # full listing
+![[journal/|limit:5]]               # 5 most recent (or whatever the journal's sort picks)
+![[journal/|limit:5,more]]          # 5 newest + "More →" link
+![[news/|sort:date,limit:3]]        # override sort axis per-embed
+```
+
+Paths follow the same resolution as other wikilinks: relative paths anchor at the current page's folder, absolute paths (`/journal/`) anchor at the site root.
+
+### When to use folder listings vs `children_source`
+
+Two ways to render another folder's children on a page:
+
+| Mechanism | When to use |
+|---|---|
+| Inline `![[folder/]]` wikilink | Multiple embeds per page, or you want the listing between other markdown sections. The author chooses where each listing appears. |
+| `children_source: "[[folder]]"` in frontmatter | Page-scope: the page IS a listing of another folder. One transclusion per page. Renders at the slot determined by your theme. |
+
+For most pages with a single primary listing, frontmatter `children_source` is the right choice. Use `![[folder/]]` when you want the listing inline among other content.
 
 ## Block references
 
