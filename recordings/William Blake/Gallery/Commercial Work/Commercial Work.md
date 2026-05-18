@@ -5,17 +5,17 @@ source: Blake's letter to George Cumberland, 6 December 1795 (Russell 1906, *The
 uid: "caf69179"
 ---
 
-## To Cumberland, two weeks before my death
+## Letter to George Cumberland, 12 April 1827
 
-From my letter to George Cumberland of Bristol, 12 April 1827, written from N 3 Fountain Court Strand:
+From Blake's letter to George Cumberland of Bristol, written from No. 3 Fountain Court, Strand — four months before his death:
 
 > Dear Cumberland — I have been very near the Gates of Death & have returned very weak & an Old Man feeble & tottering, but not in Spirit & Life not in The Real Man The Imagination which Liveth for Ever. In that I am stronger & stronger as this Foolish Body decays.
 
 *— Blake to George Cumberland, 12 April 1827.*
 
-## To Cumberland, on the engraver's art
+## Letter to George Cumberland, 6 December 1795
 
-From my letter to George Cumberland, Lambeth, 6 December 1795 — written as I was engraving the plates for Stedman's *Surinam* and for his own *Thoughts on Outline*:
+From Blake's letter to George Cumberland, written from Lambeth — during the years he was engraving the plates for Stedman's *Surinam* and for Cumberland's own *Thoughts on Outline*:
 
 > Dear Sir, — I congratulate you, not on any atchievement, because I know that the Genius that produces the Designs can execute them in any manner, notwithstanding the pretended Philosophy which teaches that Execution is the power of one & Invention of another. Locke says it is the same faculty that Invents Judges, & I say he who can Invent can Execute.
 
@@ -23,13 +23,13 @@ From my letter to George Cumberland, Lambeth, 6 December 1795 — written as I w
 
 ## On the booksellers
 
-From my *Public Address*, drafted in the Notebook c. 1810. The Notebook is at the British Library (Add. MS 49460); the text was first printed by Rossetti for Gilchrist's *Life* (1880).
+From Blake's *Public Address*, drafted in the Notebook c. 1810 (Notebook at the British Library, Add. MS 49460; text first printed by Rossetti for Gilchrist's *Life*, 1880):
 
 > Englishmen! rouse yourselves from the fatal slumber into which booksellers and trading dealers have thrown you, under the artfully propagated pretence that a translation or a copy of any kind can be as honourable to a nation as an original, belieing the English character in that well-known saying, *Englishmen improve what others invent.* This even Hogarth's works prove a detestable falsehood. No man can improve an original invention, nor can an original invention exist without execution organised, delineated, and articulated either by God or man.
 
 *— *Public Address*, Notebook, c. 1810.*
 
-## On drawing, and on my own engraving
+## On drawing and engraving
 
 From the same *Public Address*:
 
@@ -47,15 +47,15 @@ From the *Public Address*:
 
 ## On Hayley
 
-I have already given my account of Mr. Hayley's patronage in the letter to Thomas Butts of 6 July 1803. *See [refusals/refusals.md](../refusals/refusals.md).*
+Blake's account of Hayley's patronage is in his letter to Thomas Butts of 6 July 1803; the verbatim text is gathered in [Gallery/refusals](../refusals/).
 
-To Hayley, of the *Ballads* (with Phillips of London as bookseller), 28 April 1805:
+Blake to William Hayley, 28 April 1805 — on the new edition of the *Ballads* (Phillips of London, bookseller):
 
 > This morning I have been with Mr. Phillips, and have entirely settled with him the plan of engraving for the new edition of the Ballads. The prints, five in number, I have engaged to finish by 28th May; they are to be as highly finished as I can do them, the size the same as the seven plates, the price 20 guineas each, half to be prepaid by P.
 
 *— Blake to William Hayley, 28 April 1805.*
 
-To Hayley, 4 June 1805 — on the omitted plate of *The Horse*:
+Blake to William Hayley, 4 June 1805 — on the omitted plate of *The Horse*:
 
 > I have fortunately, I ought to say providentially, discovered that I have engraved one of the plates for that ballad of *The Horse* which is omitted in the new edition; time enough to save the extreme loss and disappointment which I should have suffered had the work been completed without that ballad's insertion. I write to entreat that you would contrive so as that my plate may come into the work, as its omission would be to me a loss that I could not now sustain.
 

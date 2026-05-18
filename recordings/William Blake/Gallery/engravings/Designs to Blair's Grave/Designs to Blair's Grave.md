@@ -50,3 +50,44 @@ source: First edition, London, R. H. Cromek, 1808 — designs engraved by Louis 
 ---
 
 ## The Twelve Plates
+
+The thirteen plates below are Blake's watercolour designs (Butlin 633), preserved at the National Gallery of Art and elsewhere — the inventions from which Schiavonetti engraved the 1808 volume's plates.
+
+![[01-title-page.jpg]]
+*Title page design.*
+
+![[02-christ-descending-into-the-grave.jpg]]
+*Christ Descending into the Grave.*
+
+![[03-friendship.jpg]]
+*Friendship.*
+
+![[04-counsellor-king-warrior-mother-child.jpg]]
+*The Counsellor, King, Warrior, Mother & Child in the Tomb.*
+
+![[05-death-of-the-strong-wicked-man.jpg]]
+*The Death of the Strong Wicked Man.*
+
+![[06-soul-hovering-over-the-body.jpg]]
+*The Soul Hovering Over the Body Reluctantly Parting with Life.*
+
+![[07-descent-of-man-into-the-vale-of-death.jpg]]
+*The Descent of Man into the Vale of Death.*
+
+![[08-day-of-judgment.jpg]]
+*The Day of Judgment.*
+
+![[09-death-of-the-good-old-man.jpg]]
+*The Death of the Good Old Man.*
+
+![[10-reunion-of-the-soul-and-the-body.jpg]]
+*The Reunion of the Soul and the Body.*
+
+![[11-deaths-door.jpg]]
+*Death's Door.*
+
+![[12-meeting-of-a-family-in-heaven.jpg]]
+*The Meeting of a Family in Heaven.*
+
+![[13-soul-exploring-the-recesses-of-the-grave.jpg]]
+*The Soul Exploring the Recesses of the Grave.*

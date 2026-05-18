@@ -46,7 +46,7 @@ source: *A Descriptive Catalogue of Pictures, Poetical and Historical Inventions
 
 ![[canterbury.jpg]]
 
-The longest entry in the catalogue. Its full text — Blake's typological reading of the pilgrims, his self-defence, and his attack on the rival prospectus — is at [Gallery/engravings/Canterbury Pilgrims](../../engravings/Canterbury%20Pilgrims/). The opening lines are:
+The longest entry in the catalogue. Its full text — Blake's typological reading of the pilgrims, his self-defence, and his attack on the rival prospectus — is at [Gallery/engravings/Canterbury Pilgrims](../engravings/Canterbury%20Pilgrims/). The opening lines are:
 
 > The time chosen is early morning, before sunrise, when the jolly company are just quitting the Tabarde Inn. […] The characters of Chaucer's Pilgrims are the characters which compose all ages and nations. As one age falls, another rises, different to mortal sight, but to immortals only the same; for we see the same characters repeated again and again, in animals, vegetables, minerals, and in men. Nothing new occurs in identical existence; Accident ever varies, Substance can never suffer change nor decay.
 
@@ -202,7 +202,7 @@ These two paintings were not among the sixteen numbered exhibits but belong to t
 | IV | The Bard, from Gray | Tempera on canvas, c. 1809 | Tate N03551 | `bard.jpg` |
 | V–VIII, X–XII | (lost) | — | — | — |
 | IX | Satan Calling Up His Legions | Tempera on canvas | V&A | `satan_legions.jpg` |
-| XIII | Jacob's Ladder | Watercolour | British Museum 1949,1112.3 | `jacobs_ladder.jpg` |
+| XIII | Jacob's Ladder | Watercolour | British Museum 1949,1112.2 | `jacobs_ladder.jpg` |
 | XVI | Penance of Jane Shore | Watercolour | Tate N05897 | `jane_shore.jpg` |
 | (not exhibited) | Satan in His Original Glory | Tempera on canvas, c. 1805 | Tate N05892 | `satan_glory.jpg` |
 | (not exhibited) | The Whore of Babylon | Watercolour, 1809 | British Museum 1847,0318.123 | `whore_of_babylon.jpg` |

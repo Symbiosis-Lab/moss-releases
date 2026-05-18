@@ -54,7 +54,7 @@ From the fly-leaf of the same volume:
 
 ## On Cromek and Stothard
 
-Blake's account of the *Grave* engraving substitution and the *Canterbury Pilgrims* dispute is drawn from his *Public Address* (Notebook, c. 1810; BL Add. MS 49460; text in Erdman 1988 pp. 571–582). The verbatim passages are gathered in two folders within the Gallery: the rival-prospectus attack at the close of Number III of the *Descriptive Catalogue* is reproduced in full at [Gallery/engravings/Canterbury Pilgrims](../engravings/Canterbury%20Pilgrims/); the Notebook passages on Schiavonetti and the *Grave* substitution are at [Gallery/engravings/Designs to Blair's Grave](../engravings/Designs%20to%20Blair's%20Grave/).
+Blake's account of the *Grave* engraving substitution and the *Canterbury Pilgrims* dispute is drawn from his *Public Address* (Notebook, c. 1810; BL Add. MS 49460; text in Erdman 1988 pp. 571–582). The verbatim passages are gathered in two folders within the Gallery: the rival-prospectus attack at the close of Number III of the *Descriptive Catalogue* is reproduced in full at [Gallery/engravings/Canterbury Pilgrims](../engravings/Canterbury%20Pilgrims/); the Notebook passages on invention versus execution that frame Blake's complaint about the *Grave* commission are at [Gallery/engravings/Designs to Blair's Grave](../engravings/Designs%20to%20Blair's%20Grave/).
 
 ## On generalising
 

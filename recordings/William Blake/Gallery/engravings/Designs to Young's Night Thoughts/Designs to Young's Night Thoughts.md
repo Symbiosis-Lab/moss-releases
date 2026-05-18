@@ -10,7 +10,7 @@ On the title-page Blake engraved his framing for the whole series:
 
 > Night the First, on Life, Death and Immortality.
 
-Blake's surviving letters and notebooks make no commentary on the Edwards commission that I have been able to extract verbatim. The work is what was left. Eight plates from Nights the First through the Fourth follow.
+Blake's surviving letters and notebooks contain no verbatim commentary on the Edwards commission. Eight plates from Nights the First through the Fourth follow.
 
 ![[nt-i-title.jpg]]
 *Title page, Night the First, on Life, Death and Immortality (1797).*
