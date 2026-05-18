@@ -33,7 +33,7 @@ source: First edition, London, R. H. Cromek, 1808 — designs engraved by Louis 
 
 ---
 
-These twenty lines were the only words of mine that Cromek would suffer to stand in his book. The Designs are mine; the Engraving is by another hand. Of that exchange I have set down the truth as I know it, in my Notebook.
+## From the Notebook (the so-called Rossetti MS), c. 1810
 
 > "The lavish praise I have received from all Quarters for Invention & Drawing has Generally been accompanied by this, that he can conceive but he cannot Execute. This Absurd assertion has done me, & may still do me, the greatest mischief."
 >
@@ -49,4 +49,4 @@ These twenty lines were the only words of mine that Cromek would suffer to stand
 
 ---
 
-The Twelve Plates, as Schiavonetti engraved them after my designs, and as the book of 1808 set them down before the Reader.
+## The Twelve Plates

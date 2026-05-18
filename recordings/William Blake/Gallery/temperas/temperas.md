@@ -88,7 +88,7 @@ Tate N05889; tempera and gold on mahogany, c. 1819–20. Painted late, the panel
 
 ![[milton_head.jpg]]
 
-One of eighteen *Heads of the Poets* painted in tempera on canvas, c. 1800–1803, for the library of Hayley's Marine Turret at Felpham. Manchester Art Gallery (1885.3). Blake's letters from Felpham to Hayley discuss the commission but the surviving correspondence does not single out the Milton head.
+One of eighteen *Heads of the Poets* painted in tempera on canvas, c. 1800–1803, for the library of Hayley's Turret House at Felpham. Manchester Art Gallery (1885.3). Blake's letters from Felpham to Hayley discuss the commission but the surviving correspondence does not single out the Milton head.
 
 ## Per-file attribution
 

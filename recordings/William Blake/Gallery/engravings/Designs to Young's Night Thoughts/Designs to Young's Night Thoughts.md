@@ -3,7 +3,7 @@ description: 43 engravings published by Richard Edwards, 1797, illustrating Edwa
 children_style: grid
 uid: "nigh1797"
 date: 1797-06-01
-source: First edition 1797 (R. Edwards, Bond Street), engraved by Blake from his own watercolour designs. Plate images via Wikimedia Commons mirrors of institutional originals (Google Art Project, Yale Center for British Art). British Museum holds the 537 watercolour designs, Add. 18516.
+source: First edition 1797 (R. Edwards, Bond Street), engraved by Blake from his own watercolour designs. Plate images via Wikimedia Commons mirrors of institutional originals (Google Art Project, Yale Center for British Art). British Museum, Prints & Drawings holds the 537 watercolour designs, 1929,0713.1–537 (album acquired 1929).
 ---
 
 On the title-page Blake engraved his framing for the whole series:

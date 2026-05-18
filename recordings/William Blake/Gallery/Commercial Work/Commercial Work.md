@@ -69,7 +69,7 @@ The seven plates below are representative of the commercial commissions of 1791â
 
 | File | Subject | Source publication | Holding / source |
 |------|---------|--------------------|------------------|
-| `negro_hung_alive.jpg` | A Negro hung alive by the Ribs to a Gallows (Plate 2) | Stedman, *Narrative of a Five Years' Expedition against the Revolted Negroes of Surinam* (London: J. Johnson, 1796) | National Gallery of Art, Washington (NGA 4986), via Wikimedia Commons (CC0) |
+| `negro_hung_alive.jpg` | A Negro hung alive by the Ribs to a Gallows (Plate 2) | Stedman, *Narrative of a Five Years' Expedition against the Revolted Negroes of Surinam* (London: J. Johnson & J. Edwards, 1796) | National Gallery of Art, Washington (NGA 4986), via Wikimedia Commons (CC0) |
 | `flagellation_samboe.jpg` | Plate from Stedman's *Narrative* (copy 2, object 6) â€” depicting a slave-driver scene | Stedman, *Narrative* (1796) | Huntington Library copy, via William Blake Archive / Wikimedia Commons |
 | `stedman_object11.jpg` | Plate from Stedman's *Narrative* (copy 2, object 11) | Stedman, *Narrative* (1796) | Huntington Library copy, via William Blake Archive / Wikimedia Commons |
 | `stedman_object12.jpg` | Plate from Stedman's *Narrative* (copy 2, object 12) | Stedman, *Narrative* (1796) | Huntington Library copy, via William Blake Archive / Wikimedia Commons |

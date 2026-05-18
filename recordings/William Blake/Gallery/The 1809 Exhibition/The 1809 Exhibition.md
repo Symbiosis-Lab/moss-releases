@@ -3,7 +3,7 @@ description: Blake's own one-man exhibition, opened 15 May 1809 at 28 Broad Stre
 children_style: grid
 uid: "7ac3a83c"
 date: 1809-05-15
-source: *A Descriptive Catalogue of Pictures, Poetical and Historical Inventions, Painted by William Blake in Water-Colours, Being the Ancient Method of Fresco Painting Revived, and Drawings, for Public Inspection, and for Sale by Private Contract.* London: Printed by D. N. Shury for J. Blake, 1809. Reprinted verbatim in Gilchrist's *Life of William Blake* (1880) vol. II, *Prose writings*, pp. 139–163. Paintings: *Spiritual Form of Nelson* (Tate N03006), *Spiritual Form of Pitt* (Tate N01110), *Sir Jeffery Chaucer and the Nine and Twenty Pilgrims* (Pollok House, Glasgow), *The Bard, from Gray* (Tate N03551), *Satan Calling Up His Legions* (V&A and Petworth), *Penance of Jane Shore* (Tate N05897). Numbers V–VIII, X–XII are lost. All public domain.
+source: *A Descriptive Catalogue of Pictures, Poetical and Historical Inventions, Painted by William Blake in Water-Colours, Being the Ancient Method of Fresco Painting Revived, and Drawings, for Public Inspection, and for Sale by Private Contract.* London: Printed by D. N. Shury for J. Blake, 1809. Reprinted verbatim in Gilchrist's *Life of William Blake* (1880) vol. II, *Prose writings*, pp. 139–163. Paintings: *Spiritual Form of Nelson* (Tate N03006), *Spiritual Form of Pitt* (Tate N01110), *Sir Jeffery Chaucer and the Nine and Twenty Pilgrims* (Pollok House, Glasgow), *The Bard, from Gray* (Tate N03551), *Satan Calling Up His Legions* (V&A — the 1809 exhibition tempera; a later "more perfect Picture" went to Petworth), *Penance of Jane Shore* (Tate N05897). Numbers V–VIII, X–XII are lost. All public domain.
 ---
 
 ## A DESCRIPTIVE CATALOGUE OF PICTURES, POETICAL AND HISTORICAL INVENTIONS
@@ -146,7 +146,7 @@ The longest entry in the catalogue. Its full text — Blake's typological readin
 
 *Jacob's Ladder.—A Drawing.*
 
-![[jacobs_dream.jpg]]
+![[jacobs_ladder.jpg]]
 
 ## NUMBER XIV.
 
@@ -174,6 +174,14 @@ The longest entry in the catalogue. Its full text — Blake's typological readin
 
 ---
 
+## Conclusion
+
+The Catalogue closed with Blake's distillation of his aesthetic, given in the entry on Joseph of Arimathea (see [Gallery/engravings/Joseph of Arimathea](../engravings/Joseph%20of%20Arimathea/)):
+
+> Grecian is Mathematic Form: Gothic is Living Form. Mathematic Form is Eternal in the Reasoning Memory: Living Form is Eternal Existence.
+
+---
+
 ## Related works of the same years
 
 These two paintings were not among the sixteen numbered exhibits but belong to the same campaign of "Fresco" works:
@@ -182,7 +190,7 @@ These two paintings were not among the sixteen numbered exhibits but belong to t
 *Satan in His Original Glory: 'Thou wast Perfect till Iniquity was Found in Thee'*, c. 1805. Tate N05892.
 
 ![[whore_of_babylon.jpg]]
-*The Whore of Babylon*, 1809. British Museum 1847,0918.6.
+*The Whore of Babylon*, 1809. British Museum 1847,0318.123.
 
 ## Attribution
 
@@ -193,8 +201,8 @@ These two paintings were not among the sixteen numbered exhibits but belong to t
 | III | Sir Jeffery Chaucer and the nine and twenty Pilgrims | Tempera on canvas, c. 1808 | Pollok House, Glasgow | `canterbury.jpg` |
 | IV | The Bard, from Gray | Tempera on canvas, c. 1809 | Tate N03551 | `bard.jpg` |
 | V–VIII, X–XII | (lost) | — | — | — |
-| IX | Satan Calling Up His Legions | Tempera on canvas | V&A / Petworth | `satan_legions.jpg` |
-| XIII | Jacob's Ladder | Watercolour | British Museum 1949,1112.3 | `jacobs_dream.jpg` |
+| IX | Satan Calling Up His Legions | Tempera on canvas | V&A | `satan_legions.jpg` |
+| XIII | Jacob's Ladder | Watercolour | British Museum 1949,1112.3 | `jacobs_ladder.jpg` |
 | XVI | Penance of Jane Shore | Watercolour | Tate N05897 | `jane_shore.jpg` |
 | (not exhibited) | Satan in His Original Glory | Tempera on canvas, c. 1805 | Tate N05892 | `satan_glory.jpg` |
-| (not exhibited) | The Whore of Babylon | Watercolour, 1809 | British Museum 1847,0918.6 | `whore_of_babylon.jpg` |
+| (not exhibited) | The Whore of Babylon | Watercolour, 1809 | British Museum 1847,0318.123 | `whore_of_babylon.jpg` |
