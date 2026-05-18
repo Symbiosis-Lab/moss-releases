@@ -1,5 +1,5 @@
 ---
-description: Twelve designs for Robert Blair's *The Grave* (London: R. H. Cromek, 1808), engraved by Louis Schiavonetti after Blake's drawings. Blake's only contribution in his own hand to the printed volume was the dedicatory poem "To the Queen."
+description: Thirteen watercolour designs (Butlin 633) for Robert Blair's *The Grave* — twelve illustrative subjects plus a title-page design. The 1808 volume (London: R. H. Cromek) printed twelve plates engraved by Louis Schiavonetti after Blake. Blake's only contribution in his own hand to the printed volume was the dedicatory poem "To the Queen."
 children_style: grid
 uid: "grav1808"
 date: 1808-08-01
@@ -49,9 +49,9 @@ source: First edition, London, R. H. Cromek, 1808 — designs engraved by Louis 
 
 ---
 
-## The Twelve Plates
+## The Thirteen Designs
 
-The thirteen plates below are Blake's watercolour designs (Butlin 633), preserved at the National Gallery of Art and elsewhere — the inventions from which Schiavonetti engraved the 1808 volume's plates.
+The thirteen watercolours below are Blake's own designs (Butlin 633), preserved at the National Gallery of Art and elsewhere — the inventions from which Schiavonetti engraved twelve of the plates for the 1808 printed volume.
 
 ![[01-title-page.jpg]]
 *Title page design.*

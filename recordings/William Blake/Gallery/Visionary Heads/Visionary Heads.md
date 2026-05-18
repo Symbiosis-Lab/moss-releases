@@ -58,7 +58,7 @@ On the nature of vision itself, drawn from his annotations on Reynolds and repea
 
 ## On the historical sitters
 
-Varley's notes and Gilchrist's narration record dozens of figures Blake saw and drew during the night sittings — among them Wat Tyler, the Black Prince, Caractacus, William Wallace, Edward I, Old Tom Parr in his youth, Solomon, Pindar, Corinna the Theban, Lais the Courtesan, the man who built the pyramids, and the man who taught Mr. Blake painting in his dreams. Blake worked from the apparitions themselves, not from imagination. As he insisted to Varley, when the likeness was challenged:
+Varley's notes and Gilchrist's narration record dozens of figures Blake saw and drew during the night sittings — among them Wat Tyler, the Black Prince, Caractacus, William Wallace, Edward I, Old Tom Parr in his youth, Solomon, Pindar, Corinna the Theban, Lais the Courtesan, the man who built the pyramids, and the man who taught Mr. Blake painting in his dreams. As he insisted to Varley, when the likeness was challenged:
 
 > Oh, it's all right! it _must_ be right: I saw it so.
 
