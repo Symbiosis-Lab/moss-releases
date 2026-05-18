@@ -46,7 +46,7 @@ source: *A Descriptive Catalogue of Pictures, Poetical and Historical Inventions
 
 ![[canterbury.jpg]]
 
-The longest entry in the catalogue. Its full text — Blake's typological reading of the pilgrims, his self-defence, and his attack on the rival prospectus — is at [Gallery/engravings/Canterbury Pilgrims](../engravings/Canterbury%20Pilgrims/). The opening lines are:
+The longest entry in the catalogue. Its full text — Blake's typological reading of the pilgrims, his self-defence, and his attack on the rival prospectus — is at [Canterbury Pilgrims](../../Pictures/Engravings/Inventions%20of%20his%20own/Canterbury%20Pilgrims/). The opening lines are:
 
 > The time chosen is early morning, before sunrise, when the jolly company are just quitting the Tabarde Inn. […] The characters of Chaucer's Pilgrims are the characters which compose all ages and nations. As one age falls, another rises, different to mortal sight, but to immortals only the same; for we see the same characters repeated again and again, in animals, vegetables, minerals, and in men. Nothing new occurs in identical existence; Accident ever varies, Substance can never suffer change nor decay.
 
@@ -176,7 +176,7 @@ The longest entry in the catalogue. Its full text — Blake's typological readin
 
 ## Conclusion
 
-The Catalogue closed with Blake's distillation of his aesthetic, given in the entry on Joseph of Arimathea (see [Gallery/engravings/Joseph of Arimathea](../engravings/Joseph%20of%20Arimathea/)):
+The Catalogue closed with Blake's distillation of his aesthetic, given in the entry on Joseph of Arimathea (see [Joseph of Arimathea](../../Pictures/Engravings/Inventions%20of%20his%20own/Joseph%20of%20Arimathea/)):
 
 > Grecian is Mathematic Form: Gothic is Living Form. Mathematic Form is Eternal in the Reasoning Memory: Living Form is Eternal Existence.
 

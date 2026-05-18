@@ -47,7 +47,7 @@ From the *Public Address*:
 
 ## On Hayley
 
-Blake's account of Hayley's patronage is in his letter to Thomas Butts of 6 July 1803; the verbatim text is gathered in [Gallery/refusals](../refusals/).
+Blake's account of Hayley's patronage is in his letter to Thomas Butts of 6 July 1803; the verbatim text is gathered in [Refusals](../../../../Writings/Refusals/).
 
 Blake to William Hayley, 28 April 1805 — on the new edition of the *Ballads* (Phillips of London, bookseller):
 
