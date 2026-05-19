@@ -8,7 +8,7 @@ title: Documentation
 
 # Documentation
 
-After installing moss, right-click any folder and choose **Publish with moss** to preview your website. Edit with the built-in moss editor or any markdown editor you like.
+After installing moss, right-click any folder and choose **Publish with moss** to preview your website. Edit with the built-in moss editor or [[editors|any markdown editor you like]].
 
 - Every folder becomes a page, [[author/frontmatter#Children|listing its children]] by default.
   - A folder full of [[media|media files]] becomes a gallery.

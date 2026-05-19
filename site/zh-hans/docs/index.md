@@ -9,7 +9,7 @@ lang: zh-hans
 
 # 文档
 
-安装 moss 后，右键任意文件夹，选择**用 moss 发布**即可预览网站。可以使用 moss 自带编辑器，也可以用任何你喜欢的 markdown 编辑器。
+安装 moss 后，右键任意文件夹，选择**用 moss 发布**即可预览网站。可以使用 moss 自带编辑器，也可以用[[editors|任何你喜欢的 markdown 编辑器]]。
 
 - 每个文件夹会变成一个页面，默认[[author/frontmatter#子页面|列出其子页面]]。
   - 全是[[media|媒体文件]]的文件夹会变成图库。
