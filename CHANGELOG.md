@@ -2,6 +2,145 @@
 
 All notable changes to moss will be documented here.
 
+## [0.6.7] - 2026-05-26
+
+### Added
+- drag commits expansion via Overrides (bug #1, mode b)
+- add nextExpandableFolder for drag-past-top reveal
+- ImageContext::HeroBare for no-snapshot hero fallback
+- add visibleStateV2 + effectiveNavHV2 (Overrides API)
+- add toggleNodeV2 with unified Overrides
+- add Overrides type and applyOverride helper
+- register audio/PDF/static assets in AssetRegistry via copy_deferred_assets
+- emit data-placeholder-src/poster/dims natively (regex-parity)
+- fix getPreviewBaseUrl race with lazy getter in hover extension
+- carry LQIP from AssetState::Pending through to Ready
+- promote currentEntryId to sole source of truth
+- track active entry by EntryId; swap isActive check
+- swap editor-main identity comparisons to EntryId
+- route through synthesize_iframe_html, retire moss-core escape valve
+- build-time warning for raw <img>/<video> in markdown
+- ImageContext::SiteLogo + route nav.rs through it
+- ImageContext::EmailBody + route newsletter.rs through it
+- ImageContext::TrackingPixel + route rss.rs through it
+- route FileChangeEvent source-domain fields to EntryRegistry
+- track currentEntryId alongside currentFilePath
+- populate EntryRegistry during refreshTree
+- add EntryRegistry module for session-scoped file identity
+- asset widget with inline thumbnail + path validation
+- asset hover preview + CSS seam
+- cm-asset-resolver — body asset path validation
+- asset resolution Tauri commands
+- ChipBar + editor-main use FrontmatterStore
+- save_editor_content returns mtime for echo suppression
+- FrontmatterStore reactive module
+- detect and warn when port 1420 is already held
+- create_file writes empty files, no title: field
+- monotonic heading routing — filename is the title
+- Stage 2 dispatcher for moss-extension embeds
+- add onBeforeDestroy callback for DOM rescue
+- synthesize_image_html consumes AssetSnapshot
+- synthesize_model_html implementation
+- synthesize_pdf_html implementation
+- synthesize_iframe_html implementation
+- synthesize_video_html implementation
+- synthesize_audio_html implementation
+- populate source-domain fields on FileChangeEvent
+- add compute_source_change_set helper
+- add source-domain fields to FileChangeEvent
+- Stage 1 sweep — native ![](file.X) routes by extension
+- accept trailing {.class} attribute block
+- Stage 1 emits markdown not HTML
+- build AssetSnapshot + thread to moss-core resolve
+- MediaAttrs gains class_names + extra_attrs passthroughs
+- AssetSnapshot data contract for synthesizer
+- title-attribute params grammar (moss: prefix)
+- align-left/align-right pipe keyword for runaround layout
+- inline ★ at end of kicker (Publisher · Year ★)
+- linkblog `★` permalink mark next to external-url cards
+- email checkbox in publish flow + two-phase progress UI
+- email icon hover tooltip with current audience
+- send-mode section (all / lang / test)
+- subscribers section with table + filter + edit-lang
+- Tauri commands for subscriber + send operations
+- migrate legacy .moss/data/subscribers.csv path on first open
+- sync orchestration with rejection + partial-import surfacing
+- EmailSendMode config + audience resolver
+- EmailClient using existing MossSetaClient + JSON helpers
+- unified storage module — outbox + subscribers + sent
+- types module — Subscriber, OutboxOp, ArticleSend, SentRecord
+- pipe `publisher:` frontmatter into card kicker slot
+- emit external_url + cover in imported article frontmatter
+- route external_url pages through linkblog semantics
+- replace check badge with circle/dot status badges
+- moss import CLI + Clipper-quality article extractor
+- add Resolved<T> wrapper with origin tracking
+- register image variants + serve LQIP placeholders
+- reject absolute symlink/alias targets
+
+### Fixed
+- clean up drag-session state on pointer interrupt + ancestor guard
+- prune overrides for deleted paths after refresh
+- drag bounds include manual override rows
+- drag preserves manual expansions (bug #2)
+- ChipBar asset widget uses lazy preview-URL getter
+- keep current breadcrumb seg readable via min-width: max-content
+- skip thumbnail when preview baseUrl is undefined
+- render after rename success; don't depend on watcher echo
+- restore ModelViewer camera-controls/auto-rotate defaults
+- drop <img> → <figure class=image> wrap
+- emit canonical ![alt](src) markdown not raw <img>
+- emit canonical ![alt](src) markdown not raw <img>
+- emit canonical ![alt](src) markdown not raw <img>
+- suppress legitimate-gap drift warnings
+- asset preview review fixes
+- asset resolver searches asset dirs for wikilink-style basenames
+- FrontmatterStore correctness fixes from review
+- heading text is always filename (full monotonic)
+- rescue #editor-heading before CmEditor.destroy()
+- full-width breadcrumb divider; restack so tree scrolls behind it
+- floor active breadcrumb columns to keep them readable
+- preserve iframe HTML for direct (non-pipeline) callers
+- preserve editor/preview context on source-stable URL changes
+- delineate file-tree breadcrumb as sticky header
+- match mobile-collapse specificity to default rule
+- decouple title and star hover on preview cards
+- address PR-2 review — numeric mtime + drop dead event
+- deferred reload on dirty→clean to stop silent clobber
+- rename MockFormRenderer → MockChipBar in editor:file-renamed test
+- double-click rename, mid-edit input survival, post-rename home jump
+- keep linkblog kicker inside card, ★ inline at its end
+- finish channel-policy rework — delete cache, add provider input, centralize warnings
+- close TOCTOU bind window + physically wire health marker
+- channel policy — fresh fetch, no-provider warning, tab dot
+- dual-loopback bind + /__moss_health/ marker for reuse-detection
+- row-gap > line-height so text cells don't merge across rows
+- wire-format alignment with moss-seta + remove legacy CSV path
+- always-write WebP for png/jpg/jpeg + combined "{publisher} · {year}" kicker
+- break stage↔site hardlinks to recover from iCloud 0-byte stubs
+- scope card surface/radius/overflow to grid-shape only
+- drop stale moss-summary-layout wrapper class
+- thread media_lookup through to resolved card emission
+- emit meta-before-title to honor kicker-position spec
+- scope shape-agnostic .moss-card rules to bare selector
+- emit data-layout=\"minimal\" for year-grouped children
+- match <a>-tag link cells in process_folder_links_in_grids
+- regenerate flatten-* fixtures with relative meta URLs
+- rework flatten-no-year-group fixture to take the flatten path
+- re-resolve sort axis on flattened scope via helper
+- preserve explicit children_group across non-Date sort axis
+- unify partial/full branches; preserve moss-grid wrapper
+- emit relative meta URLs when site URL is not deployed
+- emit manifest registration on fingerprint-skip; review fixes
+- preserve registration on fingerprint-skip; gate AssetReady on canonical link
+- re-detect local iframe after folder-embed marker resolution
+- force full-rebuild refresh emit when output dir is missing
+- lowercase dir segments of relative symlink/alias targets
+- gate webp_variant on cached encoded output
+- mem::take sources payload; drop EmitMessage Clone; pin seal invariant
+- propagate sources cache through coordinator (closes followup #2)
+
+
 ## [0.6.6] - 2026-05-18
 
 ### Added
