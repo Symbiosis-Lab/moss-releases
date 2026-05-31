@@ -2,6 +2,46 @@
 
 All notable changes to moss will be documented here.
 
+## [0.7.1] - 2026-05-31
+
+### Added
+- tray item to install moss command in PATH
+- install_cli_symlink via osascript admin prompt
+- CliInstallStatus + pure symlink-target resolution
+- {{grid}} shortcode passes frontmatter-only description to cards
+- children-grid emits date-only meta, frontmatter description below title
+- render frontmatter description under title in grid cards (file cards only)
+- native applicationShouldTerminate: dock-Quit hook (Phase 2b)
+- quit-source for reply-vs-exit on the terminate path
+- use startTask() API for hairline progress during import
+- wire adaptive spine — place(offset), measure+allocate, ResizeObserver
+- CSS adaptive spine — --ft-offset, logical props, --ft-seg-min
+- allocateSpine degenerate paths (N=1, L<=0, floor-overflow)
+- allocateSpine greedy right-to-left fill (normal case)
+- spine allocator types + cumulative-offset rounding
+- custom Quit menu item + ExitRequested backstop
+- cancel pending teardown on re-open via SHUTDOWN_GEN
+- flush editor before teardown via async begin_shutdown
+- flush-save handshake returns real {ok} (lastWriteOk), always awaits in-flight save
+- pure map_flush_ack + shutdown_action decision fns (Phase 2 groundwork)
+
+### Fixed
+- bare empty state — four cards only, no site-header band
+- remember recent folders when picking from the launcher
+- whiten description on dominant-color grid cards; assert date+description coexistence
+- gate install_cli tray item to macOS
+- POSIX-quote paths in privileged symlink command
+- TaskId newtype so wire string id deserializes (was crashing every plugin task)
+- anchor the save status badge to the titlebar, not the chip-bar
+- normalize content-hashed OG filename in snapshots; doc cleanup
+- never source page title from body H1 (Obsidian-match)
+- moss-injected trigger context + terminate leaked tasks
+- restore hover-accent on summary & year-group card titles
+- address Round-1 review minors (L<=0 guard, aria-current, fonts.ready)
+- coalesce spine reallocation with setTimeout, not rAF
+- apply Phase 2a review (MF-1 + hardening)
+
+
 ## [0.7.0] - 2026-05-30
 
 ### Added
