@@ -4,45 +4,37 @@ All notable changes to moss will be documented here.
 
 ## [0.7.2] - 2026-05-31
 
-### Added
-- wikilink autocomplete renders Rust-computed completions
-- register wikilink_completions in invoke_handler + collect_commands
-- unified wikilink_completions command (page/asset/heading)
-- wikilink completion ranker with Heading kind
-- collapse the image-embed render path
-- synthesize folder-listing markers from frontmatter, unify rendering paths
-- render_one supports style/depth/group/also_in
-- add style/depth/group to FolderEmbedParams
-- optimistic delete/duplicate — update tree immediately on Ok
-- union chip widget + list_section_folders + save validation
-- FieldType::OneOf union primitive + children/series normalizers
-- hide multi-line linked-card delimiters in live preview
-- findBlockLinks detector for multi-line linked cards
-- moss deploy --prebuilt=<dir> for external SSG outputs
-- wire wikilink/section autocomplete into the editor
-- native applicationShouldTerminate: hook for dock-Quit (Phase 2b)
-- reply-vs-exit reconciliation for the terminate-delegate path
-- CM6 wikilink + section heading completion source
-- get_page_headings command for section autocomplete
-- extract_headings() pure fn reusing parser dedup + slug
-- emit + inject heading-anchor.js into published sites
-- heading-anchor.ts — copy permalink to clipboard + toast on # click
-- style moss-heading-anchor (hover/focus reveal, touch fallback, scroll-margin)
-- emit permalink anchor in render_heading for body headings
+### New
+
+- **Heading permalink anchors** — Every heading in your published site now has a `#`
+  anchor link. Hover to reveal it; click to copy the URL to clipboard.
+
+- **Wikilink autocomplete with headings** — The `[[` autocomplete now suggests page
+  headings alongside pages and assets. Type `[[Page#` to filter sections within a page.
+
+- **Deploy any static site with moss** — `moss deploy --prebuilt=<dir>` publishes an
+  externally-built site (Next.js, Quire, etc.) through your moss domain. moss handles
+  hosting, custom domains, and CDN — you bring the output folder.
+
+- **Unified folder listing** — Frontmatter `children:` and embedded `![[/folder/]]`
+  now go through one renderer. Sorting, styling, and card density are consistent
+  whether you configure them in frontmatter or via an embed.
+
+- **Optimistic file operations** — Deleting or duplicating a file in the tree updates
+  immediately without waiting for a rebuild confirmation.
 
 ### Fixed
-- suppress moss-heading-anchor on hero overlay headings
-- restore lang-tree scoping, nav-item exclusion, and self-ref More suppression
-- two path bugs in synthesize_children_marker render path
-- repoint tokens var-ref test off removed moss-nav-width token
-- make folder_latest_date pub(crate) and add missing test imports in page.rs
-- nav tracks content width under content_width:wide/full
-- treat resolved:false asset as unresolved in hover (renderMeta throw)
-- guard mime_type on unresolved image refs (live-preview crash)
-- suppress wikilink autocomplete in code; auto-close ]] on accept
-- slug wikilink #fragments to match heading ids (keystone)
-- skip register_site on subsequent deploys
-- set git_tag_name to disambiguate from app's v0.X.Y tags
+
+- Nav width now tracks `content_width: wide` and `content_width: full` correctly.
+  Previously it stayed at the default width regardless of the setting.
+- Live preview no longer crashes when hovering over a wikilink to an image that
+  hasn't been resolved yet.
+- Multi-line linked-card delimiters (`:::grid`, `:::cards`) are now hidden in live
+  preview, matching how they look in the published site.
+- Heading anchors are suppressed on hero overlay headings, where they would have
+  overlapped the cover image.
+- Wikilink autocomplete no longer triggers inside code blocks; `]]` closes
+  automatically on accept.
 
 
 ## [0.7.1] - 2026-05-31
