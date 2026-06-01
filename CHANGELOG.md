@@ -39,211 +39,82 @@ All notable changes to moss will be documented here.
 
 ## [0.7.1] - 2026-05-31
 
-### Added
-- tray item to install moss command in PATH
-- install_cli_symlink via osascript admin prompt
-- CliInstallStatus + pure symlink-target resolution
-- {{grid}} shortcode passes frontmatter-only description to cards
-- children-grid emits date-only meta, frontmatter description below title
-- render frontmatter description under title in grid cards (file cards only)
-- native applicationShouldTerminate: dock-Quit hook (Phase 2b)
-- quit-source for reply-vs-exit on the terminate path
-- use startTask() API for hairline progress during import
-- wire adaptive spine — place(offset), measure+allocate, ResizeObserver
-- CSS adaptive spine — --ft-offset, logical props, --ft-seg-min
-- allocateSpine degenerate paths (N=1, L<=0, floor-overflow)
-- allocateSpine greedy right-to-left fill (normal case)
-- spine allocator types + cumulative-offset rounding
-- custom Quit menu item + ExitRequested backstop
-- cancel pending teardown on re-open via SHUTDOWN_GEN
-- flush editor before teardown via async begin_shutdown
-- flush-save handshake returns real {ok} (lastWriteOk), always awaits in-flight save
-- pure map_flush_ack + shutdown_action decision fns (Phase 2 groundwork)
+### New
+
+- **`moss` CLI on PATH** — Install the `moss` command system-wide from the tray menu.
+  Once installed, use `moss compile`, `moss preview`, and `moss deploy` from any terminal
+  without pointing at the app bundle.
+
+- **Grid card descriptions** — Frontmatter `description:` now appears below the title
+  in `{{grid}}` cards, giving readers a summary without opening the page.
+
+- **Page titles never pulled from body H1** — moss now follows Obsidian's convention:
+  the page title always comes from the filename or `title:` frontmatter, never from the
+  first heading in the document body.
+
+- **Adaptive file tree columns** — The file tree breadcrumb and indent columns now
+  resize together based on your actual folder depth, so deep hierarchies stay readable
+  without wasting space on shallow ones.
+
+- **Save status moves to titlebar** — The save indicator now lives in the window titlebar
+  rather than the editor chip bar. It only appears on failure — successful saves are silent.
+
+- **Flush save on quit** — Closing or quitting moss now waits for any in-flight editor
+  save to complete before the app exits, so unsaved changes are never lost.
 
 ### Fixed
-- bare empty state — four cards only, no site-header band
-- remember recent folders when picking from the launcher
-- whiten description on dominant-color grid cards; assert date+description coexistence
-- gate install_cli tray item to macOS
-- POSIX-quote paths in privileged symlink command
-- TaskId newtype so wire string id deserializes (was crashing every plugin task)
-- anchor the save status badge to the titlebar, not the chip-bar
-- normalize content-hashed OG filename in snapshots; doc cleanup
-- never source page title from body H1 (Obsidian-match)
-- moss-injected trigger context + terminate leaked tasks
-- restore hover-accent on summary & year-group card titles
-- address Round-1 review minors (L<=0 guard, aria-current, fonts.ready)
-- coalesce spine reallocation with setTimeout, not rAF
-- apply Phase 2a review (MF-1 + hardening)
+
+- Launcher now remembers recently opened folders across sessions.
+- Description text on dominant-color grid cards is now white for legibility.
+- Summary and year-group card titles were missing their hover accent color.
+- Plugin tasks were crashing on every run due to a wire type mismatch in task IDs.
 
 
 ## [0.7.0] - 2026-05-30
 
-### Added
-- auto-detect summary layout when no children have dates
-- MOSS_MATTERS_DOMAIN env var to switch test/prod domain in-webview
-- render GFM tables as styled HTML in live-preview (#729)
-- flush pending save on blur/visibilitychange (silent-save safety)
-- remove titlebar save indicator UI (keep state machine)
-- silent-save producer — no success receipt, persistent failure
-- inline-status renders Save only on failure (silent-save)
-- mount create-folder-page CTA on folder-page-missing
-- folder-page empty-state CTA module
-- round chevron hit-zone with hover affordance
-- Space selects a focused folder in the tree
-- split folder rows into chevron(toggle)/name(select)
-- __moss_debug.getHeadingState + windowState hooks (#728)
-- moss edit <path> — scriptable editor entrypoint (#728)
-- CM6 wikilink/asset base resolves live so it survives a move
-- single saveActiveDocument writer (live path, coalesced, error-safe)
-- parse GFM strikethrough + tables for live-preview parity
-- heading mirrors preview via reactive projection of compute()
-- restore dual-mode heading routing by HeadingSource
-- ensure_main_shell + mount_preview + stateless close handler (ADR-017)
-- add plan_open decision with no destroy-rebuild variant (ADR-017)
-- open-source release pipeline
-- inline-expand URL import card
-- auto-open editor in folder-mode on empty folder
-- animated blueprint grid + minimalist CTA
-- preserve ordered-list start number on Block::List
-- add MossEvent::OpenPluginsView for cross-webview plugin catalog routing
-- T9 native card frontend handlers + editor-main wiring
-- T9 native card backend — start-writing + atomic template copy
-- bundled blog + portfolio templates
-- emit data-source-line on <li> and <tr> for finer scroll-sync
-- wire emit_source_lines + implicit_figure through ParseConfig
-- MOSS_MATTERS_TEST_PROFILE env var bypasses login (API + UI)
-- add startTask() TS API alongside existing reportProgress
-- add report_plugin_task_lifecycle Rust entry to PanelTask router
-- mount T6 renderers + register escape-affordance commands
-- task toast subscriber (failed+!recoverable dedup-by-id)
-- awaiting renderer with escape affordance (cancel/resend/recheck)
-- narrator renderer in titlebar status thread
-- inline status renderer (fade_after-aware receipts + persistent status)
-- folder-mode content component (site-header + empty/populated states)
-- wire autosave to PanelTask::Save (Inline + fade_after 30s)
-- port hairline prototype to production (T2)
-- emit PanelTask wire events + dev simulator (Approach A)
-- add --accent-quiet for ambient indicators (ADR-015)
-- render bare moss site for empty folders
-- wire RecentFoldersManager into native File → Open Recent
-- new launcher window for empty/missing-recent state
-- add title field to PanelTask + TaskHandle::title builder
-- add PanelTask primitive + TaskRegistry + plugin task router
-- add Capability::Import, PluginHook, TriggerContext enums
-- editor emits offset-adjusted atTop, removes scrollEditorToLine short-circuit
-- flip process_markdown_file to typed-AST production path
-- PreviewFollower — single subscriber for editor→preview navigation
-- forward atTop through preview-manager + nav-manager + app.ts
-- subscribeActivePath fires on setActive/rename of active
-- bridge speaks atTop natively, drops line<=1 backstop
-- PR7a-flip-core-B foundation — Inline::Image wikilink flag/pothole + dispatch_wikilink_embeds visitor
-- PR7a-flip-core-A — RenderHooks::render_link is_wikilink + PipelineHooks Hero delegation
-- Send-now writeback with file-change-race guard
-- PR7a-pre — wikilink AST flag + extract_hero + find_first_block_image
-- expand flyout into full send modal layout
-- embed CM6 markdown editor in the modal body
-- channel icon toggles email send on publish
-- split email_send_test and email_send_with_writeback
-- PR6 partial — resolve_urls visitor + byte-equivalent OutgoingLink (Stage 1 deletion deferred)
-- line-replacement writeback preserves comments
-- render :::recent in email bodies + per-scope From-name
-- add optional email_subject and email_preview overrides
-- PR4.5 — Grid + Hero typed Vec<Block> (Wave 2; closes Vec<String> escape hatches)
-- ArticleSend v1 wire shape — subject/preview/from_name/body_text/read_on_web_url; article_lang → article_scope
-- include scope from hidden input in POST body
-- emit per-page subscribe form with derived scope
-- Phase 4 PR4 — Block::Callout migration + Obsidian aliases (#649 1/4)
-- PR3 — Block::Figure for image-only paragraphs
-- PR2 — populate Block::Heading.id with Obsidian anchor slug
-- emit hidden scope input in subscribe forms
-- dispatch Shortcode::Recent through the HTML pipeline
-- query and renderers for :::recent shortcode
-- parse :::recent shortcode into RecentShortcode
-- add Shortcode::Recent variant
-- override render_image + render_link in PipelineHooks
-- route DefaultHooks image emission through synth
-- dual-session ports — let Claude moss coexist with human pnpm run dev
-- promote observe_typed_ast to real parity probe
-- thread fit/position pipe-attrs to inner <img>
-- route non-image wikilink embeds directly to synth
-- drop moss: prefix serializer — keep TitleParams as in-process API
-- drop format_img_tag — retire pipe-attrs on standard markdown images
-- flip ENABLE_WIKILINKS + delete Stage 1 wikilink resolver
-- extract dispatch_wikilink_embed + parse_pothole_params (PR1, dormant)
-- buildActivePath accepts relative path (#711 Phase 5)
-- drop abs() wrap in source handler; add boundary conversions (#711 Phase 4)
-- wrap Tauri command boundaries with toAbsolute (#711 Phase 3)
-- flip walkTree ingest to project-root-relative (#711 Phase 2)
-- document project-root-relative invariant + runtime guard
-- thread file_id from TreeNode through walkTree to SnapshotEntry
-- byFileId index for inode-based identity reuse
-- add file_id to DirEntry and TreeNode
-- img contract test — synth marker invariant replaces Stage 3 safety net
-- role=group containment for nested treeitems (WAI-ARIA)
-- use tauri-plugin-dialog folder picker for Move-to (replaces window.prompt)
-- Cmd/Ctrl+Shift+← collapse-all and * expand-all-siblings shortcuts
-- add reconcileSnapshot for diff-based filesystem ingest
-- add activeEntryId + subscribeActive API
-- Shift+Space + Ctrl+Shift+Home/End multi-select keys (WAI-ARIA)
-- delete placeholder.rs (Stage 3 regex retired)
-- N-aware context menus + batch ops + drag-drop race fix (Plan 3)
-- add delete_entries + move_entries batch Tauri commands
-- thread media_lookup through render_markdown_to_html_with / render_card_html
-- navigate preview iframe on editor:rename-complete
-- add path-domain helpers for absolute↔relative conversion
-- thread media_lookup through render_grid_html_typed recursion
-- OS drag-in via onDragDropEvent + hit-testing (Plan 5)
-- getFolderAtPosition + OS drag-in accessors
-- add import_files_to_dir Tauri command
-- cross-pane focus routing Cmd+1/Cmd+2 in editor-main (T11)
-- full keyboard navigation (T6–T12)
-- platform-aware OS drag-out (macOS + Windows)
-- static drag-out icons (64x64 RGBA PNGs)
-- keyboard action helpers (T5)
-- aria-level on treeitems + reconcile after refreshTree (Plan 2 T1+T3+T4)
-- DefaultHooks::with_snapshot field pattern; Gallery routes through synth
-- dblclick empty area collapses file tree (T13)
-- drop validation + spring-load + multi-row drop (T10+T11+T12)
-- multi-row drag carries selection + stack ghost (T9)
-- ARIA tree roles + selected/focused visual state
-- dispatch editor:selection-changed on every selection mutation
-- click empty area clears selection
-- modifier-aware click routes to selection (cmd/shift/cmd+shift)
-- expose __moss_debug.getSelection + getCurrentEntry hooks
-- add FileSelection pure data class
+### New
+
+- **Silent auto-save** — The editor now saves automatically as you write. There's no
+  save button and no success notification — the indicator only appears if a save fails.
+
+- **File tree overhaul** — The file tree is fully rebuilt with keyboard navigation,
+  multi-select (Shift+click, Cmd+click), drag-and-drop between folders, OS drag-in
+  from Finder, drag-out to external apps, and batch delete/move. Chevron and filename
+  are now separate hit targets so expanding a folder doesn't also select it.
+
+- **GFM tables in live preview** — Markdown tables now render as styled HTML in the
+  editor preview, matching what your published site shows.
+
+- **Wikilink base survives rename** — If you rename a file, any `[[wikilink]]` or
+  asset reference in the editor that pointed to it updates its base path automatically.
+
+- **Folder page empty state** — When you open a folder that has no index page yet,
+  the editor shows a "Create page" prompt instead of a blank preview.
+
+- **Onboarding launcher** — A new launcher window appears when no recent folders are
+  available, with animated background and a single "Open folder" CTA.
+
+- **Bundled blog and portfolio templates** — New site creation includes starter
+  templates for blog and portfolio layouts.
+
+- **`moss edit <path>`** — Open a specific file in the moss editor directly from the
+  command line, scriptable from other tools.
+
+- **Summary layout auto-detection** — Folder indexes with no dated children
+  automatically switch to summary card layout.
 
 ### Fixed
-- bump tauri-plugin-dialog to 2.7.0 to match npm @tauri-apps/plugin-dialog
-- SmartDiff uses displayed page (activePage), not stale history
-- resolve folder-index URLs via article-map pages
-- gate production injections on !config.serve (#605)
-- spawn runtime webview after first plugin install
-- use Slot enum variants instead of string literals for slot keys
-- sort grid children by date descending, not url_path
-- add missing test:coverage script
-- showToast type allows 'warning' variant
-- warn when external_url is set to a non-http(s) URL (moss#684)
-- add ES2022 lib so Array.prototype.at type-checks (#737)
-- resolve Hero/Gallery shortcode image URLs against content graph
-- don't drop shutdown_tx in start_preview_server
-- truly blank empty-folder preview (no injected h1 or placeholder)
-- "Open folder" CTA + "Your folder, your site." tagline
-- allowlist editor_external_update in no_string_emits (#586 follow-up)
-- update preview-manager toast string expectations
-- stop empty-folder watch rebuilds reopening/duplicating the editor
-- resolve CI exit-1 from flaky wdio scenarios (#709)
-- handle parentheses in image URLs during import (#676)
-- uid injector ignores --- inside fenced code blocks
-- surface skipped-symlink count in build summary (#669)
-- probe pendingRenameSet via source_renames, not moved_output_paths (#715)
-- clear pendingRenameSet on project-folder switch (#639)
-- extract render_error_markdown to remove fake ArticleMetadata
-- prefer og:image over first body image for cover
-- resolve snapshot-test flakiness — regenerate stale fixtures + document parallel-safety (#665)
-- preserve descendant-combinator space before pseudo-classes (#631)
-- warn instead of silently ignoring --watch for moss preview (#571)
-- stage workspace-root Cargo.lock in sync-version (#708)
+
+- Preview navigation (SmartDiff) now tracks the page actually shown, not the last
+  entry in history — fixes stale preview after clicking between pages quickly.
+- Folder index URLs now resolve correctly in the editor link panel.
+- `moss preview --watch` flag was silently ignored; it now works.
+- Plugins failed to appear after first install without restarting the app.
+- Grid folder cards were sorted by URL path instead of date.
+- Web importer now handles image URLs that contain parentheses.
+- `external_url` frontmatter now warns if the value isn't a valid http(s) URL.
+- Hero and Gallery shortcode image URLs now resolve against the content graph
+  rather than the filesystem path.
 - correct ops_for doc-comment — production executes mount_preview directly
 - moss-claude.sh auto-runs pnpm install in a fresh worktree (#728)
 - preview follows breadcrumb/tree rename — wait on FileChanged not BuildComplete (#731)
