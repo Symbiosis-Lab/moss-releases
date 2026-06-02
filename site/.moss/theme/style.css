@@ -102,9 +102,11 @@ footer.container > * {
   opacity: 1;
 }
 
-/* Paper grain texture — tiny repeating noise for analog feel */
+/* Paper grain texture — tiny repeating noise for analog feel.
+   Relative URL: resolves against this stylesheet (/_moss/theme/style.css →
+   /_moss/theme/grain.png), so it survives wherever moss mounts the theme. */
 [data-theme="sunlight"] body {
-  background-image: url("/grain.png");
+  background-image: url("grain.png");
   background-repeat: repeat;
   background-blend-mode: multiply;
 }

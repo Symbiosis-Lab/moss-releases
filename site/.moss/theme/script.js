@@ -32,7 +32,10 @@
 
   var video = document.createElement("video");
   video.id = "sunlight-leaves";
-  video.src = "/leaves.mp4";
+  // moss injects window.mossTheme.base (absolute URL of the theme mount) before
+  // this script, so the asset resolves wherever moss serves the theme — never
+  // hardcode a site-root path like "/leaves.mp4".
+  video.src = new URL("leaves.mp4", window.mossTheme.base).href;
   video.loop = true;
   video.muted = true;
   video.playsInline = true;
