@@ -116,3 +116,110 @@ footer.container > * {
     display: none;
   }
 }
+
+/* ── Shortcode documentation demo layout (.sc-demo) ──────────────────────────
+   Used with :::grid 2 {.sc-demo} to show Markdown source (left) beside
+   the live rendered output (right) in a side-by-side demo block.
+
+   moss renders the grid as:
+     <div class="moss-grid sc-demo" data-columns="2">
+       <div class="moss-grid-card"><!-- code block --></div>
+       <div class="moss-grid-card"><!-- live output --></div>
+     </div>
+
+   This CSS only adds visual treatment; grid-template-columns stays with moss.
+   ─────────────────────────────────────────────────────────────────────────── */
+
+/* Wrapper */
+.moss-grid.sc-demo {
+  border: 1px solid var(--moss-border-light);
+  border-radius: 6px;
+  gap: 0;
+  margin-block: 0;
+  overflow: hidden;
+}
+
+/* Both cells */
+.moss-grid.sc-demo > .moss-grid-card {
+  padding: 1.25rem;
+}
+
+/* Left cell — source panel */
+.moss-grid.sc-demo > .moss-grid-card:first-child {
+  background: var(--moss-code-background, var(--moss-color-surface));
+  position: relative;
+}
+
+/* "Markdown" label via pseudo-element */
+.moss-grid.sc-demo > .moss-grid-card:first-child::before {
+  content: "Markdown";
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--moss-color-muted, #9b9590);
+  margin-bottom: 0.6rem;
+}
+
+/* Strip extra border/background from the <pre><code> inside the source panel
+   — it's already sitting on a code-background cell */
+.moss-grid.sc-demo > .moss-grid-card:first-child pre,
+.moss-grid.sc-demo > .moss-grid-card:first-child pre code {
+  background: transparent;
+  border: none;
+  margin: 0;
+}
+
+/* Right cell — live output panel */
+.moss-grid.sc-demo > .moss-grid-card:last-child {
+  background: var(--moss-color-bg, #faf8f5);
+  border-left: 1px solid var(--moss-border-light);
+  align-self: center;
+}
+
+/* Recursive safety — nested .moss-grid inside the right cell must NOT inherit
+   the .sc-demo treatment */
+.moss-grid.sc-demo .moss-grid {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  margin-block: revert;
+  overflow: visible;
+}
+
+.moss-grid.sc-demo .moss-grid > .moss-grid-card {
+  background: transparent;
+  border: none;
+}
+
+/* ── Dark mode ── */
+[data-theme="dark"] .moss-grid.sc-demo {
+  border-color: var(--moss-border-medium);
+}
+
+[data-theme="dark"] .moss-grid.sc-demo > .moss-grid-card:last-child {
+  border-left-color: var(--moss-border-medium);
+}
+
+/* ── Mobile: stack vertically ── */
+@media (max-width: 640px) {
+  .moss-grid.sc-demo {
+    border-radius: 6px;
+  }
+
+  .moss-grid.sc-demo > .moss-grid-card:first-child {
+    border-radius: 6px 6px 0 0;
+    border-bottom: 1px solid var(--moss-border-light);
+  }
+
+  .moss-grid.sc-demo > .moss-grid-card:last-child {
+    border-left: none;
+    border-radius: 0 0 6px 6px;
+    align-self: unset;
+  }
+
+  [data-theme="dark"] .moss-grid.sc-demo > .moss-grid-card:first-child {
+    border-bottom-color: var(--moss-border-medium);
+  }
+}
