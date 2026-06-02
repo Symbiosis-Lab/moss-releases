@@ -1,0 +1,203 @@
+---
+title: Grid
+uid: b7e2d4a1
+weight: 1
+description: A multi-column layout with optional ratio and CSS classes.
+translationKey: docs-author-shortcodes-grid
+---
+
+`:::grid N` creates a multi-column layout where `N` is the number of columns. Cells are separated by `+++`.
+
+## Basic grid
+
+:::grid 2 {.sc-demo}
+```markdown
+:::grid 2
+Urban Heat & Environmental Justice
+
+How do we mitigate heat disparities in cities?
++++
+Ecosystem Resilience
+
+How can ecosystems withstand droughts, fires, and floods?
+:::
+```
++++
+::::grid 2
+Urban Heat & Environmental Justice
+
+How do we mitigate heat disparities in cities?
++++
+Ecosystem Resilience
+
+How can ecosystems withstand droughts, fires, and floods?
+::::
+:::
+
+## Column count and ratio
+
+Add an `a:b` ratio after the column count to set fractional widths. Ratios must have the same number of segments as the column count.
+
+:::grid 2 {.sc-demo}
+```markdown
+:::grid 2 1:2
+Yi Yin
+| Principal Investigator
+
+Yi combines satellite data and inverse modeling to quantify greenhouse gas emissions.
++++
+Xinlei Liu
+| Postdoctoral Researcher
+
+Xinlei focuses on emissions from wildfires and combines field observations with statistical approaches.
+:::
+```
++++
+::::grid 2 1:2
+Yi Yin
+| Principal Investigator
+
+Yi combines satellite data and inverse modeling to quantify greenhouse gas emissions.
++++
+Xinlei Liu
+| Postdoctoral Researcher
+
+Xinlei focuses on emissions from wildfires and combines field observations with statistical approaches.
+::::
+:::
+
+## Cell content
+
+Cells are full markdown — headings, paragraphs, lists, images, and links all work. Cells also recognize:
+
+- **Wikilinks to folders or articles**: `[[folder_name]]` or `[[Article Title]]` — rendered as cards with the target's cover, title, and date or child count.
+- **Images**: `![alt](path.jpg)` or `![[photo.jpg]]` — inlined with responsive sizing. Pipe syntax (`|contain top`) works — see [[media]].
+- **Markdown links**: `[text](url)` — rendered inline.
+- **Bare URLs**: `https://example.com` on its own line — auto-linked.
+
+## Single-link cells
+
+A cell whose only content is exactly one markdown link is rendered as a single `<a>` wrapping the whole cell.
+
+**External link** (`http://` or `https://`) → `.moss-grid-card.friend-card`. moss auto-fetches link metadata if configured. Use for link directories and blogrolls:
+
+:::grid 2 {.sc-demo}
+```markdown
+:::grid 3
+[MDN](https://developer.mozilla.org)
++++
+[Rust](https://rust-lang.org)
+
+A memory-safe systems language.
++++
+[GitHub](https://github.com)
+:::
+```
++++
+::::grid 3
+[MDN](https://developer.mozilla.org)
++++
+[Rust](https://rust-lang.org)
+
+A memory-safe systems language.
++++
+[GitHub](https://github.com)
+::::
+:::
+
+**Internal link** (site-relative path: `/foo`, `./foo`, or a wikilink target) → `.moss-grid-card.link-card`. No metadata fetch. The link's brackets can contain an image, headings, and paragraphs; moss emits one `<a>` wrapping all of them.
+
+A cell with anything else — two links, text plus a link — renders as regular cell content, unwrapped. This lets you mix clickable cards and rich cells in the same grid.
+
+Theme CSS targets each flavor independently:
+
+```css
+.moss-grid-card.friend-card { … }  /* external link cell */
+.moss-grid-card.link-card   { … }  /* internal link cell */
+```
+
+## Folder auto-conversion
+
+A cell whose only content is an internal link to a known folder is automatically converted into a `moss-collection-card` — the same card used by `children_style: card`. moss fetches the folder's cover image, title, and child count.
+
+:::grid 2 {.sc-demo}
+```markdown
+:::grid 3
+[[work]]
++++
+[[essays]]
++++
+[[archive]]
+:::
+```
++++
+::::grid 3
+[[work]]
++++
+[[essays]]
++++
+[[archive]]
+::::
+:::
+
+**Opt out with `.no-cards`** to bypass auto-conversion entirely. Use `.no-cards` for navigation grids, hero-split layouts, or compound-link grids where you want `.link-card` or `.friend-card` rendering instead:
+
+:::grid 2 {.sc-demo}
+```markdown
+:::grid 3 {.no-cards}
+[[work]]
++++
+[[essays]]
++++
+[[archive]]
+:::
+```
++++
+::::grid 3 {.no-cards}
+[[work]]
++++
+[[essays]]
++++
+[[archive]]
+::::
+:::
+
+CSS targets:
+
+```css
+.moss-collection-grid { … }   /* auto-converted folder grid */
+.moss-collection-card { … }   /* individual collection card */
+```
+
+## Custom CSS classes
+
+Attach a named class with `{.classname}` when you need responsive layout control or want the same shape to repeat across pages.
+
+**Do this.** Use `:::grid N {.your-class}` with no ratio, then define the ratio in CSS:
+
+```markdown
+:::grid 2 {.two-col-split}
+Main content area — headings, paragraphs, images, anything.
++++
+Sidebar with call-outs or metadata.
+:::
+```
+
+```css
+/* .moss/theme/style.css */
+.two-col-split {
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  .two-col-split { grid-template-columns: 1fr; }
+}
+```
+
+The grid container renders as `<div class="moss-grid two-col-split">`, so your class sits alongside the built-in `moss-grid` and can override `grid-template-columns`.
+
+**Avoid this.** Passing a ratio (`:::grid 2 2:1 {.two-col-split}`) emits an inline `style="grid-template-columns:2fr 1fr"` on the container. Inline styles beat stylesheet rules, so your `@media` query will have no effect without `!important` on every property — a maintenance trap once the pattern spreads.
+
+**Rule of thumb.** Use the ratio form (`:::grid 2 2:1`) for one-off layouts where responsive overrides are not needed. Use a named class the moment you need `@media` behaviour or whenever the same shape repeats across pages.
+
+See [[css#Shortcode classes]] for the full list of component class names you can target.
