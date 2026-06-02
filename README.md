@@ -1,26 +1,28 @@
-# moss
+# moss releases
 
-**[mosspub.com](https://mosspub.com)**
+This repository hosts releases and is the issue tracker for [moss](https://mosspub.com) — a desktop publishing app for macOS.
 
-Your files become your website. One click.
-
-Publish text, audio, video, notebooks, and interactive work from your computer to your own domain. Sync to newsletters and platforms. You keep every file.
-
-**Markdown · Obsidian · Jupyter · HTML · Media**
+Source code is not public. To build plugins or extend moss, see [moss-api](https://github.com/Symbiosis-Lab/moss-api) and [moss-plugins](https://github.com/Symbiosis-Lab/moss-plugins).
 
 ## Download
 
-**[Download for macOS](https://github.com/Symbiosis-Lab/moss-releases/releases/latest)**
+[![Latest release](https://img.shields.io/github/v/release/Symbiosis-Lab/moss-releases?label=latest)](https://github.com/Symbiosis-Lab/moss-releases/releases/latest)
+
+**[Download for macOS →](https://github.com/Symbiosis-Lab/moss-releases/releases/latest)**
 
 Requires macOS 12+. Universal binary (Intel + Apple Silicon).
 
 ## Documentation
 
-Visit the [documentation site](https://mosspub.com/docs/) or browse the [source docs](site/docs/).
+[mosspub.com/docs](https://mosspub.com/docs) — full documentation
+
+Source docs (Markdown): [site/docs/](site/docs/)
 
 ## Issues
 
-[Open an issue](https://github.com/Symbiosis-Lab/moss-releases/issues) for bug reports or feature requests.
+[Open an issue](https://github.com/Symbiosis-Lab/moss-releases/issues) for **moss app** bug reports and feature requests.
+
+For plugin questions, visit the plugin repo ([moss-plugins](https://github.com/Symbiosis-Lab/moss-plugins)) or [mosspub.com/docs](https://mosspub.com/docs).
 
 ## License
 

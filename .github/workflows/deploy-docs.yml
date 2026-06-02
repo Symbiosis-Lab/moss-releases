@@ -7,6 +7,9 @@ on:
 permissions:
   contents: write
 
+env:
+  MOSS_VERSION: v0.7.2
+
 jobs:
   deploy:
     runs-on: macos-latest
@@ -15,7 +18,7 @@ jobs:
 
       - name: Download moss CLI
         run: |
-          curl -L -o moss https://github.com/Symbiosis-Lab/moss-releases/releases/latest/download/moss-darwin-universal
+          curl -L -o moss https://github.com/Symbiosis-Lab/moss-releases/releases/download/${{ env.MOSS_VERSION }}/moss-darwin-universal
           chmod +x moss
 
       - name: Compile docs
