@@ -1,3 +1,19 @@
+# Contributing to moss docs
+
+## sc-demo consistency check
+
+Shortcode documentation pages use `:::grid 2 {.sc-demo}` blocks that show Markdown source on the left and a live rendered shortcode on the right. The left and right cells must stay in sync.
+
+A pre-commit hook runs automatically when you commit changes under `site/docs/author/shortcodes/`. You can also run it manually:
+
+```bash
+bash scripts/check-sc-demos.sh
+```
+
+If a block fails, edit the left cell's ` ```markdown ` code block to match the right cell's shortcode content.
+
+---
+
 # Editing docs with CriticMarkup
 
 We use [CriticMarkup](https://criticmarkup.com) to annotate documentation. It's the standard for editorial markup in Markdown.
