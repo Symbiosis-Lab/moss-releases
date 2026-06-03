@@ -2,6 +2,108 @@
 
 All notable changes to moss will be documented here.
 
+## [0.7.3] - 2026-06-02
+
+### New
+
+- **Find in editor and preview** — `Cmd+F` opens a find pill in both the editor
+  (CodeMirror-backed find + replace, regex, case toggle) and the published-site
+  preview (uses WebKit's window.find via an iframe RPC bridge). Same keystroke,
+  same visual pill, two surfaces.
+
+- **App language and locale** — moss now detects your system locale on first launch
+  and switches the editor, file tree, import modal, folder mode, and chip-bar UI
+  between English, Simplified Chinese, and Traditional Chinese. Change it from the
+  tray menu; the app restarts safely to apply the new locale across all windows.
+
+- **Editor formatting shortcuts** — `Cmd+B` for bold, `Cmd+I` for italic, `Cmd+K`
+  for link, `Cmd+S` for save, `Cmd+~` for code (and the markdown toolbar) now
+  toggle the surrounding markers on a selection. Toggling off respects nesting
+  (italic inside bold is removed without touching the bold markers) and handles
+  URLs containing parentheses correctly.
+
+- **External link previews and embeds** — Paste a bare URL on its own line and
+  moss turns it into a link preview card (with title, favicon, domain). YouTube,
+  Vimeo, and other recognized providers turn into responsive iframe embeds via
+  the new `![[url]]` synthesizer. Add `?t=120` or `&t=2m` to a YouTube URL and the
+  embed picks up the timestamp.
+
+- **External links open in a new tab** — `<a>` tags pointing outside the published
+  site now carry `target="_blank" rel="noopener"`. In-site and same-origin links
+  are unaffected.
+
+- **Hero mobile layout** — `:::hero` blocks now honor a `mobile=` attribute
+  (`mobile=overlay` keeps the overlay style on narrow screens; default stacks the
+  text below the image instead of cropping wide photos on both sides). The hero
+  also picks up a dominant cover color and exposes it as a CSS variable for theme
+  authors.
+
+- **Shortcode blocks render live in the editor** — `:::grid`, `:::hero`, and other
+  block shortcodes now show as styled blocks while you type instead of raw fence
+  syntax, with no flicker on edit. A slash menu inserts shortcodes, and `:::` and
+  attribute names autocomplete. Click a rendered block to drop the cursor back into
+  its source.
+
+- **Theme assets mount verbatim** — Anything in your `.moss/theme/` folder is now
+  copied to `/_moss/theme/` with its structure intact (previously flattened), so
+  theme JS, fonts, and media keep their paths. A new `window.mossTheme.base` value
+  gives theme scripts a stable prefix for asset references.
+
+- **Passthrough subtrees** — A folder containing its own `index.html` is copied to
+  the output verbatim — no image transcoding, no SPA injection — so you can drop a
+  pre-built site (a game, a bespoke page) inside your moss site. Override detection
+  with `[build].passthrough` in config (use a leading `!` to exclude).
+
+- **Source-mapped previews** — Every shortcode block, breadcrumb, series-nav, and
+  auto-injected article H1 now carries a `data-source-*` attribute. Clicking
+  preview chrome in the editor jumps the cursor back to the line that produced it.
+
+- **Live subscribe form in preview** — The newsletter subscribe form now renders
+  fully styled in preview with a local success animation and hint when you submit,
+  instead of appearing grayed out. Submitting in preview never sends a real request
+  or fires confirmation emails.
+
+- **Smarter file-tree behavior** — When you delete the file you're editing, the
+  editor falls back to the parent folder instead of going blank.
+
+- **Settings polish** — Sites deployed via moss-host (with a `site_id`) hide the
+  Buttondown api-key section in settings (the seta subscribe form takes over).
+  Sites without a site_id keep the Buttondown configuration as before.
+
+### Fixed
+
+- Wikilink fragments with section headings (`[[Page#Heading]]`) are now slugged to
+  match the rendered heading id. Section links never worked before for non-ASCII
+  or multi-word headings.
+- The hero overlay text on mobile no longer crops wide images on both sides — text
+  flows below the image at its natural width.
+- Heading anchor `#` symbols are excluded from text selection; clicking the
+  permalink no longer drags-selects the heading text.
+- The folder-embed `more:` frontmatter flag was removed — a "More" link now
+  appears automatically on truncation.
+- Heading margins respect Ma 間 rhythm: H1/H2/H3 use level-specific top/bottom
+  spacing so headings gravitate visually toward the content below them.
+- Subscribe form gating switched from `deploy_method` to `site_id`. Sites with
+  a site_id but absent or stale `deploy_method` (older moss versions, or sites
+  with custom workflows) now get the seta form correctly.
+- File watcher refreshes the in-memory build hash store on rebuilds instead of
+  re-reading the stale `hashes.json` from disk.
+- Files with image extensions but non-image content (e.g. text saved as `.png`)
+  are now skipped during compression instead of corrupting the pipeline.
+- PNG images with transparency are flattened onto white before WebP encoding, so
+  transparent regions no longer turn black in the published output.
+- The frontmatter asset chip thumbnail is vertically centered and the chip uses a
+  two-box layout so the overflow menu button is never clipped; thumbnails preserve
+  transparency.
+- Breadcrumb segments no longer truncate to an ellipsis a fraction of a pixel early
+  on wide panels.
+- Editor asset autocomplete no longer suggests files inside `.moss/` or other
+  hidden directories.
+- Heading anchor spacing and touch target visibility improved on mobile.
+- Children-list links no longer inherit article link underlines.
+- Live preview no longer crashes on a single-character frontmatter `title:` value.
+
+
 ## [0.7.2] - 2026-05-31
 
 ### New
