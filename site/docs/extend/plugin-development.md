@@ -79,65 +79,64 @@ Declare which hooks your plugin handles in the `capabilities` array of the manif
 
 | Hook | Trigger | Context |
 |------|---------|---------|
-| `process` | Before HTML generation | Raw markdown and frontmatter |
-| `enhance` | After HTML generation | Generated HTML; can inject content via slots |
-| `deploy` | On deploy action | Compiled site output |
-| `syndicate` | After deploy | Published URLs |
+| `before_build` | Before HTML generation | Raw markdown and frontmatter |
+| `on_build` | Replaces HTML generation | Source files and page tree |
+| `on_deploy` | On deploy action | Compiled site output |
+| `configure_domain` | After DNS is set | Domain and deployment info |
+| `after_deploy` | After deploy | Published articles and deployment info |
 
 ```typescript
 const MyPlugin = {
-  async deploy(ctx: DeployContext): Promise<HookResult> {
+  async on_deploy(ctx: DeployContext): Promise<HookResult> {
     reportProgress('Uploading files...')
     // your deploy logic
     return { success: true }
   },
 
-  async syndicate(ctx: SyndicateContext): Promise<HookResult> {
+  async after_deploy(ctx: SyndicateContext): Promise<HookResult> {
     // your syndication logic
-    return { success: true, url: 'https://myservice.example/post/123' }
+    return { success: true }
   }
 }
 ```
 
 ## moss-api SDK
 
-The `moss-api` package provides types and utilities for plugin development.
+The `@symbiosis-lab/moss-api` package provides types and utilities for plugin development.
 
 ```sh
-npm install moss-api
+npm install @symbiosis-lab/moss-api
 ```
 
 **Types:**
 
 | Export | Description |
 |--------|-------------|
-| `DeployContext` | Passed to `deploy` hooks |
-| `SyndicateContext` | Passed to `syndicate` hooks |
+| `ProcessContext` | Passed to `before_build` hooks |
+| `GenerateContext` | Passed to `on_build` hooks |
+| `DeployContext` | Passed to `on_deploy` hooks |
+| `ConfigureDomainContext` | Passed to `configure_domain` hooks |
+| `SyndicateContext` | Passed to `after_deploy` hooks |
 | `HookResult` | Return type for all hooks |
-| `PluginManifest` | Manifest shape |
 
 **Utilities:**
 
 | Export | Description |
 |--------|-------------|
 | `setMessageContext` | Set context for log messages |
-| `reportProgress` | Report a progress message to the UI |
-| `reportError` | Report a non-fatal error |
-| `log` / `warn` / `error` | Structured logging |
+| `reportProgress` | Report build/deploy progress to the UI |
+| `reportError` | Report a non-fatal or fatal error |
+| `reportComplete` | Signal hook completion |
+| `sendMessage` | Send a message to the moss UI |
 
 **Browser:**
 
 | Export | Description |
 |--------|-------------|
-| `openBrowser` | Open a URL in the system browser |
+| `openBrowser` | Open a browser window inside moss |
 | `closeBrowser` | Close a previously opened browser tab |
 
-**Tauri:**
-
-| Export | Description |
-|--------|-------------|
-| `getTauriCore` | Access Tauri core APIs |
-| `isTauriAvailable` | Check if running inside Tauri |
+For the full API reference, see [@symbiosis-lab/moss-api on GitHub](https://github.com/Symbiosis-Lab/moss-api/tree/main/docs/api/).
 
 ## Testing
 
@@ -148,7 +147,7 @@ import { describe, it, expect } from 'vitest'
 
 describe('my-plugin deploy', () => {
   it('returns success on valid config', async () => {
-    const result = await MyPlugin.deploy(mockDeployContext)
+    const result = await MyPlugin.on_deploy(mockDeployContext)
     expect(result.success).toBe(true)
   })
 })
@@ -162,4 +161,4 @@ npx vitest run
 
 ## Contributing
 
-See the [CONTRIBUTING guide](https://github.com/Symbiosis-Lab/moss-releases) for the full development workflow, CI/CD setup, and code style guidelines.
+See the [CONTRIBUTING guide](https://github.com/Symbiosis-Lab/moss-plugins/blob/main/CONTRIBUTING.md) for the full development workflow, CI/CD setup, and code style guidelines.

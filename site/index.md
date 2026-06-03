@@ -1,11 +1,11 @@
 ---
+translationKey: homepage
 children: false
-lang: en
-uid: a48746ca
 title: moss
 description: A desktop app that turns folders into websites.
+lang: en
+uid: a48746ca
 logo: assets/logo.svg
-translationKey: homepage
 ---
 
 # Write anywhere. Publish everywhere. Own everything.
