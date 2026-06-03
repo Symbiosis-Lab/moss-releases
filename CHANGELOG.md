@@ -2,7 +2,7 @@
 
 All notable changes to moss will be documented here.
 
-## [0.7.3] - 2026-06-02
+## [0.7.3] - 2026-06-03
 
 ### New
 
@@ -63,6 +63,11 @@ All notable changes to moss will be documented here.
   instead of appearing grayed out. Submitting in preview never sends a real request
   or fires confirmation emails.
 
+- **Smoother launcher-to-editor transition** — Opening a folder from the launcher
+  now grows the launcher window into the editor in place instead of swapping to a
+  separate window, and the launcher, preview, and folder picker open centered on
+  screen instead of jumping to the upper-left after a resize.
+
 - **Smarter file-tree behavior** — When you delete the file you're editing, the
   editor falls back to the parent folder instead of going blank.
 
@@ -102,6 +107,12 @@ All notable changes to moss will be documented here.
 - Heading anchor spacing and touch target visibility improved on mobile.
 - Children-list links no longer inherit article link underlines.
 - Live preview no longer crashes on a single-character frontmatter `title:` value.
+- The editor keeps its undo history when a file is reloaded from disk (e.g. after
+  an external edit), so Cmd+Z still works across reloads.
+- Publishing skips macOS Finder aliases that can't be resolved instead of copying
+  the raw alias blob into your site.
+- Diagnostic logs sent via Send Logs are quieter and more useful — repetitive
+  coherence-check noise is collapsed and deploy events are marked.
 
 
 ## [0.7.2] - 2026-05-31
