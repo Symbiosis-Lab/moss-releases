@@ -2,6 +2,71 @@
 
 All notable changes to moss will be documented here.
 
+## [0.7.4] - 2026-06-05
+
+### New
+
+- **Resize and place images in the editor** — Drag an image's bottom-right corner to
+  resize it to a percentage width (double-click to reset), or type `|50%` after the
+  filename. Images render inline with their source line just above (Obsidian-style),
+  and images narrower than the column center automatically. Percentage widths carry
+  through to the published page.
+
+- **Live link and asset checking** — The editor flags broken links, broken
+  `![[wikilinks]]`, and case-mismatched targets as you type, with a hover tooltip
+  explaining each one. Image and asset references are checked the same way, and the
+  build now resolves `./assets/…` subfolder paths and case mismatches more reliably.
+
+- **In-place preview updates** — The live preview morphs in place on rebuild instead
+  of doing a full reload, eliminating the blank flash WebKit showed on every edit. A
+  slim progress bar runs along the nav pill while the site rebuilds, flashes green when
+  it lands, and your scroll position is preserved.
+
+- **Clearer editor panes for folders and empty pages** — Selecting a folder or a page
+  with no source no longer shows stale content; the pane reflects the real state — an
+  empty content folder, for example, offers a "create index" action.
+
+- **Cleaner top-nav pages** — Pages and folders in the top nav no longer get a duplicate
+  auto-injected title (the nav already names them) and use a tidier page layout.
+
+- **Resilient frontmatter** — One malformed frontmatter field no longer blanks the whole
+  page. moss keeps every valid field, self-heals values like an all-numeric `uid:` (which
+  previously dropped all frontmatter and fell back to the filename), and surfaces a real
+  parse error instead of failing quietly.
+
+- **Website-only publishing by default** — Publishing starts with syndication channels
+  unselected (website only), and resets to website-only when you switch folders.
+
+- **File tree starts out of the way** — The file tree opens collapsed and is a sticky
+  toggle, so navigating around your site never pops it open.
+
+### Fixed
+
+- Publishing could hang indefinitely on a stalled upload; it's now bounded by timeouts and
+  fails retryably, and large-file uploads got a more generous per-request timeout (no more
+  spurious 120-second failures).
+- Edits sometimes didn't refresh the preview; the rebuild baseline is now race-free,
+  double-fires are coalesced, and switching folders drops the previous folder's stale baseline.
+- Editor-to-preview scroll sync used incorrect line numbers and could mis-map; it now uses
+  real file lines.
+- Text and images now stay aligned under any theme font — the content column uses a
+  font-stable measure.
+- `figcaption` could render at the wrong size from an undefined token; it now uses the
+  defined caption size.
+- Dark-mode hover color on article links was too dark; it's lightened to match the palette.
+- Links inside grid prose cells keep their underline again (the navigational-card underline
+  strip is now scoped to link cells only).
+
+### Notes for theme authors (breaking)
+
+- **Reading-size tokens renamed** — `--moss-font-size` / `--moss-font-size-base` are now
+  `--moss-reading-size` / `--moss-reading-size-base`. Update any theme that overrode the
+  old names.
+- **Caption-less images in grid-card links now wrap in `<figure class="moss-image">`**
+  (previously a bare `<p><img>`). If your theme positions grid-card images via
+  `.moss-grid-card[data-kind="link"] > p:first-child`, add
+  `> figure.moss-image:first-child` to that selector.
+
 ## [0.7.3] - 2026-06-03
 
 ### New
