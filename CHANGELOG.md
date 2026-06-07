@@ -2,6 +2,74 @@
 
 All notable changes to moss will be documented here.
 
+## [0.7.5] - 2026-06-07
+
+### New
+
+- **Connect an AI coding agent to your site** — `moss agents install-skill` teaches Claude Code or
+  Cursor how to author, style, extend, and import a moss site the canonical way; moss detects each
+  installed tool and writes the skill into it. When a supported agent is present, the launcher also
+  shows a one-tap "Connect" hint that installs the skill (and, on macOS, the `moss` command-line
+  tool) and then quietly fades away.
+
+- **Pick any file as a folder's home page** — Add `home: true` to a file's frontmatter to make it
+  that folder's home regardless of filename; the marker survives folder renames, and on a
+  multilingual site a home carries over to its translations automatically. "Start writing" and the
+  create-home buttons now make a self-named home file (e.g. `blog.md`) with the marker in place.
+
+- **Import your writing from Matters.town** — The Matters channel now imports reliably end to end:
+  a single build pulls in every article and image, Chinese sites get a `文章` folder, and after the
+  import the home opens, the file tree expands to your new articles, and progress shows live in the
+  editor — the breadcrumb pulses while articles land and flashes green when it finishes.
+
+- **Embed and resize folders, PDFs, videos, and apps** — `![[folder/]]`, `![[file.pdf]]`,
+  `![[clip.mp4]]`, and the like now render as full-width cards in the editor that you can drag-resize
+  from the corner. Embedded folders and apps also honor a size on the published site:
+  `![[app/|80%]]`, `![[app/|800x600]]`, `![[app/|80vh]]`.
+
+- **Share cards for every page** — Section landing pages and folder index pages now generate their
+  own Open Graph / Twitter share card, with an auto-made card image, so pasting a link like
+  `/research/` into Slack, iMessage, or X unfurls with that page's own title and image. The homepage
+  also emits WebSite structured data so search engines and AI tools recognize your site.
+
+- **Settings no longer closes your editor** — Opening Settings now dims only the preview and leaves
+  your editor open underneath; the editor panel animates open and closed with a smooth morph, and
+  the Settings dialog sizes to its content (no stray scrollbar).
+
+- **Immersive controls on every embedded app** — Fullscreen and open-in-new-tab controls now appear
+  on every local embedded app or article on a page (previously only the first), while external
+  embeds are left alone.
+
+### Fixed
+
+- Embedded folders and apps (`![[/Resources/app/]]`, or any folder whose name has capital letters or
+  spaces) could 404 on the published site even though they worked in local preview; they now resolve
+  on deploy. Rebuild and republish to apply.
+- A multilingual site's home page listed articles from the other languages; it now lists only its
+  own (default) language.
+- The home page's browser-tab title read "index" instead of your site's name; the tab title and the
+  share-card title now always agree.
+- Empty folders showed a "No articles yet." placeholder; they now render honestly, with no
+  placeholder and no empty card box.
+- Opening a folder or home that has no home file could silently open an unrelated article in the
+  editor; it now offers to create the home file instead.
+- Broken or not-found links and embeds now show in red rather than muted gray.
+- Frontmatter validation no longer flags moss's own managed fields (like `home`) as "unknown field."
+- Editor images no longer overhang the body text, tall images show at full width, and a small image
+  given a `|NN%` width now scales up to match on the published page.
+- A folder index without its own page now shows the same heading text and casing as one that has a page.
+- `llms.txt` no longer includes raw `<style>` / `<script>` blocks.
+
+### Notes for theme authors (breaking)
+
+- **`layout: visual` is removed.** The black, full-bleed Visual template no longer exists. A page
+  that still sets `layout: visual` now renders with the standard Page chrome, and the `.moss-visual`
+  class is no longer emitted; no frontmatter value reproduces the old look.
+- **Folder-derived names are humanized.** A folder `tech-tips/` without its own page now renders the
+  heading "tech tips" (matching the page-backed case) instead of "Tech Tips", and a site whose name
+  comes from a folder like `my-site` displays as "my site". Set an explicit `name` in
+  `.moss/config.toml` to pin a specific site name.
+
 ## [0.7.4] - 2026-06-05
 
 ### New
