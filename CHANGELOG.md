@@ -2,6 +2,51 @@
 
 All notable changes to moss will be documented here.
 
+## [0.7.6] - 2026-06-08
+
+### New
+
+- **Per-site AI policy in `robots.txt`** — Every published site now states how AI crawlers may use
+  its content, and sites **decline AI training by default**. No setup needed; it ships in your
+  site's `robots.txt` automatically.
+
+- **Matters import opens to a real home page** — Importing from Matters.town now creates a
+  self-named home file (with a `home: true` marker), so the imported site opens to a proper home
+  instead of landing on an arbitrary first article.
+
+- **Build advisories in the app** (early) — Build-job advisories now surface in moss's interface —
+  the first slice of a larger build-status design. More polish is on the way.
+
+- **Point a project at a non-production backend** — A project can now target **production**
+  (default), **staging**, or **local** through an `environment` key in `.moss/config.toml`, readable
+  and writable with the new `moss env` command. When a project isn't on production, the titlebar
+  shows a **STAGING** / **LOCAL** badge so you always know which backend you're talking to. This is
+  primarily for testing — normal sites stay on production with no change.
+
+### Fixed
+
+- Links inside grid cards now resolve against their page, so multilingual sites no longer collide
+  across languages.
+- The update-download notification no longer flickers on slow connections.
+- "Send logs" now handles Cloudflare challenge responses gracefully instead of surfacing raw error
+  HTML.
+- The desktop app no longer writes redundant DNS records for domains already hosted on moss.
+
+### Work in Progress
+
+Active branches not yet in this release — landing in a future version:
+
+- **Build advisory panel polish** — finishes the in-app build-advisory surface previewed here.
+- **Editor image refresh** — embedded images update in the editor when the source file changes on disk.
+- **iCloud-aware video conversion** — handles iCloud "optimize storage" video inputs (the "moov atom not found" race).
+- **Invite UI** — invite-based onboarding and sharing.
+- **Open-source publishing pipeline** — a control panel with a publication manager, plus a publishing runbook.
+- **Email-flyout removal** — a simpler subscribe experience.
+- **seta error consolidation** — uniform error handling across backend calls.
+- **Opt-in product telemetry** — consent-gated, so it's off unless you turn it on.
+- **LLM-automation testability** — a headless harness for agent-driven testing of moss.
+- **Windows port** — CI triage and an end-to-end smoke test (Windows is still not a shipping target).
+
 ## [0.7.5] - 2026-06-07
 
 ### New
