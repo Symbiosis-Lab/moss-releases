@@ -2,6 +2,44 @@
 
 All notable changes to moss will be documented here.
 
+## [0.7.7] - 2026-06-10
+
+### New
+
+- **Native fullscreen** — moss now uses real macOS fullscreen (the green button, Ctrl-Cmd-F, or
+  View → Enter Full Screen): the window gets its own Space, the menu bar reveals on hover, and the
+  moss title bar stays visible. The window can no longer get stuck in a half-fullscreen state.
+- **App Settings in the launcher** — set your language, check for updates, and install the
+  command-line tool from a new App Settings screen, opened from the launcher via the moss mark or ⌘,.
+- **iCloud-aware video conversion** — videos stored in iCloud Drive no longer produce a flood of
+  "moov atom not found" conversion errors. moss waits for the source to download before converting,
+  and shows a gentle "still downloading from iCloud" note if it isn't ready yet.
+- **Editor renders images from source** — the editor now shows images straight from your source
+  files and refreshes them live as the source changes, rather than the published/optimized variant.
+- **Build-progress surface** — a refreshed build-progress indicator with a single progress bar and
+  a calm resting state.
+- **Tidier build advisories** — when many files hit the same problem, the build panel collapses them
+  into a single summary row instead of one row per file.
+
+### Fixed
+
+- Collections with an explicit `order:` are no longer re-sorted by date — your chosen order wins.
+- Right-click → Publish on a cold start now opens the right folder at the right size, with no
+  launcher flash.
+- Error messages no longer show raw Cloudflare challenge HTML — just a short, readable message.
+- Bundled plugins rebuild correctly instead of silently shipping a stale version (matters → 1.1.1).
+
+### Work in Progress
+
+Active branches not yet in this release — landing in a future version:
+
+- **App Settings, phase 2** — reach App Settings from inside a folder (shrink back to the launcher).
+- **Build advisory panel polish** — finishes the in-app build-advisory surface.
+- **Open-source publishing pipeline** — publish a site's source alongside the built output.
+- **Email surface redesign** — reworked email/invite flow.
+- **Opt-in usage telemetry** — consent-gated diagnostics to help find crashes.
+- **Windows support** — Windows build fixes and end-to-end smoke tests.
+
 ## [0.7.6] - 2026-06-08
 
 ### New
