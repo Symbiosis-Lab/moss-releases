@@ -2,6 +2,52 @@
 
 All notable changes to moss will be documented here.
 
+## [0.7.8] - 2026-06-11
+
+### New
+
+- **Email composer** — sending a post to your subscribers now opens a full composer in the
+  side panel instead of a small modal. The email is its own draft (your post is never
+  rewritten), it auto-saves while you edit, and each article shows a lamp in the channel
+  rail: draft, armed, sent, or failed at a glance.
+- **Ship with a ring** — publishing shows a progress ring around the Ship button, and your
+  editors go read-only for the few seconds a send is in flight, so a mid-send edit can't
+  fork what your readers receive.
+- **Subscribe form from day one** — with email enabled, the footer subscribe form now
+  appears in preview before your site is even published, renders identically in every kind
+  of build, and publish verifies the form is wired to your live site before pushing.
+- **Paste, drop, and formatting in the editor** — paste a URL onto selected text to make a
+  link, paste screenshots straight from the clipboard, drop files at the cursor; bold and
+  italic toggle whole words; ⌘K leaves your cursor in the link target; shortcodes insert as
+  templates you can tab through.
+- **Richer text rendering in the editor** — inline markup now renders inside table cells,
+  markdown syntax reveals itself whenever your selection touches it (one consistent rule
+  everywhere), and unresolved links dim quietly instead of flagging while you're still
+  drafting.
+- **Faster editor open** — the editor panel boots in one round-trip with a static skeleton,
+  replacing the blank flash on cold start.
+- **Settings from anywhere** — tray → Settings now opens App Settings from any folder (the
+  window shrinks home to the launcher), the launcher lists your recent folders, and the
+  tray menu is down to four entries. App Settings itself is reorganized into three calm rows.
+- **Steadier window** — the preview never shifts while you drag the panel divider or resize
+  the window; only the panel moves, and divider drags are smoother.
+- **One progress language** — builds, publishes, domain checks, and plugin tasks all report
+  through the same job system: consistent phrasing and counts in the panel, and quieter,
+  short-lived toasts.
+
+### Fixed
+
+- Windows packaged builds no longer fail at the frontend build step.
+- The email subscribe footer no longer appears and disappears depending on which build wrote
+  the site last, and sites without a home note now get the form on the homepage too.
+- Video wikilinks with a size hint (`|50%`) are no longer promoted to image figures.
+- The settings modal keeps its size when switching tabs, and App Settings fits the launcher
+  window.
+- Escape pressed in the editor stays in the editor, and each media embed renders exactly one
+  card.
+- macOS native fullscreen exits cleanly before the window shrinks home to the launcher.
+- The preview scrollbar redraws correctly after the divider moves.
+
 ## [0.7.7] - 2026-06-10
 
 ### New
