@@ -21,13 +21,13 @@ description: 搜索引擎和列表预览用的简短摘要。
 下面是正文内容。
 ```
 
-Frontmatter 不是必须的。没有 frontmatter 的文件照样会变成页面——moss 会用文件名作为标题。
+Frontmatter 不是必须的。没有 frontmatter 的文件照样会变成页面，moss 会用文件名作为标题。
 
 ### 固定字段表
 
-Frontmatter 使用**固定字段表**——moss 只识别本页列出的字段，其他自定义字段会被静默忽略。如果需要存储自定义的页面元数据，请写在正文中：一段 markdown 段落、`::: {.meta}` 围栏分区或数据表格。
+Frontmatter 使用**固定字段表**：moss 只识别本页列出的字段，其他自定义字段会被静默忽略。如果需要存储自定义的页面元数据，请写在正文中：一段 markdown 段落、`::: {.meta}` 围栏分区或数据表格。
 
-`description:` 用于 SEO meta 标签、Open Graph 预览和 sitemap 摘要，**不会**渲染为页面上可见的导语。若需要可见的副标题或引言，请在 `# H1` 正下方加一段 `> 引用块`——默认主题会将 `h1 + blockquote` 样式化为导语。
+`description:` 用于 SEO meta 标签、Open Graph 预览和 sitemap 摘要，**不会**渲染为页面上可见的导语。若需要可见的副标题或引言，请在 `# H1` 正下方加一段 `> 引用块`，默认主题会将 `h1 + blockquote` 样式化为导语。
 
 ## 标识
 
@@ -37,17 +37,17 @@ Frontmatter 使用**固定字段表**——moss 只识别本页列出的字段�
 | 字段 | 类型 | 默认值 | 说明 |
 |------|------|--------|------|
 | `title` | string | 文件名 | 页面标题 |
-| `description` | string | — | SEO 描述，同时用于列表预览 |
-| `date` | string | — | 发布日期（`YYYY-MM-DD`） |
-| `tags` | list | — | 内容标签 |
+| `description` | string | 无 | SEO 描述，同时用于列表预览 |
+| `date` | string | 无 | 发布日期（`YYYY-MM-DD`） |
+| `tags` | list | 无 | 内容标签 |
 | `lang` | string | 自动检测 | 语言覆盖（`"en"`、`"zh-hans"`、`"zh-hant"`） |
 <!-- auto:end:frontmatter-identity -->
 
-`title:` 是页面标题。在文章页面上，moss 始终将其渲染为正文上方的 `<h1 class="moss-article-title">`——若 `title:` 缺省则使用文件名（首字母大写）。如果正文本身以 `# 同名标题` 开头，该正文 H1 会被自动去重，读者只看到一个标题，而非两个。
+`title:` 是页面标题。在文章页面上，moss 始终将其渲染为正文上方的 `<h1 class="moss-article-title">`；若 `title:` 缺省则使用文件名（首字母大写）。如果正文本身以 `# 同名标题` 开头，该正文 H1 会被自动去重，读者只看到一个标题，而非两个。
 
-正文中其他位置的 `# H1` 是章节标题，而非文档标题。moss 不会从正文结构推断标题——请在 `title:` 中写明，或依赖文件名。
+正文中其他位置的 `# H1` 是章节标题，而非文档标题。moss 不会从正文结构推断标题，请在 `title:` 中写明，或依赖文件名。
 
-如需在某篇文章上单独关闭注入的标题（例如某个特殊设计的着陆页），可写 `title: ""`（显式空字符串）。这与省略 `title:` 不同——省略会回退到文件名。文件夹与索引页面从不注入；它们的正文按作者所写渲染。
+如需在某篇文章上单独关闭注入的标题（例如某个特殊设计的着陆页），可写 `title: ""`（显式空字符串）。这与省略 `title:` 不同：省略会回退到文件名。文件夹与索引页面从不注入；它们的正文按作者所写渲染。
 
 ## 导航
 
@@ -57,7 +57,7 @@ Frontmatter 使用**固定字段表**——moss 只识别本页列出的字段�
 | 字段 | 类型 | 默认值 | 说明 |
 |------|------|--------|------|
 | `nav` | boolean | 根目录页面默认 `true` | 是否显示在顶部导航栏 |
-| `weight` | integer | — | 导航和列表中的排序（数值越小越靠前） |
+| `weight` | integer | 无 | 导航和列表中的排序（数值越小越靠前） |
 | `breadcrumb` | boolean | 站点默认值 | 是否显示面包屑。在首页设为 `true` 可全站启用面包屑；在任意页面设为 `false` 可单独关闭。 |
 | `footer` | boolean | 站点默认值 | 是否作为链接出现在网站页脚 |
 | `footer_align` | string | `"left"` | 页脚链接对齐方式（`"left"` 或 `"right"`） |
@@ -85,7 +85,7 @@ Frontmatter 使用**固定字段表**——moss 只识别本页列出的字段�
 | `children_style` | string | `"list"` | `"list"`、`"card"` 或 `"summary"` |
 | `children_group` | string | `"none"` | 按 `"year"` 分组或 `"none"` |
 | `children_depth` | string | `"direct"` | `"direct"`（直接子页面）或 `"all"`（所有后代） |
-| `children_source` | string | — | wikilink 指向另一个文件夹，显示该文件夹的子页面 |
+| `children_source` | string | 无 | wikilink 指向另一个文件夹，显示该文件夹的子页面 |
 <!-- auto:end:frontmatter-children -->
 
 `children_source` 的值是一个 wikilink，比如 `children_source: "[[news]]"`。
@@ -116,7 +116,7 @@ sort: title
 2. 80% 以上的子页面有 `date` → `sort: date`
 3. 否则 → `sort: title`
 
-因此多数文件夹都不需要声明 `sort` —— 博客文件夹自动是 `date`,带权重的文档自动是 `weight`,没有日期的项目集自动是 `title`。
+因此多数文件夹都不需要声明 `sort`：博客文件夹自动是 `date`,带权重的文档自动是 `weight`,没有日期的项目集自动是 `title`。
 
 **为什么排序决定外观**:日期排序的列表会在每张卡片的元数据槽位显示日期;权重和标题排序则不渲染元数据槽位(没有空白占位)。在非日期排序中,文件夹卡片仅在没有描述时显示小字号的"N 篇文章"副标题。
 
@@ -126,9 +126,9 @@ sort: title
 
 | 字段 | 类型 | 默认值 | 说明 |
 |------|------|--------|------|
-| `cover` | string | — | 封面图路径，用于卡片布局和页面头部 |
+| `cover` | string | 无 | 封面图路径，用于卡片布局和页面头部 |
 | `cover_type` | string | 自动检测 | `"image"`、`"video"` 或 `"iframe"` |
-| `logo` | string | — | 显示在网站头部的 Logo 图片 |
+| `logo` | string | 无 | 显示在网站头部的 Logo 图片 |
 
 详见 [[media#Cover images]]。
 
@@ -155,7 +155,7 @@ cascade:
 
 | 字段 | 类型 | 默认值 | 说明 |
 |------|------|--------|------|
-| `also_in` | list | — | 让文章同时出现在其他文件夹的子页面列表中 |
+| `also_in` | list | 无 | 让文章同时出现在其他文件夹的子页面列表中 |
 | `series` | boolean | 推断 | 是否在该文件夹的每个子页面渲染上一篇/下一篇导航 |
 
 `also_in` 让一篇文章同时出现在多个栏目中，无需复制文件：
@@ -169,7 +169,7 @@ also_in:
 ---
 ```
 
-`series` 控制每篇子文章底部是否显示上一篇/下一篇导航。`sort: weight` (或显式列表) 的文件夹默认开启——因为有序的内容通常暗示连续阅读；`sort: date` 和 `sort: title` 默认关闭。可以显式覆盖：
+`series` 控制每篇子文章底部是否显示上一篇/下一篇导航。`sort: weight` (或显式列表) 的文件夹默认开启，因为有序的内容通常暗示连续阅读；`sort: date` 和 `sort: title` 默认关闭。可以显式覆盖：
 
 ```yaml
 # 一个按权重排序的参考文档,但不想要上一/下一导航
@@ -185,14 +185,14 @@ series: false
 
 | 字段 | 类型 | 默认值 | 说明 |
 |------|------|--------|------|
-| `cascade` | map | — | 向所有后代页面推送值 |
+| `cascade` | map | 无 | 向所有后代页面推送值 |
 | `url` | string | 由文件路径生成 | 自定义 URL |
-| `translationKey` | string | — | 将不同文件关联为同一内容的翻译版本 |
+| `translationKey` | string | 无 | 将不同文件关联为同一内容的翻译版本 |
 | `uid` | string | 自动生成 | 内容寻址 ID |
 | `layout` | string | auto | 模板：`"page"` 或 `"article"` |
-| `sidebar` | string | — | wikilink 指向一个文件夹，用作侧边栏导航 |
-| `review_of` | string | — | 被评论作品的 URL |
-| `rating` | integer | — | 评分（1–5） |
+| `sidebar` | string | 无 | wikilink 指向一个文件夹，用作侧边栏导航 |
+| `review_of` | string | 无 | 被评论作品的 URL |
+| `rating` | integer | 无 | 评分（1–5） |
 | `comments` | boolean | `true` | 是否显示评论区 |
 
 ### Cascade

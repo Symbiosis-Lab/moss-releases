@@ -11,21 +11,28 @@ translationKey: docs-extend-cli
 | Command | Description |
 |---------|-------------|
 | `moss preview <folder>` | Open folder in preview with file watching and hot reload |
-| `moss compile <folder>` | Compile folder to static site (output in `.moss/site/`) |
-| `moss compile <folder> --serve` | Compile and start a local HTTP server |
-| `moss compile <folder> --watch` | Compile and watch for file changes |
-| `moss compile <folder> --no-plugins` | Compile without running plugins |
+| `moss build <folder>` | Build folder to static site (output in `.moss/build/site/`) |
+| `moss build <folder> --serve` | Build and start a local HTTP server |
+| `moss build <folder> --watch` | Build and watch for file changes |
+| `moss build <folder> --no-plugins` | Build without running plugins |
+| `moss import <url> [folder] [-r]` | Convert a live page to markdown |
 | `moss deploy <folder>` | Deploy to configured hosting |
 
 ## CI and automation
 
-moss works headless — no GUI needed:
+moss works headless (no GUI needed):
 
 ```bash
-moss compile /path/to/folder --no-plugins
+moss build /path/to/folder --no-plugins
 ```
 
-The compiled output is a self-contained static site in `.moss/site/` — standard HTML, CSS, and JS that can be deployed anywhere.
+The build output is a self-contained static site in `.moss/build/site/`: standard HTML, CSS, and JS that can be deployed anywhere.
+
+## Import
+
+`moss import <url> [folder] [-r]` converts a live page to markdown. Only `http` and `https` URLs are supported. Images land in `assets/imported/`. Pass `-r` to crawl the same domain and path prefix, capped at 200 pages.
+
+Import extracts the content and discards the original CSS, so recreate the look in `.moss/theme/style.css` as a separate step.
 
 ## Development
 

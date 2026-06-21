@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>folder to site</title>
+<!--
+  moss canonical animation: your folder is your website.
+  Pure inline SVG + CSS keyframes. No JS, no SMIL, no external assets.
+  A folder of writing dissolves in place into a browser window;
+  filenames become the navigation. ~5.5s shot, holds, then loops.
+  Colors grounded in moss design tokens (docs/design/css.md).
+-->
+<style>
+  :root {
+    --bg: #faf8f5;       /* --moss-color-bg */
+    --surface: #f4f1ec;  /* --moss-color-surface */
+    --text: #2c2825;     /* --moss-color-text */
+    --muted: #8a8580;    /* --moss-color-muted */
+    --accent: #2d5a2d;   /* --moss-color-accent */
+    --line: #d9d4cc;     /* derived hairline on surface */
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f0f0f;
+      --surface: #1c1b19;
+      --text: #e8e4dd;
+      --muted: #8a8580;
+      --accent: #6abf6a;
+      --line: #34322e;
+    }
+  }
+  html, body { margin: 0; height: 100%; background: var(--bg); }
+  body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-family: system-ui, -apple-system, "Segoe UI", "PingFang TC",
+                 "Noto Sans CJK TC", sans-serif;
+  }
+  /* The SVG viewBox is 16/9, matching moss's embed iframe, so width:100% fills
+     the frame with no clipping; the content's own margins give breathing room. */
+  .stage {
+    width: 100%;
+    max-width: 760px;
+    box-sizing: border-box;
+  }
+  svg { width: 100%; height: auto; display: block; }
+
+  /* total cycle: 5.5s motion + 1.7s hold = 7.2s loop */
+  :root { --dur: 7.2s; }
+
+  /* keyframe percentages map onto the 7.2s cycle:
+     0ms=0%  700ms=9.7%  1900ms=26.4%  2800ms=38.9%
+     3700ms=51.4%  4600ms=63.9%  5200ms=72.2%  hold to 100% */
+
+  .anim { animation-duration: var(--dur); animation-iteration-count: infinite;
+          animation-timing-function: ease; }
+
+  /* ---- Folder layer: visible at start, crossfades out ~1900-2400ms ---- */
+  #folder { animation-name: folderFade; transform-origin: 320px 200px; }
+  @keyframes folderFade {
+    0%, 26.4% { opacity: 1; }
+    33.3% { opacity: 0; }
+    100% { opacity: 0; }
+  }
+  /* folder lid lifts open around 700ms; hinge at the left edge */
+  #lid { animation-name: lidOpen; transform-origin: 142px 168px;
+         transform-box: fill-box; }
+  @keyframes lidOpen {
+    0%, 8% { transform: translateY(0); }
+    14%, 26.4% { transform: translateY(-5px); }
+    33.3%, 100% { transform: translateY(-5px); }
+  }
+
+  /* ---- Browser frame: crossfades in over the same footprint ---- */
+  #browser { animation-name: browserFade; }
+  @keyframes browserFade {
+    0%, 24% { opacity: 0; }
+    33.3% { opacity: 1; }
+    100% { opacity: 1; }
+  }
+
+  /* ---- Chips: fade + rise (700ms), staggered; then travel up into nav ---- */
+  .chip { opacity: 0; }
+  #chip1 { animation-name: chipRise1; }
+  #chip2 { animation-name: chipRise2; }
+  #chip3 { animation-name: chipRise3; }
+  /* chip1 -> Home (index.md) */
+  @keyframes chipRise1 {
+    0%, 7% { opacity: 0; transform: translateY(14px); }
+    13% { opacity: 1; transform: translateY(0); }
+    26.4% { opacity: 1; transform: translateY(0); }
+    38.9% { opacity: 0; transform: translateY(-44px); }
+    100% { opacity: 0; transform: translateY(-44px); }
+  }
+  /* chip2 -> About (about.md), +90ms stagger */
+  @keyframes chipRise2 {
+    0%, 8.2% { opacity: 0; transform: translateY(14px); }
+    14.2% { opacity: 1; transform: translateY(0); }
+    26.4% { opacity: 1; transform: translateY(0); }
+    38.9% { opacity: 0; transform: translateY(-44px); }
+    100% { opacity: 0; transform: translateY(-44px); }
+  }
+  /* chip3 -> Posts (posts/ folder), +180ms stagger */
+  @keyframes chipRise3 {
+    0%, 9.4% { opacity: 0; transform: translateY(14px); }
+    15.4% { opacity: 1; transform: translateY(0); }
+    26.4% { opacity: 1; transform: translateY(0); }
+    38.9% { opacity: 0; transform: translateY(-44px); }
+    100% { opacity: 0; transform: translateY(-44px); }
+  }
+
+  /* ---- Nav labels (suffix shed): appear as chips land ~2800ms ---- */
+  .nav { opacity: 0; animation-name: navIn; }
+  @keyframes navIn {
+    0%, 36% { opacity: 0; transform: translateY(6px); }
+    44.4% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ---- Address pill fill: width-clip reveal left->right ~3700ms ---- */
+  #urlClipRect { animation-name: urlFill; }
+  @keyframes urlFill {
+    0%, 50% { width: 0; }
+    63.9% { width: 248px; }
+    100% { width: 248px; }
+  }
+  /* leaf mark + url text fade in within the pill */
+  #urlContent { opacity: 0; animation-name: urlContent; }
+  @keyframes urlContent {
+    0%, 52% { opacity: 0; }
+    63.9% { opacity: 1; }
+    100% { opacity: 1; }
+  }
+
+  /* ---- Caption: fades in ~4600ms, settles ---- */
+  #caption { opacity: 0; animation-name: captionIn; }
+  @keyframes captionIn {
+    0%, 60% { opacity: 0; transform: translateY(4px); }
+    72.2% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ---- Reduced motion: pin everything to the 5200ms (100%) end frame ---- */
+  @media (prefers-reduced-motion: reduce) {
+    .anim, .chip, .nav, #urlClipRect, #urlContent, #caption,
+    #folder, #lid, #browser { animation: none !important; }
+    #folder, .chip { opacity: 0 !important; }
+    #browser { opacity: 1 !important; }
+    .nav { opacity: 1 !important; transform: none !important; }
+    #urlClipRect { width: 248px !important; }
+    #urlContent { opacity: 1 !important; }
+    #caption { opacity: 1 !important; transform: none !important; }
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <svg viewBox="-36 0 711 400" role="img"
+         aria-label="一个包含 index.md about.md posts 的文件夹变成了带有首页 关于 文章导航的网站。">
+
+      <!-- shared footprint: x 120..520, the panel both layers occupy -->
+
+      <!-- ============ FOLDER LAYER ============ -->
+      <g id="folder" class="anim">
+        <!-- folder back -->
+        <rect x="120" y="150" width="400" height="180" rx="14"
+              fill="var(--surface)" stroke="var(--line)" stroke-width="2"/>
+        <!-- folder tab lip (lifts open) -->
+        <g id="lid" class="anim">
+          <path d="M120 168 q0 -22 22 -22 h120 l22 22 z"
+                fill="var(--bg)" stroke="var(--accent)" stroke-width="3"
+                stroke-linejoin="round"/>
+        </g>
+        <!-- folder accent edge to read clearly as a folder of writing -->
+        <rect x="120" y="150" width="400" height="180" rx="14"
+              fill="none" stroke="var(--accent)" stroke-width="2.5"
+              opacity="0.85"/>
+
+        <!-- three chips: two files + one folder, rise + stagger -->
+        <!-- chip1: index.md (file) -->
+        <g id="chip1" class="chip anim">
+          <rect x="160" y="200" width="320" height="34" rx="8"
+                fill="var(--bg)" stroke="var(--line)" stroke-width="1.5"/>
+          <!-- file glyph -->
+          <path d="M178 209 h14 l6 6 v18 h-20 z" fill="none"
+                stroke="var(--muted)" stroke-width="1.6" stroke-linejoin="round"/>
+          <text x="212" y="222" font-size="16" fill="var(--text)">index.md</text>
+        </g>
+        <!-- chip2: about.md (file) -->
+        <g id="chip2" class="chip anim">
+          <rect x="160" y="242" width="320" height="34" rx="8"
+                fill="var(--bg)" stroke="var(--line)" stroke-width="1.5"/>
+          <path d="M178 251 h14 l6 6 v18 h-20 z" fill="none"
+                stroke="var(--muted)" stroke-width="1.6" stroke-linejoin="round"/>
+          <text x="212" y="264" font-size="16" fill="var(--text)">about.md</text>
+        </g>
+        <!-- chip3: posts/ (folder glyph, distinct from files) -->
+        <g id="chip3" class="chip anim">
+          <rect x="160" y="284" width="320" height="34" rx="8"
+                fill="var(--bg)" stroke="var(--line)" stroke-width="1.5"/>
+          <!-- folder glyph -->
+          <path d="M177 295 q0 -3 3 -3 h7 l3 3 h8 q3 0 3 3 v12 q0 3 -3 3 h-21 q-3 0 -3 -3 z"
+                fill="none" stroke="var(--muted)" stroke-width="1.6"
+                stroke-linejoin="round"/>
+          <text x="212" y="306" font-size="16" fill="var(--text)">posts/</text>
+        </g>
+      </g>
+
+      <!-- ============ BROWSER LAYER (same footprint) ============ -->
+      <g id="browser" class="anim">
+        <!-- window body -->
+        <rect x="120" y="150" width="400" height="180" rx="14"
+              fill="var(--surface)" stroke="var(--line)" stroke-width="2"/>
+        <!-- chrome bar -->
+        <path d="M120 164 q0 -14 14 -14 h372 q14 0 14 14 v22 h-400 z"
+              fill="var(--bg)" stroke="var(--line)" stroke-width="2"/>
+        <!-- three dim traffic dots -->
+        <circle cx="140" cy="161" r="4" fill="var(--muted)" opacity="0.5"/>
+        <circle cx="156" cy="161" r="4" fill="var(--muted)" opacity="0.5"/>
+        <circle cx="172" cy="161" r="4" fill="var(--muted)" opacity="0.5"/>
+
+        <!-- address pill -->
+        <rect x="192" y="153" width="312" height="18" rx="9"
+              fill="var(--surface)" stroke="var(--line)" stroke-width="1.5"/>
+        <!-- url fill: a clip whose width animates left->right -->
+        <clipPath id="urlClip">
+          <rect id="urlClipRect" class="anim" x="200" y="153" width="0" height="18"/>
+        </clipPath>
+        <g clip-path="url(#urlClip)">
+          <g id="urlContent" class="anim">
+            <!-- small leaf mark -->
+            <path d="M206 162 q4 -8 12 -8 q0 8 -12 8 z"
+                  fill="var(--accent)"/>
+            <!-- neutral placeholder URL in TEXT color (not accent) -->
+            <text x="224" y="166" font-size="11" fill="var(--text)"
+                  font-family="ui-monospace, SFMono-Regular, Menlo, monospace">your-site/about</text>
+          </g>
+        </g>
+
+        <!-- horizontal nav row: filenames shed their suffix, accent links -->
+        <!-- CJK labels 首页/关于/文章 are each 2 chars (~32px at font-size 16).
+             Positions spread to 150 / 248 / 346 for even visual rhythm and
+             to ensure no overlap with each other or the window edge (x=520). -->
+        <g font-size="16" font-weight="500">
+          <text id="navHome" class="nav anim" x="150" y="220"
+                fill="var(--accent)">首页</text>
+          <text id="navAbout" class="nav anim" x="248" y="220"
+                fill="var(--accent)" style="animation-delay:0.08s">关于</text>
+          <text id="navPosts" class="nav anim" x="346" y="220"
+                fill="var(--accent)" style="animation-delay:0.16s">文章</text>
+        </g>
+        <!-- nav underline hairline -->
+        <line x1="150" y1="232" x2="490" y2="232"
+              stroke="var(--line)" stroke-width="1.5"/>
+
+        <!-- a couple of neutral content lines (no published check, stays honest) -->
+        <rect x="150" y="252" width="300" height="9" rx="4" fill="var(--line)"/>
+        <rect x="150" y="270" width="260" height="9" rx="4" fill="var(--line)"/>
+        <rect x="150" y="288" width="200" height="9" rx="4" fill="var(--line)"/>
+      </g>
+
+      <!-- ============ CAPTION ============ -->
+      <!-- zh-hans copy. English default lives at assets/animations/folder-to-site.html
+           zh-hant copy lives at zh-hant/assets/animations/folder-to-site.html -> 你的資料夾就是你的網站 -->
+      <text id="caption" class="anim" x="320" y="372"
+            text-anchor="middle" font-size="18" fill="var(--text)"
+            font-weight="500">你的文件夹就是你的网站</text>
+    </svg>
+  </div>
+</body>
+</html>

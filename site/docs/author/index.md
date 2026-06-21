@@ -8,7 +8,7 @@ translationKey: docs-author
 
 Once your folder is a site, the next step is shaping how each page looks and connects to others.
 
-Control each page with [[frontmatter]] — title, date, visibility, and more. Add layouts with [[shortcodes]] — grids, galleries, hero images. Call out important content with [[callouts]]. Connect pages with [[wikilinks-and-embeds|wikilinks and embeds]], and shape the site's [[navigation|navigation and footer]].
+Control each page with [[frontmatter]]: title, date, visibility, and more. Add layouts with [[shortcodes]]: grids, galleries, hero images. Call out important content with [[callouts]]. Connect pages with [[wikilinks-and-embeds|wikilinks and embeds]], and shape the site's [[navigation|navigation and footer]].
 
 ## Choosing the right primitive
 
@@ -24,9 +24,10 @@ When a page needs a specific visual treatment, try in this order:
 | Goal | Primitive |
 |------|-----------|
 | Deck / subtitle / lead paragraph after a title | `> blockquote` immediately after `# H1`, styled via `h1 + blockquote` |
+| Identity line / tagline under the title | `::: {.tagline}` fenced div after the H1 |
 | Kicker / eyebrow before the title | `::: {.eyebrow}` fenced div before the H1 |
 | Pull quote inside a section | `> quote` styled differently from callouts via `h2 ~ blockquote` |
-| Clickable compound card in a grid | Wrap cell content in `[…](/url)` — moss emits one `<a>` with block children |
+| Clickable compound card in a grid | Wrap cell content in `[…](/url)`; moss emits one `<a>` with block children |
 | Repeated block across pages | Extract as a partial (`unlisted: true, nav: false, children: false`), transclude via `![[partial-name]]` |
 | Placeholder / in-progress section | `> [!pending] Title` callout |
 
@@ -34,8 +35,8 @@ When a page needs a specific visual treatment, try in this order:
 
 These Pandoc-style attribute syntaxes are **not** supported by moss:
 
-- `# Title {.class}` — heading attributes
-- `paragraph\n{.class}` — paragraph attributes
-- `---\n{.section-divider}` — hr attributes
+- `# Title {.class}`: heading attributes
+- `paragraph\n{.class}`: paragraph attributes
+- `---\n{.section-divider}`: hr attributes
 
 Use `::: {.class}` fenced divs or CSS element selectors instead.

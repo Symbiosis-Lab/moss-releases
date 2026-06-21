@@ -27,7 +27,7 @@ lang: zh-hans
 | 标题后的导语 / 副标题 / 引言段落 | `# H1` 正下方的 `> 引用块`，通过 `h1 + blockquote` 样式化 |
 | 标题前的眉题 / 上标签 | `# H1` 前的 `::: {.eyebrow}` 围栏分区 |
 | 章节内的拉引 | `> 引用`，通过 `h2 ~ blockquote` 与标注区分样式 |
-| 网格中的可点击复合卡片 | 将单元格内容包裹在 `[…](/url)` 中——moss 生成一个包含块级子元素的 `<a>` |
+| 网格中的可点击复合卡片 | 将单元格内容包裹在 `[…](/url)` 中，moss 生成一个包含块级子元素的 `<a>` |
 | 跨页面重复的内容块 | 提取为 partial（`unlisted: true, nav: false, children: false`），通过 `![[partial-name]]` 转包 |
 | 占位符 / 未完成章节 | `> [!pending] 标题` 标注 |
 
@@ -35,8 +35,8 @@ lang: zh-hans
 
 以下 Pandoc 风格的属性语法 moss **不支持**：
 
-- `# 标题 {.class}` — 标题属性
-- `段落\n{.class}` — 段落属性
-- `---\n{.section-divider}` — 水平线属性
+- `# 标题 {.class}`：标题属性
+- `段落\n{.class}`：段落属性
+- `---\n{.section-divider}`：水平线属性
 
 请改用 `::: {.class}` 围栏分区或 CSS 元素选择器。

@@ -78,4 +78,4 @@ Community theatre rooted in lived experience.
 ::::
 :::
 
-The hero renders full-width and is hoisted out of the article content flow — it is not constrained by the article's `content_width` setting.
+The hero renders full-width and is hoisted out of the article content flow, so it is not constrained by the article's `content_width` setting.

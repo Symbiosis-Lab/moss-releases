@@ -20,13 +20,13 @@ lang: zh-hans
 
 ## CI 和自动化
 
-moss 支持无界面运行——不需要 GUI：
+moss 支持无界面运行，无需 GUI：
 
 ```bash
 moss compile /path/to/folder --no-plugins
 ```
 
-编译产出是 `.moss/site/` 中的独立静态网站——标准的 HTML、CSS 和 JS，可以部署到任何地方。
+编译产出是 `.moss/site/` 中的独立静态网站，包含标准的 HTML、CSS 和 JS，可以部署到任何地方。
 
 ## 开发
 

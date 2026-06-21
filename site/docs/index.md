@@ -16,8 +16,8 @@ After installing moss, right-click any folder and choose **Publish with moss** t
 - Every `.md` file becomes a page.
   - Its URL is derived from its path in the folder, unless [[author/frontmatter#Advanced|overridden]] with `url` in frontmatter.
   - `index.md`, `readme.md`, `_index.md`, `main.md`, or a file named after the folder (e.g. `recipes.md` inside `recipes/`) become the [[structure#^folder-page|folder's page]]. Language-suffixed variants like `index.zh-hans.md` also work.
-  - At the root of a flat site, `about.md` (and `关于.md` / `關於.md`) appear as navigation items automatically. In organized sites with subfolders, every root-level page shows up in navigation — control this with [[author/frontmatter#Navigation|`nav` in frontmatter]].
-- Reference media or markdown files with a relative path or just the filename — moss resolves it to the nearest match in the file tree.
+  - At the root of a flat site, `about.md` (and `关于.md` / `關於.md`) appear as navigation items automatically. In organized sites with subfolders, every root-level page shows up in navigation: control this with [[author/frontmatter#Navigation|`nav` in frontmatter]].
+- Reference media or markdown files with a relative path or just the filename. moss resolves it to the nearest match in the file tree.
 
 ```
 my-site/
@@ -30,4 +30,4 @@ my-site/
 
 When you're ready, [[deploy|publish to GitHub Pages]] and connect your own domain.
 
-Start with [[structure]] to see how files, folders, and URLs fit together.
+New here? Start with [[start|Get Started]] to turn a folder of your writing into a website in about five minutes. Then read [[structure]] to see how files, folders, and URLs fit together.

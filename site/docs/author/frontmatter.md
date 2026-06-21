@@ -8,7 +8,7 @@ translationKey: docs-author-frontmatter
 
 ## What is frontmatter
 
-Frontmatter is a block of YAML at the very top of a markdown file, between two `---` lines. It tells moss about the page — its title, date, visibility, and more. ^def-frontmatter
+Frontmatter is a block of YAML at the very top of a markdown file, between two `---` lines. It tells moss about the page: its title, date, visibility, and more. ^def-frontmatter
 
 ```yaml
 ---
@@ -20,13 +20,13 @@ description: A short summary for search engines and list previews.
 The rest of the file is your content.
 ```
 
-Frontmatter is optional. A file without it still becomes a page — moss uses the filename as the title.
+Frontmatter is optional. A file without it still becomes a page. moss uses the filename as the title.
 
 ### Fixed schema
 
-Frontmatter uses a **fixed schema** — moss only recognizes the fields listed on this page. Arbitrary custom fields are silently ignored. If you need custom per-page metadata, store it in body content: a markdown paragraph, a `::: {.meta}` fenced div, or a data table.
+Frontmatter uses a **fixed schema**: moss only recognizes the fields listed on this page. Arbitrary custom fields are silently ignored. If you need custom per-page metadata, store it in body content: a markdown paragraph, a `::: {.meta}` fenced div, or a data table.
 
-`description:` is for SEO meta tags, Open Graph previews, and sitemap summaries. It is **not** rendered as a visible page deck. For a visible subtitle or lead paragraph, use a `> blockquote` immediately after the `# H1` — the default theme styles `h1 + blockquote` as a deck.
+`description:` is for SEO meta tags, Open Graph previews, and sitemap summaries. It is **not** rendered as a visible page deck. For a visible subtitle or lead paragraph, use a `> blockquote` immediately after the `# H1`. The default theme styles `h1 + blockquote` as a deck.
 
 ## Identity
 
@@ -36,15 +36,15 @@ These fields describe what the page is.
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
 | `title` | string | filename | Page title |
-| `description` | string | — | SEO meta description and list previews |
-| `date` | string | — | Publication date (`YYYY-MM-DD`) |
-| `tags` | list | — | Content tags |
+| `description` | string | (none) | SEO meta description and list previews |
+| `date` | string | (none) | Publication date (`YYYY-MM-DD`) |
+| `tags` | list | (none) | Content tags |
 | `lang` | string | auto-detected | Language override (`"en"`, `"zh-hans"`, `"zh-hant"`) |
 <!-- auto:end:frontmatter-identity -->
 
-`title:` is the page's title. On article pages moss always renders it as `<h1 class="moss-article-title">` above the body — using the filename (title-cased) when `title:` is absent. If the body itself opens with `# Same Title`, that body H1 is deduplicated so the reader sees one title, not two.
+`title:` is the page's title. On article pages moss always renders it as `<h1 class="moss-article-title">` above the body, using the filename (title-cased) when `title:` is absent. If the body itself opens with `# Same Title`, that body H1 is deduplicated so the reader sees one title, not two.
 
-Body H1s anywhere else are section headers, not document titles. moss does not infer the title from body structure — write the title in `title:` or rely on the filename.
+Body H1s anywhere else are section headers, not document titles. moss does not infer the title from body structure. Write the title in `title:` or rely on the filename.
 
 To suppress the injected title on a specific article (for example, a bespoke landing page), set `title: ""` (an explicit empty string). This is distinct from omitting the field, which falls back to the filename. Folder and index pages never inject; their bodies render as authored.
 
@@ -56,7 +56,7 @@ These fields control how the page appears in the site's navigation and chrome.
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
 | `nav` | boolean | `true` for root pages | Show in header navigation |
-| `weight` | integer | — | Sort order in nav and lists (lower = first) |
+| `weight` | integer | (none) | Sort order in nav and lists (lower = first) |
 | `breadcrumb` | boolean | site default | Show breadcrumb trail on this page. Set `true` on the homepage to activate breadcrumbs site-wide; set `false` on any page to opt it out. |
 | `footer` | boolean | site default | Show this page as a link in the site footer |
 | `footer_align` | string | `"left"` | Align this page's footer link (`"left"` or `"right"`) |
@@ -82,7 +82,7 @@ These fields control how a [[structure#^folder-page|folder page]] displays its c
 | `children_style` | string | `"list"` | `"list"`, `"card"`, or `"summary"` |
 | `children_group` | string | `"none"` | Group by `"year"` or `"none"` |
 | `children_depth` | string | `"direct"` | `"direct"` (immediate children) or `"all"` (all descendants) |
-| `children_source` | string | — | Wikilink to folder whose children to show instead |
+| `children_source` | string | (none) | Wikilink to folder whose children to show instead |
 <!-- auto:end:frontmatter-children -->
 
 `children_source` takes a wikilink target, e.g. `children_source: "[[news]]"`.
@@ -90,9 +90,9 @@ These fields control how a [[structure#^folder-page|folder page]] displays its c
 Card layout uses the `cover` image from each child's frontmatter.
 
 Set `children: false` to fully opt out of the auto-emitted child listing on a
-folder page or the homepage. This suppresses both listing styles — the inline
+folder page or the homepage. This suppresses both listing styles: the inline
 list/summary layout (`.moss-article-listing`) and the card grid
-(`.moss-collection-grid`) — so custom homepages and folder landing pages can
+(`.moss-collection-grid`), so custom homepages and folder landing pages can
 lay out their own content without a trailing auto-generated index.
 
 ### Sort
@@ -119,7 +119,7 @@ When `sort` is absent, moss infers it from the children:
 2. At least 80% of children have a `date` field → `sort: date`
 3. Otherwise → `sort: title`
 
-So most folders need no `sort` declaration — a blog folder is automatically `date`, a docs folder with weights is automatically `weight`, and a folder of dateless projects is automatically `title`.
+So most folders need no `sort` declaration: a blog folder is automatically `date`, a docs folder with weights is automatically `weight`, and a folder of dateless projects is automatically `title`.
 
 **Why sort drives appearance:** date listings put the date in each card's meta slot; weight and title listings omit the meta slot entirely (no empty space). Folder cards in non-date listings show a small "N articles" subtitle only when they have no description.
 
@@ -129,9 +129,9 @@ The legacy `order: [...]` field is a back-compat alias for `sort: [...]`.
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
-| `cover` | string | — | Cover image path for card layouts and page headers |
+| `cover` | string | (none) | Cover image path for card layouts and page headers |
 | `cover_type` | string | auto-detected | `"image"`, `"video"`, or `"iframe"` |
-| `logo` | string | — | Logo image displayed in the site header |
+| `logo` | string | (none) | Logo image displayed in the site header |
 
 See [[media#Cover images]] for details.
 
@@ -158,7 +158,7 @@ cascade:
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
-| `also_in` | list | — | Folder paths where this article also appears in child lists |
+| `also_in` | list | (none) | Folder paths where this article also appears in child lists |
 | `series` | boolean | inferred | Render prev/next chrome on each child of this folder |
 
 `also_in` makes an article appear in multiple sections without duplicating the file:
@@ -172,7 +172,7 @@ also_in:
 ---
 ```
 
-`series` toggles the prev/next navigation chrome at the bottom of each child article. It defaults to on for folders with `sort: weight` (or an explicit list) — moss assumes authored order implies sequential reading. For `sort: date` and `sort: title` it defaults to off. Set it explicitly to override:
+`series` toggles the prev/next navigation chrome at the bottom of each child article. It defaults to on for folders with `sort: weight` (or an explicit list). moss assumes authored order implies sequential reading. For `sort: date` and `sort: title` it defaults to off. Set it explicitly to override:
 
 ```yaml
 # A weighted docs folder, but you don't want prev/next chrome
@@ -188,15 +188,19 @@ You can also opt a single child out by setting `series: false` on that article's
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
-| `cascade` | map | — | Push values to all descendant pages |
+| `cascade` | map | (none) | Push values to all descendant pages |
 | `url` | string | from file path | Custom URL override |
-| `translationKey` | string | — | Link files as translations of each other |
+| `translationKey` | string | (none) | Link files as translations of each other |
 | `uid` | string | auto-generated | Content-addressable ID |
 | `layout` | string | auto | Template: `"page"` or `"article"` |
-| `sidebar` | string | — | Wikilink to a folder to use as sidebar navigation |
-| `review_of` | string | — | URL of the work being reviewed |
-| `rating` | integer | — | Rating (1–5) for reviews |
+| `sidebar` | string | (none) | Wikilink to a folder to use as sidebar navigation |
+| `review_of` | string | (none) | URL of the work being reviewed |
+| `rating` | integer | (none) | Rating (1–5) for reviews |
 | `comments` | boolean | `true` | Show comments section |
+
+### uid
+
+moss normally stamps `uid` for you, so you rarely set it by hand. If you do write one, quote it. An all-numeric `uid` like `uid: 12345` is parsed as a YAML integer, and the frontmatter can be silently dropped. Quote it as a string instead: `uid: "12345"`.
 
 ### Cascade
 

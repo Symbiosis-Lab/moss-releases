@@ -17,7 +17,7 @@ lang: zh-hans
 - 每个 `.md` 文件会变成一个页面。
   - URL 根据它在文件夹中的路径生成，除非在 frontmatter 里用 `url` [[author/frontmatter#高级字段|自定义]]。
   - `index.md`、`readme.md`、`_index.md`、`main.md`，或与文件夹同名的文件（例如 `recipes/` 里的 `recipes.md`）会成为[[structure#^folder-page|该文件夹的页面]]。带语言后缀的变体，如 `index.zh-hans.md`，同样有效。
-  - 扁平站点根目录下的 `about.md`（以及 `关于.md` / `關於.md`）会自动出现在导航栏。含子文件夹的组织型站点中，所有根目录页面都会出现在导航栏——通过 frontmatter 中的 [[author/frontmatter#导航|`nav` 字段]]可控制。
+  - 扁平站点根目录下的 `about.md`（以及 `关于.md` / `關於.md`）会自动出现在导航栏。含子文件夹的组织型站点中，所有根目录页面都会出现在导航栏，通过 frontmatter 中的 [[author/frontmatter#导航|`nav` 字段]]可控制。
 - 引用媒体或 markdown 文件时，用相对路径或直接写文件名即可，moss 会在文件树中找到最匹配的那个。
 
 ```

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Your folder is your website</title>
+<style>
+  html, body { margin: 0; padding: 0; background: transparent; }
+  .stage { width: 100%; aspect-ratio: 16 / 9; display: block; }
+  svg { width: 100%; height: auto; display: block; }
+  .ui    { font-family: system-ui, -apple-system, "SF Pro Text", sans-serif; }
+  .serif { font-family: 'Iowan Old Style', Palatino, Georgia, serif; }
+
+  /* ---- scenes (one simple 6s loop) ---- */
+  #finder   { opacity: 0; animation: finderIn 6s cubic-bezier(0,0,0.2,1) infinite; }
+  #menu     { opacity: 0; transform-box: fill-box; transform-origin: 0 0;
+              animation: menuIn 6s cubic-bezier(0,0,0.2,1) infinite; }
+  #pubHi    { opacity: 0; animation: pubHi 6s linear infinite; }
+  #cursor   { opacity: 0; animation: cursorIn 6s cubic-bezier(0,0,0.2,1) infinite; }
+  #moss     { opacity: 0; transform-box: fill-box; transform-origin: 50% 52%;
+              animation: mossIn 6s cubic-bezier(0,0,0.2,1) infinite; }
+  #pubDot   { transform-box: fill-box; transform-origin: 50% 50%;
+              animation: pulse 6s ease-in-out infinite; }
+  #caption  { opacity: 0; animation: capIn 6s linear infinite; }
+
+  @keyframes finderIn { 0%{opacity:0;transform:scale(.99)} 8%{opacity:1;transform:scale(1)}
+    48%{opacity:1;transform:scale(1)} 64%{opacity:0;transform:scale(.99)} 100%{opacity:0} }
+  @keyframes menuIn { 0%,20%{opacity:0;transform:scale(.94)} 35%{opacity:1;transform:scale(1)}
+    48%{opacity:1;transform:scale(1)} 62%{opacity:0;transform:scale(.98)} 100%{opacity:0} }
+  @keyframes pubHi { 0%,37%{opacity:0} 47%{opacity:1} 58%{opacity:1} 62%{opacity:0} 100%{opacity:0} }
+  @keyframes cursorIn { 0%,20%{opacity:0} 35%{opacity:1} 58%{opacity:1} 62%{opacity:0} 100%{opacity:0} }
+  @keyframes mossIn { 0%,56%{opacity:0;transform:scale(.985)} 76%{opacity:1;transform:scale(1)} 100%{opacity:1} }
+  @keyframes pulse { 0%,80%{transform:scale(1)} 86%{transform:scale(1.13)} 92%{transform:scale(1)} 100%{transform:scale(1)} }
+  @keyframes capIn { 0%,76%{opacity:0} 90%{opacity:1} 100%{opacity:1} }
+
+  @media (prefers-reduced-motion: reduce) {
+    #finder,#menu,#pubHi,#cursor { animation: none; opacity: 0; }
+    #moss { animation: none; opacity: 1; transform: none; }
+    #pubDot { animation: none; }
+    #caption { animation: none; opacity: 1; }
+  }
+</style>
+</head>
+<body>
+<div class="stage">
+<svg viewBox="0 0 768 432" xmlns="http://www.w3.org/2000/svg" role="img"
+  aria-label="A wireframe of a folder in Finder; right-click and choose Publish with moss; the moss preview window opens with your site.">
+  <defs>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#1d2733" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- ============ BEAT 1: Finder window (wireframe) ============ -->
+  <g id="finder">
+    <rect x="140" y="50" width="488" height="270" rx="7" fill="#fdfcfa" stroke="#8a8580" stroke-width="1.5"/>
+    <circle cx="162" cy="66" r="4.5" fill="none" stroke="#8a8580" stroke-width="1.2"/>
+    <circle cx="178" cy="66" r="4.5" fill="none" stroke="#8a8580" stroke-width="1.2"/>
+    <circle cx="194" cy="66" r="4.5" fill="none" stroke="#8a8580" stroke-width="1.2"/>
+    <rect x="352" y="62" width="64" height="7" rx="3.5" fill="#e6e2db"/>
+    <line x1="140" y1="82" x2="628" y2="82" stroke="#e6e2db" stroke-width="1"/>
+    <line x1="300" y1="82" x2="300" y2="320" stroke="#e6e2db" stroke-width="1"/>
+    <rect x="158" y="100" width="60" height="6" rx="3" fill="#cfcbc3"/>
+    <rect x="158" y="120" width="104" height="7" rx="3.5" fill="#e6e2db"/>
+    <rect x="158" y="138" width="92" height="7" rx="3.5" fill="#e6e2db"/>
+    <rect x="158" y="156" width="100" height="7" rx="3.5" fill="#e6e2db"/>
+    <rect x="158" y="174" width="86" height="7" rx="3.5" fill="#e6e2db"/>
+    <rect x="320" y="107" width="14" height="18" rx="2" fill="none" stroke="#8a8580" stroke-width="1.2"/>
+    <rect x="346" y="112.5" width="170" height="8" rx="4" fill="#e6e2db"/>
+    <rect x="320" y="141" width="14" height="18" rx="2" fill="none" stroke="#8a8580" stroke-width="1.2"/>
+    <rect x="346" y="146.5" width="140" height="8" rx="4" fill="#e6e2db"/>
+    <path d="M320 184 v-9 q0 -2 2 -2 h4 l2 2 h5 q2 0 2 2 v7 q0 2 -2 2 h-13 q-2 0 -2 -2 z"
+          fill="none" stroke="#8a8580" stroke-width="1.2" stroke-linejoin="round"/>
+    <rect x="346" y="180.5" width="120" height="8" rx="4" fill="#e6e2db"/>
+    <rect x="320" y="209" width="14" height="18" rx="2" fill="none" stroke="#8a8580" stroke-width="1.2"/>
+    <rect x="346" y="214.5" width="158" height="8" rx="4" fill="#e6e2db"/>
+  </g>
+
+  <!-- ============ BEAT 2: right-click context menu ============ -->
+  <g id="menu">
+    <rect x="372" y="138" width="206" height="172" rx="5" fill="#fdfcfa" stroke="#8a8580" stroke-width="1.2" filter="url(#soft)"/>
+    <rect x="390" y="155" width="150" height="6" rx="3" fill="#e6e2db"/>
+    <rect x="390" y="177" width="130" height="6" rx="3" fill="#e6e2db"/>
+    <rect x="390" y="199" width="146" height="6" rx="3" fill="#e6e2db"/>
+    <line x1="386" y1="220" x2="564" y2="220" stroke="#e6e2db" stroke-width="1"/>
+    <g id="pubHi">
+      <rect x="380" y="233" width="190" height="24" rx="4" fill="#2d5a2d"/>
+      <text x="398" y="249" class="ui" font-size="12.5" fill="#ffffff">Publish with moss</text>
+    </g>
+    <rect x="390" y="278" width="120" height="6" rx="3" fill="#e6e2db"/>
+  </g>
+
+  <!-- cursor pointing at the publish row from its left edge -->
+  <g id="cursor">
+    <path d="M381 242 l0 16 l4.4 -4 l2.7 5.8 l2.5 -1.1 l-2.7 -5.7 l5.7 0 z"
+          fill="#2c2825" stroke="#ffffff" stroke-width="1"/>
+  </g>
+
+  <!-- ============ BEAT 3: moss preview window (wireframe) ============ -->
+  <g id="moss">
+    <rect x="140" y="50" width="488" height="270" rx="16" fill="#faf8f5" stroke="#8a8580" stroke-width="1.5"/>
+    <circle cx="162" cy="66" r="4.5" fill="none" stroke="#8a8580" stroke-width="1.2"/>
+    <circle cx="178" cy="66" r="4.5" fill="none" stroke="#8a8580" stroke-width="1.2"/>
+    <circle cx="194" cy="66" r="4.5" fill="none" stroke="#8a8580" stroke-width="1.2"/>
+    <rect x="342" y="58" width="84" height="16" rx="8" fill="none" stroke="#e6e2db" stroke-width="1.2"/>
+    <line x1="140" y1="82" x2="628" y2="82" stroke="#e6e2db" stroke-width="1"/>
+    <rect x="180" y="106" width="176" height="14" rx="3" fill="#cfcbc3"/>
+    <line x1="180" y1="134" x2="548" y2="134" stroke="#e6e2db" stroke-width="1"/>
+    <rect x="180" y="150" width="348" height="7" rx="3.5" fill="#e6e2db"/>
+    <rect x="180" y="168" width="366" height="7" rx="3.5" fill="#e6e2db"/>
+    <rect x="180" y="186" width="300" height="7" rx="3.5" fill="#e6e2db"/>
+    <rect x="180" y="204" width="250" height="7" rx="3.5" fill="#e6e2db"/>
+    <g id="pubDot">
+      <circle cx="592" cy="296" r="17" fill="#2d5a2d"/>
+      <path d="M585 297 l13 -5.5 l-5 12 l-2.3 -4.8 z" fill="#ffffff"/>
+    </g>
+  </g>
+
+  <text id="caption" class="serif" x="384" y="384" text-anchor="middle" font-size="18" fill="#2c2825">Your folder is your website</text>
+</svg>
+</div>
+</body>
+</html>

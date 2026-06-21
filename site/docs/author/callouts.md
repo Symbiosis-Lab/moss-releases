@@ -23,7 +23,7 @@ Callouts are blockquotes with a `[!type]` marker on the first line. moss turns t
 
 The word after `[!` sets the type. An optional title follows on the same line. If you omit the title, moss uses the capitalized type name (e.g., `[!note]` → "Note").
 
-Callouts can span multiple paragraphs — use `>` on empty lines between paragraphs:
+Callouts can span multiple paragraphs. Use `>` on empty lines between paragraphs:
 
 ```markdown
 > [!note] Long callout
@@ -64,10 +64,9 @@ Default styles ship with each theme. Override or extend them from your `.moss/th
 }
 ```
 
-<!-- BEHAVIOR DEPENDS ON Phase 2 Task 2.1; confirm shipped before publishing this page -->
 ## Pending
 
-The `pending` type marks placeholder content — sections you intend to fill in later.
+The `pending` type marks placeholder content (sections you intend to fill in later).
 
 ```markdown
 > [!pending] Trailer video
@@ -78,5 +77,5 @@ Style it with the `.callout-pending` hook (typical convention: dashed border, "P
 
 ## Cross-references
 
-- [[shortcodes]] — for layout blocks like grids and galleries
-- [[wikilinks-and-embeds]] — for linking between pages and embedding sections
+- [[shortcodes]]: for layout blocks like grids and galleries
+- [[wikilinks-and-embeds]]: for linking between pages and embedding sections

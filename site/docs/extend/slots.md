@@ -12,12 +12,12 @@ Slots are named injection points in the HTML template where plugins can insert c
 
 | Slot | Position |
 |------|----------|
-| `head-end` | Before `</head>` — for stylesheets and meta tags |
+| `head-end` | Before `</head>`: for stylesheets and meta tags |
 | `after-title` | After the article title and date |
 | `before-article-end` | Before `</article>` |
-| `after-article` | After `</article>` — for comments, related posts |
+| `after-article` | After `</article>`: for comments, related posts |
 | `footer-right` | Inside the footer |
-| `body-end` | Before `</body>` — for scripts and tracking |
+| `body-end` | Before `</body>`: for scripts and tracking |
 
 ## How slots work
 
@@ -33,7 +33,7 @@ During generation, moss writes HTML comment markers at each slot position:
 <!-- slot:after-article -->
 ```
 
-During the **enhance phase**, each plugin with the `enhance` capability returns content for the slots it wants to fill. moss replaces the markers with the plugin content. Any unfilled markers are stripped from the final output — they never appear in the published HTML.
+During the **enhance phase**, each plugin with the `enhance` capability returns content for the slots it wants to fill. moss replaces the markers with the plugin content. Any unfilled markers are stripped from the final output; they never appear in the published HTML.
 
 Multiple plugins can write to the same slot. Their content is concatenated in plugin load order.
 
@@ -65,4 +65,4 @@ During preview, moss rebuilds the site on every file change. To prevent the prev
 3. The staged content is copied to `.moss/site/` (the canonical directory)
 4. The pointer switches back to `.moss/site/`
 
-The preview server never serves from a half-built directory. The switch is instant — a pointer update, not a file rename.
+The preview server never serves from a half-built directory. The switch is instant (a pointer update, not a file rename).

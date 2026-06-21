@@ -89,9 +89,9 @@ lang: zh-hans
 
 插件配置按以下优先级解析：
 
-1. `.moss/plugins/{name}/config.json` — 最高优先
+1. `.moss/plugins/{name}/config.json`，最高优先
 2. `.moss/plugins/{name}/config.toml`
-3. `.moss/config.toml` 中的 `[plugins.{name}]` 节 — 最低
+3. `.moss/config.toml` 中的 `[plugins.{name}]` 节，最低
 
 ### 配置验证
 

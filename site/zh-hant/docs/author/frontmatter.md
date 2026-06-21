@@ -21,7 +21,7 @@ description: 給搜尋引擎和列表預覽用的簡短摘要。
 這裡是正文內容。
 ```
 
-Frontmatter 不是必填的。沒有 frontmatter 的檔案一樣會變成頁面——moss 會用檔名作為標題。
+Frontmatter 不是必填的。沒有 frontmatter 的檔案一樣會變成頁面，moss 會用檔名作為標題。
 
 ## 識別
 
@@ -31,17 +31,17 @@ Frontmatter 不是必填的。沒有 frontmatter 的檔案一樣會變成頁面�
 | 欄位 | 類型 | 預設值 | 說明 |
 |------|------|--------|------|
 | `title` | string | 檔名 | 頁面標題 |
-| `description` | string | — | SEO 描述，也用於列表預覽 |
-| `date` | string | — | 發佈日期（`YYYY-MM-DD`） |
-| `tags` | list | — | 內容標籤 |
+| `description` | string | 無 | SEO 描述，也用於列表預覽 |
+| `date` | string | 無 | 發佈日期（`YYYY-MM-DD`） |
+| `tags` | list | 無 | 內容標籤 |
 | `lang` | string | 自動偵測 | 語言覆蓋（`"en"`、`"zh-hans"`、`"zh-hant"`） |
 <!-- auto:end:frontmatter-identity -->
 
-`title:` 是頁面標題。在文章頁面上，moss 始終將其渲染為正文上方的 `<h1 class="moss-article-title">`——若 `title:` 缺省則使用檔名（首字母大寫）。如果正文本身以 `# 同名標題` 開頭，該正文 H1 會被自動去重，讀者只看到一個標題，而非兩個。
+`title:` 是頁面標題。在文章頁面上，moss 始終將其渲染為正文上方的 `<h1 class="moss-article-title">`，若 `title:` 缺省則使用檔名（首字母大寫）。如果正文本身以 `# 同名標題` 開頭，該正文 H1 會被自動去重，讀者只看到一個標題，而非兩個。
 
-正文中其他位置的 `# H1` 是章節標題，而非文件標題。moss 不會從正文結構推斷標題——請在 `title:` 中寫明，或依賴檔名。
+正文中其他位置的 `# H1` 是章節標題，而非文件標題。moss 不會從正文結構推斷標題，請在 `title:` 中寫明，或依賴檔名。
 
-如需在某篇文章上單獨關閉注入的標題（例如某個特殊設計的著陸頁），可寫 `title: ""`（顯式空字串）。這與省略 `title:` 不同——省略會回退到檔名。資料夾與索引頁面從不注入；它們的正文按作者所寫渲染。
+如需在某篇文章上單獨關閉注入的標題（例如某個特殊設計的著陸頁），可寫 `title: ""`（顯式空字串）。這與省略 `title:` 不同：省略會回退到檔名。資料夾與索引頁面從不注入；它們的正文按作者所寫渲染。
 
 ## 導覽
 
@@ -51,7 +51,7 @@ Frontmatter 不是必填的。沒有 frontmatter 的檔案一樣會變成頁面�
 | 欄位 | 類型 | 預設值 | 說明 |
 |------|------|--------|------|
 | `nav` | boolean | 根目錄頁面為 `true` | 是否顯示在頂部導覽列 |
-| `weight` | integer | — | 導覽和列表中的排序（數值越小越前面） |
+| `weight` | integer | 無 | 導覽和列表中的排序（數值越小越前面） |
 | `breadcrumb` | boolean | 網站預設 | 是否顯示麵包屑導覽 |
 | `footer` | boolean | 網站預設 | 是否作為連結出現在網站頁尾 |
 | `footer_align` | string | `"left"` | 頁尾連結對齊方式（`"left"` 或 `"right"`） |
@@ -79,7 +79,7 @@ Frontmatter 不是必填的。沒有 frontmatter 的檔案一樣會變成頁面�
 | `children_style` | string | `"list"` | `"list"`、`"card"` 或 `"summary"` |
 | `children_group` | string | `"none"` | 按 `"year"` 分組或 `"none"` |
 | `children_depth` | string | `"direct"` | `"direct"`（僅直屬子頁面）或 `"all"`（所有後代） |
-| `children_source` | string | — | Wikilink 指向另一個資料夾，顯示其子頁面 |
+| `children_source` | string | 無 | Wikilink 指向另一個資料夾，顯示其子頁面 |
 <!-- auto:end:frontmatter-children -->
 
 `children_source` 的值是一個 wikilink，例如 `children_source: "[[news]]"`。
@@ -110,7 +110,7 @@ sort: title
 2. 80% 以上的子頁面有 `date` → `sort: date`
 3. 否則 → `sort: title`
 
-因此多數資料夾都不需要宣告 `sort` —— 部落格資料夾自動是 `date`,帶權重的文件自動是 `weight`,沒有日期的專案集自動是 `title`。
+因此多數資料夾都不需要宣告 `sort`，部落格資料夾自動是 `date`,帶權重的文件自動是 `weight`,沒有日期的專案集自動是 `title`。
 
 **為什麼排序決定外觀**:日期排序的列表會在每張卡片的元資料槽位顯示日期;權重和標題排序則不渲染元資料槽位(沒有空白佔位)。在非日期排序中,資料夾卡片僅在沒有描述時顯示小字級的「N 篇文章」副標題。
 
@@ -120,9 +120,9 @@ sort: title
 
 | 欄位 | 類型 | 預設值 | 說明 |
 |------|------|--------|------|
-| `cover` | string | — | 封面圖路徑，用於卡片佈局和頁面標頭 |
+| `cover` | string | 無 | 封面圖路徑，用於卡片佈局和頁面標頭 |
 | `cover_type` | string | 自動偵測 | `"image"`、`"video"` 或 `"iframe"` |
-| `logo` | string | — | 顯示在網站標頭的 Logo 圖片 |
+| `logo` | string | 無 | 顯示在網站標頭的 Logo 圖片 |
 
 詳見 [[media#封面圖]]。
 
@@ -149,7 +149,7 @@ cascade:
 
 | 欄位 | 類型 | 預設值 | 說明 |
 |------|------|--------|------|
-| `also_in` | list | — | 讓文章同時出現在其他資料夾的子頁面列表中 |
+| `also_in` | list | 無 | 讓文章同時出現在其他資料夾的子頁面列表中 |
 | `series` | boolean | 推斷 | 是否在該資料夾的每個子頁面渲染上一篇/下一篇導覽 |
 
 `also_in` 讓一篇文章出現在多個欄目中，不需要複製檔案：
@@ -163,7 +163,7 @@ also_in:
 ---
 ```
 
-`series` 控制每篇子文章底部是否顯示上一篇/下一篇導覽。`sort: weight` (或顯式列表) 的資料夾預設開啟——有序的內容通常暗示連續閱讀;`sort: date` 和 `sort: title` 預設關閉。可以顯式覆蓋:
+`series` 控制每篇子文章底部是否顯示上一篇/下一篇導覽。`sort: weight` (或顯式列表) 的資料夾預設開啟，有序的內容通常暗示連續閱讀;`sort: date` 和 `sort: title` 預設關閉。可以顯式覆蓋:
 
 ```yaml
 # 依權重排序的參考文件,但不想要上一/下一導覽
@@ -179,14 +179,14 @@ series: false
 
 | 欄位 | 類型 | 預設值 | 說明 |
 |------|------|--------|------|
-| `cascade` | map | — | 將設定值向下傳遞給所有後代頁面 |
+| `cascade` | map | 無 | 將設定值向下傳遞給所有後代頁面 |
 | `url` | string | 依檔案路徑 | 自訂 URL |
-| `translationKey` | string | — | 將不同檔案連結為彼此的翻譯 |
+| `translationKey` | string | 無 | 將不同檔案連結為彼此的翻譯 |
 | `uid` | string | 自動產生 | 內容可定址 ID |
 | `layout` | string | auto | 範本：`"page"` 或 `"article"` |
-| `sidebar` | string | — | Wikilink 指向一個資料夾，作為側邊欄導覽 |
-| `review_of` | string | — | 被評論作品的 URL |
-| `rating` | integer | — | 評分（1–5） |
+| `sidebar` | string | 無 | Wikilink 指向一個資料夾，作為側邊欄導覽 |
+| `review_of` | string | 無 | 被評論作品的 URL |
+| `rating` | integer | 無 | 評分（1–5） |
 | `comments` | boolean | `true` | 是否顯示留言區 |
 
 ### Cascade

@@ -7,7 +7,7 @@ translationKey: docs-structure
 lang: zh-hant
 ---
 
-資料夾裡的每個 `.md` 檔案都會變成一個頁面，每個子資料夾變成一個欄目。不需要任何設定——在 moss 中開啟資料夾，網站結構已經成形。
+資料夾裡的每個 `.md` 檔案都會變成一個頁面，每個子資料夾變成一個欄目。不需要任何設定：在 moss 中開啟資料夾，網站結構已經成形。
 
 ## 資料夾頁面
 
@@ -33,7 +33,7 @@ recipes/
 
 若資料夾中沒有 `index.md`，moss 會自動產生一個欄目頁，列出資料夾中的所有內容。
 
-根資料夾的 `index.md` 就是你的**首頁**——網站的封面。
+根資料夾的 `index.md` 就是你的**首頁**，也就是網站的封面。
 
 ```
 my-site/
@@ -55,7 +55,7 @@ my-site/
 | `about.md` | `/about/` |
 | `posts/index.md` | `/posts/` |
 | `posts/hello.md` | `/posts/hello/` |
-| `docs/getting-started.md` | `/docs/getting-started/` |
+| `docs/deploy.md` | `/docs/deploy/` |
 
 在 frontmatter 中用 `url` 欄位可以自訂任意頁面的 URL：
 
@@ -102,7 +102,7 @@ my-site/
 2. 有 `date` 的檔案，最新的排在前面
 3. 沒有 `date` 的檔案，按字母排序
 
-用 `weight` 覆蓋預設排序——數值越小越靠前，優先於日期排序：
+用 `weight` 覆蓋預設排序，數值越小越靠前，優先於日期排序：
 
 ```yaml
 ---

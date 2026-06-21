@@ -29,8 +29,14 @@ my-site/
 
 No build step, no config entry. The file is loaded automatically.
 
+Put every rule in `.moss/theme/style.css`. moss does not honor inline `style="..."` in markdown, because inline styles cannot be themed, overridden, or reused.
+
 > [!note] Self-hosted fonts
 > Drop `.woff2` files in `.moss/theme/fonts/` and reference them from your `style.css` with `@font-face { src: url('fonts/myfont.woff2') }`. The `.moss/theme/` directory is served as a sibling of the site root.
+
+### How `.moss/theme/` is served
+
+moss mirrors `.moss/theme/` verbatim to `/_moss/theme/` in the built site, so `style.css` is served at `/_moss/theme/style.css`. Sibling assets resolve relatively: `url("grain.png")` in your stylesheet finds `.moss/theme/grain.png`. For theme JS, moss sets `window.mossTheme.base` (the `/_moss/theme/` URL) before your `script.js` runs, so resolve assets against it with `new URL("asset.woff2", mossTheme.base)`.
 
 ## Variables
 
@@ -98,7 +104,7 @@ Dark mode follows the system preference automatically. Target the dark mode sele
 
 ## Component classes
 
-Auto-generated components use stable `.moss-*` class names. Target these in your `style.css`.
+Auto-generated components use stable `.moss-*` class names. These are the class names moss emits, so target them directly in your `style.css`. Do not invent parallel names (`.my-grid`) for structure moss already labels (`.moss-grid`): inventing parallels throws away the styling moss would do for you.
 
 ### Collection grid
 
@@ -240,7 +246,7 @@ Then target them in CSS:
 
 ### Layout in the class, not inline
 
-For responsive column ratios, define `grid-template-columns` on your class and omit the ratio on the shortcode — `:::grid 2 {.two-col-split}` instead of `:::grid 2 2:1 {.two-col-split}`. Passing a ratio emits an inline `style=""` on the container, which beats `@media` rules and forces `!important` overrides.
+For responsive column ratios, define `grid-template-columns` on your class and omit the ratio on the shortcode: `:::grid 2 {.two-col-split}` instead of `:::grid 2 2:1 {.two-col-split}`. Passing a ratio emits an inline `style=""` on the container, which beats `@media` rules and forces `!important` overrides.
 
 ```css
 .two-col-split {

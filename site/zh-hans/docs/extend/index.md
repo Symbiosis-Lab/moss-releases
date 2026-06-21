@@ -7,7 +7,7 @@ translationKey: docs-extend
 lang: zh-hans
 ---
 
-插件是 `.moss/plugins/{name}/` 中的 JavaScript 包。它们接入[[hooks|编译流程的五个阶段]]——转换内容、注入[[slots|模板插槽]]、部署、分发。
+插件是 `.moss/plugins/{name}/` 中的 JavaScript 包。它们接入[[hooks|编译流程的五个阶段]]：转换内容、注入[[slots|模板插槽]]、部署、分发。
 
 每个插件有一个描述其能力和配置的 [[manifest]]。
 

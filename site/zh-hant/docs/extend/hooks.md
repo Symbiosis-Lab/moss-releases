@@ -2,7 +2,7 @@
 title: 掛鉤
 uid: 24db80a9
 weight: 2
-description: 外掛生命週期——五種能力及其上下文。
+description: 外掛生命週期：五種能力及其上下文。
 translationKey: docs-extend-hooks
 lang: zh-hant
 ---
@@ -39,7 +39,7 @@ moss 編譯網站時，依序經過以下階段：
 
 ## generate
 
-將原始內容建置或轉換為 HTML 輸出。**只有一個外掛**可以擁有此能力——它會取代 moss 內建的產生器。
+將原始內容建置或轉換為 HTML 輸出。**只有一個外掛**可以擁有此能力，它會取代 moss 內建的產生器。
 
 適用於：替代 SSG 後端（Hugo、Astro、Jekyll）。
 
@@ -99,7 +99,7 @@ moss 編譯網站時，依序經過以下階段：
 
 | 模式 | 行為 |
 |------|------|
-| **Blocking** | `moss compile`——等待 process 掛鉤完成 |
-| **NonBlocking** | 預覽模式——觸發 process 掛鉤但不等待 |
-| **SlotsOnly** | 監看重建——跳過 process/generate，只收集 enhance 插槽 |
-| **Skip** | `--no-plugins`——跳過所有外掛掛鉤 |
+| **Blocking** | `moss compile`：等待 process 掛鉤完成 |
+| **NonBlocking** | 預覽模式：觸發 process 掛鉤但不等待 |
+| **SlotsOnly** | 監看重建：跳過 process/generate，只收集 enhance 插槽 |
+| **Skip** | `--no-plugins`：跳過所有外掛掛鉤 |

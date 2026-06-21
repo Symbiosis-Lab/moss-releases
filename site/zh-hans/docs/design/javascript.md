@@ -87,4 +87,4 @@ const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
 | `.article-meta` | 日期和元数据 |
 | `.moss-colophon` | 页脚 |
 
-**可以安全修改的区域：** `article` 和 `.moss-colophon` 内部的任何内容。导航结构由 moss 管理——可以添加样式，但避免移除或重排其子元素。
+**可以安全修改的区域：** `article` 和 `.moss-colophon` 内部的任何内容。导航结构由 moss 管理，可以添加样式，但避免移除或重排其子元素。

@@ -2,7 +2,7 @@
 title: 钩子
 uid: 3aa4fbde
 weight: 2
-description: 插件生命周期——五种能力及其上下文。
+description: 插件生命周期：五种能力及其上下文。
 translationKey: docs-extend-hooks
 lang: zh-hans
 ---
@@ -39,7 +39,7 @@ moss 编译网站时，按以下顺序执行各阶段：
 
 ## generate
 
-将源内容生成或转换为 HTML 输出。**只能有一个插件**拥有此能力——它会替换 moss 的内置生成器。
+将源内容生成或转换为 HTML 输出。**只能有一个插件**拥有此能力，它会替换 moss 的内置生成器。
 
 适用于：替代 SSG 后端（Hugo、Astro、Jekyll）。
 
@@ -99,7 +99,7 @@ moss 编译网站时，按以下顺序执行各阶段：
 
 | 模式 | 行为 |
 |------|------|
-| **Blocking** | `moss compile` —— 等待 process 钩子完成 |
-| **NonBlocking** | 预览模式 —— 触发 process 钩子但不等待 |
-| **SlotsOnly** | 监听重建 —— 跳过 process/generate，只收集 enhance 插槽 |
-| **Skip** | `--no-plugins` —— 跳过所有插件钩子 |
+| **Blocking** | `moss compile`：等待 process 钩子完成 |
+| **NonBlocking** | 预览模式：触发 process 钩子但不等待 |
+| **SlotsOnly** | 监听重建：跳过 process/generate，只收集 enhance 插槽 |
+| **Skip** | `--no-plugins`：跳过所有插件钩子 |

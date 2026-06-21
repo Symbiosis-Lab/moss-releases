@@ -68,12 +68,12 @@ Xinlei focuses on emissions from wildfires and combines field observations with 
 
 ## Cell content
 
-Cells are full markdown — headings, paragraphs, lists, images, and links all work. Cells also recognize:
+Cells are full markdown: headings, paragraphs, lists, images, and links all work. Cells also recognize:
 
-- **Wikilinks to folders or articles**: `[[folder_name]]` or `[[Article Title]]` — rendered as cards with the target's cover, title, and date or child count.
-- **Images**: `![alt](path.jpg)` or `![[photo.jpg]]` — inlined with responsive sizing. Pipe syntax (`|contain top`) works — see [[media]].
-- **Markdown links**: `[text](url)` — rendered inline.
-- **Bare URLs**: `https://example.com` on its own line — auto-linked.
+- **Wikilinks to folders or articles**: `[[folder_name]]` or `[[Article Title]]`: rendered as cards with the target's cover, title, and date or child count.
+- **Images**: `![alt](path.jpg)` or `![[photo.jpg]]`: inlined with responsive sizing. Pipe syntax (`|contain top`) works; see [[media]].
+- **Markdown links**: `[text](url)`: rendered inline.
+- **Bare URLs**: `https://example.com` on its own line: auto-linked.
 
 ## Single-link cells
 
@@ -107,7 +107,17 @@ A memory-safe systems language.
 
 **Internal link** (site-relative path: `/foo`, `./foo`, or a wikilink target) → `.moss-grid-card.link-card`. No metadata fetch. The link's brackets can contain an image, headings, and paragraphs; moss emits one `<a>` wrapping all of them.
 
-A cell with anything else — two links, text plus a link — renders as regular cell content, unwrapped. This lets you mix clickable cards and rich cells in the same grid.
+The link text may be compound. Put the image, heading, and paragraph inside the brackets and moss renders one card-link wrapping all of it:
+
+```markdown
+[![[cover.jpg]] ## Title
+
+Short description](/target)
+```
+
+Never hand-write the `<a>` wrapper yourself. Author the single markdown link and let moss emit the anchor.
+
+A cell with anything else (two links, text plus a link) renders as regular cell content, unwrapped. This lets you mix clickable cards and rich cells in the same grid.
 
 Theme CSS targets each flavor independently:
 
@@ -118,7 +128,7 @@ Theme CSS targets each flavor independently:
 
 ## Folder auto-conversion
 
-A cell whose only content is an internal link to a known folder is automatically converted into a `moss-collection-card` — the same card used by `children_style: card`. moss fetches the folder's cover image, title, and child count.
+A cell whose only content is an internal link to a known folder is automatically converted into a `moss-collection-card` (the same card used by `children_style: card`). moss fetches the folder's cover image, title, and child count.
 
 :::grid 2 {.sc-demo}
 ```markdown
@@ -177,7 +187,7 @@ Attach a named class with `{.classname}` when you need responsive layout control
 
 ```markdown
 :::grid 2 {.two-col-split}
-Main content area — headings, paragraphs, images, anything.
+Main content area: headings, paragraphs, images, anything.
 +++
 Sidebar with call-outs or metadata.
 :::
@@ -196,7 +206,7 @@ Sidebar with call-outs or metadata.
 
 The grid container renders as `<div class="moss-grid two-col-split">`, so your class sits alongside the built-in `moss-grid` and can override `grid-template-columns`.
 
-**Avoid this.** Passing a ratio (`:::grid 2 2:1 {.two-col-split}`) emits an inline `style="grid-template-columns:2fr 1fr"` on the container. Inline styles beat stylesheet rules, so your `@media` query will have no effect without `!important` on every property — a maintenance trap once the pattern spreads.
+**Avoid this.** Passing a ratio (`:::grid 2 2:1 {.two-col-split}`) emits an inline `style="grid-template-columns:2fr 1fr"` on the container. Inline styles beat stylesheet rules, so your `@media` query will have no effect without `!important` on every property (a maintenance trap once the pattern spreads).
 
 **Rule of thumb.** Use the ratio form (`:::grid 2 2:1`) for one-off layouts where responsive overrides are not needed. Use a named class the moment you need `@media` behaviour or whenever the same shape repeats across pages.
 

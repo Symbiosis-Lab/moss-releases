@@ -6,7 +6,7 @@ description: Build plugins that hook into the build pipeline.
 translationKey: docs-extend
 ---
 
-Plugins are JavaScript bundles in `.moss/plugins/{name}/`. They attach to [[hooks|five stages of the build pipeline]] — transforming content, injecting into [[slots|template slots]], deploying, or syndicating.
+Plugins are JavaScript bundles in `.moss/plugins/{name}/`. They attach to [[hooks|five stages of the build pipeline]]: transforming content, injecting into [[slots|template slots]], deploying, or syndicating.
 
 Each plugin has a [[manifest]] describing its capabilities and configuration.
 

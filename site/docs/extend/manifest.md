@@ -88,9 +88,9 @@ Plugins live in `.moss/plugins/{name}/` inside each project.
 
 Plugin configuration is resolved in priority order:
 
-1. `.moss/plugins/{name}/config.json` — highest priority
+1. `.moss/plugins/{name}/config.json` (highest priority)
 2. `.moss/plugins/{name}/config.toml`
-3. `.moss/config.toml` `[plugins.{name}]` section — lowest
+3. `.moss/config.toml` `[plugins.{name}]` section (lowest)
 
 ### Config verification
 

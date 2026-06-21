@@ -86,4 +86,4 @@ The generated HTML follows a consistent structure across all pages.
 | `.article-meta` | Date and metadata |
 | `.moss-colophon` | Footer |
 
-**Safe to modify:** Anything inside `article` and `.moss-colophon`. The navigation structure is managed by moss — add styles but avoid removing or reordering its children.
+**Safe to modify:** Anything inside `article` and `.moss-colophon`. The navigation structure is managed by moss: add styles but avoid removing or reordering its children.

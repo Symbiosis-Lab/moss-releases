@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publish fan-out</title>
+<style>
+  :root {
+    /* moss design tokens — light theme (docs/design/css.md) */
+    --moss-color-accent: #2d5a2d;
+    --moss-color-bg: #faf8f5;
+    --moss-color-text: #2c2825;
+    --moss-color-muted: #8a8580;
+    --moss-color-surface: #f4f1ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --moss-color-accent: #6abf6a;
+      --moss-color-bg: #0f0f0f;
+      --moss-color-text: #e8e4df;
+      --moss-color-muted: #8a8580;
+      --moss-color-surface: #1a1a1a;
+    }
+  }
+
+  html, body { margin: 0; height: 100%; }
+  body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: var(--moss-color-bg);
+    font-family: system-ui, -apple-system, "PingFang TC", "PingFang SC", sans-serif;
+  }
+  /* The SVG viewBox is 16/9, matching moss's embed iframe, so width:100% fills
+     the frame with no clipping; the content's own margins give breathing room. */
+  .stage {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  svg { display: block; width: 100%; height: auto; }
+
+  /* ---- shared element styling ---- */
+  .frame   { fill: var(--moss-color-surface); stroke: var(--moss-color-muted); stroke-width: 1.2; }
+  .frame-a { fill: var(--moss-color-surface); stroke: var(--moss-color-accent); stroke-width: 1.6; }
+  .glyph   { fill: none; stroke: var(--moss-color-muted); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+  .glyph-a { fill: none; stroke: var(--moss-color-accent); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+  .label   { fill: var(--moss-color-text); font-size: 11px; }
+  .label-m { fill: var(--moss-color-muted); font-size: 11px; }
+  .caption { fill: var(--moss-color-muted); font-size: 13px; }
+
+  /* arrows: drawn from source toward destination */
+  .arrow {
+    fill: none;
+    stroke: var(--moss-color-accent);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+  }
+  .head { fill: none; stroke: var(--moss-color-accent); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; opacity: 0; }
+
+  /* destination cards start faded, arrive on cue */
+  .dest { opacity: 0.35; }
+  .dest .frame { stroke-dasharray: 0; }
+
+  /* source publish button pulse */
+  .source { transform-box: fill-box; transform-origin: center; }
+
+  /* ===== timeline: ~4s active + ~1.5s hold, then restart (5.5s loop) ===== */
+
+  @keyframes pulse {
+    0%      { transform: scale(1);    }
+    6%      { transform: scale(1);    }
+    12%     { transform: scale(1.06); }
+    20%     { transform: scale(1);    }
+    100%    { transform: scale(1);    }
+  }
+  .source { animation: pulse 5.5s ease-in-out infinite; }
+
+  /* each arrow draws on a slightly staggered window: website, then email, then matters */
+  @keyframes draw1 { 0%,14%{stroke-dashoffset:200} 46%,100%{stroke-dashoffset:0} }
+  @keyframes draw2 { 0%,20%{stroke-dashoffset:200} 52%,100%{stroke-dashoffset:0} }
+  @keyframes draw3 { 0%,26%{stroke-dashoffset:200} 58%,100%{stroke-dashoffset:0} }
+  .a1 { animation: draw1 5.5s cubic-bezier(.4,0,.2,1) infinite; }
+  .a2 { animation: draw2 5.5s cubic-bezier(.4,0,.2,1) infinite; }
+  .a3 { animation: draw3 5.5s cubic-bezier(.4,0,.2,1) infinite; }
+
+  @keyframes head1 { 0%,42%{opacity:0} 48%,100%{opacity:1} }
+  @keyframes head2 { 0%,48%{opacity:0} 54%,100%{opacity:1} }
+  @keyframes head3 { 0%,54%{opacity:0} 60%,100%{opacity:1} }
+  .h1 { animation: head1 5.5s linear infinite; }
+  .h2 { animation: head2 5.5s linear infinite; }
+  .h3 { animation: head3 5.5s linear infinite; }
+
+  @keyframes arrive1 { 0%,42%{opacity:.35} 50%,100%{opacity:1} }
+  @keyframes arrive2 { 0%,48%{opacity:.35} 56%,100%{opacity:1} }
+  @keyframes arrive3 { 0%,54%{opacity:.35} 62%,100%{opacity:1} }
+  .d1 { animation: arrive1 5.5s ease-out infinite; }
+  .d2 { animation: arrive2 5.5s ease-out infinite; }
+  .d3 { animation: arrive3 5.5s ease-out infinite; }
+
+  @keyframes capIn {
+    0%   { opacity: 0; }
+    62%  { opacity: 0; }
+    72%  { opacity: 1; }
+    100% { opacity: 1; }
+  }
+  .caption { animation: capIn 5.5s ease-out infinite; }
+
+  /* ===== reduced motion: show the end-state, no movement ===== */
+  @media (prefers-reduced-motion: reduce) {
+    .source  { animation: none; transform: none; }
+    .arrow   { stroke-dashoffset: 0; animation: none; }
+    .head    { opacity: 1; animation: none; }
+    .dest    { opacity: 1; animation: none; }
+    .caption { opacity: 1; animation: none; }
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <!-- responsive: viewBox scales, no fixed-pixel overflow; reads at 375px and 720px -->
+    <svg viewBox="-24 0 409 230" role="img"
+         aria-label="One publish action fans out to a website, an email newsletter, and Matters.">
+
+      <!-- ===== source: Publish button ===== -->
+      <g class="source">
+        <rect x="18" y="92" width="78" height="36" rx="8" class="frame-a"/>
+        <text x="57" y="115" text-anchor="middle" class="label"
+              style="fill:var(--moss-color-accent); font-weight:600;">Publish</text>
+      </g>
+
+      <!-- ===== arrows (source right edge ~96,110 → each destination left edge) ===== -->
+      <!-- website (top) -->
+      <path class="arrow a1" d="M100 104 C 160 72, 200 58, 256 54"/>
+      <path class="head h1" d="M249 48 l8 6 -7 7"/>
+
+      <!-- email (middle) -->
+      <path class="arrow a2" d="M100 110 C 170 110, 200 110, 256 110"/>
+      <path class="head h2" d="M249 104 l8 6 -7 7"/>
+
+      <!-- matters (bottom) -->
+      <path class="arrow a3" d="M100 116 C 160 148, 200 162, 256 166"/>
+      <path class="head h3" d="M249 160 l8 6 -7 7"/>
+
+      <!-- ===== destinations (icon left, label right; all inside card x=262..342) ===== -->
+      <!-- website: browser window -->
+      <g class="dest d1">
+        <rect x="262" y="34" width="80" height="40" rx="6" class="frame"/>
+        <g class="glyph-a">
+          <rect x="272" y="44" width="22" height="20" rx="2"/>
+          <line x1="272" y1="50" x2="294" y2="50"/>
+          <circle cx="276" cy="47" r="0.6"/>
+          <circle cx="279" cy="47" r="0.6"/>
+        </g>
+        <text x="320" y="58" text-anchor="middle" class="label">Website</text>
+      </g>
+
+      <!-- email newsletter: envelope -->
+      <g class="dest d2">
+        <rect x="262" y="90" width="80" height="40" rx="6" class="frame"/>
+        <g class="glyph-a">
+          <rect x="272" y="100" width="24" height="18" rx="2"/>
+          <path d="M272 102 l12 8 12 -8"/>
+        </g>
+        <text x="320" y="114" text-anchor="middle" class="label">Email</text>
+      </g>
+
+      <!-- matters: plus-in-circle -->
+      <g class="dest d3">
+        <rect x="262" y="146" width="80" height="40" rx="6" class="frame"/>
+        <g class="glyph-a">
+          <circle cx="283" cy="166" r="9"/>
+          <path d="M283 161 v10 M278 166 h10"/>
+        </g>
+        <text x="320" y="170" text-anchor="middle" class="label" style="font-size:10px;">Matters</text>
+      </g>
+
+      <!-- ===== caption ===== -->
+      <!-- English / site default. Per-language copies live in the language tree
+           (zh-hant -> 一次發佈，三處抵達, zh-hans -> 一次发布，三处抵达) and resolve
+           automatically via ![[publish-fanout.html]]. -->
+      <text x="180" y="210" text-anchor="middle" class="caption">One publish, three places</text>
+    </svg>
+  </div>
+</body>
+</html>

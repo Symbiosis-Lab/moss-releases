@@ -30,11 +30,11 @@ my-site/
 
 Each language tree mirrors the site structure. URLs follow the same pattern: `/`, `/about/`, `/posts/hello/` for the default language; `/zh-hans/`, `/zh-hans/about/`, etc. for others.
 
-This is the recommended structure — clear, scalable, and maps 1:1 to the URL layout visitors see.
+This is the recommended structure: clear, scalable, and maps 1:1 to the URL layout visitors see.
 
 ## Sibling suffix (legacy)
 
-moss also accepts per-file language suffixes — `.zh-hans.md`, `.zh-hant.md`, `.en.md`:
+moss also accepts per-file language suffixes `.zh-hans.md`, `.zh-hant.md`, `.en.md`:
 
 ```
 my-site/
@@ -44,22 +44,22 @@ my-site/
 └── about.zh-hans.md
 ```
 
-This works for small sites, but mixing it with folder-per-language in the same folder is ambiguous — stick to one style per site.
+This works for small sites, but mixing it with folder-per-language in the same folder is ambiguous. Stick to one style per site.
 
-Bare `.zh` is accepted as shorthand for `.zh-hans` — `about.zh.md` resolves exactly like `about.zh-hans.md` (URL `/zh-hans/about/`, `lang="zh-hans"`). Use whichever form you prefer; `.zh-hant` / `.zh-tw` remain distinct for Traditional Chinese.
+Bare `.zh` is accepted as shorthand for `.zh-hans`: `about.zh.md` resolves exactly like `about.zh-hans.md` (URL `/zh-hans/about/`, `lang="zh-hans"`). Use whichever form you prefer; `.zh-hant` / `.zh-tw` remain distinct for Traditional Chinese.
 
 ## Mixed-structure warning
 
-If a single language uses **both** styles — say, `zh-hans/index.md` (folder-per-language) AND `index.zh-hans.md` (sibling suffix) — moss emits a compile-time warning:
+If a single language uses **both** styles, say `zh-hans/index.md` (folder-per-language) and `index.zh-hans.md` (sibling suffix), moss emits a compile-time warning:
 
 ```
 [warn] Mixed multilingual structure detected for language 'zh-hans'. Found
        both sibling suffix file (index.zh-hans.md) and folder-based
-       translation (zh-hans/...). Prefer folder-per-language — see
+       translation (zh-hans/...). Prefer folder-per-language; see
        https://docs.mosspub.com/multilingual for the canonical pattern.
 ```
 
-Both styles still compile; the warning is just a nudge. To silence it, pick one style per language and move the other files over. Folder-per-language (the canonical shape above) is almost always the better choice — URLs mirror the folder tree, and adding more pages doesn't keep stacking `.lang.md` copies next to originals.
+Both styles still compile; the warning is just a nudge. To silence it, pick one style per language and move the other files over. Folder-per-language (the canonical shape above) is almost always the better choice: URLs mirror the folder tree, and adding more pages doesn't keep stacking `.lang.md` copies next to originals.
 
 Different languages may use different styles without triggering the warning; it only fires when the **same** language appears in both shapes.
 
@@ -113,7 +113,7 @@ Then the Simplified Chinese tree serves at `/` and English at `/en/`.
 
 When two or more language versions of a page are linked (via matching paths in folder-per-language, matching filenames in sibling-suffix, or matching `translationKey`), moss emits a language toggle in the site header.
 
-The toggle shows the page's current language, followed by links to each available translation. Nothing to configure — it appears automatically as soon as a second language file exists.
+The toggle shows the page's current language, followed by links to each available translation. Nothing to configure. It appears automatically as soon as a second language file exists.
 
 ## Shared partials across languages
 
@@ -132,6 +132,6 @@ See [[author/wikilinks-and-embeds]] for the full transclusion syntax.
 
 ## Related pages
 
-- [[author/frontmatter]] — `lang`, `translationKey`, and the full field reference
-- [[author/wikilinks-and-embeds]] — transclusion and cross-page linking
-- [[structure]] — how folders become URLs
+- [[author/frontmatter]]: `lang`, `translationKey`, and the full field reference
+- [[author/wikilinks-and-embeds]]: transclusion and cross-page linking
+- [[structure]]: how folders become URLs

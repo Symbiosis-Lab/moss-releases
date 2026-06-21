@@ -20,13 +20,13 @@ lang: zh-hant
 
 ## CI 與自動化
 
-moss 可以在無介面的環境下運行——不需要 GUI：
+moss 可以在無介面的環境下運行，無需 GUI：
 
 ```bash
 moss compile /path/to/folder --no-plugins
 ```
 
-編譯輸出是完整的靜態網站，位於 `.moss/site/`——標準的 HTML、CSS 和 JS，可以部署到任何地方。
+編譯輸出是完整的靜態網站，位於 `.moss/site/`，為標準的 HTML、CSS 和 JS，可以部署到任何地方。
 
 ## 開發
 

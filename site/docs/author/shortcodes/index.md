@@ -6,7 +6,7 @@ description: Layout blocks and components that extend markdown.
 translationKey: docs-author-shortcodes-index
 ---
 
-Shortcodes are special blocks in your markdown that create layouts and components beyond what standard markdown offers — grids, galleries, hero images, and more. They use `:::` block syntax. ^def-shortcode
+Shortcodes are special blocks in your markdown that create layouts and components beyond what standard markdown offers: grids, galleries, hero images, and more. They use `:::` block syntax. ^def-shortcode
 
 ```markdown
 :::grid 2
@@ -34,6 +34,18 @@ Contact info
 ```
 
 Existing pages that never nested fences continue to work unchanged.
+
+Nesting two fences at the same colon count emits a build warning and renders as literal text. Always give the inner fence more colons than the outer.
+
+## Cell dividers
+
+Inside `:::grid` and `:::buttons`, cells are separated by a line containing only `+++`. A block with no `+++` is a single cell.
+
+`---` is the standard markdown thematic break, a horizontal rule. It is never a moss cell control character. Use `+++` to split cells.
+
+## Configuration
+
+Pass options in the attribute block, not the body. For example, `:::subscribe {placeholder="..." button="..."}` or `:::grid {cols=2}` (the positional form `:::grid 2` works too). Descriptive prose belongs above or below the block, never inside the option line.
 
 ## Shortcodes
 

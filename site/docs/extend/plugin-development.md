@@ -6,7 +6,7 @@ description: Build your own moss plugins.
 translationKey: plugin-development
 ---
 
-moss plugins are TypeScript/JavaScript bundles that run in the Tauri webview context. They interact with moss through lifecycle hooks — transforming content, deploying to external services, or syndicating published pages.
+moss plugins are TypeScript/JavaScript bundles that run in the Tauri webview context. They interact with moss through lifecycle hooks: transforming content, deploying to external services, or syndicating published pages.
 
 ## Quick start
 

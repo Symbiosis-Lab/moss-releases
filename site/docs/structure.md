@@ -25,7 +25,7 @@ about.md                →  /about/
 index.md                →  /
 ```
 
-Breadcrumbs reflect this same hierarchy — set `breadcrumb: true` on the homepage and every page gets an automatic trail (`Home / Work / Farewell`). No hand-rolled breadcrumb blocks needed.
+Breadcrumbs reflect this same hierarchy: set `breadcrumb: true` on the homepage and every page gets an automatic trail (`Home / Work / Farewell`). No hand-rolled breadcrumb blocks needed.
 
 ### Excluded folders
 
@@ -35,7 +35,7 @@ The following folder names are reserved for static assets and are **not** treate
 
 Any folder whose name starts with `.` (dot) or `_` (underscore) is also excluded.
 
-Files inside these folders are served as-is but will not become pages or sections. Put images here and reference them with `![[filename.ext]]` wikilinks — moss resolves them regardless of where the source page lives.
+Files inside these folders are served as-is but will not become pages or sections. Put images here and reference them with `![[filename.ext]]` wikilinks; moss resolves them regardless of where the source page lives.
 
 ## Folder pages
 
@@ -86,7 +86,7 @@ Prefix a folder with `_` to exclude it entirely: `_drafts/` is ignored.
 
 ## Sort order
 
-Children are sorted: subfolders first (alphabetically), then by `date` (newest first), then alphabetically. Override with `weight` — lower numbers sort first. ^sort-order
+Children are sorted: subfolders first (alphabetically), then by `date` (newest first), then alphabetically. Override with `weight` (lower numbers sort first). ^sort-order
 
 ## Navigation
 

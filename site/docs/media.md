@@ -6,7 +6,7 @@ description: Images, video, notebooks, and other files in your site.
 translationKey: docs-media
 ---
 
-Put images, videos, and other files anywhere in your project folder. Reference them from markdown and moss handles the rest — path resolution, optimization, and progressive loading. ^intro
+Put images, videos, and other files anywhere in your project folder. Reference them from markdown and moss handles the rest: path resolution, optimization, and progressive loading. ^intro
 
 ## Images
 
@@ -22,7 +22,7 @@ Or with a wikilink:
 ![[sunset.jpg]]
 ```
 
-moss resolves the path automatically — you don't need to worry about relative vs absolute paths. It also extracts the image dimensions and generates a tiny placeholder (a blurred background color) so the page doesn't jump as images load.
+moss resolves the path automatically. You don't need to worry about relative vs absolute paths. It also extracts the image dimensions and generates a tiny placeholder (a blurred background color) so the page doesn't jump as images load.
 
 Supported formats: `.jpg`, `.jpeg`, `.png`, `.gif`, `.svg`, `.webp`, `.avif`.
 
@@ -34,13 +34,13 @@ Drop video files in your folder and reference them the same way:
 ![[demo.mov]]
 ```
 
-moss auto-transcodes `.mov` files to `.mp4` (H.264 + AAC) in the background. The preview opens immediately — video loads progressively as transcoding completes.
+moss auto-transcodes `.mov` files to `.mp4` (H.264 + AAC) in the background. The preview opens immediately, and video loads progressively as transcoding completes.
 
 You can reference the original `.mov` filename; moss serves the converted `.mp4` automatically.
 
 ## Display control
 
-Control how media displays using pipe syntax — append fit and position values after a `|`:
+Control how media displays using pipe syntax: append fit and position values after a `|`:
 
 ```markdown
 ![[photo.jpg|contain top-left]]
@@ -66,7 +66,7 @@ This syntax works in wikilinks, markdown images, and bare filenames inside short
 
 ## Notebooks
 
-Jupyter notebooks (`.ipynb` files) run directly in the browser via JupyterLite — no server needed, no Python installation required. The entire runtime (~20 MB) runs as WebAssembly in the visitor's browser.
+Jupyter notebooks (`.ipynb` files) run directly in the browser via JupyterLite, with no server needed and no Python installation required. The entire runtime (~20 MB) runs as WebAssembly in the visitor's browser.
 
 Place a `.ipynb` file in your project and moss makes it available alongside your other content.
 

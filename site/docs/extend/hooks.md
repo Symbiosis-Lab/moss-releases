@@ -2,7 +2,7 @@
 title: Hooks
 uid: 2d40c48f
 weight: 2
-description: The plugin lifecycle — five capabilities and their contexts.
+description: The plugin lifecycle: five capabilities and their contexts.
 translationKey: docs-extend-hooks
 ---
 
@@ -36,9 +36,13 @@ Use for: fetching external data, transforming source files, pre-processing conte
 | `project_info` | object | `total_files`, `homepage_file`, `site_name`, `lang` |
 | `config` | object | Plugin configuration values |
 
+**Data contract:** A process hook that fetches external data writes JSON to `.moss/data/social/<plugin>.json`. The build core does not read this file. Enhance hooks and other plugins consume it.
+
+The generated source-to-output map (paths plus uids) is at `.moss/build/article-map.json`.
+
 ## generate
 
-Builds or transforms source content into HTML output. **Only one plugin** can have this capability — it replaces moss's built-in generator.
+Builds or transforms source content into HTML output. **Only one plugin** can have this capability: it replaces moss's built-in generator.
 
 Use for: alternative SSG backends (Hugo, Astro, Jekyll).
 
@@ -98,7 +102,7 @@ How plugins run depends on the compilation mode:
 
 | Mode | Behavior |
 |------|----------|
-| **Blocking** | `moss compile` — waits for process hooks to complete |
-| **NonBlocking** | Preview mode — fires process hooks but doesn't wait |
-| **SlotsOnly** | Watch rebuilds — skips process/generate, collects enhance slots only |
-| **Skip** | `--no-plugins` — bypasses all plugin hooks |
+| **Blocking** | `moss compile`: waits for process hooks to complete |
+| **NonBlocking** | Preview mode: fires process hooks but doesn't wait |
+| **SlotsOnly** | Watch rebuilds: skips process/generate, collects enhance slots only |
+| **Skip** | `--no-plugins`: bypasses all plugin hooks |

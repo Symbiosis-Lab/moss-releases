@@ -89,9 +89,9 @@ lang: zh-hant
 
 外掛設定按以下優先順序解析：
 
-1. `.moss/plugins/{name}/config.json`——最高優先
+1. `.moss/plugins/{name}/config.json`（最高優先）
 2. `.moss/plugins/{name}/config.toml`
-3. `.moss/config.toml` 中的 `[plugins.{name}]` 區段——最低優先
+3. `.moss/config.toml` 中的 `[plugins.{name}]` 區段（最低優先）
 
 ### 設定驗證
 
