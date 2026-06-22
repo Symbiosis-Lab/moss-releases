@@ -2,5 +2,4 @@ node_modules/
 .DS_Store.superpowers/
 site/.moss/build/
 site/.moss/cache/
-site/.moss/state.toml
 .DS_Store

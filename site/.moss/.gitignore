@@ -1,5 +1,4 @@
 identity/
 data/
-state.toml
 build/cache/
 build/staging/
