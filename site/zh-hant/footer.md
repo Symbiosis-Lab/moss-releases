@@ -1,1 +1,1 @@
-[共生實驗室](https://symbiosis-lab.org) · 2026
+[共生實驗室](https://symbiosis-lab.org) · [隱私](/zh-hant/privacy) · 2026

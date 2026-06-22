@@ -1,1 +1,1 @@
-[Symbiosis Lab](https://symbiosis-lab.org) · 2026
+[Symbiosis Lab](https://symbiosis-lab.org) · [Privacy](/privacy) · 2026
