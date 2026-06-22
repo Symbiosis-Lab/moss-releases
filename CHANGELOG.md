@@ -2,6 +2,35 @@
 
 All notable changes to moss will be documented here.
 
+## [0.7.9] - 2026-06-22
+
+### New
+
+- **Localized in three languages** — the whole app now speaks English, Simplified Chinese, and Traditional Chinese: editor, launcher, tray, settings, onboarding, the publish flow, and progress messages. Your published site also gets the correct language tags (Traditional Chinese is no longer bucketed as Simplified).
+- **A real email composer** — sending a post to subscribers opens a full editor in the side panel (not a cramped modal), with an editable from-name, an auto-filled subject, a live preview field, and a clear recap of exactly who will receive it before you hit send. The email is its own draft and never rewrites your post.
+- **Moderate comments from the preview** — hover any comment while previewing your published site and click Hide; it disappears on the next publish, with an Undo. Hidden comments stay hidden and can't reappear when comments sync.
+- **Private notes in the editor** — press ⌘⇧M to leave a comment on your own draft. Click the gutter marker to read, edit, or resolve it. Notes never reach your published page or your email.
+- **Sharper live preview** — clicking into bold, italic, a link, or inline code now reveals just that piece of raw markdown instead of the whole line, and a revealed link keeps its colored text while showing its URL muted beside it.
+- **Drag files straight in** — drag images, video, audio, or PDFs from Finder/Explorer (or from the file tree) into the editor and moss imports them and drops in the right link at your cursor. Drop a whole folder to import it. Paste and drop now behave the same.
+- **A calmer publish** — publishing shows a single progress ring covering every step (build, deploy, email, Matters), the editor locks for the few seconds a publish is in flight so an edit can't fork what ships, and syndication to Matters auto-detects when your post goes live.
+- **Faster, safer deploys** — each build is an immutable snapshot, static files ship with content-hash names (no more stale-cache surprises after deploy), large files upload in chunks (no more Cloudflare timeouts), the progress bar fills by bytes uploaded, and a deploy that would wipe an unexpected number of files is blocked.
+- **`listed: false`** — keep a page reachable at its URL but out of your feeds, nav, sitemap, and RSS. (`draft: true` still keeps a page out of your published site entirely.)
+- **A launcher that stays put** — the launcher window now coexists with your editor and reopens instantly; Settings opens over whatever you're doing without disrupting it; the editor opens and closes with a smooth animation and the first file opens instantly.
+- **Cover colors and more formats** — folder and grid cards pick up a cover color from the page they link to (or an explicit `color=` you set), and avif images and aac audio are now supported.
+- **Crash reporting, scoped to crashes** — product analytics are gone; the only diagnostic is opt-out crash reporting, with file paths and personal data scrubbed before anything leaves your machine.
+- **Matters handles login expiry gracefully** — an expired Matters session is detected up front with a clear prompt to log back in instead of failing mid-sync, and audio, images, and covers now upload reliably.
+
+### Fixed
+
+- The preview no longer shows a blank blueprint grid on cold start — it serves your last build immediately.
+- Opening an article right after you rename its URL no longer gets stuck on a 404.
+- Deploys no longer re-upload unchanged videos every session, and videos are no longer missing from the upload.
+- Draft pages no longer leak into your top navigation or RSS feed.
+- The publish-in-progress divider no longer flashes mid-drag, and the editor/preview no longer leave a gap or overlap at rest.
+- Dark mode now reaches the editor and the email composer; the window's shadow follows its rounded corners.
+- Matters: only a confirmed publish marks a post as synced; stray `#` permalinks no longer appear in Matters posts; comments now download for short-link Matters URLs.
+- Building from the command line with a relative folder path no longer leaves the preview pointed at a stale build.
+
 ## [0.7.8] - 2026-06-11
 
 ### New
