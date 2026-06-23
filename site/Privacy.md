@@ -1,14 +1,11 @@
 ---
-title: Privacy
-description: What moss collects, why, and your choices — in plain language.
 translationKey: privacy
-lang: en
 uid: 9f2c7a10
+lang: en
+description: What moss collects, why, and your choices — in plain language.
+nav: false
 children: false
 ---
-
-# Privacy
-
 moss is a local‑first publishing tool made by **Symbiosis Lab**. The short version: **your writing stays on your computer**, we collect as little as we can, and there are **no ads and no usage tracking**.
 
 This is an early policy — moss is in active development — and we'll expand it as the product grows. If anything here is unclear, [get in touch](#contact).
