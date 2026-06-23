@@ -50,12 +50,36 @@
 
   var videoReadyTimer = null;
   var VIDEO_TIMEOUT_MS = 8000;
+  // Mobile browsers (iOS Low-Power Mode, data-saver, strict autoplay) reject
+  // muted autoplay, so video.play() fails on first load and the leaf video
+  // never reaches .video-ready. We then retry on the first user gesture — a
+  // tap satisfies the autoplay policy — so the leaves still appear on mobile.
+  var gestureRetry = null;
 
   function onVideoPlaying() {
     clearTimeout(videoReadyTimer);
     videoReadyTimer = null;
     video.classList.add("video-ready");
     video.removeEventListener("playing", onVideoPlaying);
+  }
+
+  function disarmGestureRetry() {
+    if (!gestureRetry) return;
+    document.removeEventListener("pointerdown", gestureRetry);
+    gestureRetry = null;
+  }
+
+  function armGestureRetry() {
+    if (gestureRetry) return;
+    gestureRetry = function () {
+      disarmGestureRetry();
+      if (!isSunlight()) return;
+      // Re-arm the playing listener and retry now that a user gesture exists.
+      video.addEventListener("playing", onVideoPlaying);
+      video.play().catch(function () {});
+    };
+    // pointerdown covers touch + mouse; passive — we never preventDefault.
+    document.addEventListener("pointerdown", gestureRetry, { passive: true });
   }
 
   function enterSunlight() {
@@ -72,10 +96,12 @@
     video.classList.remove("video-ready");
     video.addEventListener("playing", onVideoPlaying);
     video.play().catch(function () {
-      // Autoplay blocked or video failed — static layers are enough
-      video.removeEventListener("playing", onVideoPlaying);
+      // Autoplay blocked (common on mobile / iOS Low-Power Mode). Keep the
+      // static layers and retry playback on the first user gesture so the
+      // leaf video still appears on mobile after a tap.
       clearTimeout(videoReadyTimer);
       videoReadyTimer = null;
+      armGestureRetry();
     });
 
     // Safety: if video hasn't started in 8s, leave it hidden
@@ -88,6 +114,7 @@
   function exitSunlight() {
     clearTimeout(videoReadyTimer);
     videoReadyTimer = null;
+    disarmGestureRetry();
     video.removeEventListener("playing", onVideoPlaying);
     video.classList.remove("video-ready");
     video.pause();

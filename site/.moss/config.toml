@@ -1,5 +1,6 @@
-schema_version = 3
+schema_version = 4
 
 [site]
+ai_policy = "unrestricted"
 lang = "en"
 rss_footer = false

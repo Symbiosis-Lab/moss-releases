@@ -2,7 +2,7 @@
 
 This repository hosts releases and is the issue tracker for [moss](https://mosspub.com) — a desktop publishing app for macOS.
 
-Source code is not public. To build plugins or extend moss, see [moss-api](https://github.com/Symbiosis-Lab/moss-api) and [moss-plugins](https://github.com/Symbiosis-Lab/moss-plugins).
+Source code is mostly open-sourced in [moss-core](https://github.com/Symbiosis-Lab/moss-core), [moss-api](https://github.com/Symbiosis-Lab/moss-api) and [moss-plugins](https://github.com/Symbiosis-Lab/moss-plugins).
 
 ## Download
 
