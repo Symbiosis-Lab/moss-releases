@@ -1,0 +1,19 @@
+---
+title: 申请
+description: 申请测试青苔——我们正在从 Matters 邀请第一批写作者。
+translationKey: apply
+lang: zh-hans
+uid: a7710002
+children: false
+---
+
+<!-- 文案待 刘果 母语审校 + 双重确认（double opt-in）措辞调整。 -->
+
+# 邀请第一批写作者
+
+青苔将你的文件夹一键变成网站。它让你在自己的电脑中写作，帮你把内容发布到自己的域名，并同步到邮箱列表与 Matters.Town。现在分批邀请 macOS 用户测试；我们会在轮到你时寄出一封邮件。
+
+:::apply
+:::
+
+*不收集隐私数据 · 无第三方追踪*
