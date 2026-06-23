@@ -50,6 +50,12 @@ Body H1s anywhere else are section headers, not document titles. moss does not i
 
 To suppress the injected title on a specific article (for example, a bespoke landing page), set `title: ""` (an explicit empty string). This is distinct from omitting the field, which falls back to the filename. Folder and index pages never inject; their bodies render as authored.
 
+### Localized filenames
+
+Because the title falls back to the filename, name a file in its own language and let moss title the page for you — `隐私.md` renders as "隐私", `Privacy.md` as "Privacy", with no `title:` field and no body `# H1`. When the filename isn't ASCII, pin a short, stable URL with the `url` field so the published path stays clean: `url: privacy` publishes `隐私.md` at `/privacy`.
+
+Link to a section by its heading anchor — `[Contact](#contact)` — not a hand-written `<a id>`. moss generates the id from the heading text, CJK included.
+
 ## Navigation
 
 These fields control how the page appears in the site's navigation and chrome.
