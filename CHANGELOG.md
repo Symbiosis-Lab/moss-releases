@@ -2,6 +2,26 @@
 
 All notable changes to moss will be documented here.
 
+## [0.7.10] - 2026-06-22
+
+### New
+
+- **青苔 — the app speaks Chinese as 青苔.** In Chinese, the app name, menus, tray, and onboarding now read 青苔 (the calque of the "moss" brand). English is unchanged.
+- **Redesigned App Settings.** A cleaner launcher panel — a draggable titlebar that homes the window's traffic lights, with every setting's description always visible (no hover, no layout shift).
+- **New files flash when created.** Files that appear in your vault — including during a Matters import — briefly highlight so you can spot them.
+- **Smoother panel transitions.** Opening a plugin's external page (e.g. a Matters draft) now cross-fades from the editor instead of snapping.
+
+### Fixed
+
+- The editor could become uneditable after publishing — an invisible overlay left over from the publish animation swallowed clicks, so you couldn't place the cursor. It's now cleared the moment publishing finishes.
+- The empty editor (no file open) showed a doubled divider; it's now a single line.
+- "Published with moss" now follows your system language instead of defaulting to English when a site declares none.
+- Canceling a Matters sign-in returns you to the editor, with a calmer sign-in label.
+- A Matters import now titles your homepage from the vault folder name rather than your Matters display name.
+- Comment author names now link to the author's website, and the reply arrow is monochrome.
+- Fixed a race that could mis-render a plugin's browser panel when it first opened.
+- Onboarding hints now reset correctly when you return to the editor.
+
 ## [0.7.9] - 2026-06-22
 
 ### New
