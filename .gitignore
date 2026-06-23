@@ -1,5 +1,7 @@
 node_modules/
-.DS_Store.superpowers/
+.superpowers/
 site/.moss/build/
 site/.moss/cache/
+site/.moss/*.bak-*
+target/
 .DS_Store
