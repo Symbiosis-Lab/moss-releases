@@ -26,6 +26,8 @@ Frontmatter is optional. A file without it still becomes a page. moss uses the f
 
 Frontmatter uses a **fixed schema**: moss only recognizes the fields listed on this page. Arbitrary custom fields are silently ignored. If you need custom per-page metadata, store it in body content: a markdown paragraph, a `::: {.meta}` fenced div, or a data table.
 
+Every recognized field is also discoverable via `moss describe --json`, which prints the full schema (including default values) as machine-readable JSON. The human-readable version is at [docs/contract/reference.md](/contract/reference/).
+
 `description:` is for SEO meta tags, Open Graph previews, and sitemap summaries. It is **not** rendered as a visible page deck. For a visible subtitle or lead paragraph, use a `> blockquote` immediately after the `# H1`. The default theme styles `h1 + blockquote` as a deck.
 
 ## Identity
@@ -79,7 +81,7 @@ These fields control how a [[structure#^folder-page|folder page]] displays its c
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
 | `children` | boolean | `true` | Show child page list on section pages |
-| `children_style` | string | `"list"` | `"list"`, `"card"`, or `"summary"` |
+| `children_style` | string | `"list"` | `"list"`, `"summary"`, `"card"`, or `"minimal"` |
 | `children_group` | string | `"none"` | Group by `"year"` or `"none"` |
 | `children_depth` | string | `"direct"` | `"direct"` (immediate children) or `"all"` (all descendants) |
 | `children_source` | string | (none) | Wikilink to folder whose children to show instead |
@@ -88,6 +90,8 @@ These fields control how a [[structure#^folder-page|folder page]] displays its c
 `children_source` takes a wikilink target, e.g. `children_source: "[[news]]"`.
 
 Card layout uses the `cover` image from each child's frontmatter.
+
+`children_style: minimal` renders a compact, year-grouped letter-paper text index — one line per article, sorted by date with year headings. It is well-suited for dense archives and writing indexes where card covers or summaries would add noise.
 
 Set `children: false` to fully opt out of the auto-emitted child listing on a
 folder page or the homepage. This suppresses both listing styles: the inline

@@ -9,7 +9,7 @@ lang: zh-hans
 
 ## 自定义样式表
 
-在项目的 `.moss/theme/` 目录下创建 `style.css`（moss 在你打开文件夹时会自动创建 `.moss/theme/`）。moss 在默认主题之后加载它，你的规则会覆盖默认值。
+在项目的 `.moss/theme/` 目录下创建 `style.css`（moss 在你打开文件夹时会自动创建 `.moss/theme/`）。moss 在默认主题之后加载它，你的规则会覆盖默认值。不需要写 `!important`，也不需要手写 `@layer` —— moss 会把你的 `style.css` 放进层叠顺序最靠后的 `themes` 层，让它自然胜出。
 
 ```
 my-site/
@@ -30,6 +30,9 @@ my-site/
 
 不需要构建步骤，不需要配置。文件自动加载。
 
+> [!tip] 发现所有变量
+> 运行 `moss describe --json` 可列出全部 `--moss-*` 变量及其亮色/暗色默认值，也可在 `docs/contract/reference.md` 查阅人类可读的完整参考表。
+
 > [!note] 自托管字体
 > 把 `.woff2` 文件放在 `.moss/theme/fonts/` 下，在 `style.css` 中用 `@font-face { src: url('fonts/myfont.woff2') }` 引用。`.moss/theme/` 目录作为站点根目录的兄弟目录对外提供。
 
@@ -40,12 +43,21 @@ my-site/
 <!-- auto:start:css-typography -->
 | 变量 | 默认值 | 说明 |
 |------|--------|------|
-| `--moss-font-body` | 系统无衬线字体栈 | 正文字体 |
-| `--moss-font-heading` | 继承正文 | 标题字体 |
-| `--moss-font-mono` | ui-monospace, SFMono-Regular | 代码字体 |
-| `--moss-font-serif` | Iowan Old Style, 衬线字体栈 | 衬线字体（配合字体切换使用） |
-| `--moss-font-size-base` | `1.125rem` | 基准字号 |
-| `--moss-font-weight` | `320` | 默认字重 |
+| `--moss-font-body` | 系统无衬线字体栈 | 正文字体族 |
+| `--moss-font-heading` | 继承正文 | 标题字体族 |
+| `--moss-font-mono` | ui-monospace, SFMono-Regular | 代码字体族 |
+| `--moss-font-weight-body` | `320` | 正文字重 |
+| `--moss-font-heading-weight` | `500` | 标题字重 |
+| `--moss-reading-size` | `1.125rem` | 阅读正文字号 |
+| `--moss-reading-size-base` | `1rem` | 基准字号（较小情境） |
+| `--moss-size-2xs` | `0.625rem` | 字号刻度 2xs |
+| `--moss-size-xs` | `0.75rem` | 字号刻度 xs |
+| `--moss-size-sm` | `0.875rem` | 字号刻度 sm |
+| `--moss-size-md` | `1rem` | 字号刻度 md |
+| `--moss-size-lg` | `1.125rem` | 字号刻度 lg |
+| `--moss-size-xl` | `1.25rem` | 字号刻度 xl |
+| `--moss-size-2xl` | `1.5rem` | 字号刻度 2xl |
+| `--moss-size-3xl` | `1.875rem` | 字号刻度 3xl |
 <!-- auto:end:css-typography -->
 
 ### 颜色
@@ -54,10 +66,16 @@ my-site/
 | 变量 | 默认值 | 说明 |
 |------|--------|------|
 | `--moss-color-accent` | `#2d5a2d` | 链接、高亮、强调元素 |
+| `--moss-color-accent-hover` | 略深于 accent | 悬停状态强调色 |
+| `--moss-color-accent-quiet` | 半透明 accent | 柔和的强调背景 |
+| `--moss-color-ui-accent` | `var(--moss-color-accent)` | 导航栏、按钮等界面控件色；设为中性色可实现"安静界面" |
 | `--moss-color-bg` | `#faf8f5` | 页面背景色 |
 | `--moss-color-text` | `#2c2825` | 主文字色 |
-| `--moss-color-muted` | `#8a8580` | 次要/弱化文字色 |
+| `--moss-color-text-secondary` | `#6b6760` | 次要文字色（日期、标签等） |
+| `--moss-color-muted` | `#8a8580` | 弱化文字色 |
 | `--moss-color-surface` | `#f4f1ec` | 卡片和表面背景色 |
+| `--moss-border-light` | 半透明 | 轻边框 |
+| `--moss-border-medium` | 半透明偏深 | 中等边框 |
 <!-- auto:end:css-colors -->
 
 ### 布局
@@ -88,12 +106,24 @@ my-site/
 
 ## 深色模式
 
-深色模式自动跟随系统设置。用以下选择器自定义深色模式配色：
+moss 在首次渲染前就已通过一段内联脚本读取 `localStorage["moss-theme"]` 和系统 `prefers-color-scheme`，将 `data-theme` 设置到 `<html>` 上。因此你只需覆盖一个选择器，就能同时应对主题切换和系统偏好：
 
 ```css
-[data-theme="dark"] {
+:root[data-theme="dark"] {
   --moss-color-bg: #0f0f0f;
   --moss-color-accent: #6abf6a;
+}
+```
+
+无需另写 `@media (prefers-color-scheme: dark)` —— `[data-theme="dark"]` 已经覆盖了两种场景。
+
+## 安静界面
+
+`--moss-color-ui-accent` 控制导航、按钮等站点控件的颜色，默认继承 `--moss-color-accent`。若希望界面控件保持中性、只让内容链接显示强调色，可将其设为文字色：
+
+```css
+:root {
+  --moss-color-ui-accent: var(--moss-color-text);
 }
 ```
 

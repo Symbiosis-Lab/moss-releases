@@ -29,6 +29,8 @@ my-site/
 
 No build step, no config entry. The file is loaded automatically.
 
+Your rules always win — you never need `!important` and you should not write your own `@layer`. moss loads your `style.css` into the last CSS layer (`@layer themes`), so it wins by layer order over all of moss's built-in styles.
+
 Put every rule in `.moss/theme/style.css`. moss does not honor inline `style="..."` in markdown, because inline styles cannot be themed, overridden, or reused.
 
 > [!note] Self-hosted fonts
@@ -40,29 +42,47 @@ moss mirrors `.moss/theme/` verbatim to `/_moss/theme/` in the built site, so `s
 
 ## Variables
 
+Every `--moss-*` CSS custom property is discoverable. Run `moss describe --json` to see all tokens with their light and dark values. The human-readable reference is at [docs/contract/reference.md](/contract/reference/).
+
+The tables below cover the most commonly customized tokens.
+
 ### Typography
 
 <!-- auto:start:css-typography -->
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `--moss-font-body` | system sans-serif stack | Body text font |
-| `--moss-font-heading` | inherits body | Heading font |
-| `--moss-font-mono` | ui-monospace, SFMono-Regular | Code font |
-| `--moss-font-serif` | Iowan Old Style, serif stack | Serif font (used with font toggle) |
-| `--moss-font-size-base` | `1.125rem` | Base font size |
-| `--moss-font-weight` | `320` | Default font weight |
+| `--moss-font-body` | system sans-serif stack | Body text font family |
+| `--moss-font-heading` | inherits body | Heading font family |
+| `--moss-font-mono` | ui-monospace, SFMono-Regular | Code font family |
+| `--moss-font-weight-body` | `320` | Body text weight |
+| `--moss-font-heading-weight` | `500` | Heading weight |
+| `--moss-size-sm` | `0.875rem` | Small text size |
+| `--moss-size-md` | `1rem` | Base text size |
+| `--moss-size-lg` | `1.125rem` | Large text size |
+| `--moss-size-xl` | `1.25rem` | Extra large text size |
+| `--moss-size-2xl` | `1.5rem` | 2× extra large text size |
+| `--moss-size-3xl` | `2rem` | 3× extra large text size |
+| `--moss-reading-size` | `1.125rem` | Article body reading size |
 <!-- auto:end:css-typography -->
+
+The full size scale runs `--moss-size-{2xs,xs,sm,md,lg,xl,2xl,3xl}`. Run `moss describe --json` for the complete list.
 
 ### Colors
 
 <!-- auto:start:css-colors -->
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `--moss-color-accent` | `#2d5a2d` | Links, highlights, accent elements |
+| `--moss-color-accent` | `#2d5a2d` | Links, highlights, content accent |
 | `--moss-color-bg` | `#faf8f5` | Page background |
 | `--moss-color-text` | `#2c2825` | Primary text |
-| `--moss-color-muted` | `#8a8580` | Secondary/muted text |
+| `--moss-color-text-secondary` | `#6b6560` | Secondary / muted text |
+| `--moss-color-muted` | `#8a8580` | Placeholder and subtle text |
 | `--moss-color-surface` | `#f4f1ec` | Card and surface background |
+| `--moss-color-ui-accent` | `var(--moss-color-accent)` | Nav links, buttons, site controls |
+| `--moss-color-accent-hover` | (darker accent) | Accent color on hover |
+| `--moss-color-accent-quiet` | (translucent accent) | Subtle accent tint |
+| `--moss-border-light` | `#e8e4de` | Light divider and border color |
+| `--moss-border-medium` | `#d4cfc8` | Medium border color |
 <!-- auto:end:css-colors -->
 
 ### Layout
@@ -93,12 +113,24 @@ moss mirrors `.moss/theme/` verbatim to `/_moss/theme/` in the built site, so `s
 
 ## Dark mode
 
-Dark mode follows the system preference automatically. Target the dark mode selector to customize:
+moss sets `data-theme` on `<html>` before first paint — reading `localStorage["moss-theme"]` and falling back to the OS `prefers-color-scheme`. This means one block covers both the toggle and the system preference. You do not need `@media (prefers-color-scheme: dark)`.
 
 ```css
-[data-theme="dark"] {
+:root[data-theme="dark"] {
   --moss-color-bg: #0f0f0f;
   --moss-color-accent: #6abf6a;
+}
+```
+
+That single block applies whenever dark mode is active, regardless of whether the visitor toggled it or their OS chose it.
+
+## Quiet chrome
+
+`--moss-color-ui-accent` (defaults to `var(--moss-color-accent)`) controls the nav links, buttons, and site controls. Set it to a neutral to make the chrome recede while content links keep the accent:
+
+```css
+:root {
+  --moss-color-ui-accent: var(--moss-color-text);
 }
 ```
 

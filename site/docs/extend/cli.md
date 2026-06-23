@@ -11,12 +11,13 @@ translationKey: docs-extend-cli
 | Command | Description |
 |---------|-------------|
 | `moss preview <folder>` | Open folder in preview with file watching and hot reload |
-| `moss build <folder>` | Build folder to static site (output in `.moss/build/site/`) |
+| `moss build <folder>` | Build folder to static site (output in `.moss/build/current/`) |
 | `moss build <folder> --serve` | Build and start a local HTTP server |
 | `moss build <folder> --watch` | Build and watch for file changes |
 | `moss build <folder> --no-plugins` | Build without running plugins |
 | `moss import <url> [folder] [-r]` | Convert a live page to markdown |
 | `moss deploy <folder>` | Deploy to configured hosting |
+| `moss describe --json` | Print every CSS token and frontmatter field as JSON |
 
 ## CI and automation
 
@@ -26,7 +27,7 @@ moss works headless (no GUI needed):
 moss build /path/to/folder --no-plugins
 ```
 
-The build output is a self-contained static site in `.moss/build/site/`: standard HTML, CSS, and JS that can be deployed anywhere.
+The build output is a self-contained static site in `.moss/build/current/`: standard HTML, CSS, and JS that can be deployed anywhere. (`.moss/build/current/` is a symlink to the latest build generation under `.moss/build/generations/`.)
 
 ## Import
 
