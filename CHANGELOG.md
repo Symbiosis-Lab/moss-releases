@@ -2,6 +2,38 @@
 
 All notable changes to moss will be documented here.
 
+## [0.7.11] - 2026-06-23
+
+### New
+
+- **Unified dark mode** — the moon toggle in the editor is now the single control for dark/light: it pushes the theme into the preview immediately (no reload), pre-paints the correct theme before the first frame to eliminate flash, tracks OS-level preference changes, and removes the now-redundant theme radio buttons from App Settings.
+- **Design tokens as a single source of truth** — all moss CSS tokens (colors, font sizes, heading weight, code palette, highlight colors) are defined in one place with explicit light and dark values, and the build emits them automatically. Your theme CSS in `.moss/theme/style.css` now takes top cascade priority without needing `!important`.
+- **Heading weight is now themeable** — the `--moss-font-heading-weight` token controls the weight of all headings and article/folder/card titles (default 480; set 600 for bold). It was previously defined but inert.
+- **Neutral navigation option** — a new `--moss-color-ui-accent` token separates nav/button chrome from content-link color, so you can keep links colored while making the navigation neutral.
+- **`:::apply` form shortcode** — embed a reader invite/apply form in any page with `:::apply`; it collects an email, shows language-appropriate placeholder text, and confirms on submit.
+- **`children_style: minimal`** — a folder option that forces the compact date + title listing on any folder, without relying on year-grouping auto-detection.
+- **`moss describe` now includes frontmatter fields** — `moss describe --json` returns the full built-in frontmatter schema (type, widget, allowed values, default) so tooling and assistants work from the real schema.
+- **Blueprint grid on every empty editor state** — the animated background now shows on all no-source pane states, not just the empty-folder onboarding screen.
+- **Cloudflare Turnstile captcha support** — the comment form transparently handles a captcha challenge. Inactive until enabled server-side; existing comments are unaffected.
+- **Matters force-fresh login** — each Matters login now clears the stored token and all domain cookies first, so you always authenticate fresh, and the folder rebinds to the newly authenticated account (self-healing a folder that drifted to the wrong account).
+- **Friendly invite message when not allowlisted** — if the closed beta gate rejects your email during deploy setup, moss now shows the localized invite copy and the apply link instead of an opaque error.
+- **`.moss/state.toml` can be tracked in git** — it's no longer auto-gitignored, so teams using a shared repo for cross-machine deploys can commit it.
+
+### Fixed
+
+- GitHub Pages deploys were publishing nothing — the plugin now reads from the active build generation instead of the always-empty legacy output directory.
+- The progress panel showed a stuck "Waiting for you to Connect to Matters" advisory after a Matters import and couldn't be collapsed; the advisory now clears and the panel starts collapsed.
+- After a Matters import into an empty folder, the editor stayed stuck on the "Create home file" placeholder even though the home file had been written; it now checks the filesystem directly when the build map lags.
+- `article-map.json` is now written atomically, preventing partial-read failures during concurrent builds.
+- The expanded progress panel could accidentally drag the OS window; the whole pill cluster is now no-drag.
+- Matters login cookies (`__access_token`, `cf_clearance`) weren't cleared on macOS for httpOnly `SameSite` cookies; clearing now uses a domain-scoped path that handles them.
+- The new-file creation flash used a loud emergency-green color; it now uses the same calm ambient-accent tint as the nav pill.
+- The tray "Settings" item opened the per-folder settings modal instead of App Settings.
+- Clicking the Dock icon / "Show Window" with nothing visible now surfaces the launcher (or the live preview) instead of silently reopening the last folder.
+- The update-download toast no longer crushes CJK message text to a single character wide.
+- Launcher dropdowns (language and subscriber-scope selectors) now pick up theme styling.
+- The `:::apply` form placeholder is now language-specific instead of Chinese in every language.
+
 ## [0.7.10] - 2026-06-22
 
 ### New
