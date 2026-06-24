@@ -1,7 +1,7 @@
 ---
 title: Manifest
 uid: 8ec7c709
-weight: 4
+weight: 20
 description: Plugin manifest reference, configuration, and the moss-api SDK.
 translationKey: docs-extend-manifest
 ---

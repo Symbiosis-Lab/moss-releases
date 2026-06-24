@@ -1,7 +1,7 @@
 ---
 title: Give Your Site an Address
 uid: "5bff0fab"
-weight: 4
+weight: 13
 description: Buy your own web address and connect it to your site, all inside moss.
 translationKey: docs-start-domain
 ---

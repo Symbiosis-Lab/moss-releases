@@ -1,7 +1,7 @@
 ---
 title: Navigation & footer
 uid: 7a9f22b4
-weight: 5
+weight: 3
 description: Control what appears in the header nav, the footer, and the breadcrumb trail.
 translationKey: docs-author-navigation
 ---

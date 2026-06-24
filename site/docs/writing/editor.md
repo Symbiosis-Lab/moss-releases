@@ -1,7 +1,7 @@
 ---
 title: Editor Shortcuts
 uid: 0d903d20
-weight: 6
+weight: 9
 description: Keyboard shortcuts for formatting text in the moss editor.
 ---
 

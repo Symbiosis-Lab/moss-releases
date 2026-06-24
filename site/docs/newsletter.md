@@ -1,7 +1,7 @@
 ---
 title: Send a newsletter
 uid: "4e2bbe15"
-weight: 2
+weight: 11
 description: Send your writing to readers by email: turn on the newsletter, add subscribers, and send a post.
 translationKey: docs-start-newsletter
 ---

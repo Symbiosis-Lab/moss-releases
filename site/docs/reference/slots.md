@@ -1,7 +1,7 @@
 ---
 title: Slots
 uid: f81de8fe
-weight: 3
+weight: 22
 description: Template injection points and the enhance phase.
 translationKey: docs-extend-slots
 ---

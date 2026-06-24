@@ -1,7 +1,7 @@
 ---
 title: Multilingual sites
 uid: 4f1b2e9d
-weight: 5
+weight: 8
 description: Folder-per-language structure, translation keys, and automatic language toggle.
 translationKey: docs-multilingual
 ---

@@ -1,7 +1,7 @@
 ---
 title: Frontmatter
 uid: 658c6387
-weight: 2
+weight: 1
 description: Metadata fields that control how moss treats each page.
 translationKey: docs-author-frontmatter
 ---

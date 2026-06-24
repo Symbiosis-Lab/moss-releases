@@ -1,7 +1,7 @@
 ---
 title: Shortcodes
 uid: a3f9c12e
-weight: 3
+weight: 6
 description: Layout blocks and components that extend markdown.
 translationKey: docs-author-shortcodes-index
 ---

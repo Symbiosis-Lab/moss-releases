@@ -1,7 +1,7 @@
 ---
 title: Import from Matters
 uid: "5a07cf1b"
-weight: 1
+weight: 10
 description: Pull your Matters.town articles into a moss folder and turn them into your own website.
 translationKey: docs-start-from-matters
 ---

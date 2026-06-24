@@ -1,7 +1,7 @@
 ---
 title: Callouts
 uid: 8c2d41a7
-weight: 4
+weight: 5
 description: Highlighted blockquote callouts for notes, warnings, tips, and more.
 translationKey: docs-author-callouts
 ---

@@ -1,7 +1,7 @@
 ---
 title: Media
 uid: bac82b8f
-weight: 3
+weight: 7
 description: Images, video, notebooks, and other files in your site.
 translationKey: docs-media
 ---

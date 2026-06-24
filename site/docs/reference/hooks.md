@@ -1,7 +1,7 @@
 ---
 title: Hooks
 uid: 2d40c48f
-weight: 2
+weight: 21
 description: The plugin lifecycle: five capabilities and their contexts.
 translationKey: docs-extend-hooks
 ---

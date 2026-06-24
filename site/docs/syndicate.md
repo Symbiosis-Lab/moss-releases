@@ -1,7 +1,7 @@
 ---
 title: Share to Matters
 uid: "541650b9"
-weight: 3
+weight: 12
 description: After you publish a post, share it back to your Matters profile in one step, with a link home.
 translationKey: docs-start-syndicate
 ---

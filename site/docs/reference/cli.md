@@ -1,7 +1,7 @@
 ---
 title: CLI
 uid: 4def1236
-weight: 5
+weight: 10
 description: Command-line interface for testing and automation.
 translationKey: docs-extend-cli
 ---
