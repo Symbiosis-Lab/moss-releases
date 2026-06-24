@@ -1,7 +1,7 @@
 # Design: moss docs IA overhaul + self-syncing reference
 
 **Date:** 2026-06-23
-**Status:** Draft for review
+**Status:** Reviewed (4 specialist reviews → approve-with-changes, incorporated below)
 **Repos:** `moss-releases` (docs site), `moss` (app — Phase 0 only)
 
 ## Goal
@@ -238,6 +238,89 @@ already in `describe`, so those reference pages could land earlier).
 - Reference pages match `moss describe --json` (the diff-gate is green).
 - Spot-check each folder listing: framing present, ordered, every child described.
 - Confirm footer `/privacy` links and the privacy pages are untouched.
+
+## Revisions from expert review (2026-06-23)
+
+Four specialist reviews (IA/UX, technical writing, technical-editor/code-verified,
+i18n) returned approve-with-changes. Incorporated decisions:
+
+### IA & landing
+- **The docs root authors its own hierarchy.** `docs/index.md` (Get Started) sets
+  `children: false`; the body curates the path: the quickstart, then a "What's next"
+  list (from-matters, newsletter, syndicate, domain, deploy) inline, then an explicit
+  **Sections** block linking the four section hubs. No raw auto-listing at the root.
+- **`how-moss-works.md` is kept** (a rename of the old `docs/index.md`), retitled to a
+  real explanation ("How moss works" / "moss 如何运作" / "moss 如何運作"), weighted
+  immediately after Get Started, and linked from the Get Started body ("New to moss?
+  Here's how it works"). It explains the folder→site model, the build pipeline, the
+  pre-paint `data-theme`, and why there is no config file. Keeping it as a rename
+  preserves `translationKey: docs` across all three languages with no zh rewrite.
+
+### Voice (executable rules, not just "match Privacy.md")
+1. Sentences end a thought; don't use em-dashes to continue a clause — split into two.
+2. Bold marks something the reader will click or type, not emphasis; ≤2 per section.
+3. No hedges ("you might want to", "it's worth noting", "feel free to") — state it.
+4. Lead with what the user does, not what moss does ("Drag moss to Applications").
+5. A code block for anything the reader copies; inline code only for a name.
+
+### Diátaxis discipline
+- **Get Started is a tutorial:** single goal → numbered steps → "you're live" → next
+  links. No background explanation (that lives in How moss works).
+- **Builder guides keep a minimum inline:** (a) one minimal working example, (b) the
+  directory/invocation context (where `style.css` / the plugin folder goes), (c) the
+  one sentence explaining *why* it works. Everything else (full token tables, hook
+  signatures, manifest field types) → Reference, linked. Guides must not be hollow
+  link-lists.
+- Section page titles are **"Write a theme"** and **"Write a plugin"** (verb-object,
+  unambiguous) rather than the bare nouns "Design"/"Extend". URL slugs stay
+  `design/` and `extend/` for stability.
+
+### Wikilink & URL sweep (expanded — applies to ALL three languages)
+- Grep `\[\[start` (catches bare `[[start]]`, which breaks: the `start/` folder-note
+  resolution disappears), every `[[…/…]]` path-qualified link, AND hardcoded absolute
+  `/docs/…/` URLs (several zh `callouts.md`/`navigation.md` carry `/docs/author/…`
+  literals; these are not wikilinks and won't auto-resolve).
+- `translationKey` atomicity: move both language sides together; the final key on
+  `docs/index.md` is `docs-start` in all langs, `how-moss-works.md` keeps `docs`.
+- Verified: the moss app does **not** deep-link any reorganized `/docs/` path (grep of
+  `src-tauri/src` + `frontend/app`), so URL-churn risk is LOW. The one stale doc URL in
+  the binary (`describe.rs` → `landing.mosspub.com/contract/v1/reference.md`) is
+  noted for a follow-up app update, not a blocker.
+
+### zh handling
+- **Strip the `auto:start` markers from zh `design/css.md` (+ zh-hant)** and make the
+  content static. The English generator won't maintain zh regions, and the diff-gate
+  won't cover them, so leaving the markers in place would silently drift while looking
+  auto-maintained.
+- New `docs/index.md` (Get Started) zh titles: 开始使用 / 開始使用 (inherited from the
+  promoted start page).
+- Add a one-line "English is authoritative; 中文译文陆续更新" notice to zh `reference/`
+  pages (manually maintained, may lag).
+- **Structural-drift convention:** every new English page must either have a matching
+  zh stub (placeholder + correct `translationKey`) or be listed in a root
+  `UNTRANSLATED.md` manifest, so the trees don't silently diverge.
+
+### Phase 0 source-location corrections (verified against code)
+- Hooks (`Capability`/`PluginHook`) live in `src-tauri/src/plugins/types.rs`; slots
+  (`SLOT_NAMES`) in `src-tauri/src/plugins/enhance.rs` + `src-tauri/src/build/slots.rs`;
+  manifest (`PluginManifest`) in `src-tauri/src/plugins/types.rs` — **Tauri layer, not
+  `moss-core/contract/`.** They are surfaced through the existing
+  `src-tauri/src/describe.rs` entry point (which runs in Tauri context).
+- CLI commands are a bare match block in `src-tauri/src/startup/run_mode.rs` with no
+  registry — the fuzzy part of Phase 0 (hand-register a table or refactor dispatch).
+- html-structure: include `page-content.html` alongside `shell.html` +
+  `article-content.html`; the generator can read these templates directly (no Phase 0
+  dependency for html-structure specifically).
+
+### Phase 2 operational corrections
+- Cross-repo refresh PR needs a provisioned PAT/fine-grained token with write to
+  moss-releases, OR (simpler) run the refresh workflow **in moss-releases** on
+  `workflow_dispatch`/schedule that pulls the pinned release binary. Prefer the latter.
+- CI must use `.moss/build/current/` (the stale `site/.github/workflows/deploy-docs.yml`
+  references `site/.moss/site`, an obsolete path — fix as part of Phase 2).
+- The generator runs on a **macOS** runner (the published binary is
+  `moss-darwin-universal`; no Linux CLI build exists). `describe` output is
+  deterministic (BTreeMap), so the `git diff --exit-code` gate is stable.
 
 ## Out of scope / follow-ups
 
