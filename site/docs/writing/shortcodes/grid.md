@@ -210,4 +210,4 @@ The grid container renders as `<div class="moss-grid two-col-split">`, so your c
 
 **Rule of thumb.** Use the ratio form (`:::grid 2 2:1`) for one-off layouts where responsive overrides are not needed. Use a named class the moment you need `@media` behaviour or whenever the same shape repeats across pages.
 
-See [[css#Shortcode classes]] for the full list of component class names you can target.
+See [[components|component classes]] for the full list of component class names you can target.

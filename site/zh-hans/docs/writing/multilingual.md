@@ -10,4 +10,4 @@ lang: zh-hans
 > [!pending] Translation pending
 > This page is available in English. Full Chinese translation coming soon.
 
-See the English version: [Multilingual sites](/docs/multilingual/)
+See the English version: [Multilingual sites](/docs/writing/multilingual/)

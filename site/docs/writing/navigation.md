@@ -90,5 +90,5 @@ If `nav: true` is set on a page in one language tree, the corresponding page in 
 ## Related pages
 
 - [[frontmatter]]: `nav`, `weight`, `footer`, `footer_align`, `breadcrumb` field reference
-- [[../multilingual]]: language trees and how nav scopes to them
-- [[../structure]]: how root-level vs nested pages are determined
+- [[multilingual]]: language trees and how nav scopes to them
+- [[structure]]: how root-level vs nested pages are determined

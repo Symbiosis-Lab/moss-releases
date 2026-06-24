@@ -7,4 +7,4 @@ translationKey: docs-editors
 lang: zh-hant
 ---
 
-本頁面尚未翻譯。請參閱[英文版](/docs/editors/)。
+本頁面尚未翻譯。請參閱[英文版](/docs/writing/editors/)。

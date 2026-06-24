@@ -148,12 +148,12 @@ moss 将文件夹变成网站。 ^intro
 ```markdown
 [访问示例](https://example.com)
 [关于页面](about.md)
-[章节链接](/docs/structure/)
+[章节链接](/docs/writing/structure/)
 ```
 
 相对路径和绝对路径都可以。外部链接自动在新标签页打开。
 
-多语言相关内容（`translationKey`、语言树、自动语言切换按钮）已迁移到 [[../multilingual|多语言站点]]。
+多语言相关内容（`translationKey`、语言树、自动语言切换按钮）已迁移到 [[multilingual|多语言站点]]。
 
 ## 双语内容
 

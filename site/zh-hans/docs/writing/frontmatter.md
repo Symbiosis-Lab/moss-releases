@@ -67,7 +67,7 @@ Frontmatter 使用**固定字段表**：moss 只识别本页列出的字段，�
 
 ## 可见性
 
-参见[结构](/docs/structure/)中对[可见性](/docs/structure/#可见性)的定义。
+参见[结构](/docs/writing/structure/)中对[可见性](/docs/writing/structure/#可见性)的定义。
 
 | 字段 | 类型 | 默认值 | 说明 |
 |------|------|--------|------|

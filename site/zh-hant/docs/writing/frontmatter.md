@@ -61,7 +61,7 @@ Frontmatter 不是必填的。沒有 frontmatter 的檔案一樣會變成頁面�
 
 ## 可見性
 
-參見[結構](/docs/structure/)中對[可見性](/docs/structure/#可見性)的定義。
+參見[結構](/docs/writing/structure/)中對[可見性](/docs/writing/structure/#可見性)的定義。
 
 | 欄位 | 類型 | 預設值 | 說明 |
 |------|------|--------|------|

@@ -126,9 +126,9 @@ moss 將資料夾變成網站。 ^intro
 ```markdown
 [造訪範例](https://example.com)
 [關於頁面](about.md)
-[章節連結](/docs/structure/)
+[章節連結](/docs/writing/structure/)
 ```
 
 相對路徑和絕對路徑都可以。外部連結自動在新分頁開啟。
 
-多語言相關內容（`translationKey`、語言樹、自動語言切換按鈕）已搬到 [[../multilingual|多語言網站]]。
+多語言相關內容（`translationKey`、語言樹、自動語言切換按鈕）已搬到 [[multilingual|多語言網站]]。
