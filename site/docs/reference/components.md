@@ -102,12 +102,6 @@ Class names moss emits on auto-generated components. Target them directly in `.m
 | `.moss-subscribe-status` | instance | Status message shown after submit (success/error). |
 | `.moss-subscribe-status__icon` | instance | Icon slot inside `.moss-subscribe-status`. |
 | `.moss-subscribe-landing` | standalone | Standalone subscribe landing page surface (larger variant). |
-| `.moss-apply` | standalone | Apply / membership-request form block (:::apply shortcode). |
-| `.moss-apply-form` | instance | Form element inside `.moss-apply`. Also carries `.moss-subscribe-form` so subscribe.ts hydrates it. |
-| `.moss-apply-matters` | instance | Matters username input inside `.moss-apply-form`. |
-| `.moss-apply-details` | instance | `<details>` disclosure element for the optional publish-URL field inside `.moss-apply-form`. |
-| `.moss-apply-hp` | instance | Honeypot field (off-screen) inside `.moss-apply-form`. Bots fill it; humans don't. |
-| `.moss-apply-status` | instance | Status region inside `.moss-apply-form` (also carries `.moss-subscribe-status`). |
 | `.moss-series-nav` | standalone | Series navigation bar (prev/next/collection) on series pages. |
 | `.moss-series-nav-links` | instance | Row holding prev/next links in series nav. |
 | `.moss-series-nav-link` | instance | Individual link inside series nav. Modifiers: `moss-series-nav-prev`, `moss-series-nav-next`, `empty` (placeholder). |
