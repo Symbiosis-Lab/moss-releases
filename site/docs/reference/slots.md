@@ -37,7 +37,7 @@ During generation, moss writes HTML comment markers at each slot position:
 <!-- slot:after-article -->
 ```
 
-During the **enhance phase**, each plugin with the `enhance` capability returns content for the slots it wants to fill. moss replaces the markers with the plugin content. Any unfilled markers are stripped from the final output; they never appear in the published HTML.
+During the **enhance phase**, each plugin with the `enhance` capability returns content for the slots it fills. moss replaces the markers with that content. Unfilled markers are stripped from the final output and never appear in the published HTML.
 
 Multiple plugins can write to the same slot. Their content is concatenated in plugin load order.
 
@@ -58,15 +58,15 @@ async enhance(ctx) {
 }
 ```
 
-Only include the slots your plugin needs. Omitted slots are left for other plugins or stripped.
+Include only the slots your plugin fills. Omitted slots are left for other plugins or stripped.
 
 ## Zero-flicker preview
 
-During preview, moss rebuilds the site on every file change. To prevent the preview from flickering during rebuilds:
+During preview, moss rebuilds the site on every file change. To prevent flickering during rebuilds:
 
-1. New output is built to `.moss/site-stage/`
-2. The preview server atomically switches its pointer to `site-stage/`
-3. The staged content is copied to `.moss/site/` (the canonical directory)
-4. The pointer switches back to `.moss/site/`
+1. New output is built to `.moss/site-stage/`.
+2. The preview server atomically switches its pointer to `site-stage/`.
+3. The staged content is copied to `.moss/site/` (the canonical directory).
+4. The pointer switches back to `.moss/site/`.
 
-The preview server never serves from a half-built directory. The switch is instant (a pointer update, not a file rename).
+The preview server never serves from a half-built directory. The switch is instant — a pointer update, not a file rename.

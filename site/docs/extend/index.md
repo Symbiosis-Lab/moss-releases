@@ -6,8 +6,6 @@ description: Build a JavaScript plugin that hooks into the moss build pipeline �
 translationKey: docs-extend
 ---
 
-The canonical guide for writing a moss plugin.
-
 A plugin is a JavaScript bundle you drop into `.moss/plugins/{name}/`. moss finds it automatically, reads its manifest, and calls the hooks it declares at the right stage of every build.
 
 ## Minimal working plugin
@@ -21,7 +19,7 @@ Start with this layout inside your project:
 └── icon.svg
 ```
 
-A `manifest.json` that registers one hook:
+A `manifest.json` registering one hook:
 
 ```json
 {
@@ -35,7 +33,7 @@ A `manifest.json` that registers one hook:
 }
 ```
 
-A `main.bundle.js` that exports the hook as a property of the global object named in `global_name`:
+A `main.bundle.js` that exports the hook as a property on the global object named in `global_name`:
 
 ```js
 window.MyPlugin = {
@@ -59,7 +57,7 @@ When moss compiles a site, it runs through five stages in order:
 process → generate → enhance → deploy → syndicate
 ```
 
-Your plugin attaches to one or more stages by listing the capability names in `capabilities`. moss calls the matching method on your global object at the right moment, passes a typed context object, and reads the return value.
+A plugin attaches to one or more stages by listing capability names in `capabilities`. moss calls the matching method on your global object at the right moment, passes a typed context object, and reads the return value.
 
 **process** runs before HTML generation. Use it to fetch external data or transform source files. Multiple plugins can have this capability.
 
@@ -71,11 +69,11 @@ Your plugin attaches to one or more stages by listing the capability names in `c
 
 **syndicate** distributes published content to external platforms (POSSE). Multiple plugins can have this capability. Use it for cross-posting to Matters.town, Substack, or social media.
 
-The six template slots an enhance plugin can target are `head-end`, `after-title`, `before-article-end`, `after-article`, `footer-right`, and `body-end`. Full slot positions and the `EnhanceResult` shape are in [[slots]].
+The template slots an enhance plugin can target are `head-end`, `after-title`, `before-article-end`, `after-article`, `footer-right`, and `body-end`. Slot positions and the `EnhanceResult` shape are in [[slots]].
 
 ## Building the bundle
 
-moss loads `main.bundle.js` as a script tag. Bundle your source with esbuild as an IIFE so the global object lands on `window`:
+moss loads `main.bundle.js` as a script tag. Bundle with esbuild as an IIFE so the global object lands on `window`:
 
 ```sh
 esbuild src/main.ts \
@@ -85,11 +83,11 @@ esbuild src/main.ts \
   --outfile=main.bundle.js
 ```
 
-The output file goes directly into `.moss/plugins/my-plugin/`. The value of `global_name` in the manifest must match the `--global-name` flag.
+The output file goes directly into `.moss/plugins/my-plugin/`. `global_name` in the manifest must match the `--global-name` flag.
 
 ## SDK
 
-Install `@symbiosis-lab/moss-api` for TypeScript types and utilities:
+Install `@symbiosis-lab/moss-api` for TypeScript types and utilities.
 
 ```sh
 npm install @symbiosis-lab/moss-api
@@ -101,4 +99,4 @@ For Rust contributors working on moss itself, the core types are published as `m
 
 ## Reference
 
-All field tables, hook context signatures, slot positions, and CLI flags are in the Reference section. Start with [[manifest]] for the full `manifest.json` field list, then [[hooks]] for context shapes and the plugin runtime lifecycle, [[slots]] for the six injection points, and [[cli]] for headless build and automation commands.
+Field tables, hook context signatures, slot positions, and CLI flags are in the Reference section. Start with [[manifest]] for the full `manifest.json` field list, then [[hooks]] for context shapes and the plugin runtime lifecycle, [[slots]] for slot positions, and [[cli]] for headless build and automation commands.

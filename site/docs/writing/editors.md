@@ -18,7 +18,7 @@ Three things make an editor a good moss companion:
 - **It speaks the Obsidian dialect.** Wikilinks `[[page]]`, embeds `![[file]]`, callouts `> [!note]`, YAML frontmatter. moss is designed around these conventions; see [[wikilinks-and-embeds]] and [[callouts]].
 - **It preserves frontmatter round-trip.** Saves shouldn't reorder YAML keys, change quoting, or strip comments.
 
-The closer an editor follows these, the less friction you feel switching between it and moss.
+The closer an editor follows these, the less friction between it and moss.
 
 ## Strongly recommended
 
@@ -30,7 +30,7 @@ The closer an editor follows these, the less friction you feel switching between
 **Pricing:** Free, including for commercial use. Optional paid Sync ($4/mo) and Publish ($8/mo).
 **2026:** Active. Bases (database views on Properties), a built-in CLI, image resizing, and a refreshed plugin marketplace shipped through 1.10–1.12.
 
-Point Obsidian at the same folder you publish with moss and you have a complete writing-and-publishing loop with zero extra mapping.
+Point Obsidian at the same folder you publish with moss for a complete writing-and-publishing loop with no extra mapping.
 
 ## Good fit
 
@@ -38,43 +38,43 @@ Point Obsidian at the same folder you publish with moss and you have a complete 
 
 [iA Writer](https://ia.net/writer) is the calmest writing surface of the bunch: plain `.md` files, focus mode, library of named locations. Wikilinks `[[page]]` with autocomplete and aliases work; embeds use iA Writer's own **Content Blocks** syntax (a file path on its own line) rather than `![[file]]`, so moss-side `![[…]]` appears as raw text in iA Writer's preview. No native callouts, math, or Mermaid.
 
-Best for writers who want quiet authoring and accept that moss-specific syntax will only render in moss's preview. macOS / Windows / iOS / iPadOS, one-time purchase per platform.
+Best for writers who want quiet authoring and accept that moss-specific syntax renders only in moss's preview. macOS / Windows / iOS / iPadOS, one-time purchase per platform.
 
 ### Typora
 
 [Typora](https://typora.io) is true in-place WYSIWYG: markdown renders as you type, no split view. Strong on math (MathJax 4) and diagrams (Mermaid 11.13, including Venn and Ishikawa as of 1.13). GitHub-style callouts can be enabled in preferences. YAML frontmatter is recognized.
 
-The gap is wikilinks: `[[page]]` is not native and won't autocomplete, so the link graph that moss leans on has to be typed manually. Best as a secondary editor for math- or diagram-heavy pages. macOS / Windows / Linux, $14.99 one-time for three devices.
+The gap is wikilinks: `[[page]]` is not native and won't autocomplete, so the link graph that moss leans on has to be typed manually. Good for math- or diagram-heavy pages as a secondary editor. macOS / Windows / Linux, $14.99 one-time for three devices.
 
 ### Tolaria
 
 [Tolaria](https://tolaria.md) is a newer block-based editor with Notion-style typed properties, a built-in Git client, and native AI-agent integration. Stores plain `.md` with YAML frontmatter; wikilinks resolve by filename or title. No `![[file]]` embed syntax; it uses plain markdown image references plus a separate media-previews panel. Math and Mermaid supported. Free, AGPL-3.0, Tauri-based, all major desktop platforms.
 
-Good fit if you want a Notion-feel editor over plain `.md` files. The lack of `![[…]]` means moss-side typed embeds need to be authored as raw text.
+Good for a Notion-feel editor over plain `.md` files. The lack of `![[…]]` means moss-side typed embeds need to be authored as raw text.
 
 ### Cogito
 
 [Cogito](https://cogito.md) is a native macOS editor with source + preview split, wikilinks `[[page]]`, embeds `![[note]]`, callouts, MathJax, Mermaid, and a multi-provider AI sidebar (Claude / Codex / Amp / OpenCode) that can edit notes with undo. Stores plain `.md` and `.mdx` on disk; supports iCloud sync and Obsidian vault import.
 
-Best for Mac writers who want an AI-assisted authoring surface that still saves plain files. Free during public beta.
+Good for Mac writers who want an AI-assisted authoring surface over plain files. Free during public beta.
 
 ### Logseq OG
 
 [Logseq OG](https://logseq.com) edits a folder of plain `.md` files with an outliner model: every line is a bullet block, and the saved markdown reflects that. Wikilinks `[[Page]]` are native; embeds use Logseq's own `{{embed}}` syntax rather than `![[…]]`. KaTeX math is native; Mermaid via plugin.
 
-Two caveats: (1) make sure you pick **Logseq OG**, not the new "Logseq DB" version, which uses a proprietary SQLite store and is not folder-based; (2) the outliner produces bullet-heavy markdown that may need theme tweaks in moss to render the way you want. Free, AGPL-3.0, all major platforms.
+Two caveats: (1) pick **Logseq OG**, not the new "Logseq DB" version, which uses a proprietary SQLite store and is not folder-based; (2) the outliner produces bullet-heavy markdown that may need theme tweaks in moss to render as intended. Free, AGPL-3.0, all major platforms.
 
 ### VS Code + Foam (or Cursor + Foam)
 
 [VS Code](https://code.visualstudio.com) becomes a respectable markdown studio once you install [Foam](https://foambubble.github.io) (wikilinks with autocomplete, embeds, backlinks, graph view) and an alert-syntax extension for callouts. [Cursor](https://www.cursor.com) is a hard fork of VS Code that ships the same extension API, so Foam installs and works unchanged, with an AI panel on top.
 
-Best for writers who already live in their code editor. The chrome (file tree, gutters, command palette) is denser than purpose-built writing apps. macOS / Windows / Linux. VS Code free, Cursor $20/mo Pro.
+Good for writers who already live in their code editor. The chrome (file tree, gutters, command palette) is denser than purpose-built writing apps. macOS / Windows / Linux. VS Code free, Cursor $20/mo Pro.
 
 ### Zed
 
 [Zed](https://zed.dev) is a fast, Rust-built editor with a clean native markdown preview, GitHub-style alert callouts, built-in math, and built-in Mermaid. The gap is wikilinks: `[[page]]` is not supported in Zed's parser and no extension fills it.
 
-Fine for linear posts; painful if your site leans on `[[note]]` cross-links and `![[file]]` embeds. macOS / Linux / Windows, free.
+Good for linear posts. Painful if your site leans on `[[note]]` cross-links and `![[file]]` embeds. macOS / Linux / Windows, free.
 
 ## Newer launches worth watching
 
@@ -107,4 +107,4 @@ These are excellent apps, but they store notes in their own database rather than
 
 ## Tip: use moss as the live preview
 
-Whichever editor you choose, the workflow is the same: edit `.md` files in your folder, save, and moss rebuilds the preview window beside you. No build commands, no servers to manage. If you're hopping between Obsidian and a code editor, point both at the same folder; moss doesn't care which one wrote the last save.
+The workflow is the same regardless of editor: edit `.md` files in your folder, save, and moss rebuilds the preview. No build commands, no servers to manage. Point multiple editors at the same folder; moss doesn't care which one wrote the last save.

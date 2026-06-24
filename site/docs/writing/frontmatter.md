@@ -20,15 +20,15 @@ description: A short summary for search engines and list previews.
 The rest of the file is your content.
 ```
 
-Frontmatter is optional. A file without it still becomes a page. moss uses the filename as the title.
+Frontmatter is optional. A file without it still becomes a page; moss uses the filename as the title.
 
 ### Fixed schema
 
-Frontmatter uses a **fixed schema**: moss only recognizes the fields listed on this page. Arbitrary custom fields are silently ignored. If you need custom per-page metadata, store it in body content: a markdown paragraph, a `::: {.meta}` fenced div, or a data table.
+Frontmatter uses a **fixed schema**: moss only recognizes the fields listed on this page. Arbitrary custom fields are silently ignored. For custom per-page metadata, store it in body content: a markdown paragraph, a `::: {.meta}` fenced div, or a data table.
 
-Every recognized field is also discoverable via `moss describe --json`, which prints the full schema (including default values) as machine-readable JSON. The human-readable version is at [[reference|Reference]].
+Every recognized field is discoverable via `moss describe --json`, which prints the full schema as machine-readable JSON. The human-readable version is at [[reference|Reference]].
 
-`description:` is for SEO meta tags, Open Graph previews, and sitemap summaries. It is **not** rendered as a visible page deck. For a visible subtitle or lead paragraph, use a `> blockquote` immediately after the `# H1`. The default theme styles `h1 + blockquote` as a deck.
+`description:` feeds SEO meta tags, Open Graph previews, and sitemap summaries. It is **not** rendered as a visible deck. For a visible subtitle, use a `> blockquote` immediately after the `# H1` — the default theme styles `h1 + blockquote` as a deck.
 
 ## Identity
 
@@ -48,13 +48,13 @@ These fields describe what the page is.
 
 Body H1s anywhere else are section headers, not document titles. moss does not infer the title from body structure. Write the title in `title:` or rely on the filename.
 
-To suppress the injected title on a specific article (for example, a bespoke landing page), set `title: ""` (an explicit empty string). This is distinct from omitting the field, which falls back to the filename. Folder and index pages never inject; their bodies render as authored.
+To suppress the injected title on a specific article (e.g., a bespoke landing page), set `title: ""`. This is distinct from omitting the field, which falls back to the filename. Folder and index pages never inject a title; their bodies render as authored.
 
 ### Localized filenames
 
-Because the title falls back to the filename, name a file in its own language and let moss title the page for you — `隐私.md` renders as "隐私", `Privacy.md` as "Privacy", with no `title:` field and no body `# H1`. When the filename isn't ASCII, pin a short, stable URL with the `url` field so the published path stays clean: `url: privacy` publishes `隐私.md` at `/privacy`.
+Because the title falls back to the filename, name a file in its own language and let moss title the page — `隐私.md` renders as "隐私", `Privacy.md` as "Privacy", with no `title:` field and no body `# H1`. When the filename isn't ASCII, pin a short, stable URL with `url: privacy` so `隐私.md` publishes at `/privacy`.
 
-Link to a section by its heading anchor — `[Contact](#contact)` — not a hand-written `<a id>`. moss generates the id from the heading text, CJK included.
+Link to a section by its heading anchor (`[Contact](#contact)`), not a hand-written `<a id>`. moss generates the id from the heading text, CJK included.
 
 ## Navigation
 
@@ -97,13 +97,9 @@ These fields control how a [[structure#^folder-page|folder page]] displays its c
 
 Card layout uses the `cover` image from each child's frontmatter.
 
-`children_style: minimal` renders a compact, year-grouped letter-paper text index — one line per article, sorted by date with year headings. It is well-suited for dense archives and writing indexes where card covers or summaries would add noise.
+`children_style: minimal` renders a compact, year-grouped text index — one line per article, sorted by date with year headings. Good for dense archives where card covers or summaries would add noise.
 
-Set `children: false` to fully opt out of the auto-emitted child listing on a
-folder page or the homepage. This suppresses both listing styles: the inline
-list/summary layout (`.moss-article-listing`) and the card grid
-(`.moss-collection-grid`), so custom homepages and folder landing pages can
-lay out their own content without a trailing auto-generated index.
+Set `children: false` to opt out of the auto-emitted child listing on a folder page or the homepage. This suppresses both listing styles — the inline list/summary layout (`.moss-article-listing`) and the card grid (`.moss-collection-grid`) — so custom homepages and folder landing pages can lay out their own content without a trailing auto-generated index.
 
 ### Sort
 
@@ -129,7 +125,7 @@ When `sort` is absent, moss infers it from the children:
 2. At least 80% of children have a `date` field → `sort: date`
 3. Otherwise → `sort: title`
 
-So most folders need no `sort` declaration: a blog folder is automatically `date`, a docs folder with weights is automatically `weight`, and a folder of dateless projects is automatically `title`.
+Most folders need no `sort` declaration: a blog folder is automatically `date`, a docs folder with weights is automatically `weight`, and a folder of dateless projects is automatically `title`.
 
 **Why sort drives appearance:** date listings put the date in each card's meta slot; weight and title listings omit the meta slot entirely (no empty space). Folder cards in non-date listings show a small "N articles" subtitle only when they have no description.
 
@@ -171,7 +167,7 @@ cascade:
 | `also_in` | list | (none) | Folder paths where this article also appears in child lists |
 | `series` | boolean | inferred | Render prev/next chrome on each child of this folder |
 
-`also_in` makes an article appear in multiple sections without duplicating the file:
+`also_in` makes an article appear in multiple sections without duplicating the file.
 
 ```yaml
 ---
@@ -210,7 +206,7 @@ You can also opt a single child out by setting `series: false` on that article's
 
 ### uid
 
-moss normally stamps `uid` for you, so you rarely set it by hand. If you do write one, quote it. An all-numeric `uid` like `uid: 12345` is parsed as a YAML integer, and the frontmatter can be silently dropped. Quote it as a string instead: `uid: "12345"`.
+moss stamps `uid` for you; you rarely set it by hand. If you do, quote it. An unquoted `uid: 12345` is parsed as a YAML integer and can be silently dropped. Use `uid: "12345"` instead.
 
 ### Cascade
 

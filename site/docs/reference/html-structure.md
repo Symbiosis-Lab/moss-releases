@@ -6,7 +6,7 @@ translationKey: docs-reference-html
 description: The DOM skeleton moss emits on every page. The stable selectors to hook into from script.js or style.css.
 ---
 
-Every page moss builds shares this DOM layout. It mirrors the `shell.html`, `article-content.html`, and `page-content.html` templates inside moss.
+Every page moss builds shares this DOM layout, mirroring the `shell.html`, `article-content.html`, and `page-content.html` templates inside moss.
 
 <!-- auto:start:html-dom -->
 ```html
@@ -41,11 +41,11 @@ Every page moss builds shares this DOM layout. It mirrors the `shell.html`, `art
 | `.moss-colophon` | Footer |
 <!-- auto:end -->
 
-Anything inside `article` and `.moss-colophon` is safe to modify from `script.js`. The navigation structure is managed by moss — add styles, but avoid removing or reordering its children.
+Content inside `article` and `.moss-colophon` is safe to modify from `script.js`. The navigation structure is managed by moss — add styles, but do not remove or reorder its children.
 
 ### Data attributes
 
-moss sets these attributes on HTML elements. Read them in `script.js` or target them in `style.css`.
+These attributes are set by moss on HTML elements. Read them in `script.js` or target them in `style.css`.
 
 | Attribute | Element | Values | Purpose |
 |-----------|---------|--------|---------|

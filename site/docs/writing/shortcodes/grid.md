@@ -36,7 +36,7 @@ How can ecosystems withstand droughts, fires, and floods?
 
 ## Column count and ratio
 
-Add an `a:b` ratio after the column count to set fractional widths. Ratios must have the same number of segments as the column count.
+Add an `a:b` ratio after the column count to set fractional widths. The ratio must have the same number of segments as the column count.
 
 :::grid 2 {.sc-demo}
 ```markdown
@@ -79,7 +79,7 @@ Cells are full markdown: headings, paragraphs, lists, images, and links all work
 
 A cell whose only content is exactly one markdown link is rendered as a single `<a>` wrapping the whole cell.
 
-**External link** (`http://` or `https://`) → `.moss-grid-card.friend-card`. moss auto-fetches link metadata if configured. Use for link directories and blogrolls:
+**External link** (`http://` or `https://`) → `.moss-grid-card.friend-card`. moss fetches link metadata if configured. Use for link directories and blogrolls:
 
 :::grid 2 {.sc-demo}
 ```markdown
@@ -115,9 +115,9 @@ The link text may be compound. Put the image, heading, and paragraph inside the 
 Short description](/target)
 ```
 
-Never hand-write the `<a>` wrapper yourself. Author the single markdown link and let moss emit the anchor.
+Do not hand-write the `<a>` wrapper. Author the single markdown link and let moss emit the anchor.
 
-A cell with anything else (two links, text plus a link) renders as regular cell content, unwrapped. This lets you mix clickable cards and rich cells in the same grid.
+A cell with anything else (two links, text plus a link) renders as regular cell content, unwrapped — so you can mix clickable cards and rich cells in the same grid.
 
 Theme CSS targets each flavor independently:
 
@@ -150,7 +150,7 @@ A cell whose only content is an internal link to a known folder is automatically
 ::::
 :::
 
-**Opt out with `.no-cards`** to bypass auto-conversion entirely. Use `.no-cards` for navigation grids, hero-split layouts, or compound-link grids where you want `.link-card` or `.friend-card` rendering instead:
+**Opt out with `.no-cards`** to bypass auto-conversion. Use `.no-cards` for navigation grids, hero-split layouts, or compound-link grids where you want `.link-card` or `.friend-card` rendering instead:
 
 :::grid 2 {.sc-demo}
 ```markdown
@@ -181,7 +181,7 @@ CSS targets:
 
 ## Custom CSS classes
 
-Attach a named class with `{.classname}` when you need responsive layout control or want the same shape to repeat across pages.
+Attach a named class with `{.classname}` when you need responsive layout control or the same shape on multiple pages.
 
 **Do this.** Use `:::grid N {.your-class}` with no ratio, then define the ratio in CSS:
 
@@ -204,10 +204,10 @@ Sidebar with call-outs or metadata.
 }
 ```
 
-The grid container renders as `<div class="moss-grid two-col-split">`, so your class sits alongside the built-in `moss-grid` and can override `grid-template-columns`.
+The grid container renders as `<div class="moss-grid two-col-split">`. Your class sits alongside the built-in `moss-grid` and can override `grid-template-columns`.
 
-**Avoid this.** Passing a ratio (`:::grid 2 2:1 {.two-col-split}`) emits an inline `style="grid-template-columns:2fr 1fr"` on the container. Inline styles beat stylesheet rules, so your `@media` query will have no effect without `!important` on every property (a maintenance trap once the pattern spreads).
+**Avoid this.** Passing a ratio (`:::grid 2 2:1 {.two-col-split}`) emits an inline `style="grid-template-columns:2fr 1fr"` on the container. Inline styles beat stylesheet rules, so your `@media` query has no effect without `!important` on every property — a maintenance trap once the pattern spreads.
 
-**Rule of thumb.** Use the ratio form (`:::grid 2 2:1`) for one-off layouts where responsive overrides are not needed. Use a named class the moment you need `@media` behaviour or whenever the same shape repeats across pages.
+**Rule of thumb.** Use the ratio form (`:::grid 2 2:1`) for one-off layouts where responsive overrides are not needed. Use a named class when you need `@media` behaviour or the same shape on multiple pages.
 
 See [[components|component classes]] for the full list of component class names you can target.

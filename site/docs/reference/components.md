@@ -6,7 +6,7 @@ translationKey: docs-reference-components
 description: The stable .moss-* class names emitted by moss's auto-generated components. Target these in .moss/theme/style.css.
 ---
 
-These are the class names moss emits on auto-generated components. Target them directly in `.moss/theme/style.css`.
+Class names moss emits on auto-generated components. Target them directly in `.moss/theme/style.css`.
 
 <!-- auto:start:components -->
 | Class | Kind | Description |

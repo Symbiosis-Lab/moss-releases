@@ -6,7 +6,7 @@ description: A full-width hero section with a background image and optional over
 translationKey: docs-author-shortcodes-hero
 ---
 
-`:::hero` creates a full-width section that is hoisted out of the article flow and rendered edge-to-edge. The first line inside the block is the media reference; everything after it becomes overlay content.
+`:::hero` creates a full-width section hoisted out of the article flow and rendered edge-to-edge. The first line inside the block is the media reference; everything after it becomes overlay content.
 
 ## Basic hero
 
@@ -26,7 +26,7 @@ A personal corner of the web.
 
 ## Hero with image
 
-Pass a wikilink, markdown image, or bare filename as the first line to set a background image.
+Pass a wikilink, markdown image, or bare filename as the first line to set a background image:
 
 :::grid 2 {.sc-demo}
 ```markdown
@@ -78,4 +78,4 @@ Community theatre rooted in lived experience.
 ::::
 :::
 
-The hero renders full-width and is hoisted out of the article content flow, so it is not constrained by the article's `content_width` setting.
+The hero renders full-width and is hoisted out of the article content flow, so it ignores the article's `content_width` setting.

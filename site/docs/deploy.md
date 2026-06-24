@@ -21,7 +21,7 @@ translationKey: docs-deploy
 
 ## Deploy
 
-Click the deploy button. The first deploy takes about a minute: moss creates a GitHub Actions workflow automatically. Subsequent deploys are faster.
+Click the deploy button. The first deploy takes about a minute — moss creates a GitHub Actions workflow automatically. Subsequent deploys are faster.
 
 moss commits your compiled site, pushes to the repository, and GitHub Actions deploys it to GitHub Pages.
 
@@ -34,7 +34,7 @@ moss commits your compiled site, pushes to the repository, and GitHub Actions de
 
 ## Custom domain
 
-Set a custom domain in your GitHub repository settings under **Pages → Custom domain**. You can also configure it directly in moss's domain settings.
+Set a custom domain in your GitHub repository settings under **Pages → Custom domain**, or configure it directly in moss's domain settings.
 
 ## What's next
 

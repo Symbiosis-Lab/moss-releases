@@ -10,7 +10,7 @@ Every `.md` file in your folder becomes a page. Every subfolder becomes a sectio
 
 ## Folder tree = site tree
 
-moss maps your folder tree directly to your URL tree. A file at `work/farewell.md` publishes at `/work/farewell/`. Folders become site sections. Navigation, breadcrumbs, and permalinks all follow the filesystem. To add a new section, create a folder. To nest pages, nest folders.
+moss maps your folder tree directly to your URL tree. A file at `work/farewell.md` publishes at `/work/farewell/`. Folders become site sections; navigation, breadcrumbs, and permalinks follow the filesystem. To add a new section, create a folder. To nest pages, nest folders.
 
 **Example site tree and resulting URLs:**
 
@@ -25,7 +25,7 @@ about.md                →  /about/
 index.md                →  /
 ```
 
-Breadcrumbs reflect this same hierarchy: set `breadcrumb: true` on the homepage and every page gets an automatic trail (`Home / Work / Farewell`). No hand-rolled breadcrumb blocks needed.
+Set `breadcrumb: true` on the homepage and every page gets an automatic trail (`Home / Work / Farewell`). No hand-rolled breadcrumb blocks needed.
 
 ### Excluded folders
 
@@ -35,7 +35,7 @@ The following folder names are reserved for static assets and are **not** treate
 
 Any folder whose name starts with `.` (dot) or `_` (underscore) is also excluded.
 
-Files inside these folders are served as-is but will not become pages or sections. Put images here and reference them with `![[filename.ext]]` wikilinks; moss resolves them regardless of where the source page lives.
+Files inside these folders are served as-is but will not become pages. Put images here and reference them with `![[filename.ext]]` wikilinks; moss resolves them regardless of where the source page lives.
 
 ## Folder pages
 
@@ -50,7 +50,7 @@ recipes/
 └── soup.md
 ```
 
-When a folder has no `index.md`, moss auto-generates a page that lists its children.
+When a folder has no `index.md`, moss generates a page that lists its children.
 
 The root `index.md` is your **homepage**.
 

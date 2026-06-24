@@ -13,7 +13,7 @@ children: false
 
 ![[folder-to-site.html]]
 
-You don't build anything. You write, you keep your writing in a folder, and moss turns that folder into a website. Each piece of writing becomes a page. Each folder becomes a part of your site. Your photos and videos are tidied up for the web for you. There's nothing new to learn first.
+You don't build anything. You write, keep your writing in a folder, and moss turns that folder into a website. Each piece of writing becomes a page. Each folder becomes a section. Your photos and videos are optimized for the web. There's nothing new to learn first.
 
 ## Install moss
 
@@ -23,15 +23,15 @@ Download moss from [GitHub Releases](https://github.com/Symbiosis-Lab/moss-relea
 
 **1. Open your folder.** Right-click any folder and choose **Publish with moss**, or open moss and click **Open folder**. A preview window opens and shows your website right away. When you change a file, the preview updates as you watch.
 
-**2. Press Publish.** In the top-right of the preview is a round button. Hover it and you'll see **Publish**. Click it. The first time, moss opens a short setup, titled **Set up your site**.
+**2. Press Publish.** In the top-right of the preview is a round button. Hover it to see **Publish**. Click it. The first time, moss opens a short setup titled **Set up your site**.
 
-**3. Pick your web address and enter your email.** moss suggests an address ending in `.mosspub.com` that you can keep or edit. It checks it for you and shows **Available** or **Not available**. Type your email so the site is yours, then choose **Verify email**.
+**3. Pick your web address and enter your email.** moss suggests an address ending in `.mosspub.com` that you can keep or edit. It checks availability and shows **Available** or **Not available**. Type your email, then choose **Verify email**.
 
-**4. Click the link in your email.** moss shows **Check your email** and waits. Open the email it sent and click the link. moss notices and moves on by itself. (If you've published with this email before, moss skips this and the button simply reads **Publish**.)
+**4. Click the link in your email.** moss shows **Check your email** and waits. Open the email and click the link. moss notices and moves on. (If you've published with this email before, moss skips this step and the button reads **Publish**.)
 
 **5. You're live.** moss puts your site online and shows **Published.** with the line **Your site is live** and your web address. Click **Visit site** to see it.
 
-That's the whole thing. From now on, any time you change your writing, press **Publish** again and your site updates.
+That's it. Any time you change your writing, press **Publish** again and your site updates.
 
 ## What's next
 

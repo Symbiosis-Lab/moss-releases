@@ -6,7 +6,7 @@ translationKey: docs-design
 description: How to style a moss site with CSS and JavaScript. The canonical guide for humans and AI agents.
 ---
 
-The canonical guide for writing a moss theme: how to take a site from stock to styled.
+How to take a site from stock to styled.
 
 ## Where your files go
 
@@ -22,11 +22,11 @@ my-site/
 └── ...
 ```
 
-moss serves `.moss/theme/` verbatim to `/_moss/theme/` in the built site. Both files load automatically on every page. There is no build step and no config entry.
+moss serves `.moss/theme/` verbatim to `/_moss/theme/` in the built site. Both files load automatically on every page. No build step, no config entry.
 
 ## How your CSS wins
 
-moss loads **`.moss/theme/style.css`** into the last CSS layer (`@layer themes`). It wins over all of moss's built-in styles by layer order. You never need `!important`. You never need `@layer`.
+moss loads **`.moss/theme/style.css`** into the last CSS layer (`@layer themes`). It wins over all of moss's built-in styles by layer order. No `!important` needed. No `@layer` needed.
 
 ## The three styling rungs
 
@@ -44,7 +44,7 @@ Change a CSS custom property and every component that uses it follows:
 }
 ```
 
-This is the right rung for colors, fonts, spacing, and width — anything that should be consistent across the whole site.
+Use this rung for colors, fonts, spacing, and width — anything that should be consistent across the whole site.
 
 ### CSS selector on semantic HTML
 
@@ -74,13 +74,13 @@ Attach a custom class to a shortcode block with `{.class}` syntax, then target t
 }
 ```
 
-Use this rung for one-off layout variations on a specific page.
+Use this rung for one-off layout variations on a single page.
 
 ## Dark mode
 
 moss sets `data-theme` on `<html>` before first paint. It reads `localStorage["moss-theme"]` and falls back to the OS `prefers-color-scheme`. One block in your stylesheet covers both the toggle and the system preference.
 
-Do not write `@media (prefers-color-scheme: dark)`. Write this instead:
+Do not write `@media (prefers-color-scheme: dark)`. Write this instead, which applies whenever dark mode is active regardless of how the visitor arrived there:
 
 ```css
 :root[data-theme="dark"] {
@@ -89,11 +89,9 @@ Do not write `@media (prefers-color-scheme: dark)`. Write this instead:
 }
 ```
 
-That block applies whenever dark mode is active, regardless of how the visitor arrived there.
-
 ## Quiet chrome
 
-`--moss-color-ui-accent` controls nav links, buttons, and site controls. It defaults to `var(--moss-color-accent)`, which ties navigation color to your content accent. To make the chrome recede while content links keep the accent, set it to a neutral:
+`--moss-color-ui-accent` controls nav links, buttons, and site controls. It defaults to `var(--moss-color-accent)`, tying navigation color to your content accent. To make the chrome recede while content links keep the accent, set it to a neutral:
 
 ```css
 :root {
@@ -120,7 +118,7 @@ const url = new URL("asset.woff2", mossTheme.base);
 
 ## Where to find every token and class
 
-The examples above cover the common customization points. For the full set:
+For the full set:
 
 - [[css-tokens|CSS tokens]] — every `--moss-*` custom property, grouped by category
 - [[components|Component classes]] — every `.moss-*` class name moss emits

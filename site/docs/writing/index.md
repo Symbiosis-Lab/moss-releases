@@ -6,7 +6,7 @@ description: Shape your pages — frontmatter, structure, links, media, and shor
 translationKey: docs-author
 ---
 
-Once your folder is a site, writing is the work: shaping each page and how the pages connect. This section covers everything you do in your Markdown.
+Once your folder is a site, writing is the work: shaping each page and how pages connect. This section covers everything you do in your Markdown.
 
 Control each page with [[frontmatter]] — title, date, visibility, and more. See how [[structure|files, folders, and URLs]] fit together. Connect pages with [[wikilinks-and-embeds|wikilinks and embeds]], shape the site's [[navigation|navigation and footer]], call out content with [[callouts]], and add layouts with [[shortcodes]] — grids, galleries, hero images. Your [[media]] is tidied for the web for you, and a site can be [[multilingual]]. Write in the [[editor|built-in editor]] or [[editors|any Markdown editor you like]].
 

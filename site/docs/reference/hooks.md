@@ -19,7 +19,7 @@ Scan folder
           → syndicate hooks (POSSE to platforms)
 ```
 
-Plugins attach to one or more stages by declaring **capabilities** in their manifest.
+Plugins attach to stages by declaring **capabilities** in their manifest.
 
 ## Hook reference
 
@@ -49,13 +49,13 @@ Use for: fetching external data, transforming source files, pre-processing conte
 | `project_info` | object | `total_files`, `homepage_file`, `site_name`, `lang` |
 | `config` | object | Plugin configuration values |
 
-**Data contract:** A process hook that fetches external data writes JSON to `.moss/data/social/<plugin>.json`. The build core does not read this file. Enhance hooks and other plugins consume it.
+**Data contract:** A process hook that fetches external data writes JSON to `.moss/data/social/<plugin>.json`. The build core does not read this file; enhance hooks and other plugins consume it.
 
 The generated source-to-output map (paths plus uids) is at `.moss/build/article-map.json`.
 
 ## generate
 
-Builds or transforms source content into HTML output. **Only one plugin** can have this capability: it replaces moss's built-in generator.
+Builds or transforms source content into HTML output. **Only one plugin** can have this capability; it replaces moss's built-in generator.
 
 Use for: alternative SSG backends (Hugo, Astro, Jekyll).
 
@@ -84,7 +84,7 @@ Use for: comments, analytics, newsletter forms, custom scripts.
 
 Pushes the compiled site to a hosting platform. **Only one plugin** can have this capability.
 
-Use for: GitHub Pages, Netlify, custom hosting.
+Use for: GitHub Pages, Netlify, or custom hosting.
 
 **Context:** Includes `site_files` (all compiled output), `deployment` info, and `domain`.
 
@@ -100,14 +100,14 @@ Use for: cross-posting to Matters.town, Substack, social media.
 
 Plugins run in the Tauri webview. The lifecycle:
 
-1. Rust backend sends plugin code and manifest
-2. Plugin code injected as a `<script>` tag
-3. Plugin creates a global object (e.g., `window.MattersPlugin`)
-4. moss calls `onload({ project_path, config })` if defined
-5. Hooks are called with their respective contexts
-6. Results are sent back to the Rust backend
+1. Rust backend sends plugin code and manifest.
+2. Plugin code is injected as a `<script>` tag.
+3. Plugin creates a global object (e.g., `window.MattersPlugin`).
+4. moss calls `onload({ project_path, config })` if defined.
+5. Hooks are called with their respective contexts.
+6. Results are sent back to the Rust backend.
 
-Console output (`console.log`, `console.warn`, `console.error`) from plugins is forwarded to the moss terminal.
+`console.log`, `console.warn`, and `console.error` from plugins are forwarded to the moss terminal.
 
 ## Plugin modes
 

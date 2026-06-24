@@ -16,7 +16,7 @@ translationKey: docs-extend-manifest
 └── icon.svg           Plugin icon (optional)
 ```
 
-Plugins live in `.moss/plugins/{name}/` inside each project.
+Each plugin lives in `.moss/plugins/{name}/` inside the project.
 
 ## Manifest fields
 
@@ -79,7 +79,7 @@ Plugins live in `.moss/plugins/{name}/` inside each project.
 
 ### Defaults and schema
 
-`config` sets default values. `config_schema` declares the type of each field (`"boolean"`, `"number"`, `"string"`). moss generates a settings UI from these automatically.
+`config` sets default values. `config_schema` declares the type of each field (`"boolean"`, `"number"`, `"string"`). moss generates a settings UI from these fields automatically.
 
 | Manifest field | Purpose |
 |---------------|---------|
@@ -110,7 +110,7 @@ Plugin configuration is resolved in priority order:
 }
 ```
 
-`{value}` is replaced with the user's input. The probe runs and checks the response.
+`{value}` is replaced with the user's input. moss probes the URL and checks the response.
 
 ## Schema contributions
 
@@ -129,11 +129,11 @@ Plugins can add frontmatter fields via `contributes.frontmatter.fields`:
 }
 ```
 
-Contributed fields are merged into the active schema at runtime and appear in the editor.
+Contributed fields are merged into the active schema at runtime and appear in the moss editor.
 
 ## moss-api SDK
 
-The `moss-api` package provides types and utilities for plugin development.
+The `moss-api` package provides types and utilities for plugin development:
 
 ```sh
 npm install moss-api
@@ -174,7 +174,7 @@ esbuild src/main.ts --bundle --format=iife --global-name=MyPlugin --outfile=dist
 
 ## Testing
 
-Use vitest with the mock Tauri setup from moss-api:
+Use vitest with the mock Tauri setup from `moss-api`:
 
 ```typescript
 import { describe, it, expect } from 'vitest';

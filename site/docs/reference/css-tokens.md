@@ -6,7 +6,7 @@ translationKey: docs-reference-css-tokens
 description: Every --moss-* CSS custom property, grouped by category. Run moss describe --json for the live values of your installed moss.
 ---
 
-These are the CSS custom properties moss defines. Override any of them in `.moss/theme/style.css`. No `!important` needed.
+These are the CSS custom properties moss defines. Override any of them in `.moss/theme/style.css` — no `!important` needed.
 
 The full size scale runs `--moss-size-{2xs,xs,sm,md,lg,xl,2xl,3xl}`.
 

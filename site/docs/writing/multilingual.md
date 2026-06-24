@@ -6,7 +6,7 @@ description: Folder-per-language structure, translation keys, and automatic lang
 translationKey: docs-multilingual
 ---
 
-moss supports sites in English (`en`), Simplified Chinese (`zh-hans` / `zh-cn`), and Traditional Chinese (`zh-hant` / `zh-tw`). Any of these can be the site default; the rest appear behind an automatic language toggle in the header.
+moss supports English (`en`), Simplified Chinese (`zh-hans` / `zh-cn`), and Traditional Chinese (`zh-hant` / `zh-tw`). Any of these can be the site default; the rest appear behind an automatic language toggle in the header.
 
 ## Folder-per-language (canonical)
 
@@ -30,7 +30,7 @@ my-site/
 
 Each language tree mirrors the site structure. URLs follow the same pattern: `/`, `/about/`, `/posts/hello/` for the default language; `/zh-hans/`, `/zh-hans/about/`, etc. for others.
 
-This is the recommended structure: clear, scalable, and maps 1:1 to the URL layout visitors see.
+This is the recommended structure: clear, scalable, and maps 1:1 to the URL layout.
 
 ## Sibling suffix (legacy)
 
@@ -44,7 +44,7 @@ my-site/
 └── about.zh-hans.md
 ```
 
-This works for small sites, but mixing it with folder-per-language in the same folder is ambiguous. Stick to one style per site.
+This works for small sites. Mixing it with folder-per-language in the same folder is ambiguous — stick to one style per site.
 
 Bare `.zh` is accepted as shorthand for `.zh-hans`: `about.zh.md` resolves exactly like `about.zh-hans.md` (URL `/zh-hans/about/`, `lang="zh-hans"`). Use whichever form you prefer; `.zh-hant` / `.zh-tw` remain distinct for Traditional Chinese.
 
@@ -59,9 +59,9 @@ If a single language uses **both** styles, say `zh-hans/index.md` (folder-per-la
        https://docs.mosspub.com/multilingual for the canonical pattern.
 ```
 
-Both styles still compile; the warning is just a nudge. To silence it, pick one style per language and move the other files over. Folder-per-language (the canonical shape above) is almost always the better choice: URLs mirror the folder tree, and adding more pages doesn't keep stacking `.lang.md` copies next to originals.
+Both styles still compile; the warning is a nudge. To silence it, pick one style per language and move the other files over. Folder-per-language is almost always the better choice: URLs mirror the folder tree, and adding pages doesn't stack `.lang.md` copies next to originals.
 
-Different languages may use different styles without triggering the warning; it only fires when the **same** language appears in both shapes.
+The warning fires only when the **same** language appears in both shapes. Different languages can use different styles without triggering it.
 
 ## Frontmatter fields
 
@@ -98,7 +98,7 @@ The first step that yields a recognized language wins.
 
 ## Setting the site default
 
-By default, moss treats the root-level (`en`) tree as the site default. To publish another language at `/`, set `lang` in the root `index.md`:
+By default, moss treats the root-level (`en`) tree as the site default. To publish another language at `/`, set `lang` in the root `index.md`.
 
 ```yaml
 ---
@@ -111,9 +111,7 @@ Then the Simplified Chinese tree serves at `/` and English at `/en/`.
 
 ## Automatic language toggle
 
-When two or more language versions of a page are linked (via matching paths in folder-per-language, matching filenames in sibling-suffix, or matching `translationKey`), moss emits a language toggle in the site header.
-
-The toggle shows the page's current language, followed by links to each available translation. Nothing to configure. It appears automatically as soon as a second language file exists.
+When two or more language versions of a page are linked (via matching paths in folder-per-language, matching filenames in sibling-suffix, or matching `translationKey`), moss emits a language toggle in the site header. The toggle shows the current language and links to each available translation. It appears automatically as soon as a second language file exists.
 
 ## Shared partials across languages
 
@@ -126,7 +124,7 @@ Some about copy.
 ![[footer]]
 ```
 
-moss resolves `![[footer]]` by looking in the current page's language tree first (so `zh-hans/footer.md` wins from inside `zh-hans/`), then falling back to the root. This lets each language keep its own partial where needed, while defaulting to a shared one.
+moss resolves `![[footer]]` by looking in the current page's language tree first (so `zh-hans/footer.md` wins from inside `zh-hans/`), then falling back to the root. Each language can keep its own partial where needed, falling back to a shared one.
 
 See [[wikilinks-and-embeds]] for the full transclusion syntax.
 

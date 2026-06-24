@@ -6,7 +6,7 @@ description: Images, video, notebooks, and other files in your site.
 translationKey: docs-media
 ---
 
-Put images, videos, and other files anywhere in your project folder. Reference them from markdown and moss handles the rest: path resolution, optimization, and progressive loading. ^intro
+Put images, videos, and other files anywhere in your project folder. Reference them from markdown; moss handles path resolution, optimization, and progressive loading. ^intro
 
 ## Images
 
@@ -22,7 +22,7 @@ Or with a wikilink:
 ![[sunset.jpg]]
 ```
 
-moss resolves the path automatically. You don't need to worry about relative vs absolute paths. It also extracts the image dimensions and generates a tiny placeholder (a blurred background color) so the page doesn't jump as images load.
+moss resolves the path automatically. It also extracts image dimensions and generates a tiny blurred placeholder so the page doesn't jump as images load.
 
 Supported formats: `.jpg`, `.jpeg`, `.png`, `.gif`, `.svg`, `.webp`, `.avif`.
 
@@ -34,9 +34,7 @@ Drop video files in your folder and reference them the same way:
 ![[demo.mov]]
 ```
 
-moss auto-transcodes `.mov` files to `.mp4` (H.264 + AAC) in the background. The preview opens immediately, and video loads progressively as transcoding completes.
-
-You can reference the original `.mov` filename; moss serves the converted `.mp4` automatically.
+moss transcodes `.mov` files to `.mp4` (H.264 + AAC) in the background. The preview opens immediately and video loads progressively as transcoding completes. Reference the original `.mov` filename; moss serves the converted `.mp4` automatically.
 
 ## Display control
 
@@ -66,13 +64,11 @@ This syntax works in wikilinks, markdown images, and bare filenames inside short
 
 ## Notebooks
 
-Jupyter notebooks (`.ipynb` files) run directly in the browser via JupyterLite, with no server needed and no Python installation required. The entire runtime (~20 MB) runs as WebAssembly in the visitor's browser.
-
-Place a `.ipynb` file in your project and moss makes it available alongside your other content.
+Jupyter notebooks (`.ipynb` files) run directly in the browser via JupyterLite — no server, no Python installation required. The entire runtime (~20 MB) runs as WebAssembly in the visitor's browser. Place a `.ipynb` file in your project and it appears alongside your other content.
 
 ## HTML files
 
-Plain `.html` files in your project are served as-is, without any processing. This is useful for interactive content, embeds, or pages that need full control over their markup.
+Plain `.html` files in your project are served as-is. Use them for interactive content, embeds, or pages that need full control over their markup.
 
 ## Cover images
 
@@ -85,7 +81,7 @@ cover: screenshots/hero.png
 ---
 ```
 
-Covers appear in card layouts when a section uses `children_style: card`. moss auto-detects the media type from the file extension. Override with `cover_type` for non-image covers:
+Covers appear in card layouts when a section uses `children_style: card`. moss detects the media type from the file extension. Override with `cover_type` for non-image covers:
 
 ```yaml
 ---

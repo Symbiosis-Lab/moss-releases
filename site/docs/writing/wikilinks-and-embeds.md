@@ -14,7 +14,7 @@ Link to any page in your site using double brackets:
 Read the [[structure]] page for details.
 ```
 
-moss resolves the link by matching the text against filenames, titles, and slugs. You don't need to specify the full path. `[[from-matters]]` finds `docs/start/from-matters.md` automatically.
+moss resolves the link by matching the text against filenames, titles, and slugs. No full path needed. `[[from-matters]]` finds `docs/start/from-matters.md` automatically.
 
 **Display text:**
 
@@ -55,7 +55,7 @@ Embed images with `!` before the brackets:
 ![[poster-farewell.webp]]
 ```
 
-moss resolves the filename by searching the entire content tree, so you don't need a relative path. Put images in an excluded asset folder (`assets/`, `images/`, `static/`, `public/`) so they are served but not treated as content pages, then reference them by bare filename from any markdown file.
+moss resolves the filename by searching the entire content tree — no relative path needed. Put images in an excluded asset folder (`assets/`, `images/`, `static/`, `public/`) so they are served but not treated as content pages, then reference them by bare filename from any markdown file.
 
 ```
 work/
@@ -83,7 +83,7 @@ This inserts the referenced paragraph directly into the current page. Embeds wor
 - **Block**: `![[structure#^intro]]`: embeds a single paragraph marked with a block ID
 - **Folder listing**: `![[journal/]]`: embeds another folder's children as cards (see below)
 
-moss detects circular embeds and stops before creating an infinite loop.
+moss detects circular embeds and stops before an infinite loop.
 
 ## HTML and interactive embeds
 
@@ -93,9 +93,9 @@ Embed an interactive or animated `.html` file (an animation, a small demo, a wid
 ![[folder-to-site.html]]
 ```
 
-moss serves the file as-is inside an iframe, so its own CSS and animation run normally. Keep the file in an excluded asset folder (`assets/`, `static/`) and reference it by bare filename; moss resolves the path and keeps the URL correct wherever the page is deployed. A query string passes straight through: `![[chart.html?series=a,b]]`.
+moss serves the file as-is inside an iframe, so its own CSS and animation run normally. Keep the file in an excluded asset folder (`assets/`, `static/`) and reference it by bare filename. moss resolves the path and keeps the URL correct wherever the page is deployed. A query string passes straight through: `![[chart.html?series=a,b]]`.
 
-This is the preferred way to embed interactive content. Do not hand-write a raw iframe or an absolute `/assets/...` URL. The wikilink computes the right relative path, and the same `![[folder-to-site.html]]` resolves to a per-language copy via the language-tree rule above: put the default file at `assets/animations/folder-to-site.html` and a translation at `zh-hant/assets/animations/folder-to-site.html`, and each page picks its own.
+This is the preferred way to embed interactive content. Do not hand-write a raw `<iframe>` or an absolute `/assets/...` URL. The wikilink computes the right relative path. The same `![[folder-to-site.html]]` resolves to a per-language copy via the language-tree rule: put the default file at `assets/animations/folder-to-site.html` and a translation at `zh-hant/assets/animations/folder-to-site.html`, and each page picks its own.
 
 The embed fills the page width in a 16:9 frame, so design the file to read well at that shape.
 
@@ -115,7 +115,7 @@ A personal record of my reading and writing.
 ## Books
 ```
 
-The trailing slash is the signal that this is a folder, not a page. The cards inherit the target folder's `sort` (see [[frontmatter#Sort]]), so a `journal/` folder with dated entries renders date-sorted cards here, and a `projects/` folder of dateless entries renders alphabetically.
+The trailing slash signals a folder embed, not a page. The cards inherit the target folder's `sort` (see [[frontmatter#Sort]]), so a `journal/` folder with dated entries renders date-sorted cards, and a `projects/` folder of dateless entries renders alphabetically.
 
 **Pipe parameters** (comma-separated):
 
@@ -145,7 +145,7 @@ Two ways to render another folder's children on a page:
 | Inline `![[folder/]]` wikilink | Multiple embeds per page, or you want the listing between other markdown sections. The author chooses where each listing appears. |
 | `children_source: "[[folder]]"` in frontmatter | Page-scope: the page IS a listing of another folder. One transclusion per page. Renders at the slot determined by your theme. |
 
-For most pages with a single primary listing, frontmatter `children_source` is the right choice. Use `![[folder/]]` when you want the listing inline among other content.
+For a page with a single primary listing, `children_source` is the right choice. Use `![[folder/]]` when you want the listing inline among other content.
 
 ## Block references
 
@@ -155,7 +155,7 @@ Mark any paragraph with a `^block-id` at the end of the line:
 moss turns a folder of markdown files into a website. ^intro
 ```
 
-Other pages can then link to or embed this specific paragraph using `[[page#^intro]]` or `![[page#^intro]]`. Block IDs are stable: they don't change when you reword the paragraph or rename the heading above it.
+Other pages can then link to or embed this paragraph using `[[page#^intro]]` or `![[page#^intro]]`. Block IDs are stable — they don't change when you reword the paragraph or rename the heading above it.
 
 ## Markdown links
 
@@ -167,7 +167,7 @@ Standard markdown links work as you'd expect:
 [Section link](/docs/writing/structure/)
 ```
 
-Both relative and absolute paths work. External links open in a new tab automatically.
+Both relative and absolute paths work. External links open in a new tab.
 
 ## Bilingual content
 

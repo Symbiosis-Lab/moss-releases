@@ -6,7 +6,7 @@ description: Layout blocks and components that extend markdown.
 translationKey: docs-author-shortcodes-index
 ---
 
-Shortcodes are special blocks in your markdown that create layouts and components beyond what standard markdown offers: grids, galleries, hero images, and more. They use `:::` block syntax. ^def-shortcode
+Shortcodes are blocks in your markdown that create layouts and components beyond standard markdown: grids, galleries, hero images, and more. They use `:::` block syntax. ^def-shortcode
 
 ```markdown
 :::grid 2
@@ -18,7 +18,7 @@ Column two content.
 
 ## Arity rule for nesting
 
-When one shortcode lives inside another, the inner fence uses more colons than the outer. A `:::grid` (3 colons) contains `::::buttons` (4 colons); a `::::buttons` could contain `:::::callout` (5 colons), and so on. The bare close of each fence must match its opener exactly.
+When one shortcode lives inside another, the inner fence uses more colons than the outer. A `:::grid` (3 colons) contains `::::buttons` (4 colons); `::::buttons` could contain `:::::callout` (5 colons), and so on. Each fence's closing delimiter must match its opener exactly.
 
 ```markdown
 :::grid 2 2:3 {.hero-split}
@@ -33,9 +33,9 @@ Contact info
 :::
 ```
 
-Existing pages that never nested fences continue to work unchanged.
+Pages that never nested fences continue to work unchanged.
 
-Nesting two fences at the same colon count emits a build warning and renders as literal text. Always give the inner fence more colons than the outer.
+Nesting two fences at the same colon count emits a build warning and renders as literal text.
 
 ## Cell dividers
 
@@ -45,7 +45,7 @@ Inside `:::grid` and `:::buttons`, cells are separated by a line containing only
 
 ## Configuration
 
-Pass options in the attribute block, not the body. For example, `:::subscribe {placeholder="..." button="..."}` or `:::grid {cols=2}` (the positional form `:::grid 2` works too). Descriptive prose belongs above or below the block, never inside the option line.
+Pass options in the attribute block, not the body. For example: `:::subscribe {placeholder="..." button="..."}` or `:::grid {cols=2}` (the positional form `:::grid 2` also works). Descriptive prose belongs above or below the block, not inside the option line.
 
 ## Shortcodes
 

@@ -26,7 +26,7 @@ translationKey: docs-author-shortcodes-buttons
 
 ## Modifier class
 
-Use `{.inverted}` for a light-on-dark variant, or any other class to apply custom styles from your `style.css`.
+Use `{.inverted}` for a light-on-dark variant, or any other class for custom styles from `style.css`.
 
 :::grid 2 {.sc-demo}
 ```markdown
@@ -42,4 +42,4 @@ Use `{.inverted}` for a light-on-dark variant, or any other class to apply custo
 ::::
 :::
 
-The first link in the block is always styled as the primary button. All subsequent links are secondary. To change which action is primary, reorder the links.
+The first link is always the primary button; all subsequent links are secondary. To change which action is primary, reorder the links.

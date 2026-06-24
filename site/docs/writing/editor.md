@@ -5,7 +5,7 @@ weight: 9
 description: Keyboard shortcuts for formatting text in the moss editor.
 ---
 
-The moss editor supports keyboard shortcuts for the most common inline formatting actions. These are the same actions available in the floating toolbar that appears when you select text.
+The moss editor supports keyboard shortcuts for common inline formatting actions — the same actions available in the floating toolbar that appears when you select text.
 
 ## Mac
 
@@ -33,4 +33,4 @@ Using a shortcut on text that is already formatted removes the formatting. For e
 
 ## Toolbar
 
-The same five actions are available as buttons in the floating toolbar that appears above your cursor when you select text. The keyboard shortcuts and the toolbar buttons behave identically.
+The same five actions are available as buttons in the floating toolbar. The keyboard shortcuts and toolbar buttons behave identically.

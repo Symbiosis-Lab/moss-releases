@@ -21,7 +21,7 @@ Callouts are blockquotes with a `[!type]` marker on the first line. moss turns t
 > You can nest markdown inside callouts.
 ```
 
-The word after `[!` sets the type. An optional title follows on the same line. If you omit the title, moss uses the capitalized type name (e.g., `[!note]` → "Note").
+The word after `[!` sets the type. An optional title follows on the same line. When the title is omitted, moss uses the capitalized type name (e.g., `[!note]` → "Note").
 
 Callouts can span multiple paragraphs. Use `>` on empty lines between paragraphs:
 
@@ -36,7 +36,7 @@ Markdown formatting inside callouts works as usual: bold, italics, links, lists,
 
 ## Supported types
 
-moss supports the same set of Obsidian-compatible types:
+moss supports the Obsidian-compatible types:
 
 `note`, `tip`, `warning`, `caution`, `important`, `info`, `abstract`, `todo`, `success`, `question`, `failure`, `danger`, `bug`, `example`, `quote`.
 
@@ -55,7 +55,7 @@ Each type gets the CSS class `.callout-<type>` alongside a shared `.callout` cla
 </div>
 ```
 
-Default styles ship with each theme. Override or extend them from your `.moss/theme/style.css`:
+Default styles ship with each theme. Override or extend them in `.moss/theme/style.css`:
 
 ```css
 .callout-warning {

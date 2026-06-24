@@ -30,7 +30,7 @@ my-site/
 
 When you preview or publish, moss reads the folder, converts your Markdown to pages, tidies your images and videos for the web, and assembles a complete static website. It writes the result into a hidden `.moss/` folder inside your project; nothing else in your folder changes. The same build runs whether you preview locally or publish, so the site you see is the site you ship.
 
-You don't configure any of this. moss creates its settings on first run, picks sensible defaults, and stays out of the way. When you want to change how the site looks, you [[design|write a theme]]. When you want new behavior, you [[extend|write a plugin]]. Everything else is just your writing.
+You don't configure any of this. moss creates its settings on first run, picks sensible defaults, and stays out of the way. To change how the site looks, [[design|write a theme]]. For new behavior, [[extend|write a plugin]]. Everything else is your writing.
 
 ## Next
 

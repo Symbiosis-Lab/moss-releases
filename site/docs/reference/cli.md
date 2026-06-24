@@ -24,19 +24,19 @@ translationKey: docs-extend-cli
 
 ## CI and automation
 
-moss works headless (no GUI needed):
+moss works headless:
 
 ```bash
 moss build /path/to/folder --no-plugins
 ```
 
-The build output is a self-contained static site in `.moss/build/current/`: standard HTML, CSS, and JS that can be deployed anywhere. (`.moss/build/current/` is a symlink to the latest build generation under `.moss/build/generations/`.)
+The build output is a self-contained static site in `.moss/build/current/` — standard HTML, CSS, and JS that can be deployed anywhere. (`.moss/build/current/` is a symlink to the latest generation under `.moss/build/generations/`.)
 
 ## Import
 
 `moss import <url> [folder] [-r]` converts a live page to markdown. Only `http` and `https` URLs are supported. Images land in `assets/imported/`. Pass `-r` to crawl the same domain and path prefix, capped at 200 pages.
 
-Import extracts the content and discards the original CSS, so recreate the look in `.moss/theme/style.css` as a separate step.
+Import extracts content and discards the original CSS. Recreate the look in `.moss/theme/style.css`.
 
 ## Development
 
@@ -53,4 +53,4 @@ npm run moss -- preview ~/Sites/my-blog
 npm run moss -- preview ~/Sites/other-folder
 ```
 
-The single-instance plugin routes CLI commands to the running dev instance, enabling rapid folder switching without recompilation.
+The single-instance plugin routes CLI commands to the running dev instance, so you can switch folders without recompilation.
