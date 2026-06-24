@@ -1,34 +1,41 @@
 ---
-title: 文档
-uid: dd8cbb2b
-weight: 1
-description: 了解如何使用 moss 将文件夹变成网站。
-translationKey: docs
+title: 开始使用
+uid: "1cc7cb95"
+weight: 0
+description: 把装着你文字的文件夹变成一个属于你的网站，大约五分钟。
+translationKey: docs-start
 lang: zh-hans
 ---
 
-# 文档
+# 开始使用
 
-安装 moss 后，右键任意文件夹，选择**用 moss 发布**即可预览网站。可以使用 moss 自带编辑器，也可以用[[editors|任何你喜欢的 markdown 编辑器]]。
+> 一个装着你文字的文件夹，会变成一个网站。让 moss 对准这个文件夹，挑一个网址，大约五分钟你就上线了。
 
-- 每个文件夹会变成一个页面，默认[[author/frontmatter#子页面|列出其子页面]]。
-  - 全是[[media|媒体文件]]的文件夹会变成图库。
-  - 图片和视频会自动压缩转码，适配 Web。
-- 每个 `.md` 文件会变成一个页面。
-  - URL 根据它在文件夹中的路径生成，除非在 frontmatter 里用 `url` [[author/frontmatter#高级字段|自定义]]。
-  - `index.md`、`readme.md`、`_index.md`、`main.md`，或与文件夹同名的文件（例如 `recipes/` 里的 `recipes.md`）会成为[[structure#^folder-page|该文件夹的页面]]。带语言后缀的变体，如 `index.zh-hans.md`，同样有效。
-  - 扁平站点根目录下的 `about.md`（以及 `关于.md` / `關於.md`）会自动出现在导航栏。含子文件夹的组织型站点中，所有根目录页面都会出现在导航栏，通过 frontmatter 中的 [[author/frontmatter#导航|`nav` 字段]]可控制。
-- 引用媒体或 markdown 文件时，用相对路径或直接写文件名即可，moss 会在文件树中找到最匹配的那个。
+![[folder-to-site.html]]
 
-```
-my-site/
-├── index.md        ← 首页
-├── about.md        ← /about/
-└── posts/
-    ├── index.md    ← /posts/
-    └── hello.md    ← /posts/hello/
-```
+你不用搭建任何东西。你只管写作，把文字放在一个文件夹里，moss 会把这个文件夹变成网站。每一篇文字变成一个页面，每一个文件夹变成站点的一个部分。你的图片和视频会被自动整理好，适配 Web。没有什么新东西需要先学。
 
-准备好后，可以[[deploy|发布到 GitHub Pages]]并绑定自己的域名。
+## 安装 moss
 
-建议先看[[structure|结构]]，了解文件、文件夹和 URL 是如何对应起来的。
+从 [GitHub Releases](https://github.com/Symbiosis-Lab/moss-releases/releases/latest) 下载 moss，打开文件，把 moss 拖进“应用程序”文件夹。moss 运行于 macOS 12 或更新的系统，Intel 和 Apple Silicon 的 Mac 都支持。（Windows 和 Linux 在计划中。）
+
+## 把文件夹搬上网
+
+**1. 打开你的文件夹。** 右键任意文件夹，选择**用 moss 发布**，或者打开 moss 点击**打开文件夹**。预览窗口会立刻打开，显示你的网站。当你修改文件时，预览会在你眼前实时更新。
+
+**2. 点击发布。** 预览窗口右上角有一个圆形按钮。把鼠标移上去，会看到**发布**。点击它。第一次会弹出一个简短的设置，标题是**设置你的站点**。
+
+**3. 挑选网址并填写邮箱。** moss 会建议一个以 `.mosspub.com` 结尾的网址，你可以保留，也可以修改。它会替你检查，并显示**可用**或**不可用**。填入你的邮箱，让站点归你所有，然后选择**验证邮箱**。
+
+**4. 点击邮件里的链接。** moss 会显示**检查你的邮箱**并等待。打开它发来的邮件，点击链接。moss 会自己察觉到并继续往下走。（如果你之前用这个邮箱发布过，moss 会跳过这一步，按钮上直接显示**发布**。）
+
+**5. 你上线了。** moss 会把站点搬上网，显示**已发布。**，下面一行是**你的站点已上线**和你的网址。点击**访问站点**就能看到它。
+
+就这些。从现在起，每当你修改文字，再点一次**发布**，你的站点就会更新。
+
+## 接下来
+
+- 已经在 Matters 写作了？用[[from-matters|从 Matters 导入]]把你的文章搬过来。
+- 让读者通过邮件关注你：见[[newsletter]]。
+- 把新文章分享回你的 Matters 主页：见[[syndicate|分享到 Matters]]。
+- 用你自己的网址，而不是 `.mosspub.com`：见[[domain]]。

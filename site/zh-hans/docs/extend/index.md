@@ -1,7 +1,7 @@
 ---
 title: 扩展
 uid: 899d9f98
-weight: 7
+weight: 50
 description: 构建接入编译流程的插件。
 translationKey: docs-extend
 lang: zh-hans

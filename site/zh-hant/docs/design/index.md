@@ -1,7 +1,7 @@
 ---
 title: 設計
 uid: 6dda3fea
-weight: 6
+weight: 30
 description: 用 CSS 和 JavaScript 自訂你的網站。
 translationKey: docs-design
 lang: zh-hant

@@ -40,7 +40,6 @@ my-site/
 
 ### 字体
 
-<!-- auto:start:css-typography -->
 | 变量 | 默认值 | 说明 |
 |------|--------|------|
 | `--moss-font-body` | 系统无衬线字体栈 | 正文字体族 |
@@ -58,11 +57,9 @@ my-site/
 | `--moss-size-xl` | `1.25rem` | 字号刻度 xl |
 | `--moss-size-2xl` | `1.5rem` | 字号刻度 2xl |
 | `--moss-size-3xl` | `1.875rem` | 字号刻度 3xl |
-<!-- auto:end:css-typography -->
 
 ### 颜色
 
-<!-- auto:start:css-colors -->
 | 变量 | 默认值 | 说明 |
 |------|--------|------|
 | `--moss-color-accent` | `#2d5a2d` | 链接、高亮、强调元素 |
@@ -76,11 +73,9 @@ my-site/
 | `--moss-color-surface` | `#f4f1ec` | 卡片和表面背景色 |
 | `--moss-border-light` | 半透明 | 轻边框 |
 | `--moss-border-medium` | 半透明偏深 | 中等边框 |
-<!-- auto:end:css-colors -->
 
 ### 布局
 
-<!-- auto:start:css-layout -->
 | 变量 | 默认值 | 说明 |
 |------|--------|------|
 | `--moss-content-width` | `67ch` | 内容最大宽度 |
@@ -89,11 +84,9 @@ my-site/
 | `--moss-sidebar-width` | `280px` | 侧边栏宽度 |
 | `--moss-site-max-width` | `1200px` | 站点整体最大宽度 |
 | `--moss-container-padding` | `clamp(1rem, 5vw, 2rem)` | 容器两侧内边距 |
-<!-- auto:end:css-layout -->
 
 ### 间距
 
-<!-- auto:start:css-spacing -->
 | 变量 | 默认值 | 说明 |
 |------|--------|------|
 | `--moss-space-xs` | `0.5rem` | 超小（8px） |
@@ -102,7 +95,6 @@ my-site/
 | `--moss-space-lg` | `2rem` | 大（32px） |
 | `--moss-space-xl` | `3rem` | 超大（48px） |
 | `--moss-space-2xl` | `4rem` | 特大（64px） |
-<!-- auto:end:css-spacing -->
 
 ## 深色模式
 
@@ -133,7 +125,6 @@ moss 在首次渲染前就已通过一段内联脚本读取 `localStorage["moss-
 
 ### 集合网格
 
-<!-- auto:start:component-classes -->
 | 类名 | 元素 |
 |------|------|
 | `.moss-collection-grid` | 网格容器 |
@@ -249,7 +240,6 @@ moss 在首次渲染前就已通过一段内联脚本读取 `localStorage["moss-
 |------|------|
 | `.moss-colophon` | 版权页 / 页脚注释块 |
 | `.moss-summary-layout` | 摘要布局包裹层 |
-<!-- auto:end:component-classes -->
 
 ## 短代码类名
 

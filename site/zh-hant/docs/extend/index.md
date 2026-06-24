@@ -1,7 +1,7 @@
 ---
 title: 擴充
 uid: de3a9595
-weight: 7
+weight: 50
 description: 建構接入編譯流程的外掛。
 translationKey: docs-extend
 lang: zh-hant

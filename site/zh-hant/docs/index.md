@@ -1,34 +1,41 @@
 ---
-title: 文件
-uid: 83cf21d9
-weight: 1
-description: 瞭解如何使用 moss 將資料夾變成網站。
-translationKey: docs
+title: 開始使用
+uid: "04b84b9d"
+weight: 0
+description: 把一個放著你文字的資料夾變成你自己擁有的網站，大約五分鐘就能完成。
+translationKey: docs-start
 lang: zh-hant
 ---
 
-# 文件
+# 開始使用
 
-安裝 moss 後，右鍵任意資料夾，選擇**用 moss 發佈**即可預覽網站。可以使用 moss 內建編輯器，也可以用[[editors|任何你喜歡的 markdown 編輯器]]。
+> 一個放著你文字的資料夾，就能變成一個網站。把 moss 指向這個資料夾，挑一個網址，大約五分鐘你就上線了。
 
-- 每個資料夾都會變成一個頁面，預設會[[author/frontmatter#子頁面|列出子頁面]]。
-  - 滿是[[media|媒體檔案]]的資料夾會變成圖庫。
-  - 圖片與影片會自動壓縮並轉檔，適配 Web。
-- 每個 `.md` 檔案都會變成一個頁面。
-  - URL 由它在資料夾中的路徑決定，除非在 frontmatter 中用 `url` [[author/frontmatter#進階|自訂]]。
-  - `index.md`、`readme.md`、`_index.md`、`main.md`，或與資料夾同名的檔案（例如 `recipes/` 裡的 `recipes.md`）會成為[[structure#^folder-page|該資料夾的頁面]]。帶語言後綴的變體，如 `index.zh-hant.md`，同樣有效。
-  - 扁平站點根目錄下的 `about.md`（以及 `关于.md` / `關於.md`）會自動出現在導覽列。含子資料夾的組織型站點中，所有根目錄頁面都會出現在導覽列，可透過 frontmatter 中的 [[author/frontmatter#導覽|`nav` 欄位]]控制。
-- 引用媒體或 markdown 檔案時，使用相對路徑或直接寫檔名即可，moss 會在檔案樹中找到最匹配的那個。
+![[folder-to-site.html]]
 
-```
-my-site/
-├── index.md        ← 首頁
-├── about.md        ← /about/
-└── posts/
-    ├── index.md    ← /posts/
-    └── hello.md    ← /posts/hello/
-```
+你不用建置任何東西。你只管寫，把文字放在資料夾裡，moss 會把這個資料夾變成網站。每一篇文字成為一個頁面，每一個資料夾成為網站的一部分。你的照片和影片會自動整理成適合網頁的樣子。沒有什麼新東西要先學。
 
-準備好之後，可以[[deploy|發佈到 GitHub Pages]]並綁定自己的網域。
+## 安裝 moss
 
-建議先看[[structure|結構]]，瞭解檔案、資料夾與 URL 之間的對應關係。
+到 [GitHub Releases](https://github.com/Symbiosis-Lab/moss-releases/releases/latest) 下載 moss，打開檔案，把 moss 拖進「應用程式」資料夾。moss 可在 macOS 12 或更新版本上執行，Intel 與 Apple Silicon 的 Mac 都支援。（Windows 和 Linux 也在規劃中。）
+
+## 把你的資料夾放上網
+
+**1. 打開你的資料夾。** 右鍵任意資料夾，選擇**用 moss 發佈**，或者打開 moss 後點擊**開啟資料夾**。預覽視窗會立刻打開，馬上顯示你的網站。當你改動檔案時，預覽會隨著你的改動同步更新。
+
+**2. 按下發佈。** 預覽視窗的右上角有一個圓形按鈕。把滑鼠移上去，你會看到**發佈**。點擊它。第一次點擊時，moss 會打開一段簡短的設定流程，標題是**設定你的站點**。
+
+**3. 挑選網址，填入電子郵件。** moss 會建議一個以 `.mosspub.com` 結尾的網址，你可以保留，也可以自己改。moss 會幫你檢查，並顯示**可用**或**不可用**。填入你的電子郵件，這個網站就歸你所有，接著選擇**驗證電郵**。
+
+**4. 點擊電子郵件裡的連結。** moss 會顯示**檢查你的電郵**並等待。打開它寄出的電子郵件，點擊裡面的連結。moss 會自動察覺並繼續下一步。（如果你之前用這個電子郵件發佈過，moss 會跳過這一步，按鈕就只顯示**發佈**。）
+
+**5. 你上線了。** moss 會把你的網站放上網，並顯示**已發佈。**，下方一行寫著**你的站點已上線**以及你的網址。點擊**造訪站點**就能看到它。
+
+整件事就是這樣。從現在起，每次你改動文字，再按一次**發佈**，你的網站就會更新。
+
+## 接下來
+
+- 已經在 Matters 上寫作？用[[from-matters|從 Matters 匯入]]把你的貼文帶進來。
+- 讓讀者用電子郵件追蹤你：參閱[[newsletter|電子報]]。
+- 把新貼文同步回你的 Matters 個人檔案：參閱[[syndicate|同步發佈到 Matters]]。
+- 用你自己的網址，而不是 `.mosspub.com`：參閱[[domain|網域]]。

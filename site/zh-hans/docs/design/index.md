@@ -1,7 +1,7 @@
 ---
 title: 设计
 uid: 538e548d
-weight: 6
+weight: 30
 description: 用 CSS 和 JavaScript 自定义你的网站。
 translationKey: docs-design
 lang: zh-hans

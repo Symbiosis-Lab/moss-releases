@@ -1,7 +1,7 @@
 ---
 title: 部署
 uid: fdc3267e
-weight: 4
+weight: 14
 description: 將網站發佈到 mosspub.com 或 GitHub Pages。
 translationKey: docs-deploy
 lang: zh-hant

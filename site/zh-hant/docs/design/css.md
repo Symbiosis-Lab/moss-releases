@@ -40,7 +40,6 @@ my-site/
 
 ### 字型
 
-<!-- auto:start:css-typography -->
 | 變數 | 預設值 | 說明 |
 |------|--------|------|
 | `--moss-font-body` | 系統無襯線字型 | 內文字型族 |
@@ -58,11 +57,9 @@ my-site/
 | `--moss-size-xl` | `1.25rem` | 字級刻度 xl |
 | `--moss-size-2xl` | `1.5rem` | 字級刻度 2xl |
 | `--moss-size-3xl` | `1.875rem` | 字級刻度 3xl |
-<!-- auto:end:css-typography -->
 
 ### 顏色
 
-<!-- auto:start:css-colors -->
 | 變數 | 預設值 | 說明 |
 |------|--------|------|
 | `--moss-color-accent` | `#2d5a2d` | 連結、強調元素 |
@@ -76,11 +73,9 @@ my-site/
 | `--moss-color-surface` | `#f4f1ec` | 卡片和表面背景 |
 | `--moss-border-light` | 半透明 | 輕邊框 |
 | `--moss-border-medium` | 半透明偏深 | 中等邊框 |
-<!-- auto:end:css-colors -->
 
 ### 版面
 
-<!-- auto:start:css-layout -->
 | 變數 | 預設值 | 說明 |
 |------|--------|------|
 | `--moss-content-width` | `67ch` | 內容最大寬度 |
@@ -89,11 +84,9 @@ my-site/
 | `--moss-sidebar-width` | `280px` | 側邊欄寬度 |
 | `--moss-site-max-width` | `1200px` | 網站最大寬度 |
 | `--moss-container-padding` | `clamp(1rem, 5vw, 2rem)` | 容器兩側間距 |
-<!-- auto:end:css-layout -->
 
 ### 間距
 
-<!-- auto:start:css-spacing -->
 | 變數 | 預設值 | 說明 |
 |------|--------|------|
 | `--moss-space-xs` | `0.5rem` | 極小（8px） |
@@ -102,7 +95,6 @@ my-site/
 | `--moss-space-lg` | `2rem` | 大（32px） |
 | `--moss-space-xl` | `3rem` | 極大（48px） |
 | `--moss-space-2xl` | `4rem` | 特大（64px） |
-<!-- auto:end:css-spacing -->
 
 ## 深色模式
 
@@ -133,7 +125,6 @@ moss 在首次繪製前就已透過一段內嵌腳本讀取 `localStorage["moss-
 
 ### 集合格線
 
-<!-- auto:start:component-classes -->
 | Class | 元素 |
 |-------|------|
 | `.moss-collection-grid` | 格線容器 |
@@ -163,7 +154,6 @@ moss 在首次繪製前就已透過一段內嵌腳本讀取 `localStorage["moss-
 | `.moss-article-item` | 個別列表項目 |
 | `.moss-prefix-link` | 帶前綴（日期/數量）的連結 |
 | `.moss-year-group` | 年份分組標題 |
-<!-- auto:end:component-classes -->
 
 ## 短代碼 class
 
