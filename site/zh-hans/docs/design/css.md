@@ -3,7 +3,6 @@ title: CSS
 uid: b0d7a703
 weight: 2
 description: CSS 变量、深色模式和组件类名。
-translationKey: docs-design-css
 lang: zh-hans
 ---
 

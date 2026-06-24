@@ -7,7 +7,7 @@ translationKey: docs
 lang: zh-hant
 ---
 
-# 文件
+# moss 如何運作
 
 安裝 moss 後，右鍵任意資料夾，選擇**用 moss 發佈**即可預覽網站。可以使用 moss 內建編輯器，也可以用[[editors|任何你喜歡的 markdown 編輯器]]。
 

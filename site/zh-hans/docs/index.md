@@ -5,6 +5,7 @@ weight: 0
 description: 把装着你文字的文件夹变成一个属于你的网站，大约五分钟。
 translationKey: docs-start
 lang: zh-hans
+children: false
 ---
 
 # 开始使用
@@ -39,3 +40,13 @@ lang: zh-hans
 - 让读者通过邮件关注你：见[[newsletter]]。
 - 把新文章分享回你的 Matters 主页：见[[syndicate|分享到 Matters]]。
 - 用你自己的网址，而不是 `.mosspub.com`：见[[domain]]。
+- 把 moss 建构好的网站自行托管在任何地方：见[[deploy]]。
+
+## 了解更多
+
+刚接触 moss？[[how-moss-works|moss 如何运作]]解释了 moss 会对你的文件夹做些什么。然后按你想做的事探索：
+
+- [[writing|撰写]]——页面、链接、标注、媒体与短代码。
+- [[design|设计]]——颜色、字体与 CSS。
+- [[reference|参考]]——frontmatter、插件契约与命令行。
+- [[extend|扩展]]——钩子、插槽与 moss-api。

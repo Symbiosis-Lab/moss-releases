@@ -6,7 +6,7 @@ translationKey: docs-design
 description: How to style a moss site with CSS and JavaScript. The canonical guide for humans and AI agents.
 ---
 
-This is the canonical guide for writing a moss theme. It covers everything a human or AI agent needs to know to take a site from stock to styled.
+The canonical guide for writing a moss theme: how to take a site from stock to styled.
 
 ## Where your files go
 
@@ -32,7 +32,9 @@ moss loads **`.moss/theme/style.css`** into the last CSS layer (`@layer themes`)
 
 Work at the level that matches what you're changing.
 
-**Token override** — change a CSS custom property and every component that uses it follows:
+### Token override
+
+Change a CSS custom property and every component that uses it follows:
 
 ```css
 :root {
@@ -44,7 +46,9 @@ Work at the level that matches what you're changing.
 
 This is the right rung for colors, fonts, spacing, and width — anything that should be consistent across the whole site.
 
-**CSS selector on semantic HTML** — target moss's stable class names for component-level changes. moss emits `.moss-collection-card`, `.moss-article-listing`, `.moss-colophon`, and many others. Target them directly:
+### CSS selector on semantic HTML
+
+Target moss's stable class names for component-level changes. moss emits `.moss-collection-card`, `.moss-article-listing`, `.moss-colophon`, and many others. Target them directly:
 
 ```css
 .moss-collection-card {
@@ -54,7 +58,9 @@ This is the right rung for colors, fonts, spacing, and width — anything that s
 
 The full list is in [[components|Component classes]].
 
-**Named-class fenced div** — attach a custom class to a shortcode block with `{.class}` syntax, then target the combination:
+### Named-class fenced div
+
+Attach a custom class to a shortcode block with `{.class}` syntax, then target the combination:
 
 ```markdown
 :::grid 3 {.profiles}

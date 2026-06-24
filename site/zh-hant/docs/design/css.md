@@ -3,7 +3,6 @@ title: CSS
 uid: 0adf0738
 weight: 2
 description: CSS 變數、深色模式和元件類別名稱。
-translationKey: docs-design-css
 lang: zh-hant
 ---
 

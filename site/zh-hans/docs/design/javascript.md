@@ -3,7 +3,6 @@ title: JavaScript
 uid: 1120a418
 weight: 3
 description: 自定义脚本、数据属性和 DOM 结构。
-translationKey: docs-design-javascript
 lang: zh-hans
 ---
 

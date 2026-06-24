@@ -7,6 +7,8 @@ translationKey: docs-extend-slots
 lang: zh-hant
 ---
 
+*本頁內容以英文版為準，中文譯文陸續更新。*
+
 ## 範本插槽
 
 插槽是 HTML 範本中的具名注入點，外掛可以在這些位置插入內容。共有六個插槽： ^def-template-slots

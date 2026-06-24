@@ -7,7 +7,7 @@ translationKey: docs
 lang: zh-hans
 ---
 
-# 文档
+# moss 如何运作
 
 安装 moss 后，右键任意文件夹，选择**用 moss 发布**即可预览网站。可以使用 moss 自带编辑器，也可以用[[editors|任何你喜欢的 markdown 编辑器]]。
 

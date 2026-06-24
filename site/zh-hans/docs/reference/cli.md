@@ -7,15 +7,17 @@ translationKey: docs-extend-cli
 lang: zh-hans
 ---
 
+*本页内容以英文版为准，中文译文陆续更新。*
+
 ## 命令
 
 | 命令 | 说明 |
 |------|------|
 | `moss preview <folder>` | 打开文件夹进入预览，监听文件变更并热重载 |
-| `moss compile <folder>` | 将文件夹编译为静态网站（输出到 `.moss/site/`） |
-| `moss compile <folder> --serve` | 编译并启动本地 HTTP 服务器 |
-| `moss compile <folder> --watch` | 编译并监听文件变更 |
-| `moss compile <folder> --no-plugins` | 编译但不运行插件 |
+| `moss build <folder>` | 将文件夹编译为静态网站（输出到 `.moss/build/current/`） |
+| `moss build <folder> --serve` | 编译并启动本地 HTTP 服务器 |
+| `moss build <folder> --watch` | 编译并监听文件变更 |
+| `moss build <folder> --no-plugins` | 编译但不运行插件 |
 | `moss deploy <folder>` | 部署到已配置的托管平台 |
 
 ## CI 和自动化
@@ -23,10 +25,10 @@ lang: zh-hans
 moss 支持无界面运行，无需 GUI：
 
 ```bash
-moss compile /path/to/folder --no-plugins
+moss build /path/to/folder --no-plugins
 ```
 
-编译产出是 `.moss/site/` 中的独立静态网站，包含标准的 HTML、CSS 和 JS，可以部署到任何地方。
+编译产出是 `.moss/build/current/` 中的独立静态网站，包含标准的 HTML、CSS 和 JS，可以部署到任何地方。
 
 ## 开发
 

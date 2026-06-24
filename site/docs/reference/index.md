@@ -2,7 +2,7 @@
 title: Reference
 uid: 10ee1c71
 weight: 40
-description: The moss contract — frontmatter fields, the plugin API, and the CLI.
+description: The moss contract — frontmatter fields, CSS tokens, component classes, the plugin API, and the CLI.
 translationKey: docs-reference
 ---
 
@@ -11,6 +11,7 @@ translationKey: docs-reference
 The contract for building with moss: exact field names, class names, and commands. If you're writing prose, head to [[writing|Writing]]. If you're styling a site, start with [[design|Write a theme]] and come here for the precise names.
 
 - [[frontmatter|Frontmatter]] — every page metadata field.
+- [[css-tokens|CSS tokens]] · [[components|Component classes]] · [[html-structure|HTML structure]] — the design contract.
 - [[cli|CLI]] — moss commands and flags.
 - [[manifest|Manifest]] · [[hooks|Hooks]] · [[slots|Slots]] — the plugin contract.
 

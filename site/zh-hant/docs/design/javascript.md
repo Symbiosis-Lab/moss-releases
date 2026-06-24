@@ -3,7 +3,6 @@ title: JavaScript
 uid: 394ab4ea
 weight: 3
 description: 自訂指令碼、資料屬性和 DOM 結構。
-translationKey: docs-design-javascript
 lang: zh-hant
 ---
 

@@ -26,7 +26,7 @@ Frontmatter is optional. A file without it still becomes a page. moss uses the f
 
 Frontmatter uses a **fixed schema**: moss only recognizes the fields listed on this page. Arbitrary custom fields are silently ignored. If you need custom per-page metadata, store it in body content: a markdown paragraph, a `::: {.meta}` fenced div, or a data table.
 
-Every recognized field is also discoverable via `moss describe --json`, which prints the full schema (including default values) as machine-readable JSON. The human-readable version is at [docs/contract/reference.md](/contract/reference/).
+Every recognized field is also discoverable via `moss describe --json`, which prints the full schema (including default values) as machine-readable JSON. The human-readable version is at [[reference|Reference]].
 
 `description:` is for SEO meta tags, Open Graph previews, and sitemap summaries. It is **not** rendered as a visible page deck. For a visible subtitle or lead paragraph, use a `> blockquote` immediately after the `# H1`. The default theme styles `h1 + blockquote` as a deck.
 

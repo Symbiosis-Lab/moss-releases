@@ -7,6 +7,8 @@ translationKey: docs-extend-manifest
 lang: zh-hans
 ---
 
+*本页内容以英文版为准，中文译文陆续更新。*
+
 ## 目录结构
 
 ```

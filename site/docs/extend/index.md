@@ -6,7 +6,7 @@ description: Build a JavaScript plugin that hooks into the moss build pipeline â
 translationKey: docs-extend
 ---
 
-This is the canonical guide for authoring moss plugins, for both humans and AI agents.
+The canonical guide for writing a moss plugin.
 
 A plugin is a JavaScript bundle you drop into `.moss/plugins/{name}/`. moss finds it automatically, reads its manifest, and calls the hooks it declares at the right stage of every build.
 

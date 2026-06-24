@@ -5,6 +5,7 @@ weight: 0
 description: 把一個放著你文字的資料夾變成你自己擁有的網站，大約五分鐘就能完成。
 translationKey: docs-start
 lang: zh-hant
+children: false
 ---
 
 # 開始使用
@@ -39,3 +40,13 @@ lang: zh-hant
 - 讓讀者用電子郵件追蹤你：參閱[[newsletter|電子報]]。
 - 把新貼文同步回你的 Matters 個人檔案：參閱[[syndicate|同步發佈到 Matters]]。
 - 用你自己的網址，而不是 `.mosspub.com`：參閱[[domain|網域]]。
+- 把 moss 建置好的網站自行託管在任何地方：參閱[[deploy]]。
+
+## 了解更多
+
+剛接觸 moss？[[how-moss-works|moss 如何運作]]說明 moss 會對你的資料夾做些什麼。然後依你想做的事探索：
+
+- [[writing|撰寫]]——頁面、連結、標註、媒體與短代碼。
+- [[design|設計]]——顏色、字型與 CSS。
+- [[reference|參考]]——frontmatter、外掛契約與命令列。
+- [[extend|擴充]]——掛鉤、插槽與 moss-api。

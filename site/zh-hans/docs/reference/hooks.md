@@ -7,6 +7,8 @@ translationKey: docs-extend-hooks
 lang: zh-hans
 ---
 
+*本页内容以英文版为准，中文译文陆续更新。*
+
 ## 编译流程
 
 moss 编译网站时，按以下顺序执行各阶段：

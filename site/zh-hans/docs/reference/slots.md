@@ -7,6 +7,8 @@ translationKey: docs-extend-slots
 lang: zh-hans
 ---
 
+*本页内容以英文版为准，中文译文陆续更新。*
+
 ## 模板插槽
 
 插槽是 HTML 模板中的命名注入点，插件可以在这些位置插入内容。共有六个插槽： ^def-template-slots
