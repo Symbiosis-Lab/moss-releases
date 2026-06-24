@@ -1,16 +1,122 @@
 ---
-title: Design
+title: Write a theme
 uid: 0df1b907
-weight: 6
-description: Make it yours with CSS and JavaScript.
+weight: 30
 translationKey: docs-design
+description: How to style a moss site with CSS and JavaScript. The canonical guide for humans and AI agents.
 ---
 
-Two files, both optional:
+This is the canonical guide for writing a moss theme. It covers everything a human or AI agent needs to know to take a site from stock to styled.
 
-- **`.moss/theme/style.css`**: override [[css|colors, fonts, spacing, and component styles]]
-- **`.moss/theme/script.js`**: add [[javascript|custom behavior and interactions]]
+## Where your files go
 
-Both go under `.moss/theme/` in your project folder. No build step, no configuration. moss loads them automatically.
+Put your custom CSS and JavaScript here:
 
-Your `style.css` wins over all built-in styles — no `!important` and no `@layer` needed. To see every available `--moss-*` CSS token, run `moss describe --json` or read the [token reference](/contract/reference/).
+```
+my-site/
+├── .moss/
+│   └── theme/
+│       ├── style.css
+│       └── script.js
+├── index.md
+└── ...
+```
+
+moss serves `.moss/theme/` verbatim to `/_moss/theme/` in the built site. Both files load automatically on every page. There is no build step and no config entry.
+
+## How your CSS wins
+
+moss loads **`.moss/theme/style.css`** into the last CSS layer (`@layer themes`). It wins over all of moss's built-in styles by layer order. You never need `!important`. You never need `@layer`.
+
+## The three styling rungs
+
+Work at the level that matches what you're changing.
+
+**Token override** — change a CSS custom property and every component that uses it follows:
+
+```css
+:root {
+  --moss-color-accent: #2d5a2d;
+  --moss-font-body: "Inter", -apple-system, sans-serif;
+  --moss-content-width: 72ch;
+}
+```
+
+This is the right rung for colors, fonts, spacing, and width — anything that should be consistent across the whole site.
+
+**CSS selector on semantic HTML** — target moss's stable class names for component-level changes. moss emits `.moss-collection-card`, `.moss-article-listing`, `.moss-colophon`, and many others. Target them directly:
+
+```css
+.moss-collection-card {
+  border-radius: 0;
+}
+```
+
+The full list is in [[components|Component classes]].
+
+**Named-class fenced div** — attach a custom class to a shortcode block with `{.class}` syntax, then target the combination:
+
+```markdown
+:::grid 3 {.profiles}
+...
+:::
+```
+
+```css
+.profiles .moss-grid-card {
+  border-radius: 50%;
+}
+```
+
+Use this rung for one-off layout variations on a specific page.
+
+## Dark mode
+
+moss sets `data-theme` on `<html>` before first paint. It reads `localStorage["moss-theme"]` and falls back to the OS `prefers-color-scheme`. One block in your stylesheet covers both the toggle and the system preference.
+
+Do not write `@media (prefers-color-scheme: dark)`. Write this instead:
+
+```css
+:root[data-theme="dark"] {
+  --moss-color-bg: #0f0f0f;
+  --moss-color-accent: #6abf6a;
+}
+```
+
+That block applies whenever dark mode is active, regardless of how the visitor arrived there.
+
+## Quiet chrome
+
+`--moss-color-ui-accent` controls nav links, buttons, and site controls. It defaults to `var(--moss-color-accent)`, which ties navigation color to your content accent. To make the chrome recede while content links keep the accent, set it to a neutral:
+
+```css
+:root {
+  --moss-color-ui-accent: var(--moss-color-text);
+}
+```
+
+## Self-hosted fonts
+
+Drop `.woff2` files in `.moss/theme/fonts/` and reference them from `style.css`:
+
+```css
+@font-face {
+  font-family: "MyFont";
+  src: url("fonts/myfont.woff2") format("woff2");
+}
+```
+
+For JavaScript, moss sets `window.mossTheme.base` to the `/_moss/theme/` URL before `script.js` runs. Resolve assets against it:
+
+```javascript
+const url = new URL("asset.woff2", mossTheme.base);
+```
+
+## Where to find every token and class
+
+The examples above cover the common customization points. For the full set:
+
+- [[css-tokens|CSS tokens]] — every `--moss-*` custom property, grouped by category
+- [[components|Component classes]] — every `.moss-*` class name moss emits
+- [[html-structure|HTML structure]] — the DOM skeleton and data attributes
+- Run `moss describe --json` for the live values of your installed moss
