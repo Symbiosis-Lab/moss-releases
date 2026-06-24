@@ -1,23 +1,21 @@
 ---
 translationKey: docs
-description: Learn how to use moss to turn folders into websites.
+description: How moss turns a folder of files into a website — the mental model.
 uid: b4d68dc8
 weight: 1
-title: Documentation
+title: How moss works
 ---
 
-# Documentation
+# How moss works
 
-After installing moss, right-click any folder and choose **Publish with moss** to preview your website. Edit with the built-in moss editor or [[editors|any markdown editor you like]].
+moss turns a folder into a website. There's no project to set up and no build to configure. You point moss at a folder, and it mirrors that folder as a site.
 
-- Every folder becomes a page, [[frontmatter#Children|listing its children]] by default.
-  - A folder full of [[media|media files]] becomes a gallery.
-  - Images and videos are automatically compressed and converted for the web.
-- Every `.md` file becomes a page.
-  - Its URL is derived from its path in the folder, unless [[frontmatter#Advanced|overridden]] with `url` in frontmatter.
-  - `index.md`, `readme.md`, `_index.md`, `main.md`, or a file named after the folder (e.g. `recipes.md` inside `recipes/`) become the [[structure#^folder-page|folder's page]]. Language-suffixed variants like `index.zh-hans.md` also work.
-  - At the root of a flat site, `about.md` (and `关于.md` / `關於.md`) appear as navigation items automatically. In organized sites with subfolders, every root-level page shows up in navigation: control this with [[frontmatter#Navigation|`nav` in frontmatter]].
-- Reference media or markdown files with a relative path or just the filename. moss resolves it to the nearest match in the file tree.
+## Folders and files become pages
+
+- Every folder becomes a page that [[frontmatter#Children|lists its children]] by default. A folder full of [[media|media files]] becomes a gallery, with images and videos compressed and converted for the web.
+- Every `.md` file becomes a page. Its URL follows its path in the folder, unless you [[frontmatter#Advanced|override]] it with `url` in frontmatter.
+- `index.md`, `readme.md`, `_index.md`, `main.md`, or a file named after its folder (e.g. `recipes.md` inside `recipes/`) become the [[structure#^folder-page|folder's page]]. Language-suffixed variants like `index.zh-hans.md` also work.
+- Reference a media or markdown file by a relative path or just its filename. moss resolves it to the nearest match in the file tree.
 
 ```
 my-site/
@@ -28,6 +26,12 @@ my-site/
     └── hello.md    ← /posts/hello/
 ```
 
-When you're ready, [[deploy|publish to GitHub Pages]] and connect your own domain.
+## What moss does for you
 
-New here? Start with [Get Started](/docs/) to turn a folder of your writing into a website in about five minutes. Then read [[structure]] to see how files, folders, and URLs fit together.
+When you preview or publish, moss reads the folder, converts your Markdown to pages, tidies your images and videos for the web, and assembles a complete static website. It writes the result into a hidden `.moss/` folder inside your project; nothing else in your folder changes. The same build runs whether you preview locally or publish, so the site you see is the site you ship.
+
+You don't configure any of this. moss creates its settings on first run, picks sensible defaults, and stays out of the way. When you want to change how the site looks, you [[design|write a theme]]. When you want new behavior, you [[extend|write a plugin]]. Everything else is just your writing.
+
+## Next
+
+Ready to put a folder online? [Get Started](/docs/) takes about five minutes. To see exactly how files, folders, and URLs map to your site, read [[structure]].

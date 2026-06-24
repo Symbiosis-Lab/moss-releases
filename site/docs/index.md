@@ -4,6 +4,7 @@ uid: "bebba90a"
 weight: 0
 description: Turn a folder of your writing into a website you own, in about five minutes.
 translationKey: docs-start
+children: false
 ---
 
 # Get Started
@@ -32,9 +33,19 @@ Download moss from [GitHub Releases](https://github.com/Symbiosis-Lab/moss-relea
 
 That's the whole thing. From now on, any time you change your writing, press **Publish** again and your site updates.
 
-## Next
+## What's next
 
 - Already write on Matters? Bring your posts in with [[from-matters|Import from Matters]].
 - Let readers follow you by email: see [[newsletter]].
 - Share a new post back to your Matters profile: see [[syndicate|Share to Matters]].
 - Use your own web address instead of `.mosspub.com`: see [[domain]].
+- Host the finished site yourself, anywhere: see [[deploy]].
+
+## Learn more
+
+New to all this? [[how-moss-works|How moss works]] explains what moss does with your folder. Then explore by what you want to do:
+
+- [[writing|Writing]] — pages, links, callouts, media, and shortcodes.
+- [[design|Write a theme]] — colors, fonts, and CSS.
+- [[reference|Reference]] — frontmatter, the plugin contract, and the CLI.
+- [[extend|Write a plugin]] — hooks, slots, and the moss-api.
