@@ -1,5 +1,6 @@
 ---
 title: Reference
+uid: 10ee1c71
 weight: 40
 description: The moss contract — frontmatter fields, the plugin API, and the CLI.
 translationKey: docs-reference

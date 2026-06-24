@@ -1,5 +1,6 @@
 ---
 title: HTML structure
+uid: e5a2951d
 weight: 43
 translationKey: docs-reference-html
 description: The DOM skeleton moss emits on every page. The stable selectors to hook into from script.js or style.css.

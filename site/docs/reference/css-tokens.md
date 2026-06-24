@@ -1,5 +1,6 @@
 ---
 title: CSS tokens
+uid: 5a6a0afc
 weight: 41
 translationKey: docs-reference-css-tokens
 description: Every --moss-* CSS custom property, grouped by category. Run moss describe --json for the live values of your installed moss.

@@ -1,5 +1,6 @@
 ---
 title: 參考
+uid: 2b9e6618
 weight: 40
 description: moss 的契約——frontmatter 欄位、外掛 API 與命令列。
 translationKey: docs-reference

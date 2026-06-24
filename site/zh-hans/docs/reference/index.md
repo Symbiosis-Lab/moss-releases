@@ -1,5 +1,6 @@
 ---
 title: 参考
+uid: f8ddc6f5
 weight: 40
 description: moss 的契约——frontmatter 字段、插件 API 与命令行。
 translationKey: docs-reference

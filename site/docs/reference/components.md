@@ -1,5 +1,6 @@
 ---
 title: Component classes
+uid: 0da56c25
 weight: 42
 translationKey: docs-reference-components
 description: The stable .moss-* class names emitted by moss's auto-generated components. Target these in .moss/theme/style.css.
