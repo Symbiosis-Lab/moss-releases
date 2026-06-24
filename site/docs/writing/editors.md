@@ -15,7 +15,7 @@ translationKey: docs-editors
 Three things make an editor a good moss companion:
 
 - **It edits a folder of plain `.md` files.** No proprietary database, no required cloud account. moss reads what you save and rebuilds the live preview.
-- **It speaks the Obsidian dialect.** Wikilinks `[[page]]`, embeds `![[file]]`, callouts `> [!note]`, YAML frontmatter. moss is designed around these conventions; see [[author/wikilinks-and-embeds]] and [[author/callouts]].
+- **It speaks the Obsidian dialect.** Wikilinks `[[page]]`, embeds `![[file]]`, callouts `> [!note]`, YAML frontmatter. moss is designed around these conventions; see [[wikilinks-and-embeds]] and [[callouts]].
 - **It preserves frontmatter round-trip.** Saves shouldn't reorder YAML keys, change quoting, or strip comments.
 
 The closer an editor follows these, the less friction you feel switching between it and moss.

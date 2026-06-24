@@ -164,7 +164,7 @@ Standard markdown links work as you'd expect:
 ```markdown
 [Visit Example](https://example.com)
 [About page](about.md)
-[Section link](/docs/start/structure/)
+[Section link](/docs/writing/structure/)
 ```
 
 Both relative and absolute paths work. External links open in a new tab automatically.

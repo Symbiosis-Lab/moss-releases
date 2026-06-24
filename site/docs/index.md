@@ -1,33 +1,40 @@
 ---
-translationKey: docs
-description: Learn how to use moss to turn folders into websites.
-uid: b4d68dc8
-weight: 1
-title: Documentation
+title: Get Started
+uid: "bebba90a"
+weight: 0
+description: Turn a folder of your writing into a website you own, in about five minutes.
+translationKey: docs-start
 ---
 
-# Documentation
+# Get Started
 
-After installing moss, right-click any folder and choose **Publish with moss** to preview your website. Edit with the built-in moss editor or [[editors|any markdown editor you like]].
+> A folder of your writing becomes a website. Point moss at the folder, pick a web address, and you're online in about five minutes.
 
-- Every folder becomes a page, [[author/frontmatter#Children|listing its children]] by default.
-  - A folder full of [[media|media files]] becomes a gallery.
-  - Images and videos are automatically compressed and converted for the web.
-- Every `.md` file becomes a page.
-  - Its URL is derived from its path in the folder, unless [[author/frontmatter#Advanced|overridden]] with `url` in frontmatter.
-  - `index.md`, `readme.md`, `_index.md`, `main.md`, or a file named after the folder (e.g. `recipes.md` inside `recipes/`) become the [[structure#^folder-page|folder's page]]. Language-suffixed variants like `index.zh-hans.md` also work.
-  - At the root of a flat site, `about.md` (and `关于.md` / `關於.md`) appear as navigation items automatically. In organized sites with subfolders, every root-level page shows up in navigation: control this with [[author/frontmatter#Navigation|`nav` in frontmatter]].
-- Reference media or markdown files with a relative path or just the filename. moss resolves it to the nearest match in the file tree.
+![[folder-to-site.html]]
 
-```
-my-site/
-├── index.md        ← your homepage
-├── about.md        ← /about/
-└── posts/
-    ├── index.md    ← /posts/
-    └── hello.md    ← /posts/hello/
-```
+You don't build anything. You write, you keep your writing in a folder, and moss turns that folder into a website. Each piece of writing becomes a page. Each folder becomes a part of your site. Your photos and videos are tidied up for the web for you. There's nothing new to learn first.
 
-When you're ready, [[deploy|publish to GitHub Pages]] and connect your own domain.
+## Install moss
 
-New here? Start with [[start|Get Started]] to turn a folder of your writing into a website in about five minutes. Then read [[structure]] to see how files, folders, and URLs fit together.
+Download moss from [GitHub Releases](https://github.com/Symbiosis-Lab/moss-releases/releases/latest), open the file, and drag moss to your Applications folder. moss runs on macOS 12 or later, on both Intel and Apple Silicon Macs. (Windows and Linux are planned.)
+
+## Put your folder online
+
+**1. Open your folder.** Right-click any folder and choose **Publish with moss**, or open moss and click **Open folder**. A preview window opens and shows your website right away. When you change a file, the preview updates as you watch.
+
+**2. Press Publish.** In the top-right of the preview is a round button. Hover it and you'll see **Publish**. Click it. The first time, moss opens a short setup, titled **Set up your site**.
+
+**3. Pick your web address and enter your email.** moss suggests an address ending in `.mosspub.com` that you can keep or edit. It checks it for you and shows **Available** or **Not available**. Type your email so the site is yours, then choose **Verify email**.
+
+**4. Click the link in your email.** moss shows **Check your email** and waits. Open the email it sent and click the link. moss notices and moves on by itself. (If you've published with this email before, moss skips this and the button simply reads **Publish**.)
+
+**5. You're live.** moss puts your site online and shows **Published.** with the line **Your site is live** and your web address. Click **Visit site** to see it.
+
+That's the whole thing. From now on, any time you change your writing, press **Publish** again and your site updates.
+
+## Next
+
+- Already write on Matters? Bring your posts in with [[from-matters|Import from Matters]].
+- Let readers follow you by email: see [[newsletter]].
+- Share a new post back to your Matters profile: see [[syndicate|Share to Matters]].
+- Use your own web address instead of `.mosspub.com`: see [[domain]].

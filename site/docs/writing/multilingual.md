@@ -128,10 +128,10 @@ Some about copy.
 
 moss resolves `![[footer]]` by looking in the current page's language tree first (so `zh-hans/footer.md` wins from inside `zh-hans/`), then falling back to the root. This lets each language keep its own partial where needed, while defaulting to a shared one.
 
-See [[author/wikilinks-and-embeds]] for the full transclusion syntax.
+See [[wikilinks-and-embeds]] for the full transclusion syntax.
 
 ## Related pages
 
-- [[author/frontmatter]]: `lang`, `translationKey`, and the full field reference
-- [[author/wikilinks-and-embeds]]: transclusion and cross-page linking
+- [[frontmatter]]: `lang`, `translationKey`, and the full field reference
+- [[wikilinks-and-embeds]]: transclusion and cross-page linking
 - [[structure]]: how folders become URLs
