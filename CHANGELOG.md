@@ -2,6 +2,30 @@
 
 All notable changes to moss will be documented here.
 
+## [0.7.12] - 2026-06-24
+
+### New
+
+- **Reopenable Matters login** — connect your Matters account any time from Settings or while previewing an unlogged vault, without running an import. Login opens in a clean single-bar titlebar (identity, back, close), appears once on an unlogged preview (dismissible so it doesn't nag), and confirms with a "Connected to Matters" toast. If the login page can't load (for example behind the Great Firewall), you now get a clear message and a Retry button instead of a blank panel.
+
+- **Ambient looping video** — embed a muted, autoplaying, looping background video with `![[clip.mp4|loop]]`. A subtle pause/play button appears on hover and is keyboard-accessible.
+
+- **The app frame follows your preview** — the window titlebar now tints to match the backdrop of the page you're previewing, so the app chrome and your site read as one surface, including when you flip between light and dark.
+
+- **Per-language footers and folder links** — bilingual sites can give each language its own footer (e.g. `zh-hans/footer.md`), and a folder link inside a language tree now resolves to that language's folder instead of the site root.
+
+- **Fuller `moss describe`** — `moss describe --json` now reports the complete plugin contract (hooks, manifest fields, slots, and CLI commands) for plugin authors and tooling.
+
+### Fixed
+
+- The editor now renders `+++` dividers, nested `::::buttons`, and bare `![[note]]` embeds the same way the published site does.
+- A folder or language-root homepage no longer shows a stray auto-generated folder title.
+- Footers no longer leak a stray `>` character.
+- In macOS fullscreen, the editor breadcrumb no longer leaves a gap where the traffic-light buttons sat.
+- The editor no longer stacks a screenful of blank space above the body.
+- Closing the login or browser panel before it finished loading no longer crashes the app.
+- Article titles now match the spacing of body headings.
+
 ## [0.7.11] - 2026-06-23
 
 ### New
