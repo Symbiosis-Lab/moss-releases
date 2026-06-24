@@ -19,10 +19,10 @@ jobs:
           chmod +x moss
 
       - name: Compile docs
-        run: ./moss compile site/ --no-plugins
+        run: ./moss build site/ --no-plugins
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: site/.moss/site
+          publish_dir: site/.moss/build/current
