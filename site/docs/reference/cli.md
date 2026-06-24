@@ -18,7 +18,7 @@ translationKey: docs-extend-cli
 | `domain` | `<list\|link> <folder> [<domain>]` | List or link custom domains for a project's site. |
 | `env` | `<staging\|production\|local> <folder>  \|  <folder>` | Set or show the hosting environment (staging / production / local) for a project. |
 | `describe` | `[--json]` | Print the moss contract surface (tokens, components, frontmatter, plugin hooks, slots, CLI). --json for machine-readable output. |
-| `import` | `<url> [<folder>]  \|  --list <file> [<folder>]` | Import a URL (or batch of URLs) into a project folder as markdown. |
+| `import` | `<url> [<folder>] [-r\|--recursive]  \|  --list <file> [<folder>] [-r\|--recursive]` | Import a URL (or batch of URLs) into a project folder as markdown. |
 | `agents` | `[<subcommand>]` | Agent tooling subcommands (internal/experimental). |
 <!-- auto:end:cli -->
 

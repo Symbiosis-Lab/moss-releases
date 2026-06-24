@@ -26,7 +26,7 @@ Each plugin lives in `.moss/plugins/{name}/` inside the project.
 | `name` | `string` | yes | Plugin identifier (e.g. "matters"). Must match the plugin directory name. |
 | `version` | `string` | yes | Plugin version in semver format (e.g. "1.0.0"). |
 | `entry` | `string` | yes | Entry point JavaScript file path, relative to the plugin directory. |
-| `capabilities` | `string[]` | yes | Hook names this plugin implements (e.g. ["process", "syndicate"]). Each must be a valid hook name. |
+| `capabilities` | `string[]` | no | Hook names this plugin implements (e.g. ["process", "syndicate"]). Each must be a valid hook name. An empty or omitted capabilities field is valid (plugin implements no hooks). |
 | `description` | `string` | no | Human-readable description of what the plugin does. |
 | `author` | `string` | no | Plugin author name or contact. |
 | `global_name` | `string` | no | Global JavaScript variable name the plugin exports. Defaults to PascalCase(name) + "Plugin". |

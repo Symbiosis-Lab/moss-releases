@@ -69,7 +69,7 @@ A plugin attaches to one or more stages by listing capability names in `capabili
 
 **syndicate** distributes published content to external platforms (POSSE). Multiple plugins can have this capability. Use it for cross-posting to Matters.town, Substack, or social media.
 
-The template slots an enhance plugin can target are `head-end`, `after-title`, `before-article-end`, `after-article`, `footer-right`, and `body-end`. Slot positions and the `EnhanceResult` shape are in [[slots]].
+An enhance plugin injects into named template slots. See [[slots]] for the full list, their positions, and the `EnhanceResult` shape.
 
 ## Building the bundle
 
