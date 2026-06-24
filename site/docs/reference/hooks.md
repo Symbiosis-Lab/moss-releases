@@ -21,6 +21,19 @@ Scan folder
 
 Plugins attach to one or more stages by declaring **capabilities** in their manifest.
 
+## Hook reference
+
+<!-- auto:start:hooks -->
+| Hook | Arity | Context | Description |
+|---|---|---|---|
+| `process` | multiple | `ProcessContext` | Pre-process source files before generation (e.g. download remote assets, transform markdown). |
+| `generate` | single | `GenerateContext` | Build/transform source files to HTML output, replacing the default moss build pipeline. |
+| `enhance` | multiple | `EnhanceContext` | Provide HTML for named template slots after generation (head-end, footer-end, after-article, etc.). |
+| `deploy` | single | `DeployContext` | Deploy the built site to a hosting platform (e.g. GitHub Pages, Netlify). |
+| `syndicate` | multiple | `SyndicateContext` | POSSE-distribute published content after deployment (e.g. cross-post to Matters, RSS). |
+| `import` | multiple | `ProcessContext` | Import content from an external source into the project folder (e.g. Matters profile, RSS feed). |
+<!-- auto:end:hooks -->
+
 ## process
 
 Runs before HTML generation. Multiple plugins can have this capability.

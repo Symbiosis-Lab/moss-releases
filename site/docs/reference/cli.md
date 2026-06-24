@@ -8,16 +8,19 @@ translationKey: docs-extend-cli
 
 ## Commands
 
-| Command | Description |
-|---------|-------------|
-| `moss preview <folder>` | Open folder in preview with file watching and hot reload |
-| `moss build <folder>` | Build folder to static site (output in `.moss/build/current/`) |
-| `moss build <folder> --serve` | Build and start a local HTTP server |
-| `moss build <folder> --watch` | Build and watch for file changes |
-| `moss build <folder> --no-plugins` | Build without running plugins |
-| `moss import <url> [folder] [-r]` | Convert a live page to markdown |
-| `moss deploy <folder>` | Deploy to configured hosting |
-| `moss describe --json` | Print every CSS token and frontmatter field as JSON |
+<!-- auto:start:cli -->
+| Command | Arguments | Description |
+|---|---|---|
+| `build` | `<folder> [--serve] [--watch] [--no-plugins] [--wait-plugins] [--site-url=<url>]` | Build the site with plugins. Use --no-plugins for fast CI/CD builds. |
+| `deploy` | `<folder> [--prebuilt=<dir>] [--site-id=<name>]` | Build and deploy the site to the configured hosting platform. |
+| `preview` | `<path>` | Open a GUI preview window. <path> may be a folder or a .md/.markdown file. |
+| `edit` | `<path>` | Open GUI preview, then open <path> directly in the editor (agent-friendly scriptable entrypoint). |
+| `domain` | `<list\|link> <folder> [<domain>]` | List or link custom domains for a project's site. |
+| `env` | `<staging\|production\|local> <folder>  \|  <folder>` | Set or show the hosting environment (staging / production / local) for a project. |
+| `describe` | `[--json]` | Print the moss contract surface (tokens, components, frontmatter, plugin hooks, slots, CLI). --json for machine-readable output. |
+| `import` | `<url> [<folder>]  \|  --list <file> [<folder>]` | Import a URL (or batch of URLs) into a project folder as markdown. |
+| `agents` | `[<subcommand>]` | Agent tooling subcommands (internal/experimental). |
+<!-- auto:end:cli -->
 
 ## CI and automation
 

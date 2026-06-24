@@ -32,23 +32,24 @@ const table = (headers, rows) =>
     ...rows.map((r) => "| " + r.map(cell).join(" | ") + " |"),
   ].join("\n");
 
-// describe → { region-name: markdown table }. Each entry names a page and the
-// regions it owns. Missing sections/regions are reported, never silently empty.
+// describe → { region-name: { page, md } }. One region per page.
 function regionsFor(d) {
   const out = {};
 
-  // CSS tokens — one region per category (tokens is an object keyed by category)
+  // CSS tokens — one flat table across all categories
+  // tokens is an object keyed by category; flatten to [Category, Variable, Default, Description]
+  const tokenRows = [];
   for (const [cat, list] of Object.entries(d.tokens ?? {})) {
-    out[`tokens-${cat}`] = {
-      page: "docs/reference/css-tokens.md",
-      md: table(
-        ["Variable", "Default", "Description"],
-        list.map((t) => [code(`--${t.name}`), code(t.value), t.description || ""]),
-      ),
-    };
+    for (const t of list) {
+      tokenRows.push([cat, code(`--${t.name}`), code(t.value), t.description || ""]);
+    }
   }
+  out["css-tokens"] = {
+    page: "docs/reference/css-tokens.md",
+    md: table(["Category", "Variable", "Default", "Description"], tokenRows),
+  };
 
-  // Component classes
+  // Component classes — [Class, Kind, Description]
   out["components"] = {
     page: "docs/reference/components.md",
     md: table(
@@ -57,22 +58,17 @@ function regionsFor(d) {
     ),
   };
 
-  // Frontmatter fields — one region per group
-  const fmGroups = {};
-  for (const f of d.frontmatter ?? []) (fmGroups[f.group || "Other"] ??= []).push(f);
-  for (const [group, list] of Object.entries(fmGroups)) {
-    const slug = group.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "other";
-    out[`frontmatter-${slug}`] = {
-      page: "docs/writing/frontmatter.md",
-      md: table(
-        ["Field", "Type", "Description"],
-        list.map((f) => [code(f.name), code(f.type), f.description || ""]),
-      ),
-    };
-  }
+  // CLI commands — [Command, Arguments, Description]
+  out["cli"] = {
+    page: "docs/reference/cli.md",
+    md: table(
+      ["Command", "Arguments", "Description"],
+      (d.cli_commands ?? []).map((c) => [code(c.name), code(c.args), c.description || ""]),
+    ),
+  };
 
-  // Plugin hooks
-  out["plugin-hooks"] = {
+  // Plugin hooks — [Hook, Arity, Context, Description]
+  out["hooks"] = {
     page: "docs/reference/hooks.md",
     md: table(
       ["Hook", "Arity", "Context", "Description"],
@@ -80,8 +76,8 @@ function regionsFor(d) {
     ),
   };
 
-  // Manifest fields
-  out["manifest-fields"] = {
+  // Manifest fields — [Field, Type, Required, Description]
+  out["manifest"] = {
     page: "docs/reference/manifest.md",
     md: table(
       ["Field", "Type", "Required", "Description"],
@@ -89,21 +85,12 @@ function regionsFor(d) {
     ),
   };
 
-  // Template slots
+  // Template slots — [Slot, Position, Authorable]
   out["slots"] = {
     page: "docs/reference/slots.md",
     md: table(
       ["Slot", "Position", "Authorable"],
       (d.slots ?? []).map((s) => [code(s.name), s.position || "", s.authorable ? "yes" : "no"]),
-    ),
-  };
-
-  // CLI commands
-  out["cli-commands"] = {
-    page: "docs/reference/cli.md",
-    md: table(
-      ["Command", "Arguments", "Description"],
-      (d.cli_commands ?? []).map((c) => [code(c.name), code(c.args), c.description || ""]),
     ),
   };
 

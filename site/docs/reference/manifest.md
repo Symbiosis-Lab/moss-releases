@@ -18,25 +18,30 @@ translationKey: docs-extend-manifest
 
 Plugins live in `.moss/plugins/{name}/` inside each project.
 
-## Required fields
+## Manifest fields
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `name` | string | Plugin identifier (used as folder name) |
-| `version` | semver | Plugin version |
-| `description` | string | Short description |
-| `author` | string | Author name |
-| `entry` | string | JavaScript bundle filename |
-| `capabilities` | string[] | Hook types: `"process"`, `"generate"`, `"enhance"`, `"deploy"`, `"syndicate"` |
-| `global_name` | string | JavaScript global object name (e.g., `"MyPlugin"`) |
-
-## Optional fields
-
-| Field | Type | Description |
-|-------|------|-------------|
-| `domain` | string | Primary service domain (e.g., `"matters.town"`) |
-| `icon` | string | Icon filename (falls back to `icon.svg`, `icon.png`, `logo.svg`, `logo.png`) |
-| `display_name` | string | Display name in settings UI |
+<!-- auto:start:manifest -->
+| Field | Type | Required | Description |
+|---|---|---|---|
+| `name` | `string` | yes | Plugin identifier (e.g. "matters"). Must match the plugin directory name. |
+| `version` | `string` | yes | Plugin version in semver format (e.g. "1.0.0"). |
+| `entry` | `string` | yes | Entry point JavaScript file path, relative to the plugin directory. |
+| `capabilities` | `string[]` | yes | Hook names this plugin implements (e.g. ["process", "syndicate"]). Each must be a valid hook name. |
+| `description` | `string` | no | Human-readable description of what the plugin does. |
+| `author` | `string` | no | Plugin author name or contact. |
+| `global_name` | `string` | no | Global JavaScript variable name the plugin exports. Defaults to PascalCase(name) + "Plugin". |
+| `display_name` | `string` | no | Human-readable name shown in the moss Settings UI section title (e.g. "Comments"). |
+| `icon` | `string` | no | Path to the plugin icon file, relative to the plugin directory. Falls back to icon.svg / icon.png / logo.svg / logo.png. |
+| `domain` | `string` | no | Primary domain for cookie access (e.g. "matters.town"). Required for plugins using cookie-based authentication. |
+| `domains` | `string[]` | no | Full set of domains the plugin operates on (e.g. prod + staging). Used for scope-wide cookie clearing on force-fresh login. |
+| `config` | `object` | no | Plugin-specific configuration key-value pairs (e.g. login_url, api_endpoint). Merged with .moss/config.toml at runtime. |
+| `config_schema` | `object` | no | Optional configuration schema for validation. Maps config field names to type strings. |
+| `config_labels` | `object` | no | Settings UI label overrides. Maps config field names to display labels (e.g. {"enabled": "Enable Comments"}). |
+| `config_descriptions` | `object` | no | Settings UI help text. Maps config field names to description strings. |
+| `config_placeholders` | `object` | no | Settings UI placeholder text. Maps config field names to placeholder strings (e.g. {"api_key": "Enter your API key"}). |
+| `config_verify` | `object` | no | Endpoint verification specs. After saving config, moss probes each declared URL and shows "Server unreachable" on failure. |
+| `contributes` | `object` | no | Optional schema contributions (frontmatter fields, embed renderers, job descriptors). Follows the VS Code contributes pattern. |
+<!-- auto:end:manifest -->
 
 ## Example manifest
 
