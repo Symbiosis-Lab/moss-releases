@@ -2,6 +2,29 @@
 
 All notable changes to moss will be documented here.
 
+## [0.7.13] - 2026-06-25
+
+### New
+
+- **Slash menu works mid-line, with block commands** — type `/` anywhere on a line (not just at the start) to insert a heading, bullet or numbered list, quote, code block, divider, image, or link, alongside the existing shortcodes. It stays out of your way inside URLs and mid-word.
+
+- **References follow renames** — renaming a file or folder now rewrites every wikilink, embed, and Markdown link that points to it across your vault. Deleting a file that others link to shows a confirmation listing what will break, with the option to clean up those references for you.
+
+- **Reader apply form, refined** — the `:::apply` form now shows field labels and an email helper line, left-aligned to match the site design, and renders in each page's own language on bilingual sites.
+
+- **One copy button everywhere** — a single, consistent copy control across moss; the "Send logs" confirmation can now copy the ticket id with one click.
+
+### Fixed
+
+- Matters no longer re-attempts permanently-dead image downloads on every build, so the repeating "Image could not be downloaded" notice is gone. Images that are genuinely unavailable are now listed quietly on the Matters settings page instead.
+- The frontmatter date field now shows the date in your locale with no time component and no off-by-one, and defaults to today when you add one.
+- Settings → Deployment and Analytics now appear instantly from local data and refresh in the background, with an offline hint instead of a blank wait.
+- Creating a new file in the editor's file tree reliably opens the rename field, writes the file, and selects it; reopening the editor starts with the tree collapsed.
+- Dragging onto a folder shows a clear dashed outline, and dropping a file from Finder onto a row now files it in that row's folder instead of the project root.
+- Background activity such as comment sync and update checks no longer interrupts you with advisories or blocking toasts; comment status moved to Settings → Services with a Retry. The advisory panel's expand/collapse handle and animation were tidied up.
+- The layout divider no longer bounces back when you collapse it, and the right-edge controls stay fixed while you drag.
+- Send Logs now captures failures from actions that previously failed silently (deploy, identity, email, config, plugins), so a problem report carries what's needed to diagnose it.
+
 ## [0.7.12] - 2026-06-24
 
 ### New
