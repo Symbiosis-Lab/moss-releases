@@ -2,6 +2,33 @@
 
 All notable changes to moss will be documented here.
 
+## [0.7.14] - 2026-06-27
+
+### New
+
+- **Front-matter properties, reorganized** — the property picker now groups fields by scope (This Page / Child Pages / Child Styles / Whole Site) instead of "common/uncommon", orders them by how commonly they're used, and uses clearer names and tooltips. The two fields that both read "Also In" are now distinct ("Feed Slot" vs "Cross-list In"), and "Style" is now "Child Layout".
+
+- **Playable video and audio in the editor** — embedded videos and audio now render as real, playable players in the live editor, with a hover handle to resize them just like images.
+
+- **`%%` private comments** — wrap text in `%%...%%` to keep notes in your source that are stripped from the published site, matching Obsidian.
+
+- **Zoom the editor and preview** — Cmd-plus / Cmd-minus / Cmd-0 adjust the editor font size and scale the preview pane.
+
+- **Nested-site guard** — moss now prevents creating a new site inside a folder that's already part of a published site.
+
+### Fixed
+
+- Switching the app language while previewing a folder now reopens that folder instead of dropping to the launcher.
+- The navigation pill and advisory panel no longer drag the window when clicked.
+- Going offline no longer triggers a blocking error from Matters — a quiet status now appears on the Matters settings page, and a stale custom-domain step no longer posts a red error on every preview.
+- Dragging an image into the editor now drops it on its own line with a clear horizontal guide; dragging into the file tree targets the folder directly under the cursor, works on breadcrumb folders, and auto-scrolls near the top and bottom edges.
+- Clicking a folder in the file tree now only expands or collapses it; clicking a file (including a folder's home page) opens it.
+- Importing from a URL is now a single, consistent action available on any folder.
+- Front-matter inputs no longer auto-correct structured values like URLs and slugs, and property chips no longer get cut off at the edge of the bar.
+- Clicking an asset in the editor now shows it in the preview as it appears on the published site, and no longer spins forever.
+- The grid shortcode background now lines up with your content, and breadcrumbs use the full width when the editor is wide.
+- Advisory messages are now translated, and "Open in Finder" reads correctly in Chinese.
+
 ## [0.7.13] - 2026-06-25
 
 ### New
