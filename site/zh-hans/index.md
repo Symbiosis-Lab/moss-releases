@@ -1,11 +1,11 @@
 ---
+title: 青苔
+logo: assets/logo.svg
+lang: zh-hans
+description: 从文件夹到网站
+translationKey: homepage
 uid: 41f7bc62
 children: false
-title: 青苔
-description: 从文件夹到网站
-logo: assets/logo.svg
-translationKey: homepage
-lang: zh-hans
 ---
 
 # 随处写作，随处发布。一切由你掌控。
@@ -13,7 +13,7 @@ lang: zh-hans
 把文件夹打包成独立网站。右键，预览，发布。
 
 :::buttons
-[申请测试版](#青苔正在封闭测试)
+[申请测试版](申请测试)
 [文档](docs/)
 :::
 
@@ -49,12 +49,4 @@ Markdown 文件。使用内置编辑器、Obsidian、或者任意其他软件。
 
 ## 青苔正在封闭测试
 
-我们正在分批邀请写作者，一边打磨细节。
-留下你的邮箱，等到你那一批，我们会发送一份构建版本，通常在报名后几周内。
-
-仅一封邮件：只在有新版本时联系你。
-
-:::subscribe {button="申请测试"}
-:::
-
-如果你只想远远看看，发布版在 [GitHub](https://github.com/Symbiosis-Lab/moss-releases) 上，反馈邮箱 [hi@symbiosis-lab.org](mailto:hi@symbiosis-lab.org)。
+我们正在[分批邀请](申请测试)写作者，一边打磨细节。你可以留下你的邮箱，等到你那一批，我们会发送一份构建版本，通常在报名后几周内。
