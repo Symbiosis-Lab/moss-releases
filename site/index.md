@@ -14,7 +14,7 @@ A desktop app that turns your folder of markdown files into a website.
 Right-click → your site is live.
 
 :::buttons
-[Request beta access](#moss-is-in-closed-beta)
+[Request beta access](apply/)
 [Documentation](docs/)
 :::
 
@@ -51,12 +51,4 @@ Customize with CSS and JavaScript. Build plugins by dropping scripts into a fold
 
 ## moss is in closed beta
 
-We're inviting writers in waves while we sand the rough edges.
-Leave your email and we'll send a build when it's your turn, usually within a few weeks of signing up.
-
-One email. We write only when there's a build for you.
-
-:::subscribe {button="Request access"}
-:::
-
-If you'd rather just watch from a distance, the releases are on [GitHub](https://github.com/Symbiosis-Lab/moss-releases) and you can send notes to [hi@symbiosis-lab.org](mailto:hi@symbiosis-lab.org).
+We're [inviting writers in waves](apply/) while we sand the rough edges. Leave your email and we'll send a build when it's your turn, usually within a few weeks of signing up.
