@@ -4,20 +4,6 @@
   --moss-content-width: 72ch;
 }
 
-/* Beta badge — inline superscript after site name */
-.site-name::after {
-  content: "BETA";
-  font-size: 0.45em;
-  font-weight: 600;
-  background: var(--moss-accent);
-  color: var(--moss-color-bg, #faf8f5);
-  padding: 1px 6px;
-  border-radius: 8px;
-  margin-left: 0.3em;
-  vertical-align: super;
-  letter-spacing: 0.5px;
-}
-
 /* Muted footnote below download buttons — left-aligned to match buttons */
 .moss-buttons + p {
   font-size: 0.8rem;
@@ -41,6 +27,12 @@ footer.container::before {
 }
 footer.container > * {
   font-size: 0.8em;
+}
+/* …except the authored link line ("Privacy · Symbiosis Lab · 2026"), which
+   matches the subscribe form's input/placeholder size (--moss-reading-size)
+   so the two halves of the footer read at one consistent size. */
+footer.container > p {
+  font-size: var(--moss-reading-size);
 }
 
 /* ── Sunlight theme — "kindle under sunlight" ambient mode ──
