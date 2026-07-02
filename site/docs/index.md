@@ -1,15 +1,15 @@
 ---
-title: Get Started
-uid: "bebba90a"
-weight: 0
-description: Turn a folder of your writing into a website you own, in about five minutes.
-translationKey: docs-start
 children: false
+title: Get Started
+translationKey: docs-start
+description: Turn a folder of your writing into a website you own, in about five minutes.
+weight: 0
+uid: bebba90a
 ---
 
 # Get Started
 
-> A folder of your writing becomes a website. Point moss at the folder, pick a web address, and you're online in about five minutes.
+You write your site as a folder of markdown files and media assets. Then right click on the folder, click "Publish", and review the preview.
 
 ![[folder-to-site.html]]
 
