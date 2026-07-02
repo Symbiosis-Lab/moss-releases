@@ -8,7 +8,7 @@ translationKey: docs-author
 
 Once your folder is a site, writing is the work: shaping each page and how pages connect. This section covers everything you do in your Markdown.
 
-Control each page with [[frontmatter]] — title, date, visibility, and more. See how [[structure|files, folders, and URLs]] fit together. Connect pages with [[wikilinks-and-embeds|wikilinks and embeds]], shape the site's [[navigation|navigation and footer]], call out content with [[callouts]], and add layouts with [[shortcodes]] — grids, galleries, hero images. Your [[media]] is tidied for the web for you, and a site can be [[multilingual]]. Write in the [[editor|built-in editor]] or [[editors|any Markdown editor you like]].
+Control each page with [[frontmatter]] — title, date, visibility, and more. See how [[structure|files, folders, and URLs]] fit together. Connect pages with [[Links & Embeds|wikilinks and embeds]], shape the site's [[Navigation & footer|navigation and footer]], call out content with [[callouts]], and add layouts with [[shortcodes]] — grids, galleries, hero images. Your [[media]] is tidied for the web for you, and a site can be [[Multilingual sites]]. Write in the [[Editor Shortcuts|built-in editor]] or [[Markdown editors|any Markdown editor you like]].
 
 ## Choosing the right primitive
 

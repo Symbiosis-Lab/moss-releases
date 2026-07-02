@@ -78,4 +78,4 @@ Style it with the `.callout-pending` hook (typical convention: dashed border, "P
 ## Cross-references
 
 - [[shortcodes]]: for layout blocks like grids and galleries
-- [[wikilinks-and-embeds]]: for linking between pages and embedding sections
+- [[Links & Embeds]]: for linking between pages and embedding sections

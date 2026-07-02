@@ -46,7 +46,7 @@ Markdown 檔案。使用內建編輯器、Obsidian、或者任何軟體。
 
 ## 無限擴充
 
-透過 CSS 和 JavaScript 自訂設計，透過指令碼外掛自訂編譯流程。CLI 支援自動化和 CI 整合。詳見[擴充](docs/extend/)。
+透過 CSS 和 JavaScript 自訂設計，透過指令碼外掛自訂編譯流程。CLI 支援自動化和 CI 整合。詳見[擴充](docs/Write a plugin/)。
 
 ## 青苔正在封閉測試
 
