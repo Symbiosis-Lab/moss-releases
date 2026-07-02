@@ -5,6 +5,7 @@ translationKey: apply
 lang: en
 uid: a7710001
 children: false
+url: apply
 ---
 
 <!-- Copy is PENDING native-writer (刘果) review + double-opt-in reconciliation. -->

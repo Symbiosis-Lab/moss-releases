@@ -14,7 +14,7 @@ A desktop app that turns your folder of markdown files into a website.
 Right-click → your site is live.
 
 :::buttons
-[Request beta access](apply/)
+[Request beta access](apply)
 [Documentation](docs/)
 :::
 
@@ -51,4 +51,4 @@ Customize with CSS and JavaScript. Build plugins by dropping scripts into a fold
 
 ## moss is in closed beta
 
-We're [inviting writers in waves](apply/) while we sand the rough edges. Leave your email and we'll send a build when it's your turn, usually within a few weeks of signing up.
+We're [inviting writers in waves](apply) while we sand the rough edges. Leave your email and we'll send a build when it's your turn, usually within a few weeks of signing up.
