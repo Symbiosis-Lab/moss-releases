@@ -50,9 +50,13 @@ Body H1s anywhere else are section headers, not document titles. moss does not i
 
 To suppress the injected title on a specific article (e.g., a bespoke landing page), set `title: ""`. This is distinct from omitting the field, which falls back to the filename. Folder and index pages never inject a title; their bodies render as authored.
 
-### Localized filenames
+### Name files after the page
 
-Because the title falls back to the filename, name a file in its own language and let moss title the page — `隐私.md` renders as "隐私", `Privacy.md` as "Privacy", with no `title:` field and no body `# H1`. When the filename isn't ASCII, pin a short, stable URL with `url: privacy` so `隐私.md` publishes at `/privacy`.
+moss uses the filename as the page title, so the standard is to **name each file after its title, in its own language** — no `title:` field and no body `# H1` needed. `隐私.md` renders as "隐私", `部署.md` as "部署", `Privacy.md` as "Privacy".
+
+When the filename isn't a clean ASCII slug (non-ASCII, or with spaces), **pin a stable URL** with `url:` so the published path stays short and language-neutral — `隐私.md` + `url: privacy` publishes at `/privacy`. The filename is for people browsing the folder; `url:` is the address readers see.
+
+Pinning `url:` also keeps `[[wikilinks]]` working when you rename a file, because moss resolves them by the url slug. Renaming a file in the app rewrites links to it automatically; from the terminal, `moss rename <old> <new>` does the same.
 
 Link to a section by its heading anchor (`[Contact](#contact)`), not a hand-written `<a id>`. moss generates the id from the heading text, CJK included.
 
