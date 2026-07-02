@@ -36,17 +36,17 @@ children: false
 
 ## 接下来
 
-- 已经在 Matters 写作了？用[[from-matters|从 Matters 导入]]把你的文章搬过来。
-- 让读者通过邮件关注你：见[[newsletter]]。
-- 把新文章分享回你的 Matters 主页：见[[syndicate|分享到 Matters]]。
-- 用你自己的网址，而不是 `.mosspub.com`：见[[domain]]。
-- 把 moss 建构好的网站自行托管在任何地方：见[[deploy]]。
+- 已经在 Matters 写作了？用[[从 Matters 导入|从 Matters 导入]]把你的文章搬过来。
+- 让读者通过邮件关注你：见[[发送电子报]]。
+- 把新文章分享回你的 Matters 主页：见[[分享到 Matters|分享到 Matters]]。
+- 用你自己的网址，而不是 `.mosspub.com`：见[[给你的网站一个网址]]。
+- 把 moss 建构好的网站自行托管在任何地方：见[[部署]]。
 
 ## 了解更多
 
-刚接触 moss？[[how-moss-works|moss 如何运作]]解释了 moss 会对你的文件夹做些什么。然后按你想做的事探索：
+刚接触 moss？[[moss 如何运作|moss 如何运作]]解释了 moss 会对你的文件夹做些什么。然后按你想做的事探索：
 
-- [[writing|撰写]]——页面、链接、标注、媒体与短代码。
-- [[design|设计]]——颜色、字体与 CSS。
+- [[撰写|撰写]]——页面、链接、标注、媒体与短代码。
+- [[设计|设计]]——颜色、字体与 CSS。
 - [[reference|参考]]——frontmatter、插件契约与命令行。
-- [[extend|扩展]]——钩子、插槽与 moss-api。
+- [[扩展|扩展]]——钩子、插槽与 moss-api。

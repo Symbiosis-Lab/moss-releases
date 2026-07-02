@@ -55,4 +55,4 @@ Pass options in the attribute block, not the body. For example: `:::subscribe {p
 | [[hero]] | Full-width hero section with background image and overlay text |
 | [[gallery]] | Image grid for photo galleries |
 | [[buttons]] | Styled row of buttons from markdown links |
-| [[fenced-divs]] | Named-class fenced divs for styled regions |
+| [[Fenced Divs]] | Named-class fenced divs for styled regions |

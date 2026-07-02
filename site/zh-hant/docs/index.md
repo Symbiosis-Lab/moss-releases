@@ -36,17 +36,17 @@ children: false
 
 ## 接下來
 
-- 已經在 Matters 上寫作？用[[from-matters|從 Matters 匯入]]把你的貼文帶進來。
-- 讓讀者用電子郵件追蹤你：參閱[[newsletter|電子報]]。
-- 把新貼文同步回你的 Matters 個人檔案：參閱[[syndicate|同步發佈到 Matters]]。
-- 用你自己的網址，而不是 `.mosspub.com`：參閱[[domain|網域]]。
-- 把 moss 建置好的網站自行託管在任何地方：參閱[[deploy]]。
+- 已經在 Matters 上寫作？用[[從 Matters 匯入|從 Matters 匯入]]把你的貼文帶進來。
+- 讓讀者用電子郵件追蹤你：參閱[[發送電子報|電子報]]。
+- 把新貼文同步回你的 Matters 個人檔案：參閱[[分享到 Matters|同步發佈到 Matters]]。
+- 用你自己的網址，而不是 `.mosspub.com`：參閱[[給你的網站一個網址|網域]]。
+- 把 moss 建置好的網站自行託管在任何地方：參閱[[部署]]。
 
 ## 了解更多
 
-剛接觸 moss？[[how-moss-works|moss 如何運作]]說明 moss 會對你的資料夾做些什麼。然後依你想做的事探索：
+剛接觸 moss？[[moss 如何運作|moss 如何運作]]說明 moss 會對你的資料夾做些什麼。然後依你想做的事探索：
 
-- [[writing|撰寫]]——頁面、連結、標註、媒體與短代碼。
-- [[design|設計]]——顏色、字型與 CSS。
+- [[撰寫|撰寫]]——頁面、連結、標註、媒體與短代碼。
+- [[設計|設計]]——顏色、字型與 CSS。
 - [[reference|參考]]——frontmatter、外掛契約與命令列。
-- [[extend|擴充]]——掛鉤、插槽與 moss-api。
+- [[擴充|擴充]]——掛鉤、插槽與 moss-api。
