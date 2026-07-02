@@ -1,11 +1,11 @@
 ---
-children: false
-logo: assets/logo.svg
 translationKey: homepage
 title: moss
-description: A desktop app that turns folders into websites.
-lang: en
 uid: a48746ca
+children: false
+logo: assets/logo.svg
+lang: en
+description: A desktop app that turns folders into websites.
 ---
 
 # Write anywhere. Publish everywhere. Own everything.
@@ -26,16 +26,16 @@ Use the default editor, Obsidian, Typora, or any other software.
 +++
 **Right-click**
 
-Select your folder in Finder. Click "Publish with moss."
+On your folder in your file system. Then click "Publish", and review the website preview.
 +++
 **Done**
 
-Your site is live. Navigation, styling, dark mode, all handled.
+Click publish button in preview window, and your site is live. Navigation, styling, dark mode, all handled.
 :::
 
 ## Your files, your site
 
-Your files never leave your computer. No account needed to preview. No server to configure. moss compiles your folder into a static site that works anywhere.
+Your content stays in your computer. No account needed to preview. No server to configure. moss compiles your folder into a static site that works anywhere.
 
 ## Publish anywhere
 

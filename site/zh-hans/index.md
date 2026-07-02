@@ -1,11 +1,11 @@
 ---
-title: 青苔
-logo: assets/logo.svg
-lang: zh-hans
-description: 从文件夹到网站
 translationKey: homepage
+logo: assets/logo.svg
+description: 从文件夹到网站
 uid: 41f7bc62
 children: false
+title: 青苔
+lang: zh-hans
 ---
 
 # 随处写作，随处发布。一切由你掌控。
@@ -14,7 +14,7 @@ children: false
 
 :::buttons
 [申请测试版](申请测试)
-[文档](docs/)
+[文档](文档/)
 :::
 
 :::grid 3

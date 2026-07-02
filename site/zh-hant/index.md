@@ -1,12 +1,12 @@
 ---
-logo: assets/logo.svg
 children: false
-nav: false
 translationKey: homepage
 uid: 2f17d02a
+lang: zh-hant
 description: 從資料夾到網站
 title: 青苔
-lang: zh-hant
+logo: assets/logo.svg
+nav: false
 ---
 
 # 隨處書寫，隨處發佈。一切由你掌控。
@@ -15,7 +15,7 @@ lang: zh-hant
 
 :::buttons
 [申請測試版](申請測試)
-[文件](docs/)
+[文件](文件/)
 :::
 
 :::grid 3

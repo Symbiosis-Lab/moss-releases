@@ -1,11 +1,11 @@
 ---
-title: 从 Matters 导入
 url: from-matters
-uid: "e15365f3"
-weight: 10
-description: 把你在 Matters.town 上的文章拉进一个 moss 文件夹，变成属于你自己的网站。
 translationKey: docs-start-from-matters
+uid: e15365f3
 lang: zh-hans
+weight: 10
+title: 从 Matters 导入
+description: 把你在 Matters.town 上的文章拉进一个 moss 文件夹，变成属于你自己的网站。
 ---
 
 # 从 Matters 导入
@@ -57,4 +57,4 @@ moss 开始复制你的文章，写作区附近会出现一条细细的进度线
 
 ## 下一步
 
-让读者用邮件关注你：参见 [[发送电子报]]。
+让读者用邮件关注你：[[发送电子报]]。
