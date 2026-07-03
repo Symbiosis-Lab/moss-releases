@@ -67,7 +67,7 @@ work/
 
 The language-tree preference (rule 4 above) applies to image resolution too: `![[photo.jpg]]` inside `zh-hans/about.md` prefers `zh-hans/photo.jpg` if it exists.
 
-**Pipe syntax** controls display: `![[photo.jpg|contain top]]`. See [[media]] for the full option set.
+**Pipe syntax** controls display — a fit/position keyword (`![[photo.jpg|contain top]]`), a size (`![[photo.jpg|400]]`), or a caption (`![[photo.jpg|Morning light]]`). See [[media#Display control]] and [[media#Captions]] for the full rules.
 
 ## Embeds
 

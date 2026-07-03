@@ -38,7 +38,7 @@ moss transcodes `.mov` files to `.mp4` (H.264 + AAC) in the background. The prev
 
 ## Display control
 
-Control how media displays using pipe syntax: append fit and position values after a `|`:
+Control how media displays with pipe syntax — append a fit/position keyword, a size, or a [caption](#captions) after a `|`:
 
 ```markdown
 ![[photo.jpg|contain top-left]]
@@ -60,7 +60,52 @@ Control how media displays using pipe syntax: append fit and position values aft
 
 Combine them: `![[panorama.jpg|contain center]]`, `![[headshot.jpg|cover top]]`.
 
+**Size** — a width, or width × height, in place of fit/position:
+
+| Pipe | Result |
+|------|--------|
+| `![[photo.jpg\|400]]` | 400px wide |
+| `![[photo.jpg\|100%]]` | full container width |
+| `![[photo.jpg\|200x150]]` | 200 × 150px |
+
+A bare number is pixels; `px`, `%`, and `vh` are also accepted. One value sets width; `WxH` sets both.
+
+A pipe segment carries **one** meaning — moss reads it as size, then fit/position, then caption text — so size and fit can't share a single pipe.
+
 This syntax works in wikilinks, markdown images, and bare filenames inside shortcodes.
+
+## Captions
+
+An image on its own line, with non-empty alt text, renders as a semantic `<figure>` with a visible `<figcaption>`:
+
+```markdown
+![Morning light, Yangshuo](photos/light.jpg)
+```
+
+```html
+<figure>
+  <img src="…/light.jpg" alt="Morning light, Yangshuo">
+  <figcaption>Morning light, Yangshuo</figcaption>
+</figure>
+```
+
+This is Pandoc's implicit-figure convention, on by default; the default theme sets captions italic and centered.
+
+**Three ways to write one:**
+
+| Syntax | Caption | Alt text |
+|--------|---------|----------|
+| `![Caption](photo.jpg)` | the alt text | same as the caption |
+| `![[photo.jpg\|Caption]]` | the alias | same as the caption |
+| `![Alt description](photo.jpg)` then `*Caption*` on the next line | the italic line | a separate description |
+
+The third form is best for accessibility: the alt describes the image for screen readers while the italic line is the visible caption. In the first two, the alt does double duty as caption and description.
+
+For the wikilink form, the alias becomes a caption only when it isn't a [size or fit/position keyword](#display-control) — those are read first.
+
+**No figure is emitted when** the alt is empty (`![[photo.jpg]]` or `![](photo.jpg)`) — moss keeps a plain `<img>` rather than caption an undescribed image — or when the image shares its line with other text (a trailing `*italic*` caption is the one exception, above).
+
+For richer caption markup, hand-write a `<figure>`; raw HTML passes through untouched. Turn the behavior off site-wide with `implicit_figure = false` under `[site]` in `.moss/config.toml`.
 
 ## Notebooks
 
