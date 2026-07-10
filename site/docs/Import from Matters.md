@@ -4,7 +4,6 @@ url: from-matters
 uid: "5a07cf1b"
 weight: 10
 description: Pull your Matters.town articles into a moss folder and turn them into your own website.
-translationKey: docs-start-from-matters
 ---
 
 # Import from Matters

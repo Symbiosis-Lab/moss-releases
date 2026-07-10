@@ -3,7 +3,6 @@ title: Shortcodes
 uid: a3f9c12e
 weight: 6
 description: Layout blocks and components that extend markdown.
-translationKey: docs-author-shortcodes-index
 ---
 
 Shortcodes are blocks in your markdown that create layouts and components beyond standard markdown: grids, galleries, hero images, and more. They use `:::` block syntax. ^def-shortcode

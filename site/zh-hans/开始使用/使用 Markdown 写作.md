@@ -1,14 +1,12 @@
 ---
-lang: zh-hans
-translationKey: docs-editors
-uid: 3a1f7c20
 weight: 20
-title: Markdown
+translationKey: docs-editors
 url: markdown
+lang: zh-hans
 description: 用纯文本加少量符号写作，青苔把它排成网页。
+uid: 3a1f7c20
 ---
-
-Markdown 是纯文本加上少量符号：`#` 是标题，`**` 是加粗，`-` 是列表。青苔读取标准 Markdown（CommonMark 与 GitHub 风格），并在此之上支持 Obsidian 风格的 [[Wikilink 与嵌入|wikilink 与嵌入]]、[[短代码|短代码]]和标注。
+Markdown 格式是纯文本加上少量符号：`#` 是标题，`**` 是加粗，`-` 是列表。青苔读取标准 Markdown（CommonMark 与 GitHub 风格），并在此之上支持 Obsidian 风格的 [[引用文件与媒体|wikilink 与嵌入]]、[[用短代码排版及插入特殊功能|短代码]]和标注。
 
 因为是纯文本，你可以用任何编辑器书写，文件始终留在你自己的电脑上。
 
@@ -48,9 +46,9 @@ Markdown 是纯文本加上少量符号：`#` 是标题，`**` 是加粗，`-` �
 
 在标准 Markdown 之外，青苔还认得几种记号，各有专门的文档：
 
-- **[[Wikilink 与嵌入|Wikilink 与嵌入]]**——用 `[[双方括号]]` 链接和嵌入其他页面与媒体。
-- **[[短代码|短代码]]**——用 `:::` 围栏创建多栏、图库、大图等布局。
-- **[[Frontmatter|Frontmatter]]**——在文件顶部用 YAML 设置标题、日期、可见性等属性。
+- **[[引用文件与媒体|Wikilink 与嵌入]]**——用 `[[双方括号]]` 链接和嵌入其他页面与媒体。
+- **[[用短代码排版及插入特殊功能|短代码]]**——用 `:::` 围栏创建多栏、图库、大图等布局。
+- **[[用 Frontmatter 定义页面|Frontmatter]]**——在文件顶部用 YAML 设置标题、日期、可见性等属性。
 
 ## 在哪里写
 

@@ -19,4 +19,4 @@ translationKey: docs-start-from-matters
 
 ## 下一步
 
-讓讀者用郵件追蹤你：[[文件#郵件列表]]。
+讓讀者用郵件追蹤你：[[開始使用#郵件列表]]。

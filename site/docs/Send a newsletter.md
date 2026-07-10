@@ -13,6 +13,8 @@ translationKey: docs-start-newsletter
 
 A newsletter lets you send a post to readers by email, straight from your site. Turn it on once, add your readers, then send any post you like.
 
+![[email sub.gif]]
+
 Newsletter sending works for sites hosted on moss. Sites hosted elsewhere cannot send from moss yet.
 
 ## Turn on the newsletter

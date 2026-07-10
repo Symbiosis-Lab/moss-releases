@@ -3,7 +3,6 @@ title: Write a theme
 url: design
 uid: 0df1b907
 weight: 30
-translationKey: docs-design
 description: How to style a moss site with CSS and JavaScript. The canonical guide for humans and AI agents.
 ---
 

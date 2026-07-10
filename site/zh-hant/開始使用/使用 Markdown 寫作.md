@@ -3,18 +3,17 @@ lang: zh-hant
 translationKey: docs-editors
 uid: 4b8d2f6e
 weight: 20
-title: Markdown
 url: markdown
 description: 用純文字加少量符號寫作，青苔把它排成網頁。
 ---
 
-Markdown 是純文字加上少量符號：`#` 是標題，`**` 是粗體，`-` 是列表。青苔讀取標準 Markdown（CommonMark 與 GitHub 風格），並在此之上支援 Obsidian 風格的 [[Wikilink 與嵌入|wikilink 與嵌入]]、[[短代碼|短代碼]]和標註。
+Markdown 格式是純文字加上少量符號：`#` 是標題，`**` 是粗體，`-` 是列表。青苔讀取標準 Markdown（CommonMark 與 GitHub 風格），並在此之上支援 Obsidian 風格的 [[引用檔案與媒體|wikilink 與嵌入]]、[[用短代碼排版及插入特殊功能|短代碼]]和標註。
 
 因為是純文字，你可以用任何編輯器書寫，檔案始終留在你自己的電腦上。
 
 ## 基礎語法
 
-左邊是你寫的，右邊是青苔算圖的結果：
+左邊是你寫的，右邊是青苔渲染的結果：
 
 :::grid 2 {.sc-demo}
 ```markdown
@@ -48,9 +47,9 @@ Markdown 是純文字加上少量符號：`#` 是標題，`**` 是粗體，`-` �
 
 在標準 Markdown 之外，青苔還認得幾種記號，各有專門的文件：
 
-- **[[Wikilink 與嵌入|Wikilink 與嵌入]]**——用 `[[雙方括號]]` 連結和嵌入其他頁面與媒體。
-- **[[短代碼|短代碼]]**——用 `:::` 圍欄建立多欄、圖庫、大圖等版面。
-- **[[Frontmatter|Frontmatter]]**——在檔案頂部用 YAML 設定標題、日期、可見性等屬性。
+- **[[引用檔案與媒體|Wikilink 與嵌入]]**——用 `[[雙方括號]]` 連結和嵌入其他頁面與媒體。
+- **[[用短代碼排版及插入特殊功能|短代碼]]**——用 `:::` 圍欄建立多欄、圖庫、大圖等版面。
+- **[[用 Frontmatter 定義頁面|Frontmatter]]**——在檔案頂部用 YAML 設定標題、日期、可見性等屬性。
 
 ## 在哪裡寫
 

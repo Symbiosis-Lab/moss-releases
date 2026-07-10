@@ -4,7 +4,6 @@ url: editors
 uid: 9e3a4f72
 weight: 10
 description: "Which markdown editor pairs well with moss: Obsidian, iA Writer, Typora, VS Code, and the new wave."
-translationKey: docs-editors
 ---
 
 # Markdown editors

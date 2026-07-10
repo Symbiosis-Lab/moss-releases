@@ -1,13 +1,11 @@
 ---
-lang: zh-hans
-translationKey: docs-author-frontmatter
-uid: 87d923cf
 weight: 30
-title: Frontmatter
-url: frontmatter
+uid: 87d923cf
+translationKey: docs-author-frontmatter
+lang: zh-hans
 description: 在文件顶部用几行 YAML 设置页面与网站的属性。
+url: frontmatter
 ---
-
 Frontmatter 是 markdown 文件最顶部、两行 `---` 之间的一段 YAML，用来告诉青苔这个页面的标题、日期、可见性等信息。
 
 ```yaml
@@ -24,7 +22,7 @@ Frontmatter 是可选的。没有它，文件照样成为页面，青苔用文�
 
 ## 用标题命名文件
 
-推荐**用页面自己的语言、以标题命名每个文件**——`隐私.md` 就渲染成「隐私」，无需写 `title:`。
+每个文件名称默认成为页面标题：`隐私.md` 标题为「隐私」。 `title: 隐私说明` 则覆写原来的标题。
 
 当文件名含中文或空格时，用 `url:` 钉一个简短、稳定的网址：`隐私.md` 加 `url: privacy`，就发布在 `/privacy`。文件名给整理文件夹的你看，`url:` 才是读者看到的地址；钉住它，重命名文件也不会让链接失效。
 
@@ -34,7 +32,7 @@ Frontmatter 是可选的。没有它，文件照样成为页面，青苔用文�
 
 | 字段 | 作用 |
 |------|------|
-| `title` | 页面标题（默认取文件名） |
+| `title` | 页面标题（覆写取自文件名的标题） |
 | `description` | 列表预览与 SEO 摘要 |
 | `date` | 发布日期（`YYYY-MM-DD`） |
 | `tags` | 内容标签 |
@@ -63,7 +61,7 @@ Frontmatter 是可选的。没有它，文件照样成为页面，青苔用文�
 
 青苔支持英文（`en`）、简体中文（`zh-hans`）和繁体中文（`zh-hant`）。任意一种都可作为默认语言，其余会出现在页面顶部的语言切换按钮里。
 
-**每种语言一个文件夹**（推荐）：把译文放进以语言命名的子文件夹。
+**每种语言一个文件夹**：把译文放进以语言命名的子文件夹。
 
 ```
 my-site/
@@ -74,12 +72,10 @@ my-site/
     └── index.md      ← 繁体中文
 ```
 
-**或用文件名后缀**：`about.md`、`about.zh-hans.md`、`about.zh-hant.md`。
-
 当两个语言版本的文件名不同时，用 `translationKey` 把它们关联起来，语言切换按钮才知道彼此对应：
 
 ```yaml
-# posts/hello.md          # posts/ni-hao.md
+# posts/hello.md          # posts/你好.md
 ---                       ---
 translationKey: hello     translationKey: hello
 ---                       lang: zh-hans

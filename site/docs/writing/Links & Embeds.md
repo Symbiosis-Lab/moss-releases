@@ -4,7 +4,6 @@ url: wikilinks-and-embeds
 uid: 5555db30
 weight: 4
 description: Wikilinks, embeds, cross-references, and bilingual content.
-translationKey: docs-author-links
 ---
 
 ## Wikilinks
