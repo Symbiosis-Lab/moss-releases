@@ -15,6 +15,14 @@
   border-bottom: none;
 }
 
+/* Screen-recording GIFs (开始使用 guide etc.): cap width on wide screens so
+   the 1200px recordings don't dominate the text column; min() falls back to
+   full container width on narrow/mobile viewports. */
+article img[src$=".gif"] {
+  max-width: min(600px, 100%);
+  margin-inline: auto;
+}
+
 header {
   padding-bottom: var(--moss-space-lg);
 }

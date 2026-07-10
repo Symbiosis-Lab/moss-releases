@@ -234,4 +234,32 @@
   if (savedTheme === "sunlight" || !savedTheme) {
     enterSunlight();
   }
+
+  // ── Preview morph resilience ──
+  // moss's in-place preview refreshes the page by morphing <body>'s innerHTML
+  // to the freshly-built HTML (idiomorph, morphStyle "innerHTML"). Our overlay
+  // nodes are appended at runtime and never exist in the served bytes, so the
+  // morph reconciles them away — and since data-theme="sunlight" lives on <html>
+  // (which the morph doesn't touch), the page is left "in sunlight" with no leaf
+  // video. moss dispatches `moss-morph-patched` after every morph precisely so
+  // once-bound site scripts can re-attach (the built-in theme.js listens too).
+  // The script itself is not re-executed across morphs (idiomorph reuses the
+  // matched <script> node), so these closure-scoped nodes survive; we just need
+  // to re-parent them. Idempotent: re-append only when detached, and resume
+  // playback only when sunlight is still the active theme.
+  document.addEventListener("moss-morph-patched", function () {
+    var reattached = false;
+    if (!video.isConnected) {
+      document.body.appendChild(video);
+      reattached = true;
+    }
+    if (!wash.isConnected) {
+      document.body.appendChild(wash);
+      reattached = true;
+    }
+    // A detached <video> is paused; only when we actually re-attached (and
+    // sunlight is still active) do we replay — enterSunlight() restarts
+    // playback and the fade-in. Morphs that left the overlay intact are no-ops.
+    if (reattached && isSunlight()) enterSunlight();
+  });
 })();

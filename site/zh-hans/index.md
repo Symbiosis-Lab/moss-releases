@@ -1,9 +1,9 @@
 ---
+lang: zh-hans
+translationKey: homepage
 logo: assets/logo.svg
 description: 从文件夹到网站
 title: 青苔
-translationKey: homepage
-lang: zh-hans
 uid: 41f7bc62
 children: false
 ---
@@ -13,8 +13,8 @@ children: false
 把文件夹打包成独立网站。右键，预览，发布。
 
 :::buttons
-[申请测试版](测试申请)
-[文档](文档/)
+[申请测试版](#青苔正在封闭测试)
+[开始使用](开始使用/)
 :::
 
 :::grid 3
@@ -49,4 +49,9 @@ Markdown 文件。使用内置编辑器、Obsidian、或者任意其他软件。
 
 ## 青苔正在封闭测试
 
-我们正在[分批邀请](测试申请)写作者，一边打磨细节。你可以留下你的邮箱，等到你那一批，我们会发送一份构建版本，通常在报名后几周内。
+我们正在分批邀请写作者，一边打磨细节。你可以留下你的邮箱，等到你那一批，我们会发送一份构建版本，通常在报名后几周内。
+
+只发一封邮件。只有当你的构建版本就绪，我们才会写信。
+
+:::subscribe {button="申请测试"}
+:::
