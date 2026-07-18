@@ -44,6 +44,8 @@ Drop images, videos, and other files into your folder, then reference them with 
 
 In the last two forms, "Sunset over the coast" becomes the **caption** below the image, and also serves screen readers and search engines.
 
+An embed needs an empty line above it to become a figure. An embed that hugs the previous paragraph is treated as an inline image, and its caption and sizing parameters are ignored.
+
 Supported media types:
 
 - **Images** — `.jpg`, `.png`, `.gif`, `.svg`, `.webp`, `.avif`

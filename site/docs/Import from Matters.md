@@ -28,7 +28,7 @@ After you log in, the window sits still for about twenty seconds. **This is norm
 
 moss starts copying your posts. A slim progress line appears near your writing to show progress — watch near the title, not the bottom of the window.
 
-Progress moves through: **Fetching articles from Matters.town...**, **Found N article(s) to sync**, then each post as **Syncing article: {title}**. The longest stretch is pictures, shown as **Downloading n/m...**. Posts arrive one by one with cover images, inline pictures, and comment and like counts.
+Progress moves through: **Fetching articles from Matters.town...**, **Found N article(s) to sync**, then each post as **Syncing article:** followed by the post's title. The longest stretch is pictures, shown as **Downloading n/m...**. Posts arrive one by one with cover images, inline pictures, and comment and like counts.
 
 Posts land in a folder named **文章** (Articles) if you write in Chinese, or **articles** otherwise.
 

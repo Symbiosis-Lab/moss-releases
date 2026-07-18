@@ -76,7 +76,7 @@ This syntax works in wikilinks, markdown images, and bare filenames inside short
 
 ## Captions
 
-An image on its own line, with non-empty alt text, renders as a semantic `<figure>` with a visible `<figcaption>`:
+An image in its own paragraph — an empty line above it, nothing else on the line — with non-empty alt text renders as a semantic `<figure>` with a visible `<figcaption>`:
 
 ```markdown
 ![Morning light, Yangshuo](photos/light.jpg)

@@ -6,7 +6,7 @@ weight: 50
 description: Build a JavaScript plugin that hooks into the moss build pipeline — from a minimal working example to the full reference.
 ---
 
-A plugin is a JavaScript bundle you drop into `.moss/plugins/{name}/`. moss finds it automatically, reads its manifest, and calls the hooks it declares at the right stage of every build.
+A plugin is a JavaScript bundle you drop into `.moss/plugins/<name>/`. moss finds it automatically, reads its manifest, and calls the hooks it declares at the right stage of every build.
 
 ## Minimal working plugin
 

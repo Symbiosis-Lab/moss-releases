@@ -7,7 +7,7 @@ weight: 70
 url: extend
 ---
 
-A plugin is just a JavaScript package in `.moss/plugins/{name}/`. moss discovers it automatically, reads its manifest, and calls the hooks it declares at the right stage of every build.
+A plugin is just a JavaScript package in `.moss/plugins/<name>/`. moss discovers it automatically, reads its manifest, and calls the hooks it declares at the right stage of every build.
 
 ```
 .moss/plugins/my-plugin/

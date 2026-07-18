@@ -29,9 +29,15 @@
   // ── Create overlay DOM elements ──
   // These elements exist in the DOM always but are invisible (opacity: 0)
   // until [data-theme="sunlight"] activates them via CSS.
+  //
+  // data-moss-permanent tells moss's live-preview morph to leave these nodes
+  // alone: they're JS-appended and absent from the served HTML, so a body
+  // morph would otherwise reconcile them away (the moss-morph-patched re-hook
+  // below is the fallback for older moss builds that don't honor the marker).
 
   var video = document.createElement("video");
   video.id = "sunlight-leaves";
+  video.setAttribute("data-moss-permanent", "");
   // moss injects window.mossTheme.base (absolute URL of the theme mount) before
   // this script, so the asset resolves wherever moss serves the theme — never
   // hardcode a site-root path like "/leaves.mp4".
@@ -44,6 +50,7 @@
 
   var wash = document.createElement("div");
   wash.id = "sunlight-wash";
+  wash.setAttribute("data-moss-permanent", "");
   document.body.appendChild(wash);
 
   // ── State helpers ──
