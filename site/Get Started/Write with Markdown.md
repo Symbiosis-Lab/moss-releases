@@ -1,9 +1,9 @@
 ---
-weight: 20
-translationKey: docs-editors
 url: markdown
-description: Write in plain text with a few symbols, and moss lays it out as a webpage.
 uid: c579abc5
+description: Write in plain text with a few symbols, and moss lays it out as a webpage.
+translationKey: docs-editors
+weight: 20
 ---
 Markdown is plain text plus a few symbols: `#` makes a heading, `**` makes bold, `-` makes a list. moss reads standard Markdown (CommonMark and GitHub-flavored), and on top of that supports Obsidian-style [[Reference files & media|wikilinks and embeds]], [[Lay out with shortcodes|shortcodes]], and callouts.
 
@@ -58,5 +58,3 @@ Beyond standard Markdown, moss recognizes a few more notations, each with its ow
 ## What to write with
 
 moss ships with a WYSIWYG Markdown editor — right-click a folder and choose **Publish** to get started. You can also use any editor you like, such as [Obsidian](https://obsidian.md/), iA Writer, Typora, or VS Code. moss watches the folder and updates the preview the moment you save.
-
-How each editor pairs with moss is covered in [Markdown editors](/docs/writing/editors/).

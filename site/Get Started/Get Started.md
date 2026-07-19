@@ -1,14 +1,11 @@
 ---
-uid: bebba90a
 title: Get Started
-translationKey: docs-start
-weight: 0
-children: false
 description: moss packs the markdown files and other media in your folder into a website. Write in any markdown editor, such as [Obsidian](https://obsidian.md/), or in moss's built-in editor, adding text and media as you go.
+weight: 0
+uid: bebba90a
+children: false
+translationKey: docs-start
 ---
-
-# Get Started
-
 moss packs the markdown files and other media in your folder into a website. You can use any markdown editor, such as [Obsidian](https://obsidian.md/), or moss's built-in editor, to write and add other material. moss is macOS-only for now; Linux and Windows are coming in later releases.
 
 ## Create your site
