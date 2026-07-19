@@ -1,10 +1,10 @@
 ---
 title: Get Started
 description: moss packs the markdown files and other media in your folder into a website. Write in any markdown editor, such as [Obsidian](https://obsidian.md/), or in moss's built-in editor, adding text and media as you go.
-weight: 0
-uid: bebba90a
 children: false
 translationKey: docs-start
+weight: 0
+uid: bebba90a
 ---
 moss packs the markdown files and other media in your folder into a website. You can use any markdown editor, such as [Obsidian](https://obsidian.md/), or moss's built-in editor, to write and add other material. moss is macOS-only for now; Linux and Windows are coming in later releases.
 
@@ -64,7 +64,6 @@ Click the "+" on the right of the preview and add the email channel, and a subsc
 The moss editor is meant to be intuitive — just play around, there are no rules to learn first. But if you want to go deeper on building a site with moss, these docs will help.
 
 ### Writing & editing
-* [[Sync with Matters|Sync with Matters Town via a plugin]]
 * [[Write with Markdown|Write with Markdown syntax]]
 * [[Define pages with frontmatter|Set page and site properties with frontmatter]]
 * [[Reference files & media|Reference other pages and media with wikilinks]]

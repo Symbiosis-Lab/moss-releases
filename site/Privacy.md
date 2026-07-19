@@ -1,10 +1,10 @@
 ---
-translationKey: privacy
-uid: 9f2c7a10
-lang: en
-description: What moss collects, why, and your choices — in plain language.
 nav: false
 children: false
+uid: 9f2c7a10
+description: What moss collects, why, and your choices — in plain language.
+lang: en
+translationKey: privacy
 ---
 moss is a local‑first tool for building and publishing websites. In one line: **your content stays on your own computer**, we collect as little data as we can, and there are **no ads and no usage tracking**.
 
@@ -46,9 +46,14 @@ If you turn on the analytics dashboard, your site's stats sync from our server t
 
 If moss hits an error, it can send a crash report to our own server so we can fix the bug. It's the only thing moss reports automatically, and it does not track how you use the app. We strip personal data: your IP isn't stored (we mask it before it reaches our error tracker) and file paths are scrubbed. You can turn this off any time in **moss → Settings → Crash reporting**, and we delete crash reports after 90 days.
 
+![[crash report.gif|Toggle crash report]]
+
 ## Support logs
 
 If you use **"Send Logs"** to report a problem, moss uploads your recent app log (scrubbed of personal data) and gives you a log number to quote when you tell us about the error, so we can fix it quickly. We delete these logs after 30 days.
+
+![[send logs.gif|Send logs manually]]
+
 
 ## Where your data is processed
 
@@ -70,4 +75,4 @@ Questions, or want your data deleted? Email us at **hi@symbiosis-lab.org**.
 
 moss is early, and this policy will grow with it. We'll update this page when our practices change.
 
-*Last updated: 2026‑06‑22.*
+*Last updated: 2026‑07‑19.*
