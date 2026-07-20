@@ -133,10 +133,10 @@ Contributed fields are merged into the active schema at runtime and appear in th
 
 ## moss-api SDK
 
-The `moss-api` package provides types and utilities for plugin development:
+The `@symbiosis-lab/moss-api` package provides types and utilities for plugin development:
 
 ```sh
-npm install moss-api
+npm install @symbiosis-lab/moss-api
 ```
 
 ### Types

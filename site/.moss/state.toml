@@ -3,8 +3,8 @@ deploy_method = "moss"
 dns_configured = true
 dns_configured_at = "2026-06-08T14:26:37.151956+00:00"
 domain = "mosspub.com"
-last_deployed_generation_id = "c808cefd68697edb"
-last_deployment_at = "2026-07-19T06:56:57+00:00"
+last_deployed_generation_id = "4d9979904130dbf3"
+last_deployment_at = "2026-07-19T09:38:58+00:00"
 last_deployment_url = "https://landing.mosspub.com"
 site_id = "landing"
 
