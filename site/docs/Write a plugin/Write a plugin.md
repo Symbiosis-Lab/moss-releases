@@ -124,11 +124,15 @@ Every moss project has an identity keypair. It is what authenticates the site's 
 import { getIdentityPublicKey, identitySign } from "@symbiosis-lab/moss-api";
 
 // The public key, in the encoding your protocol expects.
-const pubkey = await getIdentityPublicKey("secp256k1-ecdsa");
+const pubkey = await getIdentityPublicKey("ipns", "secp256k1-ecdsa");
 
 // A signature over bytes you construct.
-const signature = await identitySign("secp256k1-ecdsa", myRecordBytes);
+const signature = await identitySign("ipns", "secp256k1-ecdsa", myRecordBytes);
 ```
+
+Every signature is tied to a **purpose**. moss mixes that purpose's short tag into the bytes before signing, so a signature you obtain works for that protocol and nothing else. This is what keeps a plugin signature from being reusable as the site owner's login or as a moderation decision — moss signs those with the same key.
+
+The tag is the protocol's own: for `ipns` it is the IPNS spec's `ipns-signature:` separator, so you pass just the record data and the signature is spec-exact. Purposes are a list moss recognizes; a protocol moss has not registered yet cannot be signed for.
 
 Two schemes are available over the one key:
 
