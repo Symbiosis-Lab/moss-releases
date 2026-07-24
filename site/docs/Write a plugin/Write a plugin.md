@@ -97,6 +97,50 @@ It exports typed context interfaces (`ProcessContext`, `GenerateContext`, `Enhan
 
 For Rust contributors working on moss itself, the core types are published as `moss-core` on [docs.rs](https://docs.rs/moss-core).
 
+## Privileged capabilities
+
+Most of the SDK is available to every plugin. A few capabilities can reach outside the sandbox in ways the reader cannot undo, so moss refuses them unless your manifest asks for them by name:
+
+```json
+{
+  "requires": ["execute_binary"]
+}
+```
+
+Two are gated today:
+
+- `execute_binary` — running a native program. The GitHub plugin uses it to run `git`.
+- `identity_sign` — signing with the site's identity key, and reading that key's public form.
+
+If a plugin calls one without declaring it, the call fails with an explanatory error rather than running. Declaring nothing is the safe default, and an undeclared call is never granted by accident.
+
+## Signing with the site's identity
+
+Every moss project has an identity keypair. It is what authenticates the site's owner, and it is what a decentralized address like an IPNS name is derived from.
+
+**Your plugin never receives the key.** It asks moss for a public key, or for a signature over bytes it built itself. moss holds the key and signs on request — the same arrangement as a hardware wallet, or a Nostr signer extension. You own the protocol; moss owns custody.
+
+```ts
+import { getIdentityPublicKey, identitySign } from "@symbiosis-lab/moss-api";
+
+// The public key, in the encoding your protocol expects.
+const pubkey = await getIdentityPublicKey("secp256k1-ecdsa");
+
+// A signature over bytes you construct.
+const signature = await identitySign("secp256k1-ecdsa", myRecordBytes);
+```
+
+Two schemes are available over the one key:
+
+| Scheme | Signature | Public key | Used by |
+|---|---|---|---|
+| `secp256k1-schnorr` | BIP-340, 64 bytes | x-only, 32 bytes | Nostr events |
+| `secp256k1-ecdsa` | ECDSA/SHA-256, DER, low-S | compressed SEC1, 33 bytes | libp2p, IPNS records |
+
+Both are the same key seen two ways, so an address you derive from the compressed key is provably the same identity as the user's Nostr public key. Add `"requires": ["identity_sign"]` to your manifest to use either call.
+
+One thing to know before you publish a permanent address: if the user's key file is lost, moss will not quietly issue a new one — it reports the problem instead, because a replacement key would silently change every address derived from it. Tell your users that `.moss/identity/` is worth backing up.
+
 ## Reference
 
 Field tables, hook context signatures, slot positions, and CLI flags are in the Reference section. Start with [[manifest]] for the full `manifest.json` field list, then [[hooks]] for context shapes and the plugin runtime lifecycle, [[slots]] for slot positions, and [[cli]] for headless build and automation commands.
