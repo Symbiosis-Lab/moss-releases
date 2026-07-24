@@ -107,43 +107,35 @@ Most of the SDK is available to every plugin. A few capabilities can reach outsi
 }
 ```
 
-Two are gated today:
+One is gated today:
 
 - `execute_binary` — running a native program. The GitHub plugin uses it to run `git`.
-- `identity_sign` — signing with the site's identity key, and reading that key's public form.
 
-If a plugin calls one without declaring it, the call fails with an explanatory error rather than running. Declaring nothing is the safe default, and an undeclared call is never granted by accident.
+If a plugin calls it without declaring it, the call fails with an explanatory error rather than running. Declaring nothing is the safe default, and an undeclared call is never granted by accident. Note that using your own keys (below) is **not** gated — it costs the user nothing, so it needs no declaration.
 
-## Signing with the site's identity
+## Your keys
 
-Every moss project has an identity keypair. It is what authenticates the site's owner, and it is what a decentralized address like an IPNS name is derived from.
-
-**Your plugin never receives the key.** It asks moss for a public key, or for a signature over bytes it built itself. moss holds the key and signs on request — the same arrangement as a hardware wallet, or a Nostr signer extension. You own the protocol; moss owns custody.
+Your plugin can have its own keys — for signing an IPNS record, a Nostr event, anything a protocol needs. moss holds the key bytes and signs on request; **your plugin never receives them.** This is the arrangement a hardware wallet or a browser's non-extractable key uses: the key stays usable and stays yours, but a compromised build of your plugin cannot walk off with it.
 
 ```ts
-import { getIdentityPublicKey, identitySign } from "@symbiosis-lab/moss-api";
+import { getKey, signWithKey } from "@symbiosis-lab/moss-api";
 
-// The public key, in the encoding your protocol expects.
-const pubkey = await getIdentityPublicKey("ipns", "secp256k1-ecdsa");
+// Get (or create, the first time) your key. Idempotent.
+const key = await getKey("ipns", "ed25519");   // key.publicKey is yours to use
 
-// A signature over bytes you construct.
-const signature = await identitySign("ipns", "secp256k1-ecdsa", myRecordBytes);
+// Sign bytes you built. The signature is the algorithm's standard form.
+const signature = await signWithKey("ipns", myRecordBytes);
 ```
 
-Every signature is tied to a **purpose**. moss mixes that purpose's short tag into the bytes before signing, so a signature you obtain works for that protocol and nothing else. This is what keeps a plugin signature from being reusable as the site owner's login or as a moderation decision — moss signs those with the same key.
+Three things worth knowing:
 
-The tag is the protocol's own: for `ipns` it is the IPNS spec's `ipns-signature:` separator, so you pass just the record data and the signature is spec-exact. Purposes are a list moss recognizes; a protocol moss has not registered yet cannot be signed for.
+- **The keys are yours, automatically.** You don't pass a plugin id, and you can't reach another plugin's key — two plugins that both call `getKey("ipns")` get two different keys. `listKeys()` lists only yours.
+- **No permission needed.** Creating and using your own key spends nothing of the user's or another plugin's, so there's nothing to declare in your manifest.
+- **You own the protocol.** moss signs exactly the bytes you give it. Any framing — an IPNS record's `ipns-signature:` prefix, a Nostr event id — you build before signing.
 
-Two schemes are available over the one key:
+Two algorithms: `ed25519` (IPNS's key type, and the right default for most protocols) and `secp256k1-schnorr` (Nostr-family).
 
-| Scheme | Signature | Public key | Used by |
-|---|---|---|---|
-| `secp256k1-schnorr` | BIP-340, 64 bytes | x-only, 32 bytes | Nostr events |
-| `secp256k1-ecdsa` | ECDSA/SHA-256, DER, low-S | compressed SEC1, 33 bytes | libp2p, IPNS records |
-
-Both are the same key seen two ways, so an address you derive from the compressed key is provably the same identity as the user's Nostr public key. Add `"requires": ["identity_sign"]` to your manifest to use either call.
-
-One thing to know before you publish a permanent address: if the user's key file is lost, moss will not quietly issue a new one — it reports the problem instead, because a replacement key would silently change every address derived from it. Tell your users that `.moss/identity/` is worth backing up.
+Why moss holds the bytes instead of handing them to you: a key is the durable identity behind a name you publish — an IPNS name *is* its public key and can't be rotated. Left in your plugin's folder it would be committed to the user's repo and pushed. moss keeps it out of git and lets the user back it up, while you keep full use of it. Worth telling your users that a site's identity lives in `.moss/`, which is worth backing up.
 
 ## Reference
 
