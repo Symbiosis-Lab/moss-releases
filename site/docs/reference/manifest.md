@@ -32,7 +32,7 @@ Each plugin lives in `.moss/plugins/<name>/` inside the project.
 | `global_name` | `string` | no | Global JavaScript variable name the plugin exports. Defaults to PascalCase(name) + "Plugin". |
 | `display_name` | `string` | no | Human-readable name shown in the moss Settings UI section title (e.g. "Comments"). |
 | `icon` | `string` | no | Path to the plugin icon file, relative to the plugin directory. Falls back to icon.svg / icon.png / logo.svg / logo.png. |
-| `requires` | `string[]` | no | Privileged host capabilities this plugin needs granted. Recognized values: `execute_binary` (run a native program). A call to one of these fails unless it is declared here. |
+| `requires` | `string[]` | no | Privileged host capabilities this plugin needs granted. Recognized value: `execute_binary` (run a native program). A call to it fails unless it is declared here. |
 | `domain` | `string` | no | Primary domain for cookie access (e.g. "matters.town"). Required for plugins using cookie-based authentication. |
 | `domains` | `string[]` | no | Full set of domains the plugin operates on (e.g. prod + staging). Used for scope-wide cookie clearing on force-fresh login. |
 | `config` | `object` | no | Plugin-specific configuration key-value pairs (e.g. login_url, api_endpoint). Merged with .moss/config.toml at runtime. |

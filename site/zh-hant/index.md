@@ -1,12 +1,12 @@
 ---
-children: false
-translationKey: homepage
-uid: 2f17d02a
 lang: zh-hant
-description: 從資料夾到網站
 title: 青苔
-logo: assets/logo.svg
 nav: false
+uid: 2f17d02a
+translationKey: homepage
+description: 從資料夾到網站
+children: false
+logo: assets/logo.svg
 ---
 
 # 隨處書寫，隨處發佈。一切由你掌控。
@@ -32,23 +32,23 @@ Markdown 檔案。使用內建編輯器、Obsidian、或者任何軟體。
 選擇託管服務。選擇獨立網域，或者使用預設網域。
 :::
 
-## 開放格式，本機優先
+### 開放格式，本機優先
 
 內容存於你的電腦中。用作業系統管理內容，用共享資料夾多人協作。網站從本機發佈到伺服器，遷移零成本。
 
-## 多管道同步
+### 多管道同步
 
 標準靜態網頁，部署在任何伺服器。內容發佈到獨立網站與郵件列表，同步到各個平台，再同步回留言。
 
-## 多媒體，自動處理
+### 多媒體，自動處理
 
 影片、圖片、HTML、Jupyter 筆記本。放進資料夾，青苔處理其餘的一切。
 
-## 無限擴充
+### 無限擴充
 
 透過 CSS 和 JavaScript 自訂設計，透過指令碼外掛自訂編譯流程。CLI 支援自動化和 CI 整合。詳見[擴充](docs/Write a plugin/)。
 
-## 青苔正在封閉測試
+### 青苔正在封閉測試
 
 我們正在分批邀請寫作者，一邊打磨細節。你可以留下你的郵箱，等到你那一批，我們會發送一份建構版本，通常在報名後幾週內。
 

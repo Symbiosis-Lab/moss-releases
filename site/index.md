@@ -1,11 +1,11 @@
 ---
-translationKey: homepage
-title: moss
-uid: a48746ca
 children: false
 logo: assets/logo.svg
-lang: en
+title: moss
 description: A desktop app that turns folders into websites.
+lang: en
+translationKey: homepage
+uid: a48746ca
 ---
 
 # Write anywhere. Publish everywhere. Own everything.
@@ -33,23 +33,23 @@ On your folder in your file system. Then click "Publish", and review the website
 Click publish button in preview window, and your site is live. Navigation, styling, dark mode, all handled.
 :::
 
-## Your files, your site
+### Your files, your site
 
 Your content stays in your computer. No account needed to preview. No server to configure. moss compiles your folder into a static site that works anywhere.
 
-## Publish anywhere
+### Publish anywhere
 
 Standard static pages, hosted on any server. Publish to your own site, syndicate to platforms, sync back comments.
 
-## Multimedia automated
+### Multimedia automated
 
 Videos, images, HTML, Jupyter notebooks. Drop them in the folder, moss handles the rest.
 
-## Fully extensible
+### Fully extensible
 
 Customize with CSS and JavaScript. Build plugins by dropping scripts into a folder. Vibe-coding ready, but always human-friendly.
 
-## moss is in closed beta
+### moss is in closed beta
 
 We're inviting writers in waves while we sand the rough edges. Leave your email and we'll send a build when it's your turn, usually within a few weeks of signing up.
 
