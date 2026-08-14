@@ -1,0 +1,45 @@
+# When a draft release goes live, tell the distribution channels.
+#
+# The npm wrapper (@symbiosis-lab/moss) and the Homebrew formula are versioned
+# in lockstep with the release published here, and both used to be updated by
+# hand — seven steps across two repos. All seven were skipped for v0.11.2 and
+# v0.11.3, so `brew install moss` and `npx @symbiosis-lab/moss` served 0.11.1
+# for two releases while this repo's release page said otherwise. A stale
+# channel looks exactly like a current one, which is why nobody noticed.
+#
+# WHY THE `published` EVENT AND NOT `created`: the moss release workflow uploads
+# assets here as a DRAFT, and a draft's download URLs 404 for everyone except
+# the people who can see the draft. A wrapper published against one would
+# install nothing. `published` fires on `gh release edit --draft=false` — the
+# exact human act this is chasing.
+#
+# The receiving workflows resolve the version themselves and no-op when their
+# channel is already current, so a duplicate or out-of-order dispatch is
+# harmless. They also each run weekly, which is what covers this workflow
+# failing silently — notably when DISPATCH_PAT expires.
+name: Announce a published release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  announce:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch to npm and the Homebrew tap
+        env:
+          GH_TOKEN: ${{ secrets.DISPATCH_PAT }}
+          TAG: ${{ github.event.release.tag_name }}
+        run: |
+          set -euo pipefail
+          if [ -z "${GH_TOKEN:-}" ]; then
+            echo "DISPATCH_PAT is not set — the weekly backstops will catch this within a week."
+            exit 0
+          fi
+          for repo in Symbiosis-Lab/moss Symbiosis-Lab/homebrew-tap; do
+            jq -n --arg v "${TAG#v}" \
+              '{event_type:"moss-release-published", client_payload:{version:$v}}' \
+              | gh api "repos/$repo/dispatches" --input -
+            echo "dispatched $TAG to $repo"
+          done
