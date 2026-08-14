@@ -22,6 +22,14 @@ name: Announce a published release
 on:
   release:
     types: [published]
+  # Hand-runnable so the token can be exercised without cutting a release, and
+  # so a release whose announcement failed can be re-announced. Re-announcing is
+  # safe: the receivers no-op when their channel already matches.
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "release tag to announce, e.g. v0.11.3"
+        required: true
 
 jobs:
   announce:
@@ -30,7 +38,7 @@ jobs:
       - name: Dispatch to npm and the Homebrew tap
         env:
           GH_TOKEN: ${{ secrets.DISPATCH_PAT }}
-          TAG: ${{ github.event.release.tag_name }}
+          TAG: ${{ github.event.release.tag_name || inputs.tag }}
         run: |
           set -euo pipefail
           if [ -z "${GH_TOKEN:-}" ]; then
