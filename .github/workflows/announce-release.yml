@@ -45,9 +45,23 @@ jobs:
             echo "DISPATCH_PAT is not set — the weekly backstops will catch this within a week."
             exit 0
           fi
-          for repo in Symbiosis-Lab/moss Symbiosis-Lab/homebrew-tap; do
-            jq -n --arg v "${TAG#v}" \
-              '{event_type:"moss-release-published", client_payload:{version:$v}}' \
-              | gh api "repos/$repo/dispatches" --input -
-            echo "dispatched $TAG to $repo"
-          done
+          # homebrew-tap has no branch-gated environment behind its receiving
+          # workflow, so a plain repository_dispatch reaches it fine.
+          jq -n --arg v "${TAG#v}" \
+            '{event_type:"moss-release-published", client_payload:{version:$v}}' \
+            | gh api "repos/Symbiosis-Lab/homebrew-tap/dispatches" --input -
+          echo "dispatched $TAG to Symbiosis-Lab/homebrew-tap"
+
+          # moss's own release-plz-release / changesets-release jobs sit behind
+          # the `crates-io` / `npm` deployment environments, both of which are
+          # restricted to `main`. repository_dispatch always runs on the
+          # DEFAULT branch (develop here), so a dispatch there fails outright —
+          # "Branch 'develop' is not allowed to deploy ... due to environment
+          # protection rules" (found 2026-08-21, cutting v0.11.5: the dispatch
+          # ran and failed, and the failure was invisible until someone read
+          # the Actions tab). workflow_dispatch takes an explicit --ref, so
+          # this is the one leg that has to use it instead, pinned to main.
+          gh workflow run release.yml --repo Symbiosis-Lab/moss --ref main -f publish=crates-io
+          echo "dispatched $TAG to Symbiosis-Lab/moss (crates-io)"
+          gh workflow run release.yml --repo Symbiosis-Lab/moss --ref main -f publish=npm
+          echo "dispatched $TAG to Symbiosis-Lab/moss (npm)"
