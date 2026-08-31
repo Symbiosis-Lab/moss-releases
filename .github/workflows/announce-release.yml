@@ -69,8 +69,14 @@ jobs:
           # The wrapper is a third leg, not part of release.yml. It used to ride
           # the repository_dispatch this file sent before 2026-08-25; splitting
           # that into the two targeted calls above dropped it, and v0.11.7 shipped
-          # with npx serving 0.11.5 until it was dispatched by hand. It is not
-          # behind a deployment environment, but --ref main is still required:
-          # on develop the same run fails at publish with a registry 404.
-          gh workflow run publish-moss-wrapper.yml --repo Symbiosis-Lab/moss --ref main
+          # with npx serving 0.11.5 until it was dispatched by hand.
+          #
+          # NO --ref, unlike the two legs above. Those need main because their
+          # jobs sit behind branch-restricted deployment environments; this one
+          # uses NPM_TOKEN directly and has no such gate. It must run on the
+          # default branch because its last step commits the published version
+          # back into packages/moss/package.json and pushes to the branch it ran
+          # on — which main rejects, since main takes pull requests only. Pinning
+          # main here turns a successful publish into a red run (v0.11.7).
+          gh workflow run publish-moss-wrapper.yml --repo Symbiosis-Lab/moss
           echo "dispatched $TAG to Symbiosis-Lab/moss (npm wrapper)"
