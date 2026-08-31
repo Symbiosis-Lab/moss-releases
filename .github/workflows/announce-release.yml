@@ -65,3 +65,12 @@ jobs:
           echo "dispatched $TAG to Symbiosis-Lab/moss (crates-io)"
           gh workflow run release.yml --repo Symbiosis-Lab/moss --ref main -f publish=npm
           echo "dispatched $TAG to Symbiosis-Lab/moss (npm)"
+
+          # The wrapper is a third leg, not part of release.yml. It used to ride
+          # the repository_dispatch this file sent before 2026-08-25; splitting
+          # that into the two targeted calls above dropped it, and v0.11.7 shipped
+          # with npx serving 0.11.5 until it was dispatched by hand. It is not
+          # behind a deployment environment, but --ref main is still required:
+          # on develop the same run fails at publish with a registry 404.
+          gh workflow run publish-moss-wrapper.yml --repo Symbiosis-Lab/moss --ref main
+          echo "dispatched $TAG to Symbiosis-Lab/moss (npm wrapper)"
